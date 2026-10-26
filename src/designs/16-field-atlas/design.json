@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "id": "16",
+  "slug": "field-atlas",
+  "name": "Field Atlas",
+  "brand": "Northbank Footpaths",
+  "family": "Workspaces & discovery",
+  "status": "ready",
+  "thesis": "Use location as the primary route into information.",
+  "suitableFor": [
+    "Maps",
+    "Discovery"
+  ],
+  "character": "Restrained",
+  "traits": {
+    "composition": "Large illustrated district map linked to a compact trail list",
+    "navigation": "Equivalent map and list selection",
+    "typography": "DM Sans",
+    "density": "Medium",
+    "imagery": "Original SVG diagrams and illustrations",
+    "surface": "Muted terrain colours, map lines and numbered place markers",
+    "motion": "Minimal"
+  },
+  "effort": "Medium",
+  "definingFeatures": [
+    "Geography is the entry point",
+    "Matching list and map state",
+    "Access notes beside route details"
+  ],
+  "adaptableChoices": [
+    "Brand and content",
+    "Accent colour with verified contrast",
+    "Equivalent licensed typefaces"
+  ],
+  "entryRoute": "/preview/16-field-atlas/start",
+  "states": [
+    {
+      "key": "detail",
+      "label": "Riverside loop",
+      "route": "/preview/16-field-atlas/detail"
+    },
+    {
+      "key": "list",
+      "label": "List-only results",
+      "route": "/preview/16-field-atlas/list"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/16/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/16/f680114693e7cc8c-desktop.jpg",
+      "route": "/preview/16-field-atlas/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:e85dd591cf3b310868218d3612606731ef362932fc61a985b7255c271969ca22",
+      "sha256": "f680114693e7cc8c4482cbf1489a0cf92ae46435222e218beef122c9b55ef177",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/16/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/16/d5c472079e9ce461-mobile.jpg",
+      "route": "/preview/16-field-atlas/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:e85dd591cf3b310868218d3612606731ef362932fc61a985b7255c271969ca22",
+      "sha256": "d5c472079e9ce461576f544804a5342420c8a38bb1e61563a15b28dc5718b87e",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/16/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/16/efa3e82b534e33fd-detail.jpg",
+      "route": "/preview/16-field-atlas/detail",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "detail",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:e85dd591cf3b310868218d3612606731ef362932fc61a985b7255c271969ca22",
+      "sha256": "efa3e82b534e33fdc1a50e5400d9f190f2355dccc2805ff7690fa05679f0e212",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/16/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/16/1fab313843e8b426-full-page.jpg",
+      "route": "/preview/16-field-atlas/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:e85dd591cf3b310868218d3612606731ef362932fc61a985b7255c271969ca22",
+      "sha256": "1fab313843e8b4263127bb694c1dfac663a63c9bc632deee5e9fc1aa7606be95",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/16-field-atlas",
+  "neighbours": [
+    "26",
+    "20"
+  ],
+  "palette": {
+    "page": "#f0f0e4",
+    "surface": "#ffffff",
+    "ink": "#2b4439",
+    "accent": "#35694c"
+  },
+  "fonts": [
+    "DM Sans"
+  ],
+  "brief": "**Philosophy and fit.** Use location as the primary route into information. Suitable for local guides, public amenities, heritage trails, travel research, and geographically organised collections.\n\n**Visual grammar.** Pair a large, deliberately styled map with a compact searchable place list and a filter bar. Use an earthy cream ground, dark green labels, blue waterways, and distinct labelled place markers. A practical sans and small cartographic labels reinforce the atlas character. The selected place remains obvious in both map and list.\n\n**Specimen and flow.** *Northbank Footpaths* uses an original SVG map of a fictional district. Visitors filter trails by surface, select a route, and inspect its stops and access notes. Supporting states show a route detail and a list-only search result.\n\n**Adaptation and identity.** Mobile uses a clear map/list switch while preserving filters and selection. All places remain reachable through ordinary links; the reference needs no geolocation or external map service. Preserve geographic relationships and readable labels; avoid decorative maps disconnected from results or essential hover interactions. **Effort: medium.**",
+  "scope": "An expansive sample page with representative local interactions; no production business backend."
+}

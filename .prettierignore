@@ -1,0 +1,8 @@
+node_modules
+dist
+.work
+public/previews
+catalogue.json
+public/catalogue.json
+pnpm-lock.yaml
+test-results

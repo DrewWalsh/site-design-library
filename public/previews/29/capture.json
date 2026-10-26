@@ -1,0 +1,64 @@
+{
+  "designId": "29",
+  "sourceRevision": "sha256:d73fc96082f4489d8b0116d80502f2acd2ed2e2dcbf60194f207e8c84b469a1c",
+  "capturedAt": "2026-10-26T22:49:21.025Z",
+  "browser": "156.0.4314.42",
+  "captures": [
+    {
+      "file": "/previews/29/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/29/80597c513670c39d-desktop.jpg",
+      "route": "/preview/29-calm-sanctuary/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:d73fc96082f4489d8b0116d80502f2acd2ed2e2dcbf60194f207e8c84b469a1c",
+      "sha256": "80597c513670c39d210b88a4832ebed0cd892c3c83804417301fa7e49ab84dd8",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/29/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/29/fb0e2d8d7674056b-mobile.jpg",
+      "route": "/preview/29-calm-sanctuary/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:d73fc96082f4489d8b0116d80502f2acd2ed2e2dcbf60194f207e8c84b469a1c",
+      "sha256": "fb0e2d8d7674056b3aea818e689f7cf0bb76f91318047bd55b7505326358e94e",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/29/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/29/66c39c67a143b52e-detail.jpg",
+      "route": "/preview/29-calm-sanctuary/practice",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "practice",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:d73fc96082f4489d8b0116d80502f2acd2ed2e2dcbf60194f207e8c84b469a1c",
+      "sha256": "66c39c67a143b52eac0254532729487c1a676406dcaca7602a8d7bd8d3dae3ef",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/29/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/29/8ef55913502a543e-full-page.jpg",
+      "route": "/preview/29-calm-sanctuary/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:d73fc96082f4489d8b0116d80502f2acd2ed2e2dcbf60194f207e8c84b469a1c",
+      "sha256": "8ef55913502a543e081b2a31c9cd7585f86dce077b7d2a31909e6f1c317f1d47",
+      "fullPage": true
+    }
+  ]
+}

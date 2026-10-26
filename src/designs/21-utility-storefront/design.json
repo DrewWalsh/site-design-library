@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "id": "21",
+  "slug": "utility-storefront",
+  "name": "Utility Storefront",
+  "brand": "Bench Supply",
+  "family": "Commerce & places",
+  "status": "ready",
+  "thesis": "Make a purchase easy to evaluate.",
+  "suitableFor": [
+    "Commerce",
+    "Operations"
+  ],
+  "character": "Restrained",
+  "traits": {
+    "composition": "Compact purchasable SKU matrix with a category tree",
+    "navigation": "Compatibility filters, part codes, and a local basket",
+    "typography": "Bebas Neue + DM Sans",
+    "density": "High",
+    "imagery": "Typography, rules, and interface structure",
+    "surface": "Dense product tables, strong part codes and functional blue actions",
+    "motion": "Minimal"
+  },
+  "effort": "Medium",
+  "definingFeatures": [
+    "Quantity controls in the matrix",
+    "Compatibility before merchandising",
+    "Clear availability and part codes"
+  ],
+  "adaptableChoices": [
+    "Brand and content",
+    "Accent colour with verified contrast",
+    "Equivalent licensed typefaces"
+  ],
+  "entryRoute": "/preview/21-utility-storefront/start",
+  "states": [
+    {
+      "key": "basket",
+      "label": "Local basket",
+      "route": "/preview/21-utility-storefront/basket"
+    },
+    {
+      "key": "compatibility",
+      "label": "Battery compatibility",
+      "route": "/preview/21-utility-storefront/compatibility"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/21/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/21/20fe106efa2f3cd5-desktop.jpg",
+      "route": "/preview/21-utility-storefront/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:c04ab76d202f63aac8d8ce0ac8f5e7dc14a66ddcdf3ab9afa2f460682da825a5",
+      "sha256": "20fe106efa2f3cd57bd566a4b34ce51b5aeaa866b51d5d6e676ac5c9c3b42d4d",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/21/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/21/0a424cd8758b95f3-mobile.jpg",
+      "route": "/preview/21-utility-storefront/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:c04ab76d202f63aac8d8ce0ac8f5e7dc14a66ddcdf3ab9afa2f460682da825a5",
+      "sha256": "0a424cd8758b95f33fd85f9eb12cc68f9ccfc9b365d01b778afb65cd605d3d2a",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/21/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/21/9217c885b040799c-detail.jpg",
+      "route": "/preview/21-utility-storefront/basket",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "basket",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:c04ab76d202f63aac8d8ce0ac8f5e7dc14a66ddcdf3ab9afa2f460682da825a5",
+      "sha256": "9217c885b040799c2605f945995f2bf29222fbacb55d9b3d257624bac0ca7727",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/21/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/21/b0fd53a9fae32703-full-page.jpg",
+      "route": "/preview/21-utility-storefront/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:c04ab76d202f63aac8d8ce0ac8f5e7dc14a66ddcdf3ab9afa2f460682da825a5",
+      "sha256": "b0fd53a9fae327038a67ee62a971fb246e6bf3c4191a30eb1fc0a3b9d2dbd6c5",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/21-utility-storefront",
+  "neighbours": [
+    "20",
+    "22"
+  ],
+  "palette": {
+    "page": "#f5f6f4",
+    "surface": "#ffffff",
+    "ink": "#26333d",
+    "accent": "#285f9a"
+  },
+  "fonts": [
+    "Bebas Neue",
+    "DM Sans"
+  ],
+  "brief": "**Philosophy and fit.** Make a purchase easy to evaluate. Suitable for hardware, supplies, specialist equipment, and stores where specifications, availability, and compatibility matter more than a campaign image.\n\n**Visual grammar.** A category tree and breadcrumbs lead into a dense purchasable SKU matrix. Each compact row has a part code, compatibility, stock, quantity input, and add action; thumbnails remain small. Use a utilitarian condensed sans for category labels, monospaced part codes, graphite text, white surfaces, blue links, and amber availability notices. Subtle row bands and rules organise information.\n\n**Specimen and flow.** *Bench Supply* sells workshop tools. Choose a battery platform, configure compatible tool and battery quantities directly in the matrix, and review a local basket. Supporting views include a compatibility detail and a basket with an unavailable-item state. A bulk-entry control accepts known fixture part codes.\n\n**Responsive behaviour.** The category tree becomes a disclosure; each SKU becomes a compact labelled block retaining quantity and add controls. The shopping flow remains usable by keyboard and does not depend on hover.\n\n**Identity rules.** Preserve visible specifications and restrained merchandising. Avoid oversized lifestyle heroes, hidden pricing, and arbitrary card heights. **Effort: medium.**",
+  "scope": "An expansive sample page with representative local interactions; no production business backend."
+}

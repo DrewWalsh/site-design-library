@@ -1,0 +1,64 @@
+{
+  "designId": "03",
+  "sourceRevision": "sha256:be0af4de92315b109ca07cbb6badc215df66b70465077608899b77721b3456fb",
+  "capturedAt": "2026-10-26T22:47:59.640Z",
+  "browser": "156.0.4314.42",
+  "captures": [
+    {
+      "file": "/previews/03/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/03/548518c54ef40c33-desktop.jpg",
+      "route": "/preview/03-swiss-grid/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:be0af4de92315b109ca07cbb6badc215df66b70465077608899b77721b3456fb",
+      "sha256": "548518c54ef40c339f35828af79b419c7bd56d53c88efc1bb6560a5b5a4b76bf",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/03/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/03/239efd6294d44a4d-mobile.jpg",
+      "route": "/preview/03-swiss-grid/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:be0af4de92315b109ca07cbb6badc215df66b70465077608899b77721b3456fb",
+      "sha256": "239efd6294d44a4df99d8acf09b59015d58c57d725378e65ce54226542ecef91",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/03/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/03/f8c5344a84df881a-detail.jpg",
+      "route": "/preview/03-swiss-grid/speaker",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "speaker",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:be0af4de92315b109ca07cbb6badc215df66b70465077608899b77721b3456fb",
+      "sha256": "f8c5344a84df881a263c6bae2ddb8e2262288029ae3c13676394570ff0111c42",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/03/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/03/77f5adbe28cd061f-full-page.jpg",
+      "route": "/preview/03-swiss-grid/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:be0af4de92315b109ca07cbb6badc215df66b70465077608899b77721b3456fb",
+      "sha256": "77f5adbe28cd061fe346d50a74fbf8ffe5547a5cce548bae6f9af28700015d21",
+      "fullPage": true
+    }
+  ]
+}

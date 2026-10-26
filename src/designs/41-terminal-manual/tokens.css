@@ -1,0 +1,15 @@
+.specimen {
+  --page: #18201e;
+  --surface: #242e28;
+  --ink: #e2dfce;
+  --muted: #e2dfce;
+  --accent: #a9c39c;
+  --line: color-mix(in srgb, var(--ink) 22%, transparent);
+  --font-heading: 'IBM Plex Mono', sans-serif;
+  --font-body: 'IBM Plex Mono', monospace;
+  --space: 8px;
+  --measure: 65ch;
+  --content: 1240px;
+  --radius: 0px;
+  --duration: 160ms;
+}

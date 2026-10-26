@@ -1,0 +1,64 @@
+{
+  "designId": "09",
+  "sourceRevision": "sha256:2e569a394c53c3bca17468893f2b26c8d2c862c58b02e3dff82534093e944952",
+  "capturedAt": "2026-10-26T22:48:18.652Z",
+  "browser": "156.0.4314.42",
+  "captures": [
+    {
+      "file": "/previews/09/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/09/6d1fd227eebb5212-desktop.jpg",
+      "route": "/preview/09-glossy-fashion/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:2e569a394c53c3bca17468893f2b26c8d2c862c58b02e3dff82534093e944952",
+      "sha256": "6d1fd227eebb5212c9fd3904cbdfec48ce860d12e0df718bc555844f917a356e",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/09/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/09/6da840070286eac2-mobile.jpg",
+      "route": "/preview/09-glossy-fashion/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:2e569a394c53c3bca17468893f2b26c8d2c862c58b02e3dff82534093e944952",
+      "sha256": "6da840070286eac23949a70e19212ad12a2910a48630157d99ae7af49d4fc7dc",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/09/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/09/5622ea43cf0ea6b6-detail.jpg",
+      "route": "/preview/09-glossy-fashion/story",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "story",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:2e569a394c53c3bca17468893f2b26c8d2c862c58b02e3dff82534093e944952",
+      "sha256": "5622ea43cf0ea6b67dc6f3d61547e6bba3cbd9e118e82dd4a1b8bfcd7b8dc0c4",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/09/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/09/a3894fbe10e7159e-full-page.jpg",
+      "route": "/preview/09-glossy-fashion/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:2e569a394c53c3bca17468893f2b26c8d2c862c58b02e3dff82534093e944952",
+      "sha256": "a3894fbe10e7159e2353ebedb5e5ea7e591b1bd84163f0bc6de36d02d6261c20",
+      "fullPage": true
+    }
+  ]
+}

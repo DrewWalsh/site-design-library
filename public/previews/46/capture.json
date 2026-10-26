@@ -1,0 +1,64 @@
+{
+  "designId": "46",
+  "sourceRevision": "sha256:ed810a503b37a35f3c7ae3786fb804104900a79c549c4c8422d74281fc6156ce",
+  "capturedAt": "2026-10-26T22:50:13.806Z",
+  "browser": "156.0.4314.42",
+  "captures": [
+    {
+      "file": "/previews/46/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/46/e7d9fb3e512bf39e-desktop.jpg",
+      "route": "/preview/46-kinetic-type/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:ed810a503b37a35f3c7ae3786fb804104900a79c549c4c8422d74281fc6156ce",
+      "sha256": "e7d9fb3e512bf39e25695b09aa3e653185b14385539c777c7ca9a9d13225809c",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/46/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/46/f847240cfeac91eb-mobile.jpg",
+      "route": "/preview/46-kinetic-type/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:ed810a503b37a35f3c7ae3786fb804104900a79c549c4c8422d74281fc6156ce",
+      "sha256": "f847240cfeac91eb627c3a1e4d7a242398e164a506240dcea256f17f697e1cb7",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/46/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/46/e90e215c057927e6-detail.jpg",
+      "route": "/preview/46-kinetic-type/schedule",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "schedule",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:ed810a503b37a35f3c7ae3786fb804104900a79c549c4c8422d74281fc6156ce",
+      "sha256": "e90e215c057927e692ffdf4517f58c1ba872a1bbeac381de651530b49fd287d5",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/46/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/46/a09745c33ab41f40-full-page.jpg",
+      "route": "/preview/46-kinetic-type/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:ed810a503b37a35f3c7ae3786fb804104900a79c549c4c8422d74281fc6156ce",
+      "sha256": "a09745c33ab41f407740b7a728dbcbc87c15ea7939356b6b01873bf00e027bab",
+      "fullPage": true
+    }
+  ]
+}

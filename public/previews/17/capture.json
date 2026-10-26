@@ -1,0 +1,64 @@
+{
+  "designId": "17",
+  "sourceRevision": "sha256:11e901bdfeac572fc6234a6115d9039dc0938eee448345445b00a3e9bc1b2ff5",
+  "capturedAt": "2026-10-26T22:48:43.669Z",
+  "browser": "156.0.4314.42",
+  "captures": [
+    {
+      "file": "/previews/17/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/17/f27504ef8f1053c4-desktop.jpg",
+      "route": "/preview/17-observatory/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:11e901bdfeac572fc6234a6115d9039dc0938eee448345445b00a3e9bc1b2ff5",
+      "sha256": "f27504ef8f1053c42af27eabd90c7abd7488806ea21bf2454f9016587e7618dd",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/17/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/17/8050bac51e5481c2-mobile.jpg",
+      "route": "/preview/17-observatory/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:11e901bdfeac572fc6234a6115d9039dc0938eee448345445b00a3e9bc1b2ff5",
+      "sha256": "8050bac51e5481c203966be7d2af60296e1863a5fba14c45e52819b660213058",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/17/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/17/372974b3ff8f0ef3-detail.jpg",
+      "route": "/preview/17-observatory/table",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "table",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:11e901bdfeac572fc6234a6115d9039dc0938eee448345445b00a3e9bc1b2ff5",
+      "sha256": "372974b3ff8f0ef383777da9c64b15121a16aa52511b1dd7b808f89befd2b14a",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/17/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/17/971f873846ae8e7a-full-page.jpg",
+      "route": "/preview/17-observatory/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:11e901bdfeac572fc6234a6115d9039dc0938eee448345445b00a3e9bc1b2ff5",
+      "sha256": "971f873846ae8e7af12fc4a1601a803cb9dbc1861c6c0f23f053d4616be3e29b",
+      "fullPage": true
+    }
+  ]
+}

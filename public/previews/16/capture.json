@@ -1,0 +1,64 @@
+{
+  "designId": "16",
+  "sourceRevision": "sha256:e85dd591cf3b310868218d3612606731ef362932fc61a985b7255c271969ca22",
+  "capturedAt": "2026-10-26T22:48:40.575Z",
+  "browser": "156.0.4314.42",
+  "captures": [
+    {
+      "file": "/previews/16/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/16/f680114693e7cc8c-desktop.jpg",
+      "route": "/preview/16-field-atlas/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:e85dd591cf3b310868218d3612606731ef362932fc61a985b7255c271969ca22",
+      "sha256": "f680114693e7cc8c4482cbf1489a0cf92ae46435222e218beef122c9b55ef177",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/16/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/16/d5c472079e9ce461-mobile.jpg",
+      "route": "/preview/16-field-atlas/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:e85dd591cf3b310868218d3612606731ef362932fc61a985b7255c271969ca22",
+      "sha256": "d5c472079e9ce461576f544804a5342420c8a38bb1e61563a15b28dc5718b87e",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/16/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/16/efa3e82b534e33fd-detail.jpg",
+      "route": "/preview/16-field-atlas/detail",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "detail",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:e85dd591cf3b310868218d3612606731ef362932fc61a985b7255c271969ca22",
+      "sha256": "efa3e82b534e33fdc1a50e5400d9f190f2355dccc2805ff7690fa05679f0e212",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/16/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/16/1fab313843e8b426-full-page.jpg",
+      "route": "/preview/16-field-atlas/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:e85dd591cf3b310868218d3612606731ef362932fc61a985b7255c271969ca22",
+      "sha256": "1fab313843e8b4263127bb694c1dfac663a63c9bc632deee5e9fc1aa7606be95",
+      "fullPage": true
+    }
+  ]
+}

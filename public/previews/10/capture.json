@@ -1,0 +1,64 @@
+{
+  "designId": "10",
+  "sourceRevision": "sha256:6ac4ad3a7c357ef3c04fc51ba09d80638e412089f62b80309c4aa19f00ed6510",
+  "capturedAt": "2026-10-26T22:48:21.920Z",
+  "browser": "156.0.4314.42",
+  "captures": [
+    {
+      "file": "/previews/10/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/10/62a4aa7d1bdb1562-desktop.jpg",
+      "route": "/preview/10-evidence-ledger/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:6ac4ad3a7c357ef3c04fc51ba09d80638e412089f62b80309c4aa19f00ed6510",
+      "sha256": "62a4aa7d1bdb1562832ea42f9f0a17ac67d82cf5c45cd62c4f29e66f99ac4e6f",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/10/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/10/1bb38eadd7234ad3-mobile.jpg",
+      "route": "/preview/10-evidence-ledger/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:6ac4ad3a7c357ef3c04fc51ba09d80638e412089f62b80309c4aa19f00ed6510",
+      "sha256": "1bb38eadd7234ad392b716785e715a64fe6e6e823571e78821dc483f252079a7",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/10/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/10/29cf2ff2d7e76ecb-detail.jpg",
+      "route": "/preview/10-evidence-ledger/record",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "record",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:6ac4ad3a7c357ef3c04fc51ba09d80638e412089f62b80309c4aa19f00ed6510",
+      "sha256": "29cf2ff2d7e76ecb636ecdb4a66da6015b880e22e2b87907a40b09caa0a37723",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/10/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/10/813554089025cbbb-full-page.jpg",
+      "route": "/preview/10-evidence-ledger/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:6ac4ad3a7c357ef3c04fc51ba09d80638e412089f62b80309c4aa19f00ed6510",
+      "sha256": "813554089025cbbb3e824a37abf9b203a7ac0234312a5bcad6ec3b2223a97356",
+      "fullPage": true
+    }
+  ]
+}

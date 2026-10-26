@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "id": "28",
+  "slug": "grand-hotel",
+  "name": "Grand Hotel",
+  "brand": "Alder House",
+  "family": "Commerce & places",
+  "status": "ready",
+  "thesis": "Let visitors imagine an arrival, then make the booking choices concrete.",
+  "suitableFor": [
+    "Hospitality",
+    "Travel"
+  ],
+  "character": "Restrained",
+  "traits": {
+    "composition": "Arrival photographs with an accompanying booking rail and comparable rooms",
+    "navigation": "Stay, explore, and explicit availability",
+    "typography": "Libre Baskerville + DM Sans",
+    "density": "Low",
+    "imagery": "Licensed illustrative photography",
+    "surface": "Cream and sage hospitality surfaces with full-bleed landscape photography",
+    "motion": "Minimal"
+  },
+  "effort": "Medium",
+  "definingFeatures": [
+    "An arrival narrative",
+    "Room details at the point of choice",
+    "Practical booking information"
+  ],
+  "adaptableChoices": [
+    "Brand and content",
+    "Accent colour with verified contrast",
+    "Equivalent licensed typefaces"
+  ],
+  "entryRoute": "/preview/28-grand-hotel/start",
+  "states": [
+    {
+      "key": "rooms",
+      "label": "Sample availability",
+      "route": "/preview/28-grand-hotel/rooms"
+    },
+    {
+      "key": "summary",
+      "label": "Booking summary",
+      "route": "/preview/28-grand-hotel/summary"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/28/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/28/d338e54a1b0d9bff-desktop.jpg",
+      "route": "/preview/28-grand-hotel/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:325399a17f764cdb08b5369547e864c1cf2fac0559f5597621a6a3ceb6446ee4",
+      "sha256": "d338e54a1b0d9bffb2f6a661a66a1683865e561941f3d06ae40e49a9900000b7",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/28/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/28/4cb70012ee74baf5-mobile.jpg",
+      "route": "/preview/28-grand-hotel/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:325399a17f764cdb08b5369547e864c1cf2fac0559f5597621a6a3ceb6446ee4",
+      "sha256": "4cb70012ee74baf52fbe580a2f7045875cfe96de0911c4c1d852449c325b5fdd",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/28/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/28/3a1a95d1bbcf6652-detail.jpg",
+      "route": "/preview/28-grand-hotel/rooms",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "rooms",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:325399a17f764cdb08b5369547e864c1cf2fac0559f5597621a6a3ceb6446ee4",
+      "sha256": "3a1a95d1bbcf665277c05790a655ff560729b1497cc762c68f45f6dc91549d9c",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/28/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/28/30c85e410f79c3c4-full-page.jpg",
+      "route": "/preview/28-grand-hotel/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:325399a17f764cdb08b5369547e864c1cf2fac0559f5597621a6a3ceb6446ee4",
+      "sha256": "30c85e410f79c3c44ed57f80dd15cb295d530b7d441128a78d2bb660bd8679b2",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/28-grand-hotel",
+  "neighbours": [
+    "08",
+    "24"
+  ],
+  "palette": {
+    "page": "#f5f1e8",
+    "surface": "#ffffff",
+    "ink": "#304535",
+    "accent": "#8a503a"
+  },
+  "fonts": [
+    "Libre Baskerville",
+    "DM Sans"
+  ],
+  "brief": "**Philosophy and fit.** Let visitors imagine an arrival, then make the booking choices concrete. Fits destination hotels, lodges, retreats, and travel accommodations.\n\n**Visual grammar.** A sequence of wide photographic scenes introduces arrival, rooms, surroundings, and daily life. A compact booking rail accompanies the story. Use restrained serif display type, warm white surfaces, deep forest text, and terracotta accents. Navigation separates staying, exploring, and planning; room information uses consistent comparisons beneath the narrative.\n\n**Specimen and flow.** *Alder House* is a fictional lakeside hotel. Select dates, compare rooms, and review a sample booking summary. Supporting views include a room detail and an availability result with no matching rooms. Amenities, occupancy, and cancellation examples appear beside the decision they affect.\n\n**Responsive behaviour.** The booking rail becomes an accessible expandable section with a persistent summary. Photographic scenes retain ordinary scrolling; essential room details load before optional imagery.\n\n**Identity rules.** Preserve the arrival narrative and explicit booking information. Avoid scroll hijacking, looping video as a requirement, and identical full-screen photographs with no useful content. **Effort: medium.**",
+  "scope": "An expansive sample page with representative local interactions; no production business backend."
+}

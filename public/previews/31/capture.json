@@ -1,0 +1,64 @@
+{
+  "designId": "31",
+  "sourceRevision": "sha256:e421eb9c96d2936a740bbca8044c8b15cfba79ecfbc6413252eea39df6fd5407",
+  "capturedAt": "2026-10-26T22:49:27.319Z",
+  "browser": "156.0.4314.42",
+  "captures": [
+    {
+      "file": "/previews/31/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/31/a339bd30789484c7-desktop.jpg",
+      "route": "/preview/31-bauhaus-workshop/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:e421eb9c96d2936a740bbca8044c8b15cfba79ecfbc6413252eea39df6fd5407",
+      "sha256": "a339bd30789484c705404fbbfe4f72386e27cc67900314e295cf6c0e3a4e4189",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/31/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/31/819a8e567e989f03-mobile.jpg",
+      "route": "/preview/31-bauhaus-workshop/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:e421eb9c96d2936a740bbca8044c8b15cfba79ecfbc6413252eea39df6fd5407",
+      "sha256": "819a8e567e989f033ebf59517cf8069f0edfbb6503628ade8d38e72b07c113c9",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/31/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/31/17a3f6638c3c4f61-detail.jpg",
+      "route": "/preview/31-bauhaus-workshop/workshop",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "workshop",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:e421eb9c96d2936a740bbca8044c8b15cfba79ecfbc6413252eea39df6fd5407",
+      "sha256": "17a3f6638c3c4f61c46519275dadd861bfc24f065990c3dce359265a3fc52a80",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/31/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/31/4289ae93a5a71408-full-page.jpg",
+      "route": "/preview/31-bauhaus-workshop/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:e421eb9c96d2936a740bbca8044c8b15cfba79ecfbc6413252eea39df6fd5407",
+      "sha256": "4289ae93a5a71408f3001cd8243bb8d5a3fd26056dd5306f6819669a280ec40f",
+      "fullPage": true
+    }
+  ]
+}

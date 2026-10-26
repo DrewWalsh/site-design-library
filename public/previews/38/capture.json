@@ -1,0 +1,64 @@
+{
+  "designId": "38",
+  "sourceRevision": "sha256:2370261da22f84e3a34402a9b84cbecc29d74b0f514a7f78b6ec89f7fbc10ba6",
+  "capturedAt": "2026-10-26T22:49:49.195Z",
+  "browser": "156.0.4314.42",
+  "captures": [
+    {
+      "file": "/previews/38/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/38/c0afd460798c8f41-desktop.jpg",
+      "route": "/preview/38-pixel-arcade/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:2370261da22f84e3a34402a9b84cbecc29d74b0f514a7f78b6ec89f7fbc10ba6",
+      "sha256": "c0afd460798c8f4127af754c004a5821d2b42513b45575ae6e68b1e0887f6806",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/38/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/38/034044c49a9cbe95-mobile.jpg",
+      "route": "/preview/38-pixel-arcade/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:2370261da22f84e3a34402a9b84cbecc29d74b0f514a7f78b6ec89f7fbc10ba6",
+      "sha256": "034044c49a9cbe951931fd88038974d50ba53afbab66ad9798f1ea0b2a8a3818",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/38/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/38/01b964c6b828f5b0-detail.jpg",
+      "route": "/preview/38-pixel-arcade/event",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "event",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:2370261da22f84e3a34402a9b84cbecc29d74b0f514a7f78b6ec89f7fbc10ba6",
+      "sha256": "01b964c6b828f5b0a6e1575c1adc4a67fec28a2bd97f0a7d026f2b24ce3643b9",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/38/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/38/759b8d5d0e6cdddf-full-page.jpg",
+      "route": "/preview/38-pixel-arcade/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:2370261da22f84e3a34402a9b84cbecc29d74b0f514a7f78b6ec89f7fbc10ba6",
+      "sha256": "759b8d5d0e6cdddf011eca9748b07e0f421be6011a673e875454ebf2b9603eb0",
+      "fullPage": true
+    }
+  ]
+}

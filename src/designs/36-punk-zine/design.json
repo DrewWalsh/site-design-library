@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "id": "36",
+  "slug": "punk-zine",
+  "name": "Punk Zine",
+  "brand": "Underpass",
+  "family": "Playful & material",
+  "status": "ready",
+  "thesis": "Treat publishing as an authored, opinionated act.",
+  "suitableFor": [
+    "Editorial",
+    "Culture"
+  ],
+  "character": "Expressive",
+  "traits": {
+    "composition": "Irregular editorial collage with a plain contents strip",
+    "navigation": "Issue contents and chronological archive",
+    "typography": "Archivo Black + Libre Baskerville",
+    "density": "Medium",
+    "imagery": "Licensed illustrative photography",
+    "surface": "Newsprint, heavy black type, lime markers, collage and uneven rules",
+    "motion": "Minimal"
+  },
+  "effort": "Medium",
+  "definingFeatures": [
+    "Cutout photography and material layering",
+    "Unequal headline scales",
+    "Readable long-form editorial text"
+  ],
+  "adaptableChoices": [
+    "Brand and content",
+    "Accent colour with verified contrast",
+    "Equivalent licensed typefaces"
+  ],
+  "entryRoute": "/preview/36-punk-zine/start",
+  "states": [
+    {
+      "key": "article",
+      "label": "After the last train",
+      "route": "/preview/36-punk-zine/article"
+    },
+    {
+      "key": "archive",
+      "label": "Issue archive",
+      "route": "/preview/36-punk-zine/archive"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/36/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/36/a7faae3f4766c9f0-desktop.jpg",
+      "route": "/preview/36-punk-zine/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:a263f3adfb7d13e856e7916c86071688eb83e5f5a36459275f64035ba5862167",
+      "sha256": "a7faae3f4766c9f0b40443a3db9b37642d5552d26bffe38b918fcd0a93ea2878",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/36/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/36/6c4fc38c51866061-mobile.jpg",
+      "route": "/preview/36-punk-zine/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:a263f3adfb7d13e856e7916c86071688eb83e5f5a36459275f64035ba5862167",
+      "sha256": "6c4fc38c5186606111a45e502122cee63c56aa2cd20322fa5fd339f88d41bade",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/36/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/36/a35f9be3fa34c3ae-detail.jpg",
+      "route": "/preview/36-punk-zine/article",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "article",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:a263f3adfb7d13e856e7916c86071688eb83e5f5a36459275f64035ba5862167",
+      "sha256": "a35f9be3fa34c3ae5a30a24c35ab8e43cfd152b4a275fe6531a785ccacdeffed",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/36/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/36/539bbf664ea672c6-full-page.jpg",
+      "route": "/preview/36-punk-zine/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:a263f3adfb7d13e856e7916c86071688eb83e5f5a36459275f64035ba5862167",
+      "sha256": "539bbf664ea672c67aad74a1c15973b142b48a5b3203e881df4553590aeae0d8",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/36-punk-zine",
+  "neighbours": [
+    "09",
+    "44"
+  ],
+  "palette": {
+    "page": "#e9e7dc",
+    "surface": "#ffffff",
+    "ink": "#141714",
+    "accent": "#c5f34f"
+  },
+  "fonts": [
+    "Archivo Black",
+    "Libre Baskerville"
+  ],
+  "brief": "**Philosophy and fit.** Treat publishing as an authored, opinionated act. Suitable for independent magazines, music collectives, criticism, activist archives, and underground event programmes.\n\n**Visual grammar.** A masthead anchors an irregular editorial spread: narrow text columns, cutout photography, rotated section labels, torn dividers, and deliberately mismatched headline scales. Use condensed grotesque headlines, readable serif body copy, ink black, dirty white, and one acidic spot colour. A plain contents strip provides dependable navigation beneath the collage.\n\n**Specimen and flow.** *Underpass* is a fictional independent music journal. Open an issue, select a feature from its annotated cover, and read the full article. Supporting views are a chronological issue archive and an article’s credits and related reading section. All decorative scraps accompany actual editorial content.\n\n**Mobile and motion.** Recompose the spread into a clear reading sequence; captions remain beside their images. Collage elements are static, with no background jitter or compulsory animation.\n\n**Identity and effort.** Preserve material layering and editorial tension; avoid illegible body text, arbitrary overlap, and a conventional card grid hidden beneath distress textures. **Effort: medium.**",
+  "scope": "An expansive sample page with representative local interactions; no production business backend."
+}

@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "id": "13",
+  "slug": "project-workbench",
+  "name": "Project Workbench",
+  "brand": "Scene Workshop",
+  "family": "Workspaces & discovery",
+  "status": "ready",
+  "thesis": "Keep a project's structure, current object, and relevant properties available together.",
+  "suitableFor": [
+    "Workspaces",
+    "Authoring"
+  ],
+  "character": "Restrained",
+  "traits": {
+    "composition": "Three-pane project tree, central scene, and contextual inspector",
+    "navigation": "Hierarchical object selection and named mobile views",
+    "typography": "DM Sans",
+    "density": "High",
+    "imagery": "Typography, rules, and interface structure",
+    "surface": "Dark work panels, nested tool rails and a coloured scene canvas",
+    "motion": "Minimal"
+  },
+  "effort": "Medium",
+  "definingFeatures": [
+    "Visible project context",
+    "Object and properties stay connected",
+    "Clear unsaved and discard states"
+  ],
+  "adaptableChoices": [
+    "Brand and content",
+    "Accent colour with verified contrast",
+    "Equivalent licensed typefaces"
+  ],
+  "entryRoute": "/preview/13-project-workbench/start",
+  "states": [
+    {
+      "key": "edit",
+      "label": "Unsaved scene edits",
+      "route": "/preview/13-project-workbench/edit"
+    },
+    {
+      "key": "preview",
+      "label": "Scene preview",
+      "route": "/preview/13-project-workbench/preview"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/13/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/13/81d2841d1787884c-desktop.jpg",
+      "route": "/preview/13-project-workbench/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:7e3386bbeea7670f06e2d4e46b323c52733a39ecb084c50099ebc77c5c65c3b0",
+      "sha256": "81d2841d1787884c97a2ac608592b86595069e6318415524761bb2f700fe69e3",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/13/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/13/d253832a110219b1-mobile.jpg",
+      "route": "/preview/13-project-workbench/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:7e3386bbeea7670f06e2d4e46b323c52733a39ecb084c50099ebc77c5c65c3b0",
+      "sha256": "d253832a110219b1fd69cbd3cbcd5abf06491ae56f1c80f8cf40ad166d2fdba3",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/13/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/13/39b067ec17ddde5c-detail.jpg",
+      "route": "/preview/13-project-workbench/edit",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "edit",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:7e3386bbeea7670f06e2d4e46b323c52733a39ecb084c50099ebc77c5c65c3b0",
+      "sha256": "39b067ec17ddde5c2380b9c87be410c0a9104fdf68b284f6de46de33005cb9f7",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/13/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/13/51cf1c25dcfe49f7-full-page.jpg",
+      "route": "/preview/13-project-workbench/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:7e3386bbeea7670f06e2d4e46b323c52733a39ecb084c50099ebc77c5c65c3b0",
+      "sha256": "51cf1c25dcfe49f7dd3305d4f18cb48f70cfe67a0ff2bebd56524b88dc398bae",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/13-project-workbench",
+  "neighbours": [
+    "11",
+    "12"
+  ],
+  "palette": {
+    "page": "#20262c",
+    "surface": "#2b343c",
+    "ink": "#e5ecec",
+    "accent": "#8ed2ba"
+  },
+  "fonts": [
+    "DM Sans"
+  ],
+  "brief": "**Philosophy and fit.** Keep a project's structure, current object, and relevant properties available together. Suitable for content editors, asset managers, authoring tools, and technical project interfaces.\n\n**Visual grammar.** Use a three-pane composition: a hierarchical navigator, a central document or object view, and a contextual inspector. A restrained app header holds global actions. Neutral sans text, monospace identifiers, graphite surfaces, bright readable text, and a single teal selection accent establish a workmanlike environment. Pane boundaries and selected states should be clear without elaborate chrome.\n\n**Specimen and flow.** *Scene Workshop* contains a fictional collection of game scenes. Users select a scene, edit its descriptive metadata, and preview the resulting scene card. Supporting states show unsaved changes with a discard action and a search result that opens the matching object.\n\n**Adaptation and identity.** Mobile converts panes into labelled views while preserving selection and edits. Preserve hierarchical context and the relationship between object and inspector; avoid turning the centre into a metrics dashboard or building a full code editor. **Effort: medium.**",
+  "scope": "An expansive sample page with representative local interactions; no production business backend."
+}

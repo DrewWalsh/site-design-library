@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "id": "20",
+  "slug": "the-directory",
+  "name": "The Directory",
+  "brand": "Useful Places",
+  "family": "Workspaces & discovery",
+  "status": "ready",
+  "thesis": "Help users narrow a large collection and compare candidates efficiently.",
+  "suitableFor": [
+    "Directories",
+    "Discovery"
+  ],
+  "character": "Restrained",
+  "traits": {
+    "composition": "Stable facet rail and comparable horizontal venue listings",
+    "navigation": "Facets, detail pages, and a short comparison tray",
+    "typography": "DM Sans",
+    "density": "Medium",
+    "imagery": "Typography, rules, and interface structure",
+    "surface": "Quiet white and green directory rows, practical attribute badges",
+    "motion": "None"
+  },
+  "effort": "Medium",
+  "definingFeatures": [
+    "Comparable attributes in every row",
+    "Visible result feedback",
+    "A practical shortlist"
+  ],
+  "adaptableChoices": [
+    "Brand and content",
+    "Accent colour with verified contrast",
+    "Equivalent licensed typefaces"
+  ],
+  "entryRoute": "/preview/20-the-directory/start",
+  "states": [
+    {
+      "key": "detail",
+      "label": "Venue detail",
+      "route": "/preview/20-the-directory/detail"
+    },
+    {
+      "key": "compare",
+      "label": "Workspace comparison",
+      "route": "/preview/20-the-directory/compare"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/20/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/20/c4a101b1bb565d99-desktop.jpg",
+      "route": "/preview/20-the-directory/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:a9cee339bff71bbdc1436f1f79cde118422e5af0341ad79b024e9fbbdf1ce110",
+      "sha256": "c4a101b1bb565d99b7316b47f27a3694d4bb1e4e7aaf7d0de066ae6ad3051597",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/20/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/20/8e9cda6b010e7c82-mobile.jpg",
+      "route": "/preview/20-the-directory/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:a9cee339bff71bbdc1436f1f79cde118422e5af0341ad79b024e9fbbdf1ce110",
+      "sha256": "8e9cda6b010e7c821527bef3e031d210d2db9e02dabd3600566c0bc46ad91f7b",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/20/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/20/f631246332b04e7c-detail.jpg",
+      "route": "/preview/20-the-directory/detail",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "detail",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:a9cee339bff71bbdc1436f1f79cde118422e5af0341ad79b024e9fbbdf1ce110",
+      "sha256": "f631246332b04e7c68c49e045488f8def03d2107b542e070e58263b6b4da36b4",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/20/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/20/6c8873e75af10f2f-full-page.jpg",
+      "route": "/preview/20-the-directory/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:a9cee339bff71bbdc1436f1f79cde118422e5af0341ad79b024e9fbbdf1ce110",
+      "sha256": "6c8873e75af10f2f0a10ae10561a1c328a02e2d5c82e4a452584e82db332f0a5",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/20-the-directory",
+  "neighbours": [
+    "21",
+    "50"
+  ],
+  "palette": {
+    "page": "#f7f9f8",
+    "surface": "#ffffff",
+    "ink": "#263d3d",
+    "accent": "#2b6b65"
+  },
+  "fonts": [
+    "DM Sans"
+  ],
+  "brief": "**Philosophy and fit.** Help users narrow a large collection and compare candidates efficiently. Suitable for professional listings, software catalogues, resource collections, local services, and structured recommendations.\n\n**Visual grammar.** Use prominent search, a stable facet column, a concise results summary, and information-rich horizontal listings. A crisp sans, white and pale blue-grey surfaces, deep charcoal text, and restrained teal selections make the contents easy to scan. Each record exposes the same useful attributes; small thumbnails remain secondary. An optional comparison tray collects chosen records.\n\n**Specimen and flow.** *Useful Places* catalogues fictional workspaces. Visitors filter by equipment and opening day, compare selected venues, and inspect a detailed listing. Supporting states show no matching results with removable filters and a comparison view that highlights differing attributes.\n\n**Adaptation and identity.** Mobile uses an explicit filter panel, visible active filters, and stacked comparison attributes. Preserve comparability, predictable facets, and clear result feedback; avoid marketplace promotion modules, arbitrary recommendation ordering, and a wall of image-led cards. Motion is unnecessary. **Effort: medium.**",
+  "scope": "An expansive sample page with representative local interactions; no production business backend."
+}

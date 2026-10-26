@@ -1,0 +1,15 @@
+.specimen {
+  --page: #fbf8f1;
+  --surface: #ffffff;
+  --ink: #2e3940;
+  --muted: #2e3940;
+  --accent: #386b89;
+  --line: color-mix(in srgb, var(--ink) 22%, transparent);
+  --font-heading: 'DM Sans', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+  --space: 8px;
+  --measure: 65ch;
+  --content: 1240px;
+  --radius: 12px;
+  --duration: 160ms;
+}

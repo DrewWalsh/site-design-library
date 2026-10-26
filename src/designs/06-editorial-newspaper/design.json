@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "id": "06",
+  "slug": "editorial-newspaper",
+  "name": "Editorial Newspaper",
+  "brand": "The Northbank Record",
+  "family": "Clarity & editorial",
+  "status": "ready",
+  "thesis": "Communicate editorial judgement across many stories at once.",
+  "suitableFor": [
+    "Editorial",
+    "News"
+  ],
+  "character": "Restrained",
+  "traits": {
+    "composition": "Newspaper masthead, ranked lead story, secondary columns, and compact briefs",
+    "navigation": "Section links and article reading",
+    "typography": "Libre Baskerville + DM Sans",
+    "density": "High",
+    "imagery": "Licensed illustrative photography",
+    "surface": "Newsprint columns, ink rules, headlines and compact metadata",
+    "motion": "Minimal"
+  },
+  "effort": "Medium",
+  "definingFeatures": [
+    "Visible editorial ranking",
+    "Unequal image and headline scales",
+    "Rules instead of story cards"
+  ],
+  "adaptableChoices": [
+    "Brand and content",
+    "Accent colour with verified contrast",
+    "Equivalent licensed typefaces"
+  ],
+  "entryRoute": "/preview/06-editorial-newspaper/start",
+  "states": [
+    {
+      "key": "article",
+      "label": "The river path returns",
+      "route": "/preview/06-editorial-newspaper/article"
+    },
+    {
+      "key": "saved",
+      "label": "Saved reading",
+      "route": "/preview/06-editorial-newspaper/saved"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/06/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/06/1aadf66e02a98e7b-desktop.jpg",
+      "route": "/preview/06-editorial-newspaper/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:7b2b1ef90083ac4c8a96ed46a39d2cc6751fcde6d1570284d2538d552de6b6d6",
+      "sha256": "1aadf66e02a98e7b6e2cb8c5769e64675d4ef72abff619c2716d86b1e7c22f0d",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/06/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/06/1484bd262d8d6cc8-mobile.jpg",
+      "route": "/preview/06-editorial-newspaper/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:7b2b1ef90083ac4c8a96ed46a39d2cc6751fcde6d1570284d2538d552de6b6d6",
+      "sha256": "1484bd262d8d6cc8d5b693b6ba4e1153ea4de6e5e8101f6dc1ec0f397670358d",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/06/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/06/95eb426ba0f8e95c-detail.jpg",
+      "route": "/preview/06-editorial-newspaper/article",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "article",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:7b2b1ef90083ac4c8a96ed46a39d2cc6751fcde6d1570284d2538d552de6b6d6",
+      "sha256": "95eb426ba0f8e95c2ba8c476caa7b2d0e611366fd91324459a54b9026d53cbe9",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/06/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/06/d583a957b572b500-full-page.jpg",
+      "route": "/preview/06-editorial-newspaper/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:7b2b1ef90083ac4c8a96ed46a39d2cc6751fcde6d1570284d2538d552de6b6d6",
+      "sha256": "d583a957b572b500a6d2d6cdc196f52c3092ae160dfef6c329533bbddb640652",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/06-editorial-newspaper",
+  "neighbours": [
+    "09",
+    "07"
+  ],
+  "palette": {
+    "page": "#f8f6ee",
+    "surface": "#ffffff",
+    "ink": "#232825",
+    "accent": "#9b302f"
+  },
+  "fonts": [
+    "Libre Baskerville",
+    "DM Sans"
+  ],
+  "brief": "**Philosophy and fit.** Communicate editorial judgement across many stories at once. Suitable for newsrooms, city publications, trade journals, and frequently updated magazines.\n\n**Visual grammar.** A strong masthead, date line, section navigation, lead story, secondary columns, and compact briefs create an unmistakable front page. Use assertive serif headlines, readable body text, small sans metadata, warm white, near-black ink, thin dividing rules, and restrained red alerts. Image scale indicates editorial priority. Stories share a typographic system without being enclosed in repetitive cards.\n\n**Specimen and flow.** *The Northbank Record* offers fictional local reporting. Visitors browse the front page, switch section, and open a feature with related coverage. Supporting states include a search results page and a saved-reading list with a clear empty state.\n\n**Adaptation and identity.** Mobile keeps the lead hierarchy and orders secondary stories explicitly rather than stacking desktop columns blindly. Preserve visible editorial ranking, meaningful sections, and useful metadata; avoid infinite feeds, identical story weights, and a hero that consumes the whole opening screen. **Effort: medium.**",
+  "scope": "An expansive sample page with representative local interactions; no production business backend."
+}

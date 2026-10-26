@@ -1,0 +1,36 @@
+{
+  "name": "site-design-library",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.25.0",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "catalogue": "tsx scripts/build-catalogue.ts",
+    "typecheck": "vue-tsc --noEmit",
+    "build": "pnpm catalogue && pnpm typecheck && vite build && tsx scripts/prepare-dist.ts",
+    "preview": "vite preview --host 127.0.0.1",
+    "capture": "tsx scripts/capture-previews.ts",
+    "refs:stage": "tsx scripts/references.ts stage",
+    "refs:publish": "tsx scripts/references.ts publish",
+    "refs:fetch": "tsx scripts/references.ts fetch",
+    "format": "prettier --write src scripts tests *.ts *.json *.html",
+    "test": "playwright test",
+    "check": "pnpm build && pnpm test"
+  },
+  "dependencies": {
+    "vue": "3.5.44",
+    "vue-router": "4.6.4"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.0",
+    "@playwright/test": "^1.56.0",
+    "@types/node": "^24.0.0",
+    "@vitejs/plugin-vue": "6.0.10",
+    "prettier": "^3.9.10",
+    "tsx": "^4.20.0",
+    "typescript": "~5.9.3",
+    "vite": "8.3.5",
+    "vue-tsc": "^3.1.0"
+  }
+}

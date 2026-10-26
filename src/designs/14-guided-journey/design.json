@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "id": "14",
+  "slug": "guided-journey",
+  "name": "Guided Journey",
+  "brand": "Workshop Finder",
+  "family": "Workspaces & discovery",
+  "status": "ready",
+  "thesis": "Reduce a complicated decision into understandable, reversible steps.",
+  "suitableFor": [
+    "Onboarding",
+    "Public services"
+  ],
+  "character": "Restrained",
+  "traits": {
+    "composition": "Calm single-column question stage with a persistent answer summary",
+    "navigation": "Reversible steps and an editable review",
+    "typography": "DM Sans",
+    "density": "Medium",
+    "imagery": "Typography, rules, and interface structure",
+    "surface": "Warm off-white, generous form rows and a muted purple progress line",
+    "motion": "Minimal"
+  },
+  "effort": "Medium",
+  "definingFeatures": [
+    "Visible progress",
+    "Grouped clear choices",
+    "Answers remain easy to revise"
+  ],
+  "adaptableChoices": [
+    "Brand and content",
+    "Accent colour with verified contrast",
+    "Equivalent licensed typefaces"
+  ],
+  "entryRoute": "/preview/14-guided-journey/start",
+  "states": [
+    {
+      "key": "review",
+      "label": "Review your choices",
+      "route": "/preview/14-guided-journey/review"
+    },
+    {
+      "key": "incomplete",
+      "label": "Required answer guidance",
+      "route": "/preview/14-guided-journey/incomplete"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/14/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/14/b64c035b71633746-desktop.jpg",
+      "route": "/preview/14-guided-journey/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:7edf71f67c0d24257a6551422a36edfecfbd180156bc9e064e45d07b75d65b72",
+      "sha256": "b64c035b71633746cd85ef03b88cd01bdd7e077c418188ed71fcdf55a26ac39a",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/14/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/14/69d4ed0bacb1981d-mobile.jpg",
+      "route": "/preview/14-guided-journey/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:7edf71f67c0d24257a6551422a36edfecfbd180156bc9e064e45d07b75d65b72",
+      "sha256": "69d4ed0bacb1981dbc8c8caa9950b57d1d974ec6bbf94f36a84ada85ff3affc9",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/14/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/14/1e8bc70522c7763a-detail.jpg",
+      "route": "/preview/14-guided-journey/review",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "review",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:7edf71f67c0d24257a6551422a36edfecfbd180156bc9e064e45d07b75d65b72",
+      "sha256": "1e8bc70522c7763a0adc1a12b012ca17bdb2b0f58fa7942211d9e1dde2b6299e",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/14/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/14/3b3e2c0485c072bb-full-page.jpg",
+      "route": "/preview/14-guided-journey/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:7edf71f67c0d24257a6551422a36edfecfbd180156bc9e064e45d07b75d65b72",
+      "sha256": "3b3e2c0485c072bbcb32d179ccc7764e9b44d0d0f2726ede721c3c5251a5ef97",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/14-guided-journey",
+  "neighbours": [
+    "01",
+    "29"
+  ],
+  "palette": {
+    "page": "#f4f0ea",
+    "surface": "#ffffff",
+    "ink": "#392d44",
+    "accent": "#6d4d8c"
+  },
+  "fonts": [
+    "DM Sans"
+  ],
+  "brief": "**Philosophy and fit.** Reduce a complicated decision into understandable, reversible steps. Suitable for onboarding, applications, configuration, booking preparation, and structured self-assessment.\n\n**Visual grammar.** Use a calm single-column stage, a compact progress indicator, a clear current question, and a persistent summary of collected choices. A warm sans, generous control spacing, pale stone background, dark plum text, and a restrained violet action colour support focus. Group related questions together; introduce explanatory text before unfamiliar choices rather than hiding it behind tooltips.\n\n**Specimen and flow.** *Workshop Finder* guides visitors through choosing an interest, available day, and preferred format before recommending fixture workshops. Supporting states show an incomplete required answer with inline guidance and a review screen where any answer can be edited.\n\n**Adaptation and identity.** Mobile keeps the current question and navigation actions in a stable order, without obscuring content behind fixed controls. Preserve reversibility, visible progress, and informative summaries; avoid one-click-per-word pacing, false urgency, and unexplained branching. Motion can be disabled entirely. **Effort: medium.**",
+  "scope": "An expansive sample page with representative local interactions; no production business backend."
+}

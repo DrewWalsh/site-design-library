@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "id": "26",
+  "slug": "field-notes",
+  "name": "Field Notes",
+  "brand": "Ridge Journal",
+  "family": "Commerce & places",
+  "status": "ready",
+  "thesis": "Organise discovery around observation, place, and practical preparation.",
+  "suitableFor": [
+    "Travel",
+    "Editorial"
+  ],
+  "character": "Restrained",
+  "traits": {
+    "composition": "Field report with observation labels, annotated landscape, and preparation notes",
+    "navigation": "Terrain filters, route reports, and a packing checklist",
+    "typography": "Libre Baskerville + DM Sans",
+    "density": "Medium",
+    "imagery": "Licensed illustrative photography",
+    "surface": "Field-paper background, route facts, landscape photos and thin rules",
+    "motion": "Minimal"
+  },
+  "effort": "Medium",
+  "definingFeatures": [
+    "Observation paired with practical data",
+    "Notebook-like entry metadata",
+    "Preparation stays close to the route"
+  ],
+  "adaptableChoices": [
+    "Brand and content",
+    "Accent colour with verified contrast",
+    "Equivalent licensed typefaces"
+  ],
+  "entryRoute": "/preview/26-field-notes/start",
+  "states": [
+    {
+      "key": "report",
+      "label": "Ridge field report",
+      "route": "/preview/26-field-notes/report"
+    },
+    {
+      "key": "saved",
+      "label": "Saved routes",
+      "route": "/preview/26-field-notes/saved"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/26/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/26/31c98a58d844b94d-desktop.jpg",
+      "route": "/preview/26-field-notes/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:09806b782d4e749b5ae47ee75c2d22ad0b4ad26e4da7c1cd994ffef406d59e80",
+      "sha256": "31c98a58d844b94d984529ec33064a4405a53a4a916934a76f5e3ea97ac5083c",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/26/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/26/28fd82c2284639e1-mobile.jpg",
+      "route": "/preview/26-field-notes/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:09806b782d4e749b5ae47ee75c2d22ad0b4ad26e4da7c1cd994ffef406d59e80",
+      "sha256": "28fd82c2284639e18dcb427f69e51e6f0793650acf3189d53509b85c5be87b2f",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/26/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/26/f39f503e777b795a-detail.jpg",
+      "route": "/preview/26-field-notes/report",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "report",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:09806b782d4e749b5ae47ee75c2d22ad0b4ad26e4da7c1cd994ffef406d59e80",
+      "sha256": "f39f503e777b795a06e173de364d344600c5b66def23bbed032bb9d357b2169a",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/26/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/26/62da6cd20480b9d4-full-page.jpg",
+      "route": "/preview/26-field-notes/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:09806b782d4e749b5ae47ee75c2d22ad0b4ad26e4da7c1cd994ffef406d59e80",
+      "sha256": "62da6cd20480b9d49b1e8edcc67f30345317e39f1c248fddfdc9a700db5632ed",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/26-field-notes",
+  "neighbours": [
+    "16",
+    "08"
+  ],
+  "palette": {
+    "page": "#eeeadd",
+    "surface": "#ffffff",
+    "ink": "#384331",
+    "accent": "#5b6f43"
+  },
+  "fonts": [
+    "Libre Baskerville",
+    "DM Sans"
+  ],
+  "brief": "**Philosophy and fit.** Organise discovery around observation, place, and practical preparation. Fits outdoor guides, conservation groups, travel journals, and field-based education.\n\n**Visual grammar.** Use notebook-like entries with location, season, conditions, and annotated photographs. A modest section index gives access to routes, observations, and equipment. Moss green, sand, and charcoal accompany a readable serif, compact sans labels, and restrained line illustrations. Texture stays behind content and never carries information.\n\n**Specimen and flow.** *Ridge Journal* documents fictional walking routes. Filter routes by terrain, read a route’s field report, and add required equipment to a local packing checklist. Supporting views include an observation detail and a saved-routes list with an empty state. Distances and conditions are explicitly sample data.\n\n**Responsive behaviour.** Annotations move beneath images in a numbered list. Route information appears before decorative imagery; checklists use large labelled controls and work without map gestures.\n\n**Identity rules.** Preserve the relationship between observation and practical detail. Avoid turning the design into a generic green wellness site or making essential information resemble faint handwriting. **Effort: medium.**",
+  "scope": "An expansive sample page with representative local interactions; no production business backend."
+}

@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "id": "50",
+  "slug": "infinite-index",
+  "name": "Infinite Index",
+  "brand": "The Reference Room",
+  "family": "Retro & experimental",
+  "status": "ready",
+  "thesis": "Make a finite collection feel explorable at several scales without surrendering orientation.",
+  "suitableFor": [
+    "Directories",
+    "Portfolio"
+  ],
+  "character": "Expressive",
+  "traits": {
+    "composition": "Dense finite visual index with discrete overview, medium, and detail densities",
+    "navigation": "Anchored search, medium filters, pagination, and return-to-results",
+    "typography": "DM Sans",
+    "density": "High",
+    "imagery": "Original CSS illustrations and graphic studies",
+    "surface": "Neutral collection field, varied original studies and scale-dependent labels",
+    "motion": "Minimal"
+  },
+  "effort": "Medium",
+  "definingFeatures": [
+    "Density changes the amount of visible context",
+    "Explicit finite pagination",
+    "Text-list alternative with stable result restoration"
+  ],
+  "adaptableChoices": [
+    "Brand and content",
+    "Accent colour with verified contrast",
+    "Equivalent licensed typefaces"
+  ],
+  "entryRoute": "/preview/50-infinite-index/start",
+  "states": [
+    {
+      "key": "detail",
+      "label": "Graphic study detail",
+      "route": "/preview/50-infinite-index/detail"
+    },
+    {
+      "key": "list",
+      "label": "Text list of results",
+      "route": "/preview/50-infinite-index/list"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/50/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/50/57d5ce18d4089465-desktop.jpg",
+      "route": "/preview/50-infinite-index/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:4b70820190de36456df67f2c60c0665bc7691391320e9925077c7d4a0e7cd0ee",
+      "sha256": "57d5ce18d40894653c6d1399bdeeb32852dbe862b5812b5dc93f37d56998c33a",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/50/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/50/11fbc107566469b4-mobile.jpg",
+      "route": "/preview/50-infinite-index/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:4b70820190de36456df67f2c60c0665bc7691391320e9925077c7d4a0e7cd0ee",
+      "sha256": "11fbc107566469b4d5d12d496f7cd93150d7306a0e852d5d437be68f7784922d",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/50/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/50/e68da803e79bf0ef-detail.jpg",
+      "route": "/preview/50-infinite-index/detail",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "detail",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:4b70820190de36456df67f2c60c0665bc7691391320e9925077c7d4a0e7cd0ee",
+      "sha256": "e68da803e79bf0efd38e701353627e7e43961ef9c0011f78f4fd1bfc8d4f20f4",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/50/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/50/3fbbb467375f26b3-full-page.jpg",
+      "route": "/preview/50-infinite-index/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:4b70820190de36456df67f2c60c0665bc7691391320e9925077c7d4a0e7cd0ee",
+      "sha256": "3fbbb467375f26b3b8c9835763c328ebc255f922237aef0a9ebb96fea0266a26",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/50-infinite-index",
+  "neighbours": [
+    "20",
+    "48"
+  ],
+  "palette": {
+    "page": "#eeeee8",
+    "surface": "#ffffff",
+    "ink": "#30382f",
+    "accent": "#445f3d"
+  },
+  "fonts": [
+    "DM Sans"
+  ],
+  "brief": "**Philosophy and fit.** Make a finite collection feel explorable at several scales without surrendering orientation. Suitable for visual archives, design references, photography collections, and substantial creative portfolios.\n\n**Visual grammar.** Use a dense, edge-to-edge index with an anchored search strip, visible result count, clear grouping labels, and selectable overview, medium, and detail densities. Thumbnails and short captions carry the page; typography and chrome recede. Density changes alter how much context is visible, rather than simply enlarging cards inside a conventional landing page.\n\n**Specimen and flow.** *The Reference Room* holds a finite set of fictional graphic studies. Filter by medium, change the overview density, open a specimen, and return to the same position. Supporting views are a text list of results and an explicit empty-result state. Pagination, deep links, and the current page remain visible.\n\n**Mobile and motion.** Use discrete density controls instead of mandatory pinch or wheel gestures. Keep captions legible and preserve focus when returning from details. Reduced motion switches views immediately.\n\n**Identity and effort.** Preserve overview-to-detail exploration; avoid an endless feed, hidden destinations, or costly unbounded rendering. **Effort: medium.**",
+  "scope": "An expansive sample page with representative local interactions; no production business backend."
+}

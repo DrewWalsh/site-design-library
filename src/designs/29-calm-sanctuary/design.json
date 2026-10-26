@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "id": "29",
+  "slug": "calm-sanctuary",
+  "name": "Calm Sanctuary",
+  "brand": "Evening Room",
+  "family": "Commerce & places",
+  "status": "ready",
+  "thesis": "Reduce the number of simultaneous decisions and let the visitor set the pace.",
+  "suitableFor": [
+    "Wellness",
+    "Reading"
+  ],
+  "character": "Restrained",
+  "traits": {
+    "composition": "One narrow, low-stimulation column with voluntary pacing",
+    "navigation": "A few activities, back links, and an ordinary exit",
+    "typography": "DM Sans",
+    "density": "Low",
+    "imagery": "Typography, rules, and interface structure",
+    "surface": "Quiet cream field, soft green geometry and unhurried text rhythm",
+    "motion": "Minimal"
+  },
+  "effort": "Low",
+  "definingFeatures": [
+    "Limited simultaneous choices",
+    "Voluntary pacing",
+    "Clear, quiet completion"
+  ],
+  "adaptableChoices": [
+    "Brand and content",
+    "Accent colour with verified contrast",
+    "Equivalent licensed typefaces"
+  ],
+  "entryRoute": "/preview/29-calm-sanctuary/start",
+  "states": [
+    {
+      "key": "practice",
+      "label": "A quiet practice",
+      "route": "/preview/29-calm-sanctuary/practice"
+    },
+    {
+      "key": "finished",
+      "label": "Finished session",
+      "route": "/preview/29-calm-sanctuary/finished"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/29/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/29/80597c513670c39d-desktop.jpg",
+      "route": "/preview/29-calm-sanctuary/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:d73fc96082f4489d8b0116d80502f2acd2ed2e2dcbf60194f207e8c84b469a1c",
+      "sha256": "80597c513670c39d210b88a4832ebed0cd892c3c83804417301fa7e49ab84dd8",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/29/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/29/fb0e2d8d7674056b-mobile.jpg",
+      "route": "/preview/29-calm-sanctuary/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:d73fc96082f4489d8b0116d80502f2acd2ed2e2dcbf60194f207e8c84b469a1c",
+      "sha256": "fb0e2d8d7674056b3aea818e689f7cf0bb76f91318047bd55b7505326358e94e",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/29/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/29/66c39c67a143b52e-detail.jpg",
+      "route": "/preview/29-calm-sanctuary/practice",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "practice",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:d73fc96082f4489d8b0116d80502f2acd2ed2e2dcbf60194f207e8c84b469a1c",
+      "sha256": "66c39c67a143b52eac0254532729487c1a676406dcaca7602a8d7bd8d3dae3ef",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/29/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/29/8ef55913502a543e-full-page.jpg",
+      "route": "/preview/29-calm-sanctuary/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:d73fc96082f4489d8b0116d80502f2acd2ed2e2dcbf60194f207e8c84b469a1c",
+      "sha256": "8ef55913502a543e081b2a31c9cd7585f86dce077b7d2a31909e6f1c317f1d47",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/29-calm-sanctuary",
+  "neighbours": [
+    "14",
+    "07"
+  ],
+  "palette": {
+    "page": "#eae8de",
+    "surface": "#f8f6ee",
+    "ink": "#443a49",
+    "accent": "#626b57"
+  },
+  "fonts": [
+    "DM Sans"
+  ],
+  "brief": "**Philosophy and fit.** Reduce the number of simultaneous decisions and let the visitor set the pace. Appropriate for quiet reading, gentle routines, reflective tools, and low-stimulation personal experiences.\n\n**Visual grammar.** Use one narrow content column, short sequences, abundant breathing room, and persistent but unobtrusive back navigation. Warm stone, deep plum, and muted sage support a soft humanist sans. Essential text retains strong contrast; calm comes from composition and pacing, not faint lettering. Controls have clear boundaries and restrained feedback.\n\n**Specimen and flow.** *Evening Room* offers fictional wind-down activities. Choose an activity, optionally set a duration, and enter a quiet practice screen. Supporting views include personal preferences and a finished-session state that offers an ordinary exit. No streaks, competitive scores, or surprise prompts appear.\n\n**Responsive behaviour.** The primary control sits comfortably within the viewport; orientation changes preserve session state. Sound and motion start off and require deliberate activation.\n\n**Identity rules.** Preserve voluntary pacing and limited choices. Avoid claiming therapeutic outcomes, using autoplay transitions, or introducing celebratory feedback at the end. **Effort: low.**",
+  "scope": "An expansive sample page with representative local interactions; no production business backend."
+}

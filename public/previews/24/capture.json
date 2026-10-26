@@ -1,0 +1,64 @@
+{
+  "designId": "24",
+  "sourceRevision": "sha256:af12c937fd5e2c65a6ba34e3f9841683b522bb39f4e3b3fa108028bcba4738d5",
+  "capturedAt": "2026-10-26T22:49:05.502Z",
+  "browser": "156.0.4314.42",
+  "captures": [
+    {
+      "file": "/previews/24/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/24/67f40ab2c8de3c1f-desktop.jpg",
+      "route": "/preview/24-fine-dining/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:af12c937fd5e2c65a6ba34e3f9841683b522bb39f4e3b3fa108028bcba4738d5",
+      "sha256": "67f40ab2c8de3c1ffb397bf3182e3fa914f3878d77ce526e0cf671b08004e08c",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/24/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/24/abff22b908e689b0-mobile.jpg",
+      "route": "/preview/24-fine-dining/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:af12c937fd5e2c65a6ba34e3f9841683b522bb39f4e3b3fa108028bcba4738d5",
+      "sha256": "abff22b908e689b0c5e552db79cc9927bbc73a547e719f1afc53a4012d8cc077",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/24/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/24/fdb69516eb1e1ba8-detail.jpg",
+      "route": "/preview/24-fine-dining/reserve",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "reserve",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:af12c937fd5e2c65a6ba34e3f9841683b522bb39f4e3b3fa108028bcba4738d5",
+      "sha256": "fdb69516eb1e1ba811f4e4a4c2d988122db43e53b8b1656ee5dccfed72d4270b",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/24/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/24/d4a879877d8d462f-full-page.jpg",
+      "route": "/preview/24-fine-dining/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:af12c937fd5e2c65a6ba34e3f9841683b522bb39f4e3b3fa108028bcba4738d5",
+      "sha256": "d4a879877d8d462f6e38aa58385e410541000634811a44dda659eaa42595a2ef",
+      "fullPage": true
+    }
+  ]
+}

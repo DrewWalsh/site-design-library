@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.netlify/
+.env*
+.work/
+test-results/
+playwright-report/
+.codex-utils/
+public/previews/*/*.webp
+public/previews/*/*.jpg
+public/previews/contact-sheet.jpg
+public/references/
+public/AGENT_WORKFLOW.md
+*.log

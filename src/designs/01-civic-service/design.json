@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "id": "01",
+  "slug": "civic-service",
+  "name": "Civic Service",
+  "brand": "Northbank Council",
+  "family": "Clarity & editorial",
+  "status": "ready",
+  "thesis": "Make a necessary task easy to understand and finish.",
+  "suitableFor": [
+    "Public services",
+    "Support"
+  ],
+  "character": "Restrained",
+  "traits": {
+    "composition": "Single-column service guidance with a prerequisite rail",
+    "navigation": "Breadcrumbs and explicit back links",
+    "typography": "DM Sans",
+    "density": "Medium",
+    "imagery": "Typography, rules, and interface structure",
+    "surface": "Plain white surfaces, square controls, restrained green emphasis",
+    "motion": "None"
+  },
+  "effort": "Low",
+  "definingFeatures": [
+    "Task-first headings",
+    "Requirements before action",
+    "Plain review and confirmation"
+  ],
+  "adaptableChoices": [
+    "Brand and content",
+    "Accent colour with verified contrast",
+    "Equivalent licensed typefaces"
+  ],
+  "entryRoute": "/preview/01-civic-service/start",
+  "states": [
+    {
+      "key": "book",
+      "label": "Choose a collection",
+      "route": "/preview/01-civic-service/book"
+    },
+    {
+      "key": "confirmation",
+      "label": "Booking confirmation",
+      "route": "/preview/01-civic-service/confirmation"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/01/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/01/08af1cc991ddcfdf-desktop.jpg",
+      "route": "/preview/01-civic-service/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:6d28e27e69bcf8e2be11c91471e52cd4d0a79f70912964ec0fadbc50cfcf16a5",
+      "sha256": "08af1cc991ddcfdf5c1ea4ee593c6fe779ea402f57639c0db60304e71c02fc90",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/01/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/01/5f824b910097d90b-mobile.jpg",
+      "route": "/preview/01-civic-service/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:6d28e27e69bcf8e2be11c91471e52cd4d0a79f70912964ec0fadbc50cfcf16a5",
+      "sha256": "5f824b910097d90b868a5b04eb6e31f9a84fb22c3c199ed723a045630163d878",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/01/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/01/003b1467cb2be2d3-detail.jpg",
+      "route": "/preview/01-civic-service/book",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "book",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:6d28e27e69bcf8e2be11c91471e52cd4d0a79f70912964ec0fadbc50cfcf16a5",
+      "sha256": "003b1467cb2be2d36b9894d62d596214db0137ed29131e05b729ff8078408490",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/01/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/01/33f17a2654ffb734-full-page.jpg",
+      "route": "/preview/01-civic-service/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:6d28e27e69bcf8e2be11c91471e52cd4d0a79f70912964ec0fadbc50cfcf16a5",
+      "sha256": "33f17a2654ffb73449bf1ec9fe4246779bb926e107bb4365956e3fa0e0d4e3e2",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/01-civic-service",
+  "neighbours": [
+    "14",
+    "25"
+  ],
+  "palette": {
+    "page": "#fff",
+    "surface": "#ffffff",
+    "ink": "#182d3d",
+    "accent": "#166347"
+  },
+  "fonts": [
+    "DM Sans"
+  ],
+  "brief": "**Philosophy and fit.** Make a necessary task easy to understand and finish. Suitable for municipal services, public guidance, support centres, and practical organisations whose visitors arrive with a specific question.\n\n**Visual grammar.** A compact wordmark bar leads into breadcrumbs, a plain page title, an explanatory summary, and one dominant reading column. A secondary contents rail appears only on long guidance pages. Use a humanist sans, strong headings, square controls, white backgrounds, dark navy text, and restrained green action emphasis. Show eligibility and required documents before the action.\n\n**Specimen and flow.** *Northbank Council* demonstrates finding a bulky waste collection service, checking requirements, and choosing a collection slot from local fixtures. Supporting states show an unavailable address and a confirmation page containing a reference and next steps.\n\n**Adaptation and identity.** Mobile retains the same reading order and puts the contents list above the article. Preserve explicit labels, plain language, and task hierarchy; avoid decorative hero photography, ornamental cards, and surprise navigation. Motion is unnecessary. **Effort: low.**",
+  "scope": "An expansive sample page with representative local interactions; no production business backend."
+}

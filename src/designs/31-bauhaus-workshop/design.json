@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "id": "31",
+  "slug": "bauhaus-workshop",
+  "name": "Bauhaus Workshop",
+  "brand": "Form School",
+  "family": "Playful & material",
+  "status": "ready",
+  "thesis": "Give each shape, colour, and alignment a clear organising role.",
+  "suitableFor": [
+    "Education",
+    "Events"
+  ],
+  "character": "Expressive",
+  "traits": {
+    "composition": "Rectilinear programme grid with geometric category markers",
+    "navigation": "Geometric programme index and syllabus",
+    "typography": "Space Grotesk + DM Sans",
+    "density": "Medium",
+    "imagery": "Original CSS illustrations and graphic studies",
+    "surface": "Paper, black rules, primary-colour geometry and workshop modules",
+    "motion": "Minimal"
+  },
+  "effort": "Medium",
+  "definingFeatures": [
+    "Shapes organise actual categories",
+    "Deliberate asymmetry and grid spans",
+    "Primary colours with text labels"
+  ],
+  "adaptableChoices": [
+    "Brand and content",
+    "Accent colour with verified contrast",
+    "Equivalent licensed typefaces"
+  ],
+  "entryRoute": "/preview/31-bauhaus-workshop/start",
+  "states": [
+    {
+      "key": "workshop",
+      "label": "Workshop syllabus",
+      "route": "/preview/31-bauhaus-workshop/workshop"
+    },
+    {
+      "key": "exercise",
+      "label": "Shape-building exercise",
+      "route": "/preview/31-bauhaus-workshop/exercise"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/31/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/31/a339bd30789484c7-desktop.jpg",
+      "route": "/preview/31-bauhaus-workshop/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:e421eb9c96d2936a740bbca8044c8b15cfba79ecfbc6413252eea39df6fd5407",
+      "sha256": "a339bd30789484c705404fbbfe4f72386e27cc67900314e295cf6c0e3a4e4189",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/31/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/31/819a8e567e989f03-mobile.jpg",
+      "route": "/preview/31-bauhaus-workshop/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:e421eb9c96d2936a740bbca8044c8b15cfba79ecfbc6413252eea39df6fd5407",
+      "sha256": "819a8e567e989f033ebf59517cf8069f0edfbb6503628ade8d38e72b07c113c9",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/31/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/31/17a3f6638c3c4f61-detail.jpg",
+      "route": "/preview/31-bauhaus-workshop/workshop",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "workshop",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:e421eb9c96d2936a740bbca8044c8b15cfba79ecfbc6413252eea39df6fd5407",
+      "sha256": "17a3f6638c3c4f61c46519275dadd861bfc24f065990c3dce359265a3fc52a80",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/31/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/31/4289ae93a5a71408-full-page.jpg",
+      "route": "/preview/31-bauhaus-workshop/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:e421eb9c96d2936a740bbca8044c8b15cfba79ecfbc6413252eea39df6fd5407",
+      "sha256": "4289ae93a5a71408f3001cd8243bb8d5a3fd26056dd5306f6819669a280ec40f",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/31-bauhaus-workshop",
+  "neighbours": [
+    "03",
+    "32"
+  ],
+  "palette": {
+    "page": "#eee9dc",
+    "surface": "#ffffff",
+    "ink": "#252622",
+    "accent": "#b93627"
+  },
+  "fonts": [
+    "Space Grotesk",
+    "DM Sans"
+  ],
+  "brief": "**Philosophy and fit.** Give each shape, colour, and alignment a clear organising role. Useful for design schools, creative workshops, modular products, and educational programmes.\n\n**Visual grammar.** Strong rectilinear grids support circular markers, primary-colour planes, black rules, and compact grotesque typography. Asymmetry comes from purposeful spans rather than scattered objects. Red identifies workshops, blue identifies resources, and yellow identifies demonstrations, with matching text labels so colour is never the only distinction.\n\n**Specimen and flow.** *Form School* teaches fictional making workshops. Browse a geometric programme index, open a workshop syllabus, and select a session in a local registration demonstration. Supporting views include an instructor profile and a full-session state with alternative dates. A simple shape-building exercise illustrates the school’s practical approach.\n\n**Responsive behaviour.** Grid spans collapse into a coherent reading order. Decorative geometry moves around the content rather than forcing the content into tiny compartments; the exercise includes button-based controls.\n\n**Identity rules.** Preserve geometric discipline, clear categories, and deliberate alignment. Avoid decorative primary-colour confetti or borrowing the same loose arrangement as Pop Memphis. **Effort: medium.**",
+  "scope": "An expansive sample page with representative local interactions; no production business backend."
+}

@@ -1,0 +1,64 @@
+{
+  "designId": "18",
+  "sourceRevision": "sha256:ee40b9dda7ccef585d3395de4418a39c0d1d3e89c37423555249ef1c95d3dfe2",
+  "capturedAt": "2026-10-26T22:48:46.846Z",
+  "browser": "156.0.4314.42",
+  "captures": [
+    {
+      "file": "/previews/18/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/18/b2cf624abbabbcff-desktop.jpg",
+      "route": "/preview/18-knowledge-garden/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:ee40b9dda7ccef585d3395de4418a39c0d1d3e89c37423555249ef1c95d3dfe2",
+      "sha256": "b2cf624abbabbcff0dffef4ae35ffa8979d0ec484d8523c2f207a562c69d79ac",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/18/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/18/d1d0e6f3b1e3c9e5-mobile.jpg",
+      "route": "/preview/18-knowledge-garden/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:ee40b9dda7ccef585d3395de4418a39c0d1d3e89c37423555249ef1c95d3dfe2",
+      "sha256": "d1d0e6f3b1e3c9e57347cdbd6c21ba57644e21fb4f5b0609568d99c9f3d563ac",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/18/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/18/b2cf624abbabbcff-detail.jpg",
+      "route": "/preview/18-knowledge-garden/note",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "note",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:ee40b9dda7ccef585d3395de4418a39c0d1d3e89c37423555249ef1c95d3dfe2",
+      "sha256": "b2cf624abbabbcff0dffef4ae35ffa8979d0ec484d8523c2f207a562c69d79ac",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/18/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/18/49ae1495a32ecf4a-full-page.jpg",
+      "route": "/preview/18-knowledge-garden/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:ee40b9dda7ccef585d3395de4418a39c0d1d3e89c37423555249ef1c95d3dfe2",
+      "sha256": "49ae1495a32ecf4a8a8748c10027ad7f111dcbe2f82504aab34b7c1b9bb78341",
+      "fullPage": true
+    }
+  ]
+}

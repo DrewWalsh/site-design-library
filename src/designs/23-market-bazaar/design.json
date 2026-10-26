@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "id": "23",
+  "slug": "market-bazaar",
+  "name": "Market Bazaar",
+  "brand": "Saturday Market",
+  "family": "Commerce & places",
+  "status": "ready",
+  "thesis": "Make the individuality of many sellers part of the browsing experience.",
+  "suitableFor": [
+    "Commerce",
+    "Directories"
+  ],
+  "character": "Expressive",
+  "traits": {
+    "composition": "Distinct vendor stalls with coloured signs and horizontal product shelves",
+    "navigation": "Market date and vendor anchors",
+    "typography": "Space Grotesk + DM Sans",
+    "density": "Medium",
+    "imagery": "Original SVG diagrams and illustrations",
+    "surface": "Cream market canvas, colourful stall bands and original food studies",
+    "motion": "Minimal"
+  },
+  "effort": "Medium",
+  "definingFeatures": [
+    "Stall-level personalities",
+    "Products grouped by maker",
+    "Collection basket grouped by location"
+  ],
+  "adaptableChoices": [
+    "Brand and content",
+    "Accent colour with verified contrast",
+    "Equivalent licensed typefaces"
+  ],
+  "entryRoute": "/preview/23-market-bazaar/start",
+  "states": [
+    {
+      "key": "vendor",
+      "label": "Meet the maker",
+      "route": "/preview/23-market-bazaar/vendor"
+    },
+    {
+      "key": "basket",
+      "label": "Collection basket",
+      "route": "/preview/23-market-bazaar/basket"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/23/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/23/2e61109b68c55c59-desktop.jpg",
+      "route": "/preview/23-market-bazaar/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:dca5f2354bac384e60c727140bb61aa224c290d08fda449637ca5a33600b2711",
+      "sha256": "2e61109b68c55c593876cfc97a0deb890152f6bb5936f244899bfe39bdd9fec0",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/23/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/23/a06a4f7dcba17af8-mobile.jpg",
+      "route": "/preview/23-market-bazaar/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:dca5f2354bac384e60c727140bb61aa224c290d08fda449637ca5a33600b2711",
+      "sha256": "a06a4f7dcba17af8d1af1adced2fd627f364d8078e4b07b8353c416bc66046a8",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/23/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/23/350707012b92c201-detail.jpg",
+      "route": "/preview/23-market-bazaar/vendor",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "vendor",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:dca5f2354bac384e60c727140bb61aa224c290d08fda449637ca5a33600b2711",
+      "sha256": "350707012b92c20103473899522133f45820c02d0805d5171c1bf5e29681c42a",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/23/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/23/f19e56b50c0d79a8-full-page.jpg",
+      "route": "/preview/23-market-bazaar/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:dca5f2354bac384e60c727140bb61aa224c290d08fda449637ca5a33600b2711",
+      "sha256": "f19e56b50c0d79a8c039f4acc973e8e8edda1044b78e03e5fa2a3cc33c2727c5",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/23-market-bazaar",
+  "neighbours": [
+    "22",
+    "32"
+  ],
+  "palette": {
+    "page": "#fff6df",
+    "surface": "#ffffff",
+    "ink": "#3f3429",
+    "accent": "#b3482d"
+  },
+  "fonts": [
+    "Space Grotesk",
+    "DM Sans"
+  ],
+  "brief": "**Philosophy and fit.** Make the individuality of many sellers part of the browsing experience. Useful for craft marketplaces, community markets, independent food halls, and local maker directories.\n\n**Visual grammar.** Organise the page into recognisable stalls rather than a uniform product wall. Each vendor receives a coloured sign, short introduction, and horizontal shelf of items. Warm cream supports paprika, cobalt, and mustard accents. Rounded display lettering identifies stalls; straightforward body type handles prices, ingredients, and collection information.\n\n**Specimen and flow.** *Saturday Market* contains fictional bakers, potters, and growers. Choose a market date, browse stalls, and assemble a local collection basket. Supporting views include a vendor profile and a basket grouped by collection location. An empty date state explains when the next market occurs.\n\n**Responsive behaviour.** Stalls become stacked sections with anchor navigation. Shelves use explicit previous and next controls as well as touch scrolling; products remain reachable without dragging.\n\n**Identity rules.** Preserve vendor personality within predictable buying controls. Avoid making every stall a different application or replacing useful categories with decorative chaos. **Effort: medium.**",
+  "scope": "An expansive sample page with representative local interactions; no production business backend."
+}

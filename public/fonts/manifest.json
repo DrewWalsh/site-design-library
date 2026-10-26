@@ -1,0 +1,101 @@
+[
+  {
+    "source": "https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2",
+    "weight": "400 700",
+    "family": "DM Sans",
+    "style": "normal",
+    "file": "/fonts/dm-sans.woff2",
+    "bytes": 36932,
+    "sha256": "9fea608a947e67020c33cad9a6fe3d60c54119dfb8cff87768a8117a15ed7543",
+    "license": "SIL Open Font License 1.1",
+    "checkedAt": "2026-10-26"
+  },
+  {
+    "source": "https://fonts.gstatic.com/s/librebaskerville/v24/kmKhZrc3Hgbbcjq75U4uslyuy4kn0qNcWxEQDA.woff2",
+    "weight": "400 700",
+    "family": "Libre Baskerville",
+    "style": "italic",
+    "file": "/fonts/libre-baskerville-italic.woff2",
+    "bytes": 31244,
+    "sha256": "1203eb6186789060d1376ca7ab20734b179e241c85ddc2d84502c818afb63210",
+    "license": "SIL Open Font License 1.1",
+    "checkedAt": "2026-10-26"
+  },
+  {
+    "source": "https://fonts.gstatic.com/s/librebaskerville/v24/kmKnZrc3Hgbbcjq75U4uslyuy4kn0qNZaxM.woff2",
+    "weight": "400 700",
+    "family": "Libre Baskerville",
+    "style": "normal",
+    "file": "/fonts/libre-baskerville.woff2",
+    "bytes": 33872,
+    "sha256": "22219fb90e3b9bd28debd1825fe8d9a0154a0e31f8b3fa601ac1a0a5aa5e6d1b",
+    "license": "SIL Open Font License 1.1",
+    "checkedAt": "2026-10-26"
+  },
+  {
+    "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2",
+    "weight": "400 700",
+    "family": "Space Grotesk",
+    "style": "normal",
+    "file": "/fonts/space-grotesk.woff2",
+    "bytes": 22288,
+    "sha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d",
+    "license": "SIL Open Font License 1.1",
+    "checkedAt": "2026-10-26"
+  },
+  {
+    "source": "https://fonts.gstatic.com/s/archivoblack/v23/HTxqL289NzCGg4MzN6KJ7eW6CYyF_g.woff2",
+    "weight": "400",
+    "family": "Archivo Black",
+    "style": "normal",
+    "file": "/fonts/archivo-black.woff2",
+    "bytes": 18604,
+    "sha256": "25f33e61cf995abd6be62931cf03bf427286259177b43618cc410ee0157cfd30",
+    "license": "SIL Open Font License 1.1",
+    "checkedAt": "2026-10-26"
+  },
+  {
+    "source": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F63fjptAgt5VM-kVkqdyU8n1i8q1w.woff2",
+    "weight": "400",
+    "family": "IBM Plex Mono",
+    "style": "normal",
+    "file": "/fonts/ibm-plex-mono.woff2",
+    "bytes": 14708,
+    "sha256": "08949f728dc52d528e69b1667d15c89a5686a4ee9a296ff90983985f99c380f7",
+    "license": "SIL Open Font License 1.1",
+    "checkedAt": "2026-10-26"
+  },
+  {
+    "source": "https://fonts.gstatic.com/s/bebasneue/v16/JTUSjIg69CK48gW7PXoo9Wlhyw.woff2",
+    "weight": "400",
+    "family": "Bebas Neue",
+    "style": "normal",
+    "file": "/fonts/bebas-neue.woff2",
+    "bytes": 13768,
+    "sha256": "a7c90c89240c134f7fdd33d40c000ec90b79d675ea53e8cc5a6d423c073de412",
+    "license": "SIL Open Font License 1.1",
+    "checkedAt": "2026-10-26"
+  },
+  {
+    "source": "https://fonts.gstatic.com/s/caveat/v23/Wnz6HAc5bAfYB2Q7ZjYY.woff2",
+    "weight": "400 700",
+    "family": "Caveat",
+    "style": "normal",
+    "file": "/fonts/caveat.woff2",
+    "bytes": 74932,
+    "sha256": "891951df5e8b5b0f0bc760d31375405e795c666b5add70437de12d4a6482b33f",
+    "license": "SIL Open Font License 1.1",
+    "checkedAt": "2026-10-26"
+  },
+  {
+    "source": "https://fonts.gstatic.com/s/pressstart2p/v16/e3t4euO8T-267oIAQAu6jDQyK3nVivM.woff2",
+    "weight": "400",
+    "family": "Press Start 2P",
+    "style": "normal",
+    "file": "/fonts/press-start-2p.woff2",
+    "bytes": 12512,
+    "sha256": "afec86997fdaf54af1f59358fa2c1e2a0f1d04146edad18e5cd141d0384a7548",
+    "license": "SIL Open Font License 1.1",
+    "checkedAt": "2026-10-26"
+  }
+]

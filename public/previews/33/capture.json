@@ -1,0 +1,64 @@
+{
+  "designId": "33",
+  "sourceRevision": "sha256:8464a55ea62f8f441311607d85ab18f6f923f67370276891e775bf998f133dcf",
+  "capturedAt": "2026-10-26T22:49:33.526Z",
+  "browser": "156.0.4314.42",
+  "captures": [
+    {
+      "file": "/previews/33/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/33/0201f239d23e84b4-desktop.jpg",
+      "route": "/preview/33-playroom/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:8464a55ea62f8f441311607d85ab18f6f923f67370276891e775bf998f133dcf",
+      "sha256": "0201f239d23e84b42a06bb9398f2bfb9f4a99bdc4b64543fc20b86c768cc6a56",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/33/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/33/5ba7dfb650148da0-mobile.jpg",
+      "route": "/preview/33-playroom/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:8464a55ea62f8f441311607d85ab18f6f923f67370276891e775bf998f133dcf",
+      "sha256": "5ba7dfb650148da0dfe9b5054f7110308ab045e524006c5598cfaa15a3d32bb8",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/33/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/33/ab1d71a755245f8f-detail.jpg",
+      "route": "/preview/33-playroom/library",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "library",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:8464a55ea62f8f441311607d85ab18f6f923f67370276891e775bf998f133dcf",
+      "sha256": "ab1d71a755245f8fb0c91e96eaec31730638a99b51d0eccd7225348d45b207ed",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/33/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/33/03907e4f5198d33a-full-page.jpg",
+      "route": "/preview/33-playroom/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:8464a55ea62f8f441311607d85ab18f6f923f67370276891e775bf998f133dcf",
+      "sha256": "03907e4f5198d33ab3a0b13d212030879feae54fca70b8dc72a2208466f6636e",
+      "fullPage": true
+    }
+  ]
+}

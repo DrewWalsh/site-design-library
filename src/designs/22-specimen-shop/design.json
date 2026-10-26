@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "id": "22",
+  "slug": "specimen-shop",
+  "name": "Specimen Shop",
+  "brand": "Form Number",
+  "family": "Commerce & places",
+  "status": "ready",
+  "thesis": "Present a small collection as objects worth studying.",
+  "suitableFor": [
+    "Commerce",
+    "Portfolio"
+  ],
+  "character": "Restrained",
+  "traits": {
+    "composition": "Large object plate with precise caption and a restrained purchase rail",
+    "navigation": "Numbered object index",
+    "typography": "Libre Baskerville + DM Sans",
+    "density": "Low",
+    "imagery": "Licensed illustrative photography",
+    "surface": "Museum-like object photography, fine rules and a warm neutral palette",
+    "motion": "Minimal"
+  },
+  "effort": "Medium",
+  "definingFeatures": [
+    "Object-and-caption relationship",
+    "Visible material and dimension details",
+    "Asymmetric photographic whitespace"
+  ],
+  "adaptableChoices": [
+    "Brand and content",
+    "Accent colour with verified contrast",
+    "Equivalent licensed typefaces"
+  ],
+  "entryRoute": "/preview/22-specimen-shop/start",
+  "states": [
+    {
+      "key": "detail",
+      "label": "Vessel 03 / material detail",
+      "route": "/preview/22-specimen-shop/detail"
+    },
+    {
+      "key": "bag",
+      "label": "Your sample bag",
+      "route": "/preview/22-specimen-shop/bag"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/22/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/22/c2849c04ac39496c-desktop.jpg",
+      "route": "/preview/22-specimen-shop/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:f0dd8b25bc3e5a1d38294e0e134e07a7284939e64f506899ddd6bed59520f9da",
+      "sha256": "c2849c04ac39496c14125c9ea99a2a994a026ac090328cc50c86d855853d155a",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/22/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/22/e0aeeb99f4ed4cea-mobile.jpg",
+      "route": "/preview/22-specimen-shop/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:f0dd8b25bc3e5a1d38294e0e134e07a7284939e64f506899ddd6bed59520f9da",
+      "sha256": "e0aeeb99f4ed4cea93bb01aead3a7deeca93ff6b8290c3dffda77db78646e3cb",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/22/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/22/04300139f00f0f5e-detail.jpg",
+      "route": "/preview/22-specimen-shop/detail",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "detail",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:f0dd8b25bc3e5a1d38294e0e134e07a7284939e64f506899ddd6bed59520f9da",
+      "sha256": "04300139f00f0f5e55488020632d86b961e717c739c203df98a665a31b6250c4",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/22/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/22/2dc90217be4592e2-full-page.jpg",
+      "route": "/preview/22-specimen-shop/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:f0dd8b25bc3e5a1d38294e0e134e07a7284939e64f506899ddd6bed59520f9da",
+      "sha256": "2dc90217be4592e24f862eba54ecaecf9e07dfee9cc694e8c8d26295873c37d0",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/22-specimen-shop",
+  "neighbours": [
+    "04",
+    "21"
+  ],
+  "palette": {
+    "page": "#f3f0e9",
+    "surface": "#ffffff",
+    "ink": "#302f29",
+    "accent": "#62594b"
+  },
+  "fonts": [
+    "Libre Baskerville",
+    "DM Sans"
+  ],
+  "brief": "**Philosophy and fit.** Present a small collection as objects worth studying. Appropriate for ceramics, independent furniture, collectible editions, and carefully made products with material stories.\n\n**Visual grammar.** Each object occupies a large photographic plate, followed by a caption, dimensions, material swatches, and a restrained purchase rail. Use asymmetric whitespace, a compact index navigation, an elegant serif for object names, and a precise sans for specifications. Bone backgrounds, near-black text, and one mineral accent keep attention on surface and shape.\n\n**Specimen and flow.** *Form Number* offers a fictional ceramics collection. Browse an object index, open a numbered vessel, change its glaze, and add it to a local bag. Supporting views include a material-study page and a bag with quantity and sold-out states. A visible detail photograph supports inspection without requiring zoom gestures.\n\n**Responsive behaviour.** Plates stack above specifications; the purchase rail becomes an ordinary in-flow block. Image changes are immediate under reduced motion.\n\n**Identity rules.** Preserve the object-and-caption relationship. Avoid luxury-site vagueness, tiny essential text, and compulsory cinematic transitions. **Effort: medium.**",
+  "scope": "An expansive sample page with representative local interactions; no production business backend."
+}

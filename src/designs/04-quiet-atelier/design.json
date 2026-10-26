@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "id": "04",
+  "slug": "quiet-atelier",
+  "name": "Quiet Atelier",
+  "brand": "Alder Studio",
+  "family": "Clarity & editorial",
+  "status": "ready",
+  "thesis": "Let a small selection of work convey confidence through space and restraint.",
+  "suitableFor": [
+    "Portfolio",
+    "Architecture"
+  ],
+  "character": "Restrained",
+  "traits": {
+    "composition": "Spacious introduction and staggered image-caption project sequence",
+    "navigation": "Modest text navigation and project index",
+    "typography": "Libre Baskerville + DM Sans",
+    "density": "Low",
+    "imagery": "Licensed illustrative photography",
+    "surface": "Warm neutral surfaces and generous photographic whitespace",
+    "motion": "Minimal"
+  },
+  "effort": "Low",
+  "definingFeatures": [
+    "Selective project curation",
+    "Staggered imagery with captions",
+    "Material-led case studies"
+  ],
+  "adaptableChoices": [
+    "Brand and content",
+    "Accent colour with verified contrast",
+    "Equivalent licensed typefaces"
+  ],
+  "entryRoute": "/preview/04-quiet-atelier/start",
+  "states": [
+    {
+      "key": "project",
+      "label": "A room to return to",
+      "route": "/preview/04-quiet-atelier/project"
+    },
+    {
+      "key": "enquiry",
+      "label": "Project enquiry",
+      "route": "/preview/04-quiet-atelier/enquiry"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/04/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/04/16b274f55096686d-desktop.jpg",
+      "route": "/preview/04-quiet-atelier/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:93e635bbf276f5244d7e1ee0318cdd19f3d32010bc569fbd476baead1cbaf6f6",
+      "sha256": "16b274f55096686d8af8e84800d1e0adb2d48068ed54fb87e242a23dbccd056a",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/04/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/04/9bc84cb892e3d8df-mobile.jpg",
+      "route": "/preview/04-quiet-atelier/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:93e635bbf276f5244d7e1ee0318cdd19f3d32010bc569fbd476baead1cbaf6f6",
+      "sha256": "9bc84cb892e3d8dfcdb4a40b672814458e071859c3db920e3df00869b60e5554",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/04/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/04/58661d7f41249fdf-detail.jpg",
+      "route": "/preview/04-quiet-atelier/project",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "project",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:93e635bbf276f5244d7e1ee0318cdd19f3d32010bc569fbd476baead1cbaf6f6",
+      "sha256": "58661d7f41249fdfbfad84cc827bfe1106ecf69e8d05291d828d06cdf74ecd97",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/04/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/04/9e530bd4e444d305-full-page.jpg",
+      "route": "/preview/04-quiet-atelier/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:93e635bbf276f5244d7e1ee0318cdd19f3d32010bc569fbd476baead1cbaf6f6",
+      "sha256": "9e530bd4e444d305481e46bf334284aced9c3a49406905b77bdf4cc8f8277262",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/04-quiet-atelier",
+  "neighbours": [
+    "22",
+    "28"
+  ],
+  "palette": {
+    "page": "#f6f2eb",
+    "surface": "#ffffff",
+    "ink": "#3c372d",
+    "accent": "#79614e"
+  },
+  "fonts": [
+    "Libre Baskerville",
+    "DM Sans"
+  ],
+  "brief": "**Philosophy and fit.** Let a small selection of work convey confidence through space and restraint. Suitable for independent designers, photographers, craftspeople, and small professional practices with strong visual portfolios.\n\n**Visual grammar.** The opening view pairs a short introduction with one carefully positioned image, followed by a staggered sequence of selected projects. Use a modest text navigation and an index rather than a persistent sidebar. Warm white, brown-black ink, muted clay accents, a refined serif heading, and a small neutral sans create a subdued rhythm. Avoid treating every project as an identically sized tile.\n\n**Specimen and flow.** *Alder Studio* presents furniture and interiors. Visitors choose a project, move through its image-and-caption sequence, and open an enquiry form prefilled with that project. Supporting states show the complete project index and locally validated enquiry feedback.\n\n**Adaptation and identity.** Mobile converts the staggered composition into an intentional image sequence with captions directly beneath each image. Preserve selective curation, spaciousness, and material imagery; avoid enormous empty areas, hidden contact information, and compulsory animation. **Effort: low.**",
+  "scope": "An expansive sample page with representative local interactions; no production business backend."
+}

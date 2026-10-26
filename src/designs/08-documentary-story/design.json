@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "id": "08",
+  "slug": "documentary-story",
+  "name": "Documentary Story",
+  "brand": "The River Works",
+  "family": "Clarity & editorial",
+  "status": "ready",
+  "thesis": "Build understanding through a deliberate sequence of evidence, place, and explanation.",
+  "suitableFor": [
+    "Editorial",
+    "Education"
+  ],
+  "character": "Restrained",
+  "traits": {
+    "composition": "Linear documentary chapters with evidence plates and substantial text",
+    "navigation": "Chapter index plus continuous reading",
+    "typography": "DM Sans + Libre Baskerville",
+    "density": "Medium",
+    "imagery": "Licensed illustrative photography and original diagrams",
+    "surface": "Full-bleed photography alternating with quiet reading surfaces",
+    "motion": "Minimal"
+  },
+  "effort": "Medium",
+  "definingFeatures": [
+    "Explanatory progression",
+    "Large evidence images with captions",
+    "Plain reading alternative"
+  ],
+  "adaptableChoices": [
+    "Brand and content",
+    "Accent colour with verified contrast",
+    "Equivalent licensed typefaces"
+  ],
+  "entryRoute": "/preview/08-documentary-story/start",
+  "states": [
+    {
+      "key": "chapters",
+      "label": "Chapter overview",
+      "route": "/preview/08-documentary-story/chapters"
+    },
+    {
+      "key": "reading",
+      "label": "Continuous reading",
+      "route": "/preview/08-documentary-story/reading"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/08/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/08/92810eb1b393540f-desktop.jpg",
+      "route": "/preview/08-documentary-story/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:0ebd20a4c707266cedde73bdd2dc3a2c7b8602515325f02808909257888bc18b",
+      "sha256": "92810eb1b393540fa29598a190fe7d8f0c05bc0ee316edba758096e3e61c8a15",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/08/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/08/7203278219f35de6-mobile.jpg",
+      "route": "/preview/08-documentary-story/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:0ebd20a4c707266cedde73bdd2dc3a2c7b8602515325f02808909257888bc18b",
+      "sha256": "7203278219f35de61c55b3a73e926ee3c63697357dce768978998347d1bc74c6",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/08/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/08/f8c9cdb090d7210d-detail.jpg",
+      "route": "/preview/08-documentary-story/chapters",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "chapters",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:0ebd20a4c707266cedde73bdd2dc3a2c7b8602515325f02808909257888bc18b",
+      "sha256": "f8c9cdb090d7210dd8dc7f0e5cca957c239a61fb2f7cb30fea8b3e8fada3e584",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/08/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/08/4e7839a93cee8f7e-full-page.jpg",
+      "route": "/preview/08-documentary-story/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:0ebd20a4c707266cedde73bdd2dc3a2c7b8602515325f02808909257888bc18b",
+      "sha256": "4e7839a93cee8f7e0006f4d4f9bdb866b53705a9c4baff53ec14aa034112c3d8",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/08-documentary-story",
+  "neighbours": [
+    "28",
+    "26"
+  ],
+  "palette": {
+    "page": "#eae7dc",
+    "surface": "#ffffff",
+    "ink": "#232e2d",
+    "accent": "#b08a37"
+  },
+  "fonts": [
+    "DM Sans",
+    "Libre Baskerville"
+  ],
+  "brief": "**Philosophy and fit.** Build understanding through a deliberate sequence of evidence, place, and explanation. Suitable for investigative features, historical accounts, project retrospectives, and visual explainers.\n\n**Visual grammar.** Use a linear chapter structure with substantial text, full-width documentary images, maps or diagrams where useful, and short transitional passages. A small chapter index provides orientation. A sober sans heading and readable serif body sit on alternating ink and paper sections, with an ochre accent for annotations. Sticky imagery may accompany a passage, but all content remains meaningful in normal document order.\n\n**Specimen and flow.** *The River Works* explains a fictional town's abandoned water system. Readers progress through five chapters, inspect a labelled mechanism diagram, and open evidence captions. Supporting states provide a chapter overview and a plain continuous-reading version.\n\n**Adaptation and identity.** Mobile replaces sticky side-by-side scenes with image-and-text sequences. Reduced motion removes animated transitions. Preserve the explanatory progression and substantial writing; avoid scroll hijacking, text revealed too slowly to read, and spectacle unsupported by content. **Effort: medium.**",
+  "scope": "An expansive sample page with representative local interactions; no production business backend."
+}

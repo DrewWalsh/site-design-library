@@ -1,0 +1,64 @@
+{
+  "designId": "01",
+  "sourceRevision": "sha256:6d28e27e69bcf8e2be11c91471e52cd4d0a79f70912964ec0fadbc50cfcf16a5",
+  "capturedAt": "2026-10-26T22:47:53.386Z",
+  "browser": "156.0.4314.42",
+  "captures": [
+    {
+      "file": "/previews/01/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/01/08af1cc991ddcfdf-desktop.jpg",
+      "route": "/preview/01-civic-service/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:6d28e27e69bcf8e2be11c91471e52cd4d0a79f70912964ec0fadbc50cfcf16a5",
+      "sha256": "08af1cc991ddcfdf5c1ea4ee593c6fe779ea402f57639c0db60304e71c02fc90",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/01/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/01/5f824b910097d90b-mobile.jpg",
+      "route": "/preview/01-civic-service/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:6d28e27e69bcf8e2be11c91471e52cd4d0a79f70912964ec0fadbc50cfcf16a5",
+      "sha256": "5f824b910097d90b868a5b04eb6e31f9a84fb22c3c199ed723a045630163d878",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/01/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/01/003b1467cb2be2d3-detail.jpg",
+      "route": "/preview/01-civic-service/book",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "book",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:6d28e27e69bcf8e2be11c91471e52cd4d0a79f70912964ec0fadbc50cfcf16a5",
+      "sha256": "003b1467cb2be2d36b9894d62d596214db0137ed29131e05b729ff8078408490",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/01/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/01/33f17a2654ffb734-full-page.jpg",
+      "route": "/preview/01-civic-service/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:6d28e27e69bcf8e2be11c91471e52cd4d0a79f70912964ec0fadbc50cfcf16a5",
+      "sha256": "33f17a2654ffb73449bf1ec9fe4246779bb926e107bb4365956e3fa0e0d4e3e2",
+      "fullPage": true
+    }
+  ]
+}

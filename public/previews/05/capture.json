@@ -1,0 +1,64 @@
+{
+  "designId": "05",
+  "sourceRevision": "sha256:53deb3ca3cc64cb47544e443fd817e21ef5b614dbc926691035bafa8a8c9f2e1",
+  "capturedAt": "2026-10-26T22:48:05.993Z",
+  "browser": "156.0.4314.42",
+  "captures": [
+    {
+      "file": "/previews/05/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/05/7d1a041b430d41ec-desktop.jpg",
+      "route": "/preview/05-scholarly-folio/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:53deb3ca3cc64cb47544e443fd817e21ef5b614dbc926691035bafa8a8c9f2e1",
+      "sha256": "7d1a041b430d41ec243a10adcafd5df81d1dbf75fe72e0c88d5939e7e716bb06",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/05/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/05/3c3b8af031d05441-mobile.jpg",
+      "route": "/preview/05-scholarly-folio/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:53deb3ca3cc64cb47544e443fd817e21ef5b614dbc926691035bafa8a8c9f2e1",
+      "sha256": "3c3b8af031d054410540038542d8f2044b86dc9b921fbf8a3192884f83d8816d",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/05/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/05/9bbfa2a32a658c97-detail.jpg",
+      "route": "/preview/05-scholarly-folio/reading",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "reading",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:53deb3ca3cc64cb47544e443fd817e21ef5b614dbc926691035bafa8a8c9f2e1",
+      "sha256": "9bbfa2a32a658c97cbdc3894d3e738a63f0cbc56d85aae82ca7bc3fdcaf12a56",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/05/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/05/c496687c363c2643-full-page.jpg",
+      "route": "/preview/05-scholarly-folio/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:53deb3ca3cc64cb47544e443fd817e21ef5b614dbc926691035bafa8a8c9f2e1",
+      "sha256": "c496687c363c26432ecf5e4376a47373db632d19820101923aace4e299e20548",
+      "fullPage": true
+    }
+  ]
+}

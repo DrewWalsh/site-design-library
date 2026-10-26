@@ -1,0 +1,64 @@
+{
+  "designId": "04",
+  "sourceRevision": "sha256:93e635bbf276f5244d7e1ee0318cdd19f3d32010bc569fbd476baead1cbaf6f6",
+  "capturedAt": "2026-10-26T22:48:02.830Z",
+  "browser": "156.0.4314.42",
+  "captures": [
+    {
+      "file": "/previews/04/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/04/16b274f55096686d-desktop.jpg",
+      "route": "/preview/04-quiet-atelier/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:93e635bbf276f5244d7e1ee0318cdd19f3d32010bc569fbd476baead1cbaf6f6",
+      "sha256": "16b274f55096686d8af8e84800d1e0adb2d48068ed54fb87e242a23dbccd056a",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/04/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/04/9bc84cb892e3d8df-mobile.jpg",
+      "route": "/preview/04-quiet-atelier/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:93e635bbf276f5244d7e1ee0318cdd19f3d32010bc569fbd476baead1cbaf6f6",
+      "sha256": "9bc84cb892e3d8dfcdb4a40b672814458e071859c3db920e3df00869b60e5554",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/04/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/04/58661d7f41249fdf-detail.jpg",
+      "route": "/preview/04-quiet-atelier/project",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "project",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:93e635bbf276f5244d7e1ee0318cdd19f3d32010bc569fbd476baead1cbaf6f6",
+      "sha256": "58661d7f41249fdfbfad84cc827bfe1106ecf69e8d05291d828d06cdf74ecd97",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/04/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/04/9e530bd4e444d305-full-page.jpg",
+      "route": "/preview/04-quiet-atelier/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:93e635bbf276f5244d7e1ee0318cdd19f3d32010bc569fbd476baead1cbaf6f6",
+      "sha256": "9e530bd4e444d305481e46bf334284aced9c3a49406905b77bdf4cc8f8277262",
+      "fullPage": true
+    }
+  ]
+}

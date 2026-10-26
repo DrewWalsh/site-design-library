@@ -1,0 +1,64 @@
+{
+  "designId": "44",
+  "sourceRevision": "sha256:68a798adf34ffee61b77b1ceff2bf04ad8b03729e293eb7df33c53e2b750e70a",
+  "capturedAt": "2026-10-26T22:50:07.762Z",
+  "browser": "156.0.4314.42",
+  "captures": [
+    {
+      "file": "/previews/44/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/44/be41ae177b9b8dd3-desktop.jpg",
+      "route": "/preview/44-neo-brutalist-board/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:68a798adf34ffee61b77b1ceff2bf04ad8b03729e293eb7df33c53e2b750e70a",
+      "sha256": "be41ae177b9b8dd36ebcb31f3b462f1c1b5a85a4549b5f92fc54516d2a2fba83",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/44/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/44/eb585a768c9ba30e-mobile.jpg",
+      "route": "/preview/44-neo-brutalist-board/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:68a798adf34ffee61b77b1ceff2bf04ad8b03729e293eb7df33c53e2b750e70a",
+      "sha256": "eb585a768c9ba30e63a0517710bc6d30ba92990a1748f6350a38937bd2bb0dfc",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/44/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/44/c0386b337bb85b48-detail.jpg",
+      "route": "/preview/44-neo-brutalist-board/workshop",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "workshop",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:68a798adf34ffee61b77b1ceff2bf04ad8b03729e293eb7df33c53e2b750e70a",
+      "sha256": "c0386b337bb85b48f84422900aadef4fee21215aef9ec49fa5c520bdfe28b5ce",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/44/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/44/e829029c56d20e64-full-page.jpg",
+      "route": "/preview/44-neo-brutalist-board/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:68a798adf34ffee61b77b1ceff2bf04ad8b03729e293eb7df33c53e2b750e70a",
+      "sha256": "e829029c56d20e644ae403deeac1da571f9a6322e45502fd5fd16e4209404209",
+      "fullPage": true
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "id": "43",
+  "slug": "y2k-chrome",
+  "name": "Y2K Chrome",
+  "brand": "Signal Mesh",
+  "family": "Retro & experimental",
+  "status": "ready",
+  "thesis": "Present culture as a luminous piece of digital equipment.",
+  "suitableFor": [
+    "Music",
+    "Culture"
+  ],
+  "character": "Expressive",
+  "traits": {
+    "composition": "Central metallic media equipment with an asymmetric release strip and inset controls",
+    "navigation": "Release selection, track list, and artist credits",
+    "typography": "Space Grotesk + DM Sans",
+    "density": "Medium",
+    "imagery": "Original CSS illustrations and graphic studies",
+    "surface": "Silver gradients, rounded media panels and original chrome studies",
+    "motion": "Minimal"
+  },
+  "effort": "Medium",
+  "definingFeatures": [
+    "Equipment-like composition",
+    "Chrome framing around calm text surfaces",
+    "Explicit, opt-in playback controls"
+  ],
+  "adaptableChoices": [
+    "Brand and content",
+    "Accent colour with verified contrast",
+    "Equivalent licensed typefaces"
+  ],
+  "entryRoute": "/preview/43-y2k-chrome/start",
+  "states": [
+    {
+      "key": "credits",
+      "label": "Artist and production credits",
+      "route": "/preview/43-y2k-chrome/credits"
+    },
+    {
+      "key": "player",
+      "label": "Selected track / unavailable preview",
+      "route": "/preview/43-y2k-chrome/player"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/43/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/43/fdc6cc86926749f5-desktop.jpg",
+      "route": "/preview/43-y2k-chrome/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:c478c0cc65d40719e7b820f7b311f1448d2226eb4860b154cf0517de5b38b198",
+      "sha256": "fdc6cc86926749f58b7f6d482566cf8df175d5f3fbdc6bc2ca94ba74abdfbeae",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/43/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/43/fd282b3a7f5c8270-mobile.jpg",
+      "route": "/preview/43-y2k-chrome/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:c478c0cc65d40719e7b820f7b311f1448d2226eb4860b154cf0517de5b38b198",
+      "sha256": "fd282b3a7f5c827057ff8c98b22b553f9733ec62e88b945351bea0e429557a35",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/43/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/43/977292e1beaec05e-detail.jpg",
+      "route": "/preview/43-y2k-chrome/credits",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "credits",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:c478c0cc65d40719e7b820f7b311f1448d2226eb4860b154cf0517de5b38b198",
+      "sha256": "977292e1beaec05ed21c9af61f17db88fbf5f3a9d352ab46b3b071da868267f9",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/43/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/43/e905251474654631-full-page.jpg",
+      "route": "/preview/43-y2k-chrome/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:c478c0cc65d40719e7b820f7b311f1448d2226eb4860b154cf0517de5b38b198",
+      "sha256": "e90525147465463180dcd802ad7296b41a8346a9565fb6e1ef866d7c03c18bae",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/43-y2k-chrome",
+  "neighbours": [
+    "38",
+    "17"
+  ],
+  "palette": {
+    "page": "#ced5df",
+    "surface": "#e7edf1",
+    "ink": "#1d2943",
+    "accent": "#20627a"
+  },
+  "fonts": [
+    "Space Grotesk",
+    "DM Sans"
+  ],
+  "brief": "**Philosophy and fit.** Present culture as a luminous piece of digital equipment. Suitable for electronic music labels, nightlife programmes, experimental fashion, and creative release collections.\n\n**Visual grammar.** Compose a central media module with asymmetric side controls, metallic dividers, translucent inset panels, pill-shaped switches, and compact release metadata. Use an extended display face, a straightforward sans serif for details, cool silver, deep navy, and electric cyan. Chrome belongs to framing and highlights; long text sits on a calm solid surface.\n\n**Specimen and flow.** *Signal Mesh* is a fictional electronic music label. Browse its release strip, open an album, and select a track for an explicitly initiated preview. Supporting views are artist credits and the player’s paused or unavailable-preview state. Local licensed audio is an optional specimen asset.\n\n**Mobile and motion.** Stack the release controls above a persistent compact player. Replace decorative moving reflections with static gradients under reduced motion; playback never starts automatically.\n\n**Identity and effort.** Preserve equipment-like composition and material contrast; avoid tiny controls, low-contrast metallic copy, and a generic gradient landing page. **Effort: medium.**",
+  "scope": "An expansive sample page with representative local interactions; no production business backend."
+}

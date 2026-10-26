@@ -1,0 +1,15 @@
+.specimen {
+  --page: #152f4b;
+  --surface: #1c3b59;
+  --ink: #e2edf1;
+  --muted: #e2edf1;
+  --accent: #8fd4de;
+  --line: color-mix(in srgb, var(--ink) 22%, transparent);
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: 'IBM Plex Mono', monospace;
+  --space: 8px;
+  --measure: 65ch;
+  --content: 1240px;
+  --radius: 0px;
+  --duration: 160ms;
+}

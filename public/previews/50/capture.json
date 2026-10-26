@@ -1,0 +1,64 @@
+{
+  "designId": "50",
+  "sourceRevision": "sha256:4b70820190de36456df67f2c60c0665bc7691391320e9925077c7d4a0e7cd0ee",
+  "capturedAt": "2026-10-26T22:50:26.218Z",
+  "browser": "156.0.4314.42",
+  "captures": [
+    {
+      "file": "/previews/50/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/50/57d5ce18d4089465-desktop.jpg",
+      "route": "/preview/50-infinite-index/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:4b70820190de36456df67f2c60c0665bc7691391320e9925077c7d4a0e7cd0ee",
+      "sha256": "57d5ce18d40894653c6d1399bdeeb32852dbe862b5812b5dc93f37d56998c33a",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/50/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/50/11fbc107566469b4-mobile.jpg",
+      "route": "/preview/50-infinite-index/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:4b70820190de36456df67f2c60c0665bc7691391320e9925077c7d4a0e7cd0ee",
+      "sha256": "11fbc107566469b4d5d12d496f7cd93150d7306a0e852d5d437be68f7784922d",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/50/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/50/e68da803e79bf0ef-detail.jpg",
+      "route": "/preview/50-infinite-index/detail",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "detail",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:4b70820190de36456df67f2c60c0665bc7691391320e9925077c7d4a0e7cd0ee",
+      "sha256": "e68da803e79bf0efd38e701353627e7e43961ef9c0011f78f4fd1bfc8d4f20f4",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/50/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/50/3fbbb467375f26b3-full-page.jpg",
+      "route": "/preview/50-infinite-index/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:4b70820190de36456df67f2c60c0665bc7691391320e9925077c7d4a0e7cd0ee",
+      "sha256": "3fbbb467375f26b3b8c9835763c328ebc255f922237aef0a9ebb96fea0266a26",
+      "fullPage": true
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "designId": "23",
+  "sourceRevision": "sha256:dca5f2354bac384e60c727140bb61aa224c290d08fda449637ca5a33600b2711",
+  "capturedAt": "2026-10-26T22:49:02.367Z",
+  "browser": "156.0.4314.42",
+  "captures": [
+    {
+      "file": "/previews/23/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/23/2e61109b68c55c59-desktop.jpg",
+      "route": "/preview/23-market-bazaar/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:dca5f2354bac384e60c727140bb61aa224c290d08fda449637ca5a33600b2711",
+      "sha256": "2e61109b68c55c593876cfc97a0deb890152f6bb5936f244899bfe39bdd9fec0",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/23/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/23/a06a4f7dcba17af8-mobile.jpg",
+      "route": "/preview/23-market-bazaar/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:dca5f2354bac384e60c727140bb61aa224c290d08fda449637ca5a33600b2711",
+      "sha256": "a06a4f7dcba17af8d1af1adced2fd627f364d8078e4b07b8353c416bc66046a8",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/23/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/23/350707012b92c201-detail.jpg",
+      "route": "/preview/23-market-bazaar/vendor",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "vendor",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:dca5f2354bac384e60c727140bb61aa224c290d08fda449637ca5a33600b2711",
+      "sha256": "350707012b92c20103473899522133f45820c02d0805d5171c1bf5e29681c42a",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/23/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/23/f19e56b50c0d79a8-full-page.jpg",
+      "route": "/preview/23-market-bazaar/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:dca5f2354bac384e60c727140bb61aa224c290d08fda449637ca5a33600b2711",
+      "sha256": "f19e56b50c0d79a8c039f4acc973e8e8edda1044b78e03e5fa2a3cc33c2727c5",
+      "fullPage": true
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "id": "39",
+  "slug": "personal-web-1999",
+  "name": "Personal Web 1999",
+  "brand": "Moth Observatory",
+  "family": "Playful & material",
+  "status": "ready",
+  "thesis": "Express a person’s interests through a small, hand maintained web of pages.",
+  "suitableFor": [
+    "Personal",
+    "Editorial"
+  ],
+  "character": "Expressive",
+  "traits": {
+    "composition": "Compact personal homepage with a visible link directory, updates, and original badges",
+    "navigation": "Direct links, adjacent journal entries, and a local guestbook",
+    "typography": "Libre Baskerville + DM Sans",
+    "density": "Medium",
+    "imagery": "Original SVG diagrams and illustrations",
+    "surface": "Patterned wallpaper, small personal panels, serif text and original moth art",
+    "motion": "Minimal"
+  },
+  "effort": "Low",
+  "definingFeatures": [
+    "Personal miscellany",
+    "Modest hand-maintained page width",
+    "Underlined links and visible site map"
+  ],
+  "adaptableChoices": [
+    "Brand and content",
+    "Accent colour with verified contrast",
+    "Equivalent licensed typefaces"
+  ],
+  "entryRoute": "/preview/39-personal-web-1999/start",
+  "states": [
+    {
+      "key": "journal",
+      "label": "A journal entry",
+      "route": "/preview/39-personal-web-1999/journal"
+    },
+    {
+      "key": "guestbook",
+      "label": "Local guestbook",
+      "route": "/preview/39-personal-web-1999/guestbook"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/39/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/39/e5d453d6f848ecf9-desktop.jpg",
+      "route": "/preview/39-personal-web-1999/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:fe9b0d7e9eb4139f9aed41712576dd4c86860a983e0644abb3deb9b49bdc647a",
+      "sha256": "e5d453d6f848ecf9d96c71227aaec6a3b223d51d7f7715965a90375520927384",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/39/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/39/8cf37e41f8047a1f-mobile.jpg",
+      "route": "/preview/39-personal-web-1999/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:fe9b0d7e9eb4139f9aed41712576dd4c86860a983e0644abb3deb9b49bdc647a",
+      "sha256": "8cf37e41f8047a1f2817ac9eb19e6d056b9349c125972677236a63dadf94e07b",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/39/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/39/8d8c37c87ed3c153-detail.jpg",
+      "route": "/preview/39-personal-web-1999/journal",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "journal",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:fe9b0d7e9eb4139f9aed41712576dd4c86860a983e0644abb3deb9b49bdc647a",
+      "sha256": "8d8c37c87ed3c1537768df9ccb9c1a3da210a7113f7aac311a862d140536b393",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/39/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/39/db3be0630837585c-full-page.jpg",
+      "route": "/preview/39-personal-web-1999/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:fe9b0d7e9eb4139f9aed41712576dd4c86860a983e0644abb3deb9b49bdc647a",
+      "sha256": "db3be0630837585cf272734b777b6f57a7d4d0082ea30ac16ff2058af7290a06",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/39-personal-web-1999",
+  "neighbours": [
+    "40",
+    "42"
+  ],
+  "palette": {
+    "page": "#dfe2cf",
+    "surface": "#fffceb",
+    "ink": "#262b43",
+    "accent": "#3e4e8a"
+  },
+  "fonts": [
+    "Libre Baskerville",
+    "DM Sans"
+  ],
+  "brief": "**Philosophy and fit.** Express a person’s interests through a small, hand maintained web of pages. Suitable for personal sites, fan communities, hobby collections, and informal project journals.\n\n**Visual grammar.** Use a compact masthead, a visible link directory, short update entries, tiny original badges, and an intentionally modest content width. Default-like serif copy and blue underlined links coexist with simple coloured table-like panels built using modern layout CSS. A repeating background pattern can surround a solid, readable content surface.\n\n**Specimen and flow.** *Moth Observatory* is a fictional enthusiast’s website. Follow a homepage journal link, read an entry, then navigate to adjacent entries. Supporting pages are a curated links directory and a guestbook with clearly local-only sample submissions. A site map keeps every destination discoverable.\n\n**Mobile and motion.** Collapse the link rail above the content, wrap badges, and keep text comfortably readable. Any small animated decoration has a pause control or a static alternative.\n\n**Identity and effort.** Preserve personal miscellany, direct linking, and homemade composition; avoid copying obsolete browser failures or inserting fake broken links. **Effort: low.**",
+  "scope": "An expansive sample page with representative local interactions; no production business backend."
+}

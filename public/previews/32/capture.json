@@ -1,0 +1,64 @@
+{
+  "designId": "32",
+  "sourceRevision": "sha256:3f8c2fd15baf125d136b22699b95dad2d8af18180a3477b3d33b8c0a1edc6acd",
+  "capturedAt": "2026-10-26T22:49:30.450Z",
+  "browser": "156.0.4314.42",
+  "captures": [
+    {
+      "file": "/previews/32/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/32/bbdf6460dab5a43a-desktop.jpg",
+      "route": "/preview/32-pop-memphis/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:3f8c2fd15baf125d136b22699b95dad2d8af18180a3477b3d33b8c0a1edc6acd",
+      "sha256": "bbdf6460dab5a43a9b5e7a931947b88679c2cb46e7d1d90f48c3efbc2ab6fc4f",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/32/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/32/4a175ede6901eda9-mobile.jpg",
+      "route": "/preview/32-pop-memphis/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:3f8c2fd15baf125d136b22699b95dad2d8af18180a3477b3d33b8c0a1edc6acd",
+      "sha256": "4a175ede6901eda92aabfc2e3fb828e2ce905e7a3eb7e52afba924700865fc73",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/32/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/32/528a09e2c1247b74-detail.jpg",
+      "route": "/preview/32-pop-memphis/bundle",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "bundle",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:3f8c2fd15baf125d136b22699b95dad2d8af18180a3477b3d33b8c0a1edc6acd",
+      "sha256": "528a09e2c1247b742241817ccaf4ca7cfe7d5e7bc7c9c7b57b0ddcfe8b1cdf64",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/32/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/32/3c0a9fcdb4b1bc3f-full-page.jpg",
+      "route": "/preview/32-pop-memphis/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:3f8c2fd15baf125d136b22699b95dad2d8af18180a3477b3d33b8c0a1edc6acd",
+      "sha256": "3c0a9fcdb4b1bc3faec57d12239ec04969bde9c6ca459440cda3fd84a2270e5f",
+      "fullPage": true
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "designId": "36",
+  "sourceRevision": "sha256:a263f3adfb7d13e856e7916c86071688eb83e5f5a36459275f64035ba5862167",
+  "capturedAt": "2026-10-26T22:49:43.010Z",
+  "browser": "156.0.4314.42",
+  "captures": [
+    {
+      "file": "/previews/36/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/36/a7faae3f4766c9f0-desktop.jpg",
+      "route": "/preview/36-punk-zine/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:a263f3adfb7d13e856e7916c86071688eb83e5f5a36459275f64035ba5862167",
+      "sha256": "a7faae3f4766c9f0b40443a3db9b37642d5552d26bffe38b918fcd0a93ea2878",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/36/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/36/6c4fc38c51866061-mobile.jpg",
+      "route": "/preview/36-punk-zine/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:a263f3adfb7d13e856e7916c86071688eb83e5f5a36459275f64035ba5862167",
+      "sha256": "6c4fc38c5186606111a45e502122cee63c56aa2cd20322fa5fd339f88d41bade",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/36/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/36/a35f9be3fa34c3ae-detail.jpg",
+      "route": "/preview/36-punk-zine/article",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "article",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:a263f3adfb7d13e856e7916c86071688eb83e5f5a36459275f64035ba5862167",
+      "sha256": "a35f9be3fa34c3ae5a30a24c35ab8e43cfd152b4a275fe6531a785ccacdeffed",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/36/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/36/539bbf664ea672c6-full-page.jpg",
+      "route": "/preview/36-punk-zine/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:a263f3adfb7d13e856e7916c86071688eb83e5f5a36459275f64035ba5862167",
+      "sha256": "539bbf664ea672c67aad74a1c15973b142b48a5b3203e881df4553590aeae0d8",
+      "fullPage": true
+    }
+  ]
+}

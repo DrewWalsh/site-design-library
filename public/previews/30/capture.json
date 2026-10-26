@@ -1,0 +1,64 @@
+{
+  "designId": "30",
+  "sourceRevision": "sha256:0d65249b0db6d37e5f351d0693cb662b758c9963cecc29ea46008dc690addcd2",
+  "capturedAt": "2026-10-26T22:49:24.160Z",
+  "browser": "156.0.4314.42",
+  "captures": [
+    {
+      "file": "/previews/30/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/30/5eefb8eed58a1e4b-desktop.jpg",
+      "route": "/preview/30-festival-poster/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:0d65249b0db6d37e5f351d0693cb662b758c9963cecc29ea46008dc690addcd2",
+      "sha256": "5eefb8eed58a1e4b120c02dd26e9c9d39f144f9922823c48528d654332bf3a01",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/30/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/30/cd75f4653d33cb6a-mobile.jpg",
+      "route": "/preview/30-festival-poster/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:0d65249b0db6d37e5f351d0693cb662b758c9963cecc29ea46008dc690addcd2",
+      "sha256": "cd75f4653d33cb6a4bcb9d3c7ff1d065abeccf7ba0329dea5d1f90e638deacfb",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/30/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/30/51e73b9beaf9c112-detail.jpg",
+      "route": "/preview/30-festival-poster/event",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "event",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:0d65249b0db6d37e5f351d0693cb662b758c9963cecc29ea46008dc690addcd2",
+      "sha256": "51e73b9beaf9c112ad310677789ec259766e8ffd91c6b09ac60459580804d1f1",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/30/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/30/70a4eaa27ce290f4-full-page.jpg",
+      "route": "/preview/30-festival-poster/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:0d65249b0db6d37e5f351d0693cb662b758c9963cecc29ea46008dc690addcd2",
+      "sha256": "70a4eaa27ce290f48fbc2d3615d8dcbfb4658e4a31ec28ba5701bab3a201db9f",
+      "fullPage": true
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "designId": "25",
+  "sourceRevision": "sha256:dc9f0f84347ba7649a1559389e68b1c6e42a40d16d6f0bbfea234f99ab1d8585",
+  "capturedAt": "2026-10-26T22:49:08.660Z",
+  "browser": "156.0.4314.42",
+  "captures": [
+    {
+      "file": "/previews/25/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/25/34ca0670c722b5a7-desktop.jpg",
+      "route": "/preview/25-local-trades/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:dc9f0f84347ba7649a1559389e68b1c6e42a40d16d6f0bbfea234f99ab1d8585",
+      "sha256": "34ca0670c722b5a7bd67e0f253d5935d198a3a1172924895129696cdba7b4bad",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/25/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/25/9e419e0893b979df-mobile.jpg",
+      "route": "/preview/25-local-trades/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:dc9f0f84347ba7649a1559389e68b1c6e42a40d16d6f0bbfea234f99ab1d8585",
+      "sha256": "9e419e0893b979dfbbc94911b0771529a959e1acc49dd2c9d2dc02bdc7030f88",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/25/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/25/2e984a75199c371a-detail.jpg",
+      "route": "/preview/25-local-trades/quote",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "quote",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:dc9f0f84347ba7649a1559389e68b1c6e42a40d16d6f0bbfea234f99ab1d8585",
+      "sha256": "2e984a75199c371a10e4dc6eff55e5860efe0fb044fa40698d8302a789a6826c",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/25/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/25/680741e95ba28fe8-full-page.jpg",
+      "route": "/preview/25-local-trades/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:dc9f0f84347ba7649a1559389e68b1c6e42a40d16d6f0bbfea234f99ab1d8585",
+      "sha256": "680741e95ba28fe868a24d75cc94d8f99ea7035743043e33a35bebb5c8d45096",
+      "fullPage": true
+    }
+  ]
+}

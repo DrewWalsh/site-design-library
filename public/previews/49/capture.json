@@ -1,0 +1,64 @@
+{
+  "designId": "49",
+  "sourceRevision": "sha256:f8610ba105c0f5ee69a0304da3bb955579b389bb30c6af195405d3f333e7483a",
+  "capturedAt": "2026-10-26T22:50:23.136Z",
+  "browser": "156.0.4314.42",
+  "captures": [
+    {
+      "file": "/previews/49/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/49/34d5c6b665de0bf5-desktop.jpg",
+      "route": "/preview/49-parametric-studio/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:f8610ba105c0f5ee69a0304da3bb955579b389bb30c6af195405d3f333e7483a",
+      "sha256": "34d5c6b665de0bf59289229ef962870a574b9b17cbe011c744b9f3a84520c81e",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/49/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/49/617c471176891e74-mobile.jpg",
+      "route": "/preview/49-parametric-studio/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:f8610ba105c0f5ee69a0304da3bb955579b389bb30c6af195405d3f333e7483a",
+      "sha256": "617c471176891e740a36a79bfb07dd529a2c053f8fc0c407e2d0f3790e84604c",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/49/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/49/d6d6bb914fdd234a-detail.jpg",
+      "route": "/preview/49-parametric-studio/compare",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "compare",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:f8610ba105c0f5ee69a0304da3bb955579b389bb30c6af195405d3f333e7483a",
+      "sha256": "d6d6bb914fdd234a869a1212f5daa8eb12e171f14b55aba4aa99364623c0e60d",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/49/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/49/58ec584f3c16da00-full-page.jpg",
+      "route": "/preview/49-parametric-studio/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:f8610ba105c0f5ee69a0304da3bb955579b389bb30c6af195405d3f333e7483a",
+      "sha256": "58ec584f3c16da0028a5d3c72f7927c3bab10b7f70047c3724587b71b829a384",
+      "fullPage": true
+    }
+  ]
+}

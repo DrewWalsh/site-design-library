@@ -1,0 +1,64 @@
+{
+  "designId": "02",
+  "sourceRevision": "sha256:f53ce8f81cbb556899b2e603878922fd15a402e9ca077760fbe8a8259f5d902e",
+  "capturedAt": "2026-10-26T22:47:56.542Z",
+  "browser": "156.0.4314.42",
+  "captures": [
+    {
+      "file": "/previews/02/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/02/bb08e127c585767b-desktop.jpg",
+      "route": "/preview/02-precision-saas/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:f53ce8f81cbb556899b2e603878922fd15a402e9ca077760fbe8a8259f5d902e",
+      "sha256": "bb08e127c585767b97bbfc1a930885507916f20aab7ca7fa0d1b92fe33cb8d61",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/02/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/02/078e57f430bb83b7-mobile.jpg",
+      "route": "/preview/02-precision-saas/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:f53ce8f81cbb556899b2e603878922fd15a402e9ca077760fbe8a8259f5d902e",
+      "sha256": "078e57f430bb83b73c8719cccc046f202f4b2eb271a128c938519174306336db",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/02/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/02/170ef779b0894a6c-detail.jpg",
+      "route": "/preview/02-precision-saas/inbox",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "inbox",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:f53ce8f81cbb556899b2e603878922fd15a402e9ca077760fbe8a8259f5d902e",
+      "sha256": "170ef779b0894a6ceaae63e6d7ecf9b4741935b979061d50c2ff7fe85d0d37a5",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/02/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/02/614f975c1c3e45a1-full-page.jpg",
+      "route": "/preview/02-precision-saas/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:f53ce8f81cbb556899b2e603878922fd15a402e9ca077760fbe8a8259f5d902e",
+      "sha256": "614f975c1c3e45a117e27a50f5b3c98b6219aacd474ad71cddd88d80f6e24cd7",
+      "fullPage": true
+    }
+  ]
+}

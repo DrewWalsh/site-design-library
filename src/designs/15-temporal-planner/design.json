@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "id": "15",
+  "slug": "temporal-planner",
+  "name": "Temporal Planner",
+  "brand": "Weekcraft",
+  "family": "Workspaces & discovery",
+  "status": "ready",
+  "thesis": "Make time, duration, overlap, and availability immediately legible.",
+  "suitableFor": [
+    "Planning",
+    "Workspaces"
+  ],
+  "character": "Restrained",
+  "traits": {
+    "composition": "Time-based week grid paired with an agenda rail",
+    "navigation": "Week, agenda, and explicit rescheduling form",
+    "typography": "DM Sans",
+    "density": "Medium",
+    "imagery": "Typography, rules, and interface structure",
+    "surface": "Ruled time grid and softly coloured duration blocks",
+    "motion": "Minimal"
+  },
+  "effort": "Medium",
+  "definingFeatures": [
+    "Readable duration and overlap",
+    "Labelled activity categories",
+    "Non-drag scheduling controls"
+  ],
+  "adaptableChoices": [
+    "Brand and content",
+    "Accent colour with verified contrast",
+    "Equivalent licensed typefaces"
+  ],
+  "entryRoute": "/preview/15-temporal-planner/start",
+  "states": [
+    {
+      "key": "edit",
+      "label": "Move a session",
+      "route": "/preview/15-temporal-planner/edit"
+    },
+    {
+      "key": "agenda",
+      "label": "Agenda view",
+      "route": "/preview/15-temporal-planner/agenda"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/15/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/15/1f485563ec0e558f-desktop.jpg",
+      "route": "/preview/15-temporal-planner/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:4d68aadc30dd4e7c06776ce9b6ac567090cde45c2e897e54110a2e32e03b5dde",
+      "sha256": "1f485563ec0e558fa8fecc48f6f13a7742d1fb020f487ec4dbca8a1f6623ac3a",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/15/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/15/0e385a43797b0265-mobile.jpg",
+      "route": "/preview/15-temporal-planner/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:4d68aadc30dd4e7c06776ce9b6ac567090cde45c2e897e54110a2e32e03b5dde",
+      "sha256": "0e385a43797b0265d4dd7a386312fe751e1f95691929b28ed05036571db4ba92",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/15/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/15/70bc1ce4c23d795e-detail.jpg",
+      "route": "/preview/15-temporal-planner/edit",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "edit",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:4d68aadc30dd4e7c06776ce9b6ac567090cde45c2e897e54110a2e32e03b5dde",
+      "sha256": "70bc1ce4c23d795e64462df9049c96d8171bbb44c86ffc29f0bc45b3794c6f5b",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/15/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/15/7b40aaf819f7e96d-full-page.jpg",
+      "route": "/preview/15-temporal-planner/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:4d68aadc30dd4e7c06776ce9b6ac567090cde45c2e897e54110a2e32e03b5dde",
+      "sha256": "7b40aaf819f7e96d378e8d4cee2e6e8f1a97c86f1ef5454ac4a6971ab45fdc63",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/15-temporal-planner",
+  "neighbours": [
+    "11",
+    "14"
+  ],
+  "palette": {
+    "page": "#f7f8fa",
+    "surface": "#ffffff",
+    "ink": "#2c3d51",
+    "accent": "#356d9c"
+  },
+  "fonts": [
+    "DM Sans"
+  ],
+  "brief": "**Philosophy and fit.** Make time, duration, overlap, and availability immediately legible. Suitable for schedules, personal planning, project calendars, event programmes, and resource booking.\n\n**Visual grammar.** Use a time-based grid with explicit day and hour labels, a narrow agenda rail, and a compact toolbar for period and view changes. A friendly UI sans, clean white ground, dark blue-grey ink, and a small palette of labelled activity categories organise the page. Current selection, unavailable periods, and overlapping items have visibly different treatments.\n\n**Specimen and flow.** *Weekcraft* contains a fictional workshop schedule. Users select a session, move it through an explicit date-and-time form, and inspect the updated week. Supporting states show a scheduling conflict and an agenda view containing the same appointments.\n\n**Adaptation and identity.** Mobile defaults to the agenda or a single-day view; horizontal swiping is optional. Preserve the time structure and text labels; avoid drag-only editing, colour-only categories, and compressing a whole week into unreadable columns. Motion simply confirms a change. **Effort: medium.**",
+  "scope": "An expansive sample page with representative local interactions; no production business backend."
+}

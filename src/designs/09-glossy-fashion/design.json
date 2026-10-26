@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "id": "09",
+  "slug": "glossy-fashion",
+  "name": "Glossy Fashion",
+  "brand": "Contour Quarterly",
+  "family": "Clarity & editorial",
+  "status": "ready",
+  "thesis": "Use art direction and image sequencing to establish a strong editorial world.",
+  "suitableFor": [
+    "Editorial",
+    "Fashion"
+  ],
+  "character": "Expressive",
+  "traits": {
+    "composition": "Photographic cover with large display type and alternating editorial spreads",
+    "navigation": "Issue chapters and contributor credits",
+    "typography": "Libre Baskerville + DM Sans",
+    "density": "Low",
+    "imagery": "Licensed illustrative photography",
+    "surface": "Oversized serif display, editorial photography and acid-yellow fields",
+    "motion": "Minimal"
+  },
+  "effort": "Medium",
+  "definingFeatures": [
+    "Deliberate image scale",
+    "Portrait-aware mobile composition",
+    "A distinct issue identity"
+  ],
+  "adaptableChoices": [
+    "Brand and content",
+    "Accent colour with verified contrast",
+    "Equivalent licensed typefaces"
+  ],
+  "entryRoute": "/preview/09-glossy-fashion/start",
+  "states": [
+    {
+      "key": "story",
+      "label": "The quiet edge",
+      "route": "/preview/09-glossy-fashion/story"
+    },
+    {
+      "key": "archive",
+      "label": "Issue archive",
+      "route": "/preview/09-glossy-fashion/archive"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/09/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/09/6d1fd227eebb5212-desktop.jpg",
+      "route": "/preview/09-glossy-fashion/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:2e569a394c53c3bca17468893f2b26c8d2c862c58b02e3dff82534093e944952",
+      "sha256": "6d1fd227eebb5212c9fd3904cbdfec48ce860d12e0df718bc555844f917a356e",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/09/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/09/6da840070286eac2-mobile.jpg",
+      "route": "/preview/09-glossy-fashion/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:2e569a394c53c3bca17468893f2b26c8d2c862c58b02e3dff82534093e944952",
+      "sha256": "6da840070286eac23949a70e19212ad12a2910a48630157d99ae7af49d4fc7dc",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/09/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/09/5622ea43cf0ea6b6-detail.jpg",
+      "route": "/preview/09-glossy-fashion/story",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "story",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:2e569a394c53c3bca17468893f2b26c8d2c862c58b02e3dff82534093e944952",
+      "sha256": "5622ea43cf0ea6b67dc6f3d61547e6bba3cbd9e118e82dd4a1b8bfcd7b8dc0c4",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/09/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/09/a3894fbe10e7159e-full-page.jpg",
+      "route": "/preview/09-glossy-fashion/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:2e569a394c53c3bca17468893f2b26c8d2c862c58b02e3dff82534093e944952",
+      "sha256": "a3894fbe10e7159e2353ebedb5e5ea7e591b1bd84163f0bc6de36d02d6261c20",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/09-glossy-fashion",
+  "neighbours": [
+    "06",
+    "36"
+  ],
+  "palette": {
+    "page": "#f3f2eb",
+    "surface": "#ffffff",
+    "ink": "#191b18",
+    "accent": "#d8e34a"
+  },
+  "fonts": [
+    "Libre Baskerville",
+    "DM Sans"
+  ],
+  "brief": "**Philosophy and fit.** Use art direction and image sequencing to establish a strong editorial world. Suitable for fashion publications, visual culture platforms, photography features, and campaign-led brands.\n\n**Visual grammar.** Compose a full-bleed cover image with an assertive display serif, tightly edited cover lines, and a discreet issue navigation. Interior pages alternate large photographic spreads, intentional white space, cropped details, and short interviews. Use black, paper white, and a single seasonal acid accent. Keep body copy on stable, readable surfaces even when headlines intersect images.\n\n**Specimen and flow.** *Contour Quarterly* presents a fictional visual culture issue. Visitors enter a cover story, move through its image-led chapters, and explore the contributors. Supporting screens provide an issue archive and an image detail view with caption and credit.\n\n**Adaptation and identity.** Mobile uses dedicated portrait crops and restores headings to predictable positions. Preserve editorial image scale and deliberate sequencing; avoid retail product grids, anonymous stock imagery, illegible type overlays, and page-turn gimmicks. Motion remains optional. **Effort: medium.**",
+  "scope": "An expansive sample page with representative local interactions; no production business backend."
+}

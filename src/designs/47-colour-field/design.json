@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "id": "47",
+  "slug": "colour-field",
+  "name": "Colour Field",
+  "brand": "Intervals",
+  "family": "Retro & experimental",
+  "status": "ready",
+  "thesis": "Make a site’s chapters legible through large fields of colour and simple spatial relationships.",
+  "suitableFor": [
+    "Culture",
+    "Marketing"
+  ],
+  "character": "Expressive",
+  "traits": {
+    "composition": "Large flat colour planes with a consistent chapter rail",
+    "navigation": "Explicit chapter anchors and aligned membership columns",
+    "typography": "Space Grotesk + DM Sans",
+    "density": "Low",
+    "imagery": "Typography, rules, and interface structure",
+    "surface": "Large muted colour fields, asymmetrical typography and minimal divisions",
+    "motion": "Minimal"
+  },
+  "effort": "Medium",
+  "definingFeatures": [
+    "Colour fields define chapters",
+    "Sparse geometric markers",
+    "Proportion and whitespace over decoration"
+  ],
+  "adaptableChoices": [
+    "Brand and content",
+    "Accent colour with verified contrast",
+    "Equivalent licensed typefaces"
+  ],
+  "entryRoute": "/preview/47-colour-field/start",
+  "states": [
+    {
+      "key": "exhibition",
+      "label": "Exhibition detail",
+      "route": "/preview/47-colour-field/exhibition"
+    },
+    {
+      "key": "membership",
+      "label": "Membership comparison",
+      "route": "/preview/47-colour-field/membership"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/47/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/47/4022fb9f7c0b68c2-desktop.jpg",
+      "route": "/preview/47-colour-field/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:0c7f9d80d7f4c3d61fa8b392a3dc0aec4a55dbbdd25c21f4bd03c2eeaa71bc80",
+      "sha256": "4022fb9f7c0b68c2d5a1c8b97eba2b327950f99649af1c3f410b500e91ba65ec",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/47/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/47/806109bdd625752d-mobile.jpg",
+      "route": "/preview/47-colour-field/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:0c7f9d80d7f4c3d61fa8b392a3dc0aec4a55dbbdd25c21f4bd03c2eeaa71bc80",
+      "sha256": "806109bdd625752d03b8749bedbfeeb3b0b2c8ca51d50df99f21f52c3eace330",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/47/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/47/2205256da02c586a-detail.jpg",
+      "route": "/preview/47-colour-field/exhibition",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "exhibition",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:0c7f9d80d7f4c3d61fa8b392a3dc0aec4a55dbbdd25c21f4bd03c2eeaa71bc80",
+      "sha256": "2205256da02c586ae871b0b9c827bd1b7ddab4431ef2bb5e0019a20642d731d8",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/47/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/47/79f2d9225f984907-full-page.jpg",
+      "route": "/preview/47-colour-field/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:0c7f9d80d7f4c3d61fa8b392a3dc0aec4a55dbbdd25c21f4bd03c2eeaa71bc80",
+      "sha256": "79f2d9225f984907b07ee78286f13c540d7f00ba6cc42d951e54fa71a063a615",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/47-colour-field",
+  "neighbours": [
+    "46",
+    "45"
+  ],
+  "palette": {
+    "page": "#eee6d7",
+    "surface": "#ffffff",
+    "ink": "#2c3031",
+    "accent": "#4a60a2"
+  },
+  "fonts": [
+    "Space Grotesk",
+    "DM Sans"
+  ],
+  "brief": "**Philosophy and fit.** Make a site’s chapters legible through large fields of colour and simple spatial relationships. Suitable for cultural institutions, compact brand narratives, exhibitions, and design-led service portfolios.\n\n**Visual grammar.** Compose substantial flat-colour planes with sharp boundaries, sparse geometric markers, large headings, and deliberately limited image use. A chapter rail crosses these planes with a consistent navigation position. Typography stays restrained so the relationship between colour, proportion, and whitespace provides the identity. Each field includes a visible section label; colour never carries its meaning alone.\n\n**Specimen and flow.** *Intervals* is a fictional exhibition space. Move between programme, visiting information, and membership chapters, then open an exhibition’s details. Supporting views are the complete exhibition index and a membership comparison laid out as aligned text columns.\n\n**Mobile and motion.** Turn side-by-side planes into an orderly vertical sequence. Keep ordinary scrolling and explicit anchor links; any transition simply fades between static compositions and can be disabled.\n\n**Identity and effort.** Preserve large-scale colour composition; avoid shrinking the concept into many pastel cards or requiring full-screen snapping. **Effort: medium.**",
+  "scope": "An expansive sample page with representative local interactions; no production business backend."
+}

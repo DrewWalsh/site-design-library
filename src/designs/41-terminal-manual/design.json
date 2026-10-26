@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "id": "41",
+  "slug": "terminal-manual",
+  "name": "Terminal Manual",
+  "brand": "Relay CLI",
+  "family": "Retro & experimental",
+  "status": "ready",
+  "thesis": "Make technical information feel immediate, inspectable, and economical.",
+  "suitableFor": [
+    "Documentation",
+    "Software"
+  ],
+  "character": "Expressive",
+  "traits": {
+    "composition": "Text-first command manual with a narrow index and full-width code examples",
+    "navigation": "Searchable command links and ordinary section navigation",
+    "typography": "IBM Plex Mono",
+    "density": "High",
+    "imagery": "Typography, rules, and interface structure",
+    "surface": "Dark green manual, monospace text, numbered sections and code blocks",
+    "motion": "Minimal"
+  },
+  "effort": "Low",
+  "definingFeatures": [
+    "Documentation hierarchy carries the identity",
+    "Inspectable examples with clear options",
+    "No typing required to navigate"
+  ],
+  "adaptableChoices": [
+    "Brand and content",
+    "Accent colour with verified contrast",
+    "Equivalent licensed typefaces"
+  ],
+  "entryRoute": "/preview/41-terminal-manual/start",
+  "states": [
+    {
+      "key": "examples",
+      "label": "Expanded examples",
+      "route": "/preview/41-terminal-manual/examples"
+    },
+    {
+      "key": "search",
+      "label": "Command search",
+      "route": "/preview/41-terminal-manual/search"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/41/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/41/a5daa7b5aad536b7-desktop.jpg",
+      "route": "/preview/41-terminal-manual/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:26ddbeddf376ca3d7a82ac5f1bbed19279dae30c8dd1c86a489ab74363224861",
+      "sha256": "a5daa7b5aad536b7be518fc2c6b3819ad2d2d3a2fbabcc0e9d083997e6ce5dbf",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/41/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/41/46ba0dea09b494ef-mobile.jpg",
+      "route": "/preview/41-terminal-manual/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:26ddbeddf376ca3d7a82ac5f1bbed19279dae30c8dd1c86a489ab74363224861",
+      "sha256": "46ba0dea09b494ef69a2589ba61ccb31d7d4432e45b7c1aec69637df0c02fd9f",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/41/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/41/a5daa7b5aad536b7-detail.jpg",
+      "route": "/preview/41-terminal-manual/examples",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "examples",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:26ddbeddf376ca3d7a82ac5f1bbed19279dae30c8dd1c86a489ab74363224861",
+      "sha256": "a5daa7b5aad536b7be518fc2c6b3819ad2d2d3a2fbabcc0e9d083997e6ce5dbf",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/41/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/41/feb09b273a139c3a-full-page.jpg",
+      "route": "/preview/41-terminal-manual/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:26ddbeddf376ca3d7a82ac5f1bbed19279dae30c8dd1c86a489ab74363224861",
+      "sha256": "feb09b273a139c3a838f84de474de1d66f730fb996a0d086fe3c48db3fb725b2",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/41-terminal-manual",
+  "neighbours": [
+    "42",
+    "13"
+  ],
+  "palette": {
+    "page": "#18201e",
+    "surface": "#242e28",
+    "ink": "#e2dfce",
+    "accent": "#a9c39c"
+  },
+  "fonts": [
+    "IBM Plex Mono"
+  ],
+  "brief": "**Philosophy and fit.** Make technical information feel immediate, inspectable, and economical. Suitable for developer documentation, command reference guides, release logs, and technical portfolios.\n\n**Visual grammar.** Build a text-first document with a narrow command index, full-width examples, prompt markers, and terse status labels. Use a monospace family with comfortable line spacing, near-black surfaces, warm pale text, and limited green or amber accents. Heading hierarchy and ordinary underlined links carry the structure; colour alone never identifies a command’s status.\n\n**Specimen and flow.** *Relay CLI* documents a fictional file synchronisation utility. Select a command, inspect its arguments, edit a harmless example’s options, and copy the resulting sample command. Supporting states are search with no matching command and an expanded examples section. Nothing executes in a shell.\n\n**Mobile and motion.** Move the index into an accessible disclosure and let long code blocks scroll within their own bounds. Text appears immediately; simulated typing is optional and off by default.\n\n**Identity and effort.** Preserve text density and documentation logic; avoid demanding typed commands to navigate or decorating every page with fake hacker output. **Effort: low.**",
+  "scope": "An expansive sample page with representative local interactions; no production business backend."
+}

@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "id": "27",
+  "slug": "blueprint-studio",
+  "name": "Blueprint Studio",
+  "brand": "Section Works",
+  "family": "Commerce & places",
+  "status": "ready",
+  "thesis": "Explain how a project is organised and constructed.",
+  "suitableFor": [
+    "Architecture",
+    "Portfolio"
+  ],
+  "character": "Restrained",
+  "traits": {
+    "composition": "Indexed drawing sheets with title blocks and paired plan/result plates",
+    "navigation": "Project rail, drawing views, and construction notes",
+    "typography": "Space Grotesk + IBM Plex Mono",
+    "density": "Medium",
+    "imagery": "Licensed illustrative photography and original diagrams",
+    "surface": "Blueprint blue, cyan drawing lines, measurement ticks and numbered plates",
+    "motion": "Minimal"
+  },
+  "effort": "Medium",
+  "definingFeatures": [
+    "Numbered project rail",
+    "Aligned technical annotations",
+    "Plan, section, and built-result relationship"
+  ],
+  "adaptableChoices": [
+    "Brand and content",
+    "Accent colour with verified contrast",
+    "Equivalent licensed typefaces"
+  ],
+  "entryRoute": "/preview/27-blueprint-studio/start",
+  "states": [
+    {
+      "key": "material",
+      "label": "Construction note",
+      "route": "/preview/27-blueprint-studio/material"
+    },
+    {
+      "key": "index",
+      "label": "Project index",
+      "route": "/preview/27-blueprint-studio/index"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/27/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/27/4853d309d888eda4-desktop.jpg",
+      "route": "/preview/27-blueprint-studio/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:90e7452ae77218c985bf36c9950b33ae22a04d35d34216c9438fd51b78301ada",
+      "sha256": "4853d309d888eda43b9ef793b99a151285598bede2b32c984a9114fb8c5ac1fc",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/27/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/27/5122bd582e63f071-mobile.jpg",
+      "route": "/preview/27-blueprint-studio/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:90e7452ae77218c985bf36c9950b33ae22a04d35d34216c9438fd51b78301ada",
+      "sha256": "5122bd582e63f07104fcb32a8ec90762ed06d8fdec2e97b3e089370eb7f12e5d",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/27/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/27/af9ba34a5b888f37-detail.jpg",
+      "route": "/preview/27-blueprint-studio/material",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "material",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:90e7452ae77218c985bf36c9950b33ae22a04d35d34216c9438fd51b78301ada",
+      "sha256": "af9ba34a5b888f37716f842afd6e40f42dccf6997778efd0fa128b444afef642",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/27/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/27/3e1c001906e26574-full-page.jpg",
+      "route": "/preview/27-blueprint-studio/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:90e7452ae77218c985bf36c9950b33ae22a04d35d34216c9438fd51b78301ada",
+      "sha256": "3e1c001906e26574cdf64d991df99c2e5a104308cd9b0229bd5b45511cc685fa",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/27-blueprint-studio",
+  "neighbours": [
+    "04",
+    "49"
+  ],
+  "palette": {
+    "page": "#152f4b",
+    "surface": "#1c3b59",
+    "ink": "#e2edf1",
+    "accent": "#8fd4de"
+  },
+  "fonts": [
+    "Space Grotesk",
+    "IBM Plex Mono"
+  ],
+  "brief": "**Philosophy and fit.** Explain how a project is organised and constructed. Suitable for architecture, fabrication, engineering portfolios, and technically minded creative studios.\n\n**Visual grammar.** Arrange projects as indexed drawing sheets with title blocks, section markers, disciplined grids, and paired plan-and-photograph views. Use midnight blue, chalk white, and a restrained cyan annotation colour. A technical sans pairs with monospaced drawing labels. Thin lines establish measured relationships without implying that the interface itself is a technical drawing.\n\n**Specimen and flow.** *Section Works* presents fictional small buildings. Select a project, switch between plan, section, and built result, then open the relevant construction note. Supporting views include the project index and a material detail sheet. A compare control allows paired views without requiring a draggable divider.\n\n**Responsive behaviour.** Drawing sheets become stacked plates with a persistent view selector. Captions remain readable outside the drawings, and technical labels receive a text equivalent.\n\n**Identity rules.** Preserve indexed sheets, aligned annotations, and evidence of construction. Avoid decorative measurement marks, microscopic specifications, and animated drafting effects around every element. **Effort: medium.**",
+  "scope": "An expansive sample page with representative local interactions; no production business backend."
+}

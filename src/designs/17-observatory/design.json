@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "id": "17",
+  "slug": "observatory",
+  "name": "Observatory",
+  "brand": "Watershed Observatory",
+  "family": "Workspaces & discovery",
+  "status": "ready",
+  "thesis": "Help users detect patterns, compare measures, and inspect uncertainty within a coherent instrument panel.",
+  "suitableFor": [
+    "Dashboards",
+    "Research"
+  ],
+  "character": "Restrained",
+  "traits": {
+    "composition": "Aligned analytical plots on a dark instrument surface",
+    "navigation": "Persistent station/interval controls and an equivalent data table",
+    "typography": "Space Grotesk + IBM Plex Mono",
+    "density": "High",
+    "imagery": "Original SVG diagrams and illustrations",
+    "surface": "Dark instrument panels, cyan data marks and amber comparison lines",
+    "motion": "Minimal"
+  },
+  "effort": "High",
+  "definingFeatures": [
+    "Shared chart axes and units",
+    "Missing data distinct from zero",
+    "Selectable readings without hover"
+  ],
+  "adaptableChoices": [
+    "Brand and content",
+    "Accent colour with verified contrast",
+    "Equivalent licensed typefaces"
+  ],
+  "entryRoute": "/preview/17-observatory/start",
+  "states": [
+    {
+      "key": "table",
+      "label": "Measurement table",
+      "route": "/preview/17-observatory/table"
+    },
+    {
+      "key": "missing",
+      "label": "Missing data interval",
+      "route": "/preview/17-observatory/missing"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/17/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/17/f27504ef8f1053c4-desktop.jpg",
+      "route": "/preview/17-observatory/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:11e901bdfeac572fc6234a6115d9039dc0938eee448345445b00a3e9bc1b2ff5",
+      "sha256": "f27504ef8f1053c42af27eabd90c7abd7488806ea21bf2454f9016587e7618dd",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/17/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/17/8050bac51e5481c2-mobile.jpg",
+      "route": "/preview/17-observatory/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:11e901bdfeac572fc6234a6115d9039dc0938eee448345445b00a3e9bc1b2ff5",
+      "sha256": "8050bac51e5481c203966be7d2af60296e1863a5fba14c45e52819b660213058",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/17/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/17/372974b3ff8f0ef3-detail.jpg",
+      "route": "/preview/17-observatory/table",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "table",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:11e901bdfeac572fc6234a6115d9039dc0938eee448345445b00a3e9bc1b2ff5",
+      "sha256": "372974b3ff8f0ef383777da9c64b15121a16aa52511b1dd7b808f89befd2b14a",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/17/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/17/971f873846ae8e7a-full-page.jpg",
+      "route": "/preview/17-observatory/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:11e901bdfeac572fc6234a6115d9039dc0938eee448345445b00a3e9bc1b2ff5",
+      "sha256": "971f873846ae8e7af12fc4a1601a803cb9dbc1861c6c0f23f053d4616be3e29b",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/17-observatory",
+  "neighbours": [
+    "11",
+    "49"
+  ],
+  "palette": {
+    "page": "#101d24",
+    "surface": "#192a33",
+    "ink": "#d8e7e8",
+    "accent": "#6ad0ce"
+  },
+  "fonts": [
+    "Space Grotesk",
+    "IBM Plex Mono"
+  ],
+  "brief": "**Philosophy and fit.** Help users detect patterns, compare measures, and inspect uncertainty within a coherent instrument panel. Suitable for analytics, monitoring, scientific demonstrations, and resource tracking.\n\n**Visual grammar.** Use a dark, quiet plotting surface with a persistent control strip and aligned charts sharing meaningful time axes. A technical sans, monospace readouts, muted grid lines, and restrained cyan, amber, and violet series colours support inspection. Keep charts large enough to read; choose panels because their measures relate, not because a grid needs filling.\n\n**Specimen and flow.** *Watershed Observatory* displays clearly labelled synthetic river measurements. Users change a date interval, compare two stations, and inspect a selected reading. Supporting states provide a data table and a missing-data interval with its cause explained in fixture text.\n\n**Adaptation and identity.** Mobile presents plots in a meaningful sequence and replaces small hover targets with selectable readings. Preserve scales, units, labels, and distinctions between missing and zero values; avoid animated counters, fake live activity, and ornamental gauges. **Effort: high.**",
+  "scope": "An expansive sample page with representative local interactions; no production business backend."
+}

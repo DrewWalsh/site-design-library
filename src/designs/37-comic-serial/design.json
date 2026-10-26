@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "id": "37",
+  "slug": "comic-serial",
+  "name": "Comic Serial",
+  "brand": "Neighbourhood Mythologies",
+  "family": "Playful & material",
+  "status": "ready",
+  "thesis": "Explain through sequence, juxtaposition, and a recognisable narrator.",
+  "suitableFor": [
+    "Editorial",
+    "Education"
+  ],
+  "character": "Expressive",
+  "traits": {
+    "composition": "Authored narrative panels with establishing shots, close beats, and live dialogue",
+    "navigation": "Chapters, next episode, and a full text transcript",
+    "typography": "Space Grotesk + DM Sans",
+    "density": "Medium",
+    "imagery": "Original SVG diagrams and illustrations",
+    "surface": "Cream comic panels, original geometric scenes and speech bubbles",
+    "motion": "Minimal"
+  },
+  "effort": "Medium",
+  "definingFeatures": [
+    "Panel relationships create pacing",
+    "Dialogue remains selectable text",
+    "Complete descriptive transcript"
+  ],
+  "adaptableChoices": [
+    "Brand and content",
+    "Accent colour with verified contrast",
+    "Equivalent licensed typefaces"
+  ],
+  "entryRoute": "/preview/37-comic-serial/start",
+  "states": [
+    {
+      "key": "transcript",
+      "label": "Full text transcript",
+      "route": "/preview/37-comic-serial/transcript"
+    },
+    {
+      "key": "chapters",
+      "label": "Chapter index",
+      "route": "/preview/37-comic-serial/chapters"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/37/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/37/35d78f30837608f2-desktop.jpg",
+      "route": "/preview/37-comic-serial/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:081ab674241728b15336613f67cd6f4cab41aff692448f87ae0dc7d86a542a05",
+      "sha256": "35d78f30837608f2388aafd78706913c9692e0963d62928dc00821750f5eb4c5",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/37/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/37/25b984a50a12501e-mobile.jpg",
+      "route": "/preview/37-comic-serial/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:081ab674241728b15336613f67cd6f4cab41aff692448f87ae0dc7d86a542a05",
+      "sha256": "25b984a50a12501eae40ab4e31725dcb6576fa96e5aa2a05070aa64fa15a1ce4",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/37/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/37/f4313b7a8ca5bc53-detail.jpg",
+      "route": "/preview/37-comic-serial/transcript",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "transcript",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:081ab674241728b15336613f67cd6f4cab41aff692448f87ae0dc7d86a542a05",
+      "sha256": "f4313b7a8ca5bc53e7f97ec7368b344a993897ce474d67dbde2dd0131164108d",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/37/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/37/c57586aad481094a-full-page.jpg",
+      "route": "/preview/37-comic-serial/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:081ab674241728b15336613f67cd6f4cab41aff692448f87ae0dc7d86a542a05",
+      "sha256": "c57586aad481094a0af19e424a583c37ff44dfabd7ee41fe2bc0cc1d6a06603a",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/37-comic-serial",
+  "neighbours": [
+    "36",
+    "34"
+  ],
+  "palette": {
+    "page": "#f6e8cd",
+    "surface": "#ffffff",
+    "ink": "#293d3b",
+    "accent": "#a74434"
+  },
+  "fonts": [
+    "Space Grotesk",
+    "DM Sans"
+  ],
+  "brief": "**Philosophy and fit.** Explain through sequence, juxtaposition, and a recognisable narrator. Suitable for illustrated journalism, educational stories, episodic fiction, and playful product explanations.\n\n**Visual grammar.** Arrange scenes as panels with purposeful changes in scale: an establishing image, close detail, and explanatory beat. Chapter navigation sits above the story; a persistent progress label identifies the current scene. Use rounded display lettering for short dialogue, a readable sans serif for explanation, heavy ink boundaries, and a restrained illustration palette. Speech balloons never contain essential text solely inside an image.\n\n**Specimen and flow.** *Neighbourhood Mythologies* presents fictional local history stories. Choose a chapter, move through its panels, then open the next episode. Supporting views are the illustrated chapter index and a complete text transcript with image descriptions.\n\n**Mobile and motion.** Stack panels in their authored reading order. Desktop spreads become vertical scenes without swipe dependence; optional panel transitions disappear under reduced motion.\n\n**Identity and effort.** Preserve narrative pacing and panel relationships; avoid rendering an ordinary landing page inside comic borders. **Effort: medium**, with a separate illustration workload.",
+  "scope": "An expansive sample page with representative local interactions; no production business backend."
+}

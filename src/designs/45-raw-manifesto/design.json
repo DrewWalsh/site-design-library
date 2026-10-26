@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "id": "45",
+  "slug": "raw-manifesto",
+  "name": "Raw Manifesto",
+  "brand": "Common Room",
+  "family": "Retro & experimental",
+  "status": "ready",
+  "thesis": "Let language and direct access carry the entire identity.",
+  "suitableFor": [
+    "Culture",
+    "Portfolio"
+  ],
+  "character": "Expressive",
+  "traits": {
+    "composition": "Forceful large text followed by direct document-like programme rows",
+    "navigation": "Plain underlined destinations and chronological archive",
+    "typography": "DM Sans",
+    "density": "Medium",
+    "imagery": "Typography, rules, and interface structure",
+    "surface": "Bare white page, enormous black type, blue links and single rules",
+    "motion": "Minimal"
+  },
+  "effort": "Low",
+  "definingFeatures": [
+    "Language carries the identity",
+    "Source order is visual order",
+    "Deliberate sparse hierarchy"
+  ],
+  "adaptableChoices": [
+    "Brand and content",
+    "Accent colour with verified contrast",
+    "Equivalent licensed typefaces"
+  ],
+  "entryRoute": "/preview/45-raw-manifesto/start",
+  "states": [
+    {
+      "key": "programme",
+      "label": "Current programme",
+      "route": "/preview/45-raw-manifesto/programme"
+    },
+    {
+      "key": "contact",
+      "label": "Plain contact form",
+      "route": "/preview/45-raw-manifesto/contact"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/45/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/45/8bd20c740250440f-desktop.jpg",
+      "route": "/preview/45-raw-manifesto/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:e4f3623c9bb50dd4d167886a60556ea9d94c88444e50404637b8e08c325ebb4f",
+      "sha256": "8bd20c740250440f3d2392f7d60138dd4c064d6cfb5f717760550b9c39eda6dc",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/45/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/45/5072685dd219ccf4-mobile.jpg",
+      "route": "/preview/45-raw-manifesto/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:e4f3623c9bb50dd4d167886a60556ea9d94c88444e50404637b8e08c325ebb4f",
+      "sha256": "5072685dd219ccf4e0e7a6fcfb383b9ef6a413a72a29d50a00afd4bea292fbbb",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/45/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/45/6b1df6d202834279-detail.jpg",
+      "route": "/preview/45-raw-manifesto/programme",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "programme",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:e4f3623c9bb50dd4d167886a60556ea9d94c88444e50404637b8e08c325ebb4f",
+      "sha256": "6b1df6d20283427938127de930ae69310b661ad05cd9201b742d42ce595843f4",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/45/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/45/5b1dae68f241cf35-full-page.jpg",
+      "route": "/preview/45-raw-manifesto/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:e4f3623c9bb50dd4d167886a60556ea9d94c88444e50404637b8e08c325ebb4f",
+      "sha256": "5b1dae68f241cf35b59be29918c184685c84d687b616a36ac39d97f45ccd40fb",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/45-raw-manifesto",
+  "neighbours": [
+    "44",
+    "47"
+  ],
+  "palette": {
+    "page": "#fff",
+    "surface": "#fff",
+    "ink": "#111",
+    "accent": "#1643b8"
+  },
+  "fonts": [
+    "DM Sans"
+  ],
+  "brief": "**Philosophy and fit.** Let language and direct access carry the entire identity. Suitable for artist statements, small organisations, independent publishing, and intentionally austere portfolios.\n\n**Visual grammar.** Use a near-unadorned page, exceptionally large opening text, abrupt but deliberate changes in scale, visible underlined links, and full-width rules. A standard sans serif or serif family can do all the work. Keep the palette nearly monochrome, with a single functional link colour. Navigation is an explicit line of destinations, followed by a clear document sequence.\n\n**Specimen and flow.** *Common Room* is a fictional artist-run programme. Read its opening statement, follow the current programme link, and inspect one event’s practical details. Supporting pages are a chronological archive and a plain contact page with a functional demonstration form.\n\n**Mobile and motion.** Headline sizes adapt to the available width, while body text keeps a comfortable measure. Source order is visual order. The default experience contains no animation or overlay navigation.\n\n**Identity and effort.** Preserve textual force and deliberate sparseness; avoid turning minimal styling into broken layout or quietly restoring rounded cards and sales sections. **Effort: low.**",
+  "scope": "An expansive sample page with representative local interactions; no production business backend."
+}

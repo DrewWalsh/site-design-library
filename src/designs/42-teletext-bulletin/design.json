@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "id": "42",
+  "slug": "teletext-bulletin",
+  "name": "Teletext Bulletin",
+  "brand": "TownText",
+  "family": "Retro & experimental",
+  "status": "ready",
+  "thesis": "Deliver compact, regularly structured information through explicit sections and numbered pages.",
+  "suitableFor": [
+    "News",
+    "Events"
+  ],
+  "character": "Expressive",
+  "traits": {
+    "composition": "Numbered broadcast bulletin with colour bands and compact text rows",
+    "navigation": "Page numbers supplemented by ordinary visible links",
+    "typography": "IBM Plex Mono",
+    "density": "High",
+    "imagery": "Typography, rules, and interface structure",
+    "surface": "Near-black screen, fixed-width text, coloured strips and numbered pages",
+    "motion": "Minimal"
+  },
+  "effort": "Low",
+  "definingFeatures": [
+    "Edited information density",
+    "Numbered page hierarchy",
+    "Rectangular broadcast colour bands"
+  ],
+  "adaptableChoices": [
+    "Brand and content",
+    "Accent colour with verified contrast",
+    "Equivalent licensed typefaces"
+  ],
+  "entryRoute": "/preview/42-teletext-bulletin/start",
+  "states": [
+    {
+      "key": "event",
+      "label": "Numbered event page",
+      "route": "/preview/42-teletext-bulletin/event"
+    },
+    {
+      "key": "saved",
+      "label": "Saved pages",
+      "route": "/preview/42-teletext-bulletin/saved"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/42/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/42/9fa4a7ec3f1cd48a-desktop.jpg",
+      "route": "/preview/42-teletext-bulletin/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:8a5fdece058368c707fa5646e0472da1c2ddc64be54928df9f98fde7b51d4693",
+      "sha256": "9fa4a7ec3f1cd48a56b6ac6cf571a80930408e0dde7aaec3cf1cc5cba0357d80",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/42/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/42/b2026c77481628ae-mobile.jpg",
+      "route": "/preview/42-teletext-bulletin/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:8a5fdece058368c707fa5646e0472da1c2ddc64be54928df9f98fde7b51d4693",
+      "sha256": "b2026c77481628ae62e2f843a9a9e3d7b51c88d990defcbf336de05ef2c087cd",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/42/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/42/2037e94f25cac1a8-detail.jpg",
+      "route": "/preview/42-teletext-bulletin/event",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "event",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:8a5fdece058368c707fa5646e0472da1c2ddc64be54928df9f98fde7b51d4693",
+      "sha256": "2037e94f25cac1a8134c0d77b3b4d73d28f1114795feb4b8de27247e251bc070",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/42/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/42/8220c1785a86378e-full-page.jpg",
+      "route": "/preview/42-teletext-bulletin/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:8a5fdece058368c707fa5646e0472da1c2ddc64be54928df9f98fde7b51d4693",
+      "sha256": "8220c1785a86378ee3d9d85c65957f72828e8441974a100a4d76df033bfbb315",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/42-teletext-bulletin",
+  "neighbours": [
+    "41",
+    "38"
+  ],
+  "palette": {
+    "page": "#101514",
+    "surface": "#1c302e",
+    "ink": "#f1f0dc",
+    "accent": "#f1d95e"
+  },
+  "fonts": [
+    "IBM Plex Mono"
+  ],
+  "brief": "**Philosophy and fit.** Deliver compact, regularly structured information through explicit sections and numbered pages. Suitable for event bulletins, community updates, sports summaries, and small informational directories.\n\n**Visual grammar.** Use a broadcast-style title strip, visible page identifier, tightly organised text rows, block colour bands, and a footer of section links. Monospaced display text and rectangular graphics create the character. Keep a deliberately limited palette, while choosing text and background combinations that remain readable. Unlike a terminal, the page resembles an edited bulletin, without prompts or command history.\n\n**Specimen and flow.** *TownText* is a fictional community notice service. Choose What’s On, open a numbered event page, and follow its booking information. Supporting views are the subject index and a saved-pages list stored locally. Dates are labelled sample content.\n\n**Mobile and motion.** Preserve section order while allowing lines to wrap; do not shrink the entire broadcast frame into illegible miniature text. Page-number entry supplements visible links.\n\n**Identity and effort.** Preserve editorial compression and numbered navigation; avoid mandatory memorised codes, flashing text, and pixel-game decoration. **Effort: low.**",
+  "scope": "An expansive sample page with representative local interactions; no production business backend."
+}

@@ -1,0 +1,15 @@
+.specimen {
+  --page: #f3f2eb;
+  --surface: #ffffff;
+  --ink: #191b18;
+  --muted: #191b18;
+  --accent: #d8e34a;
+  --line: color-mix(in srgb, var(--ink) 22%, transparent);
+  --font-heading: 'Libre Baskerville', Georgia, serif;
+  --font-body: 'DM Sans', sans-serif;
+  --space: 8px;
+  --measure: 65ch;
+  --content: 1240px;
+  --radius: 0px;
+  --duration: 160ms;
+}

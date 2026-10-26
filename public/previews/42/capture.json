@@ -1,0 +1,64 @@
+{
+  "designId": "42",
+  "sourceRevision": "sha256:8a5fdece058368c707fa5646e0472da1c2ddc64be54928df9f98fde7b51d4693",
+  "capturedAt": "2026-10-26T22:50:01.394Z",
+  "browser": "156.0.4314.42",
+  "captures": [
+    {
+      "file": "/previews/42/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/42/9fa4a7ec3f1cd48a-desktop.jpg",
+      "route": "/preview/42-teletext-bulletin/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:8a5fdece058368c707fa5646e0472da1c2ddc64be54928df9f98fde7b51d4693",
+      "sha256": "9fa4a7ec3f1cd48a56b6ac6cf571a80930408e0dde7aaec3cf1cc5cba0357d80",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/42/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/42/b2026c77481628ae-mobile.jpg",
+      "route": "/preview/42-teletext-bulletin/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:8a5fdece058368c707fa5646e0472da1c2ddc64be54928df9f98fde7b51d4693",
+      "sha256": "b2026c77481628ae62e2f843a9a9e3d7b51c88d990defcbf336de05ef2c087cd",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/42/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/42/2037e94f25cac1a8-detail.jpg",
+      "route": "/preview/42-teletext-bulletin/event",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "event",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:8a5fdece058368c707fa5646e0472da1c2ddc64be54928df9f98fde7b51d4693",
+      "sha256": "2037e94f25cac1a8134c0d77b3b4d73d28f1114795feb4b8de27247e251bc070",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/42/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/42/8220c1785a86378e-full-page.jpg",
+      "route": "/preview/42-teletext-bulletin/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:8a5fdece058368c707fa5646e0472da1c2ddc64be54928df9f98fde7b51d4693",
+      "sha256": "8220c1785a86378ee3d9d85c65957f72828e8441974a100a4d76df033bfbb315",
+      "fullPage": true
+    }
+  ]
+}

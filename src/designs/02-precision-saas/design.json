@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "id": "02",
+  "slug": "precision-saas",
+  "name": "Precision SaaS",
+  "brand": "RelayDesk",
+  "family": "Clarity & editorial",
+  "status": "ready",
+  "thesis": "Explain a software product through concrete capabilities, evidence, and a credible path into its interface.",
+  "suitableFor": [
+    "Software",
+    "Marketing"
+  ],
+  "character": "Restrained",
+  "traits": {
+    "composition": "Asymmetric product story beside a readable working inbox",
+    "navigation": "Capability links and a sample workspace",
+    "typography": "DM Sans",
+    "density": "Medium",
+    "imagery": "Typography, rules, and interface structure",
+    "surface": "Cool white product surfaces with fine rules and a blue action colour",
+    "motion": "Minimal"
+  },
+  "effort": "Medium",
+  "definingFeatures": [
+    "Product evidence beside the claim",
+    "Alternating capability sections",
+    "A concrete plan comparison"
+  ],
+  "adaptableChoices": [
+    "Brand and content",
+    "Accent colour with verified contrast",
+    "Equivalent licensed typefaces"
+  ],
+  "entryRoute": "/preview/02-precision-saas/start",
+  "states": [
+    {
+      "key": "inbox",
+      "label": "Sample inbox",
+      "route": "/preview/02-precision-saas/inbox"
+    },
+    {
+      "key": "detail",
+      "label": "Request detail",
+      "route": "/preview/02-precision-saas/detail"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/02/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/02/bb08e127c585767b-desktop.jpg",
+      "route": "/preview/02-precision-saas/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:f53ce8f81cbb556899b2e603878922fd15a402e9ca077760fbe8a8259f5d902e",
+      "sha256": "bb08e127c585767b97bbfc1a930885507916f20aab7ca7fa0d1b92fe33cb8d61",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/02/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/02/078e57f430bb83b7-mobile.jpg",
+      "route": "/preview/02-precision-saas/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:f53ce8f81cbb556899b2e603878922fd15a402e9ca077760fbe8a8259f5d902e",
+      "sha256": "078e57f430bb83b73c8719cccc046f202f4b2eb271a128c938519174306336db",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/02/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/02/170ef779b0894a6c-detail.jpg",
+      "route": "/preview/02-precision-saas/inbox",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "inbox",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:f53ce8f81cbb556899b2e603878922fd15a402e9ca077760fbe8a8259f5d902e",
+      "sha256": "170ef779b0894a6ceaae63e6d7ecf9b4741935b979061d50c2ff7fe85d0d37a5",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/02/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/02/614f975c1c3e45a1-full-page.jpg",
+      "route": "/preview/02-precision-saas/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:f53ce8f81cbb556899b2e603878922fd15a402e9ca077760fbe8a8259f5d902e",
+      "sha256": "614f975c1c3e45a117e27a50f5b3c98b6219aacd474ad71cddd88d80f6e24cd7",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/02-precision-saas",
+  "neighbours": [
+    "11",
+    "20"
+  ],
+  "palette": {
+    "page": "#f8fafc",
+    "surface": "#ffffff",
+    "ink": "#202d42",
+    "accent": "#305ed6"
+  },
+  "fonts": [
+    "DM Sans"
+  ],
+  "brief": "**Philosophy and fit.** Explain a software product through concrete capabilities, evidence, and a credible path into its interface. Suitable for subscription software, professional tools, and product launches needing a conventional commercial structure.\n\n**Visual grammar.** Use a tidy horizontal navigation, asymmetric hero with product copy beside a real interface preview, alternating capability sections, a compact comparison table, and a direct closing action. A neutral grotesk, pale grey surfaces, charcoal text, and a single blue accent establish order. Reserve rounded containers for genuine interface groupings; screenshots should show readable features, not floating abstract rectangles.\n\n**Specimen and flow.** *RelayDesk* presents a small client request tracker. Visitors inspect a worked request, compare three fictional plans, then open an interactive sample inbox. Supporting states include a populated request detail and an empty workspace with a useful first action.\n\n**Adaptation and identity.** Mobile promotes copy before the preview and presents plan differences as labelled sections. Preserve capability-led storytelling and visible product evidence; avoid generic metric claims, gradient decoration, and autoplay demos. **Effort: medium.**",
+  "scope": "An expansive sample page with representative local interactions; no production business backend."
+}

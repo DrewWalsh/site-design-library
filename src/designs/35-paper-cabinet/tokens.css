@@ -1,0 +1,15 @@
+.specimen {
+  --page: #e8dfc9;
+  --surface: #f7efdc;
+  --ink: #493f2f;
+  --muted: #493f2f;
+  --accent: #6c6d46;
+  --line: color-mix(in srgb, var(--ink) 22%, transparent);
+  --font-heading: 'Libre Baskerville', Georgia, serif;
+  --font-body: 'IBM Plex Mono', monospace;
+  --space: 8px;
+  --measure: 65ch;
+  --content: 1240px;
+  --radius: 0px;
+  --duration: 160ms;
+}

@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "id": "24",
+  "slug": "fine-dining",
+  "name": "Fine Dining",
+  "brand": "Ember & Orchard",
+  "family": "Commerce & places",
+  "status": "ready",
+  "thesis": "Build anticipation through pacing, seasonality, and precise hospitality.",
+  "suitableFor": [
+    "Hospitality",
+    "Food"
+  ],
+  "character": "Restrained",
+  "traits": {
+    "composition": "Seasonal menu sequence with generous intervals and a compact reservation rail",
+    "navigation": "Menu, visiting details, and sample reservations",
+    "typography": "Libre Baskerville + DM Sans",
+    "density": "Low",
+    "imagery": "Licensed illustrative photography",
+    "surface": "Deep wine background, warm cream serif type and food photography",
+    "motion": "Minimal"
+  },
+  "effort": "Medium",
+  "definingFeatures": [
+    "Course-led typographic rhythm",
+    "Prices and dietary information visible",
+    "Atmosphere beside practical hospitality"
+  ],
+  "adaptableChoices": [
+    "Brand and content",
+    "Accent colour with verified contrast",
+    "Equivalent licensed typefaces"
+  ],
+  "entryRoute": "/preview/24-fine-dining/start",
+  "states": [
+    {
+      "key": "reserve",
+      "label": "Reservation demonstration",
+      "route": "/preview/24-fine-dining/reserve"
+    },
+    {
+      "key": "visit",
+      "label": "Private dining & visiting",
+      "route": "/preview/24-fine-dining/visit"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/24/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/24/67f40ab2c8de3c1f-desktop.jpg",
+      "route": "/preview/24-fine-dining/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:af12c937fd5e2c65a6ba34e3f9841683b522bb39f4e3b3fa108028bcba4738d5",
+      "sha256": "67f40ab2c8de3c1ffb397bf3182e3fa914f3878d77ce526e0cf671b08004e08c",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/24/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/24/abff22b908e689b0-mobile.jpg",
+      "route": "/preview/24-fine-dining/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:af12c937fd5e2c65a6ba34e3f9841683b522bb39f4e3b3fa108028bcba4738d5",
+      "sha256": "abff22b908e689b0c5e552db79cc9927bbc73a547e719f1afc53a4012d8cc077",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/24/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/24/fdb69516eb1e1ba8-detail.jpg",
+      "route": "/preview/24-fine-dining/reserve",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "reserve",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:af12c937fd5e2c65a6ba34e3f9841683b522bb39f4e3b3fa108028bcba4738d5",
+      "sha256": "fdb69516eb1e1ba811f4e4a4c2d988122db43e53b8b1656ee5dccfed72d4270b",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/24/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/24/d4a879877d8d462f-full-page.jpg",
+      "route": "/preview/24-fine-dining/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:af12c937fd5e2c65a6ba34e3f9841683b522bb39f4e3b3fa108028bcba4738d5",
+      "sha256": "d4a879877d8d462f6e38aa58385e410541000634811a44dda659eaa42595a2ef",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/24-fine-dining",
+  "neighbours": [
+    "28",
+    "22"
+  ],
+  "palette": {
+    "page": "#321d23",
+    "surface": "#432c30",
+    "ink": "#f4ebdc",
+    "accent": "#dec192"
+  },
+  "fonts": [
+    "Libre Baskerville",
+    "DM Sans"
+  ],
+  "brief": "**Philosophy and fit.** Build anticipation through pacing, seasonality, and precise hospitality. Suitable for restaurants, tasting experiences, wine bars, and small culinary venues.\n\n**Visual grammar.** The menu provides the main compositional rhythm: course titles, descriptions, and prices arranged as a carefully typeset sequence. A narrow navigation offers menu, visit, and reservations. Deep oxblood, ivory, and muted brass support editorial food photography, a characterful serif, and generous vertical intervals. Rules and small botanical details replace repeated boxes.\n\n**Specimen and flow.** *Ember & Orchard* presents a seasonal restaurant. Read the current menu, inspect dietary information, and choose a date and party size in a local reservation demonstration. Supporting views include private dining and a clear unavailable-time state with nearby alternatives. The final confirmation is visibly a sample reservation.\n\n**Responsive behaviour.** Menu descriptions and prices remain aligned without shrinking text. The reservation form becomes a simple vertical sequence; photography does not obstruct it.\n\n**Identity rules.** Preserve the menu’s reading rhythm and practical visit information. Avoid autoplay ambience, illegible gold text, and hiding prices behind photographs. **Effort: medium.**",
+  "scope": "An expansive sample page with representative local interactions; no production business backend."
+}

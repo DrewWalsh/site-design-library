@@ -1,0 +1,64 @@
+{
+  "designId": "28",
+  "sourceRevision": "sha256:325399a17f764cdb08b5369547e864c1cf2fac0559f5597621a6a3ceb6446ee4",
+  "capturedAt": "2026-10-26T22:49:18.000Z",
+  "browser": "156.0.4314.42",
+  "captures": [
+    {
+      "file": "/previews/28/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/28/d338e54a1b0d9bff-desktop.jpg",
+      "route": "/preview/28-grand-hotel/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:325399a17f764cdb08b5369547e864c1cf2fac0559f5597621a6a3ceb6446ee4",
+      "sha256": "d338e54a1b0d9bffb2f6a661a66a1683865e561941f3d06ae40e49a9900000b7",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/28/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/28/4cb70012ee74baf5-mobile.jpg",
+      "route": "/preview/28-grand-hotel/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:325399a17f764cdb08b5369547e864c1cf2fac0559f5597621a6a3ceb6446ee4",
+      "sha256": "4cb70012ee74baf52fbe580a2f7045875cfe96de0911c4c1d852449c325b5fdd",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/28/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/28/3a1a95d1bbcf6652-detail.jpg",
+      "route": "/preview/28-grand-hotel/rooms",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "rooms",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:325399a17f764cdb08b5369547e864c1cf2fac0559f5597621a6a3ceb6446ee4",
+      "sha256": "3a1a95d1bbcf665277c05790a655ff560729b1497cc762c68f45f6dc91549d9c",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/28/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/28/30c85e410f79c3c4-full-page.jpg",
+      "route": "/preview/28-grand-hotel/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:325399a17f764cdb08b5369547e864c1cf2fac0559f5597621a6a3ceb6446ee4",
+      "sha256": "30c85e410f79c3c44ed57f80dd15cb295d530b7d441128a78d2bb660bd8679b2",
+      "fullPage": true
+    }
+  ]
+}

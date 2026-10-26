@@ -1,0 +1,64 @@
+{
+  "designId": "47",
+  "sourceRevision": "sha256:0c7f9d80d7f4c3d61fa8b392a3dc0aec4a55dbbdd25c21f4bd03c2eeaa71bc80",
+  "capturedAt": "2026-10-26T22:50:16.910Z",
+  "browser": "156.0.4314.42",
+  "captures": [
+    {
+      "file": "/previews/47/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/47/4022fb9f7c0b68c2-desktop.jpg",
+      "route": "/preview/47-colour-field/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:0c7f9d80d7f4c3d61fa8b392a3dc0aec4a55dbbdd25c21f4bd03c2eeaa71bc80",
+      "sha256": "4022fb9f7c0b68c2d5a1c8b97eba2b327950f99649af1c3f410b500e91ba65ec",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/47/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/47/806109bdd625752d-mobile.jpg",
+      "route": "/preview/47-colour-field/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:0c7f9d80d7f4c3d61fa8b392a3dc0aec4a55dbbdd25c21f4bd03c2eeaa71bc80",
+      "sha256": "806109bdd625752d03b8749bedbfeeb3b0b2c8ca51d50df99f21f52c3eace330",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/47/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/47/2205256da02c586a-detail.jpg",
+      "route": "/preview/47-colour-field/exhibition",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "exhibition",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:0c7f9d80d7f4c3d61fa8b392a3dc0aec4a55dbbdd25c21f4bd03c2eeaa71bc80",
+      "sha256": "2205256da02c586ae871b0b9c827bd1b7ddab4431ef2bb5e0019a20642d731d8",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/47/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/47/79f2d9225f984907-full-page.jpg",
+      "route": "/preview/47-colour-field/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:0c7f9d80d7f4c3d61fa8b392a3dc0aec4a55dbbdd25c21f4bd03c2eeaa71bc80",
+      "sha256": "79f2d9225f984907b07ee78286f13c540d7f00ba6cc42d951e54fa71a063a615",
+      "fullPage": true
+    }
+  ]
+}
