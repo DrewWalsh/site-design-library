@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 2,
+  "id": "82",
+  "slug": "strata-descent",
+  "name": "Strata Descent",
+  "brand": "BELOW / A section through remembered ground",
+  "family": "Avant-garde & experimental",
+  "status": "ready",
+  "thesis": "Depth is both the navigation and the argument of the archive.",
+  "suitableFor": [
+    "Experimental publishing",
+    "Art exhibition",
+    "Cultural storytelling"
+  ],
+  "character": "Experimental",
+  "traits": {
+    "composition": "A continuous geological section descends from chalk through ochre and rust to blue-black. Depth markers and embedded artefacts replace a conventional page grid.",
+    "navigation": "Depth anchors, embedded artefacts and collected cross-section",
+    "typography": "Archivo Black / Libre Baskerville",
+    "density": "Medium",
+    "imagery": "Original SVG and CSS compositions",
+    "surface": "A continuous browser-sized composition",
+    "motion": "Optional"
+  },
+  "effort": "High",
+  "definingFeatures": [
+    "Depth navigation",
+    "Embedded artefacts",
+    "Cross-section collection"
+  ],
+  "adaptableChoices": [
+    "Subject and original writing",
+    "Palette and equivalent licensed typography",
+    "Scale and number of content units"
+  ],
+  "discovery": {
+    "industries": [
+      "Arts",
+      "Culture",
+      "Experimental publishing"
+    ],
+    "visitorGoals": [
+      "Explore a non-linear story"
+    ],
+    "conversionActions": [
+      "Assemble a reading collection"
+    ],
+    "siteSize": "Interactive publication",
+    "interactionTypes": [
+      "Depth navigation",
+      "Embedded artefacts",
+      "Cross-section collection"
+    ],
+    "keywords": [
+      "avant garde",
+      "experimental",
+      "unconventional navigation",
+      "Depth navigation",
+      "Embedded artefacts",
+      "Cross-section collection"
+    ]
+  },
+  "patterns": [
+    "Depth navigation",
+    "Embedded artefacts",
+    "Cross-section collection"
+  ],
+  "entryRoute": "/preview/82-strata-descent/start",
+  "states": [
+    {
+      "key": "artefact",
+      "label": "An excavated artefact",
+      "route": "/preview/82-strata-descent/artefact"
+    },
+    {
+      "key": "section",
+      "label": "Collected cross-section",
+      "route": "/preview/82-strata-descent/section"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/82/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/82/79eab04df9d95d77-desktop.jpg",
+      "route": "/preview/82-strata-descent/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:30c03e52e633e054128c2b8ce78a9ba5ff12b9a7caaf80626040fc408ef140a9",
+      "sha256": "79eab04df9d95d77ab307a825eba4482a548e537a3be10dcedd2c946b51a65bd",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/82/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/82/cfe327b0a6fd696f-mobile.jpg",
+      "route": "/preview/82-strata-descent/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:30c03e52e633e054128c2b8ce78a9ba5ff12b9a7caaf80626040fc408ef140a9",
+      "sha256": "cfe327b0a6fd696fcbb73412aa2e5241c8f877d6f15fb3913f9d35653b6bfdc7",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/82/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/82/2d898be53ce61e27-detail.jpg",
+      "route": "/preview/82-strata-descent/artefact",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "artefact",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:30c03e52e633e054128c2b8ce78a9ba5ff12b9a7caaf80626040fc408ef140a9",
+      "sha256": "2d898be53ce61e2777ac4c4acc8744fc6bee81df085a6f58dc4c540958da3896",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/82/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/82/0b6db40342be72cb-full-page.jpg",
+      "route": "/preview/82-strata-descent/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:30c03e52e633e054128c2b8ce78a9ba5ff12b9a7caaf80626040fc408ef140a9",
+      "sha256": "0b6db40342be72cb4d7c3d25faa998b05e561de2fb84a4adbf662726f36fe4be",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/82-strata-descent",
+  "neighbours": [
+    "08",
+    "16"
+  ],
+  "researchSources": [
+    {
+      "title": "Neal Agarwal — The Deep Sea",
+      "url": "https://neal.fun/deep-sea/"
+    }
+  ],
+  "palette": {
+    "page": "#eee0bf",
+    "ink": "#34251f",
+    "accent": "#8e3f2b",
+    "surface": "#eee0bf"
+  },
+  "fonts": [
+    "Archivo Black",
+    "Libre Baskerville"
+  ],
+  "brief": "**Idea.** Depth is both the navigation and the argument of the archive.\n\n**Composition.** A continuous geological section descends from chalk through ochre and rust to blue-black. Depth markers and embedded artefacts replace a conventional page grid.\n\n**Navigation and complete example.** Descend through six invented layers of a former railway site, examine a found object in each and collect a cross-section of findings.\n\n**Responsive and inclusive behaviour.** Depth markers stay in a narrow rail; content occupies the remaining width. All strata have labelled anchor links, so scrolling distance is optional. All controls are native buttons or labelled inputs. Movement is discretionary, no sound starts automatically, reduced-motion preferences remove transitions, and a direct index exposes the same content.\n\n**Adaptation.** Use depth for meaningful chronology or scale, not merely a long scroll. Clearly distinguish fictional findings from research evidence. Retain the relationship between navigation and content. Do not reduce the reference to a generic hero followed by interchangeable cards.\n\n**Research.** [Neal Agarwal — The Deep Sea](https://neal.fun/deep-sea/). These are conceptual precedents, not copied artwork, source code, branding or text. All diagrams and sample writing in this specimen are original, fictional material.",
+  "scope": "Complete visual reference with deterministic local interactions and fictional content; no production backend."
+}

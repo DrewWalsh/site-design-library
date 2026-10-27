@@ -1,0 +1,64 @@
+{
+  "designId": "95",
+  "sourceRevision": "sha256:0db7b2054e0b1cf0042ef74655f173e68680e8b3743274431fb9e629fbeecf0f",
+  "capturedAt": "2026-10-27T04:13:36.703Z",
+  "browser": "156.0.4314.42",
+  "captures": [
+    {
+      "file": "/previews/95/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/95/c6cd9f67e5692dec-desktop.jpg",
+      "route": "/preview/95-frame-by-frame/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:0db7b2054e0b1cf0042ef74655f173e68680e8b3743274431fb9e629fbeecf0f",
+      "sha256": "c6cd9f67e5692decfcffe3fd7b9df1aaf60b978c220851c3b06b5c2407945c63",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/95/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/95/a7582741f9bd6f2a-mobile.jpg",
+      "route": "/preview/95-frame-by-frame/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:0db7b2054e0b1cf0042ef74655f173e68680e8b3743274431fb9e629fbeecf0f",
+      "sha256": "a7582741f9bd6f2a994c06ca4583f9fbd054f01053bb4d82de8e5d9ddcdcd909",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/95/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/95/5741d23cbd8ddbdd-detail.jpg",
+      "route": "/preview/95-frame-by-frame/annotation",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "annotation",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:0db7b2054e0b1cf0042ef74655f173e68680e8b3743274431fb9e629fbeecf0f",
+      "sha256": "5741d23cbd8ddbddf5162310dda29a1da20edcdace694ac7a897d7b8e84ebabb",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/95/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/95/4a8af3730cdde257-full-page.jpg",
+      "route": "/preview/95-frame-by-frame/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:0db7b2054e0b1cf0042ef74655f173e68680e8b3743274431fb9e629fbeecf0f",
+      "sha256": "4a8af3730cdde257b6a11a01162854605ffc9e9cbf2ecfdd8a4072471877c48f",
+      "fullPage": true
+    }
+  ]
+}

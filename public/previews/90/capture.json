@@ -1,0 +1,64 @@
+{
+  "designId": "90",
+  "sourceRevision": "sha256:9dffbdf2355092d026db93e6cf37161a72c323443f53a3234182c9e2a0a70613",
+  "capturedAt": "2026-10-27T04:13:19.505Z",
+  "browser": "156.0.4314.42",
+  "captures": [
+    {
+      "file": "/previews/90/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/90/370d38f6aa258fa9-desktop.jpg",
+      "route": "/preview/90-mobius-journal/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:9dffbdf2355092d026db93e6cf37161a72c323443f53a3234182c9e2a0a70613",
+      "sha256": "370d38f6aa258fa9db3c4307565abfd3c9c771067f34c84b30b9d51527dca649",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/90/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/90/24535860ef2f31c4-mobile.jpg",
+      "route": "/preview/90-mobius-journal/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:9dffbdf2355092d026db93e6cf37161a72c323443f53a3234182c9e2a0a70613",
+      "sha256": "24535860ef2f31c45ea250059eb78d38ef9f74c85ecc4f6937ddcbdb97e477a1",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/90/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/90/128ce7686f8ff069-detail.jpg",
+      "route": "/preview/90-mobius-journal/station",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "station",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:9dffbdf2355092d026db93e6cf37161a72c323443f53a3234182c9e2a0a70613",
+      "sha256": "128ce7686f8ff069289bfe97661920e1abcf462a30632f5dd06b549eb31034f9",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/90/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/90/fcaca8ca50b119c2-full-page.jpg",
+      "route": "/preview/90-mobius-journal/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:9dffbdf2355092d026db93e6cf37161a72c323443f53a3234182c9e2a0a70613",
+      "sha256": "fcaca8ca50b119c28cd84f4ab9dd4a1dcd67877783c5f48c189fa376a510dd23",
+      "fullPage": true
+    }
+  ]
+}

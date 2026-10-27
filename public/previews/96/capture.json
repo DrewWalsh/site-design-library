@@ -1,0 +1,64 @@
+{
+  "designId": "96",
+  "sourceRevision": "sha256:016089c8a39d399080639c61bf5326982fb8335780c46ab677ec6ef70f02d3cb",
+  "capturedAt": "2026-10-27T04:13:39.985Z",
+  "browser": "156.0.4314.42",
+  "captures": [
+    {
+      "file": "/previews/96/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/96/f7f31353c6c83082-desktop.jpg",
+      "route": "/preview/96-rulewalk/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:016089c8a39d399080639c61bf5326982fb8335780c46ab677ec6ef70f02d3cb",
+      "sha256": "f7f31353c6c83082841379e539aeb09782ac8a9bbb6589c778b39f1df6d7cc22",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/96/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/96/0bbeba7cb99f1ce9-mobile.jpg",
+      "route": "/preview/96-rulewalk/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:016089c8a39d399080639c61bf5326982fb8335780c46ab677ec6ef70f02d3cb",
+      "sha256": "0bbeba7cb99f1ce918844b7c0dbd03ff50d5c6b82382d900efda3aeaf71ba706",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/96/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/96/afbe14bd991b9a04-detail.jpg",
+      "route": "/preview/96-rulewalk/work",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "work",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:016089c8a39d399080639c61bf5326982fb8335780c46ab677ec6ef70f02d3cb",
+      "sha256": "afbe14bd991b9a04ac2373cb0da1511170f58b19ddc03ea4008aaa0f86b2fbb5",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/96/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/96/df5151dddb777085-full-page.jpg",
+      "route": "/preview/96-rulewalk/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:016089c8a39d399080639c61bf5326982fb8335780c46ab677ec6ef70f02d3cb",
+      "sha256": "df5151dddb7770851a19eba65d66c2b36f20cb19f6411b2a8bbd5102e6de1193",
+      "fullPage": true
+    }
+  ]
+}

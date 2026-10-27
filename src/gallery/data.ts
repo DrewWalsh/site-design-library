@@ -40,10 +40,12 @@ export interface Design {
     fullPage?: boolean;
   }[];
   sourcePath: string;
+  downloadUrl?: string;
   neighbours: string[];
   palette: Record<string, string>;
   fonts: string[];
   brief: string;
+  researchSources?: { title: string; url: string }[];
 }
 export const designs = (data as unknown as Design[]).map((design) => ({
   ...design,
@@ -68,9 +70,12 @@ export function thumbnail(d: Design) {
     d.referenceImages.find((r: any) => r.state === 'start' && r.viewport.width === 1440)?.url || ''
   );
 }
+export function downloadUrl(d: Design) {
+  return d.downloadUrl || `/downloads/${d.id}-${d.slug}.zip`;
+}
 export function makePrompt(d: Design, scope: string, secondary: string) {
   const base = `${site}/references/${d.id}-${d.slug}`;
-  return `Use Site Design Library ${d.id}, ${d.name}, as the primary design direction for ${scope || 'one representative page and its supporting states'}.\n\nLive sample: ${site}${d.entryRoute}\nDesign brief: ${base}/DESIGN.md\nTokens: ${base}/tokens.css\nSource: ${base}/Demo.vue\nReference images and metadata: ${base}/design.json\n\nRepository: ${repository} (requires access). In a local clone, read ${d.sourcePath}/DESIGN.md and tokens.css; inspect the reference images listed in design.json and study ${d.sourcePath}/Demo.vue.\n\nPreserve:\n${d.definingFeatures
+  return `Use Site Design Library ${d.id}, ${d.name}, as the primary design direction for ${scope || 'one representative page and its supporting states'}.\n\nComplete ZIP: ${site}${downloadUrl(d)}\nLive sample: ${site}${d.entryRoute}\nDesign brief: ${base}/DESIGN.md\nTokens: ${base}/tokens.css\nSource: ${base}/Demo.vue\nReference images and metadata: ${base}/design.json\n\nPublic repository: ${repository}. No account is required. The ZIP contains a runnable reference, source, local assets, screenshots, specifications and CODEX_PROMPT.md. Read LICENSE and THIRD_PARTY.md; original work is MIT, with separate font/photo terms. In a local clone, read ${d.sourcePath}/DESIGN.md and tokens.css; inspect the reference images listed in design.json and study ${d.sourcePath}/Demo.vue.\n\nPreserve:\n${d.definingFeatures
     .slice(0, 3)
     .map((x: string) => '- ' + x)
     .join(

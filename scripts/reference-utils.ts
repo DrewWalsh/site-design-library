@@ -22,7 +22,7 @@ export function sha256(bytes: Uint8Array) {
 }
 
 export function localReference(file: string) {
-  if (!/^\/previews\/\d{2}\/(desktop|mobile|detail|full-page)\.jpg$/.test(file)) {
+  if (!/^\/previews\/(?:\d{2}|100)\/(desktop|mobile|detail|full-page)\.jpg$/.test(file)) {
     throw new Error(`Invalid reference path: ${file}`);
   }
   return 'public' + file;

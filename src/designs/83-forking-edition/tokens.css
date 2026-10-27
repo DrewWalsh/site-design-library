@@ -1,0 +1,10 @@
+.specimen {
+  --page: #f7f4ec;
+  --ink: #232b28;
+  --accent: #446c56;
+  --surface: #f7f4ec;
+  --heading: 'Libre Baskerville', sans-serif;
+  --body: 'DM Sans', sans-serif;
+  --measure: 62ch;
+  --space: 8px;
+}

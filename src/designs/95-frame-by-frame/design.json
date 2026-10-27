@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 2,
+  "id": "95",
+  "slug": "frame-by-frame",
+  "name": "Frame by Frame",
+  "brand": "NIGHT WINDOW / A film in 72 frames",
+  "family": "Avant-garde & experimental",
+  "status": "ready",
+  "thesis": "A film’s timeline can become the publication’s reading surface.",
+  "suitableFor": [
+    "Experimental publishing",
+    "Art exhibition",
+    "Cultural storytelling"
+  ],
+  "character": "Experimental",
+  "traits": {
+    "composition": "Black film stock, sprocket holes and an unbroken horizontal contact strip carry original night-window illustrations. Huge frame numbers locate annotations precisely in time.",
+    "navigation": "Jog frames, compare storyboard and final drawing, inspect production notes",
+    "typography": "Space Grotesk / IBM Plex Mono",
+    "density": "Medium",
+    "imagery": "Original SVG and CSS compositions",
+    "surface": "A continuous browser-sized composition",
+    "motion": "Optional"
+  },
+  "effort": "High",
+  "definingFeatures": [
+    "Frame scrubbing",
+    "Temporal annotations",
+    "Storyboard comparison"
+  ],
+  "adaptableChoices": [
+    "Subject and original writing",
+    "Palette and equivalent licensed typography",
+    "Scale and number of content units"
+  ],
+  "discovery": {
+    "industries": [
+      "Arts",
+      "Culture",
+      "Experimental publishing"
+    ],
+    "visitorGoals": [
+      "Explore a non-linear story"
+    ],
+    "conversionActions": [
+      "Assemble a reading collection"
+    ],
+    "siteSize": "Interactive publication",
+    "interactionTypes": [
+      "Frame scrubbing",
+      "Temporal annotations",
+      "Storyboard comparison"
+    ],
+    "keywords": [
+      "avant garde",
+      "experimental",
+      "unconventional navigation",
+      "Frame scrubbing",
+      "Temporal annotations",
+      "Storyboard comparison"
+    ]
+  },
+  "patterns": [
+    "Frame scrubbing",
+    "Temporal annotations",
+    "Storyboard comparison"
+  ],
+  "entryRoute": "/preview/95-frame-by-frame/start",
+  "states": [
+    {
+      "key": "annotation",
+      "label": "Frame annotation",
+      "route": "/preview/95-frame-by-frame/annotation"
+    },
+    {
+      "key": "production",
+      "label": "Production notebook",
+      "route": "/preview/95-frame-by-frame/production"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/95/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/95/c6cd9f67e5692dec-desktop.jpg",
+      "route": "/preview/95-frame-by-frame/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:0db7b2054e0b1cf0042ef74655f173e68680e8b3743274431fb9e629fbeecf0f",
+      "sha256": "c6cd9f67e5692decfcffe3fd7b9df1aaf60b978c220851c3b06b5c2407945c63",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/95/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/95/a7582741f9bd6f2a-mobile.jpg",
+      "route": "/preview/95-frame-by-frame/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:0db7b2054e0b1cf0042ef74655f173e68680e8b3743274431fb9e629fbeecf0f",
+      "sha256": "a7582741f9bd6f2a994c06ca4583f9fbd054f01053bb4d82de8e5d9ddcdcd909",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/95/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/95/5741d23cbd8ddbdd-detail.jpg",
+      "route": "/preview/95-frame-by-frame/annotation",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "annotation",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:0db7b2054e0b1cf0042ef74655f173e68680e8b3743274431fb9e629fbeecf0f",
+      "sha256": "5741d23cbd8ddbddf5162310dda29a1da20edcdace694ac7a897d7b8e84ebabb",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/95/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/95/4a8af3730cdde257-full-page.jpg",
+      "route": "/preview/95-frame-by-frame/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:0db7b2054e0b1cf0042ef74655f173e68680e8b3743274431fb9e629fbeecf0f",
+      "sha256": "4a8af3730cdde257b6a11a01162854605ffc9e9cbf2ecfdd8a4072471877c48f",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/95-frame-by-frame",
+  "neighbours": [
+    "37",
+    "08"
+  ],
+  "researchSources": [
+    {
+      "title": "Aaron Koblin — The Wilderness Downtown",
+      "url": "https://www.aaronkoblin.com/project/the-wilderness-downtown/"
+    }
+  ],
+  "palette": {
+    "page": "#121619",
+    "ink": "#eee6d3",
+    "accent": "#d5bd72",
+    "surface": "#121619"
+  },
+  "fonts": [
+    "Space Grotesk",
+    "IBM Plex Mono"
+  ],
+  "brief": "**Idea.** A film’s timeline can become the publication’s reading surface.\n\n**Composition.** Black film stock, sprocket holes and an unbroken horizontal contact strip carry original night-window illustrations. Huge frame numbers locate annotations precisely in time.\n\n**Navigation and complete example.** Scrub an original 72-frame vector vignette, select one of six annotated moments, compare the storyboard with the finished scene and read its production notes.\n\n**Responsive and inclusive behaviour.** The film strip is a contained horizontal scroller. A labelled range, previous/next frame buttons and six chapter links provide complete navigation. All controls are native buttons or labelled inputs. Movement is discretionary, no sound starts automatically, reduced-motion preferences remove transitions, and a direct index exposes the same content.\n\n**Adaptation.** Attach information to meaningful temporal moments. Use a finite timeline and make motion pausable; do not require playback to access annotations. Retain the relationship between navigation and content. Do not reduce the reference to a generic hero followed by interchangeable cards.\n\n**Research.** [Aaron Koblin — The Wilderness Downtown](https://www.aaronkoblin.com/project/the-wilderness-downtown/). These are conceptual precedents, not copied artwork, source code, branding or text. All diagrams and sample writing in this specimen are original, fictional material.",
+  "scope": "Complete visual reference with deterministic local interactions and fictional content; no production backend."
+}

@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 2,
+  "id": "100",
+  "slug": "powers-of-scale",
+  "name": "Powers of Scale",
+  "brand": "ONE THREAD / Five scales of a shared material",
+  "family": "Avant-garde & experimental",
+  "status": "ready",
+  "thesis": "Changing scale should change the question, not only the magnification.",
+  "suitableFor": [
+    "Experimental publishing",
+    "Art exhibition",
+    "Cultural storytelling"
+  ],
+  "character": "Experimental",
+  "traits": {
+    "composition": "The opening screen is an extreme close-up of a woven thread. Discrete semantic zooms replace it with cloth, garment, workshop and town, with scale rulers embedded in each full-page illustration.",
+    "navigation": "Zoom through five scales, read a scale’s story, follow the complete material journey",
+    "typography": "Space Grotesk / IBM Plex Mono",
+    "density": "Medium",
+    "imagery": "Original SVG and CSS compositions",
+    "surface": "A continuous browser-sized composition",
+    "motion": "Optional"
+  },
+  "effort": "High",
+  "definingFeatures": [
+    "Semantic zoom",
+    "Scale-dependent stories",
+    "Material journey"
+  ],
+  "adaptableChoices": [
+    "Subject and original writing",
+    "Palette and equivalent licensed typography",
+    "Scale and number of content units"
+  ],
+  "discovery": {
+    "industries": [
+      "Arts",
+      "Culture",
+      "Experimental publishing"
+    ],
+    "visitorGoals": [
+      "Explore a non-linear story"
+    ],
+    "conversionActions": [
+      "Assemble a reading collection"
+    ],
+    "siteSize": "Interactive publication",
+    "interactionTypes": [
+      "Semantic zoom",
+      "Scale-dependent stories",
+      "Material journey"
+    ],
+    "keywords": [
+      "avant garde",
+      "experimental",
+      "unconventional navigation",
+      "Semantic zoom",
+      "Scale-dependent stories",
+      "Material journey"
+    ]
+  },
+  "patterns": [
+    "Semantic zoom",
+    "Scale-dependent stories",
+    "Material journey"
+  ],
+  "entryRoute": "/preview/100-powers-of-scale/start",
+  "states": [
+    {
+      "key": "story",
+      "label": "Story at this scale",
+      "route": "/preview/100-powers-of-scale/story"
+    },
+    {
+      "key": "journey",
+      "label": "The complete material journey",
+      "route": "/preview/100-powers-of-scale/journey"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/100/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/100/bba96c4e7f12b3c8-desktop.jpg",
+      "route": "/preview/100-powers-of-scale/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:3c9bd84b2cb676b56fe579668cc27d0386f2e7d84838e6dc761dbc6c986fc9e6",
+      "sha256": "bba96c4e7f12b3c8be762ee0df266b74afa3046f8bff09c3570e31f199d4d1c3",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/100/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/100/a95fe527e91c98aa-mobile.jpg",
+      "route": "/preview/100-powers-of-scale/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:3c9bd84b2cb676b56fe579668cc27d0386f2e7d84838e6dc761dbc6c986fc9e6",
+      "sha256": "a95fe527e91c98aa89bffa65c53e1d7b227afe9c80abf0b14555843481cbbc4d",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/100/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/100/c4b3ca3a3856a864-detail.jpg",
+      "route": "/preview/100-powers-of-scale/story",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "story",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:3c9bd84b2cb676b56fe579668cc27d0386f2e7d84838e6dc761dbc6c986fc9e6",
+      "sha256": "c4b3ca3a3856a8648fec5448abb0011e4461d782c62d7cbca79ff87b243bdfc5",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/100/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/100/a90f09e662370c70-full-page.jpg",
+      "route": "/preview/100-powers-of-scale/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:3c9bd84b2cb676b56fe579668cc27d0386f2e7d84838e6dc761dbc6c986fc9e6",
+      "sha256": "a90f09e662370c70bdef48599fa0307fcfe6ff89af6bb526cba5a4b5976a339a",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/100-powers-of-scale",
+  "neighbours": [
+    "16",
+    "48"
+  ],
+  "researchSources": [
+    {
+      "title": "Neal Agarwal — The Deep Sea",
+      "url": "https://neal.fun/deep-sea/"
+    },
+    {
+      "title": "Rafaël Rozendaal — Internet works",
+      "url": "https://www.newrafael.com/internet?filter=website"
+    }
+  ],
+  "palette": {
+    "page": "#e4d9c0",
+    "ink": "#354a42",
+    "accent": "#945b43",
+    "surface": "#e4d9c0"
+  },
+  "fonts": [
+    "Space Grotesk",
+    "IBM Plex Mono"
+  ],
+  "brief": "**Idea.** Changing scale should change the question, not only the magnification.\n\n**Composition.** The opening screen is an extreme close-up of a woven thread. Discrete semantic zooms replace it with cloth, garment, workshop and town, with scale rulers embedded in each full-page illustration.\n\n**Navigation and complete example.** Move through fibre, cloth, garment, workshop and town in an original illustrated material journey. Each zoom changes the content and units, and the complete account links all five scales.\n\n**Responsive and inclusive behaviour.** The scene uses responsive vector art with a persistent scale selector. Zoom is discrete and button-controlled, so pinch gestures, motion and precise pointing are unnecessary. All controls are native buttons or labelled inputs. Movement is discretionary, no sound starts automatically, reduced-motion preferences remove transitions, and a direct index exposes the same content.\n\n**Adaptation.** Give each scale a different level of explanation. Preserve a stable material identity across transitions and provide a complete linear account. Retain the relationship between navigation and content. Do not reduce the reference to a generic hero followed by interchangeable cards.\n\n**Research.** [Neal Agarwal — The Deep Sea](https://neal.fun/deep-sea/); [Rafaël Rozendaal — Internet works](https://www.newrafael.com/internet?filter=website). These are conceptual precedents, not copied artwork, source code, branding or text. All diagrams and sample writing in this specimen are original, fictional material.",
+  "scope": "Complete visual reference with deterministic local interactions and fictional content; no production backend."
+}

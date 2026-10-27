@@ -1,0 +1,10 @@
+.specimen {
+  --page: #e9e2cf;
+  --ink: #282a29;
+  --accent: #904b32;
+  --surface: #e9e2cf;
+  --heading: 'Libre Baskerville', sans-serif;
+  --body: 'IBM Plex Mono', sans-serif;
+  --measure: 62ch;
+  --space: 8px;
+}

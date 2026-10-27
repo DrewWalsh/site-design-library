@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 2,
+  "id": "79",
+  "slug": "frequency-house",
+  "name": "Frequency House",
+  "brand": "FREQUENCY HOUSE / After-hours transmission",
+  "family": "Avant-garde & experimental",
+  "status": "ready",
+  "thesis": "Tune a publication instead of moving through a menu.",
+  "suitableFor": [
+    "Experimental publishing",
+    "Art exhibition",
+    "Cultural storytelling"
+  ],
+  "character": "Experimental",
+  "traits": {
+    "composition": "An enormous amber instrument dial occupies the page, with radial station labels, fine calibration ticks and the programme title nested at its centre.",
+    "navigation": "Frequency dial, programme transcript and listening sequence",
+    "typography": "Space Grotesk / IBM Plex Mono",
+    "density": "Medium",
+    "imagery": "Original SVG and CSS compositions",
+    "surface": "A continuous browser-sized composition",
+    "motion": "Optional"
+  },
+  "effort": "High",
+  "definingFeatures": [
+    "Frequency tuning",
+    "Radial programme index",
+    "Listening sequence"
+  ],
+  "adaptableChoices": [
+    "Subject and original writing",
+    "Palette and equivalent licensed typography",
+    "Scale and number of content units"
+  ],
+  "discovery": {
+    "industries": [
+      "Arts",
+      "Culture",
+      "Experimental publishing"
+    ],
+    "visitorGoals": [
+      "Explore a non-linear story"
+    ],
+    "conversionActions": [
+      "Assemble a reading collection"
+    ],
+    "siteSize": "Interactive publication",
+    "interactionTypes": [
+      "Frequency tuning",
+      "Radial programme index",
+      "Listening sequence"
+    ],
+    "keywords": [
+      "avant garde",
+      "experimental",
+      "unconventional navigation",
+      "Frequency tuning",
+      "Radial programme index",
+      "Listening sequence"
+    ]
+  },
+  "patterns": [
+    "Frequency tuning",
+    "Radial programme index",
+    "Listening sequence"
+  ],
+  "entryRoute": "/preview/79-frequency-house/start",
+  "states": [
+    {
+      "key": "programme",
+      "label": "Programme transcript",
+      "route": "/preview/79-frequency-house/programme"
+    },
+    {
+      "key": "sequence",
+      "label": "Listening sequence",
+      "route": "/preview/79-frequency-house/sequence"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/79/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/79/08aff7ddabd02b17-desktop.jpg",
+      "route": "/preview/79-frequency-house/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:c4945b8789daf0e1260ff4e99ee2858e29d7a3f3326abe467159d1b723a194c0",
+      "sha256": "08aff7ddabd02b17348aaa71f9e67f29a9b6c051ad78536acdaa639e16de60e8",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/79/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/79/f0769f533d73e9e9-mobile.jpg",
+      "route": "/preview/79-frequency-house/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:c4945b8789daf0e1260ff4e99ee2858e29d7a3f3326abe467159d1b723a194c0",
+      "sha256": "f0769f533d73e9e93e713b64997b8575133bfb7480da53c1a62c67b64de1550a",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/79/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/79/df0915ff36413eae-detail.jpg",
+      "route": "/preview/79-frequency-house/programme",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "programme",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:c4945b8789daf0e1260ff4e99ee2858e29d7a3f3326abe467159d1b723a194c0",
+      "sha256": "df0915ff36413eaeacb292b4e583e059a09da4c9a1fab9798a24d13b4d354374",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/79/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/79/d89f3c535d5798ec-full-page.jpg",
+      "route": "/preview/79-frequency-house/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:c4945b8789daf0e1260ff4e99ee2858e29d7a3f3326abe467159d1b723a194c0",
+      "sha256": "d89f3c535d5798ecd29333029d023e6ea932b7f025e70b109cfcde554a018016",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/79-frequency-house",
+  "neighbours": [
+    "17",
+    "40"
+  ],
+  "researchSources": [
+    {
+      "title": "Radio Garden — About",
+      "url": "https://radio.garden/settings/radio-garden"
+    },
+    {
+      "title": "Typatone",
+      "url": "https://typatone.com/"
+    }
+  ],
+  "palette": {
+    "page": "#202322",
+    "ink": "#f2e5cb",
+    "accent": "#f3a75b",
+    "surface": "#202322"
+  },
+  "fonts": [
+    "Space Grotesk",
+    "IBM Plex Mono"
+  ],
+  "brief": "**Idea.** Tune a publication instead of moving through a menu.\n\n**Composition.** An enormous amber instrument dial occupies the page, with radial station labels, fine calibration ticks and the programme title nested at its centre.\n\n**Navigation and complete example.** Tune six fictional late-night programmes, read their transcripts and liner notes, and save an ordered listening sequence. This silent specimen demonstrates tuning without a live radio dependency.\n\n**Responsive and inclusive behaviour.** The dial scales to the phone width. A labelled range and next/previous controls provide precise selection independent of spatial pointing. All controls are native buttons or labelled inputs. Movement is discretionary, no sound starts automatically, reduced-motion preferences remove transitions, and a direct index exposes the same content.\n\n**Adaptation.** Use meaningful frequency stops and programme content inside the instrument. Keep listening optional and offer complete transcripts. Retain the relationship between navigation and content. Do not reduce the reference to a generic hero followed by interchangeable cards.\n\n**Research.** [Radio Garden — About](https://radio.garden/settings/radio-garden); [Typatone](https://typatone.com/). These are conceptual precedents, not copied artwork, source code, branding or text. All diagrams and sample writing in this specimen are original, fictional material.",
+  "scope": "Complete visual reference with deterministic local interactions and fictional content; no production backend."
+}

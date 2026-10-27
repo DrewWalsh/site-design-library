@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 2,
+  "id": "87",
+  "slug": "inside-the-object",
+  "name": "Inside the Object",
+  "brand": "OBJECT / Issue 07: the mechanical camera",
+  "family": "Avant-garde & experimental",
+  "status": "ready",
+  "thesis": "The parts of an object can be the architecture of its story.",
+  "suitableFor": [
+    "Experimental publishing",
+    "Art exhibition",
+    "Cultural storytelling"
+  ],
+  "character": "Experimental",
+  "traits": {
+    "composition": "An enormous exploded camera floats on a pale technical field. Thin leaders connect labelled parts; selecting a component opens its account in the space the object occupied.",
+    "navigation": "Assemble and separate the camera, choose a component, follow a repair sequence",
+    "typography": "Space Grotesk / IBM Plex Mono",
+    "density": "Medium",
+    "imagery": "Original SVG and CSS compositions",
+    "surface": "A continuous browser-sized composition",
+    "motion": "Optional"
+  },
+  "effort": "High",
+  "definingFeatures": [
+    "Object as navigation",
+    "Exploded view",
+    "Repair sequence"
+  ],
+  "adaptableChoices": [
+    "Subject and original writing",
+    "Palette and equivalent licensed typography",
+    "Scale and number of content units"
+  ],
+  "discovery": {
+    "industries": [
+      "Arts",
+      "Culture",
+      "Experimental publishing"
+    ],
+    "visitorGoals": [
+      "Explore a non-linear story"
+    ],
+    "conversionActions": [
+      "Assemble a reading collection"
+    ],
+    "siteSize": "Interactive publication",
+    "interactionTypes": [
+      "Object as navigation",
+      "Exploded view",
+      "Repair sequence"
+    ],
+    "keywords": [
+      "avant garde",
+      "experimental",
+      "unconventional navigation",
+      "Object as navigation",
+      "Exploded view",
+      "Repair sequence"
+    ]
+  },
+  "patterns": [
+    "Object as navigation",
+    "Exploded view",
+    "Repair sequence"
+  ],
+  "entryRoute": "/preview/87-inside-the-object/start",
+  "states": [
+    {
+      "key": "component",
+      "label": "Component history",
+      "route": "/preview/87-inside-the-object/component"
+    },
+    {
+      "key": "repair",
+      "label": "Repair sequence",
+      "route": "/preview/87-inside-the-object/repair"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/87/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/87/0045d92e105c4006-desktop.jpg",
+      "route": "/preview/87-inside-the-object/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:d06add645da38d3f07ddcf7a2c1020cb1fbdfc45d7aa1d084486031c98953fdb",
+      "sha256": "0045d92e105c4006359cf8d9447592006fc8915055449671db356f98e5c61963",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/87/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/87/ce7fdedda6c1cc64-mobile.jpg",
+      "route": "/preview/87-inside-the-object/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:d06add645da38d3f07ddcf7a2c1020cb1fbdfc45d7aa1d084486031c98953fdb",
+      "sha256": "ce7fdedda6c1cc645a9162f3201331046fd63eccb20e8faa4c204c26e8f39bcf",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/87/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/87/b398554da1ed4521-detail.jpg",
+      "route": "/preview/87-inside-the-object/component",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "component",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:d06add645da38d3f07ddcf7a2c1020cb1fbdfc45d7aa1d084486031c98953fdb",
+      "sha256": "b398554da1ed452106bd3fa04ed196d84654dc7d914f9e118a39b6590d3af992",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/87/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/87/5907c3c2135a4f4b-full-page.jpg",
+      "route": "/preview/87-inside-the-object/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:d06add645da38d3f07ddcf7a2c1020cb1fbdfc45d7aa1d084486031c98953fdb",
+      "sha256": "5907c3c2135a4f4b432e1f080dfda416a130156c08738bde5b5a81b59b107bc8",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/87-inside-the-object",
+  "neighbours": [
+    "27",
+    "60"
+  ],
+  "researchSources": [
+    {
+      "title": "Rafaël Rozendaal — Internet works",
+      "url": "https://www.newrafael.com/internet?filter=website"
+    },
+    {
+      "title": "Conditional Design manifesto",
+      "url": "https://conditionaldesign.org/manifesto/"
+    }
+  ],
+  "palette": {
+    "page": "#f2f3ee",
+    "ink": "#263732",
+    "accent": "#466d61",
+    "surface": "#f2f3ee"
+  },
+  "fonts": [
+    "Space Grotesk",
+    "IBM Plex Mono"
+  ],
+  "brief": "**Idea.** The parts of an object can be the architecture of its story.\n\n**Composition.** An enormous exploded camera floats on a pale technical field. Thin leaders connect labelled parts; selecting a component opens its account in the space the object occupied.\n\n**Navigation and complete example.** Separate a simplified camera into six components, read their roles and histories, then work through a six-step fictional inspection sequence.\n\n**Responsive and inclusive behaviour.** The exploded drawing remains contained and scales; a numbered component list supplies large touch targets and complete text navigation. All controls are native buttons or labelled inputs. Movement is discretionary, no sound starts automatically, reduced-motion preferences remove transitions, and a direct index exposes the same content.\n\n**Adaptation.** Use a simplified, clearly labelled object model. Keep repair guidance demonstrative unless verified for a real device. Retain the relationship between navigation and content. Do not reduce the reference to a generic hero followed by interchangeable cards.\n\n**Research.** [Rafaël Rozendaal — Internet works](https://www.newrafael.com/internet?filter=website); [Conditional Design manifesto](https://conditionaldesign.org/manifesto/). These are conceptual precedents, not copied artwork, source code, branding or text. All diagrams and sample writing in this specimen are original, fictional material.",
+  "scope": "Complete visual reference with deterministic local interactions and fictional content; no production backend."
+}

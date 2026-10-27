@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 2,
+  "id": "77",
+  "slug": "palimpsest-city",
+  "name": "Palimpsest City",
+  "brand": "SILT / An atlas of overwritten places",
+  "family": "Avant-garde & experimental",
+  "status": "ready",
+  "thesis": "A place is several histories occupying the same coordinates.",
+  "suitableFor": [
+    "Experimental publishing",
+    "Art exhibition",
+    "Cultural storytelling"
+  ],
+  "character": "Experimental",
+  "traits": {
+    "composition": "Translucent blue, rust and charcoal plans overlap on parchment. Street names, contour marks and marginal testimony form a full-page atlas.",
+    "navigation": "Peel historical layers, select an address, compare accounts",
+    "typography": "Libre Baskerville / IBM Plex Mono",
+    "density": "Medium",
+    "imagery": "Original SVG and CSS compositions",
+    "surface": "A continuous browser-sized composition",
+    "motion": "Optional"
+  },
+  "effort": "High",
+  "definingFeatures": [
+    "Layer visibility",
+    "Spatial evidence",
+    "Address comparison"
+  ],
+  "adaptableChoices": [
+    "Subject and original writing",
+    "Palette and equivalent licensed typography",
+    "Scale and number of content units"
+  ],
+  "discovery": {
+    "industries": [
+      "Arts",
+      "Culture",
+      "Experimental publishing"
+    ],
+    "visitorGoals": [
+      "Explore a non-linear story"
+    ],
+    "conversionActions": [
+      "Assemble a reading collection"
+    ],
+    "siteSize": "Interactive publication",
+    "interactionTypes": [
+      "Layer visibility",
+      "Spatial evidence",
+      "Address comparison"
+    ],
+    "keywords": [
+      "avant garde",
+      "experimental",
+      "unconventional navigation",
+      "Layer visibility",
+      "Spatial evidence",
+      "Address comparison"
+    ]
+  },
+  "patterns": [
+    "Layer visibility",
+    "Spatial evidence",
+    "Address comparison"
+  ],
+  "entryRoute": "/preview/77-palimpsest-city/start",
+  "states": [
+    {
+      "key": "address",
+      "label": "One address across time",
+      "route": "/preview/77-palimpsest-city/address"
+    },
+    {
+      "key": "accounts",
+      "label": "Resident accounts",
+      "route": "/preview/77-palimpsest-city/accounts"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/77/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/77/485bdc63a257d312-desktop.jpg",
+      "route": "/preview/77-palimpsest-city/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:10b90ec9c9605505c9721f604d3b3bee6fe304d9c52e46b22702add47487ab36",
+      "sha256": "485bdc63a257d3122274bad6bc98a9ccdfdda269a073f9d8d0289899cfd0db75",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/77/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/77/d6dc5474c444a138-mobile.jpg",
+      "route": "/preview/77-palimpsest-city/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:10b90ec9c9605505c9721f604d3b3bee6fe304d9c52e46b22702add47487ab36",
+      "sha256": "d6dc5474c444a138579263ce95844a03db152e4ee31b548570a6511a772607ea",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/77/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/77/8e026fdbe484561b-detail.jpg",
+      "route": "/preview/77-palimpsest-city/address",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "address",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:10b90ec9c9605505c9721f604d3b3bee6fe304d9c52e46b22702add47487ab36",
+      "sha256": "8e026fdbe484561b57bffb0bcdf8ceafd5a1795152dc43175f72731a6b21beb8",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/77/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/77/9fdacba7a1d4acbb-full-page.jpg",
+      "route": "/preview/77-palimpsest-city/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:10b90ec9c9605505c9721f604d3b3bee6fe304d9c52e46b22702add47487ab36",
+      "sha256": "9fdacba7a1d4acbb48a075582fe1555c85f369c8743ab333ea92cf96305f7bff",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/77-palimpsest-city",
+  "neighbours": [
+    "16",
+    "56"
+  ],
+  "researchSources": [
+    {
+      "title": "Rafaël Rozendaal — Internet works",
+      "url": "https://www.newrafael.com/internet?filter=website"
+    },
+    {
+      "title": "Aaron Koblin — The Wilderness Downtown",
+      "url": "https://www.aaronkoblin.com/project/the-wilderness-downtown/"
+    }
+  ],
+  "palette": {
+    "page": "#e9e2cf",
+    "ink": "#282a29",
+    "accent": "#904b32",
+    "surface": "#e9e2cf"
+  },
+  "fonts": [
+    "Libre Baskerville",
+    "IBM Plex Mono"
+  ],
+  "brief": "**Idea.** A place is several histories occupying the same coordinates.\n\n**Composition.** Translucent blue, rust and charcoal plans overlap on parchment. Street names, contour marks and marginal testimony form a full-page atlas.\n\n**Navigation and complete example.** Explore four fictional periods of the Silt railway district, select one of six addresses, compare its uses and read the resident accounts associated with it.\n\n**Responsive and inclusive behaviour.** The plan retains a square aspect ratio, with large numbered location controls and a text key underneath. All controls are native buttons or labelled inputs. Movement is discretionary, no sound starts automatically, reduced-motion preferences remove transitions, and a direct index exposes the same content.\n\n**Adaptation.** Use independently legible evidence layers and honest source labels; preserve spatial relationships when simplifying the map. Retain the relationship between navigation and content. Do not reduce the reference to a generic hero followed by interchangeable cards.\n\n**Research.** [Rafaël Rozendaal — Internet works](https://www.newrafael.com/internet?filter=website); [Aaron Koblin — The Wilderness Downtown](https://www.aaronkoblin.com/project/the-wilderness-downtown/). These are conceptual precedents, not copied artwork, source code, branding or text. All diagrams and sample writing in this specimen are original, fictional material.",
+  "scope": "Complete visual reference with deterministic local interactions and fictional content; no production backend."
+}

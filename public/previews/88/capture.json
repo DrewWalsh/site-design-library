@@ -1,0 +1,64 @@
+{
+  "designId": "88",
+  "sourceRevision": "sha256:f5cd2c5b4bf9598e687cbcd80e87806d4492c2ae689e1cea70ff8632cc6acab2",
+  "capturedAt": "2026-10-27T04:20:17.953Z",
+  "browser": "156.0.4314.42",
+  "captures": [
+    {
+      "file": "/previews/88/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/88/e3b2ef87888612c4-desktop.jpg",
+      "route": "/preview/88-recursive-commons/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:f5cd2c5b4bf9598e687cbcd80e87806d4492c2ae689e1cea70ff8632cc6acab2",
+      "sha256": "e3b2ef87888612c41cb7c9dcf82a00fd06b68f5245ec00ac661681f7e01c4b0f",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/88/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/88/f39ac555f4a9d629-mobile.jpg",
+      "route": "/preview/88-recursive-commons/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:f5cd2c5b4bf9598e687cbcd80e87806d4492c2ae689e1cea70ff8632cc6acab2",
+      "sha256": "f39ac555f4a9d629122b4f83d60ce1b97532c0ba23885f570b0716da9a6f5ccd",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/88/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/88/0c161caa8c4fc00b-detail.jpg",
+      "route": "/preview/88-recursive-commons/object",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "object",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:f5cd2c5b4bf9598e687cbcd80e87806d4492c2ae689e1cea70ff8632cc6acab2",
+      "sha256": "0c161caa8c4fc00b8f2f521effedfe287813feb6fd2ef5820aecec4c82d48490",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/88/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/88/5d33f02be30f05ae-full-page.jpg",
+      "route": "/preview/88-recursive-commons/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:f5cd2c5b4bf9598e687cbcd80e87806d4492c2ae689e1cea70ff8632cc6acab2",
+      "sha256": "5d33f02be30f05aef596e7603617f3d8c2b1a26b6c851767eab8d00ef838d29d",
+      "fullPage": true
+    }
+  ]
+}

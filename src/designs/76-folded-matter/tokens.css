@@ -1,0 +1,10 @@
+.specimen {
+  --page: #e7f44b;
+  --ink: #171810;
+  --accent: #e7f44b;
+  --surface: #e7f44b;
+  --heading: 'Archivo Black', sans-serif;
+  --body: 'DM Sans', sans-serif;
+  --measure: 62ch;
+  --space: 8px;
+}

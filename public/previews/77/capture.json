@@ -1,0 +1,64 @@
+{
+  "designId": "77",
+  "sourceRevision": "sha256:10b90ec9c9605505c9721f604d3b3bee6fe304d9c52e46b22702add47487ab36",
+  "capturedAt": "2026-10-27T04:12:37.404Z",
+  "browser": "156.0.4314.42",
+  "captures": [
+    {
+      "file": "/previews/77/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/77/485bdc63a257d312-desktop.jpg",
+      "route": "/preview/77-palimpsest-city/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:10b90ec9c9605505c9721f604d3b3bee6fe304d9c52e46b22702add47487ab36",
+      "sha256": "485bdc63a257d3122274bad6bc98a9ccdfdda269a073f9d8d0289899cfd0db75",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/77/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/77/d6dc5474c444a138-mobile.jpg",
+      "route": "/preview/77-palimpsest-city/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:10b90ec9c9605505c9721f604d3b3bee6fe304d9c52e46b22702add47487ab36",
+      "sha256": "d6dc5474c444a138579263ce95844a03db152e4ee31b548570a6511a772607ea",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/77/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/77/8e026fdbe484561b-detail.jpg",
+      "route": "/preview/77-palimpsest-city/address",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "address",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:10b90ec9c9605505c9721f604d3b3bee6fe304d9c52e46b22702add47487ab36",
+      "sha256": "8e026fdbe484561b57bffb0bcdf8ceafd5a1795152dc43175f72731a6b21beb8",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/77/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/77/9fdacba7a1d4acbb-full-page.jpg",
+      "route": "/preview/77-palimpsest-city/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:10b90ec9c9605505c9721f604d3b3bee6fe304d9c52e46b22702add47487ab36",
+      "sha256": "9fdacba7a1d4acbb48a075582fe1555c85f369c8743ab333ea92cf96305f7bff",
+      "fullPage": true
+    }
+  ]
+}

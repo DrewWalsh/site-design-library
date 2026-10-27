@@ -1,0 +1,64 @@
+{
+  "designId": "80",
+  "sourceRevision": "sha256:8081bb1ec25452d874a222d0b8ad4cb6be379ba967f85e72dc9c583cb0202fd3",
+  "capturedAt": "2026-10-27T04:12:46.677Z",
+  "browser": "156.0.4314.42",
+  "captures": [
+    {
+      "file": "/previews/80/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/80/f5ba6b9d21946242-desktop.jpg",
+      "route": "/preview/80-braided-voices/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:8081bb1ec25452d874a222d0b8ad4cb6be379ba967f85e72dc9c583cb0202fd3",
+      "sha256": "f5ba6b9d219462421c640ee5776d2e64a4e5d63b548030a4bc096ec47cb7d558",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/80/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/80/8d1af8b400407515-mobile.jpg",
+      "route": "/preview/80-braided-voices/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:8081bb1ec25452d874a222d0b8ad4cb6be379ba967f85e72dc9c583cb0202fd3",
+      "sha256": "8d1af8b4004075157f66b6204174ce4367011878a645214d9dfb63ea4be016ee",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/80/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/80/016bd64a93e10d8a-detail.jpg",
+      "route": "/preview/80-braided-voices/crossing",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "crossing",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:8081bb1ec25452d874a222d0b8ad4cb6be379ba967f85e72dc9c583cb0202fd3",
+      "sha256": "016bd64a93e10d8ad15a258693905f8fd83b9ffd36e6b13e5a18b5bc2e37bb68",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/80/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/80/4404c04a94130824-full-page.jpg",
+      "route": "/preview/80-braided-voices/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:8081bb1ec25452d874a222d0b8ad4cb6be379ba967f85e72dc9c583cb0202fd3",
+      "sha256": "4404c04a94130824ffbef888d02b9011e39113f61e0a1ae68355e09b68bb3002",
+      "fullPage": true
+    }
+  ]
+}

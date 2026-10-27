@@ -1,0 +1,64 @@
+{
+  "designId": "97",
+  "sourceRevision": "sha256:159f28b6ad207cf67d1701dd1d5224dbfe1db40e7da772ba88cce91e36ea3af0",
+  "capturedAt": "2026-10-27T04:17:17.784Z",
+  "browser": "156.0.4314.42",
+  "captures": [
+    {
+      "file": "/previews/97/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/97/811dc651576adbde-desktop.jpg",
+      "route": "/preview/97-curtain-bureau/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:159f28b6ad207cf67d1701dd1d5224dbfe1db40e7da772ba88cce91e36ea3af0",
+      "sha256": "811dc651576adbde44935f636d995c62d7448ee02619e07d99e0e1354e65d3f2",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/97/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/97/dd5eea520fc27890-mobile.jpg",
+      "route": "/preview/97-curtain-bureau/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:159f28b6ad207cf67d1701dd1d5224dbfe1db40e7da772ba88cce91e36ea3af0",
+      "sha256": "dd5eea520fc27890f47ab745c224d948042d26bc9c691760424c6522212abca7",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/97/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/97/5f9c6301b5816eda-detail.jpg",
+      "route": "/preview/97-curtain-bureau/performance",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "performance",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:159f28b6ad207cf67d1701dd1d5224dbfe1db40e7da772ba88cce91e36ea3af0",
+      "sha256": "5f9c6301b5816edafdbb140aa8a1130e8ad158f1aa88309eed852208a2c5cece",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/97/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/97/6ab8dc4c4799c1e5-full-page.jpg",
+      "route": "/preview/97-curtain-bureau/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:159f28b6ad207cf67d1701dd1d5224dbfe1db40e7da772ba88cce91e36ea3af0",
+      "sha256": "6ab8dc4c4799c1e5cf2d8251d83f3927ffebdf50d0b5bdf8f67535e4527479ae",
+      "fullPage": true
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 2,
+  "id": "99",
+  "slug": "exquisite-assembly",
+  "name": "Exquisite Assembly",
+  "brand": "THREE HORIZONS / A collaborative landscape",
+  "family": "Avant-garde & experimental",
+  "status": "ready",
+  "thesis": "Independent contributions can meet in a composition nobody authored alone.",
+  "suitableFor": [
+    "Experimental publishing",
+    "Art exhibition",
+    "Cultural storytelling"
+  ],
+  "character": "Experimental",
+  "traits": {
+    "composition": "Three full-width illustrated bands form a strange continuous landscape. Separate sky, figure and ground selectors expose the seams and the credits behind each combination.",
+    "navigation": "Slide three bands independently, read contributor notes, keep an edition",
+    "typography": "Space Grotesk / DM Sans",
+    "density": "Medium",
+    "imagery": "Original SVG and CSS compositions",
+    "surface": "A continuous browser-sized composition",
+    "motion": "Optional"
+  },
+  "effort": "High",
+  "definingFeatures": [
+    "Independent collage bands",
+    "Combinatorial authorship",
+    "Edition credits"
+  ],
+  "adaptableChoices": [
+    "Subject and original writing",
+    "Palette and equivalent licensed typography",
+    "Scale and number of content units"
+  ],
+  "discovery": {
+    "industries": [
+      "Arts",
+      "Culture",
+      "Experimental publishing"
+    ],
+    "visitorGoals": [
+      "Explore a non-linear story"
+    ],
+    "conversionActions": [
+      "Assemble a reading collection"
+    ],
+    "siteSize": "Interactive publication",
+    "interactionTypes": [
+      "Independent collage bands",
+      "Combinatorial authorship",
+      "Edition credits"
+    ],
+    "keywords": [
+      "avant garde",
+      "experimental",
+      "unconventional navigation",
+      "Independent collage bands",
+      "Combinatorial authorship",
+      "Edition credits"
+    ]
+  },
+  "patterns": [
+    "Independent collage bands",
+    "Combinatorial authorship",
+    "Edition credits"
+  ],
+  "entryRoute": "/preview/99-exquisite-assembly/start",
+  "states": [
+    {
+      "key": "contributor",
+      "label": "Contributor story",
+      "route": "/preview/99-exquisite-assembly/contributor"
+    },
+    {
+      "key": "edition",
+      "label": "Assembled edition",
+      "route": "/preview/99-exquisite-assembly/edition"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/99/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/99/e582c6b85ced36a1-desktop.jpg",
+      "route": "/preview/99-exquisite-assembly/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:cfc9565d401fb02341f174feffe821658dac13df8503f39e40bab88e4c73bae1",
+      "sha256": "e582c6b85ced36a17c32a9d25795f133ecf752f234abd5e72166aba7cce550ba",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/99/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/99/dd4c460e3073016f-mobile.jpg",
+      "route": "/preview/99-exquisite-assembly/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:cfc9565d401fb02341f174feffe821658dac13df8503f39e40bab88e4c73bae1",
+      "sha256": "dd4c460e3073016ff9f956d43f3b016e1ebe6f7d2a1ab44bb45adb59c899c6f7",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/99/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/99/461148dddbdbfd2d-detail.jpg",
+      "route": "/preview/99-exquisite-assembly/contributor",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "contributor",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:cfc9565d401fb02341f174feffe821658dac13df8503f39e40bab88e4c73bae1",
+      "sha256": "461148dddbdbfd2dc18b62e5bcae17fb64978c7023c896bf5ae419f96fec6b5e",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/99/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/99/b0c800177bd01939-full-page.jpg",
+      "route": "/preview/99-exquisite-assembly/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:cfc9565d401fb02341f174feffe821658dac13df8503f39e40bab88e4c73bae1",
+      "sha256": "b0c800177bd0193923765e4664046eeae8ef9eaee7af02b249cdc3ab7acbd92b",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/99-exquisite-assembly",
+  "neighbours": [
+    "49",
+    "66"
+  ],
+  "researchSources": [
+    {
+      "title": "Moniker — Neuhaus",
+      "url": "https://studiomoniker.com/projects/neuhaus"
+    },
+    {
+      "title": "Conditional Design manifesto",
+      "url": "https://conditionaldesign.org/manifesto/"
+    }
+  ],
+  "palette": {
+    "page": "#e8e0cd",
+    "ink": "#34332f",
+    "accent": "#6c5b8a",
+    "surface": "#e8e0cd"
+  },
+  "fonts": [
+    "Space Grotesk",
+    "DM Sans"
+  ],
+  "brief": "**Idea.** Independent contributions can meet in a composition nobody authored alone.\n\n**Composition.** Three full-width illustrated bands form a strange continuous landscape. Separate sky, figure and ground selectors expose the seams and the credits behind each combination.\n\n**Navigation and complete example.** Combine three skies, three figures and three grounds from original SVG artwork, read the three contributors’ notes and save a numbered local edition with explicit credits.\n\n**Responsive and inclusive behaviour.** Each band keeps a wide illustration crop with controls below it. Previous and next buttons replace any reliance on swiping. All controls are native buttons or labelled inputs. Movement is discretionary, no sound starts automatically, reduced-motion preferences remove transitions, and a direct index exposes the same content.\n\n**Adaptation.** Make the seams and authorship visible. Every combination should remain intentionally composed, and assets must be original or correctly licensed. Retain the relationship between navigation and content. Do not reduce the reference to a generic hero followed by interchangeable cards.\n\n**Research.** [Moniker — Neuhaus](https://studiomoniker.com/projects/neuhaus); [Conditional Design manifesto](https://conditionaldesign.org/manifesto/). These are conceptual precedents, not copied artwork, source code, branding or text. All diagrams and sample writing in this specimen are original, fictional material.",
+  "scope": "Complete visual reference with deterministic local interactions and fictional content; no production backend."
+}

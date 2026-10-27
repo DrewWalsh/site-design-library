@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 2,
+  "id": "93",
+  "slug": "gesture-index",
+  "name": "Gesture Index",
+  "brand": "LINEAGE / A form-finding archive",
+  "family": "Avant-garde & experimental",
+  "status": "ready",
+  "thesis": "A drawn shape can be a precise invitation to an existing collection.",
+  "suitableFor": [
+    "Experimental publishing",
+    "Art exhibition",
+    "Cultural storytelling"
+  ],
+  "character": "Experimental",
+  "traits": {
+    "composition": "A large pale drawing field holds charcoal strokes, small numbered specimen marks and a handwritten-seeming retrieval trail. Shape buttons provide an equally visible alternative to drawing.",
+    "navigation": "Draw or choose a form, inspect matched objects and keep a constellation",
+    "typography": "Libre Baskerville / IBM Plex Mono",
+    "density": "Medium",
+    "imagery": "Original SVG and CSS compositions",
+    "surface": "A continuous browser-sized composition",
+    "motion": "Optional"
+  },
+  "effort": "High",
+  "definingFeatures": [
+    "Gesture retrieval",
+    "Shape alternatives",
+    "Visual constellation"
+  ],
+  "adaptableChoices": [
+    "Subject and original writing",
+    "Palette and equivalent licensed typography",
+    "Scale and number of content units"
+  ],
+  "discovery": {
+    "industries": [
+      "Arts",
+      "Culture",
+      "Experimental publishing"
+    ],
+    "visitorGoals": [
+      "Explore a non-linear story"
+    ],
+    "conversionActions": [
+      "Assemble a reading collection"
+    ],
+    "siteSize": "Interactive publication",
+    "interactionTypes": [
+      "Gesture retrieval",
+      "Shape alternatives",
+      "Visual constellation"
+    ],
+    "keywords": [
+      "avant garde",
+      "experimental",
+      "unconventional navigation",
+      "Gesture retrieval",
+      "Shape alternatives",
+      "Visual constellation"
+    ]
+  },
+  "patterns": [
+    "Gesture retrieval",
+    "Shape alternatives",
+    "Visual constellation"
+  ],
+  "entryRoute": "/preview/93-gesture-index/start",
+  "states": [
+    {
+      "key": "object",
+      "label": "Object provenance",
+      "route": "/preview/93-gesture-index/object"
+    },
+    {
+      "key": "constellation",
+      "label": "Saved constellation",
+      "route": "/preview/93-gesture-index/constellation"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/93/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/93/d83c9b644cb82332-desktop.jpg",
+      "route": "/preview/93-gesture-index/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:5a5295cfe6a7e23cb4ba282f40eb5c8b5b5fd8cf93b16d786ddee77d164f690c",
+      "sha256": "d83c9b644cb82332933850b35060c3a45d42d89a86a7ff9eccfb3578b4679700",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/93/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/93/b54a9077399a3f68-mobile.jpg",
+      "route": "/preview/93-gesture-index/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:5a5295cfe6a7e23cb4ba282f40eb5c8b5b5fd8cf93b16d786ddee77d164f690c",
+      "sha256": "b54a9077399a3f68353cd9df4ee1a9a670fc8ae9c9acba91adcb87fdb1ec3796",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/93/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/93/5a98186b424fe43d-detail.jpg",
+      "route": "/preview/93-gesture-index/object",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "object",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:5a5295cfe6a7e23cb4ba282f40eb5c8b5b5fd8cf93b16d786ddee77d164f690c",
+      "sha256": "5a98186b424fe43d986c3fe6e56fa43c3e221afb86a1f3af66aad33f91b136a9",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/93/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/93/2b7f054c58b6ebef-full-page.jpg",
+      "route": "/preview/93-gesture-index/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:5a5295cfe6a7e23cb4ba282f40eb5c8b5b5fd8cf93b16d786ddee77d164f690c",
+      "sha256": "2b7f054c58b6ebef0703e4c99e1832a37e3e349eabdee5560f32c1765a6c4eda",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/93-gesture-index",
+  "neighbours": [
+    "49",
+    "22"
+  ],
+  "researchSources": [
+    {
+      "title": "Zach Lieberman / Data Arts Team — Land Lines",
+      "url": "https://experiments.withgoogle.com/land-lines"
+    }
+  ],
+  "palette": {
+    "page": "#efeee8",
+    "ink": "#343632",
+    "accent": "#6b4c35",
+    "surface": "#efeee8"
+  },
+  "fonts": [
+    "Libre Baskerville",
+    "IBM Plex Mono"
+  ],
+  "brief": "**Idea.** A drawn shape can be a precise invitation to an existing collection.\n\n**Composition.** A large pale drawing field holds charcoal strokes, small numbered specimen marks and a handwritten-seeming retrieval trail. Shape buttons provide an equally visible alternative to drawing.\n\n**Navigation and complete example.** Draw a line on the canvas or choose arch, zigzag, loop or branch. A small deterministic classifier retrieves original objects from a labelled fixture set; inspect records and save a constellation.\n\n**Responsive and inclusive behaviour.** The SVG drawing pad uses pointer capture and a bounded drawing surface. All retrievals are also available through native shape buttons, with no drawing requirement. All controls are native buttons or labelled inputs. Movement is discretionary, no sound starts automatically, reduced-motion preferences remove transitions, and a direct index exposes the same content.\n\n**Adaptation.** Keep the relationship between query shape and retrieved content legible. Explain the classifier’s limits instead of implying a general visual search engine. Retain the relationship between navigation and content. Do not reduce the reference to a generic hero followed by interchangeable cards.\n\n**Research.** [Zach Lieberman / Data Arts Team — Land Lines](https://experiments.withgoogle.com/land-lines). These are conceptual precedents, not copied artwork, source code, branding or text. All diagrams and sample writing in this specimen are original, fictional material.",
+  "scope": "Complete visual reference with deterministic local interactions and fictional content; no production backend."
+}

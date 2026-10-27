@@ -8,6 +8,10 @@
   to = "/preview.html"
   status = 200
 [[redirects]]
+  from = "/downloads/*"
+  to = "/404.html"
+  status = 404
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
@@ -21,7 +25,21 @@
   for = "/references/*"
   [headers.values]
     Content-Type = "text/plain; charset=utf-8"
+    Access-Control-Allow-Origin = "*"
 [[headers]]
   for = "/assets/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
+[[headers]]
+  for = "/downloads/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+[[headers]]
+  for = "/downloads/*.zip"
+  [headers.values]
+    Content-Type = "application/zip"
+    Content-Disposition = "attachment"
+[[headers]]
+  for = "/catalogue.json"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"

@@ -1,0 +1,64 @@
+{
+  "designId": "81",
+  "sourceRevision": "sha256:d54b61795125482b3a66d724e52295c6236b82d974922a88dc6b35b152448fb0",
+  "capturedAt": "2026-10-27T04:12:49.780Z",
+  "browser": "156.0.4314.42",
+  "captures": [
+    {
+      "file": "/previews/81/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/81/41c394f501c5587d-desktop.jpg",
+      "route": "/preview/81-counterpoint/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:d54b61795125482b3a66d724e52295c6236b82d974922a88dc6b35b152448fb0",
+      "sha256": "41c394f501c5587db9a2ca84c93e145ac1b80e76f76fa068894e8f1843bcd46f",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/81/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/81/6940abcf03e08bc8-mobile.jpg",
+      "route": "/preview/81-counterpoint/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:d54b61795125482b3a66d724e52295c6236b82d974922a88dc6b35b152448fb0",
+      "sha256": "6940abcf03e08bc893c565fb420cba869cf5e5ebc76aedfc694c0e174459c2b6",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/81/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/81/8f82af00befdef9b-detail.jpg",
+      "route": "/preview/81-counterpoint/passage",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "passage",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:d54b61795125482b3a66d724e52295c6236b82d974922a88dc6b35b152448fb0",
+      "sha256": "8f82af00befdef9b8c9d7c10813143b335fff3a900e57cde1d325930c35cd996",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/81/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/81/5d3ea64d3f222cb4-full-page.jpg",
+      "route": "/preview/81-counterpoint/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:d54b61795125482b3a66d724e52295c6236b82d974922a88dc6b35b152448fb0",
+      "sha256": "5d3ea64d3f222cb4ec6eb53b99dc581a5cdef7a5d41a7261e657eed52acb37b0",
+      "fullPage": true
+    }
+  ]
+}

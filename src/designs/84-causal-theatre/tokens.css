@@ -1,0 +1,10 @@
+.specimen {
+  --page: #eadfcc;
+  --ink: #292c34;
+  --accent: #b94737;
+  --surface: #eadfcc;
+  --heading: 'Space Grotesk', sans-serif;
+  --body: 'DM Sans', sans-serif;
+  --measure: 62ch;
+  --space: 8px;
+}

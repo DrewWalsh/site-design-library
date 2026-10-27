@@ -1,0 +1,64 @@
+{
+  "designId": "94",
+  "sourceRevision": "sha256:ed9b7f79d60ece54b636862adb730b6cb6c04e2af0ee0af71a26f3132d2d08a1",
+  "capturedAt": "2026-10-27T04:13:33.300Z",
+  "browser": "156.0.4314.42",
+  "captures": [
+    {
+      "file": "/previews/94/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/94/a605b49893993268-desktop.jpg",
+      "route": "/preview/94-score-reader/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:ed9b7f79d60ece54b636862adb730b6cb6c04e2af0ee0af71a26f3132d2d08a1",
+      "sha256": "a605b498939932689ee0ec09dc240044e866e5242be3832d753b726d34037dbc",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/94/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/94/5b8c8d94482e4dcb-mobile.jpg",
+      "route": "/preview/94-score-reader/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:ed9b7f79d60ece54b636862adb730b6cb6c04e2af0ee0af71a26f3132d2d08a1",
+      "sha256": "5b8c8d94482e4dcbfe7154c94dc75244bdc35352f00216a858ae574b28ef6190",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/94/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/94/1a965a5f85b73cca-detail.jpg",
+      "route": "/preview/94-score-reader/movement",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "movement",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:ed9b7f79d60ece54b636862adb730b6cb6c04e2af0ee0af71a26f3132d2d08a1",
+      "sha256": "1a965a5f85b73cca401c8aaaf1aead2c151aed8b2b8848ac6e2565fedd859573",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/94/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/94/c995f08839b2136a-full-page.jpg",
+      "route": "/preview/94-score-reader/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:ed9b7f79d60ece54b636862adb730b6cb6c04e2af0ee0af71a26f3132d2d08a1",
+      "sha256": "c995f08839b2136aac90f73142102e5d40f0351e25147f57953ba6220c52a80e",
+      "fullPage": true
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 2,
+  "id": "76",
+  "slug": "folded-matter",
+  "name": "Folded Matter",
+  "brand": "UNFOLD / Small press assembly",
+  "family": "Avant-garde & experimental",
+  "status": "ready",
+  "thesis": "Reading order emerges from the folds of one continuous sheet.",
+  "suitableFor": [
+    "Experimental publishing",
+    "Art exhibition",
+    "Cultural storytelling"
+  ],
+  "character": "Experimental",
+  "traits": {
+    "composition": "An acid-yellow six-panel sheet fills the page; black slab-like headlines, hairline creases and triangular paper folds connect its parts.",
+    "navigation": "Unfold panels, enter a contributor spread, assemble an itinerary",
+    "typography": "Archivo Black / DM Sans",
+    "density": "Medium",
+    "imagery": "Original SVG and CSS compositions",
+    "surface": "A continuous browser-sized composition",
+    "motion": "Optional"
+  },
+  "effort": "High",
+  "definingFeatures": [
+    "Fold navigation",
+    "Connected sheet",
+    "Reading itinerary"
+  ],
+  "adaptableChoices": [
+    "Subject and original writing",
+    "Palette and equivalent licensed typography",
+    "Scale and number of content units"
+  ],
+  "discovery": {
+    "industries": [
+      "Arts",
+      "Culture",
+      "Experimental publishing"
+    ],
+    "visitorGoals": [
+      "Explore a non-linear story"
+    ],
+    "conversionActions": [
+      "Assemble a reading collection"
+    ],
+    "siteSize": "Interactive publication",
+    "interactionTypes": [
+      "Fold navigation",
+      "Connected sheet",
+      "Reading itinerary"
+    ],
+    "keywords": [
+      "avant garde",
+      "experimental",
+      "unconventional navigation",
+      "Fold navigation",
+      "Connected sheet",
+      "Reading itinerary"
+    ]
+  },
+  "patterns": [
+    "Fold navigation",
+    "Connected sheet",
+    "Reading itinerary"
+  ],
+  "entryRoute": "/preview/76-folded-matter/start",
+  "states": [
+    {
+      "key": "spread",
+      "label": "Contributor spread",
+      "route": "/preview/76-folded-matter/spread"
+    },
+    {
+      "key": "itinerary",
+      "label": "Reading itinerary",
+      "route": "/preview/76-folded-matter/itinerary"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/76/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/76/115e190f752d9482-desktop.jpg",
+      "route": "/preview/76-folded-matter/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:a5b39556cc0366d98f391762c6d8d1a1837089aa2054dbad5fa62e6446d5a56a",
+      "sha256": "115e190f752d948251b34729fc8bc58d44eb2c50ca7706f8c2809163f7405b0e",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/76/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/76/5fe2325679529ea3-mobile.jpg",
+      "route": "/preview/76-folded-matter/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:a5b39556cc0366d98f391762c6d8d1a1837089aa2054dbad5fa62e6446d5a56a",
+      "sha256": "5fe2325679529ea390977975be194b72439640575d306d52bedf211e3e38ed5f",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/76/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/76/310d428d1c343f41-detail.jpg",
+      "route": "/preview/76-folded-matter/spread",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "spread",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:a5b39556cc0366d98f391762c6d8d1a1837089aa2054dbad5fa62e6446d5a56a",
+      "sha256": "310d428d1c343f41aa5ca302c97a9fabfeaf2e2e32aa70149548bd4b3fbc2ee6",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/76/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/76/fc026f6601dbfd17-full-page.jpg",
+      "route": "/preview/76-folded-matter/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:a5b39556cc0366d98f391762c6d8d1a1837089aa2054dbad5fa62e6446d5a56a",
+      "sha256": "fc026f6601dbfd1720f65309f4f03599043a289f6b1d01ed48d4538783d353a0",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/76-folded-matter",
+  "neighbours": [
+    "35",
+    "45"
+  ],
+  "researchSources": [
+    {
+      "title": "Moniker — Conditional Design Workbook",
+      "url": "https://studiomoniker.com/projects/conditional-design-workbook"
+    },
+    {
+      "title": "Conditional Design manifesto",
+      "url": "https://conditionaldesign.org/manifesto/"
+    }
+  ],
+  "palette": {
+    "page": "#e7f44b",
+    "ink": "#171810",
+    "accent": "#e7f44b",
+    "surface": "#e7f44b"
+  },
+  "fonts": [
+    "Archivo Black",
+    "DM Sans"
+  ],
+  "brief": "**Idea.** Reading order emerges from the folds of one continuous sheet.\n\n**Composition.** An acid-yellow six-panel sheet fills the page; black slab-like headlines, hairline creases and triangular paper folds connect its parts.\n\n**Navigation and complete example.** Unfold six contributions to a small-press assembly, read a contributor’s substantial spread, and add selected readings to a printable itinerary.\n\n**Responsive and inclusive behaviour.** The connected sheet becomes a single accordion, preserving numbered creases and panel order. All controls are native buttons or labelled inputs. Movement is discretionary, no sound starts automatically, reduced-motion preferences remove transitions, and a direct index exposes the same content.\n\n**Adaptation.** Preserve the single-sheet continuity and variable panel scale; let folds reveal useful content rather than hiding essential navigation. Retain the relationship between navigation and content. Do not reduce the reference to a generic hero followed by interchangeable cards.\n\n**Research.** [Moniker — Conditional Design Workbook](https://studiomoniker.com/projects/conditional-design-workbook); [Conditional Design manifesto](https://conditionaldesign.org/manifesto/). These are conceptual precedents, not copied artwork, source code, branding or text. All diagrams and sample writing in this specimen are original, fictional material.",
+  "scope": "Complete visual reference with deterministic local interactions and fictional content; no production backend."
+}

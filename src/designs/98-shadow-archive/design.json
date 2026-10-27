@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 2,
+  "id": "98",
+  "slug": "shadow-archive",
+  "name": "Shadow Archive",
+  "brand": "CAST / Objects understood by their shadows",
+  "family": "Avant-garde & experimental",
+  "status": "ready",
+  "thesis": "Changing the light can change which part of an object becomes readable.",
+  "suitableFor": [
+    "Experimental publishing",
+    "Art exhibition",
+    "Cultural storytelling"
+  ],
+  "character": "Experimental",
+  "traits": {
+    "composition": "Small original geometric objects cast enormous lavender silhouettes across an ochre field. Directional light controls transform the composition and the captions attached to it.",
+    "navigation": "Choose light direction, enter a labelled shadow, compare projections",
+    "typography": "Space Grotesk / IBM Plex Mono",
+    "density": "Medium",
+    "imagery": "Original SVG and CSS compositions",
+    "surface": "A continuous browser-sized composition",
+    "motion": "Optional"
+  },
+  "effort": "High",
+  "definingFeatures": [
+    "Light-direction navigation",
+    "Projected silhouettes",
+    "Alternate readings"
+  ],
+  "adaptableChoices": [
+    "Subject and original writing",
+    "Palette and equivalent licensed typography",
+    "Scale and number of content units"
+  ],
+  "discovery": {
+    "industries": [
+      "Arts",
+      "Culture",
+      "Experimental publishing"
+    ],
+    "visitorGoals": [
+      "Explore a non-linear story"
+    ],
+    "conversionActions": [
+      "Assemble a reading collection"
+    ],
+    "siteSize": "Interactive publication",
+    "interactionTypes": [
+      "Light-direction navigation",
+      "Projected silhouettes",
+      "Alternate readings"
+    ],
+    "keywords": [
+      "avant garde",
+      "experimental",
+      "unconventional navigation",
+      "Light-direction navigation",
+      "Projected silhouettes",
+      "Alternate readings"
+    ]
+  },
+  "patterns": [
+    "Light-direction navigation",
+    "Projected silhouettes",
+    "Alternate readings"
+  ],
+  "entryRoute": "/preview/98-shadow-archive/start",
+  "states": [
+    {
+      "key": "object",
+      "label": "Object and projection",
+      "route": "/preview/98-shadow-archive/object"
+    },
+    {
+      "key": "index",
+      "label": "Complete shadow index",
+      "route": "/preview/98-shadow-archive/index"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/98/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/98/9f7869303b62e244-desktop.jpg",
+      "route": "/preview/98-shadow-archive/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:f2e4ca2ba9f67b43c960206c95e16e9b57fea3cb274ec425fcf520546a2bc638",
+      "sha256": "9f7869303b62e244d402a513fd020eaa3b827cb73676cf805ba681385bf05577",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/98/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/98/56b1a5dc51622aee-mobile.jpg",
+      "route": "/preview/98-shadow-archive/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:f2e4ca2ba9f67b43c960206c95e16e9b57fea3cb274ec425fcf520546a2bc638",
+      "sha256": "56b1a5dc51622aee00c82ec5acc38095b576dc36cd2046ee7c9931f0334fd2f9",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/98/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/98/86d07a340d67b947-detail.jpg",
+      "route": "/preview/98-shadow-archive/object",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "object",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:f2e4ca2ba9f67b43c960206c95e16e9b57fea3cb274ec425fcf520546a2bc638",
+      "sha256": "86d07a340d67b9470232cdaad5e0c87eca8e7c59f66849d2f8d2197f623239bb",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/98/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/98/1a6cf389d1d7131c-full-page.jpg",
+      "route": "/preview/98-shadow-archive/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:f2e4ca2ba9f67b43c960206c95e16e9b57fea3cb274ec425fcf520546a2bc638",
+      "sha256": "1a6cf389d1d7131ced8ef464cce4ad6dda9d1ddf5c30fce9e2dfc84d11445323",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/98-shadow-archive",
+  "neighbours": [
+    "47",
+    "48"
+  ],
+  "researchSources": [
+    {
+      "title": "Rafaël Rozendaal — Internet works",
+      "url": "https://www.newrafael.com/internet?filter=website"
+    }
+  ],
+  "palette": {
+    "page": "#f0d48b",
+    "ink": "#2d3035",
+    "accent": "#51466c",
+    "surface": "#f0d48b"
+  },
+  "fonts": [
+    "Space Grotesk",
+    "IBM Plex Mono"
+  ],
+  "brief": "**Idea.** Changing the light can change which part of an object becomes readable.\n\n**Composition.** Small original geometric objects cast enormous lavender silhouettes across an ochre field. Directional light controls transform the composition and the captions attached to it.\n\n**Navigation and complete example.** Choose one of four light directions, inspect six object studies through their labelled shadows and compare how each projection supports a different reading.\n\n**Responsive and inclusive behaviour.** Each shadow is clipped within its own generous field, while labels remain untransformed and controls retain a fixed position. All controls are native buttons or labelled inputs. Movement is discretionary, no sound starts automatically, reduced-motion preferences remove transitions, and a direct index exposes the same content.\n\n**Adaptation.** Keep projected shapes secondary to clear labels and focus targets. Light should reveal an authored interpretation, not merely animate an ornamental shadow. Retain the relationship between navigation and content. Do not reduce the reference to a generic hero followed by interchangeable cards.\n\n**Research.** [Rafaël Rozendaal — Internet works](https://www.newrafael.com/internet?filter=website). These are conceptual precedents, not copied artwork, source code, branding or text. All diagrams and sample writing in this specimen are original, fictional material.",
+  "scope": "Complete visual reference with deterministic local interactions and fictional content; no production backend."
+}

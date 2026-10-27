@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, computed, watch } from 'vue';
 import { useRoute } from 'vue-router';
-import { designs, makePrompt, repository, thumbnail } from './data';
+import { designs, makePrompt, repository, thumbnail, downloadUrl } from './data';
 import PreviewFrame from './PreviewFrame.vue';
 const route = useRoute(),
   tab = ref('Overview'),
@@ -21,10 +21,13 @@ watch(
 );
 const sections = computed(
   () =>
-    d.value?.brief.split(/\n\s*\n/).map((p) => {
-      const match = p.match(/^\*\*([^*]+)\*\*\s*([\s\S]*)/);
-      return { title: match?.[1] || '', text: (match?.[2] || p).replaceAll('*', '') };
-    }) || [],
+    d.value?.brief
+      .split(/\n\s*\n/)
+      .filter((p) => !d.value?.researchSources?.length || !p.startsWith('**Research.**'))
+      .map((p) => {
+        const match = p.match(/^\*\*([^*]+)\*\*\s*([\s\S]*)/);
+        return { title: match?.[1] || '', text: (match?.[2] || p).replaceAll('*', '') };
+      }) || [],
 );
 async function copy() {
   try {
@@ -45,9 +48,13 @@ async function copy() {
         <h1>{{ d.name }}</h1>
         <p>{{ d.thesis }}</p>
       </div>
-      <a class="g-button dark" :href="d.entryRoute" target="_blank" rel="noopener"
-        >Open live specimen ↗</a
-      >
+      <div class="g-download-actions">
+        <a class="g-button dark" :href="downloadUrl(d)" download>Download design ZIP ↓</a>
+        <a class="g-button" :href="d.entryRoute" target="_blank" rel="noopener"
+          >Open live specimen ↗</a
+        >
+        <p>Specs, source, assets, screenshots &amp; a Codex prompt. Free to adapt.</p>
+      </div>
     </div>
     <div class="g-detail-meta">
       <span>{{ d.character }}</span
@@ -83,6 +90,18 @@ async function copy() {
           <section class="g-brief-section" v-for="section in sections" :key="section.title">
             <h2>{{ section.title }}</h2>
             <p>{{ section.text }}</p>
+          </section>
+          <section v-if="d.researchSources?.length" class="g-brief-section">
+            <h2>Research precedents</h2>
+            <p>
+              Original interpretations of these interaction ideas; no source artwork or code is
+              copied.
+            </p>
+            <ul>
+              <li v-for="source in d.researchSources" :key="source.url">
+                <a :href="source.url" target="_blank" rel="noopener">{{ source.title }} ↗</a>
+              </li>
+            </ul>
           </section>
           <div class="g-reference-strip">
             <a
@@ -139,6 +158,7 @@ async function copy() {
           </div>
           <hr />
           <p class="g-label">SOURCE PACKAGE</p>
+          <a :href="downloadUrl(d)" download>Download the complete ZIP ↓</a>
           <a
             :href="'/references/' + d.id + '-' + d.slug + '/DESIGN.md'"
             target="_blank"
@@ -191,6 +211,11 @@ async function copy() {
         <p>
           The prompt points to the actual brief, tokens, source, and reference images. Adapt the
           principles to your project’s content and framework.
+        </p>
+        <p>
+          <a :href="downloadUrl(d)" download>Download this reference as a ZIP ↓</a> and give the
+          extracted folder to Codex with your project request. The included starter runs with local
+          assets after package installation.
         </p>
         <label
           >What should use this design?<input

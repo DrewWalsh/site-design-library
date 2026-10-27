@@ -575,6 +575,52 @@ p {
 .g-status.ready::before {
   background: #617f4c;
 }
+.g-download-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-end;
+  max-width: 480px;
+}
+.g-download-actions p {
+  font-size: 12px;
+  line-height: 1.6;
+  width: 100%;
+}
+.g-agent-page {
+  padding: 32px;
+  margin: auto;
+  max-width: 1280px;
+  font:
+    16px/1.7 system-ui,
+    sans-serif;
+}
+.g-agent-page img {
+  max-width: 100%;
+  height: auto;
+}
+.g-agent-page nav {
+  margin-bottom: 32px;
+}
+.g-agent-page h1 {
+  font-size: clamp(30px, 5vw, 60px);
+  line-height: 1.1;
+}
+.g-agent-page h2 {
+  margin-top: 32px;
+}
+.g-agent-page a {
+  text-decoration: underline;
+}
+.g-agent-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 290px), 1fr));
+  gap: 28px;
+}
+.g-agent-grid article {
+  border-top: 1px solid #9d9f94;
+  padding-top: 18px;
+}
 .g-pending {
   aspect-ratio: 1.44;
   display: flex;

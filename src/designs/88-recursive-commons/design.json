@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 2,
+  "id": "88",
+  "slug": "recursive-commons",
+  "name": "Recursive Commons",
+  "brand": "ROOM WITHIN / A museum of ordinary things",
+  "family": "Avant-garde & experimental",
+  "status": "ready",
+  "thesis": "Enter a collection by changing the composition of the entire page.",
+  "suitableFor": [
+    "Experimental publishing",
+    "Art exhibition",
+    "Cultural storytelling"
+  ],
+  "character": "Experimental",
+  "traits": {
+    "composition": "Unequal nested rectangles cover the browser with ochre, teal, rose and cream. Each region is both a surface and a doorway into a smaller collection.",
+    "navigation": "Enter regions, descend into object groups, collapse through ancestry",
+    "typography": "Space Grotesk / DM Sans",
+    "density": "Medium",
+    "imagery": "Original SVG and CSS compositions",
+    "surface": "A continuous browser-sized composition",
+    "motion": "Optional"
+  },
+  "effort": "High",
+  "definingFeatures": [
+    "Recursive navigation",
+    "Planar containment",
+    "Persistent ancestry"
+  ],
+  "adaptableChoices": [
+    "Subject and original writing",
+    "Palette and equivalent licensed typography",
+    "Scale and number of content units"
+  ],
+  "discovery": {
+    "industries": [
+      "Arts",
+      "Culture",
+      "Experimental publishing"
+    ],
+    "visitorGoals": [
+      "Explore a non-linear story"
+    ],
+    "conversionActions": [
+      "Assemble a reading collection"
+    ],
+    "siteSize": "Interactive publication",
+    "interactionTypes": [
+      "Recursive navigation",
+      "Planar containment",
+      "Persistent ancestry"
+    ],
+    "keywords": [
+      "avant garde",
+      "experimental",
+      "unconventional navigation",
+      "Recursive navigation",
+      "Planar containment",
+      "Persistent ancestry"
+    ]
+  },
+  "patterns": [
+    "Recursive navigation",
+    "Planar containment",
+    "Persistent ancestry"
+  ],
+  "entryRoute": "/preview/88-recursive-commons/start",
+  "states": [
+    {
+      "key": "object",
+      "label": "Object record",
+      "route": "/preview/88-recursive-commons/object"
+    },
+    {
+      "key": "collection",
+      "label": "Saved cabinet",
+      "route": "/preview/88-recursive-commons/collection"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/88/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/88/e3b2ef87888612c4-desktop.jpg",
+      "route": "/preview/88-recursive-commons/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:f5cd2c5b4bf9598e687cbcd80e87806d4492c2ae689e1cea70ff8632cc6acab2",
+      "sha256": "e3b2ef87888612c41cb7c9dcf82a00fd06b68f5245ec00ac661681f7e01c4b0f",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/88/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/88/f39ac555f4a9d629-mobile.jpg",
+      "route": "/preview/88-recursive-commons/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:f5cd2c5b4bf9598e687cbcd80e87806d4492c2ae689e1cea70ff8632cc6acab2",
+      "sha256": "f39ac555f4a9d629122b4f83d60ce1b97532c0ba23885f570b0716da9a6f5ccd",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/88/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/88/0c161caa8c4fc00b-detail.jpg",
+      "route": "/preview/88-recursive-commons/object",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "object",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:f5cd2c5b4bf9598e687cbcd80e87806d4492c2ae689e1cea70ff8632cc6acab2",
+      "sha256": "0c161caa8c4fc00b8f2f521effedfe287813feb6fd2ef5820aecec4c82d48490",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/88/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/88/5d33f02be30f05ae-full-page.jpg",
+      "route": "/preview/88-recursive-commons/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:f5cd2c5b4bf9598e687cbcd80e87806d4492c2ae689e1cea70ff8632cc6acab2",
+      "sha256": "5d33f02be30f05aef596e7603617f3d8c2b1a26b6c851767eab8d00ef838d29d",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/88-recursive-commons",
+  "neighbours": [
+    "48",
+    "50"
+  ],
+  "researchSources": [
+    {
+      "title": "Rafaël Rozendaal — Internet works",
+      "url": "https://www.newrafael.com/internet?filter=website"
+    },
+    {
+      "title": "Bruno Simon — HTML version",
+      "url": "https://bruno-simon.com/html/"
+    }
+  ],
+  "palette": {
+    "page": "#edb935",
+    "ink": "#233a39",
+    "accent": "#315c71",
+    "surface": "#edb935"
+  },
+  "fonts": [
+    "Space Grotesk",
+    "DM Sans"
+  ],
+  "brief": "**Idea.** Enter a collection by changing the composition of the entire page.\n\n**Composition.** Unequal nested rectangles cover the browser with ochre, teal, rose and cream. Each region is both a surface and a doorway into a smaller collection.\n\n**Navigation and complete example.** Enter three wings of a fictional museum, subdivide their rooms, read six object records and keep a personal cabinet. An ancestry trail and full index provide direct access.\n\n**Responsive and inclusive behaviour.** The planar composition becomes a vertically nested set of large regions; ancestry and sibling navigation remain explicit. All controls are native buttons or labelled inputs. Movement is discretionary, no sound starts automatically, reduced-motion preferences remove transitions, and a direct index exposes the same content.\n\n**Adaptation.** Make each level change the whole composition while retaining a clear parent path. Avoid an endless zoom with no readable destination. Retain the relationship between navigation and content. Do not reduce the reference to a generic hero followed by interchangeable cards.\n\n**Research.** [Rafaël Rozendaal — Internet works](https://www.newrafael.com/internet?filter=website); [Bruno Simon — HTML version](https://bruno-simon.com/html/). These are conceptual precedents, not copied artwork, source code, branding or text. All diagrams and sample writing in this specimen are original, fictional material.",
+  "scope": "Complete visual reference with deterministic local interactions and fictional content; no production backend."
+}

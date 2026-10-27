@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 2,
+  "id": "84",
+  "slug": "causal-theatre",
+  "name": "Causal Theatre",
+  "brand": "A parcel’s progress / A small systems theatre",
+  "family": "Avant-garde & experimental",
+  "status": "ready",
+  "thesis": "A visitor should be able to change the argument and see why it changes.",
+  "suitableFor": [
+    "Experimental publishing",
+    "Art exhibition",
+    "Cultural storytelling"
+  ],
+  "character": "Experimental",
+  "traits": {
+    "composition": "Oversized cut-out machines form a pastel theatre. A sorting tower, conveyor, warehouse and delivery cart span the page; explanations sit inside the system.",
+    "navigation": "Change parcel conditions, inspect consequences, compare two runs",
+    "typography": "Space Grotesk / DM Sans",
+    "density": "Medium",
+    "imagery": "Original SVG and CSS compositions",
+    "surface": "A continuous browser-sized composition",
+    "motion": "Optional"
+  },
+  "effort": "High",
+  "definingFeatures": [
+    "Causal controls",
+    "Narrative simulation",
+    "Outcome comparison"
+  ],
+  "adaptableChoices": [
+    "Subject and original writing",
+    "Palette and equivalent licensed typography",
+    "Scale and number of content units"
+  ],
+  "discovery": {
+    "industries": [
+      "Arts",
+      "Culture",
+      "Experimental publishing"
+    ],
+    "visitorGoals": [
+      "Explore a non-linear story"
+    ],
+    "conversionActions": [
+      "Assemble a reading collection"
+    ],
+    "siteSize": "Interactive publication",
+    "interactionTypes": [
+      "Causal controls",
+      "Narrative simulation",
+      "Outcome comparison"
+    ],
+    "keywords": [
+      "avant garde",
+      "experimental",
+      "unconventional navigation",
+      "Causal controls",
+      "Narrative simulation",
+      "Outcome comparison"
+    ]
+  },
+  "patterns": [
+    "Causal controls",
+    "Narrative simulation",
+    "Outcome comparison"
+  ],
+  "entryRoute": "/preview/84-causal-theatre/start",
+  "states": [
+    {
+      "key": "explanation",
+      "label": "Why the queue changed",
+      "route": "/preview/84-causal-theatre/explanation"
+    },
+    {
+      "key": "compare",
+      "label": "Compare two runs",
+      "route": "/preview/84-causal-theatre/compare"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/84/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/84/0b8b79f768a84a7e-desktop.jpg",
+      "route": "/preview/84-causal-theatre/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:14a3ad8bb165c8ae147862a3d9c29c8d752c92c5c8e6d572dbb8dd129e74e98a",
+      "sha256": "0b8b79f768a84a7ebcdb4e045e7b3c9cd58a414953fc3de2acbc05465007bf10",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/84/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/84/c195fd68843841a5-mobile.jpg",
+      "route": "/preview/84-causal-theatre/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:14a3ad8bb165c8ae147862a3d9c29c8d752c92c5c8e6d572dbb8dd129e74e98a",
+      "sha256": "c195fd68843841a538e79631301b95135b6db7abd396a20a5d06bfb09d0e92b5",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/84/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/84/171d1d9f3868d21d-detail.jpg",
+      "route": "/preview/84-causal-theatre/explanation",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "explanation",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:14a3ad8bb165c8ae147862a3d9c29c8d752c92c5c8e6d572dbb8dd129e74e98a",
+      "sha256": "171d1d9f3868d21d3eab55c245df35673cf2d9120b717bd53913cc535fc5cd0c",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/84/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/84/9687f953ae21b6b7-full-page.jpg",
+      "route": "/preview/84-causal-theatre/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:14a3ad8bb165c8ae147862a3d9c29c8d752c92c5c8e6d572dbb8dd129e74e98a",
+      "sha256": "9687f953ae21b6b7a5541bd100f74853b0311f754eb86788bc753b85f70a723d",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/84-causal-theatre",
+  "neighbours": [
+    "33",
+    "49"
+  ],
+  "researchSources": [
+    {
+      "title": "Nicky Case — The Wisdom and/or Madness of Crowds",
+      "url": "https://ncase.me/crowds/"
+    },
+    {
+      "title": "Conditional Design manifesto",
+      "url": "https://conditionaldesign.org/manifesto/"
+    }
+  ],
+  "palette": {
+    "page": "#eadfcc",
+    "ink": "#292c34",
+    "accent": "#b94737",
+    "surface": "#eadfcc"
+  },
+  "fonts": [
+    "Space Grotesk",
+    "DM Sans"
+  ],
+  "brief": "**Idea.** A visitor should be able to change the argument and see why it changes.\n\n**Composition.** Oversized cut-out machines form a pastel theatre. A sorting tower, conveyor, warehouse and delivery cart span the page; explanations sit inside the system.\n\n**Navigation and complete example.** Change incoming parcels, sorting capacity and route frequency in a deterministic parcel-system model. Inspect the bottleneck and save two outcomes for comparison.\n\n**Responsive and inclusive behaviour.** The stage becomes a vertical process diagram with visible connecting arrows. Native number inputs and labelled presets replace any need to drag machinery. All controls are native buttons or labelled inputs. Movement is discretionary, no sound starts automatically, reduced-motion preferences remove transitions, and a direct index exposes the same content.\n\n**Adaptation.** Expose the model’s assumptions and connect each control to a visible consequence. Do not present a toy model as a real operational forecast. Retain the relationship between navigation and content. Do not reduce the reference to a generic hero followed by interchangeable cards.\n\n**Research.** [Nicky Case — The Wisdom and/or Madness of Crowds](https://ncase.me/crowds/); [Conditional Design manifesto](https://conditionaldesign.org/manifesto/). These are conceptual precedents, not copied artwork, source code, branding or text. All diagrams and sample writing in this specimen are original, fictional material.",
+  "scope": "Complete visual reference with deterministic local interactions and fictional content; no production backend."
+}

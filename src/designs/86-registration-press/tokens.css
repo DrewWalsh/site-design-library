@@ -1,0 +1,10 @@
+.specimen {
+  --page: #f7f1df;
+  --ink: #182d33;
+  --accent: #be175a;
+  --surface: #f7f1df;
+  --heading: 'Archivo Black', sans-serif;
+  --body: 'IBM Plex Mono', sans-serif;
+  --measure: 62ch;
+  --space: 8px;
+}

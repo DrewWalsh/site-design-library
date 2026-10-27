@@ -1,12 +1,13 @@
 import fs from 'node:fs';
 import { sourceRevision, localReference, sha256 } from './reference-utils';
 
-const directories = fs.readdirSync('src/designs').sort();
+const directories = fs.readdirSync('src/designs').sort((a, b) => parseInt(a) - parseInt(b));
 const ids = new Set<string>(),
   slugs = new Set<string>();
 const catalogue = directories.map((dir) => {
   const base = `src/designs/${dir}`;
   const record = JSON.parse(fs.readFileSync(`${base}/design.json`, 'utf8'));
+  record.downloadUrl = `/downloads/${dir}.zip`;
   for (const key of [
     'id',
     'name',
@@ -24,7 +25,7 @@ const catalogue = directories.map((dir) => {
     if (!record[key]) throw new Error(`${dir}: missing ${key}`);
   }
   if (
-    !/^\d{2}$/.test(record.id) ||
+    !/^(?:0[1-9]|[1-9]\d|100)$/.test(record.id) ||
     !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(record.slug) ||
     dir !== `${record.id}-${record.slug}`
   )
@@ -116,7 +117,7 @@ const catalogue = directories.map((dir) => {
   }
   return record;
 });
-if (catalogue.length !== 75) throw new Error(`Expected 75 designs; found ${catalogue.length}`);
+if (catalogue.length !== 100) throw new Error(`Expected 100 designs; found ${catalogue.length}`);
 for (const design of catalogue)
   for (const id of design.neighbours)
     if (!ids.has(id) || id === design.id) throw new Error(`${design.id}: invalid neighbour ${id}`);
@@ -127,13 +128,14 @@ fs.writeFileSync('public/catalogue.json', json);
 for (const design of catalogue) {
   const destination = `public/references/${design.id}-${design.slug}`;
   fs.mkdirSync(destination, { recursive: true });
-  for (const file of ['DESIGN.md', 'design.json', 'tokens.css', 'Demo.vue']) {
+  for (const file of ['DESIGN.md', 'tokens.css', 'Demo.vue']) {
     fs.copyFileSync(`${design.sourcePath}/${file}`, `${destination}/${file}`);
   }
+  fs.writeFileSync(`${destination}/design.json`, JSON.stringify(design, null, 2) + '\n');
 }
 fs.copyFileSync('docs/AGENT_WORKFLOW.md', 'public/AGENT_WORKFLOW.md');
 fs.mkdirSync('public/docs', { recursive: true });
-for (const file of ['ASSETS.md', 'COMMERCIAL_ASSETS.md'])
+for (const file of ['ASSETS.md', 'COMMERCIAL_ASSETS.md', 'EXPERIMENTAL_RESEARCH.md'])
   fs.copyFileSync(`docs/${file}`, `public/docs/${file}`);
 console.log(
   `Validated ${catalogue.length} unique design packages (${catalogue.filter((d) => d.status === 'ready').length} ready).`,

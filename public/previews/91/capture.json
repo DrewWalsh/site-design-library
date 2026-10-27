@@ -1,0 +1,64 @@
+{
+  "designId": "91",
+  "sourceRevision": "sha256:be1f5fa5231442e12cea6b7d161b8c8e6f6db620bcb6ff21cffcd99b7a18353b",
+  "capturedAt": "2026-10-27T04:13:22.940Z",
+  "browser": "156.0.4314.42",
+  "captures": [
+    {
+      "file": "/previews/91/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/91/3a1a87a8b74d67ec-desktop.jpg",
+      "route": "/preview/91-patchbay-editions/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:be1f5fa5231442e12cea6b7d161b8c8e6f6db620bcb6ff21cffcd99b7a18353b",
+      "sha256": "3a1a87a8b74d67ec549d4d5b3d18a035dc2f92e489456521436c41932fa11f72",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/91/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/91/bd01a6758c949356-mobile.jpg",
+      "route": "/preview/91-patchbay-editions/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:be1f5fa5231442e12cea6b7d161b8c8e6f6db620bcb6ff21cffcd99b7a18353b",
+      "sha256": "bd01a6758c9493560af00ecd3f99476762d7846ccc77c833d037c611c9e5efe3",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/91/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/91/1dbed58552d6b769-detail.jpg",
+      "route": "/preview/91-patchbay-editions/essay",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "essay",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:be1f5fa5231442e12cea6b7d161b8c8e6f6db620bcb6ff21cffcd99b7a18353b",
+      "sha256": "1dbed58552d6b7693a6ec8093099e81425c2bb69e8cf71a2b298f13393b90d3d",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/91/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/91/3a1a87a8b74d67ec-full-page.jpg",
+      "route": "/preview/91-patchbay-editions/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:be1f5fa5231442e12cea6b7d161b8c8e6f6db620bcb6ff21cffcd99b7a18353b",
+      "sha256": "3a1a87a8b74d67ec549d4d5b3d18a035dc2f92e489456521436c41932fa11f72",
+      "fullPage": true
+    }
+  ]
+}

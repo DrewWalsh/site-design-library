@@ -46,7 +46,7 @@ test('Business discovery finds industries, combined needs and shareable facets',
   await expect(page.locator('.g-card')).toHaveCount(1);
   await expect(page.getByLabel('Industry', { exact: true })).toHaveValue('Accountant');
   await page.getByRole('button', { name: 'Reset', exact: true }).click();
-  await expect(page.locator('.g-card')).toHaveCount(75);
+  await expect(page.locator('.g-card')).toHaveCount(100);
 });
 
 test('Staff booking resets unavailable selections and vehicle estimate follows vehicle type', async ({

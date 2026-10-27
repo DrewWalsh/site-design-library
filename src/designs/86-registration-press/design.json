@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 2,
+  "id": "86",
+  "slug": "registration-press",
+  "name": "Registration Press",
+  "brand": "OFF REGISTER / An exhibition in two inks",
+  "family": "Avant-garde & experimental",
+  "status": "ready",
+  "thesis": "Alignment is an editorial act: the layers only make sense together.",
+  "suitableFor": [
+    "Experimental publishing",
+    "Art exhibition",
+    "Cultural storytelling"
+  ],
+  "character": "Experimental",
+  "traits": {
+    "composition": "Cyan and magenta print plates cross the whole viewport. Crop marks, overprinted letterforms and a large registration target make the browser feel like a sheet on a press.",
+    "navigation": "Toggle ink plates, snap registration, reveal an essay and issue a print sheet",
+    "typography": "Archivo Black / IBM Plex Mono",
+    "density": "Medium",
+    "imagery": "Original SVG and CSS compositions",
+    "surface": "A continuous browser-sized composition",
+    "motion": "Optional"
+  },
+  "effort": "High",
+  "definingFeatures": [
+    "Ink plate controls",
+    "Registration alignment",
+    "Local print edition"
+  ],
+  "adaptableChoices": [
+    "Subject and original writing",
+    "Palette and equivalent licensed typography",
+    "Scale and number of content units"
+  ],
+  "discovery": {
+    "industries": [
+      "Arts",
+      "Culture",
+      "Experimental publishing"
+    ],
+    "visitorGoals": [
+      "Explore a non-linear story"
+    ],
+    "conversionActions": [
+      "Assemble a reading collection"
+    ],
+    "siteSize": "Interactive publication",
+    "interactionTypes": [
+      "Ink plate controls",
+      "Registration alignment",
+      "Local print edition"
+    ],
+    "keywords": [
+      "avant garde",
+      "experimental",
+      "unconventional navigation",
+      "Ink plate controls",
+      "Registration alignment",
+      "Local print edition"
+    ]
+  },
+  "patterns": [
+    "Ink plate controls",
+    "Registration alignment",
+    "Local print edition"
+  ],
+  "entryRoute": "/preview/86-registration-press/start",
+  "states": [
+    {
+      "key": "essay",
+      "label": "The registration essay",
+      "route": "/preview/86-registration-press/essay"
+    },
+    {
+      "key": "edition",
+      "label": "Print edition",
+      "route": "/preview/86-registration-press/edition"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/86/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/86/0da3dff4a75e0dba-desktop.jpg",
+      "route": "/preview/86-registration-press/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:272d064b367458ded614fefec9e7d78bdb0ff78b1721ce7b3ae2bc74442aef87",
+      "sha256": "0da3dff4a75e0dbac3493a282ca10e9a4b50957d754986e740957ed636c70a07",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/86/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/86/537c521851df4eb3-mobile.jpg",
+      "route": "/preview/86-registration-press/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:272d064b367458ded614fefec9e7d78bdb0ff78b1721ce7b3ae2bc74442aef87",
+      "sha256": "537c521851df4eb348720339ef90ccd08b0b18ec620b2e8c0f0ee5d9d216eaa0",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/86/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/86/2a0f724d583699b2-detail.jpg",
+      "route": "/preview/86-registration-press/essay",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "essay",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:272d064b367458ded614fefec9e7d78bdb0ff78b1721ce7b3ae2bc74442aef87",
+      "sha256": "2a0f724d583699b23d49592fdf0fceb3aaa9563aef36c273804f927af7a3b466",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/86/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/86/6b4991d5bd098fdd-full-page.jpg",
+      "route": "/preview/86-registration-press/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:272d064b367458ded614fefec9e7d78bdb0ff78b1721ce7b3ae2bc74442aef87",
+      "sha256": "6b4991d5bd098fdd22301d81f0730ac5d36f1a3831be02d3430aaadeaf17b77d",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/86-registration-press",
+  "neighbours": [
+    "32",
+    "45"
+  ],
+  "researchSources": [
+    {
+      "title": "Moniker — Conditional Design Workbook",
+      "url": "https://studiomoniker.com/projects/conditional-design-workbook"
+    },
+    {
+      "title": "Conditional Design manifesto",
+      "url": "https://conditionaldesign.org/manifesto/"
+    }
+  ],
+  "palette": {
+    "page": "#f7f1df",
+    "ink": "#182d33",
+    "accent": "#be175a",
+    "surface": "#f7f1df"
+  },
+  "fonts": [
+    "Archivo Black",
+    "IBM Plex Mono"
+  ],
+  "brief": "**Idea.** Alignment is an editorial act: the layers only make sense together.\n\n**Composition.** Cyan and magenta print plates cross the whole viewport. Crop marks, overprinted letterforms and a large registration target make the browser feel like a sheet on a press.\n\n**Navigation and complete example.** Align two ink plates for a fictional print exhibition, inspect six workshop notes and prepare a local print sheet containing the selected registration state.\n\n**Responsive and inclusive behaviour.** The print surface scales within the page; labelled numeric offset and snap buttons offer precise control without dragging. All controls are native buttons or labelled inputs. Movement is discretionary, no sound starts automatically, reduced-motion preferences remove transitions, and a direct index exposes the same content.\n\n**Adaptation.** Use overprinting for large display layers while keeping reading text single-colour. The registration state should expose a meaningful compositional relationship. Retain the relationship between navigation and content. Do not reduce the reference to a generic hero followed by interchangeable cards.\n\n**Research.** [Moniker — Conditional Design Workbook](https://studiomoniker.com/projects/conditional-design-workbook); [Conditional Design manifesto](https://conditionaldesign.org/manifesto/). These are conceptual precedents, not copied artwork, source code, branding or text. All diagrams and sample writing in this specimen are original, fictional material.",
+  "scope": "Complete visual reference with deterministic local interactions and fictional content; no production backend."
+}

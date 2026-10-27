@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 2,
+  "id": "89",
+  "slug": "hollow-gallery",
+  "name": "Hollow Gallery",
+  "brand": "HOLLOW / An exhibition of what is missing",
+  "family": "Avant-garde & experimental",
+  "status": "ready",
+  "thesis": "The empty part of an image can carry the invitation.",
+  "suitableFor": [
+    "Experimental publishing",
+    "Art exhibition",
+    "Cultural storytelling"
+  ],
+  "character": "Experimental",
+  "traits": {
+    "composition": "Monumental dark silhouettes contain pale cut-outs. Titles and entrances inhabit the negative spaces, with burnt-orange margins and almost no conventional container furniture.",
+    "navigation": "Enter negative spaces, reverse figure and ground, assemble a three-work show",
+    "typography": "Archivo Black / DM Sans",
+    "density": "Medium",
+    "imagery": "Original SVG and CSS compositions",
+    "surface": "A continuous browser-sized composition",
+    "motion": "Optional"
+  },
+  "effort": "High",
+  "definingFeatures": [
+    "Negative-space navigation",
+    "Figure-ground reversal",
+    "Exhibition assembly"
+  ],
+  "adaptableChoices": [
+    "Subject and original writing",
+    "Palette and equivalent licensed typography",
+    "Scale and number of content units"
+  ],
+  "discovery": {
+    "industries": [
+      "Arts",
+      "Culture",
+      "Experimental publishing"
+    ],
+    "visitorGoals": [
+      "Explore a non-linear story"
+    ],
+    "conversionActions": [
+      "Assemble a reading collection"
+    ],
+    "siteSize": "Interactive publication",
+    "interactionTypes": [
+      "Negative-space navigation",
+      "Figure-ground reversal",
+      "Exhibition assembly"
+    ],
+    "keywords": [
+      "avant garde",
+      "experimental",
+      "unconventional navigation",
+      "Negative-space navigation",
+      "Figure-ground reversal",
+      "Exhibition assembly"
+    ]
+  },
+  "patterns": [
+    "Negative-space navigation",
+    "Figure-ground reversal",
+    "Exhibition assembly"
+  ],
+  "entryRoute": "/preview/89-hollow-gallery/start",
+  "states": [
+    {
+      "key": "work",
+      "label": "Work and process",
+      "route": "/preview/89-hollow-gallery/work"
+    },
+    {
+      "key": "show",
+      "label": "Your three-work exhibition",
+      "route": "/preview/89-hollow-gallery/show"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/89/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/89/4af94d7e5ed4975c-desktop.jpg",
+      "route": "/preview/89-hollow-gallery/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:fafa833ffc78d35d59e41b03a5e44ae50a139157f7cf51fe77199bc449266c27",
+      "sha256": "4af94d7e5ed4975c0ec46605b577cdffdaa609bf9d06b66de9a037f0825c1040",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/89/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/89/78a103e0638dc516-mobile.jpg",
+      "route": "/preview/89-hollow-gallery/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:fafa833ffc78d35d59e41b03a5e44ae50a139157f7cf51fe77199bc449266c27",
+      "sha256": "78a103e0638dc516c7b9c6615b2680e8920dd7dcfa6c1c1f7512b025c8df1464",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/89/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/89/c281f0156991bdd6-detail.jpg",
+      "route": "/preview/89-hollow-gallery/work",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "work",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:fafa833ffc78d35d59e41b03a5e44ae50a139157f7cf51fe77199bc449266c27",
+      "sha256": "c281f0156991bdd6d9c1a00931aa14ae85df7e4870031f5ef317ad730168b73f",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/89/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/89/81f2814307f9a95f-full-page.jpg",
+      "route": "/preview/89-hollow-gallery/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:fafa833ffc78d35d59e41b03a5e44ae50a139157f7cf51fe77199bc449266c27",
+      "sha256": "81f2814307f9a95f350583aa4bf05604140bcfb4038b6f3697a253301b53f541",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/89-hollow-gallery",
+  "neighbours": [
+    "47",
+    "48"
+  ],
+  "researchSources": [
+    {
+      "title": "Rafaël Rozendaal — Internet works",
+      "url": "https://www.newrafael.com/internet?filter=website"
+    }
+  ],
+  "palette": {
+    "page": "#e7e6df",
+    "ink": "#161b18",
+    "accent": "#cb5c44",
+    "surface": "#e7e6df"
+  },
+  "fonts": [
+    "Archivo Black",
+    "DM Sans"
+  ],
+  "brief": "**Idea.** The empty part of an image can carry the invitation.\n\n**Composition.** Monumental dark silhouettes contain pale cut-outs. Titles and entrances inhabit the negative spaces, with burnt-orange margins and almost no conventional container furniture.\n\n**Navigation and complete example.** Enter six original silhouette studies through their cut-outs, inspect the process behind a work, reverse its figure-ground relation and assemble up to three works in a local exhibition.\n\n**Responsive and inclusive behaviour.** Each cut-out fills the available width and contains a large labelled button. The complete work index remains visible in reading order. All controls are native buttons or labelled inputs. Movement is discretionary, no sound starts automatically, reduced-motion preferences remove transitions, and a direct index exposes the same content.\n\n**Adaptation.** Make the empty area a real, legible entrance. Preserve labels and focus outlines when silhouettes become complex. Retain the relationship between navigation and content. Do not reduce the reference to a generic hero followed by interchangeable cards.\n\n**Research.** [Rafaël Rozendaal — Internet works](https://www.newrafael.com/internet?filter=website). These are conceptual precedents, not copied artwork, source code, branding or text. All diagrams and sample writing in this specimen are original, fictional material.",
+  "scope": "Complete visual reference with deterministic local interactions and fictional content; no production backend."
+}

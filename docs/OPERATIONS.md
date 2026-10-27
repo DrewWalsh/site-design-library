@@ -42,7 +42,7 @@ pnpm capture
 Remove-Item Env:DESIGN_IDS
 ```
 
-Omit `DESIGN_IDS` to capture all 75. `PREVIEW_URL` can point to the production preview server instead of port 5173. Windows uses installed Edge by default; other platforms use Playwright Chromium. `BROWSER_CHANNEL` can override the channel. Four JPEGs per package are written locally and ignored by Git; provenance JSON is tracked.
+Omit `DESIGN_IDS` to capture all 100. `PREVIEW_URL` can point to the production preview server instead of port 5173. Windows uses installed Edge by default; other platforms use Playwright Chromium. `BROWSER_CHANNEL` can override the channel. Four JPEGs per package are written locally and ignored by Git; provenance JSON is tracked.
 
 Inspect the changed images and run the relevant tests. Once satisfactory, set the design's status to `ready`. Source hashes include the component, tokens, preview shell, routing/storage helper, and asset manifests; line endings are normalized. Shared changes invalidate every affected capture. A ready design with stale metadata fails the build.
 
@@ -64,3 +64,13 @@ The manifest uploader is in [codex-utility-scripts](https://github.com/DrewWalsh
 ## Assets
 
 See `ASSETS.md`, `COMMERCIAL_ASSETS.md`, `public/fonts/manifest.json`, `public/art/manifest.json`, and `public/art/commercial-manifest.json`. The commercial manifest records nineteen images hosted under `assets/commercial/` in the same Tigris bucket, including licensed photographs and labelled generated illustrations. Manifests contain provenance and checksums; font licenses are bundled. Keep published references and rendered assets consistent. The original local asset manifest participates in the shared capture hash; each specimen’s commercial asset URL is included in its component hash.
+
+## Public references and ZIP builds
+
+The GitHub repository is public. Original material is MIT, with separate photo/font notices. `pnpm build` validates 100 metadata records, typechecks, builds Vite, omits hosted capture copies, constructs deterministic ZIPs, and writes static gallery/guide/inspector HTML plus crawler indexes. No SSR server or backend is needed.
+
+`scripts/build-packages.ts` uses an explicit file allowlist, checks asset bytes against manifests, includes local fonts/images and screenshots, preserves exact originals under `reference/`, and emits `/downloads/index.json` with size and SHA-256. Public Tigris files are downloaded only when verified local copies are absent; downloads are cached under ignored `.work/download-assets/`. A clean CI build therefore needs public network access to Tigris. No Tigris credentials are needed to build. The reusable path-safe ZIP adapter also lives in codex-utility-scripts/node/zip-archive.mjs.
+
+`scripts/prepare-agent-pages.ts` adds readable static content to the same Vue mount points and emits robots.txt, sitemap.xml, llms.txt and llms-full.txt. Netlify file shadowing serves the generated inspector files before the SPA fallback. Preview specimens retain noindex because their fictional business copy should not appear as real businesses in search; inspector pages and all source/reference links remain crawlable. Missing download files return 404 rather than the gallery HTML.
+
+After changing ZIP composition, run the archive integrity test and build at least one extracted starter. After changing crawler pages, run the JavaScript-disabled tests. Verify the deployed ZIP MIME type, archive checksum, anonymous repository access and bot-user-agent responses.

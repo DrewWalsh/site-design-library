@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 2,
+  "id": "83",
+  "slug": "forking-edition",
+  "name": "Forking Edition",
+  "brand": "The room that remembers / A branching novella",
+  "family": "Avant-garde & experimental",
+  "status": "ready",
+  "thesis": "The sentence itself can be a doorway into another reading.",
+  "suitableFor": [
+    "Experimental publishing",
+    "Art exhibition",
+    "Cultural storytelling"
+  ],
+  "character": "Experimental",
+  "traits": {
+    "composition": "A nearly bare cream page carries large literary prose. Underlined branching phrases, indentation and a small path trace do the work of a navigation system.",
+    "navigation": "Choose phrases, revisit a fork, reach an ending and inspect the reading path",
+    "typography": "Libre Baskerville / DM Sans",
+    "density": "Medium",
+    "imagery": "Original SVG and CSS compositions",
+    "surface": "A continuous browser-sized composition",
+    "motion": "Optional"
+  },
+  "effort": "High",
+  "definingFeatures": [
+    "Inline branching prose",
+    "Reversible reading path",
+    "Three endings"
+  ],
+  "adaptableChoices": [
+    "Subject and original writing",
+    "Palette and equivalent licensed typography",
+    "Scale and number of content units"
+  ],
+  "discovery": {
+    "industries": [
+      "Arts",
+      "Culture",
+      "Experimental publishing"
+    ],
+    "visitorGoals": [
+      "Explore a non-linear story"
+    ],
+    "conversionActions": [
+      "Assemble a reading collection"
+    ],
+    "siteSize": "Interactive publication",
+    "interactionTypes": [
+      "Inline branching prose",
+      "Reversible reading path",
+      "Three endings"
+    ],
+    "keywords": [
+      "avant garde",
+      "experimental",
+      "unconventional navigation",
+      "Inline branching prose",
+      "Reversible reading path",
+      "Three endings"
+    ]
+  },
+  "patterns": [
+    "Inline branching prose",
+    "Reversible reading path",
+    "Three endings"
+  ],
+  "entryRoute": "/preview/83-forking-edition/start",
+  "states": [
+    {
+      "key": "passage",
+      "label": "An opened passage",
+      "route": "/preview/83-forking-edition/passage"
+    },
+    {
+      "key": "path",
+      "label": "Your reading path",
+      "route": "/preview/83-forking-edition/path"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/83/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/83/d067839a1f671e1f-desktop.jpg",
+      "route": "/preview/83-forking-edition/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:4377137e9292c9787b1fc4c503cca3632fdaab2da7cb30103f5e839a3a9336a0",
+      "sha256": "d067839a1f671e1fbd31039300cfeb74eeb60d4377228787579d4eba121611e6",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/83/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/83/9bd5ad1f80731b2d-mobile.jpg",
+      "route": "/preview/83-forking-edition/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:4377137e9292c9787b1fc4c503cca3632fdaab2da7cb30103f5e839a3a9336a0",
+      "sha256": "9bd5ad1f80731b2d1e3c81e67438dd9173c5cbc027554429e54661dc295d2746",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/83/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/83/92ff2e2a0a933459-detail.jpg",
+      "route": "/preview/83-forking-edition/passage",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "passage",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:4377137e9292c9787b1fc4c503cca3632fdaab2da7cb30103f5e839a3a9336a0",
+      "sha256": "92ff2e2a0a933459b466bbdf917439226a35364a45cac1c0a470688944a161d2",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/83/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/83/f29c475e8ceec915-full-page.jpg",
+      "route": "/preview/83-forking-edition/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:4377137e9292c9787b1fc4c503cca3632fdaab2da7cb30103f5e839a3a9336a0",
+      "sha256": "f29c475e8ceec9153b5819e0f3fc486a112108b7b3b708e68c09a69342a6b466",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/83-forking-edition",
+  "neighbours": [
+    "07",
+    "14"
+  ],
+  "researchSources": [
+    {
+      "title": "Typatone",
+      "url": "https://typatone.com/"
+    },
+    {
+      "title": "Conditional Design manifesto",
+      "url": "https://conditionaldesign.org/manifesto/"
+    }
+  ],
+  "palette": {
+    "page": "#f7f4ec",
+    "ink": "#232b28",
+    "accent": "#446c56",
+    "surface": "#f7f4ec"
+  },
+  "fonts": [
+    "Libre Baskerville",
+    "DM Sans"
+  ],
+  "brief": "**Idea.** The sentence itself can be a doorway into another reading.\n\n**Composition.** A nearly bare cream page carries large literary prose. Underlined branching phrases, indentation and a small path trace do the work of a navigation system.\n\n**Navigation and complete example.** Read a complete miniature branching novella: three opening choices lead through six passages to three distinct endings. Undo a choice or review the route without losing your place.\n\n**Responsive and inclusive behaviour.** Prose keeps a comfortable line length and inline choices wrap naturally. A visible back action complements the embedded links. All controls are native buttons or labelled inputs. Movement is discretionary, no sound starts automatically, reduced-motion preferences remove transitions, and a direct index exposes the same content.\n\n**Adaptation.** Write choices as part of the voice, and make every branch pay off in content. Avoid turning the story into a survey or a card-based wizard. Retain the relationship between navigation and content. Do not reduce the reference to a generic hero followed by interchangeable cards.\n\n**Research.** [Typatone](https://typatone.com/); [Conditional Design manifesto](https://conditionaldesign.org/manifesto/). These are conceptual precedents, not copied artwork, source code, branding or text. All diagrams and sample writing in this specimen are original, fictional material.",
+  "scope": "Complete visual reference with deterministic local interactions and fictional content; no production backend."
+}

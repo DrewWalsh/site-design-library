@@ -67,7 +67,7 @@ const filtered = computed(() =>
       );
     })
     .sort((a, b) =>
-      get('sort') === 'name' ? a.name.localeCompare(b.name) : a.id.localeCompare(b.id),
+      get('sort') === 'name' ? a.name.localeCompare(b.name) : Number(a.id) - Number(b.id),
     ),
 );
 function toggle(id: string) {
@@ -140,7 +140,11 @@ function toggle(id: string) {
           <div
             class="g-facet"
             v-for="facet in [
-              { key: 'character', label: 'Character', values: ['Restrained', 'Expressive'] },
+              {
+                key: 'character',
+                label: 'Character',
+                values: ['Restrained', 'Expressive', 'Experimental'],
+              },
               { key: 'density', label: 'Information density', values: ['Low', 'Medium', 'High'] },
               { key: 'motion', label: 'Motion', values: ['None', 'Minimal', 'Optional'] },
               { key: 'effort', label: 'Implementation effort', values: ['Low', 'Medium', 'High'] },

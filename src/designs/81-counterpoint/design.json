@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 2,
+  "id": "81",
+  "slug": "counterpoint",
+  "name": "Counterpoint",
+  "brand": "COUNTERPOINT / A commission in two voices",
+  "family": "Avant-garde & experimental",
+  "status": "ready",
+  "thesis": "Two accounts deserve equal space without pretending to agree.",
+  "suitableFor": [
+    "Experimental publishing",
+    "Art exhibition",
+    "Cultural storytelling"
+  ],
+  "character": "Experimental",
+  "traits": {
+    "composition": "Opposing coral and aubergine columns run edge to edge. One shared seam controls the space between monumental serif headlines and paired passages.",
+    "navigation": "Adjust the seam, synchronise passages, inspect common sources",
+    "typography": "Libre Baskerville / DM Sans",
+    "density": "Medium",
+    "imagery": "Original SVG and CSS compositions",
+    "surface": "A continuous browser-sized composition",
+    "motion": "Optional"
+  },
+  "effort": "High",
+  "definingFeatures": [
+    "Split reading surface",
+    "Adjustable seam",
+    "Paired argument"
+  ],
+  "adaptableChoices": [
+    "Subject and original writing",
+    "Palette and equivalent licensed typography",
+    "Scale and number of content units"
+  ],
+  "discovery": {
+    "industries": [
+      "Arts",
+      "Culture",
+      "Experimental publishing"
+    ],
+    "visitorGoals": [
+      "Explore a non-linear story"
+    ],
+    "conversionActions": [
+      "Assemble a reading collection"
+    ],
+    "siteSize": "Interactive publication",
+    "interactionTypes": [
+      "Split reading surface",
+      "Adjustable seam",
+      "Paired argument"
+    ],
+    "keywords": [
+      "avant garde",
+      "experimental",
+      "unconventional navigation",
+      "Split reading surface",
+      "Adjustable seam",
+      "Paired argument"
+    ]
+  },
+  "patterns": [
+    "Split reading surface",
+    "Adjustable seam",
+    "Paired argument"
+  ],
+  "entryRoute": "/preview/81-counterpoint/start",
+  "states": [
+    {
+      "key": "passage",
+      "label": "A paired passage",
+      "route": "/preview/81-counterpoint/passage"
+    },
+    {
+      "key": "sources",
+      "label": "Shared source material",
+      "route": "/preview/81-counterpoint/sources"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/81/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/81/41c394f501c5587d-desktop.jpg",
+      "route": "/preview/81-counterpoint/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:d54b61795125482b3a66d724e52295c6236b82d974922a88dc6b35b152448fb0",
+      "sha256": "41c394f501c5587db9a2ca84c93e145ac1b80e76f76fa068894e8f1843bcd46f",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/81/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/81/6940abcf03e08bc8-mobile.jpg",
+      "route": "/preview/81-counterpoint/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:d54b61795125482b3a66d724e52295c6236b82d974922a88dc6b35b152448fb0",
+      "sha256": "6940abcf03e08bc893c565fb420cba869cf5e5ebc76aedfc694c0e174459c2b6",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/81/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/81/8f82af00befdef9b-detail.jpg",
+      "route": "/preview/81-counterpoint/passage",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "passage",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:d54b61795125482b3a66d724e52295c6236b82d974922a88dc6b35b152448fb0",
+      "sha256": "8f82af00befdef9b8c9d7c10813143b335fff3a900e57cde1d325930c35cd996",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/81/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/81/5d3ea64d3f222cb4-full-page.jpg",
+      "route": "/preview/81-counterpoint/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:d54b61795125482b3a66d724e52295c6236b82d974922a88dc6b35b152448fb0",
+      "sha256": "5d3ea64d3f222cb4ec6eb53b99dc581a5cdef7a5d41a7261e657eed52acb37b0",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/81-counterpoint",
+  "neighbours": [
+    "05",
+    "80"
+  ],
+  "researchSources": [
+    {
+      "title": "Conditional Design manifesto",
+      "url": "https://conditionaldesign.org/manifesto/"
+    },
+    {
+      "title": "Rafaël Rozendaal — Internet works",
+      "url": "https://www.newrafael.com/internet?filter=website"
+    }
+  ],
+  "palette": {
+    "page": "#ed623f",
+    "ink": "#241d2b",
+    "accent": "#35265a",
+    "surface": "#ed623f"
+  },
+  "fonts": [
+    "Libre Baskerville",
+    "DM Sans"
+  ],
+  "brief": "**Idea.** Two accounts deserve equal space without pretending to agree.\n\n**Composition.** Opposing coral and aubergine columns run edge to edge. One shared seam controls the space between monumental serif headlines and paired passages.\n\n**Navigation and complete example.** Read six paired accounts of one fictional public-art commission, adjust the balance, isolate a pair and examine the common source notes.\n\n**Responsive and inclusive behaviour.** The two accounts stack in reading order with clear speaker names. The balance control becomes three labelled focus choices; no text is squeezed into unusable columns. All controls are native buttons or labelled inputs. Movement is discretionary, no sound starts automatically, reduced-motion preferences remove transitions, and a direct index exposes the same content.\n\n**Adaptation.** Preserve the tension between two independently voiced accounts. Changing the seam must never erase the less favoured side. Retain the relationship between navigation and content. Do not reduce the reference to a generic hero followed by interchangeable cards.\n\n**Research.** [Conditional Design manifesto](https://conditionaldesign.org/manifesto/); [Rafaël Rozendaal — Internet works](https://www.newrafael.com/internet?filter=website). These are conceptual precedents, not copied artwork, source code, branding or text. All diagrams and sample writing in this specimen are original, fictional material.",
+  "scope": "Complete visual reference with deterministic local interactions and fictional content; no production backend."
+}

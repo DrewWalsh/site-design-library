@@ -18,6 +18,7 @@ import { repository, designs } from './data';
   <footer class="g-footer">
     <span>Design Library <b>·</b> A collection of possibilities.</span
     ><span>{{ designs.length }} directions. One useful starting point.</span
+    ><a href="/LICENSE">MIT · Free to adapt</a><a href="/llms.txt">For agents ↗</a
     ><a :href="repository">View source ↗</a>
   </footer>
 </template>

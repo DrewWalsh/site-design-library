@@ -1,0 +1,10 @@
+.specimen {
+  --page: #e4d9c0;
+  --ink: #354a42;
+  --accent: #945b43;
+  --surface: #e4d9c0;
+  --heading: 'Space Grotesk', sans-serif;
+  --body: 'IBM Plex Mono', sans-serif;
+  --measure: 62ch;
+  --space: 8px;
+}

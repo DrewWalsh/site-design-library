@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 2,
+  "id": "94",
+  "slug": "score-reader",
+  "name": "Score Reader",
+  "brand": "INTERVAL / A publication in measures",
+  "family": "Avant-garde & experimental",
+  "status": "ready",
+  "thesis": "A reading can be arranged across time and simultaneous voices.",
+  "suitableFor": [
+    "Experimental publishing",
+    "Art exhibition",
+    "Cultural storytelling"
+  ],
+  "character": "Experimental",
+  "traits": {
+    "composition": "Oversized measure numbers and four staves span a cream score. Coloured note blocks contain phrases; a playhead and voice controls make the score a working table of contents.",
+    "navigation": "Select measures and voices, perform a reading sequence, arrange a short score",
+    "typography": "Libre Baskerville / IBM Plex Mono",
+    "density": "Medium",
+    "imagery": "Original SVG and CSS compositions",
+    "surface": "A continuous browser-sized composition",
+    "motion": "Optional"
+  },
+  "effort": "High",
+  "definingFeatures": [
+    "Score navigation",
+    "Simultaneous voices",
+    "Reading arrangement"
+  ],
+  "adaptableChoices": [
+    "Subject and original writing",
+    "Palette and equivalent licensed typography",
+    "Scale and number of content units"
+  ],
+  "discovery": {
+    "industries": [
+      "Arts",
+      "Culture",
+      "Experimental publishing"
+    ],
+    "visitorGoals": [
+      "Explore a non-linear story"
+    ],
+    "conversionActions": [
+      "Assemble a reading collection"
+    ],
+    "siteSize": "Interactive publication",
+    "interactionTypes": [
+      "Score navigation",
+      "Simultaneous voices",
+      "Reading arrangement"
+    ],
+    "keywords": [
+      "avant garde",
+      "experimental",
+      "unconventional navigation",
+      "Score navigation",
+      "Simultaneous voices",
+      "Reading arrangement"
+    ]
+  },
+  "patterns": [
+    "Score navigation",
+    "Simultaneous voices",
+    "Reading arrangement"
+  ],
+  "entryRoute": "/preview/94-score-reader/start",
+  "states": [
+    {
+      "key": "movement",
+      "label": "Movement transcript",
+      "route": "/preview/94-score-reader/movement"
+    },
+    {
+      "key": "arrangement",
+      "label": "Your reading score",
+      "route": "/preview/94-score-reader/arrangement"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/94/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/94/a605b49893993268-desktop.jpg",
+      "route": "/preview/94-score-reader/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:ed9b7f79d60ece54b636862adb730b6cb6c04e2af0ee0af71a26f3132d2d08a1",
+      "sha256": "a605b498939932689ee0ec09dc240044e866e5242be3832d753b726d34037dbc",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/94/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/94/5b8c8d94482e4dcb-mobile.jpg",
+      "route": "/preview/94-score-reader/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:ed9b7f79d60ece54b636862adb730b6cb6c04e2af0ee0af71a26f3132d2d08a1",
+      "sha256": "5b8c8d94482e4dcbfe7154c94dc75244bdc35352f00216a858ae574b28ef6190",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/94/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/94/1a965a5f85b73cca-detail.jpg",
+      "route": "/preview/94-score-reader/movement",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "movement",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:ed9b7f79d60ece54b636862adb730b6cb6c04e2af0ee0af71a26f3132d2d08a1",
+      "sha256": "1a965a5f85b73cca401c8aaaf1aead2c151aed8b2b8848ac6e2565fedd859573",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/94/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/94/c995f08839b2136a-full-page.jpg",
+      "route": "/preview/94-score-reader/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:ed9b7f79d60ece54b636862adb730b6cb6c04e2af0ee0af71a26f3132d2d08a1",
+      "sha256": "c995f08839b2136aac90f73142102e5d40f0351e25147f57953ba6220c52a80e",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/94-score-reader",
+  "neighbours": [
+    "46",
+    "79"
+  ],
+  "researchSources": [
+    {
+      "title": "Typatone",
+      "url": "https://typatone.com/"
+    },
+    {
+      "title": "Conditional Design manifesto",
+      "url": "https://conditionaldesign.org/manifesto/"
+    }
+  ],
+  "palette": {
+    "page": "#f2eddf",
+    "ink": "#28223c",
+    "accent": "#6c418b",
+    "surface": "#f2eddf"
+  },
+  "fonts": [
+    "Libre Baskerville",
+    "IBM Plex Mono"
+  ],
+  "brief": "**Idea.** A reading can be arranged across time and simultaneous voices.\n\n**Composition.** Oversized measure numbers and four staves span a cream score. Coloured note blocks contain phrases; a playhead and voice controls make the score a working table of contents.\n\n**Navigation and complete example.** Explore six measures across four authored voices, optionally advance the score at a calm pace, read each movement and arrange a local reading order. Optional tones are triggered only by an explicit sound control.\n\n**Responsive and inclusive behaviour.** The score scrolls within a labelled bounded region, with measure buttons and a full transcript as alternatives. No content requires timed interaction. All controls are native buttons or labelled inputs. Movement is discretionary, no sound starts automatically, reduced-motion preferences remove transitions, and a direct index exposes the same content.\n\n**Adaptation.** Use timing and polyphony to organise the writing. Keep sound optional, volume modest and every spoken or musical idea available as text. Retain the relationship between navigation and content. Do not reduce the reference to a generic hero followed by interchangeable cards.\n\n**Research.** [Typatone](https://typatone.com/); [Conditional Design manifesto](https://conditionaldesign.org/manifesto/). These are conceptual precedents, not copied artwork, source code, branding or text. All diagrams and sample writing in this specimen are original, fictional material.",
+  "scope": "Complete visual reference with deterministic local interactions and fictional content; no production backend."
+}

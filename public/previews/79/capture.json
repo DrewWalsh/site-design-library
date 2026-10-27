@@ -1,0 +1,64 @@
+{
+  "designId": "79",
+  "sourceRevision": "sha256:c4945b8789daf0e1260ff4e99ee2858e29d7a3f3326abe467159d1b723a194c0",
+  "capturedAt": "2026-10-27T04:12:43.553Z",
+  "browser": "156.0.4314.42",
+  "captures": [
+    {
+      "file": "/previews/79/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/79/08aff7ddabd02b17-desktop.jpg",
+      "route": "/preview/79-frequency-house/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:c4945b8789daf0e1260ff4e99ee2858e29d7a3f3326abe467159d1b723a194c0",
+      "sha256": "08aff7ddabd02b17348aaa71f9e67f29a9b6c051ad78536acdaa639e16de60e8",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/79/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/79/f0769f533d73e9e9-mobile.jpg",
+      "route": "/preview/79-frequency-house/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:c4945b8789daf0e1260ff4e99ee2858e29d7a3f3326abe467159d1b723a194c0",
+      "sha256": "f0769f533d73e9e93e713b64997b8575133bfb7480da53c1a62c67b64de1550a",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/79/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/79/df0915ff36413eae-detail.jpg",
+      "route": "/preview/79-frequency-house/programme",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "programme",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:c4945b8789daf0e1260ff4e99ee2858e29d7a3f3326abe467159d1b723a194c0",
+      "sha256": "df0915ff36413eaeacb292b4e583e059a09da4c9a1fab9798a24d13b4d354374",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/79/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/79/d89f3c535d5798ec-full-page.jpg",
+      "route": "/preview/79-frequency-house/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:c4945b8789daf0e1260ff4e99ee2858e29d7a3f3326abe467159d1b723a194c0",
+      "sha256": "d89f3c535d5798ecd29333029d023e6ea932b7f025e70b109cfcde554a018016",
+      "fullPage": true
+    }
+  ]
+}

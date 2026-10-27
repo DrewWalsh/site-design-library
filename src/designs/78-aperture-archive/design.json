@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 2,
+  "id": "78",
+  "slug": "aperture-archive",
+  "name": "Aperture Archive",
+  "brand": "AFTER / Studies of the unlit city",
+  "family": "Avant-garde & experimental",
+  "status": "ready",
+  "thesis": "A small opening gives a large collection a deliberate pace.",
+  "suitableFor": [
+    "Experimental publishing",
+    "Art exhibition",
+    "Cultural storytelling"
+  ],
+  "character": "Experimental",
+  "traits": {
+    "composition": "A nearly black urban drawing is revealed through a circular aperture; lime coordinates and perimeter typography locate six exposures.",
+    "navigation": "Step an aperture through exposures, open a contact sheet, read field notes",
+    "typography": "Space Grotesk / IBM Plex Mono",
+    "density": "Medium",
+    "imagery": "Original SVG and CSS compositions",
+    "surface": "A continuous browser-sized composition",
+    "motion": "Optional"
+  },
+  "effort": "High",
+  "definingFeatures": [
+    "Aperture discovery",
+    "Contact strip",
+    "Exposure notes"
+  ],
+  "adaptableChoices": [
+    "Subject and original writing",
+    "Palette and equivalent licensed typography",
+    "Scale and number of content units"
+  ],
+  "discovery": {
+    "industries": [
+      "Arts",
+      "Culture",
+      "Experimental publishing"
+    ],
+    "visitorGoals": [
+      "Explore a non-linear story"
+    ],
+    "conversionActions": [
+      "Assemble a reading collection"
+    ],
+    "siteSize": "Interactive publication",
+    "interactionTypes": [
+      "Aperture discovery",
+      "Contact strip",
+      "Exposure notes"
+    ],
+    "keywords": [
+      "avant garde",
+      "experimental",
+      "unconventional navigation",
+      "Aperture discovery",
+      "Contact strip",
+      "Exposure notes"
+    ]
+  },
+  "patterns": [
+    "Aperture discovery",
+    "Contact strip",
+    "Exposure notes"
+  ],
+  "entryRoute": "/preview/78-aperture-archive/start",
+  "states": [
+    {
+      "key": "exposure",
+      "label": "Exposure and field note",
+      "route": "/preview/78-aperture-archive/exposure"
+    },
+    {
+      "key": "collection",
+      "label": "Complete contact sheet",
+      "route": "/preview/78-aperture-archive/collection"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/78/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/78/4582ac366b2d9c0b-desktop.jpg",
+      "route": "/preview/78-aperture-archive/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:f75d7dc2bdbefc34d8cb38bfa2beed0e61abb7d3274a6a17b6ac1ef4550e9c07",
+      "sha256": "4582ac366b2d9c0b955c8bf027c4f2cab3b62976c270b24a399e7e14e6396242",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/78/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/78/fa6f164b7749db68-mobile.jpg",
+      "route": "/preview/78-aperture-archive/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:f75d7dc2bdbefc34d8cb38bfa2beed0e61abb7d3274a6a17b6ac1ef4550e9c07",
+      "sha256": "fa6f164b7749db68b53a5d9c4ac909fd2f75bd1383b727565a2a6a6d5c132638",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/78/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/78/816e30bca0a4be0f-detail.jpg",
+      "route": "/preview/78-aperture-archive/exposure",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "exposure",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:f75d7dc2bdbefc34d8cb38bfa2beed0e61abb7d3274a6a17b6ac1ef4550e9c07",
+      "sha256": "816e30bca0a4be0fcc06054f00e04d8f72394f7a45b9786f89de7cd6d2f8f442",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/78/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/78/8fedbdbfab1e98b6-full-page.jpg",
+      "route": "/preview/78-aperture-archive/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:f75d7dc2bdbefc34d8cb38bfa2beed0e61abb7d3274a6a17b6ac1ef4550e9c07",
+      "sha256": "8fedbdbfab1e98b60df55383ebdf31c293648e4f686a346ee7321688938192dc",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/78-aperture-archive",
+  "neighbours": [
+    "22",
+    "47"
+  ],
+  "researchSources": [
+    {
+      "title": "Rafaël Rozendaal — Internet works",
+      "url": "https://www.newrafael.com/internet?filter=website"
+    },
+    {
+      "title": "Aaron Koblin — The Wilderness Downtown",
+      "url": "https://www.aaronkoblin.com/project/the-wilderness-downtown/"
+    }
+  ],
+  "palette": {
+    "page": "#0b1118",
+    "ink": "#f3eee2",
+    "accent": "#dded83",
+    "surface": "#0b1118"
+  },
+  "fonts": [
+    "Space Grotesk",
+    "IBM Plex Mono"
+  ],
+  "brief": "**Idea.** A small opening gives a large collection a deliberate pace.\n\n**Composition.** A nearly black urban drawing is revealed through a circular aperture; lime coordinates and perimeter typography locate six exposures.\n\n**Navigation and complete example.** Inspect six original night-city vector exposures, move the aperture with native controls, read a field note and mark a favourite exposure.\n\n**Responsive and inclusive behaviour.** The aperture scene uses a compact landscape crop, while labelled previous/next controls and the full contact list remain visible. All controls are native buttons or labelled inputs. Movement is discretionary, no sound starts automatically, reduced-motion preferences remove transitions, and a direct index exposes the same content.\n\n**Adaptation.** Keep selective visibility as a discovery device, with a complete text index. Use purposeful crops and credited photographs when adapting the original vector study. Retain the relationship between navigation and content. Do not reduce the reference to a generic hero followed by interchangeable cards.\n\n**Research.** [Rafaël Rozendaal — Internet works](https://www.newrafael.com/internet?filter=website); [Aaron Koblin — The Wilderness Downtown](https://www.aaronkoblin.com/project/the-wilderness-downtown/). These are conceptual precedents, not copied artwork, source code, branding or text. All diagrams and sample writing in this specimen are original, fictional material.",
+  "scope": "Complete visual reference with deterministic local interactions and fictional content; no production backend."
+}

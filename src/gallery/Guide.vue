@@ -20,8 +20,8 @@ import { repository } from './data';
           body: 'Open the reference on desktop and phone. Read its defining features. Try the local interaction and compare a nearby direction to see which composition fits your content.',
         },
         {
-          title: 'Take a useful prompt with you.',
-          body: 'Use the reference prompt to point your coding model at the brief, tokens, screenshots, and source. Name the part of your project you want to change.',
+          title: 'Download it. Give it to your model.',
+          body: 'Download the design ZIP for its brief, tokens, source, local fonts and images, four screenshots, license notices and CODEX_PROMPT.md. Extract it and give the folder to Codex or another coding model, together with the part of your project you want to build or change.',
         },
         {
           title: 'Adapt the principles.',
@@ -37,7 +37,24 @@ import { repository } from './data';
       </div>
     </section>
     <div class="g-guide-note">
+      <h2>Free to use, including client work</h2>
+      <p>
+        The repository and downloads are public. Original code, specifications and artwork use the
+        MIT license. Photos and fonts retain their own licenses, included with each ZIP. No account
+        or API key is needed.
+      </p>
+      <p>
+        <a href="/LICENSE">MIT license ↗</a> ·
+        <a href="/THIRD_PARTY.md">Photo and font notices ↗</a> ·
+        <a href="/llms.txt">Agent browsing index ↗</a>
+      </p>
       <h2>About the examples</h2>
+      <p>
+        The experimental collection explores 25 different navigation ideas.
+        <a href="/docs/EXPERIMENTAL_RESEARCH.md"
+          >Read the primary research and implementation map ↗</a
+        >
+      </p>
       <p>
         These are fictional brands with sample content and local interactions. They are expansive
         design references, not production businesses. No bookings, messages, payments, or orders are
