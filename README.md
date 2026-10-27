@@ -1,11 +1,11 @@
 # Site Design Library
 
-50 distinct, working sample sites for choosing a visual direction and giving a coding model a concrete reference. Every design has a substantial main page, two supporting routes, an independent visual system, readable Vue source, tokens, a design brief, and captured references.
+75 distinct, working sample sites for choosing a visual direction and giving a coding model a concrete reference. Every design has a substantial main page, two supporting routes, an independent visual system, readable Vue source, tokens, a design brief, and captured references.
 
 **Live library:** https://drew-site-design-library.netlify.app  
 **Source:** https://github.com/DrewWalsh/site-design-library (private repository; use your authenticated GitHub account)
 
-The gallery supports search, URL-persisted filters, grid/list views, side-by-side comparison, isolated desktop/phone/resizable previews, and a reference prompt with a primary design and optional secondary influence. All brands and business data are fictional. Forms, bookings, bags, messages, and saved items operate locally; the examples have no business backend.
+The gallery supports search by industry, visitor goal, conversion action, site structure, and interaction type, alongside visual filters. Search phrases such as “appointment-based local business”, “storage”, or “one-page brochure” find relevant references. Filters persist in the URL. Grid/list views, side-by-side comparison, isolated desktop/phone/resizable previews, and an adaptation prompt help turn a reference into a new project. All brands and business data are fictional. Forms, bookings, bags, messages, and saved items operate locally; the examples have no business backend.
 
 ## Run
 
@@ -38,10 +38,10 @@ src/designs/27-blueprint-studio/
 public/previews/27/capture.json   image checksums and source provenance
 ```
 
-`catalogue.json` and `public/catalogue.json` are generated from the 50 metadata files. Public reference packages are generated under `/references/ID-slug/` at build time. Large reference images live in the dedicated Tigris bucket; the seven illustrative images and licensed fonts used by the pages are bundled locally. See [asset credits](docs/ASSETS.md).
+`catalogue.json` and `public/catalogue.json` are generated from the 75 metadata files. Public reference packages are generated under `/references/ID-slug/` at build time. Large reference images live in the dedicated Tigris bucket. Seven original illustrative images and eight licensed font families are bundled locally; nineteen additional commercial images are hosted in Tigris. See [asset credits](docs/ASSETS.md) and [commercial imagery](docs/COMMERCIAL_ASSETS.md), also published under `/docs/` for reference-package readers.
 
 ## Maintain
 
 Change the individual package, run the relevant browser tests, refresh its captures, review them, and mark it ready only when it is complete. The catalogue build rejects stale captures on ready designs. See [operations](docs/OPERATIONS.md) for captures, Tigris publishing, Netlify deployment, and the exact project identifiers.
 
-The supplied design document is retained as [the product specification](docs/DESIGN.md). This implementation follows the clarified scope: all 50 are complete visual samples with representative interactions, rather than production business applications.
+The supplied design document is retained as [the product specification](docs/DESIGN.md). This implementation follows the clarified scope: all 75 are complete visual samples with representative interactions, rather than production business applications.

@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 2,
+  "id": "63",
+  "slug": "venue-floorplan",
+  "name": "Venue Floorplan",
+  "brand": "The Assembly Rooms",
+  "family": "Small business",
+  "status": "ready",
+  "thesis": "Start with how people will use the space.",
+  "suitableFor": [
+    "Wedding venue",
+    "Conference venue",
+    "Event space"
+  ],
+  "character": "Restrained",
+  "traits": {
+    "composition": "plum and cream architectural plan with selectable seating configurations",
+    "navigation": "Selectable floorplan, capacity check and event enquiry",
+    "typography": "Libre Baskerville",
+    "density": "Medium",
+    "imagery": "Event-hall photograph and selectable schematic room arrangements",
+    "surface": "Quiet cream and plum editorial panels",
+    "motion": "Minimal"
+  },
+  "effort": "Medium",
+  "definingFeatures": [
+    "Floorplans",
+    "Room configurations",
+    "Event packages"
+  ],
+  "adaptableChoices": [
+    "Verified business content",
+    "Brand and subject",
+    "Equivalent licensed typefaces"
+  ],
+  "discovery": {
+    "industries": [
+      "Wedding venue",
+      "Conference venue",
+      "Event space"
+    ],
+    "visitorGoals": [
+      "Plan an event"
+    ],
+    "conversionActions": [
+      "Enquire about an event"
+    ],
+    "siteSize": "Portfolio & enquiry",
+    "interactionTypes": [
+      "Room configuration",
+      "Capacity selector",
+      "Event enquiry"
+    ],
+    "keywords": [
+      "Wedding venue",
+      "Conference venue",
+      "Event space",
+      "Enquire about an event",
+      "Portfolio & enquiry",
+      "Floorplans",
+      "Room configurations",
+      "Event packages",
+      "small business",
+      "local business",
+      "enquiry driven",
+      "inquiry",
+      "quote"
+    ]
+  },
+  "patterns": [
+    "Floorplans",
+    "Room configurations",
+    "Event packages"
+  ],
+  "entryRoute": "/preview/63-venue-floorplan/start",
+  "states": [
+    {
+      "key": "plan",
+      "label": "Configure the room",
+      "route": "/preview/63-venue-floorplan/plan"
+    },
+    {
+      "key": "enquiry",
+      "label": "Event enquiry",
+      "route": "/preview/63-venue-floorplan/enquiry"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/63/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/63/dc8d1c2a129764a7-desktop.jpg",
+      "route": "/preview/63-venue-floorplan/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:216c2155a4eb85c28a61b3b29ffe8528a8ae9dd6a2eb91402b8da66305aea506",
+      "sha256": "dc8d1c2a129764a7764218611f9d78c54665f3b258dca0f5b08842d75f4f0b47",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/63/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/63/f7d51689a2d9e1ee-mobile.jpg",
+      "route": "/preview/63-venue-floorplan/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:216c2155a4eb85c28a61b3b29ffe8528a8ae9dd6a2eb91402b8da66305aea506",
+      "sha256": "f7d51689a2d9e1ee69b9cd21134609ba36e088f21c2cf4ab4eae3e94b3bd1c7e",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/63/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/63/3106f6d744e835d0-detail.jpg",
+      "route": "/preview/63-venue-floorplan/plan",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "plan",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:216c2155a4eb85c28a61b3b29ffe8528a8ae9dd6a2eb91402b8da66305aea506",
+      "sha256": "3106f6d744e835d0d6ca61f6cb27bc242a8a05a1abb6a6c2dae5e4bc9d200ae3",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/63/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/63/ed922244ba34e3ee-full-page.jpg",
+      "route": "/preview/63-venue-floorplan/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:216c2155a4eb85c28a61b3b29ffe8528a8ae9dd6a2eb91402b8da66305aea506",
+      "sha256": "ed922244ba34e3ee57311a283eed888df02d364f5415f4e633e0f4e5cd150f01",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/63-venue-floorplan",
+  "neighbours": [
+    "27",
+    "28"
+  ],
+  "palette": {
+    "page": "#f4efe8",
+    "surface": "#ffffff",
+    "ink": "#463442",
+    "accent": "#764259"
+  },
+  "fonts": [
+    "Libre Baskerville",
+    "DM Sans"
+  ],
+  "brief": "**Philosophy and fit.** Start with how people will use the space. Built for wedding venue, conference venue, event space. The visitor’s next step is to enquire about an event.\n\n**Visual grammar.** Use a plum and cream architectural plan with selectable seating configurations. Preserve the hierarchy of floorplans, room configurations, event packages; these patterns solve this business’s actual decision, rather than supplying interchangeable decoration.\n\n**Sample and interaction.** The Assembly Rooms is a fictional demonstration. The entry page establishes a complete visual direction, with configure the room and event enquiry as supporting states. Inputs use local deterministic fixtures; no request, order, application or payment is sent.\n\n**Responsive behaviour.** On a phone, keep the primary decision first, stack facts with explicit labels, preserve the order of the workflow, and provide comfortably sized controls. Wide diagrams scale; tabular facts retain their labels.\n\n**Adaptation.** Replace the fictional brand, prices, availability, qualifications and claims with verified client information. Preserve floorplans, room configurations, event packages. Use imagery to explain the place, people, work or product, with deliberate crops and honest captions. Do not turn this into a generic hero-and-card layout.\n\n**Identity and adaptation.** The event decision is spatial: switch between banquet, theatre and workshop arrangements, then compare the guest count with the selected capacity before reviewing the enquiry.",
+  "scope": "Complete visual reference with local sample interactions; no production business backend."
+}

@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "49",
   "slug": "parametric-studio",
   "name": "Parametric Studio",
@@ -7,10 +7,7 @@
   "family": "Retro & experimental",
   "status": "ready",
   "thesis": "Explain a design system by letting visitors change its rules and observe the result.",
-  "suitableFor": [
-    "Interactive",
-    "Portfolio"
-  ],
+  "suitableFor": ["Interactive", "Portfolio"],
   "character": "Expressive",
   "traits": {
     "composition": "Large SVG specimen stage beside labelled numeric controls and preset strip",
@@ -104,20 +101,33 @@
     }
   ],
   "sourcePath": "src/designs/49-parametric-studio",
-  "neighbours": [
-    "27",
-    "17"
-  ],
+  "neighbours": ["27", "17"],
   "palette": {
     "page": "#ecece5",
     "surface": "#f7f8ef",
     "ink": "#293b39",
     "accent": "#3f756a"
   },
-  "fonts": [
-    "Space Grotesk",
-    "IBM Plex Mono"
-  ],
+  "fonts": ["Space Grotesk", "IBM Plex Mono"],
   "brief": "**Philosophy and fit.** Explain a design system by letting visitors change its rules and observe the result. Suitable for generative design portfolios, configurable products, educational tools, and typography or fabrication experiments.\n\n**Visual grammar.** Pair a large specimen stage with an explicitly labelled control column, a short explanation, and a compact preset strip. Use fine measurement rules, neutral surfaces, technical typography, and colour that identifies adjustable properties. Render suitable geometry with SVG or CSS so the demonstration remains crisp and inspectable.\n\n**Specimen and flow.** *Pattern Works* demonstrates a fictional modular screen system. Choose a preset, adjust spacing and angle, and inspect the resulting pattern and parameter summary. Supporting states are a side-by-side preset comparison and a restored-default configuration. Values can persist in the URL for direct sharing.\n\n**Mobile and motion.** Stack the specimen above controls and provide numeric inputs alongside sliders. Changes update directly, with no perpetual animation or pointer-only controls. A static preset remains available if an enhancement fails.\n\n**Identity and effort.** Preserve visible relationships between controls and outcomes; avoid random decorative generators without a meaningful design question. **Effort: medium.**",
-  "scope": "An expansive sample page with representative local interactions; no production business backend."
+  "scope": "An expansive sample page with representative local interactions; no production business backend.",
+  "discovery": {
+    "industries": ["Design tools", "Engineering"],
+    "visitorGoals": ["Explore parameters"],
+    "conversionActions": ["Configure a pattern"],
+    "siteSize": "Application",
+    "interactionTypes": ["Live parameters", "URL state"],
+    "keywords": [
+      "Interactive",
+      "Portfolio",
+      "Controls visibly change the geometry",
+      "Numeric inputs accompany sliders",
+      "Reproducible URL parameters"
+    ]
+  },
+  "patterns": [
+    "Controls visibly change the geometry",
+    "Numeric inputs accompany sliders",
+    "Reproducible URL parameters"
+  ]
 }

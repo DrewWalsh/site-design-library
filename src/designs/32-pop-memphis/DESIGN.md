@@ -46,3 +46,7 @@ See [asset record](../../../docs/ASSETS.md). All vector diagrams and sample writ
 ## Verification
 
 Reviewed working sample. Browser checks cover entry-page reflow at 320, 390, 768, and 1440 pixels, keyboard entry, direct routes, and automated accessibility; both supporting routes are checked at 390 pixels. Capture metadata is stored in public/previews/32/capture.json and names the source content hash. Accessibility scans are supplementary; no formal WCAG certification or field-performance claim is made.
+
+## Distinctive composition
+
+The kit collection uses an oversized arch, a patterned print panel, and an asymmetric sculpture panel rather than three equal outlined cards. Geometric material play and patterned transitions distinguish it from Neo Brutalist Board’s regular hard-shadow grid.

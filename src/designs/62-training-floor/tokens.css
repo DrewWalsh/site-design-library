@@ -1,0 +1,12 @@
+.specimen {
+  --page: #e9eddf;
+  --surface: #fff;
+  --ink: #222c35;
+  --accent: #254ec7;
+  --line: color-mix(in srgb, var(--ink) 25%, transparent);
+  --heading: 'Bebas Neue', sans-serif;
+  --body: 'DM Sans', sans-serif;
+  --measure: 65ch;
+  --space: 8px;
+  --content: 1240px;
+}

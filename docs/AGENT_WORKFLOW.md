@@ -9,11 +9,17 @@
 
 ## Getting the evidence
 
-The live host serves `/references/ID-slug/DESIGN.md`, `tokens.css`, `Demo.vue`, and `design.json`. These are build-generated copies of the individual reference packages, so a model does not require private-repository access to read the selected example. `/catalogue.json` lists all 50 designs. The source repository remains private.
+The live host serves `/references/ID-slug/DESIGN.md`, `tokens.css`, `Demo.vue`, and `design.json`. These are build-generated copies of the individual reference packages, so a model does not require private-repository access to read the selected example. `/catalogue.json` lists all 75 designs. The source repository remains private.
 
 Each package includes desktop (1440 × 1000 viewport), phone (390 × 844), a supporting state, and a full-page desktop image. The full-page image can be taller than its recorded viewport. Image URLs use content hashes, and image metadata names the source hash, capture time, route, fixture, and viewport.
 
-For a local clone, `pnpm refs:fetch` downloads verified image copies. A development server can display these locally by setting `VITE_LOCAL_REFERENCES=1` before `pnpm dev`. Runtime fonts, illustrations, and photographs are already in the repository.
+For a local clone, `pnpm refs:fetch` downloads verified reference-image copies. A development server can display these locally by setting `VITE_LOCAL_REFERENCES=1` before `pnpm dev`. Runtime fonts and the original seven images are bundled. The commercial examples use nineteen additional images hosted in Tigris; their URLs, provenance and checksums are in `/art/commercial-manifest.json`. Public asset notes are available at `/docs/ASSETS.md` and `/docs/COMMERCIAL_ASSETS.md`.
+
+## Find a commercial direction
+
+Search by the business and its visitor’s decision, not only the design name. “Storage” finds both the general service reference and Unit Finder; “appointment-based local business” finds staff-led booking; “enquiry-driven B2B” finds technical quotation patterns. Industry, visitor goal, conversion action, site structure, and interaction filters can be combined and shared through the gallery URL.
+
+Every metadata record includes a `discovery` object and a `patterns` array. Preserve the useful business pattern when adapting the visual system: staff-first availability, capacity recommendations, coverage checks, before/after evidence, branch-specific services, material-led commissions, or order collection. Do not apply every commercial pattern to every business.
 
 ## Scope of the examples
 

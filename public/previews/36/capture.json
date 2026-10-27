@@ -1,12 +1,12 @@
 {
   "designId": "36",
-  "sourceRevision": "sha256:a263f3adfb7d13e856e7916c86071688eb83e5f5a36459275f64035ba5862167",
-  "capturedAt": "2026-10-26T22:49:43.010Z",
+  "sourceRevision": "sha256:f2bb439bec0182b391db8dcbdf23eba3c1bfab8b2d7c7767a132bef1d17063da",
+  "capturedAt": "2026-10-27T00:06:52.070Z",
   "browser": "156.0.4314.42",
   "captures": [
     {
       "file": "/previews/36/desktop.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/36/a7faae3f4766c9f0-desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/36/80276e43ac1d97dd-desktop.jpg",
       "route": "/preview/36-punk-zine/start",
       "viewport": {
         "width": 1440,
@@ -14,13 +14,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:a263f3adfb7d13e856e7916c86071688eb83e5f5a36459275f64035ba5862167",
-      "sha256": "a7faae3f4766c9f0b40443a3db9b37642d5552d26bffe38b918fcd0a93ea2878",
+      "sourceRevision": "sha256:f2bb439bec0182b391db8dcbdf23eba3c1bfab8b2d7c7767a132bef1d17063da",
+      "sha256": "80276e43ac1d97dd5b951fdf1147befcac69ebd33555f4dfb90b1164de4c018b",
       "fullPage": false
     },
     {
       "file": "/previews/36/mobile.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/36/6c4fc38c51866061-mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/36/3070cc9d4a2a2ee5-mobile.jpg",
       "route": "/preview/36-punk-zine/start",
       "viewport": {
         "width": 390,
@@ -28,13 +28,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:a263f3adfb7d13e856e7916c86071688eb83e5f5a36459275f64035ba5862167",
-      "sha256": "6c4fc38c5186606111a45e502122cee63c56aa2cd20322fa5fd339f88d41bade",
+      "sourceRevision": "sha256:f2bb439bec0182b391db8dcbdf23eba3c1bfab8b2d7c7767a132bef1d17063da",
+      "sha256": "3070cc9d4a2a2ee58272bf09ac04180231218eca1bfc52da8f798279b34148c3",
       "fullPage": false
     },
     {
       "file": "/previews/36/detail.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/36/a35f9be3fa34c3ae-detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/36/ac2b0ed50e2321d6-detail.jpg",
       "route": "/preview/36-punk-zine/article",
       "viewport": {
         "width": 1440,
@@ -42,13 +42,13 @@
       },
       "state": "article",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:a263f3adfb7d13e856e7916c86071688eb83e5f5a36459275f64035ba5862167",
-      "sha256": "a35f9be3fa34c3ae5a30a24c35ab8e43cfd152b4a275fe6531a785ccacdeffed",
+      "sourceRevision": "sha256:f2bb439bec0182b391db8dcbdf23eba3c1bfab8b2d7c7767a132bef1d17063da",
+      "sha256": "ac2b0ed50e2321d6df78cd35da66e6e48a59bdeeb853fdd1aca2a349d35b7d94",
       "fullPage": false
     },
     {
       "file": "/previews/36/full-page.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/36/539bbf664ea672c6-full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/36/2fcd4186b62369ca-full-page.jpg",
       "route": "/preview/36-punk-zine/start",
       "viewport": {
         "width": 1440,
@@ -56,8 +56,8 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:a263f3adfb7d13e856e7916c86071688eb83e5f5a36459275f64035ba5862167",
-      "sha256": "539bbf664ea672c67aad74a1c15973b142b48a5b3203e881df4553590aeae0d8",
+      "sourceRevision": "sha256:f2bb439bec0182b391db8dcbdf23eba3c1bfab8b2d7c7767a132bef1d17063da",
+      "sha256": "2fcd4186b62369cacfba4e5d71a89c5b118c32464984639a7782b6a5e21723c0",
       "fullPage": true
     }
   ]

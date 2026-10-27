@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "23",
   "slug": "market-bazaar",
   "name": "Market Bazaar",
@@ -7,10 +7,7 @@
   "family": "Commerce & places",
   "status": "ready",
   "thesis": "Make the individuality of many sellers part of the browsing experience.",
-  "suitableFor": [
-    "Commerce",
-    "Directories"
-  ],
+  "suitableFor": ["Commerce", "Directories"],
   "character": "Expressive",
   "traits": {
     "composition": "Distinct vendor stalls with coloured signs and horizontal product shelves",
@@ -104,20 +101,33 @@
     }
   ],
   "sourcePath": "src/designs/23-market-bazaar",
-  "neighbours": [
-    "22",
-    "32"
-  ],
+  "neighbours": ["22", "32"],
   "palette": {
     "page": "#fff6df",
     "surface": "#ffffff",
     "ink": "#3f3429",
     "accent": "#b3482d"
   },
-  "fonts": [
-    "Space Grotesk",
-    "DM Sans"
-  ],
+  "fonts": ["Space Grotesk", "DM Sans"],
   "brief": "**Philosophy and fit.** Make the individuality of many sellers part of the browsing experience. Useful for craft marketplaces, community markets, independent food halls, and local maker directories.\n\n**Visual grammar.** Organise the page into recognisable stalls rather than a uniform product wall. Each vendor receives a coloured sign, short introduction, and horizontal shelf of items. Warm cream supports paprika, cobalt, and mustard accents. Rounded display lettering identifies stalls; straightforward body type handles prices, ingredients, and collection information.\n\n**Specimen and flow.** *Saturday Market* contains fictional bakers, potters, and growers. Choose a market date, browse stalls, and assemble a local collection basket. Supporting views include a vendor profile and a basket grouped by collection location. An empty date state explains when the next market occurs.\n\n**Responsive behaviour.** Stalls become stacked sections with anchor navigation. Shelves use explicit previous and next controls as well as touch scrolling; products remain reachable without dragging.\n\n**Identity rules.** Preserve vendor personality within predictable buying controls. Avoid making every stall a different application or replacing useful categories with decorative chaos. **Effort: medium.**",
-  "scope": "An expansive sample page with representative local interactions; no production business backend."
+  "scope": "An expansive sample page with representative local interactions; no production business backend.",
+  "discovery": {
+    "industries": ["Marketplace", "Independent retail"],
+    "visitorGoals": ["Discover a seller"],
+    "conversionActions": ["Reserve an item"],
+    "siteSize": "Storefront",
+    "interactionTypes": ["Seller profiles", "Product browsing"],
+    "keywords": [
+      "Commerce",
+      "Directories",
+      "Stall-level personalities",
+      "Products grouped by maker",
+      "Collection basket grouped by location"
+    ]
+  },
+  "patterns": [
+    "Stall-level personalities",
+    "Products grouped by maker",
+    "Collection basket grouped by location"
+  ]
 }

@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "38",
   "slug": "pixel-arcade",
   "name": "Pixel Arcade",
@@ -7,10 +7,7 @@
   "family": "Playful & material",
   "status": "ready",
   "thesis": "Make browsing feel like selecting a game from a cabinet.",
-  "suitableFor": [
-    "Events",
-    "Games"
-  ],
+  "suitableFor": ["Events", "Games"],
   "character": "Expressive",
   "traits": {
     "composition": "Arcade selection list beside a framed preview window",
@@ -104,20 +101,33 @@
     }
   ],
   "sourcePath": "src/designs/38-pixel-arcade",
-  "neighbours": [
-    "40",
-    "42"
-  ],
+  "neighbours": ["40", "42"],
   "palette": {
     "page": "#171b30",
     "surface": "#28314b",
     "ink": "#e8e8d9",
     "accent": "#f1c568"
   },
-  "fonts": [
-    "Press Start 2P",
-    "DM Sans"
-  ],
+  "fonts": ["Press Start 2P", "DM Sans"],
   "brief": "**Philosophy and fit.** Make browsing feel like selecting a game from a cabinet. Suitable for game clubs, indie releases, playful events, and compact entertainment directories.\n\n**Visual grammar.** A framed screen contains a prominent selection list, a preview window, and a narrow status strip. Use pixel display lettering for short titles, ordinary readable type for descriptions, a dark background, sharply separated saturated colours, and deliberately stepped borders. Navigation uses visible buttons and links; directional keys can be an optional enhancement.\n\n**Specimen and flow.** *Quarter Club* is a fictional local games collective. Browse event cartridges, open a tournament’s details, and reserve a sample attendance slot locally. Supporting states are a filtered event selection and an explicit demo reservation confirmation. Rankings and attendance figures come from labelled fixtures.\n\n**Mobile and motion.** Replace the cabinet frame with a compact selector above the preview. Controls remain finger sized. Disable flashes and looping attract sequences; sound starts only through a deliberate user action.\n\n**Identity and effort.** Preserve discrete screen composition and game menu hierarchy; avoid neon decoration over standard SaaS cards. **Effort: medium.**",
-  "scope": "An expansive sample page with representative local interactions; no production business backend."
+  "scope": "An expansive sample page with representative local interactions; no production business backend.",
+  "discovery": {
+    "industries": ["Games", "Entertainment"],
+    "visitorGoals": ["Play a game"],
+    "conversionActions": ["Start a session"],
+    "siteSize": "Application",
+    "interactionTypes": ["Game controls", "Score feedback"],
+    "keywords": [
+      "Events",
+      "Games",
+      "Discrete game-menu hierarchy",
+      "Stepped borders and concise pixel titles",
+      "Ordinary accessible reservation controls"
+    ]
+  },
+  "patterns": [
+    "Discrete game-menu hierarchy",
+    "Stepped borders and concise pixel titles",
+    "Ordinary accessible reservation controls"
+  ]
 }

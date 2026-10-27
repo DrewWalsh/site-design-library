@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "34",
   "slug": "hand-drawn-desk",
   "name": "Hand Drawn Desk",
@@ -48,7 +48,7 @@
   "referenceImages": [
     {
       "file": "/previews/34/desktop.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/34/937435240c76a1a3-desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/34/ddc9f36dc5c5c6b6-desktop.jpg",
       "route": "/preview/34-hand-drawn-desk/start",
       "viewport": {
         "width": 1440,
@@ -56,13 +56,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:23126be96a60977a4f358f1a7090c1861de7f2a402db3334f5ec5a4ff41b5417",
-      "sha256": "937435240c76a1a3e9c078af9bb6de28ae0115cf867e6583c717cba79006a2ad",
+      "sourceRevision": "sha256:a5dd3c2c51dda64772e9ecdde1560eec1a541284b0dd0059bff6624447f39903",
+      "sha256": "ddc9f36dc5c5c6b6d2e742407ad5b6c8ebb73032c51e42136e7e125596371675",
       "fullPage": false
     },
     {
       "file": "/previews/34/mobile.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/34/b6df514e4a275c8b-mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/34/8005b9d1051a7161-mobile.jpg",
       "route": "/preview/34-hand-drawn-desk/start",
       "viewport": {
         "width": 390,
@@ -70,13 +70,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:23126be96a60977a4f358f1a7090c1861de7f2a402db3334f5ec5a4ff41b5417",
-      "sha256": "b6df514e4a275c8bad0eeef702b6af9f68662ef3b03e2d3dd4ae34cd0b99e717",
+      "sourceRevision": "sha256:a5dd3c2c51dda64772e9ecdde1560eec1a541284b0dd0059bff6624447f39903",
+      "sha256": "8005b9d1051a71614aa903b388f5ae2c0463e4e2b447941c66b577b31e3a55fa",
       "fullPage": false
     },
     {
       "file": "/previews/34/detail.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/34/dca57202c2e8c39d-detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/34/a920173bb1db0e2e-detail.jpg",
       "route": "/preview/34-hand-drawn-desk/practice",
       "viewport": {
         "width": 1440,
@@ -84,13 +84,13 @@
       },
       "state": "practice",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:23126be96a60977a4f358f1a7090c1861de7f2a402db3334f5ec5a4ff41b5417",
-      "sha256": "dca57202c2e8c39d8f4fcd1adc72afacc476bdfa38c24937148ca7b2d72d82e0",
+      "sourceRevision": "sha256:a5dd3c2c51dda64772e9ecdde1560eec1a541284b0dd0059bff6624447f39903",
+      "sha256": "a920173bb1db0e2e1f1f10204421fdf3973de208227565b07eda897812cbb8ce",
       "fullPage": false
     },
     {
       "file": "/previews/34/full-page.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/34/86ce7593b08bd382-full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/34/2b73a52d018ee6c9-full-page.jpg",
       "route": "/preview/34-hand-drawn-desk/start",
       "viewport": {
         "width": 1440,
@@ -98,8 +98,8 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:23126be96a60977a4f358f1a7090c1861de7f2a402db3334f5ec5a4ff41b5417",
-      "sha256": "86ce7593b08bd382898827f62517d500ce6bc808fb68932ea08e05141043075b",
+      "sourceRevision": "sha256:a5dd3c2c51dda64772e9ecdde1560eec1a541284b0dd0059bff6624447f39903",
+      "sha256": "2b73a52d018ee6c91c0246b39231c3fa459321191e5aeb03803e360ef12cf3bb",
       "fullPage": true
     }
   ],
@@ -119,6 +119,35 @@
     "DM Sans",
     "Caveat"
   ],
-  "brief": "**Philosophy and fit.** Show thought developing through explanation, annotation, and revision. Fits tutorials, workshop materials, personal teaching sites, and approachable technical writing.\n\n**Visual grammar.** Make numbered illustrated steps the main structure: a large diagram, a short explanation, and a practice prompt. Attach callouts to parts of the drawing rather than maintaining a prose annotation margin. Warm paper, graphite, blue ink, and a red correction accent support a readable sans body face. Handwriting appears only in short secondary notes; a compact step index supplies navigation.\n\n**Specimen and flow.** *Explain It Slowly* teaches an original simple mechanism. Inspect a diagram, reveal labelled forces or moving parts, and predict the next step. Supporting views include the illustrated lesson index and answer feedback that connects the prediction to the diagram. The reader can toggle annotations without losing their position.\n\n**Responsive behaviour.** Drawing callouts become a numbered explanation below each diagram. Diagrams include captions and text accounts; animation never replaces the written explanation of how a mechanism works.\n\n**Identity rules.** Preserve explanatory annotation and visible thinking. Avoid fake handwritten paragraphs, random scribbles with no meaning, and confusing a teaching notebook with an archival card cabinet. **Effort: medium.**",
-  "scope": "An expansive sample page with representative local interactions; no production business backend."
+  "brief": "**Philosophy and fit.** Show thought developing through explanation, annotation, and revision. Fits tutorials, workshop materials, personal teaching sites, and approachable technical writing.\n\n**Visual grammar.** Make numbered illustrated steps the main structure: a large diagram, a short explanation, and a practice prompt. Attach callouts to parts of the drawing rather than maintaining a prose annotation margin. Warm paper, graphite, blue ink, and a red correction accent support a readable sans body face. Handwriting appears only in short secondary notes; a compact step index supplies navigation.\n\n**Specimen and flow.** *Explain It Slowly* teaches an original simple mechanism. Inspect a diagram, reveal labelled forces or moving parts, and predict the next step. Supporting views include the illustrated lesson index and answer feedback that connects the prediction to the diagram. The reader can toggle annotations without losing their position.\n\n**Responsive behaviour.** Drawing callouts become a numbered explanation below each diagram. Diagrams include captions and text accounts; animation never replaces the written explanation of how a mechanism works.\n\n**Identity rules.** Preserve explanatory annotation and visible thinking. Avoid fake handwritten paragraphs, random scribbles with no meaning, and confusing a teaching notebook with an archival card cabinet. **Effort: medium.**\n\n**Distinctive composition.** Handwritten labels belong to the sketchbook, making its annotations distinct from the paper archive and playful geometric references.",
+  "scope": "An expansive sample page with representative local interactions; no production business backend.",
+  "discovery": {
+    "industries": [
+      "Illustration",
+      "Creative studio"
+    ],
+    "visitorGoals": [
+      "Explore a portfolio"
+    ],
+    "conversionActions": [
+      "Enquire about a project"
+    ],
+    "siteSize": "Portfolio & enquiry",
+    "interactionTypes": [
+      "Sketchbook",
+      "Project details"
+    ],
+    "keywords": [
+      "Education",
+      "Reading",
+      "Diagram-led teaching",
+      "Callouts attached to mechanics",
+      "A prediction followed by explanation"
+    ]
+  },
+  "patterns": [
+    "Diagram-led teaching",
+    "Callouts attached to mechanics",
+    "A prediction followed by explanation"
+  ]
 }

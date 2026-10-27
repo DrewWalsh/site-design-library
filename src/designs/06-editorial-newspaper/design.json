@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "06",
   "slug": "editorial-newspaper",
   "name": "Editorial Newspaper",
@@ -7,10 +7,7 @@
   "family": "Clarity & editorial",
   "status": "ready",
   "thesis": "Communicate editorial judgement across many stories at once.",
-  "suitableFor": [
-    "Editorial",
-    "News"
-  ],
+  "suitableFor": ["Editorial", "News"],
   "character": "Restrained",
   "traits": {
     "composition": "Newspaper masthead, ranked lead story, secondary columns, and compact briefs",
@@ -104,20 +101,33 @@
     }
   ],
   "sourcePath": "src/designs/06-editorial-newspaper",
-  "neighbours": [
-    "09",
-    "07"
-  ],
+  "neighbours": ["09", "07"],
   "palette": {
     "page": "#f8f6ee",
     "surface": "#ffffff",
     "ink": "#232825",
     "accent": "#9b302f"
   },
-  "fonts": [
-    "Libre Baskerville",
-    "DM Sans"
-  ],
+  "fonts": ["Libre Baskerville", "DM Sans"],
   "brief": "**Philosophy and fit.** Communicate editorial judgement across many stories at once. Suitable for newsrooms, city publications, trade journals, and frequently updated magazines.\n\n**Visual grammar.** A strong masthead, date line, section navigation, lead story, secondary columns, and compact briefs create an unmistakable front page. Use assertive serif headlines, readable body text, small sans metadata, warm white, near-black ink, thin dividing rules, and restrained red alerts. Image scale indicates editorial priority. Stories share a typographic system without being enclosed in repetitive cards.\n\n**Specimen and flow.** *The Northbank Record* offers fictional local reporting. Visitors browse the front page, switch section, and open a feature with related coverage. Supporting states include a search results page and a saved-reading list with a clear empty state.\n\n**Adaptation and identity.** Mobile keeps the lead hierarchy and orders secondary stories explicitly rather than stacking desktop columns blindly. Preserve visible editorial ranking, meaningful sections, and useful metadata; avoid infinite feeds, identical story weights, and a hero that consumes the whole opening screen. **Effort: medium.**",
-  "scope": "An expansive sample page with representative local interactions; no production business backend."
+  "scope": "An expansive sample page with representative local interactions; no production business backend.",
+  "discovery": {
+    "industries": ["News", "Journalism", "Local publishing"],
+    "visitorGoals": ["Follow the news"],
+    "conversionActions": ["Read an article"],
+    "siteSize": "Digital publication",
+    "interactionTypes": ["Article navigation", "Topic filters"],
+    "keywords": [
+      "Editorial",
+      "News",
+      "Visible editorial ranking",
+      "Unequal image and headline scales",
+      "Rules instead of story cards"
+    ]
+  },
+  "patterns": [
+    "Visible editorial ranking",
+    "Unequal image and headline scales",
+    "Rules instead of story cards"
+  ]
 }

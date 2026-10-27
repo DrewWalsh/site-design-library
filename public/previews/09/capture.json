@@ -1,12 +1,12 @@
 {
   "designId": "09",
-  "sourceRevision": "sha256:2e569a394c53c3bca17468893f2b26c8d2c862c58b02e3dff82534093e944952",
-  "capturedAt": "2026-10-26T22:48:18.652Z",
+  "sourceRevision": "sha256:dd7f72f1c9ddbd90151d8d36e12895aadf96beb1b123f2dc8a5b1d43764db101",
+  "capturedAt": "2026-10-27T00:06:14.728Z",
   "browser": "156.0.4314.42",
   "captures": [
     {
       "file": "/previews/09/desktop.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/09/6d1fd227eebb5212-desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/09/844c846a75b06e6c-desktop.jpg",
       "route": "/preview/09-glossy-fashion/start",
       "viewport": {
         "width": 1440,
@@ -14,13 +14,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:2e569a394c53c3bca17468893f2b26c8d2c862c58b02e3dff82534093e944952",
-      "sha256": "6d1fd227eebb5212c9fd3904cbdfec48ce860d12e0df718bc555844f917a356e",
+      "sourceRevision": "sha256:dd7f72f1c9ddbd90151d8d36e12895aadf96beb1b123f2dc8a5b1d43764db101",
+      "sha256": "844c846a75b06e6c87bcf0ccfa91da3326e472204c4b581f7c5ff42d96dc2ff6",
       "fullPage": false
     },
     {
       "file": "/previews/09/mobile.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/09/6da840070286eac2-mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/09/f460d2f9fd5c7d43-mobile.jpg",
       "route": "/preview/09-glossy-fashion/start",
       "viewport": {
         "width": 390,
@@ -28,13 +28,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:2e569a394c53c3bca17468893f2b26c8d2c862c58b02e3dff82534093e944952",
-      "sha256": "6da840070286eac23949a70e19212ad12a2910a48630157d99ae7af49d4fc7dc",
+      "sourceRevision": "sha256:dd7f72f1c9ddbd90151d8d36e12895aadf96beb1b123f2dc8a5b1d43764db101",
+      "sha256": "f460d2f9fd5c7d434f1c42e410cc7746d16e04f4fc9a61a67050f6a06171c122",
       "fullPage": false
     },
     {
       "file": "/previews/09/detail.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/09/5622ea43cf0ea6b6-detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/09/e20905f4be8bb032-detail.jpg",
       "route": "/preview/09-glossy-fashion/story",
       "viewport": {
         "width": 1440,
@@ -42,13 +42,13 @@
       },
       "state": "story",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:2e569a394c53c3bca17468893f2b26c8d2c862c58b02e3dff82534093e944952",
-      "sha256": "5622ea43cf0ea6b67dc6f3d61547e6bba3cbd9e118e82dd4a1b8bfcd7b8dc0c4",
+      "sourceRevision": "sha256:dd7f72f1c9ddbd90151d8d36e12895aadf96beb1b123f2dc8a5b1d43764db101",
+      "sha256": "e20905f4be8bb0323066c80204862fc082f723439dc32897989d59f929fc4143",
       "fullPage": false
     },
     {
       "file": "/previews/09/full-page.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/09/a3894fbe10e7159e-full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/09/47eda8441e6aec65-full-page.jpg",
       "route": "/preview/09-glossy-fashion/start",
       "viewport": {
         "width": 1440,
@@ -56,8 +56,8 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:2e569a394c53c3bca17468893f2b26c8d2c862c58b02e3dff82534093e944952",
-      "sha256": "a3894fbe10e7159e2353ebedb5e5ea7e591b1bd84163f0bc6de36d02d6261c20",
+      "sourceRevision": "sha256:dd7f72f1c9ddbd90151d8d36e12895aadf96beb1b123f2dc8a5b1d43764db101",
+      "sha256": "47eda8441e6aec65499f3306a369be4e7764c293517595d8f824086c4f0fe0d9",
       "fullPage": true
     }
   ]

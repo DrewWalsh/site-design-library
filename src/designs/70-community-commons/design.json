@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 2,
+  "id": "70",
+  "slug": "community-commons",
+  "name": "Community Commons",
+  "brand": "Maple Street / Commons",
+  "family": "Community & institutions",
+  "status": "ready",
+  "thesis": "Put the useful things a community shares in one welcoming place.",
+  "suitableFor": [
+    "Club",
+    "Association",
+    "Neighbourhood group"
+  ],
+  "character": "Expressive",
+  "traits": {
+    "composition": "welcoming coloured noticeboard with dated notices and plain joining steps",
+    "navigation": "Neighbourhood bulletin, event list, meeting notes and joining form",
+    "typography": "DM Sans",
+    "density": "Low",
+    "imagery": "Original sun mark, pinned notices and calendar-like event cards",
+    "surface": "Pastel noticeboard papers on warm cream",
+    "motion": "Minimal"
+  },
+  "effort": "Low",
+  "definingFeatures": [
+    "Events",
+    "Meeting notes",
+    "Resources"
+  ],
+  "adaptableChoices": [
+    "Verified business content",
+    "Brand and subject",
+    "Equivalent licensed typefaces"
+  ],
+  "discovery": {
+    "industries": [
+      "Club",
+      "Association",
+      "Neighbourhood group"
+    ],
+    "visitorGoals": [
+      "Participate locally"
+    ],
+    "conversionActions": [
+      "Join a community"
+    ],
+    "siteSize": "Community site",
+    "interactionTypes": [
+      "Events board",
+      "Meeting notes",
+      "Membership"
+    ],
+    "keywords": [
+      "Club",
+      "Association",
+      "Neighbourhood group",
+      "Join a community",
+      "Community site",
+      "Events",
+      "Meeting notes",
+      "Resources",
+      "Membership"
+    ]
+  },
+  "patterns": [
+    "Events",
+    "Meeting notes",
+    "Resources",
+    "Membership"
+  ],
+  "entryRoute": "/preview/70-community-commons/start",
+  "states": [
+    {
+      "key": "events",
+      "label": "Community calendar",
+      "route": "/preview/70-community-commons/events"
+    },
+    {
+      "key": "join",
+      "label": "Join the commons",
+      "route": "/preview/70-community-commons/join"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/70/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/70/8399bda17ef3ce19-desktop.jpg",
+      "route": "/preview/70-community-commons/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:db6dfbef2855ee3e09d3698b4b77114de868aaff7590500e219ce02ce8493389",
+      "sha256": "8399bda17ef3ce19bd903fbebf218cbcef55be8151a7e287fac362bfcf7b5c75",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/70/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/70/ccf299b8f03aca40-mobile.jpg",
+      "route": "/preview/70-community-commons/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:db6dfbef2855ee3e09d3698b4b77114de868aaff7590500e219ce02ce8493389",
+      "sha256": "ccf299b8f03aca403492b362d3aecd51fbcddc499a72b170a621b55bd3dc3699",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/70/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/70/b43bc01363e44dff-detail.jpg",
+      "route": "/preview/70-community-commons/events",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "events",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:db6dfbef2855ee3e09d3698b4b77114de868aaff7590500e219ce02ce8493389",
+      "sha256": "b43bc01363e44dffacacb9572461e5eea9d38f4baef819bd2efdd7d0a637fb48",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/70/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/70/04df2ceea60c5aa9-full-page.jpg",
+      "route": "/preview/70-community-commons/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:db6dfbef2855ee3e09d3698b4b77114de868aaff7590500e219ce02ce8493389",
+      "sha256": "04df2ceea60c5aa969c1d063bf2d5e1d2e773137b4c09b4524cb3a3fe6f33f69",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/70-community-commons",
+  "neighbours": [
+    "35",
+    "73"
+  ],
+  "palette": {
+    "page": "#f6f0df",
+    "surface": "#ffffff",
+    "ink": "#3c4135",
+    "accent": "#4b6348"
+  },
+  "fonts": [
+    "DM Sans"
+  ],
+  "brief": "**Philosophy and fit.** Put the useful things a community shares in one welcoming place. Built for club, association, neighbourhood group. The visitor’s next step is to join a community.\n\n**Visual grammar.** Use a welcoming coloured noticeboard with dated notices and plain joining steps. Preserve the hierarchy of events, meeting notes, resources, membership; these patterns solve this business’s actual decision, rather than supplying interchangeable decoration.\n\n**Sample and interaction.** Maple Street / Commons is a fictional demonstration. The entry page establishes a complete visual direction, with community calendar and join the commons as supporting states. Inputs use local deterministic fixtures; no request, order, application or payment is sent.\n\n**Responsive behaviour.** On a phone, keep the primary decision first, stack facts with explicit labels, preserve the order of the workflow, and provide comfortably sized controls. Wide diagrams scale; tabular facts retain their labels.\n\n**Adaptation.** Replace the fictional brand, prices, availability, qualifications and claims with verified client information. Preserve events, meeting notes, resources. Use imagery to explain the place, people, work or product, with deliberate crops and honest captions. Do not turn this into a generic hero-and-card layout.\n\n**Identity and adaptation.** Use a welcoming bulletin board with different notice sizes for joining, dates and shared resources. Keep meeting notes discoverable so the organisation feels participatory rather than promotional.",
+  "scope": "Complete visual reference with local sample interactions; no production business backend."
+}

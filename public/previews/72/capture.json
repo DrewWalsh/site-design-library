@@ -1,0 +1,64 @@
+{
+  "designId": "72",
+  "sourceRevision": "sha256:10d7ee655ab47e880bc7e714db2715940d74a3bd8dc4ef15b936a06fb051b043",
+  "capturedAt": "2026-10-27T00:08:22.400Z",
+  "browser": "156.0.4314.42",
+  "captures": [
+    {
+      "file": "/previews/72/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/72/58e058a5840e0496-desktop.jpg",
+      "route": "/preview/72-careers-recruitment/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:10d7ee655ab47e880bc7e714db2715940d74a3bd8dc4ef15b936a06fb051b043",
+      "sha256": "58e058a5840e0496e4096c3c6f1f14ca62d604771058fc9843c82382c3fa17d1",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/72/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/72/15841544b8a2fd0d-mobile.jpg",
+      "route": "/preview/72-careers-recruitment/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:10d7ee655ab47e880bc7e714db2715940d74a3bd8dc4ef15b936a06fb051b043",
+      "sha256": "15841544b8a2fd0dea01981ea4ec15c48ffb3de0fe49d31a9d93511dc1fe1bf1",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/72/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/72/b67ac2bf5a9fd387-detail.jpg",
+      "route": "/preview/72-careers-recruitment/role",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "role",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:10d7ee655ab47e880bc7e714db2715940d74a3bd8dc4ef15b936a06fb051b043",
+      "sha256": "b67ac2bf5a9fd387df93cc14bc46353ae29633e9ea539d9602c215cfae82d7a6",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/72/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/72/b52d11bf6d5c0bb3-full-page.jpg",
+      "route": "/preview/72-careers-recruitment/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:10d7ee655ab47e880bc7e714db2715940d74a3bd8dc4ef15b936a06fb051b043",
+      "sha256": "b52d11bf6d5c0bb3edc0dcb81ff3130aa7c9e34e0b3b07bf6027f788867566ae",
+      "fullPage": true
+    }
+  ]
+}

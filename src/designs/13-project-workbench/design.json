@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "13",
   "slug": "project-workbench",
   "name": "Project Workbench",
@@ -7,10 +7,7 @@
   "family": "Workspaces & discovery",
   "status": "ready",
   "thesis": "Keep a project's structure, current object, and relevant properties available together.",
-  "suitableFor": [
-    "Workspaces",
-    "Authoring"
-  ],
+  "suitableFor": ["Workspaces", "Authoring"],
   "character": "Restrained",
   "traits": {
     "composition": "Three-pane project tree, central scene, and contextual inspector",
@@ -104,19 +101,33 @@
     }
   ],
   "sourcePath": "src/designs/13-project-workbench",
-  "neighbours": [
-    "11",
-    "12"
-  ],
+  "neighbours": ["11", "12"],
   "palette": {
     "page": "#20262c",
     "surface": "#2b343c",
     "ink": "#e5ecec",
     "accent": "#8ed2ba"
   },
-  "fonts": [
-    "DM Sans"
-  ],
+  "fonts": ["DM Sans"],
   "brief": "**Philosophy and fit.** Keep a project's structure, current object, and relevant properties available together. Suitable for content editors, asset managers, authoring tools, and technical project interfaces.\n\n**Visual grammar.** Use a three-pane composition: a hierarchical navigator, a central document or object view, and a contextual inspector. A restrained app header holds global actions. Neutral sans text, monospace identifiers, graphite surfaces, bright readable text, and a single teal selection accent establish a workmanlike environment. Pane boundaries and selected states should be clear without elaborate chrome.\n\n**Specimen and flow.** *Scene Workshop* contains a fictional collection of game scenes. Users select a scene, edit its descriptive metadata, and preview the resulting scene card. Supporting states show unsaved changes with a discard action and a search result that opens the matching object.\n\n**Adaptation and identity.** Mobile converts panes into labelled views while preserving selection and edits. Preserve hierarchical context and the relationship between object and inspector; avoid turning the centre into a metrics dashboard or building a full code editor. **Effort: medium.**",
-  "scope": "An expansive sample page with representative local interactions; no production business backend."
+  "scope": "An expansive sample page with representative local interactions; no production business backend.",
+  "discovery": {
+    "industries": ["Project management", "Software"],
+    "visitorGoals": ["Coordinate a project"],
+    "conversionActions": ["Update a task"],
+    "siteSize": "Application",
+    "interactionTypes": ["Task board", "Project details"],
+    "keywords": [
+      "Workspaces",
+      "Authoring",
+      "Visible project context",
+      "Object and properties stay connected",
+      "Clear unsaved and discard states"
+    ]
+  },
+  "patterns": [
+    "Visible project context",
+    "Object and properties stay connected",
+    "Clear unsaved and discard states"
+  ]
 }

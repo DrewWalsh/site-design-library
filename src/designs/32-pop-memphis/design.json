@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "32",
   "slug": "pop-memphis",
   "name": "Pop Memphis",
@@ -13,12 +13,12 @@
   ],
   "character": "Expressive",
   "traits": {
-    "composition": "Offset patterned collection blocks anchored by a solid navigation strip",
+    "composition": "Playful kit composition with unequal arch, print and sculpture panels",
     "navigation": "Kit selection and an ordinary bundle builder",
     "typography": "Space Grotesk + DM Sans",
     "density": "Medium",
     "imagery": "Original CSS illustrations and graphic studies",
-    "surface": "Pastels, off-kilter shapes, dark hard shadows and asymmetric outlines",
+    "surface": "Soft material colours, independent geometric shapes and pattern-led transitions",
     "motion": "Minimal"
   },
   "effort": "Medium",
@@ -48,7 +48,7 @@
   "referenceImages": [
     {
       "file": "/previews/32/desktop.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/32/bbdf6460dab5a43a-desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/32/c08418d0d078851e-desktop.jpg",
       "route": "/preview/32-pop-memphis/start",
       "viewport": {
         "width": 1440,
@@ -56,8 +56,8 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:3f8c2fd15baf125d136b22699b95dad2d8af18180a3477b3d33b8c0a1edc6acd",
-      "sha256": "bbdf6460dab5a43a9b5e7a931947b88679c2cb46e7d1d90f48c3efbc2ab6fc4f",
+      "sourceRevision": "sha256:b77cac416f23c60b8d479885e35ef18aed386c17e6c02bfb4339e6648358f781",
+      "sha256": "c08418d0d078851efd3a0956a7a7040e724a9b63fadbab65f14fe693a2aeec00",
       "fullPage": false
     },
     {
@@ -70,13 +70,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:3f8c2fd15baf125d136b22699b95dad2d8af18180a3477b3d33b8c0a1edc6acd",
+      "sourceRevision": "sha256:b77cac416f23c60b8d479885e35ef18aed386c17e6c02bfb4339e6648358f781",
       "sha256": "4a175ede6901eda92aabfc2e3fb828e2ce905e7a3eb7e52afba924700865fc73",
       "fullPage": false
     },
     {
       "file": "/previews/32/detail.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/32/528a09e2c1247b74-detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/32/f2dc272e01f5d6bc-detail.jpg",
       "route": "/preview/32-pop-memphis/bundle",
       "viewport": {
         "width": 1440,
@@ -84,13 +84,13 @@
       },
       "state": "bundle",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:3f8c2fd15baf125d136b22699b95dad2d8af18180a3477b3d33b8c0a1edc6acd",
-      "sha256": "528a09e2c1247b742241817ccaf4ca7cfe7d5e7bc7c9c7b57b0ddcfe8b1cdf64",
+      "sourceRevision": "sha256:b77cac416f23c60b8d479885e35ef18aed386c17e6c02bfb4339e6648358f781",
+      "sha256": "f2dc272e01f5d6bc24107eeaa9354d25a85ad2930f772439146338d5a33721ea",
       "fullPage": false
     },
     {
       "file": "/previews/32/full-page.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/32/3c0a9fcdb4b1bc3f-full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/32/8c7cd328f0309e8d-full-page.jpg",
       "route": "/preview/32-pop-memphis/start",
       "viewport": {
         "width": 1440,
@@ -98,8 +98,8 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:3f8c2fd15baf125d136b22699b95dad2d8af18180a3477b3d33b8c0a1edc6acd",
-      "sha256": "3c0a9fcdb4b1bc3faec57d12239ec04969bde9c6ca459440cda3fd84a2270e5f",
+      "sourceRevision": "sha256:b77cac416f23c60b8d479885e35ef18aed386c17e6c02bfb4339e6648358f781",
+      "sha256": "8c7cd328f0309e8d6a77e1d6ae0c9d9084bcda9fec60ee10639f3ba6fe033ba0",
       "fullPage": true
     }
   ],
@@ -118,6 +118,35 @@
     "Space Grotesk",
     "DM Sans"
   ],
-  "brief": "**Philosophy and fit.** Make browsing feel exuberant and surprising while keeping decisions predictable. Fits playful lifestyle brands, creative clubs, youth-oriented events, and cheerful product launches.\n\n**Visual grammar.** Offset blocks, squiggles, stipple patterns, contrasting outlines, and deliberately mismatched geometric frames provide the visual language. Lavender, mint, melon, and black carry a bold rounded display face over plain body text. Navigation stays anchored in a solid strip; patterns occupy margins and section transitions.\n\n**Specimen and flow.** *Odd Objects Club* offers fictional monthly creative kits. Explore a themed collection, inspect kit contents, and customise a sample bundle. Supporting views include a member-project gallery and a bundle summary with an incompatible-item explanation. The interaction is ordinary selection, supported by lively visual responses.\n\n**Responsive behaviour.** Offset layouts become staggered but readable vertical sections. Pattern density decreases on small screens; reduced motion removes bouncing and rotation while preserving selected-state feedback.\n\n**Identity rules.** Preserve deliberate clashes of pattern and shape. Avoid repeating identical cards, using patterns beneath body copy, or letting random rotation impair controls. **Effort: medium.**",
-  "scope": "An expansive sample page with representative local interactions; no production business backend."
+  "brief": "**Philosophy and fit.** Make browsing feel exuberant and surprising while keeping decisions predictable. Fits playful lifestyle brands, creative clubs, youth-oriented events, and cheerful product launches.\n\n**Visual grammar.** Offset blocks, squiggles, stipple patterns, contrasting outlines, and deliberately mismatched geometric frames provide the visual language. Lavender, mint, melon, and black carry a bold rounded display face over plain body text. Navigation stays anchored in a solid strip; patterns occupy margins and section transitions.\n\n**Specimen and flow.** *Odd Objects Club* offers fictional monthly creative kits. Explore a themed collection, inspect kit contents, and customise a sample bundle. Supporting views include a member-project gallery and a bundle summary with an incompatible-item explanation. The interaction is ordinary selection, supported by lively visual responses.\n\n**Responsive behaviour.** Offset layouts become staggered but readable vertical sections. Pattern density decreases on small screens; reduced motion removes bouncing and rotation while preserving selected-state feedback.\n\n**Identity rules.** Preserve deliberate clashes of pattern and shape. Avoid repeating identical cards, using patterns beneath body copy, or letting random rotation impair controls. **Effort: medium.**\n\n**Distinctive composition.** The kit collection uses an oversized arch, a patterned print panel, and an asymmetric sculpture panel rather than three equal outlined cards. Geometric material play and patterned transitions distinguish it from Neo Brutalist Board’s regular hard-shadow grid.",
+  "scope": "An expansive sample page with representative local interactions; no production business backend.",
+  "discovery": {
+    "industries": [
+      "Creative agency",
+      "Design studio"
+    ],
+    "visitorGoals": [
+      "Discover a creative approach"
+    ],
+    "conversionActions": [
+      "Enquire about a project"
+    ],
+    "siteSize": "Portfolio & enquiry",
+    "interactionTypes": [
+      "Project collection",
+      "Contact form"
+    ],
+    "keywords": [
+      "Commerce",
+      "Culture",
+      "Deliberate pattern clashes",
+      "Mismatched geometric frames",
+      "Predictable controls in playful surfaces"
+    ]
+  },
+  "patterns": [
+    "Deliberate pattern clashes",
+    "Mismatched geometric frames",
+    "Predictable controls in playful surfaces"
+  ]
 }

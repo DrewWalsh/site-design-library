@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "43",
   "slug": "y2k-chrome",
   "name": "Y2K Chrome",
@@ -7,10 +7,7 @@
   "family": "Retro & experimental",
   "status": "ready",
   "thesis": "Present culture as a luminous piece of digital equipment.",
-  "suitableFor": [
-    "Music",
-    "Culture"
-  ],
+  "suitableFor": ["Music", "Culture"],
   "character": "Expressive",
   "traits": {
     "composition": "Central metallic media equipment with an asymmetric release strip and inset controls",
@@ -104,20 +101,33 @@
     }
   ],
   "sourcePath": "src/designs/43-y2k-chrome",
-  "neighbours": [
-    "38",
-    "17"
-  ],
+  "neighbours": ["38", "17"],
   "palette": {
     "page": "#ced5df",
     "surface": "#e7edf1",
     "ink": "#1d2943",
     "accent": "#20627a"
   },
-  "fonts": [
-    "Space Grotesk",
-    "DM Sans"
-  ],
+  "fonts": ["Space Grotesk", "DM Sans"],
   "brief": "**Philosophy and fit.** Present culture as a luminous piece of digital equipment. Suitable for electronic music labels, nightlife programmes, experimental fashion, and creative release collections.\n\n**Visual grammar.** Compose a central media module with asymmetric side controls, metallic dividers, translucent inset panels, pill-shaped switches, and compact release metadata. Use an extended display face, a straightforward sans serif for details, cool silver, deep navy, and electric cyan. Chrome belongs to framing and highlights; long text sits on a calm solid surface.\n\n**Specimen and flow.** *Signal Mesh* is a fictional electronic music label. Browse its release strip, open an album, and select a track for an explicitly initiated preview. Supporting views are artist credits and the player’s paused or unavailable-preview state. Local licensed audio is an optional specimen asset.\n\n**Mobile and motion.** Stack the release controls above a persistent compact player. Replace decorative moving reflections with static gradients under reduced motion; playback never starts automatically.\n\n**Identity and effort.** Preserve equipment-like composition and material contrast; avoid tiny controls, low-contrast metallic copy, and a generic gradient landing page. **Effort: medium.**",
-  "scope": "An expansive sample page with representative local interactions; no production business backend."
+  "scope": "An expansive sample page with representative local interactions; no production business backend.",
+  "discovery": {
+    "industries": ["Music", "Creative media"],
+    "visitorGoals": ["Explore a release"],
+    "conversionActions": ["Play a sample interface"],
+    "siteSize": "Small brochure",
+    "interactionTypes": ["Media controls", "Release list"],
+    "keywords": [
+      "Music",
+      "Culture",
+      "Equipment-like composition",
+      "Chrome framing around calm text surfaces",
+      "Explicit, opt-in playback controls"
+    ]
+  },
+  "patterns": [
+    "Equipment-like composition",
+    "Chrome framing around calm text surfaces",
+    "Explicit, opt-in playback controls"
+  ]
 }

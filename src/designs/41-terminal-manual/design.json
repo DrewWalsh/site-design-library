@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "41",
   "slug": "terminal-manual",
   "name": "Terminal Manual",
@@ -7,10 +7,7 @@
   "family": "Retro & experimental",
   "status": "ready",
   "thesis": "Make technical information feel immediate, inspectable, and economical.",
-  "suitableFor": [
-    "Documentation",
-    "Software"
-  ],
+  "suitableFor": ["Documentation", "Software"],
   "character": "Expressive",
   "traits": {
     "composition": "Text-first command manual with a narrow index and full-width code examples",
@@ -104,19 +101,33 @@
     }
   ],
   "sourcePath": "src/designs/41-terminal-manual",
-  "neighbours": [
-    "42",
-    "13"
-  ],
+  "neighbours": ["42", "13"],
   "palette": {
     "page": "#18201e",
     "surface": "#242e28",
     "ink": "#e2dfce",
     "accent": "#a9c39c"
   },
-  "fonts": [
-    "IBM Plex Mono"
-  ],
+  "fonts": ["IBM Plex Mono"],
   "brief": "**Philosophy and fit.** Make technical information feel immediate, inspectable, and economical. Suitable for developer documentation, command reference guides, release logs, and technical portfolios.\n\n**Visual grammar.** Build a text-first document with a narrow command index, full-width examples, prompt markers, and terse status labels. Use a monospace family with comfortable line spacing, near-black surfaces, warm pale text, and limited green or amber accents. Heading hierarchy and ordinary underlined links carry the structure; colour alone never identifies a command’s status.\n\n**Specimen and flow.** *Relay CLI* documents a fictional file synchronisation utility. Select a command, inspect its arguments, edit a harmless example’s options, and copy the resulting sample command. Supporting states are search with no matching command and an expanded examples section. Nothing executes in a shell.\n\n**Mobile and motion.** Move the index into an accessible disclosure and let long code blocks scroll within their own bounds. Text appears immediately; simulated typing is optional and off by default.\n\n**Identity and effort.** Preserve text density and documentation logic; avoid demanding typed commands to navigate or decorating every page with fake hacker output. **Effort: low.**",
-  "scope": "An expansive sample page with representative local interactions; no production business backend."
+  "scope": "An expansive sample page with representative local interactions; no production business backend.",
+  "discovery": {
+    "industries": ["Developer tools", "Documentation"],
+    "visitorGoals": ["Complete a technical task"],
+    "conversionActions": ["Read a command guide"],
+    "siteSize": "Documentation site",
+    "interactionTypes": ["Search", "Command examples"],
+    "keywords": [
+      "Documentation",
+      "Software",
+      "Documentation hierarchy carries the identity",
+      "Inspectable examples with clear options",
+      "No typing required to navigate"
+    ]
+  },
+  "patterns": [
+    "Documentation hierarchy carries the identity",
+    "Inspectable examples with clear options",
+    "No typing required to navigate"
+  ]
 }

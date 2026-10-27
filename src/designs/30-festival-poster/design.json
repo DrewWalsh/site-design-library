@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "30",
   "slug": "festival-poster",
   "name": "Festival Poster",
@@ -7,10 +7,7 @@
   "family": "Commerce & places",
   "status": "ready",
   "thesis": "Turn a programme into a memorable public announcement.",
-  "suitableFor": [
-    "Events",
-    "Culture"
-  ],
+  "suitableFor": ["Events", "Culture"],
   "character": "Expressive",
   "traits": {
     "composition": "Oversized festival announcement above a usable programme timetable",
@@ -104,20 +101,33 @@
     }
   ],
   "sourcePath": "src/designs/30-festival-poster",
-  "neighbours": [
-    "03",
-    "46"
-  ],
+  "neighbours": ["03", "46"],
   "palette": {
     "page": "#edece5",
     "surface": "#ffffff",
     "ink": "#111e50",
     "accent": "#ee5c49"
   },
-  "fonts": [
-    "Bebas Neue",
-    "DM Sans"
-  ],
+  "fonts": ["Bebas Neue", "DM Sans"],
   "brief": "**Philosophy and fit.** Turn a programme into a memorable public announcement. Suitable for festivals, theatre seasons, screenings, exhibitions, and music events.\n\n**Visual grammar.** Oversized condensed type, date stamps, alternating colour fields, and overlapping poster blocks establish the hierarchy. Cobalt, hot coral, and off-white form the base palette. The navigation remains a clear strip for programme, venues, and tickets; the event schedule uses clean rows beneath the expressive masthead.\n\n**Specimen and flow.** *Night Signal* presents a fictional arts weekend. Filter the programme by day and venue, inspect an event, and save it to a local itinerary. Supporting views include a venue guide and an itinerary conflict state when events overlap. Ticket buttons open a clearly labelled sample ticket panel.\n\n**Responsive behaviour.** Poster typography resizes without clipping event names. Schedule rows become stacked records; overlapping decorative elements separate before they crowd information. Motion is optional and never required to read dates.\n\n**Identity rules.** Preserve the collision of bold announcement and usable timetable. Avoid turning every event into an identical rounded card or placing essential text inside raster posters. **Effort: medium.**",
-  "scope": "An expansive sample page with representative local interactions; no production business backend."
+  "scope": "An expansive sample page with representative local interactions; no production business backend.",
+  "discovery": {
+    "industries": ["Festival", "Music", "Events"],
+    "visitorGoals": ["Plan an event visit"],
+    "conversionActions": ["Build an itinerary"],
+    "siteSize": "Small brochure",
+    "interactionTypes": ["Programme filters", "Saved itinerary"],
+    "keywords": [
+      "Events",
+      "Culture",
+      "Poster-scale condensed type",
+      "Clear programme rows under expressive fields",
+      "Visible event conflicts"
+    ]
+  },
+  "patterns": [
+    "Poster-scale condensed type",
+    "Clear programme rows under expressive fields",
+    "Visible event conflicts"
+  ]
 }

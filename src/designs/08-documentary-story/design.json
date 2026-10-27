@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "08",
   "slug": "documentary-story",
   "name": "Documentary Story",
@@ -7,10 +7,7 @@
   "family": "Clarity & editorial",
   "status": "ready",
   "thesis": "Build understanding through a deliberate sequence of evidence, place, and explanation.",
-  "suitableFor": [
-    "Editorial",
-    "Education"
-  ],
+  "suitableFor": ["Editorial", "Education"],
   "character": "Restrained",
   "traits": {
     "composition": "Linear documentary chapters with evidence plates and substantial text",
@@ -104,20 +101,33 @@
     }
   ],
   "sourcePath": "src/designs/08-documentary-story",
-  "neighbours": [
-    "28",
-    "26"
-  ],
+  "neighbours": ["28", "26"],
   "palette": {
     "page": "#eae7dc",
     "surface": "#ffffff",
     "ink": "#232e2d",
     "accent": "#b08a37"
   },
-  "fonts": [
-    "DM Sans",
-    "Libre Baskerville"
-  ],
+  "fonts": ["DM Sans", "Libre Baskerville"],
   "brief": "**Philosophy and fit.** Build understanding through a deliberate sequence of evidence, place, and explanation. Suitable for investigative features, historical accounts, project retrospectives, and visual explainers.\n\n**Visual grammar.** Use a linear chapter structure with substantial text, full-width documentary images, maps or diagrams where useful, and short transitional passages. A small chapter index provides orientation. A sober sans heading and readable serif body sit on alternating ink and paper sections, with an ochre accent for annotations. Sticky imagery may accompany a passage, but all content remains meaningful in normal document order.\n\n**Specimen and flow.** *The River Works* explains a fictional town's abandoned water system. Readers progress through five chapters, inspect a labelled mechanism diagram, and open evidence captions. Supporting states provide a chapter overview and a plain continuous-reading version.\n\n**Adaptation and identity.** Mobile replaces sticky side-by-side scenes with image-and-text sequences. Reduced motion removes animated transitions. Preserve the explanatory progression and substantial writing; avoid scroll hijacking, text revealed too slowly to read, and spectacle unsupported by content. **Effort: medium.**",
-  "scope": "An expansive sample page with representative local interactions; no production business backend."
+  "scope": "An expansive sample page with representative local interactions; no production business backend.",
+  "discovery": {
+    "industries": ["Documentary", "Nonprofit", "Environment"],
+    "visitorGoals": ["Understand a story"],
+    "conversionActions": ["Explore the evidence"],
+    "siteSize": "Digital publication",
+    "interactionTypes": ["Photo essay", "Story chapters"],
+    "keywords": [
+      "Editorial",
+      "Education",
+      "Explanatory progression",
+      "Large evidence images with captions",
+      "Plain reading alternative"
+    ]
+  },
+  "patterns": [
+    "Explanatory progression",
+    "Large evidence images with captions",
+    "Plain reading alternative"
+  ]
 }

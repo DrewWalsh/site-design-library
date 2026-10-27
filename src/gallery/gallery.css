@@ -586,7 +586,7 @@ p {
 }
 .g-pending > span {
   font-size: 45px;
-  opacity: 0.45;
+  opacity: 1;
 }
 .g-pending strong {
   font-size: 21px;
@@ -1422,4 +1422,39 @@ p {
     transition: none !important;
     animation: none !important;
   }
+}
+
+.g-visual-filters {
+  border-top: 1px solid #dce0d4;
+  margin-top: 22px;
+  padding-top: 18px;
+}
+.g-visual-filters > summary {
+  font-size: 12px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.g-discovery {
+  font-size: 12px;
+}
+.g-discovery dt {
+  font-size: 10px;
+  color: #52604c;
+  margin-top: 15px;
+}
+.g-discovery dd {
+  margin: 5px 0 0;
+}
+.g-patterns {
+  padding-left: 16px;
+  font-size: 12px;
+}
+.g-patterns li {
+  margin: 10px 0;
+}
+.dot-5 {
+  background: #8e674e;
+}
+.dot-6 {
+  background: #596f93;
 }

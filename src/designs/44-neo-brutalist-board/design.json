@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "44",
   "slug": "neo-brutalist-board",
   "name": "Neo Brutalist Board",
@@ -7,10 +7,7 @@
   "family": "Retro & experimental",
   "status": "ready",
   "thesis": "Make participation and choice conspicuous through bold, tangible objects.",
-  "suitableFor": [
-    "Events",
-    "Commerce"
-  ],
+  "suitableFor": ["Events", "Commerce"],
   "character": "Expressive",
   "traits": {
     "composition": "Bold outlined workshop notices in separated horizontal board zones",
@@ -104,20 +101,33 @@
     }
   ],
   "sourcePath": "src/designs/44-neo-brutalist-board",
-  "neighbours": [
-    "45",
-    "32"
-  ],
+  "neighbours": ["45", "32"],
   "palette": {
     "page": "#f0efb1",
     "surface": "#fffde9",
     "ink": "#222921",
     "accent": "#c5e14e"
   },
-  "fonts": [
-    "Space Grotesk",
-    "DM Sans"
-  ],
+  "fonts": ["Space Grotesk", "DM Sans"],
   "brief": "**Philosophy and fit.** Make participation and choice conspicuous through bold, tangible objects. Suitable for maker communities, workshop listings, independent shops, and energetic small product sites.\n\n**Visual grammar.** Use thick dark outlines, solid offset shadows, large utilitarian type, and a small palette of flat, vivid colours. Organise the page as a board of labelled notices in clearly separated horizontal zones. Filters and actions have the same physical vocabulary as the notices. A strong alignment system prevents the apparent roughness from becoming arbitrary.\n\n**Specimen and flow.** *Open Bench* lists fictional maker workshops. Filter notices by discipline, open a workshop, and book a sample place locally. Supporting views are a full workshop detail sheet and the no-spaces-available state with alternative dates.\n\n**Mobile and motion.** Reflow notices into an ordered list and give filters their own wrapping row. A press response can shorten a button’s shadow without shifting its neighbours; reduced motion removes animated movement.\n\n**Identity and effort.** Preserve outlined objects and decisive hierarchy; avoid confusing this with raw HTML or covering every content fragment in a separate box. **Effort: low.**",
-  "scope": "An expansive sample page with representative local interactions; no production business backend."
+  "scope": "An expansive sample page with representative local interactions; no production business backend.",
+  "discovery": {
+    "industries": ["Community", "Events"],
+    "visitorGoals": ["Find an announcement"],
+    "conversionActions": ["Inspect a post"],
+    "siteSize": "Community site",
+    "interactionTypes": ["Noticeboard", "Post details"],
+    "keywords": [
+      "Events",
+      "Commerce",
+      "Thick outlines and solid offset shadows",
+      "Conspicuous actions",
+      "Strong alignment beneath rough surfaces"
+    ]
+  },
+  "patterns": [
+    "Thick outlines and solid offset shadows",
+    "Conspicuous actions",
+    "Strong alignment beneath rough surfaces"
+  ]
 }

@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "22",
   "slug": "specimen-shop",
   "name": "Specimen Shop",
@@ -7,10 +7,7 @@
   "family": "Commerce & places",
   "status": "ready",
   "thesis": "Present a small collection as objects worth studying.",
-  "suitableFor": [
-    "Commerce",
-    "Portfolio"
-  ],
+  "suitableFor": ["Commerce", "Portfolio"],
   "character": "Restrained",
   "traits": {
     "composition": "Large object plate with precise caption and a restrained purchase rail",
@@ -104,20 +101,33 @@
     }
   ],
   "sourcePath": "src/designs/22-specimen-shop",
-  "neighbours": [
-    "04",
-    "21"
-  ],
+  "neighbours": ["04", "21"],
   "palette": {
     "page": "#f3f0e9",
     "surface": "#ffffff",
     "ink": "#302f29",
     "accent": "#62594b"
   },
-  "fonts": [
-    "Libre Baskerville",
-    "DM Sans"
-  ],
+  "fonts": ["Libre Baskerville", "DM Sans"],
   "brief": "**Philosophy and fit.** Present a small collection as objects worth studying. Appropriate for ceramics, independent furniture, collectible editions, and carefully made products with material stories.\n\n**Visual grammar.** Each object occupies a large photographic plate, followed by a caption, dimensions, material swatches, and a restrained purchase rail. Use asymmetric whitespace, a compact index navigation, an elegant serif for object names, and a precise sans for specifications. Bone backgrounds, near-black text, and one mineral accent keep attention on surface and shape.\n\n**Specimen and flow.** *Form Number* offers a fictional ceramics collection. Browse an object index, open a numbered vessel, change its glaze, and add it to a local bag. Supporting views include a material-study page and a bag with quantity and sold-out states. A visible detail photograph supports inspection without requiring zoom gestures.\n\n**Responsive behaviour.** Plates stack above specifications; the purchase rail becomes an ordinary in-flow block. Image changes are immediate under reduced motion.\n\n**Identity rules.** Preserve the object-and-caption relationship. Avoid luxury-site vagueness, tiny essential text, and compulsory cinematic transitions. **Effort: medium.**",
-  "scope": "An expansive sample page with representative local interactions; no production business backend."
+  "scope": "An expansive sample page with representative local interactions; no production business backend.",
+  "discovery": {
+    "industries": ["Ceramics", "Design retail"],
+    "visitorGoals": ["Evaluate a product"],
+    "conversionActions": ["Add to basket"],
+    "siteSize": "Storefront",
+    "interactionTypes": ["Product variants", "Shopping basket"],
+    "keywords": [
+      "Commerce",
+      "Portfolio",
+      "Object-and-caption relationship",
+      "Visible material and dimension details",
+      "Asymmetric photographic whitespace"
+    ]
+  },
+  "patterns": [
+    "Object-and-caption relationship",
+    "Visible material and dimension details",
+    "Asymmetric photographic whitespace"
+  ]
 }

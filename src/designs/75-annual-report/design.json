@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 2,
+  "id": "75",
+  "slug": "annual-report",
+  "name": "Annual Report",
+  "brand": "Northbank / Public library",
+  "family": "Community & institutions",
+  "status": "ready",
+  "thesis": "Tell the year’s story and show the evidence behind it.",
+  "suitableFor": [
+    "Public organisation",
+    "Nonprofit",
+    "Annual reporting"
+  ],
+  "character": "Expressive",
+  "traits": {
+    "composition": "burgundy editorial report with oversized year numerals and clearly labelled financial tables",
+    "navigation": "Report chapters, financial tables and source methodology",
+    "typography": "Libre Baskerville",
+    "density": "Medium",
+    "imagery": "Large year numerals, narrative outcome figures and financial bars",
+    "surface": "Cream publication pages with burgundy type and muted rose chapters",
+    "motion": "Minimal"
+  },
+  "effort": "Medium",
+  "definingFeatures": [
+    "Achievements",
+    "Financial data",
+    "Project outcomes"
+  ],
+  "adaptableChoices": [
+    "Verified business content",
+    "Brand and subject",
+    "Equivalent licensed typefaces"
+  ],
+  "discovery": {
+    "industries": [
+      "Public organisation",
+      "Nonprofit",
+      "Annual reporting"
+    ],
+    "visitorGoals": [
+      "Understand annual results"
+    ],
+    "conversionActions": [
+      "Explore the report"
+    ],
+    "siteSize": "Digital publication",
+    "interactionTypes": [
+      "Narrative chapters",
+      "Financial tables",
+      "Source notes"
+    ],
+    "keywords": [
+      "Public organisation",
+      "Nonprofit",
+      "Annual reporting",
+      "Explore the report",
+      "Digital publication",
+      "Achievements",
+      "Financial data",
+      "Project outcomes",
+      "Sources"
+    ]
+  },
+  "patterns": [
+    "Achievements",
+    "Financial data",
+    "Project outcomes",
+    "Sources"
+  ],
+  "entryRoute": "/preview/75-annual-report/start",
+  "states": [
+    {
+      "key": "results",
+      "label": "Year in review",
+      "route": "/preview/75-annual-report/results"
+    },
+    {
+      "key": "finances",
+      "label": "Financial statements",
+      "route": "/preview/75-annual-report/finances"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/75/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/75/f7ac3cb7af3751f3-desktop.jpg",
+      "route": "/preview/75-annual-report/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:e6949e8fe4e9c110604dded8a0b982d8905f18fb8fd4fc11c0080afa47067e88",
+      "sha256": "f7ac3cb7af3751f39050a8ce49c428a91c7d90bb697b41c0b1195a38abf4b1b5",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/75/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/75/2b3116a12f8bc896-mobile.jpg",
+      "route": "/preview/75-annual-report/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:e6949e8fe4e9c110604dded8a0b982d8905f18fb8fd4fc11c0080afa47067e88",
+      "sha256": "2b3116a12f8bc896ab75fb5bb961dd4415acc3f6c871645296a317e34af0e5f1",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/75/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/75/908000834c908377-detail.jpg",
+      "route": "/preview/75-annual-report/results",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "results",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:e6949e8fe4e9c110604dded8a0b982d8905f18fb8fd4fc11c0080afa47067e88",
+      "sha256": "908000834c90837770af6b27ebc842f89da5685b267c6512eef6b7b372213431",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/75/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/75/462ef90a6abc3770-full-page.jpg",
+      "route": "/preview/75-annual-report/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:e6949e8fe4e9c110604dded8a0b982d8905f18fb8fd4fc11c0080afa47067e88",
+      "sha256": "462ef90a6abc3770d3964dfed74ef5f136850116fd58aadb30ac24a27f9f5269",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/75-annual-report",
+  "neighbours": [
+    "06",
+    "10"
+  ],
+  "palette": {
+    "page": "#f3ede3",
+    "surface": "#ffffff",
+    "ink": "#462d36",
+    "accent": "#79364e"
+  },
+  "fonts": [
+    "Libre Baskerville",
+    "DM Sans"
+  ],
+  "brief": "**Philosophy and fit.** Tell the year’s story and show the evidence behind it. Built for public organisation, nonprofit, annual reporting. The visitor’s next step is to explore the report.\n\n**Visual grammar.** Use a burgundy editorial report with oversized year numerals and clearly labelled financial tables. Preserve the hierarchy of achievements, financial data, project outcomes, sources; these patterns solve this business’s actual decision, rather than supplying interchangeable decoration.\n\n**Sample and interaction.** Northbank / Public library is a fictional demonstration. The entry page establishes a complete visual direction, with year in review and financial statements as supporting states. Inputs use local deterministic fixtures; no request, order, application or payment is sent.\n\n**Responsive behaviour.** On a phone, keep the primary decision first, stack facts with explicit labels, preserve the order of the workflow, and provide comfortably sized controls. Wide diagrams scale; tabular facts retain their labels.\n\n**Adaptation.** Replace the fictional brand, prices, availability, qualifications and claims with verified client information. Preserve achievements, financial data, project outcomes. Use imagery to explain the place, people, work or product, with deliberate crops and honest captions. Do not turn this into a generic hero-and-card layout.\n\n**Identity and adaptation.** An oversized year opens a paced digital publication. Narrative chapters explain achievements before financial tables and source notes; the sequence is a report to read, rather than a live dashboard to monitor.",
+  "scope": "Complete visual reference with local sample interactions; no production business backend."
+}

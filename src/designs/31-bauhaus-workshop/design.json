@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "31",
   "slug": "bauhaus-workshop",
   "name": "Bauhaus Workshop",
@@ -7,10 +7,7 @@
   "family": "Playful & material",
   "status": "ready",
   "thesis": "Give each shape, colour, and alignment a clear organising role.",
-  "suitableFor": [
-    "Education",
-    "Events"
-  ],
+  "suitableFor": ["Education", "Events"],
   "character": "Expressive",
   "traits": {
     "composition": "Rectilinear programme grid with geometric category markers",
@@ -104,20 +101,33 @@
     }
   ],
   "sourcePath": "src/designs/31-bauhaus-workshop",
-  "neighbours": [
-    "03",
-    "32"
-  ],
+  "neighbours": ["03", "32"],
   "palette": {
     "page": "#eee9dc",
     "surface": "#ffffff",
     "ink": "#252622",
     "accent": "#b93627"
   },
-  "fonts": [
-    "Space Grotesk",
-    "DM Sans"
-  ],
+  "fonts": ["Space Grotesk", "DM Sans"],
   "brief": "**Philosophy and fit.** Give each shape, colour, and alignment a clear organising role. Useful for design schools, creative workshops, modular products, and educational programmes.\n\n**Visual grammar.** Strong rectilinear grids support circular markers, primary-colour planes, black rules, and compact grotesque typography. Asymmetry comes from purposeful spans rather than scattered objects. Red identifies workshops, blue identifies resources, and yellow identifies demonstrations, with matching text labels so colour is never the only distinction.\n\n**Specimen and flow.** *Form School* teaches fictional making workshops. Browse a geometric programme index, open a workshop syllabus, and select a session in a local registration demonstration. Supporting views include an instructor profile and a full-session state with alternative dates. A simple shape-building exercise illustrates the school’s practical approach.\n\n**Responsive behaviour.** Grid spans collapse into a coherent reading order. Decorative geometry moves around the content rather than forcing the content into tiny compartments; the exercise includes button-based controls.\n\n**Identity rules.** Preserve geometric discipline, clear categories, and deliberate alignment. Avoid decorative primary-colour confetti or borrowing the same loose arrangement as Pop Memphis. **Effort: medium.**",
-  "scope": "An expansive sample page with representative local interactions; no production business backend."
+  "scope": "An expansive sample page with representative local interactions; no production business backend.",
+  "discovery": {
+    "industries": ["Design", "Art", "Education"],
+    "visitorGoals": ["Explore a workshop"],
+    "conversionActions": ["Choose a workshop"],
+    "siteSize": "Small brochure",
+    "interactionTypes": ["Composition controls", "Workshop details"],
+    "keywords": [
+      "Education",
+      "Events",
+      "Shapes organise actual categories",
+      "Deliberate asymmetry and grid spans",
+      "Primary colours with text labels"
+    ]
+  },
+  "patterns": [
+    "Shapes organise actual categories",
+    "Deliberate asymmetry and grid spans",
+    "Primary colours with text labels"
+  ]
 }

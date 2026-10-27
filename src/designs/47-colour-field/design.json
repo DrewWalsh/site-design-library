@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "47",
   "slug": "colour-field",
   "name": "Colour Field",
@@ -7,10 +7,7 @@
   "family": "Retro & experimental",
   "status": "ready",
   "thesis": "Make a site’s chapters legible through large fields of colour and simple spatial relationships.",
-  "suitableFor": [
-    "Culture",
-    "Marketing"
-  ],
+  "suitableFor": ["Culture", "Marketing"],
   "character": "Expressive",
   "traits": {
     "composition": "Large flat colour planes with a consistent chapter rail",
@@ -104,20 +101,33 @@
     }
   ],
   "sourcePath": "src/designs/47-colour-field",
-  "neighbours": [
-    "46",
-    "45"
-  ],
+  "neighbours": ["46", "45"],
   "palette": {
     "page": "#eee6d7",
     "surface": "#ffffff",
     "ink": "#2c3031",
     "accent": "#4a60a2"
   },
-  "fonts": [
-    "Space Grotesk",
-    "DM Sans"
-  ],
+  "fonts": ["Space Grotesk", "DM Sans"],
   "brief": "**Philosophy and fit.** Make a site’s chapters legible through large fields of colour and simple spatial relationships. Suitable for cultural institutions, compact brand narratives, exhibitions, and design-led service portfolios.\n\n**Visual grammar.** Compose substantial flat-colour planes with sharp boundaries, sparse geometric markers, large headings, and deliberately limited image use. A chapter rail crosses these planes with a consistent navigation position. Typography stays restrained so the relationship between colour, proportion, and whitespace provides the identity. Each field includes a visible section label; colour never carries its meaning alone.\n\n**Specimen and flow.** *Intervals* is a fictional exhibition space. Move between programme, visiting information, and membership chapters, then open an exhibition’s details. Supporting views are the complete exhibition index and a membership comparison laid out as aligned text columns.\n\n**Mobile and motion.** Turn side-by-side planes into an orderly vertical sequence. Keep ordinary scrolling and explicit anchor links; any transition simply fades between static compositions and can be disabled.\n\n**Identity and effort.** Preserve large-scale colour composition; avoid shrinking the concept into many pastel cards or requiring full-screen snapping. **Effort: medium.**",
-  "scope": "An expansive sample page with representative local interactions; no production business backend."
+  "scope": "An expansive sample page with representative local interactions; no production business backend.",
+  "discovery": {
+    "industries": ["Art", "Design"],
+    "visitorGoals": ["Explore colour"],
+    "conversionActions": ["Choose a palette"],
+    "siteSize": "Application",
+    "interactionTypes": ["Colour controls", "Palette preview"],
+    "keywords": [
+      "Culture",
+      "Marketing",
+      "Colour fields define chapters",
+      "Sparse geometric markers",
+      "Proportion and whitespace over decoration"
+    ]
+  },
+  "patterns": [
+    "Colour fields define chapters",
+    "Sparse geometric markers",
+    "Proportion and whitespace over decoration"
+  ]
 }

@@ -50,6 +50,23 @@ const catalogue = directories.map((dir) => {
   }
   if (!['planned', 'prototype', 'ready', 'needs-review'].includes(record.status))
     throw new Error(`${dir}: invalid status`);
+  for (const key of [
+    'industries',
+    'visitorGoals',
+    'conversionActions',
+    'interactionTypes',
+    'keywords',
+  ]) {
+    const values = record.discovery?.[key];
+    if (
+      !Array.isArray(values) ||
+      !values.length ||
+      values.some((value: unknown) => typeof value !== 'string' || !value.trim())
+    )
+      throw new Error(`${dir}: missing or invalid discovery.${key}`);
+  }
+  if (!record.discovery?.siteSize || !Array.isArray(record.patterns) || !record.patterns.length)
+    throw new Error(`${dir}: missing site structure or reference patterns`);
   if (!Array.isArray(record.states) || record.states.length < 2)
     throw new Error(`${dir}: missing supporting states`);
   const routes = new Set([record.entryRoute]);
@@ -99,7 +116,7 @@ const catalogue = directories.map((dir) => {
   }
   return record;
 });
-if (catalogue.length !== 50) throw new Error(`Expected 50 designs; found ${catalogue.length}`);
+if (catalogue.length !== 75) throw new Error(`Expected 75 designs; found ${catalogue.length}`);
 for (const design of catalogue)
   for (const id of design.neighbours)
     if (!ids.has(id) || id === design.id) throw new Error(`${design.id}: invalid neighbour ${id}`);
@@ -115,6 +132,9 @@ for (const design of catalogue) {
   }
 }
 fs.copyFileSync('docs/AGENT_WORKFLOW.md', 'public/AGENT_WORKFLOW.md');
+fs.mkdirSync('public/docs', { recursive: true });
+for (const file of ['ASSETS.md', 'COMMERCIAL_ASSETS.md'])
+  fs.copyFileSync(`docs/${file}`, `public/docs/${file}`);
 console.log(
   `Validated ${catalogue.length} unique design packages (${catalogue.filter((d) => d.status === 'ready').length} ready).`,
 );

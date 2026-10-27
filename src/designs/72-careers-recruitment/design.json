@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 2,
+  "id": "72",
+  "slug": "careers-recruitment",
+  "name": "Careers & Recruitment",
+  "brand": "FIELDWORK / Careers",
+  "family": "Community & institutions",
+  "status": "ready",
+  "thesis": "Show the actual work, the people, and the terms of the job.",
+  "suitableFor": [
+    "Employer",
+    "Recruitment",
+    "Careers"
+  ],
+  "character": "Expressive",
+  "traits": {
+    "composition": "energetic coral careers journal with transparent job rows",
+    "navigation": "Vacancy filters, complete role detail and sample application",
+    "typography": "Space Grotesk",
+    "density": "Medium",
+    "imagery": "Typographic staff story, role-count note and salary-labelled vacancy rows",
+    "surface": "Warm editorial paper with coral application-process band",
+    "motion": "Minimal"
+  },
+  "effort": "Medium",
+  "definingFeatures": [
+    "Staff stories",
+    "Salary ranges",
+    "Requirements"
+  ],
+  "adaptableChoices": [
+    "Verified business content",
+    "Brand and subject",
+    "Equivalent licensed typefaces"
+  ],
+  "discovery": {
+    "industries": [
+      "Employer",
+      "Recruitment",
+      "Careers"
+    ],
+    "visitorGoals": [
+      "Find a job"
+    ],
+    "conversionActions": [
+      "Apply for a role"
+    ],
+    "siteSize": "Searchable catalogue",
+    "interactionTypes": [
+      "Vacancy search",
+      "Role details",
+      "Application"
+    ],
+    "keywords": [
+      "Employer",
+      "Recruitment",
+      "Careers",
+      "Apply for a role",
+      "Searchable catalogue",
+      "Staff stories",
+      "Salary ranges",
+      "Requirements",
+      "Applications"
+    ]
+  },
+  "patterns": [
+    "Staff stories",
+    "Salary ranges",
+    "Requirements",
+    "Applications"
+  ],
+  "entryRoute": "/preview/72-careers-recruitment/start",
+  "states": [
+    {
+      "key": "role",
+      "label": "Role details",
+      "route": "/preview/72-careers-recruitment/role"
+    },
+    {
+      "key": "apply",
+      "label": "Sample application",
+      "route": "/preview/72-careers-recruitment/apply"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/72/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/72/58e058a5840e0496-desktop.jpg",
+      "route": "/preview/72-careers-recruitment/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:10d7ee655ab47e880bc7e714db2715940d74a3bd8dc4ef15b936a06fb051b043",
+      "sha256": "58e058a5840e0496e4096c3c6f1f14ca62d604771058fc9843c82382c3fa17d1",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/72/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/72/15841544b8a2fd0d-mobile.jpg",
+      "route": "/preview/72-careers-recruitment/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:10d7ee655ab47e880bc7e714db2715940d74a3bd8dc4ef15b936a06fb051b043",
+      "sha256": "15841544b8a2fd0dea01981ea4ec15c48ffb3de0fe49d31a9d93511dc1fe1bf1",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/72/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/72/b67ac2bf5a9fd387-detail.jpg",
+      "route": "/preview/72-careers-recruitment/role",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "role",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:10d7ee655ab47e880bc7e714db2715940d74a3bd8dc4ef15b936a06fb051b043",
+      "sha256": "b67ac2bf5a9fd387df93cc14bc46353ae29633e9ea539d9602c215cfae82d7a6",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/72/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/72/b52d11bf6d5c0bb3-full-page.jpg",
+      "route": "/preview/72-careers-recruitment/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:10d7ee655ab47e880bc7e714db2715940d74a3bd8dc4ef15b936a06fb051b043",
+      "sha256": "b52d11bf6d5c0bb3edc0dcb81ff3130aa7c9e34e0b3b07bf6027f788867566ae",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/72-careers-recruitment",
+  "neighbours": [
+    "20",
+    "55"
+  ],
+  "palette": {
+    "page": "#f8eee6",
+    "surface": "#ffffff",
+    "ink": "#3d3031",
+    "accent": "#9c3b34"
+  },
+  "fonts": [
+    "Space Grotesk",
+    "DM Sans"
+  ],
+  "brief": "**Philosophy and fit.** Show the actual work, the people, and the terms of the job. Built for employer, recruitment, careers. The visitor’s next step is to apply for a role.\n\n**Visual grammar.** Use a energetic coral careers journal with transparent job rows. Preserve the hierarchy of staff stories, salary ranges, requirements, applications; these patterns solve this business’s actual decision, rather than supplying interchangeable decoration.\n\n**Sample and interaction.** FIELDWORK / Careers is a fictional demonstration. The entry page establishes a complete visual direction, with role details and sample application as supporting states. Inputs use local deterministic fixtures; no request, order, application or payment is sent.\n\n**Responsive behaviour.** On a phone, keep the primary decision first, stack facts with explicit labels, preserve the order of the workflow, and provide comfortably sized controls. Wide diagrams scale; tabular facts retain their labels.\n\n**Adaptation.** Replace the fictional brand, prices, availability, qualifications and claims with verified client information. Preserve staff stories, salary ranges, requirements. Use imagery to explain the place, people, work or product, with deliberate crops and honest captions. Do not turn this into a generic hero-and-card layout.\n\n**Identity and adaptation.** Employer identity comes from staff experience and clear job details. Put salary, location and requirements in the vacancy journey, then demonstrate a bounded application review.",
+  "scope": "Complete visual reference with local sample interactions; no production business backend."
+}

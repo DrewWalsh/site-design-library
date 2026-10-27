@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 2,
+  "id": "54",
+  "slug": "clinical-practice",
+  "name": "Clinical Practice",
+  "brand": "Fern Dental",
+  "family": "Small business",
+  "status": "ready",
+  "thesis": "Make a first appointment feel clear and manageable.",
+  "suitableFor": [
+    "Dentist",
+    "Physiotherapy",
+    "Optometry",
+    "Healthcare"
+  ],
+  "character": "Restrained",
+  "traits": {
+    "composition": "sage and ivory clinical index with generous reading space",
+    "navigation": "Treatment disclosure, first-visit guidance and appointment request",
+    "typography": "DM Sans",
+    "density": "Medium",
+    "imagery": "Daylit treatment room and labelled fictional practitioner portrait",
+    "surface": "Pale sage, quiet dividers and softly rounded imagery",
+    "motion": "Minimal"
+  },
+  "effort": "Medium",
+  "definingFeatures": [
+    "Treatment directory",
+    "Practitioner introduction",
+    "What to expect"
+  ],
+  "adaptableChoices": [
+    "Verified business content",
+    "Brand and subject",
+    "Equivalent licensed typefaces"
+  ],
+  "discovery": {
+    "industries": [
+      "Dentist",
+      "Physiotherapy",
+      "Optometry",
+      "Healthcare"
+    ],
+    "visitorGoals": [
+      "Understand a first visit"
+    ],
+    "conversionActions": [
+      "Request an appointment"
+    ],
+    "siteSize": "Service site",
+    "interactionTypes": [
+      "Treatment navigation",
+      "Appointment request"
+    ],
+    "keywords": [
+      "Dentist",
+      "Physiotherapy",
+      "Optometry",
+      "Healthcare",
+      "Request an appointment",
+      "Service site",
+      "Treatment directory",
+      "Practitioner introduction",
+      "What to expect",
+      "small business",
+      "local business",
+      "appointment based",
+      "booking",
+      "calendar"
+    ]
+  },
+  "patterns": [
+    "Treatment directory",
+    "Practitioner introduction",
+    "What to expect"
+  ],
+  "entryRoute": "/preview/54-clinical-practice/start",
+  "states": [
+    {
+      "key": "request",
+      "label": "New-patient request",
+      "route": "/preview/54-clinical-practice/request"
+    },
+    {
+      "key": "visit",
+      "label": "Your first visit",
+      "route": "/preview/54-clinical-practice/visit"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/54/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/54/52e408bfc56c90ed-desktop.jpg",
+      "route": "/preview/54-clinical-practice/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:a125c428ff931f068d56f8df551aecff7b037e6a9376480a37848ce75fc80274",
+      "sha256": "52e408bfc56c90ed220c356013f1e5b8434af3eb90a4847ff7869f1bf577fe40",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/54/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/54/4cd7e95540fb9d4f-mobile.jpg",
+      "route": "/preview/54-clinical-practice/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:a125c428ff931f068d56f8df551aecff7b037e6a9376480a37848ce75fc80274",
+      "sha256": "4cd7e95540fb9d4f7819f805241cef92384b1ef63bd0cd8d371ae689c8262587",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/54/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/54/ce8fa956725f8470-detail.jpg",
+      "route": "/preview/54-clinical-practice/request",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "request",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:a125c428ff931f068d56f8df551aecff7b037e6a9376480a37848ce75fc80274",
+      "sha256": "ce8fa956725f84706acd31e589b6e0ce5549768503ef04d6ad201a6d27df67fa",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/54/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/54/e0623048f3d5e1cc-full-page.jpg",
+      "route": "/preview/54-clinical-practice/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:a125c428ff931f068d56f8df551aecff7b037e6a9376480a37848ce75fc80274",
+      "sha256": "e0623048f3d5e1cc9b7ba2fce346535bff9d3e610ffd75b8369e6853481884af",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/54-clinical-practice",
+  "neighbours": [
+    "01",
+    "53"
+  ],
+  "palette": {
+    "page": "#f5f8f2",
+    "surface": "#ffffff",
+    "ink": "#253f37",
+    "accent": "#275f50"
+  },
+  "fonts": [
+    "DM Sans"
+  ],
+  "brief": "**Philosophy and fit.** Make a first appointment feel clear and manageable. Built for dentist, physiotherapy, optometry, healthcare. The visitor’s next step is to request an appointment.\n\n**Visual grammar.** Use a sage and ivory clinical index with generous reading space. Preserve the hierarchy of treatment directory, practitioner introduction, what to expect; these patterns solve this business’s actual decision, rather than supplying interchangeable decoration.\n\n**Sample and interaction.** Fern Dental is a fictional demonstration. The entry page establishes a complete visual direction, with new-patient request and your first visit as supporting states. Inputs use local deterministic fixtures; no request, order, application or payment is sent.\n\n**Responsive behaviour.** On a phone, keep the primary decision first, stack facts with explicit labels, preserve the order of the workflow, and provide comfortably sized controls. Wide diagrams scale; tabular facts retain their labels.\n\n**Adaptation.** Replace the fictional brand, prices, availability, qualifications and claims with verified client information. Preserve treatment directory, practitioner introduction, what to expect. Use imagery to explain the place, people, work or product, with deliberate crops and honest captions. Do not turn this into a generic hero-and-card layout.\n\n**Identity and adaptation.** Use treatment explanations, the practitioner and first-visit expectations to build confidence. Keep the clinical page quieter and more explanatory than Appointment Studio’s staff-led calendar.",
+  "scope": "Complete visual reference with local sample interactions; no production business backend."
+}

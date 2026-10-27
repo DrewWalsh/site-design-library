@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 2,
+  "id": "64",
+  "slug": "service-plans",
+  "name": "Service Plans",
+  "brand": "Tidy / Home care",
+  "family": "Small business",
+  "status": "ready",
+  "thesis": "Make the price, frequency, and coverage easy to compare.",
+  "suitableFor": [
+    "Cleaning",
+    "Lawn care",
+    "Property maintenance"
+  ],
+  "character": "Restrained",
+  "traits": {
+    "composition": "fresh teal subscription table with explicit frequency and inclusion rows",
+    "navigation": "Frequency and home-size comparison, coverage check and recurring booking",
+    "typography": "DM Sans",
+    "density": "Medium",
+    "imagery": "Small decorative care symbol; the pricing and coverage information lead",
+    "surface": "Soft mint and rounded pricing columns",
+    "motion": "Minimal"
+  },
+  "effort": "Medium",
+  "definingFeatures": [
+    "Service plans",
+    "Coverage checks",
+    "Frequency selector"
+  ],
+  "adaptableChoices": [
+    "Verified business content",
+    "Brand and subject",
+    "Equivalent licensed typefaces"
+  ],
+  "discovery": {
+    "industries": [
+      "Cleaning",
+      "Lawn care",
+      "Property maintenance"
+    ],
+    "visitorGoals": [
+      "Compare recurring services"
+    ],
+    "conversionActions": [
+      "Schedule recurring service"
+    ],
+    "siteSize": "Service site",
+    "interactionTypes": [
+      "Pricing comparison",
+      "Coverage check",
+      "Recurring booking"
+    ],
+    "keywords": [
+      "Cleaning",
+      "Lawn care",
+      "Property maintenance",
+      "Schedule recurring service",
+      "Service site",
+      "Service plans",
+      "Coverage checks",
+      "Frequency selector",
+      "small business",
+      "local business"
+    ]
+  },
+  "patterns": [
+    "Service plans",
+    "Coverage checks",
+    "Frequency selector"
+  ],
+  "entryRoute": "/preview/64-service-plans/start",
+  "states": [
+    {
+      "key": "plan",
+      "label": "Choose your plan",
+      "route": "/preview/64-service-plans/plan"
+    },
+    {
+      "key": "booking",
+      "label": "Recurring booking",
+      "route": "/preview/64-service-plans/booking"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/64/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/64/02a683c6a9015787-desktop.jpg",
+      "route": "/preview/64-service-plans/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:f5e99bde393846d9a35506e66f151525b15a978b73b290228ba336422e335525",
+      "sha256": "02a683c6a9015787a87032a10c8348a044458f60f622484934df052d73740653",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/64/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/64/7714a3c4653b6029-mobile.jpg",
+      "route": "/preview/64-service-plans/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:f5e99bde393846d9a35506e66f151525b15a978b73b290228ba336422e335525",
+      "sha256": "7714a3c4653b60292df5f8290037e9fd01032167fde24ec705f63de6eb636838",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/64/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/64/09c3e9cfd1b1f0e0-detail.jpg",
+      "route": "/preview/64-service-plans/plan",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "plan",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:f5e99bde393846d9a35506e66f151525b15a978b73b290228ba336422e335525",
+      "sha256": "09c3e9cfd1b1f0e0f2f27bb24a3f8e9762f649a8940ce93347ee1570d3f68606",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/64/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/64/670e6b579bb7dc6a-full-page.jpg",
+      "route": "/preview/64-service-plans/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:f5e99bde393846d9a35506e66f151525b15a978b73b290228ba336422e335525",
+      "sha256": "670e6b579bb7dc6a6f52947343a0b193bdee5891fe707d528e2de8a231ce6ea8",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/64-service-plans",
+  "neighbours": [
+    "02",
+    "25"
+  ],
+  "palette": {
+    "page": "#f3f8f4",
+    "surface": "#ffffff",
+    "ink": "#24433b",
+    "accent": "#1f6555"
+  },
+  "fonts": [
+    "DM Sans"
+  ],
+  "brief": "**Philosophy and fit.** Make the price, frequency, and coverage easy to compare. Built for cleaning, lawn care, property maintenance. The visitor’s next step is to schedule recurring service.\n\n**Visual grammar.** Use a fresh teal subscription table with explicit frequency and inclusion rows. Preserve the hierarchy of service plans, coverage checks, frequency selector; these patterns solve this business’s actual decision, rather than supplying interchangeable decoration.\n\n**Sample and interaction.** Tidy / Home care is a fictional demonstration. The entry page establishes a complete visual direction, with choose your plan and recurring booking as supporting states. Inputs use local deterministic fixtures; no request, order, application or payment is sent.\n\n**Responsive behaviour.** On a phone, keep the primary decision first, stack facts with explicit labels, preserve the order of the workflow, and provide comfortably sized controls. Wide diagrams scale; tabular facts retain their labels.\n\n**Adaptation.** Replace the fictional brand, prices, availability, qualifications and claims with verified client information. Preserve service plans, coverage checks, frequency selector. Use imagery to explain the place, people, work or product, with deliberate crops and honest captions. Do not turn this into a generic hero-and-card layout.\n\n**Identity and adaptation.** Price, frequency and service coverage lead the page. Comparable plans are appropriate here because visitors are choosing an ongoing routine; keep exclusions and per-visit pricing close to that choice.",
+  "scope": "Complete visual reference with local sample interactions; no production business backend."
+}

@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 2,
+  "id": "60",
+  "slug": "industrial-capability",
+  "name": "Industrial Capability",
+  "brand": "AXIS / Precision Works",
+  "family": "Small business",
+  "status": "ready",
+  "thesis": "Make technical fit more useful than marketing language.",
+  "suitableFor": [
+    "Manufacturing",
+    "Machine shop",
+    "Fabrication",
+    "B2B supplier"
+  ],
+  "character": "Expressive",
+  "traits": {
+    "composition": "dark technical catalogue with lime datum marks and specification grids",
+    "navigation": "Capability tables, process sequence and RFQ builder",
+    "typography": "IBM Plex Mono",
+    "density": "High",
+    "imagery": "Original dimensioned component drawing and process sequence",
+    "surface": "Dark technical sheets, fine grids and lime specification accents",
+    "motion": "Minimal"
+  },
+  "effort": "Medium",
+  "definingFeatures": [
+    "Material capabilities",
+    "Tolerance tables",
+    "Process sequence"
+  ],
+  "adaptableChoices": [
+    "Verified business content",
+    "Brand and subject",
+    "Equivalent licensed typefaces"
+  ],
+  "discovery": {
+    "industries": [
+      "Manufacturing",
+      "Machine shop",
+      "Fabrication",
+      "B2B supplier"
+    ],
+    "visitorGoals": [
+      "Evaluate technical fit"
+    ],
+    "conversionActions": [
+      "Request a quote"
+    ],
+    "siteSize": "Technical catalogue",
+    "interactionTypes": [
+      "Specification tables",
+      "Process diagram",
+      "RFQ builder"
+    ],
+    "keywords": [
+      "Manufacturing",
+      "Machine shop",
+      "Fabrication",
+      "B2B supplier",
+      "Request a quote",
+      "Technical catalogue",
+      "Material capabilities",
+      "Tolerance tables",
+      "Process sequence",
+      "RFQ",
+      "small business",
+      "local business",
+      "enquiry driven",
+      "inquiry",
+      "quote"
+    ]
+  },
+  "patterns": [
+    "Material capabilities",
+    "Tolerance tables",
+    "Process sequence",
+    "RFQ"
+  ],
+  "entryRoute": "/preview/60-industrial-capability/start",
+  "states": [
+    {
+      "key": "rfq",
+      "label": "Build an RFQ",
+      "route": "/preview/60-industrial-capability/rfq"
+    },
+    {
+      "key": "process",
+      "label": "Manufacturing process",
+      "route": "/preview/60-industrial-capability/process"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/60/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/60/125548d77ff46c15-desktop.jpg",
+      "route": "/preview/60-industrial-capability/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:08af5d78bc4228f8f07663fa73a7d82006d54be8d766ca565454dd58086c7f50",
+      "sha256": "125548d77ff46c151cc3acc8d1aa26ce48bec7983988ce56bddfee014be1d062",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/60/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/60/ef8829d48dc9b6e9-mobile.jpg",
+      "route": "/preview/60-industrial-capability/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:08af5d78bc4228f8f07663fa73a7d82006d54be8d766ca565454dd58086c7f50",
+      "sha256": "ef8829d48dc9b6e90b7a95747470e35ff0ba8c97d72ab882573c4a0f695ee687",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/60/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/60/0e1cceacfc735834-detail.jpg",
+      "route": "/preview/60-industrial-capability/rfq",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "rfq",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:08af5d78bc4228f8f07663fa73a7d82006d54be8d766ca565454dd58086c7f50",
+      "sha256": "0e1cceacfc7358341face7cf7cf54360ad46bf649f8dc36f56f7baa38a0ae077",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/60/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/60/51dbf89ef1852294-full-page.jpg",
+      "route": "/preview/60-industrial-capability/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:08af5d78bc4228f8f07663fa73a7d82006d54be8d766ca565454dd58086c7f50",
+      "sha256": "51dbf89ef18522944ac5204244e9825b17b02d5d35c6be5fa5f15b248a4d877f",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/60-industrial-capability",
+  "neighbours": [
+    "27",
+    "55"
+  ],
+  "palette": {
+    "page": "#202a2b",
+    "surface": "#293637",
+    "ink": "#eef3e8",
+    "accent": "#cfec91"
+  },
+  "fonts": [
+    "IBM Plex Mono",
+    "DM Sans"
+  ],
+  "brief": "**Philosophy and fit.** Make technical fit more useful than marketing language. Built for manufacturing, machine shop, fabrication, b2b supplier. The visitor’s next step is to request a quote.\n\n**Visual grammar.** Use a dark technical catalogue with lime datum marks and specification grids. Preserve the hierarchy of material capabilities, tolerance tables, process sequence, rfq; these patterns solve this business’s actual decision, rather than supplying interchangeable decoration.\n\n**Sample and interaction.** AXIS / Precision Works is a fictional demonstration. The entry page establishes a complete visual direction, with build an rfq and manufacturing process as supporting states. Inputs use local deterministic fixtures; no request, order, application or payment is sent.\n\n**Responsive behaviour.** On a phone, keep the primary decision first, stack facts with explicit labels, preserve the order of the workflow, and provide comfortably sized controls. Wide diagrams scale; tabular facts retain their labels.\n\n**Adaptation.** Replace the fictional brand, prices, availability, qualifications and claims with verified client information. Preserve material capabilities, tolerance tables, process sequence. Use imagery to explain the place, people, work or product, with deliberate crops and honest captions. Do not turn this into a generic hero-and-card layout.\n\n**Identity and adaptation.** Make technical fit visible before asking for a quote. Machine envelopes, quantities, tolerances and revision fields form an engineering catalogue, with an RFQ summary rather than a shopping cart.",
+  "scope": "Complete visual reference with local sample interactions; no production business backend."
+}

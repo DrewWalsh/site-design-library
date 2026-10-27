@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "46",
   "slug": "kinetic-type",
   "name": "Kinetic Type",
@@ -7,10 +7,7 @@
   "family": "Retro & experimental",
   "status": "ready",
   "thesis": "Let typography embody a subject’s rhythm while preserving a complete readable argument.",
-  "suitableFor": [
-    "Events",
-    "Culture"
-  ],
+  "suitableFor": ["Events", "Culture"],
   "character": "Expressive",
   "traits": {
     "composition": "Oversized typographic performance with a stable programme spine",
@@ -104,20 +101,33 @@
     }
   ],
   "sourcePath": "src/designs/46-kinetic-type",
-  "neighbours": [
-    "30",
-    "47"
-  ],
+  "neighbours": ["30", "47"],
   "palette": {
     "page": "#24232a",
     "surface": "#36353b",
     "ink": "#f1eee3",
     "accent": "#dce57b"
   },
-  "fonts": [
-    "Bebas Neue",
-    "DM Sans"
-  ],
+  "fonts": ["Bebas Neue", "DM Sans"],
   "brief": "**Philosophy and fit.** Let typography embody a subject’s rhythm while preserving a complete readable argument. Suitable for cultural festivals, creative studios, short campaigns, and expressive editorial introductions.\n\n**Visual grammar.** Use a small number of oversized text compositions, strong negative space, and a restrained palette. Letter spacing, position, weight, or cropping may change as an enhancement. A conventional contents control and a stable text column provide the structural spine. Motion reinforces section boundaries or emphasis; it does not manufacture the only route through the content.\n\n**Specimen and flow.** *Voice Assembly* is a fictional spoken-word festival. Read its animated introduction, browse the programme, and inspect a performer’s session. Supporting views are the schedule and an entirely static reading mode containing identical information.\n\n**Mobile and motion.** Design static mobile typography first. Honour reduced motion on first render, retain normal scrolling, and provide a persistent animation toggle. Never require waiting for text to settle before it becomes usable.\n\n**Identity and effort.** Preserve typographic performance and disciplined pacing; avoid scroll hijacking, endlessly moving navigation, or illegible letter tricks. **Effort: high.**",
-  "scope": "An expansive sample page with representative local interactions; no production business backend."
+  "scope": "An expansive sample page with representative local interactions; no production business backend.",
+  "discovery": {
+    "industries": ["Creative studio", "Typography"],
+    "visitorGoals": ["Explore a visual idea"],
+    "conversionActions": ["Inspect a project"],
+    "siteSize": "Portfolio & enquiry",
+    "interactionTypes": ["Motion controls", "Project details"],
+    "keywords": [
+      "Events",
+      "Culture",
+      "Type embodies rhythm",
+      "Complete static equivalent",
+      "Normal scrolling and stable controls"
+    ]
+  },
+  "patterns": [
+    "Type embodies rhythm",
+    "Complete static equivalent",
+    "Normal scrolling and stable controls"
+  ]
 }

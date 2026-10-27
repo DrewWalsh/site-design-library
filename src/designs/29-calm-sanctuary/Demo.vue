@@ -29,7 +29,7 @@ const note = ref('');
     <main id="content">
       <template v-if="state === 'start'"
         ><div class="quiet-mark" aria-hidden="true"><span></span></div>
-        <p class="eyebrow">A LITTLE SPACE AT THE END OF THE DAY</p>
+        <p class="eyebrow">A little space at the end of the day</p>
         <h1>Nothing to catch up on.<br />Just a place to pause.</h1>
         <p class="intro" v-if="!simple">
           Choose something small. Take as much or as little time as you want.
@@ -63,7 +63,7 @@ const note = ref('');
       ><template v-else-if="state === 'practice'"
         ><button class="back" @click="go('start')">← Back to the room</button>
         <div class="quiet-mark small" aria-hidden="true"><span></span></div>
-        <p class="eyebrow">AT YOUR OWN PACE</p>
+        <p class="eyebrow">At your own pace</p>
         <h1>{{ activity }}</h1>
         <template v-if="activity === 'Notice the room'"
           ><p class="practice-copy">
@@ -93,7 +93,7 @@ const note = ref('');
         </div></template
       ><template v-else
         ><div class="quiet-mark" aria-hidden="true"><span></span></div>
-        <p class="eyebrow">WHEN YOU’RE READY</p>
+        <p class="eyebrow">When you’re ready</p>
         <h1>You can leave<br />it there.</h1>
         <p>No score. No streak.<br />The rest of the evening is yours.</p>
         <button class="primary" @click="go('start')">Return to the room</button>
@@ -523,5 +523,10 @@ main > small {
   .practice-copy {
     font-size: 21px !important;
   }
+}
+.eyebrow {
+  font: 400 13px/1.7 'DM Sans';
+  letter-spacing: 0.03em;
+  text-transform: none;
 }
 </style>

@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 2,
+  "id": "62",
+  "slug": "training-floor",
+  "name": "Training Floor",
+  "brand": "FORM / Movement club",
+  "family": "Small business",
+  "status": "ready",
+  "thesis": "Let people find a session before selling them a membership.",
+  "suitableFor": [
+    "Gym",
+    "Personal training",
+    "Martial arts",
+    "Yoga"
+  ],
+  "character": "Expressive",
+  "traits": {
+    "composition": "bold condensed type, cobalt schedule blocks, and gym-floor photography",
+    "navigation": "Day-based class schedule, membership choice and session booking",
+    "typography": "Bebas Neue",
+    "density": "Medium",
+    "imagery": "Trainer-and-member gym photograph alongside a real timetable structure",
+    "surface": "Condensed black display type, pale green field and cobalt trainer band",
+    "motion": "Minimal"
+  },
+  "effort": "Medium",
+  "definingFeatures": [
+    "Class schedule",
+    "Trainer profiles",
+    "Membership plans"
+  ],
+  "adaptableChoices": [
+    "Verified business content",
+    "Brand and subject",
+    "Equivalent licensed typefaces"
+  ],
+  "discovery": {
+    "industries": [
+      "Gym",
+      "Personal training",
+      "Martial arts",
+      "Yoga"
+    ],
+    "visitorGoals": [
+      "Find a class"
+    ],
+    "conversionActions": [
+      "Book a session"
+    ],
+    "siteSize": "Service site",
+    "interactionTypes": [
+      "Class timetable",
+      "Membership comparison",
+      "Session booking"
+    ],
+    "keywords": [
+      "Gym",
+      "Personal training",
+      "Martial arts",
+      "Yoga",
+      "Book a session",
+      "Service site",
+      "Class schedule",
+      "Trainer profiles",
+      "Membership plans",
+      "small business",
+      "local business",
+      "appointment based",
+      "booking",
+      "calendar"
+    ]
+  },
+  "patterns": [
+    "Class schedule",
+    "Trainer profiles",
+    "Membership plans"
+  ],
+  "entryRoute": "/preview/62-training-floor/start",
+  "states": [
+    {
+      "key": "schedule",
+      "label": "Book a class",
+      "route": "/preview/62-training-floor/schedule"
+    },
+    {
+      "key": "join",
+      "label": "Membership comparison",
+      "route": "/preview/62-training-floor/join"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/62/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/62/0803915e3f358ca0-desktop.jpg",
+      "route": "/preview/62-training-floor/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:ed0e577bd323a14174871bdb88585ff8d7ac4260b9bc26a8c559f40b63b6bb92",
+      "sha256": "0803915e3f358ca00445d6520142df93445cc3c187179bab0c7d4a03f3184172",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/62/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/62/87acf1ccce30d631-mobile.jpg",
+      "route": "/preview/62-training-floor/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:ed0e577bd323a14174871bdb88585ff8d7ac4260b9bc26a8c559f40b63b6bb92",
+      "sha256": "87acf1ccce30d631ac88810a4c76dc2b1a2911fa6efdc983c789590e9d2e16f8",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/62/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/62/71e63f57354146c3-detail.jpg",
+      "route": "/preview/62-training-floor/schedule",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "schedule",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:ed0e577bd323a14174871bdb88585ff8d7ac4260b9bc26a8c559f40b63b6bb92",
+      "sha256": "71e63f57354146c3972435ec034f29e7195a844b71357a28afbadf40293e72bc",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/62/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/62/4a474460953d7a5e-full-page.jpg",
+      "route": "/preview/62-training-floor/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:ed0e577bd323a14174871bdb88585ff8d7ac4260b9bc26a8c559f40b63b6bb92",
+      "sha256": "4a474460953d7a5e89924aec85c5a1366d06290d727f02858592a4bbadbcbf1c",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/62-training-floor",
+  "neighbours": [
+    "30",
+    "53"
+  ],
+  "palette": {
+    "page": "#e9eddf",
+    "surface": "#ffffff",
+    "ink": "#222c35",
+    "accent": "#254ec7"
+  },
+  "fonts": [
+    "Bebas Neue",
+    "DM Sans"
+  ],
+  "brief": "**Philosophy and fit.** Let people find a session before selling them a membership. Built for gym, personal training, martial arts, yoga. The visitor’s next step is to book a session.\n\n**Visual grammar.** Use a bold condensed type, cobalt schedule blocks, and gym-floor photography. Preserve the hierarchy of class schedule, trainer profiles, membership plans; these patterns solve this business’s actual decision, rather than supplying interchangeable decoration.\n\n**Sample and interaction.** FORM / Movement club is a fictional demonstration. The entry page establishes a complete visual direction, with book a class and membership comparison as supporting states. Inputs use local deterministic fixtures; no request, order, application or payment is sent.\n\n**Responsive behaviour.** On a phone, keep the primary decision first, stack facts with explicit labels, preserve the order of the workflow, and provide comfortably sized controls. Wide diagrams scale; tabular facts retain their labels.\n\n**Adaptation.** Replace the fictional brand, prices, availability, qualifications and claims with verified client information. Preserve class schedule, trainer profiles, membership plans. Use imagery to explain the place, people, work or product, with deliberate crops and honest captions. Do not turn this into a generic hero-and-card layout.\n\n**Identity and adaptation.** The class timetable is the organising structure. Use energetic condensed typography and explicit capacity states, then explain trainers and membership terms without turning the page into a motivational poster.",
+  "scope": "Complete visual reference with local sample interactions; no production business backend."
+}

@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 2,
+  "id": "74",
+  "slug": "modern-docs-portal",
+  "name": "Modern Docs Portal",
+  "brand": "Vector / Developer docs",
+  "family": "Community & institutions",
+  "status": "ready",
+  "thesis": "Make the next implementation step easy to locate and verify.",
+  "suitableFor": [
+    "Developer tools",
+    "Software",
+    "API documentation"
+  ],
+  "character": "Restrained",
+  "traits": {
+    "composition": "light technical documentation with a three-column reading architecture",
+    "navigation": "Persistent sidebar, version selector, in-page contents and quickstart",
+    "typography": "DM Sans",
+    "density": "High",
+    "imagery": "Versioned code examples and local response objects",
+    "surface": "White documentation canvas, lilac selection and dark code panels",
+    "motion": "Minimal"
+  },
+  "effort": "Medium",
+  "definingFeatures": [
+    "Versioning",
+    "Sidebar navigation",
+    "Code examples"
+  ],
+  "adaptableChoices": [
+    "Verified business content",
+    "Brand and subject",
+    "Equivalent licensed typefaces"
+  ],
+  "discovery": {
+    "industries": [
+      "Developer tools",
+      "Software",
+      "API documentation"
+    ],
+    "visitorGoals": [
+      "Implement an integration"
+    ],
+    "conversionActions": [
+      "Complete a quickstart"
+    ],
+    "siteSize": "Documentation site",
+    "interactionTypes": [
+      "Version switcher",
+      "Code examples",
+      "In-page navigation"
+    ],
+    "keywords": [
+      "Developer tools",
+      "Software",
+      "API documentation",
+      "Complete a quickstart",
+      "Documentation site",
+      "Versioning",
+      "Sidebar navigation",
+      "Code examples",
+      "Quickstarts"
+    ]
+  },
+  "patterns": [
+    "Versioning",
+    "Sidebar navigation",
+    "Code examples",
+    "Quickstarts"
+  ],
+  "entryRoute": "/preview/74-modern-docs-portal/start",
+  "states": [
+    {
+      "key": "quickstart",
+      "label": "Quickstart guide",
+      "route": "/preview/74-modern-docs-portal/quickstart"
+    },
+    {
+      "key": "reference",
+      "label": "API reference",
+      "route": "/preview/74-modern-docs-portal/reference"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/74/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/74/a0fd13ebe76ecadc-desktop.jpg",
+      "route": "/preview/74-modern-docs-portal/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:ceb6ff326fef3de4e6b61b39d57b480d239941ded721007d62de2834e8dd9c10",
+      "sha256": "a0fd13ebe76ecadc131167a161f24893b51f7e782b710e723eb6c2575ed54c0e",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/74/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/74/cf909bccc22ed4f3-mobile.jpg",
+      "route": "/preview/74-modern-docs-portal/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:ceb6ff326fef3de4e6b61b39d57b480d239941ded721007d62de2834e8dd9c10",
+      "sha256": "cf909bccc22ed4f3e80f32a666fd1285e8ef0ec6ff470ba6c803139bc331c034",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/74/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/74/0492f16fafe5a322-detail.jpg",
+      "route": "/preview/74-modern-docs-portal/quickstart",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "quickstart",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:ceb6ff326fef3de4e6b61b39d57b480d239941ded721007d62de2834e8dd9c10",
+      "sha256": "0492f16fafe5a322535a51fb167c2fdd8908e723b8f47272af7fba46688a1dff",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/74/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/74/b370ef3a0018b365-full-page.jpg",
+      "route": "/preview/74-modern-docs-portal/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:ceb6ff326fef3de4e6b61b39d57b480d239941ded721007d62de2834e8dd9c10",
+      "sha256": "b370ef3a0018b365583471bb6f04b9e49f68fad2ed53152c89b4e56b373751f7",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/74-modern-docs-portal",
+  "neighbours": [
+    "41",
+    "18"
+  ],
+  "palette": {
+    "page": "#fafbfd",
+    "surface": "#ffffff",
+    "ink": "#2c3545",
+    "accent": "#444f9d"
+  },
+  "fonts": [
+    "DM Sans"
+  ],
+  "brief": "**Philosophy and fit.** Make the next implementation step easy to locate and verify. Built for developer tools, software, api documentation. The visitor’s next step is to complete a quickstart.\n\n**Visual grammar.** Use a light technical documentation with a three-column reading architecture. Preserve the hierarchy of versioning, sidebar navigation, code examples, quickstarts; these patterns solve this business’s actual decision, rather than supplying interchangeable decoration.\n\n**Sample and interaction.** Vector / Developer docs is a fictional demonstration. The entry page establishes a complete visual direction, with quickstart guide and api reference as supporting states. Inputs use local deterministic fixtures; no request, order, application or payment is sent.\n\n**Responsive behaviour.** On a phone, keep the primary decision first, stack facts with explicit labels, preserve the order of the workflow, and provide comfortably sized controls. Wide diagrams scale; tabular facts retain their labels.\n\n**Adaptation.** Replace the fictional brand, prices, availability, qualifications and claims with verified client information. Preserve versioning, sidebar navigation, code examples. Use imagery to explain the place, people, work or product, with deliberate crops and honest captions. Do not turn this into a generic hero-and-card layout.\n\n**Identity and adaptation.** Use the familiar documentation hierarchy: versions, page navigation, a reading column and in-page contents. Code and response examples follow the selected version; this is a conventional counterpart to Terminal Manual.",
+  "scope": "Complete visual reference with local sample interactions; no production business backend."
+}

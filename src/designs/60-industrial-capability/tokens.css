@@ -1,0 +1,12 @@
+.specimen {
+  --page: #202a2b;
+  --surface: #293637;
+  --ink: #eef3e8;
+  --accent: #cfec91;
+  --line: #62706a;
+  --heading: 'IBM Plex Mono', sans-serif;
+  --body: 'DM Sans', sans-serif;
+  --measure: 65ch;
+  --space: 8px;
+  --content: 1240px;
+}

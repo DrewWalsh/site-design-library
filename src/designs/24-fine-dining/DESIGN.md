@@ -46,3 +46,7 @@ See [asset record](../../../docs/ASSETS.md). All vector diagrams and sample writ
 ## Verification
 
 Reviewed working sample. Browser checks cover entry-page reflow at 320, 390, 768, and 1440 pixels, keyboard entry, direct routes, and automated accessibility; both supporting routes are checked at 390 pixels. Capture metadata is stored in public/previews/24/capture.json and names the source content hash. Accessibility scans are supplementary; no formal WCAG certification or field-performance claim is made.
+
+## Distinctive composition
+
+Serif menu captions and a slower typographic cadence support fine dining, distinct from the new Everyday Eatery’s menu board.

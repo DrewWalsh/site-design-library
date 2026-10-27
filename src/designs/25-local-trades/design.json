@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "25",
   "slug": "local-trades",
   "name": "Local Trades",
@@ -13,7 +13,7 @@
   ],
   "character": "Restrained",
   "traits": {
-    "composition": "Plain service answers, visible coverage, and a practical price table",
+    "composition": "Local service board with coverage sign, priced work rows and illustrated repair evidence",
     "navigation": "Service selection and a short enquiry form",
     "typography": "DM Sans",
     "density": "Medium",
@@ -48,7 +48,7 @@
   "referenceImages": [
     {
       "file": "/previews/25/desktop.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/25/34ca0670c722b5a7-desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/25/11ed186328eb62af-desktop.jpg",
       "route": "/preview/25-local-trades/start",
       "viewport": {
         "width": 1440,
@@ -56,13 +56,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:dc9f0f84347ba7649a1559389e68b1c6e42a40d16d6f0bbfea234f99ab1d8585",
-      "sha256": "34ca0670c722b5a7bd67e0f253d5935d198a3a1172924895129696cdba7b4bad",
+      "sourceRevision": "sha256:fc28f482dd38e92e11355fa225fa8336c1c23a6b8c1e52803bd5c35de53c3ff0",
+      "sha256": "11ed186328eb62af95ebbc54274b812c64d793316566724b5bf0dab25cee320f",
       "fullPage": false
     },
     {
       "file": "/previews/25/mobile.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/25/9e419e0893b979df-mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/25/5346dc4f253f9e65-mobile.jpg",
       "route": "/preview/25-local-trades/start",
       "viewport": {
         "width": 390,
@@ -70,13 +70,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:dc9f0f84347ba7649a1559389e68b1c6e42a40d16d6f0bbfea234f99ab1d8585",
-      "sha256": "9e419e0893b979dfbbc94911b0771529a959e1acc49dd2c9d2dc02bdc7030f88",
+      "sourceRevision": "sha256:fc28f482dd38e92e11355fa225fa8336c1c23a6b8c1e52803bd5c35de53c3ff0",
+      "sha256": "5346dc4f253f9e65792213045db164efe7d9c46e9eb496aa7bf66b4fa9d6e237",
       "fullPage": false
     },
     {
       "file": "/previews/25/detail.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/25/2e984a75199c371a-detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/25/299648e332315f14-detail.jpg",
       "route": "/preview/25-local-trades/quote",
       "viewport": {
         "width": 1440,
@@ -84,13 +84,13 @@
       },
       "state": "quote",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:dc9f0f84347ba7649a1559389e68b1c6e42a40d16d6f0bbfea234f99ab1d8585",
-      "sha256": "2e984a75199c371a10e4dc6eff55e5860efe0fb044fa40698d8302a789a6826c",
+      "sourceRevision": "sha256:fc28f482dd38e92e11355fa225fa8336c1c23a6b8c1e52803bd5c35de53c3ff0",
+      "sha256": "299648e332315f148ccafeac8da8d5dd96036f5ef06f0b96b7d7ebc24ad6e513",
       "fullPage": false
     },
     {
       "file": "/previews/25/full-page.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/25/680741e95ba28fe8-full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/25/f846c0291030ac80-full-page.jpg",
       "route": "/preview/25-local-trades/start",
       "viewport": {
         "width": 1440,
@@ -98,8 +98,8 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:dc9f0f84347ba7649a1559389e68b1c6e42a40d16d6f0bbfea234f99ab1d8585",
-      "sha256": "680741e95ba28fe868a24d75cc94d8f99ea7035743043e33a35bebb5c8d45096",
+      "sourceRevision": "sha256:fc28f482dd38e92e11355fa225fa8336c1c23a6b8c1e52803bd5c35de53c3ff0",
+      "sha256": "f846c0291030ac80f683cd23e27c7a2bc42fe7d169ec0dac1cb29d924f7de761",
       "fullPage": true
     }
   ],
@@ -117,6 +117,43 @@
   "fonts": [
     "DM Sans"
   ],
-  "brief": "**Philosophy and fit.** Answer the questions a customer has before contacting a local business. Appropriate for trades, storage facilities, repair services, and appointment-based businesses.\n\n**Visual grammar.** Lead with service, coverage area, opening hours, and a clear contact action. Follow with a price or service table, practical photographs, and specific evidence of work. Use robust sans-serif headings, dark navy text, white and pale grey surfaces, and a safety-orange accent reserved for actions. Navigation names the work directly.\n\n**Specimen and flow.** *Northline Repairs* serves a fictional town. Select a repair type, inspect service details, and complete a quote-request demonstration. Supporting views include service-area information and a submitted-request summary. Form validation explains missing information beside the relevant field; no message is actually sent.\n\n**Responsive behaviour.** Phone and enquiry actions stay easy to reach without covering the page. Service tables collapse into labelled records; addresses and hours remain visible text.\n\n**Identity rules.** Preserve plain answers, real-looking work examples, and clear contact routes. Avoid generic stock-photo heroes, fabricated review badges, and excessive animation. **Effort: low.**",
-  "scope": "An expansive sample page with representative local interactions; no production business backend."
+  "brief": "**Philosophy and fit.** Answer the questions a customer has before contacting a local business. Appropriate for trades, storage facilities, repair services, and appointment-based businesses.\n\n**Visual grammar.** Lead with service, coverage area, opening hours, and a clear contact action. Follow with a price or service table, practical photographs, and specific evidence of work. Use robust sans-serif headings, dark navy text, white and pale grey surfaces, and a safety-orange accent reserved for actions. Navigation names the work directly.\n\n**Specimen and flow.** *Northline Repairs* serves a fictional town. Select a repair type, inspect service details, and complete a quote-request demonstration. Supporting views include service-area information and a submitted-request summary. Form validation explains missing information beside the relevant field; no message is actually sent.\n\n**Responsive behaviour.** Phone and enquiry actions stay easy to reach without covering the page. Service tables collapse into labelled records; addresses and hours remain visible text.\n\n**Identity rules.** Preserve plain answers, real-looking work examples, and clear contact routes. Avoid generic stock-photo heroes, fabricated review badges, and excessive animation. **Effort: low.**\n\n**Distinctive composition.** A service-and-coverage board now leads the page: practical hours, three clearly priced work types, and an illustrated repair detail. This removes the product-marketing hero and pale information card shared with Precision SaaS, while avoiding Service Bay’s industrial ticket language.",
+  "scope": "An expansive sample page with representative local interactions; no production business backend.",
+  "discovery": {
+    "industries": [
+      "Local services",
+      "Trades",
+      "Repair",
+      "Self storage"
+    ],
+    "visitorGoals": [
+      "Understand services"
+    ],
+    "conversionActions": [
+      "Request a quote"
+    ],
+    "siteSize": "Service site",
+    "interactionTypes": [
+      "Service selection",
+      "Coverage information",
+      "Enquiry form"
+    ],
+    "keywords": [
+      "Services",
+      "Marketing",
+      "Service and area before decoration",
+      "Visible sample prices",
+      "Clear contact and validation",
+      "storage facilities",
+      "local business",
+      "small business",
+      "enquiry driven",
+      "storage"
+    ]
+  },
+  "patterns": [
+    "Service and area before decoration",
+    "Visible sample prices",
+    "Clear contact and validation"
+  ]
 }

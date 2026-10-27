@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "29",
   "slug": "calm-sanctuary",
   "name": "Calm Sanctuary",
@@ -48,7 +48,7 @@
   "referenceImages": [
     {
       "file": "/previews/29/desktop.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/29/80597c513670c39d-desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/29/20c38cbecfe3ed95-desktop.jpg",
       "route": "/preview/29-calm-sanctuary/start",
       "viewport": {
         "width": 1440,
@@ -56,13 +56,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:d73fc96082f4489d8b0116d80502f2acd2ed2e2dcbf60194f207e8c84b469a1c",
-      "sha256": "80597c513670c39d210b88a4832ebed0cd892c3c83804417301fa7e49ab84dd8",
+      "sourceRevision": "sha256:dc3a6233d3c42ab34c8d40d67d601596af9bd8c2dd7376251b43b15c44d7420b",
+      "sha256": "20c38cbecfe3ed9558a7dea976d203c99880015c40a52de18762646e7326d483",
       "fullPage": false
     },
     {
       "file": "/previews/29/mobile.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/29/fb0e2d8d7674056b-mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/29/e8ced71e2fd31e66-mobile.jpg",
       "route": "/preview/29-calm-sanctuary/start",
       "viewport": {
         "width": 390,
@@ -70,13 +70,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:d73fc96082f4489d8b0116d80502f2acd2ed2e2dcbf60194f207e8c84b469a1c",
-      "sha256": "fb0e2d8d7674056b3aea818e689f7cf0bb76f91318047bd55b7505326358e94e",
+      "sourceRevision": "sha256:dc3a6233d3c42ab34c8d40d67d601596af9bd8c2dd7376251b43b15c44d7420b",
+      "sha256": "e8ced71e2fd31e66d262ea2ee3521db32d47af5db14bf461212399bc75cc6726",
       "fullPage": false
     },
     {
       "file": "/previews/29/detail.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/29/66c39c67a143b52e-detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/29/abe0e9325b31df8b-detail.jpg",
       "route": "/preview/29-calm-sanctuary/practice",
       "viewport": {
         "width": 1440,
@@ -84,13 +84,13 @@
       },
       "state": "practice",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:d73fc96082f4489d8b0116d80502f2acd2ed2e2dcbf60194f207e8c84b469a1c",
-      "sha256": "66c39c67a143b52eac0254532729487c1a676406dcaca7602a8d7bd8d3dae3ef",
+      "sourceRevision": "sha256:dc3a6233d3c42ab34c8d40d67d601596af9bd8c2dd7376251b43b15c44d7420b",
+      "sha256": "abe0e9325b31df8b0e9e5b5a92a5e497818f4c78f5def98802d0ea2809b7106d",
       "fullPage": false
     },
     {
       "file": "/previews/29/full-page.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/29/8ef55913502a543e-full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/29/639b92ac4b7b6c35-full-page.jpg",
       "route": "/preview/29-calm-sanctuary/start",
       "viewport": {
         "width": 1440,
@@ -98,8 +98,8 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:d73fc96082f4489d8b0116d80502f2acd2ed2e2dcbf60194f207e8c84b469a1c",
-      "sha256": "8ef55913502a543e081b2a31c9cd7585f86dce077b7d2a31909e6f1c317f1d47",
+      "sourceRevision": "sha256:dc3a6233d3c42ab34c8d40d67d601596af9bd8c2dd7376251b43b15c44d7420b",
+      "sha256": "639b92ac4b7b6c35432b1ad0e10251676678964d10999831553b04db9c3b581a",
       "fullPage": true
     }
   ],
@@ -117,6 +117,36 @@
   "fonts": [
     "DM Sans"
   ],
-  "brief": "**Philosophy and fit.** Reduce the number of simultaneous decisions and let the visitor set the pace. Appropriate for quiet reading, gentle routines, reflective tools, and low-stimulation personal experiences.\n\n**Visual grammar.** Use one narrow content column, short sequences, abundant breathing room, and persistent but unobtrusive back navigation. Warm stone, deep plum, and muted sage support a soft humanist sans. Essential text retains strong contrast; calm comes from composition and pacing, not faint lettering. Controls have clear boundaries and restrained feedback.\n\n**Specimen and flow.** *Evening Room* offers fictional wind-down activities. Choose an activity, optionally set a duration, and enter a quiet practice screen. Supporting views include personal preferences and a finished-session state that offers an ordinary exit. No streaks, competitive scores, or surprise prompts appear.\n\n**Responsive behaviour.** The primary control sits comfortably within the viewport; orientation changes preserve session state. Sound and motion start off and require deliberate activation.\n\n**Identity rules.** Preserve voluntary pacing and limited choices. Avoid claiming therapeutic outcomes, using autoplay transitions, or introducing celebratory feedback at the end. **Effort: low.**",
-  "scope": "An expansive sample page with representative local interactions; no production business backend."
+  "brief": "**Philosophy and fit.** Reduce the number of simultaneous decisions and let the visitor set the pace. Appropriate for quiet reading, gentle routines, reflective tools, and low-stimulation personal experiences.\n\n**Visual grammar.** Use one narrow content column, short sequences, abundant breathing room, and persistent but unobtrusive back navigation. Warm stone, deep plum, and muted sage support a soft humanist sans. Essential text retains strong contrast; calm comes from composition and pacing, not faint lettering. Controls have clear boundaries and restrained feedback.\n\n**Specimen and flow.** *Evening Room* offers fictional wind-down activities. Choose an activity, optionally set a duration, and enter a quiet practice screen. Supporting views include personal preferences and a finished-session state that offers an ordinary exit. No streaks, competitive scores, or surprise prompts appear.\n\n**Responsive behaviour.** The primary control sits comfortably within the viewport; orientation changes preserve session state. Sound and motion start off and require deliberate activation.\n\n**Identity rules.** Preserve voluntary pacing and limited choices. Avoid claiming therapeutic outcomes, using autoplay transitions, or introducing celebratory feedback at the end. **Effort: low.**\n\n**Distinctive composition.** Quiet sentence-like labels soften the retreat’s rhythm without adding the technical flavour of monospaced eyebrows.",
+  "scope": "An expansive sample page with representative local interactions; no production business backend.",
+  "discovery": {
+    "industries": [
+      "Wellness",
+      "Retreat",
+      "Personal care"
+    ],
+    "visitorGoals": [
+      "Explore a practice"
+    ],
+    "conversionActions": [
+      "Book a session"
+    ],
+    "siteSize": "Service site",
+    "interactionTypes": [
+      "Session selection",
+      "Appointment booking"
+    ],
+    "keywords": [
+      "Wellness",
+      "Reading",
+      "Limited simultaneous choices",
+      "Voluntary pacing",
+      "Clear, quiet completion"
+    ]
+  },
+  "patterns": [
+    "Limited simultaneous choices",
+    "Voluntary pacing",
+    "Clear, quiet completion"
+  ]
 }

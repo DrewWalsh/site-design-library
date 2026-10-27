@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 2,
+  "id": "71",
+  "slug": "learning-prospectus",
+  "name": "Learning Prospectus",
+  "brand": "Northbank / Continuing studies",
+  "family": "Community & institutions",
+  "status": "ready",
+  "thesis": "Help learners compare the commitment before they enrol.",
+  "suitableFor": [
+    "College",
+    "Academy",
+    "Course provider"
+  ],
+  "character": "Restrained",
+  "traits": {
+    "composition": "indigo prospectus with a disciplined comparison grid and course index",
+    "navigation": "Programme filters, comparison, sample lesson and enrolment",
+    "typography": "DM Sans",
+    "density": "Medium",
+    "imagery": "Typographic prospectus spine and programme comparison tables",
+    "surface": "Paper prospectus with indigo tabs and ruled comparisons",
+    "motion": "Minimal"
+  },
+  "effort": "Medium",
+  "definingFeatures": [
+    "Prerequisites",
+    "Fees and schedules",
+    "Sample lessons"
+  ],
+  "adaptableChoices": [
+    "Verified business content",
+    "Brand and subject",
+    "Equivalent licensed typefaces"
+  ],
+  "discovery": {
+    "industries": [
+      "College",
+      "Academy",
+      "Course provider"
+    ],
+    "visitorGoals": [
+      "Compare programmes"
+    ],
+    "conversionActions": [
+      "Enrol in a programme"
+    ],
+    "siteSize": "Searchable catalogue",
+    "interactionTypes": [
+      "Programme comparison",
+      "Sample lesson",
+      "Enrolment"
+    ],
+    "keywords": [
+      "College",
+      "Academy",
+      "Course provider",
+      "Enrol in a programme",
+      "Searchable catalogue",
+      "Prerequisites",
+      "Fees and schedules",
+      "Sample lessons"
+    ]
+  },
+  "patterns": [
+    "Prerequisites",
+    "Fees and schedules",
+    "Sample lessons"
+  ],
+  "entryRoute": "/preview/71-learning-prospectus/start",
+  "states": [
+    {
+      "key": "programme",
+      "label": "Programme details",
+      "route": "/preview/71-learning-prospectus/programme"
+    },
+    {
+      "key": "enrol",
+      "label": "Enrolment request",
+      "route": "/preview/71-learning-prospectus/enrol"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/71/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/71/6e5ee5f1c5c120e9-desktop.jpg",
+      "route": "/preview/71-learning-prospectus/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:d026dc92f4e68f7aeaa0cf813bf44c7b729be8f52ba3b3b67d755b5596cd7f93",
+      "sha256": "6e5ee5f1c5c120e929e4330f17993f8ed17627d9c59e3f2a59e2030e578566d7",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/71/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/71/4d64c3e6e80ddd50-mobile.jpg",
+      "route": "/preview/71-learning-prospectus/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:d026dc92f4e68f7aeaa0cf813bf44c7b729be8f52ba3b3b67d755b5596cd7f93",
+      "sha256": "4d64c3e6e80ddd5076a9843092b2d1beb0c9eba76c6a1565fe3e329e059a1440",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/71/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/71/54075711ba41561b-detail.jpg",
+      "route": "/preview/71-learning-prospectus/programme",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "programme",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:d026dc92f4e68f7aeaa0cf813bf44c7b729be8f52ba3b3b67d755b5596cd7f93",
+      "sha256": "54075711ba41561be7d8f8c373705faae3170f3106975ae052d3a67185fc66a8",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/71/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/71/e4dc1abf0d3a003b-full-page.jpg",
+      "route": "/preview/71-learning-prospectus/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:d026dc92f4e68f7aeaa0cf813bf44c7b729be8f52ba3b3b67d755b5596cd7f93",
+      "sha256": "e4dc1abf0d3a003bde6dc89433e2a956eeac7a3fb2b9f1e25ead9833e050b3ea",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/71-learning-prospectus",
+  "neighbours": [
+    "05",
+    "14"
+  ],
+  "palette": {
+    "page": "#f4f2ed",
+    "surface": "#ffffff",
+    "ink": "#30364a",
+    "accent": "#454e92"
+  },
+  "fonts": [
+    "DM Sans"
+  ],
+  "brief": "**Philosophy and fit.** Help learners compare the commitment before they enrol. Built for college, academy, course provider. The visitor’s next step is to enrol in a programme.\n\n**Visual grammar.** Use a indigo prospectus with a disciplined comparison grid and course index. Preserve the hierarchy of prerequisites, fees and schedules, sample lessons; these patterns solve this business’s actual decision, rather than supplying interchangeable decoration.\n\n**Sample and interaction.** Northbank / Continuing studies is a fictional demonstration. The entry page establishes a complete visual direction, with programme details and enrolment request as supporting states. Inputs use local deterministic fixtures; no request, order, application or payment is sent.\n\n**Responsive behaviour.** On a phone, keep the primary decision first, stack facts with explicit labels, preserve the order of the workflow, and provide comfortably sized controls. Wide diagrams scale; tabular facts retain their labels.\n\n**Adaptation.** Replace the fictional brand, prices, availability, qualifications and claims with verified client information. Preserve prerequisites, fees and schedules, sample lessons. Use imagery to explain the place, people, work or product, with deliberate crops and honest captions. Do not turn this into a generic hero-and-card layout.\n\n**Identity and adaptation.** Build the page around a considered course choice: prerequisites, fees, workload and learning format are comparable before the sample lesson or enrolment form.",
+  "scope": "Complete visual reference with local sample interactions; no production business backend."
+}

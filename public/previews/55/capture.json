@@ -1,0 +1,64 @@
+{
+  "designId": "55",
+  "sourceRevision": "sha256:912380ff1d01c8a28fa4d25cf30f56df39922b151497e87e59f20eb70cca20fb",
+  "capturedAt": "2026-10-27T00:07:12.366Z",
+  "browser": "156.0.4314.42",
+  "captures": [
+    {
+      "file": "/previews/55/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/55/b12d321f0d23c9ab-desktop.jpg",
+      "route": "/preview/55-casebook-authority/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:912380ff1d01c8a28fa4d25cf30f56df39922b151497e87e59f20eb70cca20fb",
+      "sha256": "b12d321f0d23c9ab7c9f5a3fb237b4557bc4bc3bca39d7867171af28df86a095",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/55/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/55/2d8c65259af2f9dd-mobile.jpg",
+      "route": "/preview/55-casebook-authority/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:912380ff1d01c8a28fa4d25cf30f56df39922b151497e87e59f20eb70cca20fb",
+      "sha256": "2d8c65259af2f9dd5be33628b821afb08029eb5b558e62539a8088265da02441",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/55/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/55/7a05a66a5d66efba-detail.jpg",
+      "route": "/preview/55-casebook-authority/consultation",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "consultation",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:912380ff1d01c8a28fa4d25cf30f56df39922b151497e87e59f20eb70cca20fb",
+      "sha256": "7a05a66a5d66efbae50c4199950863da5f6d7ba82950294900790c468fd1fb38",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/55/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/55/dbc8c2efef756603-full-page.jpg",
+      "route": "/preview/55-casebook-authority/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:912380ff1d01c8a28fa4d25cf30f56df39922b151497e87e59f20eb70cca20fb",
+      "sha256": "dbc8c2efef7566031dc2e38f551dce0b3814d600c4f3e71a6eaab54d90bd2779",
+      "fullPage": true
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "28",
   "slug": "grand-hotel",
   "name": "Grand Hotel",
@@ -13,11 +13,11 @@
   ],
   "character": "Restrained",
   "traits": {
-    "composition": "Arrival photographs with an accompanying booking rail and comparable rooms",
+    "composition": "Hotel masthead, quiet welcome, booking rail and staggered arrival/bedroom sequence",
     "navigation": "Stay, explore, and explicit availability",
     "typography": "Libre Baskerville + DM Sans",
     "density": "Low",
-    "imagery": "Licensed illustrative photography",
+    "imagery": "Dedicated illustrative hotel exterior and bedroom photographs",
     "surface": "Cream and sage hospitality surfaces with full-bleed landscape photography",
     "motion": "Minimal"
   },
@@ -48,7 +48,7 @@
   "referenceImages": [
     {
       "file": "/previews/28/desktop.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/28/d338e54a1b0d9bff-desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/28/5ff5530fb6cd7334-desktop.jpg",
       "route": "/preview/28-grand-hotel/start",
       "viewport": {
         "width": 1440,
@@ -56,13 +56,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:325399a17f764cdb08b5369547e864c1cf2fac0559f5597621a6a3ceb6446ee4",
-      "sha256": "d338e54a1b0d9bffb2f6a661a66a1683865e561941f3d06ae40e49a9900000b7",
+      "sourceRevision": "sha256:d386970766548132e1d16d9be9c138acefbc4f01b6fd3ff1aeeabbe0e93698ce",
+      "sha256": "5ff5530fb6cd7334f5d11bb9a24e818b94d72bf66af6e7fa8fe0863e85bbf47b",
       "fullPage": false
     },
     {
       "file": "/previews/28/mobile.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/28/4cb70012ee74baf5-mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/28/d01a5ac9dd5d79bc-mobile.jpg",
       "route": "/preview/28-grand-hotel/start",
       "viewport": {
         "width": 390,
@@ -70,13 +70,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:325399a17f764cdb08b5369547e864c1cf2fac0559f5597621a6a3ceb6446ee4",
-      "sha256": "4cb70012ee74baf52fbe580a2f7045875cfe96de0911c4c1d852449c325b5fdd",
+      "sourceRevision": "sha256:d386970766548132e1d16d9be9c138acefbc4f01b6fd3ff1aeeabbe0e93698ce",
+      "sha256": "d01a5ac9dd5d79bc096d35f57daccae42f25f64669101ef98dc3b0d4c3c9dec4",
       "fullPage": false
     },
     {
       "file": "/previews/28/detail.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/28/3a1a95d1bbcf6652-detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/28/df965ab15d73eb70-detail.jpg",
       "route": "/preview/28-grand-hotel/rooms",
       "viewport": {
         "width": 1440,
@@ -84,13 +84,13 @@
       },
       "state": "rooms",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:325399a17f764cdb08b5369547e864c1cf2fac0559f5597621a6a3ceb6446ee4",
-      "sha256": "3a1a95d1bbcf665277c05790a655ff560729b1497cc762c68f45f6dc91549d9c",
+      "sourceRevision": "sha256:d386970766548132e1d16d9be9c138acefbc4f01b6fd3ff1aeeabbe0e93698ce",
+      "sha256": "df965ab15d73eb70ea19cd5c0f000d886da0acdbac31ede3fadf7648a809c972",
       "fullPage": false
     },
     {
       "file": "/previews/28/full-page.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/28/30c85e410f79c3c4-full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/28/aa63baa2bd856a42-full-page.jpg",
       "route": "/preview/28-grand-hotel/start",
       "viewport": {
         "width": 1440,
@@ -98,8 +98,8 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:325399a17f764cdb08b5369547e864c1cf2fac0559f5597621a6a3ceb6446ee4",
-      "sha256": "30c85e410f79c3c44ed57f80dd15cb295d530b7d441128a78d2bb660bd8679b2",
+      "sourceRevision": "sha256:d386970766548132e1d16d9be9c138acefbc4f01b6fd3ff1aeeabbe0e93698ce",
+      "sha256": "aa63baa2bd856a4227edf8025ec23cf22d18b0d9ba192ddc3a289804ade8ce6e",
       "fullPage": true
     }
   ],
@@ -118,6 +118,35 @@
     "Libre Baskerville",
     "DM Sans"
   ],
-  "brief": "**Philosophy and fit.** Let visitors imagine an arrival, then make the booking choices concrete. Fits destination hotels, lodges, retreats, and travel accommodations.\n\n**Visual grammar.** A sequence of wide photographic scenes introduces arrival, rooms, surroundings, and daily life. A compact booking rail accompanies the story. Use restrained serif display type, warm white surfaces, deep forest text, and terracotta accents. Navigation separates staying, exploring, and planning; room information uses consistent comparisons beneath the narrative.\n\n**Specimen and flow.** *Alder House* is a fictional lakeside hotel. Select dates, compare rooms, and review a sample booking summary. Supporting views include a room detail and an availability result with no matching rooms. Amenities, occupancy, and cancellation examples appear beside the decision they affect.\n\n**Responsive behaviour.** The booking rail becomes an accessible expandable section with a persistent summary. Photographic scenes retain ordinary scrolling; essential room details load before optional imagery.\n\n**Identity rules.** Preserve the arrival narrative and explicit booking information. Avoid scroll hijacking, looping video as a requirement, and identical full-screen photographs with no useful content. **Effort: medium.**",
-  "scope": "An expansive sample page with representative local interactions; no production business backend."
+  "brief": "**Philosophy and fit.** Let visitors imagine an arrival, then make the booking choices concrete. Fits destination hotels, lodges, retreats, and travel accommodations.\n\n**Visual grammar.** A sequence of wide photographic scenes introduces arrival, rooms, surroundings, and daily life. A compact booking rail accompanies the story. Use restrained serif display type, warm white surfaces, deep forest text, and terracotta accents. Navigation separates staying, exploring, and planning; room information uses consistent comparisons beneath the narrative.\n\n**Specimen and flow.** *Alder House* is a fictional lakeside hotel. Select dates, compare rooms, and review a sample booking summary. Supporting views include a room detail and an availability result with no matching rooms. Amenities, occupancy, and cancellation examples appear beside the decision they affect.\n\n**Responsive behaviour.** The booking rail becomes an accessible expandable section with a persistent summary. Photographic scenes retain ordinary scrolling; essential room details load before optional imagery.\n\n**Identity rules.** Preserve the arrival narrative and explicit booking information. Avoid scroll hijacking, looping video as a requirement, and identical full-screen photographs with no useful content. **Effort: medium.**\n\n**Distinctive composition.** Hospitality has a centred house masthead, a separate welcome and booking rail, and staggered arrival/bedroom photographs. Dedicated exterior and bedroom images establish arrival and rest, distinct from Documentary Story’s landscape narrative and Quiet Atelier’s object study.",
+  "scope": "An expansive sample page with representative local interactions; no production business backend.",
+  "discovery": {
+    "industries": [
+      "Hotel",
+      "Hospitality"
+    ],
+    "visitorGoals": [
+      "Plan a stay"
+    ],
+    "conversionActions": [
+      "Request a room"
+    ],
+    "siteSize": "Service site",
+    "interactionTypes": [
+      "Room comparison",
+      "Booking form"
+    ],
+    "keywords": [
+      "Hospitality",
+      "Travel",
+      "An arrival narrative",
+      "Room details at the point of choice",
+      "Practical booking information"
+    ]
+  },
+  "patterns": [
+    "An arrival narrative",
+    "Room details at the point of choice",
+    "Practical booking information"
+  ]
 }

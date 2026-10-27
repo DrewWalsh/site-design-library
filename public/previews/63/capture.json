@@ -1,0 +1,64 @@
+{
+  "designId": "63",
+  "sourceRevision": "sha256:216c2155a4eb85c28a61b3b29ffe8528a8ae9dd6a2eb91402b8da66305aea506",
+  "capturedAt": "2026-10-27T00:07:48.215Z",
+  "browser": "156.0.4314.42",
+  "captures": [
+    {
+      "file": "/previews/63/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/63/dc8d1c2a129764a7-desktop.jpg",
+      "route": "/preview/63-venue-floorplan/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:216c2155a4eb85c28a61b3b29ffe8528a8ae9dd6a2eb91402b8da66305aea506",
+      "sha256": "dc8d1c2a129764a7764218611f9d78c54665f3b258dca0f5b08842d75f4f0b47",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/63/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/63/f7d51689a2d9e1ee-mobile.jpg",
+      "route": "/preview/63-venue-floorplan/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:216c2155a4eb85c28a61b3b29ffe8528a8ae9dd6a2eb91402b8da66305aea506",
+      "sha256": "f7d51689a2d9e1ee69b9cd21134609ba36e088f21c2cf4ab4eae3e94b3bd1c7e",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/63/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/63/3106f6d744e835d0-detail.jpg",
+      "route": "/preview/63-venue-floorplan/plan",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "plan",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:216c2155a4eb85c28a61b3b29ffe8528a8ae9dd6a2eb91402b8da66305aea506",
+      "sha256": "3106f6d744e835d0d6ca61f6cb27bc242a8a05a1abb6a6c2dae5e4bc9d200ae3",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/63/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/63/ed922244ba34e3ee-full-page.jpg",
+      "route": "/preview/63-venue-floorplan/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:216c2155a4eb85c28a61b3b29ffe8528a8ae9dd6a2eb91402b8da66305aea506",
+      "sha256": "ed922244ba34e3ee57311a283eed888df02d364f5415f4e633e0f4e5cd150f01",
+      "fullPage": true
+    }
+  ]
+}

@@ -43,29 +43,21 @@ const unavailable = computed(
 <template>
   <div class="specimen">
     <a class="skip" href="#content">Skip to content</a>
-    <header>
-      <a :href="href('start')" @click.prevent="go('start')">ALDER HOUSE</a>
+    <header class="hotel-masthead">
       <nav>
-        <a href="#staying">Staying</a><a href="#exploring">Exploring</a
-        ><button @click="go('rooms')">Plan your stay</button>
+        <a :href="href('start') + '#staying'">The rooms</a
+        ><a :href="href('start') + '#exploring'">Around the house</a>
       </nav>
+      <a class="hotel-name" :href="href('start')" @click.prevent="go('start')"
+        ><span aria-hidden="true">❦</span>ALDER HOUSE<small>A SMALL HOTEL BY THE WATER</small></a
+      ><button @click="go('rooms')">Plan your stay →</button>
     </header>
     <main id="content">
       <template v-if="state === 'start'"
         ><section class="arrival">
-          <img
-            class=""
-            src="/art/lake.webp"
-            alt="A calm lake surrounded by wooded hills"
-            width="1200"
-            height="900"
-            loading="lazy"
-          />
-          <div>
-            <p class="eyebrow">AT THE EDGE OF THE WATER</p>
-            <h1>Somewhere<br />to arrive.</h1>
-            <p>A small house. A long view.<br />A little time that belongs to you.</p>
-          </div>
+          <p class="eyebrow">A welcome, and a little breathing room.</p>
+          <h1>Somewhere to arrive.<br />A reason to linger.</h1>
+          <p>A small house, considered rooms, and a morning with nowhere else to be.</p>
         </section>
         <form class="booking" @submit.prevent="go('rooms')">
           <label>Arrival<input type="date" v-model="arrival" required /></label
@@ -77,6 +69,24 @@ const unavailable = computed(
             </select></label
           ><button class="primary">Find a sample room →</button>
         </form>
+        <section class="arrival-photos">
+          <figure>
+            <img
+              src="https://drew-site-design-library.t3.tigrisfiles.io/assets/commercial/29f14a82fe4987ad-hotel-exterior.webp"
+              alt="Illustrative hotel exterior and arrival setting"
+              loading="lazy"
+            />
+            <figcaption>The arrival / illustrative hotel photograph</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="https://drew-site-design-library.t3.tigrisfiles.io/assets/commercial/63ad30add2976c42-hotel-room.webp"
+              alt="Illustrative hotel bedroom with a carefully made bed"
+              loading="lazy"
+            />
+            <figcaption>The quiet of a room / independent illustrative photograph</figcaption>
+          </figure>
+        </section>
         <section id="staying" class="staying">
           <div>
             <p class="eyebrow">A HOUSE, NOT A HURRY</p>
@@ -90,8 +100,8 @@ const unavailable = computed(
           <figure>
             <img
               class=""
-              src="/art/interior.webp"
-              alt="A warmly lit room with a mustard armchair and a wooden floor"
+              src="https://drew-site-design-library.t3.tigrisfiles.io/assets/commercial/63ad30add2976c42-hotel-room.webp"
+              alt="Illustrative hotel bedroom with a carefully made bed"
               width="1200"
               height="900"
               loading="lazy"
@@ -658,5 +668,259 @@ nav button {
   .rooms article h2 {
     font-size: 28px;
   }
+}
+
+.eyebrow {
+  font:
+    italic 14px/1.6 'Libre Baskerville',
+    Georgia,
+    serif;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.hotel-masthead {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr 1fr;
+  gap: 30px;
+  padding: 25px 5%;
+  align-items: center;
+  border-bottom: 1px solid #b7b7a3;
+  background: #f5f1e8;
+  color: #304535;
+}
+.hotel-masthead nav {
+  margin: 0;
+  display: flex;
+  gap: 24px;
+  font-size: 11px;
+}
+.hotel-masthead .hotel-name {
+  text-align: center;
+  font: 21px/1.2 'Libre Baskerville';
+  letter-spacing: 0.08em;
+  display: block;
+}
+.hotel-name > span {
+  display: block;
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+.hotel-name > small {
+  font: 8px/1.7 'DM Sans';
+  letter-spacing: 0.17em;
+  display: block;
+  margin-top: 10px;
+}
+.hotel-masthead > button {
+  justify-self: end;
+  font-size: 11px;
+  background: transparent;
+  border: 1px solid #8d9a86;
+  padding: 11px 20px;
+}
+.arrival {
+  display: block;
+  text-align: center;
+  min-height: 0;
+  height: auto;
+  padding: 45px 5% 30px;
+  position: static;
+  background: none;
+  color: #304535;
+}
+.arrival > p {
+  margin: 0 auto;
+  max-width: 65ch;
+  font-size: 14px;
+}
+.arrival > .eyebrow {
+  font-size: 13px;
+}
+.arrival h1 {
+  font-size: clamp(38px, 4.7vw, 65px);
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 20px 0 25px;
+  letter-spacing: -0.04em;
+}
+.arrival:after {
+  display: none;
+}
+main > .booking {
+  margin: 0 auto 35px;
+  max-width: 1040px;
+  position: static;
+  background: #e6e9dc;
+  padding: 22px 30px;
+  box-shadow: none;
+  border-top: 1px solid #96a18d;
+  border-bottom: 1px solid #96a18d;
+}
+.booking label {
+  font-size: 11px;
+}
+.booking input,
+.booking select {
+  background: #fdfbf4;
+  font-size: 12px;
+  border-color: #acb39f;
+}
+.booking button {
+  font-size: 12px;
+}
+.arrival-photos {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 25px;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+.arrival-photos figure {
+  margin: 0;
+}
+.arrival-photos img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  display: block;
+}
+.arrival-photos figure:nth-child(2) {
+  padding-top: 55px;
+}
+.arrival-photos figure:nth-child(2) img {
+  height: 325px;
+}
+.arrival-photos figcaption {
+  font:
+    italic 11px/1.6 Georgia,
+    serif;
+  padding-top: 10px;
+}
+.staying {
+  padding-top: 70px;
+}
+.staying h2 {
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+.staying img {
+  height: 420px;
+  object-fit: cover;
+}
+.staying figure {
+  margin: 0;
+}
+.exploring {
+  background: #e8e6d7;
+  padding: 50px 7%;
+}
+.exploring h2 {
+  font-weight: 400;
+  font-size: 37px;
+}
+.exploring > .row {
+  font:
+    italic 13px/1.7 Georgia,
+    serif;
+}
+.rooms > h1,
+.summary > h1 {
+  font-weight: 400;
+  letter-spacing: -0.035em;
+}
+@media (max-width: 760px) {
+  .hotel-masthead {
+    grid-template-columns: 1fr auto;
+    gap: 18px;
+    padding: 20px;
+  }
+  .hotel-masthead nav {
+    grid-column: 1/-1;
+    grid-row: 2;
+    justify-content: center;
+    gap: 25px;
+    font-size: 10px;
+  }
+  .hotel-masthead .hotel-name {
+    font-size: 18px;
+    text-align: left;
+  }
+  .hotel-name > span {
+    display: none;
+  }
+  .hotel-name > small {
+    font-size: 7px;
+  }
+  .hotel-masthead > button {
+    font-size: 10px;
+    padding: 9px 12px;
+  }
+  .arrival {
+    padding: 30px 22px 25px;
+  }
+  .arrival h1 {
+    font-size: 34px;
+    line-height: 1.2;
+  }
+  .arrival > p {
+    font-size: 13px;
+  }
+  .arrival > .eyebrow {
+    font-size: 11px;
+  }
+  main > .booking {
+    margin: 0 22px 25px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+  .booking label {
+    min-width: 0;
+  }
+  .booking label input {
+    min-width: 0;
+    width: 100%;
+    padding: 8px;
+    font-size: 11px;
+  }
+  .booking > button {
+    grid-column: 1/-1;
+  }
+  .arrival-photos {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 22px;
+    gap: 15px;
+  }
+  .arrival-photos img {
+    height: 220px;
+  }
+  .arrival-photos figure:nth-child(2) {
+    padding-top: 30px;
+  }
+  .arrival-photos figure:nth-child(2) img {
+    height: 190px;
+  }
+  .arrival-photos figcaption {
+    font-size: 9px;
+  }
+  .staying {
+    padding-top: 45px;
+  }
+  .staying h2 {
+    font-size: 34px;
+  }
+  .staying img {
+    height: 300px;
+  }
+  .exploring h2 {
+    font-size: 30px;
+  }
+}
+
+.arrival-photos figure:first-child img {
+  object-position: center 78%;
 }
 </style>

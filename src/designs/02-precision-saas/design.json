@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "02",
   "slug": "precision-saas",
   "name": "Precision SaaS",
@@ -7,10 +7,7 @@
   "family": "Clarity & editorial",
   "status": "ready",
   "thesis": "Explain a software product through concrete capabilities, evidence, and a credible path into its interface.",
-  "suitableFor": [
-    "Software",
-    "Marketing"
-  ],
+  "suitableFor": ["Software", "Marketing"],
   "character": "Restrained",
   "traits": {
     "composition": "Asymmetric product story beside a readable working inbox",
@@ -104,19 +101,33 @@
     }
   ],
   "sourcePath": "src/designs/02-precision-saas",
-  "neighbours": [
-    "11",
-    "20"
-  ],
+  "neighbours": ["11", "20"],
   "palette": {
     "page": "#f8fafc",
     "surface": "#ffffff",
     "ink": "#202d42",
     "accent": "#305ed6"
   },
-  "fonts": [
-    "DM Sans"
-  ],
+  "fonts": ["DM Sans"],
   "brief": "**Philosophy and fit.** Explain a software product through concrete capabilities, evidence, and a credible path into its interface. Suitable for subscription software, professional tools, and product launches needing a conventional commercial structure.\n\n**Visual grammar.** Use a tidy horizontal navigation, asymmetric hero with product copy beside a real interface preview, alternating capability sections, a compact comparison table, and a direct closing action. A neutral grotesk, pale grey surfaces, charcoal text, and a single blue accent establish order. Reserve rounded containers for genuine interface groupings; screenshots should show readable features, not floating abstract rectangles.\n\n**Specimen and flow.** *RelayDesk* presents a small client request tracker. Visitors inspect a worked request, compare three fictional plans, then open an interactive sample inbox. Supporting states include a populated request detail and an empty workspace with a useful first action.\n\n**Adaptation and identity.** Mobile promotes copy before the preview and presents plan differences as labelled sections. Preserve capability-led storytelling and visible product evidence; avoid generic metric claims, gradient decoration, and autoplay demos. **Effort: medium.**",
-  "scope": "An expansive sample page with representative local interactions; no production business backend."
+  "scope": "An expansive sample page with representative local interactions; no production business backend.",
+  "discovery": {
+    "industries": ["Software", "SaaS", "B2B services"],
+    "visitorGoals": ["Evaluate a product"],
+    "conversionActions": ["Try a product demo"],
+    "siteSize": "Small brochure",
+    "interactionTypes": ["Product demo", "Feature comparison"],
+    "keywords": [
+      "Software",
+      "Marketing",
+      "Product evidence beside the claim",
+      "Alternating capability sections",
+      "A concrete plan comparison"
+    ]
+  },
+  "patterns": [
+    "Product evidence beside the claim",
+    "Alternating capability sections",
+    "A concrete plan comparison"
+  ]
 }

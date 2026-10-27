@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import { repository } from './data';
+import { repository, designs } from './data';
 </script>
 <template>
   <a class="g-skip" href="#main">Skip to content</a>
   <header class="g-header">
     <RouterLink to="/" class="g-brand"
       ><span class="g-mark"><i></i><i></i><i></i></span>Design Library<span class="g-edition"
-        >VOL. 01</span
+        >VOL. 02</span
       ></RouterLink
     >
     <nav aria-label="Library">
@@ -17,6 +17,7 @@ import { repository } from './data';
   <RouterView />
   <footer class="g-footer">
     <span>Design Library <b>·</b> A collection of possibilities.</span
-    ><span>50 directions. One useful starting point.</span><a :href="repository">View source ↗</a>
+    ><span>{{ designs.length }} directions. One useful starting point.</span
+    ><a :href="repository">View source ↗</a>
   </footer>
 </template>

@@ -1,0 +1,64 @@
+{
+  "designId": "53",
+  "sourceRevision": "sha256:aede09874daa733c7b0367ced65bfb66191a5e68dae04540c80ee0a760e831e0",
+  "capturedAt": "2026-10-27T00:07:04.577Z",
+  "browser": "156.0.4314.42",
+  "captures": [
+    {
+      "file": "/previews/53/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/53/056a938c3f9327cd-desktop.jpg",
+      "route": "/preview/53-appointment-studio/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:aede09874daa733c7b0367ced65bfb66191a5e68dae04540c80ee0a760e831e0",
+      "sha256": "056a938c3f9327cdac01acf9410c46ed0147dbc8ad2675e7e22a1305ec3862fa",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/53/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/53/0a3d0a05c4014584-mobile.jpg",
+      "route": "/preview/53-appointment-studio/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:aede09874daa733c7b0367ced65bfb66191a5e68dae04540c80ee0a760e831e0",
+      "sha256": "0a3d0a05c4014584c75dae0947379ad1626c8b27ad1ae4a5f2a78b4cd5386e34",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/53/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/53/ab383a4b58a2a4e0-detail.jpg",
+      "route": "/preview/53-appointment-studio/book",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "book",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:aede09874daa733c7b0367ced65bfb66191a5e68dae04540c80ee0a760e831e0",
+      "sha256": "ab383a4b58a2a4e08196cdd89db84c96e25903f81cac1e1bb270a8541d67dee4",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/53/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/53/eec7d4657715cc81-full-page.jpg",
+      "route": "/preview/53-appointment-studio/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:aede09874daa733c7b0367ced65bfb66191a5e68dae04540c80ee0a760e831e0",
+      "sha256": "eec7d4657715cc81d7acbe0570f875d0a7052c0a4649b10ac4ddacd3a81c86e5",
+      "fullPage": true
+    }
+  ]
+}

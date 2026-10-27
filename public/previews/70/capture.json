@@ -1,0 +1,64 @@
+{
+  "designId": "70",
+  "sourceRevision": "sha256:db6dfbef2855ee3e09d3698b4b77114de868aaff7590500e219ce02ce8493389",
+  "capturedAt": "2026-10-27T00:08:15.195Z",
+  "browser": "156.0.4314.42",
+  "captures": [
+    {
+      "file": "/previews/70/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/70/8399bda17ef3ce19-desktop.jpg",
+      "route": "/preview/70-community-commons/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:db6dfbef2855ee3e09d3698b4b77114de868aaff7590500e219ce02ce8493389",
+      "sha256": "8399bda17ef3ce19bd903fbebf218cbcef55be8151a7e287fac362bfcf7b5c75",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/70/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/70/ccf299b8f03aca40-mobile.jpg",
+      "route": "/preview/70-community-commons/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:db6dfbef2855ee3e09d3698b4b77114de868aaff7590500e219ce02ce8493389",
+      "sha256": "ccf299b8f03aca403492b362d3aecd51fbcddc499a72b170a621b55bd3dc3699",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/70/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/70/b43bc01363e44dff-detail.jpg",
+      "route": "/preview/70-community-commons/events",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "events",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:db6dfbef2855ee3e09d3698b4b77114de868aaff7590500e219ce02ce8493389",
+      "sha256": "b43bc01363e44dffacacb9572461e5eea9d38f4baef819bd2efdd7d0a637fb48",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/70/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/70/04df2ceea60c5aa9-full-page.jpg",
+      "route": "/preview/70-community-commons/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:db6dfbef2855ee3e09d3698b4b77114de868aaff7590500e219ce02ce8493389",
+      "sha256": "04df2ceea60c5aa969c1d063bf2d5e1d2e773137b4c09b4524cb3a3fe6f33f69",
+      "fullPage": true
+    }
+  ]
+}

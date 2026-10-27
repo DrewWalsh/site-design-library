@@ -47,36 +47,22 @@ const services = [
     </header>
     <main id="content">
       <template v-if="state === 'start'"
-        ><section class="hero">
+        ><section class="service-heading">
           <div>
-            <p class="eyebrow">LOCAL REPAIRS / NORTHBANK & NEARBY</p>
-            <h1>Let’s get it<br />working again.</h1>
-            <p>
-              Practical repairs for the things you use every day. Tell us what needs attention and
-              we’ll help you understand the next step.
-            </p>
-            <button class="primary" @click="go('quote')">Tell us about the job →</button>
-            <p class="demo">Fictional business. The enquiry form is a local demonstration.</p>
+            <p class="eyebrow">Your local repair desk</p>
+            <h1>What needs<br />a little attention?</h1>
           </div>
-          <aside>
-            <p class="eyebrow">THE USEFUL DETAILS</p>
-            <h2>Good to know<br />before you call.</h2>
-            <dl>
-              <dt>Area</dt>
-              <dd>Northbank & 10 km around</dd>
-              <dt>Hours</dt>
-              <dd>Mon–Fri, 08:00–17:30</dd>
-              <dt>Visits</dt>
-              <dd>By appointment</dd>
-              <dt>Pricing</dt>
-              <dd>Agreed before work starts</dd>
-            </dl>
-            <button @click="go('area')">Check the service area ↗</button>
-          </aside>
+          <div class="contact-sign">
+            <b>Northbank &amp; nearby</b>
+            <p>Monday–Friday<br />08:00–17:30</p>
+            <button @click="go('area')">Check your area →</button>
+          </div>
         </section>
         <section id="services">
-          <p class="eyebrow">WHAT WE DO</p>
-          <h2>Small jobs. Proper attention.</h2>
+          <div class="board-title">
+            <p class="eyebrow">Choose the work</p>
+            <p>Sample starting prices · scope agreed before a visit</p>
+          </div>
           <article v-for="(s, i) in services" :key="s.name">
             <span>0{{ i + 1 }}</span>
             <div>
@@ -97,6 +83,47 @@ const services = [
             >Illustrative call-out prices. Parts and additional work would be quoted separately in a
             real service.</small
           >
+        </section>
+        <section class="repair-evidence">
+          <div class="repair-drawing">
+            <svg
+              viewBox="0 0 400 260"
+              role="img"
+              aria-label="Illustrated chair repair showing a loose joint and a repaired joint"
+            >
+              <g fill="none" stroke="#394d4b" stroke-width="5">
+                <path
+                  d="M65 65V150H155V65M65 110H155M70 150 60 235M150 150 160 235M240 65V150H330V65M240 110H330M245 150 235 235M325 150 335 235"
+                />
+              </g>
+              <g fill="none" stroke="#b45127" stroke-width="3">
+                <circle cx="66" cy="150" r="22" stroke-dasharray="5 4" />
+                <path d="m228 151 10 10 24-26" />
+              </g>
+              <g fill="#24374b" font-family="sans-serif" font-size="12">
+                <text x="55" y="32">BEFORE / LOOSE JOINT</text>
+                <text x="235" y="32">AFTER / RE-FIXED</text>
+              </g>
+            </svg>
+            <p>Illustrative repair detail · no client outcome claimed</p>
+          </div>
+          <div>
+            <p class="eyebrow">A small job, properly explained</p>
+            <h2>A chair with another<br />few years in it.</h2>
+            <p>
+              A fictional repair example: inspect the movement, explain the loose joint, agree the
+              repair, then show what changed. Useful evidence is specific, even when the job is
+              small.
+            </p>
+            <button
+              @click="
+                service = 'Furniture repairs';
+                go('quote');
+              "
+            >
+              Ask about a furniture repair →
+            </button>
+          </div>
         </section>
         <section class="process">
           <div>
@@ -620,6 +647,183 @@ main {
   .quote h1,
   .area h1 {
     font-size: 39px;
+  }
+}
+
+.eyebrow {
+  font: 600 13px/1.5 'DM Sans';
+  letter-spacing: 0;
+  text-transform: none;
+}
+.service-heading {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 70px;
+  align-items: end;
+  padding: 45px 0 35px;
+}
+.service-heading h1 {
+  font-size: clamp(40px, 5.3vw, 70px);
+  line-height: 1.07;
+  margin: 18px 0 0;
+  letter-spacing: -0.035em;
+}
+.contact-sign {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  border-left: 4px solid #be491b;
+  padding: 20px 25px;
+  background: #ecebdc;
+}
+.contact-sign > b {
+  grid-column: 1/-1;
+  font-size: 19px;
+}
+.contact-sign p {
+  font-size: 13px;
+  margin: 0;
+}
+.contact-sign button {
+  font-size: 12px;
+  background: transparent;
+  align-self: end;
+}
+#services {
+  padding: 0 28px 25px;
+  border: 2px solid #304638;
+  background: #f0f1e3;
+  box-shadow: 7px 7px #dddccc;
+}
+.board-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  padding: 18px 0;
+  border-bottom: 2px solid #304638;
+}
+.board-title > p:last-child {
+  font-size: 11px;
+  margin: 0;
+}
+#services article {
+  grid-template-columns: 45px 1fr 110px 160px;
+  gap: 20px;
+  padding: 25px 0;
+  border-bottom: 1px solid #a2afa1;
+}
+#services article > span {
+  font: 24px 'DM Sans';
+  font-weight: 500;
+  color: #486249;
+}
+#services h3 {
+  font-size: 24px;
+}
+#services article p {
+  font-size: 13px;
+}
+#services strong {
+  font-size: 20px;
+}
+#services article button {
+  background: #fffdf1;
+  border: 1px solid #899b88;
+  font-size: 12px;
+}
+#services > small {
+  display: block;
+  font-size: 10px;
+  padding-top: 20px;
+}
+.repair-evidence {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 55px;
+  align-items: center;
+  margin: 65px 0;
+}
+.repair-drawing {
+  background: #e5eadc;
+  padding: 25px;
+}
+.repair-drawing p {
+  font-size: 10px;
+  margin: 10px 0 0;
+}
+.repair-evidence h2 {
+  font-size: 32px;
+  margin: 15px 0 22px;
+}
+.repair-evidence > div > p:not(.eyebrow) {
+  font-size: 14px;
+}
+.repair-evidence button {
+  font-size: 12px;
+  margin-top: 18px;
+  background: transparent;
+}
+.process {
+  border-top: 1px solid var(--line);
+  padding-top: 35px;
+}
+@media (max-width: 760px) {
+  .service-heading {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding-top: 30px;
+  }
+  .service-heading h1 {
+    font-size: 43px;
+  }
+  .contact-sign {
+    padding: 20px;
+  }
+  .contact-sign > b {
+    font-size: 18px;
+  }
+  #services {
+    padding: 0 20px 22px;
+    box-shadow: 4px 4px #dddccc;
+  }
+  .board-title {
+    display: block;
+  }
+  .board-title > .eyebrow {
+    margin-bottom: 8px;
+  }
+  #services article {
+    grid-template-columns: 30px 1fr;
+    gap: 12px;
+  }
+  #services article > div {
+    grid-column: 2;
+  }
+  #services h3 {
+    font-size: 22px;
+  }
+  #services article > strong {
+    grid-column: 2;
+    font-size: 19px;
+  }
+  #services article > button {
+    grid-column: 2;
+    justify-self: start;
+  }
+  #services article > span {
+    font-size: 20px;
+  }
+  .repair-evidence {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin: 45px 0;
+  }
+  .repair-evidence h2 {
+    font-size: 29px;
+  }
+  .repair-drawing {
+    padding: 20px;
   }
 }
 </style>

@@ -1,0 +1,64 @@
+{
+  "designId": "67",
+  "sourceRevision": "sha256:a88465c13c00663c48436d5fb4b88a7c90f69f8087337f642cff2a50b3f42d70",
+  "capturedAt": "2026-10-27T00:08:04.687Z",
+  "browser": "156.0.4314.42",
+  "captures": [
+    {
+      "file": "/previews/67/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/67/316206de44b8d101-desktop.jpg",
+      "route": "/preview/67-everyday-eatery/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:a88465c13c00663c48436d5fb4b88a7c90f69f8087337f642cff2a50b3f42d70",
+      "sha256": "316206de44b8d10170eee488e01e35e36be1de310658fe8e4cb8d798c40c85fd",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/67/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/67/ca11ee7ba69cbf62-mobile.jpg",
+      "route": "/preview/67-everyday-eatery/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:a88465c13c00663c48436d5fb4b88a7c90f69f8087337f642cff2a50b3f42d70",
+      "sha256": "ca11ee7ba69cbf62c1b86998c3be5349a83ab94f289f634c494a5693f3d83b12",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/67/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/67/34df0b2ef4b26fce-detail.jpg",
+      "route": "/preview/67-everyday-eatery/menu",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "menu",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:a88465c13c00663c48436d5fb4b88a7c90f69f8087337f642cff2a50b3f42d70",
+      "sha256": "34df0b2ef4b26fce62d34b27eb308b62aa390fd34092b0bf2b87b50986ee9bab",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/67/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/67/fbc3446ca7385ce7-full-page.jpg",
+      "route": "/preview/67-everyday-eatery/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:a88465c13c00663c48436d5fb4b88a7c90f69f8087337f642cff2a50b3f42d70",
+      "sha256": "fbc3446ca7385ce7b31de7321290c0b76f68e605f8b1abb2bae4da63877a3647",
+      "fullPage": true
+    }
+  ]
+}

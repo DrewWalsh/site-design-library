@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "18",
   "slug": "knowledge-garden",
   "name": "Knowledge Garden",
@@ -13,9 +13,9 @@
   ],
   "character": "Restrained",
   "traits": {
-    "composition": "Readable central note between topic tree and backlinks",
+    "composition": "Compact note workspace with maturity metadata, topic tree and separate backlink panels",
     "navigation": "Contextual links, topic hierarchy, and a local search",
-    "typography": "Libre Baskerville + DM Sans",
+    "typography": "DM Sans",
     "density": "Medium",
     "imagery": "Typography, rules, and interface structure",
     "surface": "Soft green paper, inline links and quiet backlink rails",
@@ -48,7 +48,7 @@
   "referenceImages": [
     {
       "file": "/previews/18/desktop.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/18/b2cf624abbabbcff-desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/18/eebe1a19fda037f7-desktop.jpg",
       "route": "/preview/18-knowledge-garden/start",
       "viewport": {
         "width": 1440,
@@ -56,13 +56,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:ee40b9dda7ccef585d3395de4418a39c0d1d3e89c37423555249ef1c95d3dfe2",
-      "sha256": "b2cf624abbabbcff0dffef4ae35ffa8979d0ec484d8523c2f207a562c69d79ac",
+      "sourceRevision": "sha256:8555d6b41768024802d96a04e1903d4b0f3474dae435127eda6fb8c44c705c53",
+      "sha256": "eebe1a19fda037f779f6a11a5695cb3f06ea85909bc2c6a11e08b04ecf12a694",
       "fullPage": false
     },
     {
       "file": "/previews/18/mobile.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/18/d1d0e6f3b1e3c9e5-mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/18/b42694aaf6f80c62-mobile.jpg",
       "route": "/preview/18-knowledge-garden/start",
       "viewport": {
         "width": 390,
@@ -70,13 +70,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:ee40b9dda7ccef585d3395de4418a39c0d1d3e89c37423555249ef1c95d3dfe2",
-      "sha256": "d1d0e6f3b1e3c9e57347cdbd6c21ba57644e21fb4f5b0609568d99c9f3d563ac",
+      "sourceRevision": "sha256:8555d6b41768024802d96a04e1903d4b0f3474dae435127eda6fb8c44c705c53",
+      "sha256": "b42694aaf6f80c6229cf3a4943e2f8d848ff2b21ea11ddd1fcd9119469d77d5b",
       "fullPage": false
     },
     {
       "file": "/previews/18/detail.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/18/b2cf624abbabbcff-detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/18/eebe1a19fda037f7-detail.jpg",
       "route": "/preview/18-knowledge-garden/note",
       "viewport": {
         "width": 1440,
@@ -84,13 +84,13 @@
       },
       "state": "note",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:ee40b9dda7ccef585d3395de4418a39c0d1d3e89c37423555249ef1c95d3dfe2",
-      "sha256": "b2cf624abbabbcff0dffef4ae35ffa8979d0ec484d8523c2f207a562c69d79ac",
+      "sourceRevision": "sha256:8555d6b41768024802d96a04e1903d4b0f3474dae435127eda6fb8c44c705c53",
+      "sha256": "eebe1a19fda037f779f6a11a5695cb3f06ea85909bc2c6a11e08b04ecf12a694",
       "fullPage": false
     },
     {
       "file": "/previews/18/full-page.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/18/49ae1495a32ecf4a-full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/18/97a29e691be73e33-full-page.jpg",
       "route": "/preview/18-knowledge-garden/start",
       "viewport": {
         "width": 1440,
@@ -98,8 +98,8 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:ee40b9dda7ccef585d3395de4418a39c0d1d3e89c37423555249ef1c95d3dfe2",
-      "sha256": "49ae1495a32ecf4a8a8748c10027ad7f111dcbe2f82504aab34b7c1b9bb78341",
+      "sourceRevision": "sha256:8555d6b41768024802d96a04e1903d4b0f3474dae435127eda6fb8c44c705c53",
+      "sha256": "97a29e691be73e333ae439e19291b06babfcaa31a9c39e61955e9700989d046e",
       "fullPage": true
     }
   ],
@@ -115,9 +115,37 @@
     "accent": "#4b6b4d"
   },
   "fonts": [
-    "Libre Baskerville",
     "DM Sans"
   ],
-  "brief": "**Philosophy and fit.** Encourage exploration through connected ideas while showing where each piece belongs. Suitable for personal knowledge bases, wikis, research notes, and living project documentation.\n\n**Visual grammar.** Use a readable central note, a compact topic tree, and a contextual rail for backlinks and related concepts. Soft grey-green surfaces, dark green-black text, a modest serif title, and a clear sans body create a cultivated, practical tone. The interface distinguishes a note's hierarchy from its cross-links; a small trail records the current route through the collection.\n\n**Specimen and flow.** *The Small Systems Garden* contains fictional notes on everyday design. Visitors open a concept, follow a contextual link, and inspect notes that link back to it. Supporting views show a topic overview and a local search result with matched passages.\n\n**Adaptation and identity.** Mobile moves the tree and backlinks into clearly labelled sections. Preserve readable notes, meaningful connections, and stable URLs; avoid graph visualisations as compulsory navigation, unexplained tags, and decorative pseudo-botanical clutter. **Effort: medium.**",
-  "scope": "An expansive sample page with representative local interactions; no production business backend."
+  "brief": "**Philosophy and fit.** Encourage exploration through connected ideas while showing where each piece belongs. Suitable for personal knowledge bases, wikis, research notes, and living project documentation.\n\n**Visual grammar.** Use a readable central note, a compact topic tree, and a contextual rail for backlinks and related concepts. Soft grey-green surfaces, dark green-black text, compact sans-serif headings, and a clear sans body create a cultivated, practical tone. The interface distinguishes a note's hierarchy from its cross-links; a small trail records the current route through the collection.\n\n**Specimen and flow.** *The Small Systems Garden* contains fictional notes on everyday design. Visitors open a concept, follow a contextual link, and inspect notes that link back to it. Supporting views show a topic overview and a local search result with matched passages.\n\n**Adaptation and identity.** Mobile moves the tree and backlinks into clearly labelled sections. Preserve readable notes, meaningful connections, and stable URLs; avoid graph visualisations as compulsory navigation, unexplained tags, and decorative pseudo-botanical clutter. **Effort: medium.**\n\n**Distinctive composition.** A compact sans-serif note workspace separates the topic tree, developing-note metadata, reading surface, and coloured backlink panels. This gives Knowledge Garden an editable, connected character distinct from the book-like Scholarly Folio.",
+  "scope": "An expansive sample page with representative local interactions; no production business backend.",
+  "discovery": {
+    "industries": [
+      "Knowledge management",
+      "Education"
+    ],
+    "visitorGoals": [
+      "Find an idea"
+    ],
+    "conversionActions": [
+      "Read a note"
+    ],
+    "siteSize": "Documentation site",
+    "interactionTypes": [
+      "Search",
+      "Linked notes"
+    ],
+    "keywords": [
+      "Research",
+      "Reading",
+      "Textual connections carry meaning",
+      "Hierarchy separate from backlinks",
+      "Stable note URLs"
+    ]
+  },
+  "patterns": [
+    "Textual connections carry meaning",
+    "Hierarchy separate from backlinks",
+    "Stable note URLs"
+  ]
 }

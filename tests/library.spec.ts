@@ -71,7 +71,7 @@ test('Gallery search, URL restoration, inspector prompt, comparison and isolatio
   page,
 }) => {
   await page.goto('/');
-  await expect(page.locator('.g-card')).toHaveCount(50);
+  await expect(page.locator('.g-card')).toHaveCount(catalogue.length);
   const thumbnailSize = await page.locator('.g-card-image img').first().boundingBox();
   expect(thumbnailSize!.height / thumbnailSize!.width).toBeCloseTo(1000 / 1440, 1);
   await page.getByRole('textbox', { name: 'Search designs' }).fill('Blueprint');
@@ -97,7 +97,7 @@ test('Gallery search, URL restoration, inspector prompt, comparison and isolatio
   await page.goto('/?q=absolutelynomatch');
   await expect(page.getByRole('heading', { name: 'A little too specific?' })).toBeVisible();
   await page.getByRole('button', { name: 'Reset all filters' }).click();
-  await expect(page.locator('.g-card')).toHaveCount(50);
+  await expect(page.locator('.g-card')).toHaveCount(catalogue.length);
   const a11y = await new AxeBuilder({ page })
     .withTags(['wcag2a', 'wcag2aa', 'wcag21aa', 'wcag22aa'])
     .analyze();

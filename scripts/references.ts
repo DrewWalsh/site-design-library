@@ -31,8 +31,22 @@ async function download(entry: (typeof entries)[number], url: string) {
 }
 
 if (action === 'stage') {
-  fs.mkdirSync('.work', {recursive:true});
-  fs.writeFileSync('.work/tigris-upload.json', JSON.stringify({bucket:'drew-site-design-library',objects:entries.map(entry=>({file:entry.local,key:entry.key,sha256:entry.ref.sha256}))},null,2)+'\n');
+  fs.mkdirSync('.work', { recursive: true });
+  fs.writeFileSync(
+    '.work/tigris-upload.json',
+    JSON.stringify(
+      {
+        bucket: 'drew-site-design-library',
+        objects: entries.map((entry) => ({
+          file: entry.local,
+          key: entry.key,
+          sha256: entry.ref.sha256,
+        })),
+      },
+      null,
+      2,
+    ) + '\n',
+  );
   for (const entry of entries) {
     const bytes = fs.readFileSync(entry.local);
     if (sha256(bytes) !== entry.ref.sha256) throw new Error(`Local image mismatch: ${entry.local}`);

@@ -46,3 +46,7 @@ See [asset record](../../../docs/ASSETS.md). All vector diagrams and sample writ
 ## Verification
 
 Reviewed working sample. Browser checks cover entry-page reflow at 320, 390, 768, and 1440 pixels, keyboard entry, direct routes, and automated accessibility; both supporting routes are checked at 390 pixels. Capture metadata is stored in public/previews/28/capture.json and names the source content hash. Accessibility scans are supplementary; no formal WCAG certification or field-performance claim is made.
+
+## Distinctive composition
+
+Hospitality has a centred house masthead, a separate welcome and booking rail, and staggered arrival/bedroom photographs. Dedicated exterior and bedroom images establish arrival and rest, distinct from Documentary Story’s landscape narrative and Quiet Atelier’s object study.

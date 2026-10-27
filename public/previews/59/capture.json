@@ -1,0 +1,64 @@
+{
+  "designId": "59",
+  "sourceRevision": "sha256:7567fbcbc508d12f3f858cb8a69fd26096b5bbf061d03a2c8e2e45200738ce19",
+  "capturedAt": "2026-10-27T00:07:29.220Z",
+  "browser": "156.0.4314.42",
+  "captures": [
+    {
+      "file": "/previews/59/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/59/46694cac93c42c3d-desktop.jpg",
+      "route": "/preview/59-unit-finder/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:7567fbcbc508d12f3f858cb8a69fd26096b5bbf061d03a2c8e2e45200738ce19",
+      "sha256": "46694cac93c42c3dcf30a1c4491686665a0fb02ec79b3c807b36ad8a8a3c1c0c",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/59/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/59/9ba453a052adcd1c-mobile.jpg",
+      "route": "/preview/59-unit-finder/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:7567fbcbc508d12f3f858cb8a69fd26096b5bbf061d03a2c8e2e45200738ce19",
+      "sha256": "9ba453a052adcd1cceacb015b2f1739201840914f468dd8acbdb896685895cb0",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/59/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/59/654bb7dcf080c66e-detail.jpg",
+      "route": "/preview/59-unit-finder/size",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "size",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:7567fbcbc508d12f3f858cb8a69fd26096b5bbf061d03a2c8e2e45200738ce19",
+      "sha256": "654bb7dcf080c66e93f554fa182ae0675b13a0bbb7f959d674c0a0f8b036dee4",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/59/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/59/2f6cdd9a2ea69ead-full-page.jpg",
+      "route": "/preview/59-unit-finder/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:7567fbcbc508d12f3f858cb8a69fd26096b5bbf061d03a2c8e2e45200738ce19",
+      "sha256": "2f6cdd9a2ea69eadf8a1d0cc04a05f8008faa56cf9baba1cae743b0d11751ae2",
+      "fullPage": true
+    }
+  ]
+}

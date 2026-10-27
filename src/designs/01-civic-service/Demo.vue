@@ -463,4 +463,9 @@ form {
     font-size: 14px;
   }
 }
+.eyebrow {
+  font: 600 13px/1.5 'DM Sans';
+  letter-spacing: 0;
+  text-transform: none;
+}
 </style>

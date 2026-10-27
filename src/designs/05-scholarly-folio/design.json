@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "05",
   "slug": "scholarly-folio",
   "name": "Scholarly Folio",
@@ -48,7 +48,7 @@
   "referenceImages": [
     {
       "file": "/previews/05/desktop.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/05/7d1a041b430d41ec-desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/05/7edafbc9a76b2e45-desktop.jpg",
       "route": "/preview/05-scholarly-folio/start",
       "viewport": {
         "width": 1440,
@@ -56,8 +56,8 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:53deb3ca3cc64cb47544e443fd817e21ef5b614dbc926691035bafa8a8c9f2e1",
-      "sha256": "7d1a041b430d41ec243a10adcafd5df81d1dbf75fe72e0c88d5939e7e716bb06",
+      "sourceRevision": "sha256:449166e65bd21ca64e9b3a27407cc958240882a15e799a0e023ebecec9861d36",
+      "sha256": "7edafbc9a76b2e45a86d22a04ba924c7658b0c81d0c5635de77b1947415e3b8f",
       "fullPage": false
     },
     {
@@ -70,13 +70,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:53deb3ca3cc64cb47544e443fd817e21ef5b614dbc926691035bafa8a8c9f2e1",
+      "sourceRevision": "sha256:449166e65bd21ca64e9b3a27407cc958240882a15e799a0e023ebecec9861d36",
       "sha256": "3c3b8af031d054410540038542d8f2044b86dc9b921fbf8a3192884f83d8816d",
       "fullPage": false
     },
     {
       "file": "/previews/05/detail.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/05/9bbfa2a32a658c97-detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/05/9fa7f23fdea1a7da-detail.jpg",
       "route": "/preview/05-scholarly-folio/reading",
       "viewport": {
         "width": 1440,
@@ -84,13 +84,13 @@
       },
       "state": "reading",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:53deb3ca3cc64cb47544e443fd817e21ef5b614dbc926691035bafa8a8c9f2e1",
-      "sha256": "9bbfa2a32a658c97cbdc3894d3e738a63f0cbc56d85aae82ca7bc3fdcaf12a56",
+      "sourceRevision": "sha256:449166e65bd21ca64e9b3a27407cc958240882a15e799a0e023ebecec9861d36",
+      "sha256": "9fa7f23fdea1a7da7cabb18d2ad59bc364060643624801cdc17e70e1275fa899",
       "fullPage": false
     },
     {
       "file": "/previews/05/full-page.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/05/c496687c363c2643-full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/05/6bd0554067d870cf-full-page.jpg",
       "route": "/preview/05-scholarly-folio/start",
       "viewport": {
         "width": 1440,
@@ -98,8 +98,8 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:53deb3ca3cc64cb47544e443fd817e21ef5b614dbc926691035bafa8a8c9f2e1",
-      "sha256": "c496687c363c26432ecf5e4376a47373db632d19820101923aace4e299e20548",
+      "sourceRevision": "sha256:449166e65bd21ca64e9b3a27407cc958240882a15e799a0e023ebecec9861d36",
+      "sha256": "6bd0554067d870cf524603dec36b63922d15f1f502ca71326afcfb4086403e9e",
       "fullPage": true
     }
   ],
@@ -118,6 +118,36 @@
     "Libre Baskerville",
     "DM Sans"
   ],
-  "brief": "**Philosophy and fit.** Support close reading while keeping commentary and sources within reach. Suitable for annotated texts, research essays, translations, archival editions, and educational publications.\n\n**Visual grammar.** A book-like serif reading column sits between a narrow chapter index and a wider annotation margin. Use parchment-white, dark brown-black text, restrained burgundy links, paragraph numbers, and precise footnote markers. The title treatment resembles a scholarly title page. Notes are connected to passages through labels and alignment rather than colour alone; the navigation distinguishes chapters, annotations, and bibliography.\n\n**Specimen and flow.** *The Commonplace Edition* contains an original fictional essay with author commentary. Selecting an annotation highlights its passage and reveals the note. Supporting views show the bibliography with source metadata and a reading-only mode that suppresses secondary material.\n\n**Adaptation and identity.** Mobile brings each opened note into the reading flow with a clear return control. Preserve the relationship between text, notes, and sources; avoid magazine teasers, decorative manuscript imitation, and hover-only notes. Motion is unnecessary. **Effort: medium.**",
-  "scope": "An expansive sample page with representative local interactions; no production business backend."
+  "brief": "**Philosophy and fit.** Support close reading while keeping commentary and sources within reach. Suitable for annotated texts, research essays, translations, archival editions, and educational publications.\n\n**Visual grammar.** A book-like serif reading column sits between a narrow chapter index and a wider annotation margin. Use parchment-white, dark brown-black text, restrained burgundy links, paragraph numbers, and precise footnote markers. The title treatment resembles a scholarly title page. Notes are connected to passages through labels and alignment rather than colour alone; the navigation distinguishes chapters, annotations, and bibliography.\n\n**Specimen and flow.** *The Commonplace Edition* contains an original fictional essay with author commentary. Selecting an annotation highlights its passage and reveals the note. Supporting views show the bibliography with source metadata and a reading-only mode that suppresses secondary material.\n\n**Adaptation and identity.** Mobile brings each opened note into the reading flow with a clear return control. Preserve the relationship between text, notes, and sources; avoid magazine teasers, decorative manuscript imitation, and hover-only notes. Motion is unnecessary. **Effort: medium.**\n\n**Distinctive composition.** Serif italic marginal captions reinforce the scholarly folio, separating its reading character from the Knowledge Garden workspace.",
+  "scope": "An expansive sample page with representative local interactions; no production business backend.",
+  "discovery": {
+    "industries": [
+      "Research",
+      "Education",
+      "Academic publishing"
+    ],
+    "visitorGoals": [
+      "Read research"
+    ],
+    "conversionActions": [
+      "Explore a publication"
+    ],
+    "siteSize": "Digital publication",
+    "interactionTypes": [
+      "Citations",
+      "Long-form reading"
+    ],
+    "keywords": [
+      "Research",
+      "Reading",
+      "Passage-level notes",
+      "Stable scholarly reading measure",
+      "Sources separated from interpretation"
+    ]
+  },
+  "patterns": [
+    "Passage-level notes",
+    "Stable scholarly reading measure",
+    "Sources separated from interpretation"
+  ]
 }

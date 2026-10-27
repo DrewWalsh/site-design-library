@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "19",
   "slug": "conversation-desk",
   "name": "Conversation Desk",
@@ -13,7 +13,7 @@
   ],
   "character": "Restrained",
   "traits": {
-    "composition": "Spacious scripted conversation beside a live answer summary",
+    "composition": "Conversation window with distinct speaker bubbles, reply chips and a compact answer summary",
     "navigation": "Suggested replies, review, restart, and direct browse",
     "typography": "DM Sans",
     "density": "Medium",
@@ -48,7 +48,7 @@
   "referenceImages": [
     {
       "file": "/previews/19/desktop.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/19/d1b7f0060a639d99-desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/19/608696c3af4867ef-desktop.jpg",
       "route": "/preview/19-conversation-desk/start",
       "viewport": {
         "width": 1440,
@@ -56,13 +56,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:3675aed7e123ee95406bef2426b48711c02422de033430a455c0887c815011db",
-      "sha256": "d1b7f0060a639d998ba52c8479bd3b44d63e22385efdf59d7e47e1fa804534b2",
+      "sourceRevision": "sha256:ec86a8d324f036458d7c748397ff0e9ef26cc7bd55da4e749e29ee525bbe2a21",
+      "sha256": "608696c3af4867ef5e18554c26482a2278d597a0b9cbe3d556b00afb9a007ad2",
       "fullPage": false
     },
     {
       "file": "/previews/19/mobile.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/19/53302de2ab7baf58-mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/19/9e390c14ed7bbcfc-mobile.jpg",
       "route": "/preview/19-conversation-desk/start",
       "viewport": {
         "width": 390,
@@ -70,13 +70,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:3675aed7e123ee95406bef2426b48711c02422de033430a455c0887c815011db",
-      "sha256": "53302de2ab7baf58bad418ed31bd53ee0bb5ec69924f0f4bf81743978149cab5",
+      "sourceRevision": "sha256:ec86a8d324f036458d7c748397ff0e9ef26cc7bd55da4e749e29ee525bbe2a21",
+      "sha256": "9e390c14ed7bbcfc72738a861fdea40dcde6ce90c6d28b8f1aedaa593212eebd",
       "fullPage": false
     },
     {
       "file": "/previews/19/detail.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/19/d7fa02ebfc8c51b6-detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/19/f84950f928b5a2f0-detail.jpg",
       "route": "/preview/19-conversation-desk/summary",
       "viewport": {
         "width": 1440,
@@ -84,13 +84,13 @@
       },
       "state": "summary",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:3675aed7e123ee95406bef2426b48711c02422de033430a455c0887c815011db",
-      "sha256": "d7fa02ebfc8c51b68a3494d3826f1ea97bac1c06c137dfdc1583db301ba45f34",
+      "sourceRevision": "sha256:ec86a8d324f036458d7c748397ff0e9ef26cc7bd55da4e749e29ee525bbe2a21",
+      "sha256": "f84950f928b5a2f08b3ec9a94bb6f24848bda7523a902cc2a231bca1082cb993",
       "fullPage": false
     },
     {
       "file": "/previews/19/full-page.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/19/aba85229cc2873e9-full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/19/608696c3af4867ef-full-page.jpg",
       "route": "/preview/19-conversation-desk/start",
       "viewport": {
         "width": 1440,
@@ -98,8 +98,8 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:3675aed7e123ee95406bef2426b48711c02422de033430a455c0887c815011db",
-      "sha256": "aba85229cc2873e924e7831e5f492d7a98f1e8f1196e18096ab1bd0647250d99",
+      "sourceRevision": "sha256:ec86a8d324f036458d7c748397ff0e9ef26cc7bd55da4e749e29ee525bbe2a21",
+      "sha256": "608696c3af4867ef5e18554c26482a2278d597a0b9cbe3d556b00afb9a007ad2",
       "fullPage": true
     }
   ],
@@ -117,6 +117,35 @@
   "fonts": [
     "DM Sans"
   ],
-  "brief": "**Philosophy and fit.** Make a bounded information exchange feel direct and responsive. Suitable for product guidance, structured support, intake, and interactive learning with a clearly defined decision tree.\n\n**Visual grammar.** A spacious conversation column sits beside a live summary of resolved answers. Use humanist sans text, warm white, dark ink, restrained blue response emphasis, and subtle dividers between exchanges. Present suggested replies as explicit controls and longer explanations as readable paragraphs. A small persistent navigation offers restart, review, and a direct browse alternative.\n\n**Specimen and flow.** *Desk Guide* helps a fictional coworking visitor choose a workspace. Visitors answer a finite set of scripted questions, receive a fixture recommendation, and revise an earlier answer. Supporting states show an unsupported free-text response with suggested choices and a complete answer summary.\n\n**Adaptation and identity.** Mobile keeps the active exchange and summary easy to reach without trapping the viewport. Preserve conversational continuity and editable answers; avoid fake typing delays, claims of intelligence, and mandatory chat for information available directly. **Effort: medium.**",
-  "scope": "An expansive sample page with representative local interactions; no production business backend."
+  "brief": "**Philosophy and fit.** Make a bounded information exchange feel direct and responsive. Suitable for product guidance, structured support, intake, and interactive learning with a clearly defined decision tree.\n\n**Visual grammar.** A compact conversation window with guide and visitor bubbles sits beside a live summary of resolved answers. Use humanist sans text, warm white, dark ink, restrained blue response emphasis, and subtle dividers between exchanges. Present suggested replies as explicit controls and longer explanations as readable paragraphs. A small persistent navigation offers restart, review, and a direct browse alternative.\n\n**Specimen and flow.** *Desk Guide* helps a fictional coworking visitor choose a workspace. Visitors answer a finite set of scripted questions, receive a fixture recommendation, and revise an earlier answer. Supporting states show an unsupported free-text response with suggested choices and a complete answer summary.\n\n**Adaptation and identity.** Mobile keeps the active exchange and summary easy to reach without trapping the viewport. Preserve conversational continuity and editable answers; avoid fake typing delays, claims of intelligence, and mandatory chat for information available directly. **Effort: medium.**\n\n**Distinctive composition.** A compact conversation window shows guide bubbles, user replies, reply chips, and an adjacent summary sheet. The entry reads as a bounded conversation immediately, separating it from the centred Guided Journey wizard.",
+  "scope": "An expansive sample page with representative local interactions; no production business backend.",
+  "discovery": {
+    "industries": [
+      "Support",
+      "Messaging"
+    ],
+    "visitorGoals": [
+      "Resolve a conversation"
+    ],
+    "conversionActions": [
+      "Send a sample reply"
+    ],
+    "siteSize": "Application",
+    "interactionTypes": [
+      "Conversation list",
+      "Message thread"
+    ],
+    "keywords": [
+      "Onboarding",
+      "Support",
+      "Visible conversational continuity",
+      "Editable collected answers",
+      "A complete non-chat alternative"
+    ]
+  },
+  "patterns": [
+    "Visible conversational continuity",
+    "Editable collected answers",
+    "A complete non-chat alternative"
+  ]
 }

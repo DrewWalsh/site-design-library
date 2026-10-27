@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 2,
+  "id": "66",
+  "slug": "commission-studio",
+  "name": "Commission Studio",
+  "brand": "Still / Furniture workshop",
+  "family": "Small business",
+  "status": "ready",
+  "thesis": "Begin with materials and a conversation about how you live.",
+  "suitableFor": [
+    "Bespoke furniture",
+    "Jewellery",
+    "Tailoring",
+    "Custom fabrication"
+  ],
+  "character": "Restrained",
+  "traits": {
+    "composition": "warm ash material library and a quiet horizontal making process",
+    "navigation": "Materials, dimensions, finish and commission enquiry",
+    "typography": "Libre Baskerville",
+    "density": "Medium",
+    "imagery": "Workshop photograph, illustrated material samples and a configurable table drawing",
+    "surface": "Oatmeal paper, dark wood tones and quiet serif captions",
+    "motion": "Minimal"
+  },
+  "effort": "Medium",
+  "definingFeatures": [
+    "Material samples",
+    "Commission process",
+    "Configuration-led enquiry"
+  ],
+  "adaptableChoices": [
+    "Verified business content",
+    "Brand and subject",
+    "Equivalent licensed typefaces"
+  ],
+  "discovery": {
+    "industries": [
+      "Bespoke furniture",
+      "Jewellery",
+      "Tailoring",
+      "Custom fabrication"
+    ],
+    "visitorGoals": [
+      "Plan a custom piece"
+    ],
+    "conversionActions": [
+      "Enquire about a commission"
+    ],
+    "siteSize": "Portfolio & enquiry",
+    "interactionTypes": [
+      "Material selector",
+      "Configuration",
+      "Commission enquiry"
+    ],
+    "keywords": [
+      "Bespoke furniture",
+      "Jewellery",
+      "Tailoring",
+      "Custom fabrication",
+      "Enquire about a commission",
+      "Portfolio & enquiry",
+      "Material samples",
+      "Commission process",
+      "Configuration-led enquiry",
+      "small business",
+      "local business",
+      "enquiry driven",
+      "inquiry",
+      "quote"
+    ]
+  },
+  "patterns": [
+    "Material samples",
+    "Commission process",
+    "Configuration-led enquiry"
+  ],
+  "entryRoute": "/preview/66-commission-studio/start",
+  "states": [
+    {
+      "key": "configure",
+      "label": "Configure a commission",
+      "route": "/preview/66-commission-studio/configure"
+    },
+    {
+      "key": "enquiry",
+      "label": "Commission brief",
+      "route": "/preview/66-commission-studio/enquiry"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/66/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/66/b079650163730add-desktop.jpg",
+      "route": "/preview/66-commission-studio/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:694c6dd128d08f9d9832d7ef8b5411dcb1528188ea0058295ee884f34319b352",
+      "sha256": "b079650163730add310aa8fcfb8f6bd9b5deba9dd4bc691c51751c70e0aaf876",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/66/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/66/532a1aa386423b9e-mobile.jpg",
+      "route": "/preview/66-commission-studio/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:694c6dd128d08f9d9832d7ef8b5411dcb1528188ea0058295ee884f34319b352",
+      "sha256": "532a1aa386423b9eab899fc3eae86709dfb41058c13493227f21840d5d4ddf01",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/66/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/66/eb33339aca9a170b-detail.jpg",
+      "route": "/preview/66-commission-studio/configure",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "configure",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:694c6dd128d08f9d9832d7ef8b5411dcb1528188ea0058295ee884f34319b352",
+      "sha256": "eb33339aca9a170bb0f5648ffcde6718ec83eb11a59a7dd434348071fefa8830",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/66/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/66/cfbcb8cd5c152fed-full-page.jpg",
+      "route": "/preview/66-commission-studio/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:694c6dd128d08f9d9832d7ef8b5411dcb1528188ea0058295ee884f34319b352",
+      "sha256": "cfbcb8cd5c152fedde58c5abb9a5b5ffeeaa14ce39f2f2724d62002d97b485fe",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/66-commission-studio",
+  "neighbours": [
+    "04",
+    "22"
+  ],
+  "palette": {
+    "page": "#eee8dd",
+    "surface": "#ffffff",
+    "ink": "#443a2f",
+    "accent": "#795636"
+  },
+  "fonts": [
+    "Libre Baskerville",
+    "DM Sans"
+  ],
+  "brief": "**Philosophy and fit.** Begin with materials and a conversation about how you live. Built for bespoke furniture, jewellery, tailoring, custom fabrication. The visitor’s next step is to enquire about a commission.\n\n**Visual grammar.** Use a warm ash material library and a quiet horizontal making process. Preserve the hierarchy of material samples, commission process, configuration-led enquiry; these patterns solve this business’s actual decision, rather than supplying interchangeable decoration.\n\n**Sample and interaction.** Still / Furniture workshop is a fictional demonstration. The entry page establishes a complete visual direction, with configure a commission and commission brief as supporting states. Inputs use local deterministic fixtures; no request, order, application or payment is sent.\n\n**Responsive behaviour.** On a phone, keep the primary decision first, stack facts with explicit labels, preserve the order of the workflow, and provide comfortably sized controls. Wide diagrams scale; tabular facts retain their labels.\n\n**Adaptation.** Replace the fictional brand, prices, availability, qualifications and claims with verified client information. Preserve material samples, commission process, configuration-led enquiry. Use imagery to explain the place, people, work or product, with deliberate crops and honest captions. Do not turn this into a generic hero-and-card layout.\n\n**Identity and adaptation.** Lead with material and workmanship, then build a brief from timber, length and finish. This is a conversation about a bespoke object, with an indicative price rather than an ordinary checkout.",
+  "scope": "Complete visual reference with local sample interactions; no production business backend."
+}

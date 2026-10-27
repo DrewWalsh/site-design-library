@@ -55,6 +55,9 @@ const incompatible = computed(
           <h2>Pick a starting point.</h2>
           <div>
             <article v-for="(kit, i) in kits" :key="kit" :class="'kit k' + i">
+              <div :class="'collection-shape shape-' + i" aria-hidden="true">
+                <i></i><b></b><em></em>
+              </div>
               <span>0{{ i + 1 }} / SMALL EXPERIMENTS</span>
               <h3>{{ kit }}</h3>
               <p>
@@ -723,6 +726,226 @@ main {
   }
   .builder aside {
     transform: none;
+  }
+}
+
+.kits > div {
+  grid-template-columns: 1.05fr 1fr;
+  gap: 35px;
+  align-items: stretch;
+}
+.kit {
+  position: relative;
+  border: 0;
+  box-shadow: none;
+  background: #eebaa5;
+  padding: 35px;
+  overflow: hidden;
+}
+.kit.k0 {
+  grid-row: span 2;
+  border-radius: 160px 160px 12px 12px;
+  padding-top: 55px;
+}
+.kit.k1 {
+  margin-top: 0;
+  border-radius: 0 90px 0 0;
+  background: #c5dfcd;
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 0 25px;
+  padding-top: 30px;
+}
+.kit.k2 {
+  margin-top: 0;
+  border-radius: 0 0 90px 0;
+  background: #d1c2e7;
+  display: grid;
+  grid-template-columns: 1fr 120px;
+  gap: 0 25px;
+}
+.kit.k1 > .collection-shape {
+  grid-row: span 5;
+}
+.kit.k2 > .collection-shape {
+  grid-column: 2;
+  grid-row: span 5;
+}
+.kit.k1 > span,
+.kit.k1 > h3,
+.kit.k1 > p,
+.kit.k1 > ul,
+.kit.k1 > button {
+  grid-column: 2;
+}
+.kit.k2 > span,
+.kit.k2 > h3,
+.kit.k2 > p,
+.kit.k2 > ul,
+.kit.k2 > button {
+  grid-column: 1;
+}
+.kit h3 {
+  font-size: 34px;
+  margin: 15px 0;
+}
+.kit p,
+.kit li {
+  font-size: 13px;
+}
+.kit ul {
+  padding-left: 20px;
+}
+.kit button {
+  border: 1px solid #332a44;
+  box-shadow: none;
+  background: #fff7e9;
+  padding: 12px 18px;
+  font-size: 12px;
+  justify-self: start;
+}
+.collection-shape {
+  position: relative;
+  height: 160px;
+  margin-bottom: 20px;
+}
+.shape-0 {
+  height: 240px;
+  margin: 15px 0 30px;
+  background: repeating-linear-gradient(45deg, transparent 0 15px, #332a4412 15px 19px);
+  border-radius: 50%;
+}
+.shape-0 i {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  left: 20%;
+  top: 30px;
+  background: #c3d9ca;
+  transform: rotate(25deg);
+  border: 2px solid #332a44;
+}
+.shape-0 b {
+  position: absolute;
+  width: 100px;
+  height: 150px;
+  right: 20%;
+  top: 65px;
+  border-radius: 50% 50% 0 0;
+  background: #c9b4e1;
+  border: 2px solid #332a44;
+  transform: rotate(-20deg);
+}
+.shape-0 em {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  left: 25%;
+  top: 125px;
+  border-radius: 50%;
+  background: #f5d76a;
+  border: 2px solid #332a44;
+}
+.shape-1 {
+  height: 100%;
+  min-height: 210px;
+  background: radial-gradient(#332a44 2px, transparent 2px);
+  background-size: 14px 14px;
+}
+.shape-1 i {
+  position: absolute;
+  inset: 25% 10%;
+  background: #f6d769;
+  border-radius: 70% 30% 50% 30%;
+  transform: rotate(15deg);
+  border: 2px solid #332a44;
+}
+.shape-1 b {
+  position: absolute;
+  left: 25%;
+  top: 38%;
+  width: 60px;
+  height: 60px;
+  border: 10px solid #b34a72;
+  border-radius: 50%;
+}
+.shape-2 {
+  height: 100%;
+  min-height: 210px;
+}
+.shape-2 i {
+  position: absolute;
+  left: 15%;
+  top: 18%;
+  width: 80px;
+  height: 150px;
+  background: #c8dfcb;
+  border-radius: 45% 55% 40% 60%;
+  border: 2px solid #332a44;
+}
+.shape-2 b {
+  position: absolute;
+  left: 10%;
+  top: 42%;
+  width: 85px;
+  height: 85px;
+  background: #efb7a0;
+  border-radius: 50%;
+  border: 2px solid #332a44;
+}
+.clubnote {
+  border-top: 8px solid transparent;
+  border-image: repeating-linear-gradient(
+      90deg,
+      #332a44 0 14px,
+      #eeb59e 14px 28px,
+      #c6b9e3 28px 42px
+    )
+    8;
+  padding-top: 55px;
+}
+.eyebrow {
+  font: 600 12px 'Space Grotesk';
+  letter-spacing: 0.025em;
+  text-transform: none;
+}
+@media (max-width: 760px) {
+  .kits > div {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  .kit.k0 {
+    grid-row: auto;
+    border-radius: 100px 100px 10px 10px;
+    padding: 35px 25px;
+  }
+  .kit.k1,
+  .kit.k2 {
+    display: block;
+    padding: 30px 25px;
+  }
+  .shape-0 {
+    height: 200px;
+  }
+  .shape-1,
+  .shape-2 {
+    height: 180px;
+    min-height: 0;
+    width: 150px;
+    float: right;
+    margin: 0 0 15px 15px;
+  }
+  .kit h3 {
+    font-size: 30px;
+  }
+  .kit button {
+    clear: both;
+  }
+  .kit.k2 {
+    border-radius: 0 0 70px 0;
+  }
+  .shape-2 i {
+    height: 120px;
   }
 }
 </style>

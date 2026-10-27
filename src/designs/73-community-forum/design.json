@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 2,
+  "id": "73",
+  "slug": "community-forum",
+  "name": "Community Forum",
+  "brand": "The Workbench / Community",
+  "family": "Community & institutions",
+  "status": "ready",
+  "thesis": "Make a conversation worth finding again.",
+  "suitableFor": [
+    "Community",
+    "Member organisation",
+    "Discussion forum"
+  ],
+  "character": "Restrained",
+  "traits": {
+    "composition": "modern blue-grey discussion architecture with nested replies and category rails",
+    "navigation": "Categories, searchable threads, replies, moderation and member profiles",
+    "typography": "DM Sans",
+    "density": "High",
+    "imagery": "Member initials, category markers and visible reply hierarchy",
+    "surface": "Compact blue-grey discussion interface with separate topic rails",
+    "motion": "Minimal"
+  },
+  "effort": "Medium",
+  "definingFeatures": [
+    "Categories",
+    "Thread hierarchy",
+    "Replies"
+  ],
+  "adaptableChoices": [
+    "Verified business content",
+    "Brand and subject",
+    "Equivalent licensed typefaces"
+  ],
+  "discovery": {
+    "industries": [
+      "Community",
+      "Member organisation",
+      "Discussion forum"
+    ],
+    "visitorGoals": [
+      "Follow a discussion"
+    ],
+    "conversionActions": [
+      "Join a discussion"
+    ],
+    "siteSize": "Community site",
+    "interactionTypes": [
+      "Threaded discussion",
+      "Moderation states",
+      "Member profiles"
+    ],
+    "keywords": [
+      "Community",
+      "Member organisation",
+      "Discussion forum",
+      "Join a discussion",
+      "Community site",
+      "Categories",
+      "Thread hierarchy",
+      "Replies",
+      "Moderation"
+    ]
+  },
+  "patterns": [
+    "Categories",
+    "Thread hierarchy",
+    "Replies",
+    "Moderation"
+  ],
+  "entryRoute": "/preview/73-community-forum/start",
+  "states": [
+    {
+      "key": "thread",
+      "label": "Discussion thread",
+      "route": "/preview/73-community-forum/thread"
+    },
+    {
+      "key": "profile",
+      "label": "Member profile",
+      "route": "/preview/73-community-forum/profile"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/73/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/73/9dad7ae91fac6b1c-desktop.jpg",
+      "route": "/preview/73-community-forum/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:3b218f31dcb7f0dc86f2321a9b64a2a58897b5bd237460042b22c8c417ee004f",
+      "sha256": "9dad7ae91fac6b1c955beeec92ede951f69c85d5b8657cf9860f99c5e910d6de",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/73/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/73/1c2e6d976f945ef2-mobile.jpg",
+      "route": "/preview/73-community-forum/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:3b218f31dcb7f0dc86f2321a9b64a2a58897b5bd237460042b22c8c417ee004f",
+      "sha256": "1c2e6d976f945ef252d5fbca3dbd8543b314099c2f8222fd9bf533b7141c1f13",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/73/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/73/8e485deac76acde2-detail.jpg",
+      "route": "/preview/73-community-forum/thread",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "thread",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:3b218f31dcb7f0dc86f2321a9b64a2a58897b5bd237460042b22c8c417ee004f",
+      "sha256": "8e485deac76acde2e1ed283bfce64009a0a6e0972f8aa8f1819c7df674cbbeac",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/73/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/73/915a63c7c7fe42f8-full-page.jpg",
+      "route": "/preview/73-community-forum/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:3b218f31dcb7f0dc86f2321a9b64a2a58897b5bd237460042b22c8c417ee004f",
+      "sha256": "915a63c7c7fe42f8db8c68abf4cbe85a53cbd2e6137053e4921af5e48cc096d2",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/73-community-forum",
+  "neighbours": [
+    "19",
+    "70"
+  ],
+  "palette": {
+    "page": "#f0f3f8",
+    "surface": "#ffffff",
+    "ink": "#2f3b4e",
+    "accent": "#385da0"
+  },
+  "fonts": [
+    "DM Sans"
+  ],
+  "brief": "**Philosophy and fit.** Make a conversation worth finding again. Built for community, member organisation, discussion forum. The visitor’s next step is to join a discussion.\n\n**Visual grammar.** Use a modern blue-grey discussion architecture with nested replies and category rails. Preserve the hierarchy of categories, thread hierarchy, replies, moderation; these patterns solve this business’s actual decision, rather than supplying interchangeable decoration.\n\n**Sample and interaction.** The Workbench / Community is a fictional demonstration. The entry page establishes a complete visual direction, with discussion thread and member profile as supporting states. Inputs use local deterministic fixtures; no request, order, application or payment is sent.\n\n**Responsive behaviour.** On a phone, keep the primary decision first, stack facts with explicit labels, preserve the order of the workflow, and provide comfortably sized controls. Wide diagrams scale; tabular facts retain their labels.\n\n**Adaptation.** Replace the fictional brand, prices, availability, qualifications and claims with verified client information. Preserve categories, thread hierarchy, replies. Use imagery to explain the place, people, work or product, with deliberate crops and honest captions. Do not turn this into a generic hero-and-card layout.\n\n**Identity and adaptation.** Keep the multi-person thread as the core object. Category context, reply nesting, closed states and member information distinguish this from the scripted Conversation Desk or a personal Knowledge Garden.",
+  "scope": "Complete visual reference with local sample interactions; no production business backend."
+}

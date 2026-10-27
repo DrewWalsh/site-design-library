@@ -28,14 +28,14 @@ const labels = ref(true),
     </header>
     <main id="content">
       <aside>
-        <p class="eyebrow">LESSON 01 / A LITTLE LEVER</p>
+        <p class="eyebrow">Lesson 01 / a little lever</p>
         <button @click="go('start')"><b>01</b> Look at the parts</button
         ><button @click="labels = !labels"><b>02</b> Follow the forces</button
         ><button @click="go('practice')"><b>03</b> Make a prediction</button>
         <p class="handwritten">One thing at a time.↗</p>
       </aside>
       <section v-if="state !== 'index'" class="lesson">
-        <p class="eyebrow">SIMPLE MACHINES / 6 MINUTES</p>
+        <p class="eyebrow">Simple machines / 6 minutes</p>
         <h1>
           {{ state === 'practice' ? 'What happens next?' : 'A small push. A bigger possibility.' }}
         </h1>
@@ -133,7 +133,7 @@ const labels = ref(true),
         >
       </section>
       <section v-else class="index">
-        <p class="eyebrow">THE LESSON SHELF</p>
+        <p class="eyebrow">The lesson shelf</p>
         <h1>Small mechanisms.<br />Big questions.</h1>
         <button
           v-for="(l, i) in [
@@ -624,5 +624,12 @@ aside b {
   .index > button {
     gap: 18px;
   }
+}
+.eyebrow {
+  font:
+    500 20px/1.4 'Caveat',
+    cursive;
+  letter-spacing: 0;
+  text-transform: none;
 }
 </style>

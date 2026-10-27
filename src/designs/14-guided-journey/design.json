@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "14",
   "slug": "guided-journey",
   "name": "Guided Journey",
@@ -7,10 +7,7 @@
   "family": "Workspaces & discovery",
   "status": "ready",
   "thesis": "Reduce a complicated decision into understandable, reversible steps.",
-  "suitableFor": [
-    "Onboarding",
-    "Public services"
-  ],
+  "suitableFor": ["Onboarding", "Public services"],
   "character": "Restrained",
   "traits": {
     "composition": "Calm single-column question stage with a persistent answer summary",
@@ -104,19 +101,29 @@
     }
   ],
   "sourcePath": "src/designs/14-guided-journey",
-  "neighbours": [
-    "01",
-    "29"
-  ],
+  "neighbours": ["01", "29"],
   "palette": {
     "page": "#f4f0ea",
     "surface": "#ffffff",
     "ink": "#392d44",
     "accent": "#6d4d8c"
   },
-  "fonts": [
-    "DM Sans"
-  ],
+  "fonts": ["DM Sans"],
   "brief": "**Philosophy and fit.** Reduce a complicated decision into understandable, reversible steps. Suitable for onboarding, applications, configuration, booking preparation, and structured self-assessment.\n\n**Visual grammar.** Use a calm single-column stage, a compact progress indicator, a clear current question, and a persistent summary of collected choices. A warm sans, generous control spacing, pale stone background, dark plum text, and a restrained violet action colour support focus. Group related questions together; introduce explanatory text before unfamiliar choices rather than hiding it behind tooltips.\n\n**Specimen and flow.** *Workshop Finder* guides visitors through choosing an interest, available day, and preferred format before recommending fixture workshops. Supporting states show an incomplete required answer with inline guidance and a review screen where any answer can be edited.\n\n**Adaptation and identity.** Mobile keeps the current question and navigation actions in a stable order, without obscuring content behind fixed controls. Preserve reversibility, visible progress, and informative summaries; avoid one-click-per-word pacing, false urgency, and unexplained branching. Motion can be disabled entirely. **Effort: medium.**",
-  "scope": "An expansive sample page with representative local interactions; no production business backend."
+  "scope": "An expansive sample page with representative local interactions; no production business backend.",
+  "discovery": {
+    "industries": ["Education", "Workshops"],
+    "visitorGoals": ["Choose an experience"],
+    "conversionActions": ["Complete a guided choice"],
+    "siteSize": "Service site",
+    "interactionTypes": ["Multi-step form", "Review summary"],
+    "keywords": [
+      "Onboarding",
+      "Public services",
+      "Visible progress",
+      "Grouped clear choices",
+      "Answers remain easy to revise"
+    ]
+  },
+  "patterns": ["Visible progress", "Grouped clear choices", "Answers remain easy to revise"]
 }

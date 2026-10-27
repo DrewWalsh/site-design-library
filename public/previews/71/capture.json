@@ -1,0 +1,64 @@
+{
+  "designId": "71",
+  "sourceRevision": "sha256:d026dc92f4e68f7aeaa0cf813bf44c7b729be8f52ba3b3b67d755b5596cd7f93",
+  "capturedAt": "2026-10-27T00:08:18.770Z",
+  "browser": "156.0.4314.42",
+  "captures": [
+    {
+      "file": "/previews/71/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/71/6e5ee5f1c5c120e9-desktop.jpg",
+      "route": "/preview/71-learning-prospectus/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:d026dc92f4e68f7aeaa0cf813bf44c7b729be8f52ba3b3b67d755b5596cd7f93",
+      "sha256": "6e5ee5f1c5c120e929e4330f17993f8ed17627d9c59e3f2a59e2030e578566d7",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/71/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/71/4d64c3e6e80ddd50-mobile.jpg",
+      "route": "/preview/71-learning-prospectus/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:d026dc92f4e68f7aeaa0cf813bf44c7b729be8f52ba3b3b67d755b5596cd7f93",
+      "sha256": "4d64c3e6e80ddd5076a9843092b2d1beb0c9eba76c6a1565fe3e329e059a1440",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/71/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/71/54075711ba41561b-detail.jpg",
+      "route": "/preview/71-learning-prospectus/programme",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "programme",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:d026dc92f4e68f7aeaa0cf813bf44c7b729be8f52ba3b3b67d755b5596cd7f93",
+      "sha256": "54075711ba41561be7d8f8c373705faae3170f3106975ae052d3a67185fc66a8",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/71/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/71/e4dc1abf0d3a003b-full-page.jpg",
+      "route": "/preview/71-learning-prospectus/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:d026dc92f4e68f7aeaa0cf813bf44c7b729be8f52ba3b3b67d755b5596cd7f93",
+      "sha256": "e4dc1abf0d3a003bde6dc89433e2a956eeac7a3fb2b9f1e25ead9833e050b3ea",
+      "fullPage": true
+    }
+  ]
+}

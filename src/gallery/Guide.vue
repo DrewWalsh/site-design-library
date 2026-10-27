@@ -13,7 +13,7 @@ import { repository } from './data';
       v-for="(step, i) in [
         {
           title: 'Choose for the task.',
-          body: 'Start with what your visitor needs to do. A service, a publication, and an operations tool need different kinds of clarity. Filter by purpose, then explore the visual directions.',
+          body: 'Start with what your visitor needs to do. A service, a publication, and an operations tool need different kinds of clarity. Search by industry, visitor goal, or the action you need people to take. Filter by site structure and interaction, then compare the visual directions.',
         },
         {
           title: 'Read it. Run it. Compare it.',

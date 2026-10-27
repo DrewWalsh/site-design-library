@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "27",
   "slug": "blueprint-studio",
   "name": "Blueprint Studio",
@@ -7,10 +7,7 @@
   "family": "Commerce & places",
   "status": "ready",
   "thesis": "Explain how a project is organised and constructed.",
-  "suitableFor": [
-    "Architecture",
-    "Portfolio"
-  ],
+  "suitableFor": ["Architecture", "Portfolio"],
   "character": "Restrained",
   "traits": {
     "composition": "Indexed drawing sheets with title blocks and paired plan/result plates",
@@ -104,20 +101,33 @@
     }
   ],
   "sourcePath": "src/designs/27-blueprint-studio",
-  "neighbours": [
-    "04",
-    "49"
-  ],
+  "neighbours": ["04", "49"],
   "palette": {
     "page": "#152f4b",
     "surface": "#1c3b59",
     "ink": "#e2edf1",
     "accent": "#8fd4de"
   },
-  "fonts": [
-    "Space Grotesk",
-    "IBM Plex Mono"
-  ],
+  "fonts": ["Space Grotesk", "IBM Plex Mono"],
   "brief": "**Philosophy and fit.** Explain how a project is organised and constructed. Suitable for architecture, fabrication, engineering portfolios, and technically minded creative studios.\n\n**Visual grammar.** Arrange projects as indexed drawing sheets with title blocks, section markers, disciplined grids, and paired plan-and-photograph views. Use midnight blue, chalk white, and a restrained cyan annotation colour. A technical sans pairs with monospaced drawing labels. Thin lines establish measured relationships without implying that the interface itself is a technical drawing.\n\n**Specimen and flow.** *Section Works* presents fictional small buildings. Select a project, switch between plan, section, and built result, then open the relevant construction note. Supporting views include the project index and a material detail sheet. A compare control allows paired views without requiring a draggable divider.\n\n**Responsive behaviour.** Drawing sheets become stacked plates with a persistent view selector. Captions remain readable outside the drawings, and technical labels receive a text equivalent.\n\n**Identity rules.** Preserve indexed sheets, aligned annotations, and evidence of construction. Avoid decorative measurement marks, microscopic specifications, and animated drafting effects around every element. **Effort: medium.**",
-  "scope": "An expansive sample page with representative local interactions; no production business backend."
+  "scope": "An expansive sample page with representative local interactions; no production business backend.",
+  "discovery": {
+    "industries": ["Architecture", "Engineering"],
+    "visitorGoals": ["Understand a project"],
+    "conversionActions": ["Inspect project details"],
+    "siteSize": "Portfolio & enquiry",
+    "interactionTypes": ["Technical drawings", "Project dossier"],
+    "keywords": [
+      "Architecture",
+      "Portfolio",
+      "Numbered project rail",
+      "Aligned technical annotations",
+      "Plan, section, and built-result relationship"
+    ]
+  },
+  "patterns": [
+    "Numbered project rail",
+    "Aligned technical annotations",
+    "Plan, section, and built-result relationship"
+  ]
 }

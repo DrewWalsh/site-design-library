@@ -1,0 +1,12 @@
+.specimen {
+  --page: #f5e9df;
+  --surface: #fff;
+  --ink: #262221;
+  --accent: #713b31;
+  --line: color-mix(in srgb, var(--ink) 25%, transparent);
+  --heading: 'Space Grotesk', sans-serif;
+  --body: 'DM Sans', sans-serif;
+  --measure: 65ch;
+  --space: 8px;
+  --content: 1240px;
+}

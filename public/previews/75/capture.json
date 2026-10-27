@@ -1,0 +1,64 @@
+{
+  "designId": "75",
+  "sourceRevision": "sha256:e6949e8fe4e9c110604dded8a0b982d8905f18fb8fd4fc11c0080afa47067e88",
+  "capturedAt": "2026-10-27T00:08:33.923Z",
+  "browser": "156.0.4314.42",
+  "captures": [
+    {
+      "file": "/previews/75/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/75/f7ac3cb7af3751f3-desktop.jpg",
+      "route": "/preview/75-annual-report/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:e6949e8fe4e9c110604dded8a0b982d8905f18fb8fd4fc11c0080afa47067e88",
+      "sha256": "f7ac3cb7af3751f39050a8ce49c428a91c7d90bb697b41c0b1195a38abf4b1b5",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/75/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/75/2b3116a12f8bc896-mobile.jpg",
+      "route": "/preview/75-annual-report/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:e6949e8fe4e9c110604dded8a0b982d8905f18fb8fd4fc11c0080afa47067e88",
+      "sha256": "2b3116a12f8bc896ab75fb5bb961dd4415acc3f6c871645296a317e34af0e5f1",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/75/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/75/908000834c908377-detail.jpg",
+      "route": "/preview/75-annual-report/results",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "results",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:e6949e8fe4e9c110604dded8a0b982d8905f18fb8fd4fc11c0080afa47067e88",
+      "sha256": "908000834c90837770af6b27ebc842f89da5685b267c6512eef6b7b372213431",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/75/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/75/462ef90a6abc3770-full-page.jpg",
+      "route": "/preview/75-annual-report/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:e6949e8fe4e9c110604dded8a0b982d8905f18fb8fd4fc11c0080afa47067e88",
+      "sha256": "462ef90a6abc3770d3964dfed74ef5f136850116fd58aadb30ac24a27f9f5269",
+      "fullPage": true
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "35",
   "slug": "paper-cabinet",
   "name": "Paper Cabinet",
@@ -7,10 +7,7 @@
   "family": "Playful & material",
   "status": "ready",
   "thesis": "Make a collection feel organised, discoverable, and worth returning to.",
-  "suitableFor": [
-    "Research",
-    "Directories"
-  ],
+  "suitableFor": ["Research", "Directories"],
   "character": "Expressive",
   "traits": {
     "composition": "Tabbed category drawers, consistent index cards, and full record sheets",
@@ -104,20 +101,33 @@
     }
   ],
   "sourcePath": "src/designs/35-paper-cabinet",
-  "neighbours": [
-    "34",
-    "18"
-  ],
+  "neighbours": ["34", "18"],
   "palette": {
     "page": "#e8dfc9",
     "surface": "#f7efdc",
     "ink": "#493f2f",
     "accent": "#6c6d46"
   },
-  "fonts": [
-    "Libre Baskerville",
-    "IBM Plex Mono"
-  ],
+  "fonts": ["Libre Baskerville", "IBM Plex Mono"],
   "brief": "**Philosophy and fit.** Make a collection feel organised, discoverable, and worth returning to. Appropriate for archives, recipe libraries, reading collections, and curated research materials.\n\n**Visual grammar.** Tabbed drawers introduce categories; index cards present consistent metadata; a detail sheet holds the full record. Use buff paper, dark brown text, muted olive tabs, fine rules, and a modest serif paired with monospaced accession labels. Physical cues clarify organisation without requiring a simulated filing cabinet.\n\n**Specimen and flow.** *The Commonplace Cabinet* collects fictional historical recipes. Choose a drawer, filter cards by ingredient or period, and open a recipe record. Supporting views include saved selections and a record with missing provenance clearly marked. Users can add a private note stored locally and return to the same filtered list.\n\n**Responsive behaviour.** Drawer tabs become a labelled category selector. Cards stack in a single readable column; record sheets open as ordinary pages rather than floating paper windows.\n\n**Identity rules.** Preserve stable metadata, tactile hierarchy, and the index-to-record relationship. Avoid ornamental desk clutter, unreadable ageing effects, or hiding navigation inside decorative objects. **Effort: medium.**",
-  "scope": "An expansive sample page with representative local interactions; no production business backend."
+  "scope": "An expansive sample page with representative local interactions; no production business backend.",
+  "discovery": {
+    "industries": ["Archive", "Museum", "Collections"],
+    "visitorGoals": ["Find an object"],
+    "conversionActions": ["Inspect a record"],
+    "siteSize": "Searchable catalogue",
+    "interactionTypes": ["Collection filters", "Archival records"],
+    "keywords": [
+      "Research",
+      "Directories",
+      "Stable archival metadata",
+      "Index-to-record relationship",
+      "Private local annotations"
+    ]
+  },
+  "patterns": [
+    "Stable archival metadata",
+    "Index-to-record relationship",
+    "Private local annotations"
+  ]
 }

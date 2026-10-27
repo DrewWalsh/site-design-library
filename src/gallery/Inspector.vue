@@ -111,6 +111,22 @@ async function copy() {
           <p class="g-label">SUITABLE FOR</p>
           <p>{{ d.suitableFor.join(' · ') }}</p>
           <hr />
+          <p class="g-label">VISITOR &amp; BUSINESS NEEDS</p>
+          <dl class="g-discovery">
+            <dt>Industry</dt>
+            <dd>{{ d.discovery.industries.join(' · ') }}</dd>
+            <dt>Visitor goal</dt>
+            <dd>{{ d.discovery.visitorGoals.join(' · ') }}</dd>
+            <dt>Next action</dt>
+            <dd>{{ d.discovery.conversionActions.join(' · ') }}</dd>
+            <dt>Site structure</dt>
+            <dd>{{ d.discovery.siteSize }}</dd>
+          </dl>
+          <p class="g-label">PATTERNS TO STUDY</p>
+          <ul class="g-patterns">
+            <li v-for="pattern in d.patterns" :key="pattern">{{ pattern }}</li>
+          </ul>
+          <hr />
           <p class="g-label">TYPE & PALETTE</p>
           <p>{{ d.fonts.join(' + ') }}</p>
           <div class="g-swatches">

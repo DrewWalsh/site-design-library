@@ -1,0 +1,64 @@
+{
+  "designId": "69",
+  "sourceRevision": "sha256:228739a23775eb36a317f020e36a37ea6a223a5a8140d07fdf372b7b08486f18",
+  "capturedAt": "2026-10-27T00:08:11.719Z",
+  "browser": "156.0.4314.42",
+  "captures": [
+    {
+      "file": "/previews/69/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/69/7f87edcc4f83a2c0-desktop.jpg",
+      "route": "/preview/69-impact-nonprofit/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:228739a23775eb36a317f020e36a37ea6a223a5a8140d07fdf372b7b08486f18",
+      "sha256": "7f87edcc4f83a2c0c5b967a658031e20fac4f91fe4dfa03492154bf8fd65b16f",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/69/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/69/9ff3edfa7cccda62-mobile.jpg",
+      "route": "/preview/69-impact-nonprofit/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:228739a23775eb36a317f020e36a37ea6a223a5a8140d07fdf372b7b08486f18",
+      "sha256": "9ff3edfa7cccda62434fcf4b62e03d1b16d4565024bea3c121300143d23db29a",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/69/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/69/77e299790fa14dd5-detail.jpg",
+      "route": "/preview/69-impact-nonprofit/contribute",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "contribute",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:228739a23775eb36a317f020e36a37ea6a223a5a8140d07fdf372b7b08486f18",
+      "sha256": "77e299790fa14dd5e80615fbaca94ecd3af346ae189bf950eeccf7cab1862607",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/69/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/69/9bd4a9592775ff21-full-page.jpg",
+      "route": "/preview/69-impact-nonprofit/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:228739a23775eb36a317f020e36a37ea6a223a5a8140d07fdf372b7b08486f18",
+      "sha256": "9bd4a9592775ff211e6f8396ad1e8430fcce80be9abdeef637104c5977267f9b",
+      "fullPage": true
+    }
+  ]
+}

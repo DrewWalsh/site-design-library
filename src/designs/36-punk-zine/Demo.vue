@@ -60,6 +60,7 @@ const stories = ['After the last train', 'DIY is a verb', 'Rooms that listen'];
             >
           </article>
           <div class="sidepiece">
+            <span class="overprint" aria-hidden="true">MAKE<br />A ROOM.</span>
             <p class="eyebrow">A note from the editors</p>
             <h2>Culture happens<br />in spare rooms.</h2>
             <p>
@@ -624,6 +625,203 @@ main {
   }
   .archive button {
     gap: 18px;
+  }
+}
+
+.spread {
+  grid-template-columns: 1.1fr 1fr;
+  gap: 35px 50px;
+  position: relative;
+  overflow: hidden;
+  padding-top: 30px;
+}
+.leadimage {
+  margin-top: 55px;
+  transform: rotate(-2deg);
+  align-self: start;
+  padding: 12px 12px 25px;
+  background: #141714;
+}
+.leadimage img {
+  height: 490px;
+  filter: grayscale(1) contrast(1.2);
+  clip-path: polygon(0 2%, 99% 0, 100% 96%, 96% 100%, 4% 98%, 0 100%);
+}
+.leadimage small {
+  color: #f5f1e5;
+  display: block;
+  margin-top: 14px;
+  font: 10px 'DM Sans';
+}
+.stamp {
+  font-size: 35px;
+  right: 10px;
+  bottom: 50px;
+  transform: rotate(9deg);
+}
+.feature {
+  padding-top: 10px;
+  align-self: start;
+}
+.feature h1 {
+  font-size: clamp(48px, 6.7vw, 93px);
+  line-height: 0.95;
+  letter-spacing: -0.065em;
+  margin: 30px 0;
+}
+.feature h1 em {
+  display: inline-block;
+  background: #c5f34f;
+  padding: 3px 12px 8px;
+  transform: rotate(3deg);
+  font-style: normal;
+}
+.feature > p {
+  font: 16px/1.9 'Libre Baskerville';
+  max-width: 34ch;
+}
+.feature > a {
+  display: inline-block;
+  margin-top: 10px;
+  background: #141714;
+  color: #e9e7dc;
+  padding: 15px 20px;
+  transform: rotate(-1deg);
+}
+.sidepiece {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: 190px 1fr 1fr;
+  gap: 20px 35px;
+  align-items: center;
+  border: 0;
+  border-top: 8px solid #141714;
+  border-bottom: 3px dashed #141714;
+  padding: 30px 0;
+  margin: 15px 0 0;
+}
+.sidepiece > .eyebrow {
+  grid-column: 2;
+  margin: 0;
+  align-self: end;
+  font: 12px 'DM Sans';
+  letter-spacing: 0.02em;
+}
+.sidepiece h2 {
+  grid-column: 2;
+  font-size: 33px;
+  margin: 0;
+}
+.sidepiece > p:last-child {
+  grid-column: 3;
+  grid-row: 1/3;
+  font-size: 14px;
+}
+.overprint {
+  grid-column: 1;
+  grid-row: 1/3;
+  font: 44px/0.9 'Archivo Black';
+  letter-spacing: -0.06em;
+  background: #c5f34f;
+  padding: 22px 15px;
+  transform: rotate(-6deg);
+  clip-path: polygon(0 6%, 100% 0, 95% 94%, 3% 100%);
+}
+.lower {
+  grid-template-columns: 1.2fr 0.85fr 0.8fr;
+  gap: 35px;
+  padding-top: 45px;
+}
+.lower > div:first-child {
+  padding-top: 0;
+}
+.lower > div:nth-child(2) {
+  padding-top: 65px;
+}
+.lower > aside {
+  align-self: end;
+  border: 0;
+  border-left: 3px solid #141714;
+  padding: 0 0 0 25px;
+}
+.lower h2 {
+  font-size: 55px;
+  line-height: 0.98;
+}
+.lower > div:nth-child(2) h2 {
+  font-size: 43px;
+}
+.lower .number {
+  font-size: 85px;
+  line-height: 1;
+}
+.article .eyebrow {
+  font: 12px 'DM Sans';
+  letter-spacing: 0.03em;
+}
+@media (max-width: 760px) {
+  .spread {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding-top: 30px;
+  }
+  .feature {
+    grid-row: 1;
+  }
+  .feature h1 {
+    font-size: clamp(47px, 14vw, 70px);
+    margin: 20px 0;
+  }
+  .leadimage {
+    margin: 0 5px;
+    transform: rotate(-1deg);
+    padding: 8px 8px 20px;
+  }
+  .leadimage img {
+    height: 330px;
+  }
+  .stamp {
+    font-size: 28px;
+  }
+  .sidepiece {
+    grid-column: 1;
+    grid-template-columns: 95px 1fr;
+    gap: 15px;
+    padding: 25px 0;
+  }
+  .overprint {
+    font-size: 26px;
+    padding: 16px 9px;
+    grid-row: 1/3;
+  }
+  .sidepiece > .eyebrow {
+    grid-column: 2;
+    font-size: 10px;
+  }
+  .sidepiece h2 {
+    grid-column: 2;
+    font-size: 26px;
+  }
+  .sidepiece > p:last-child {
+    grid-column: 1/-1;
+    grid-row: auto;
+    font-size: 13px;
+  }
+  .lower {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .lower > div:nth-child(2) {
+    padding-top: 10px;
+  }
+  .lower > aside {
+    padding-left: 20px;
+  }
+  .lower h2 {
+    font-size: 48px;
+  }
+  .lower > div:nth-child(2) h2 {
+    font-size: 40px;
   }
 }
 </style>

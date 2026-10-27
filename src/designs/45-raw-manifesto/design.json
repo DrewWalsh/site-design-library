@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "45",
   "slug": "raw-manifesto",
   "name": "Raw Manifesto",
@@ -7,10 +7,7 @@
   "family": "Retro & experimental",
   "status": "ready",
   "thesis": "Let language and direct access carry the entire identity.",
-  "suitableFor": [
-    "Culture",
-    "Portfolio"
-  ],
+  "suitableFor": ["Culture", "Portfolio"],
   "character": "Expressive",
   "traits": {
     "composition": "Forceful large text followed by direct document-like programme rows",
@@ -104,19 +101,33 @@
     }
   ],
   "sourcePath": "src/designs/45-raw-manifesto",
-  "neighbours": [
-    "44",
-    "47"
-  ],
+  "neighbours": ["44", "47"],
   "palette": {
     "page": "#fff",
     "surface": "#fff",
     "ink": "#111",
     "accent": "#1643b8"
   },
-  "fonts": [
-    "DM Sans"
-  ],
+  "fonts": ["DM Sans"],
   "brief": "**Philosophy and fit.** Let language and direct access carry the entire identity. Suitable for artist statements, small organisations, independent publishing, and intentionally austere portfolios.\n\n**Visual grammar.** Use a near-unadorned page, exceptionally large opening text, abrupt but deliberate changes in scale, visible underlined links, and full-width rules. A standard sans serif or serif family can do all the work. Keep the palette nearly monochrome, with a single functional link colour. Navigation is an explicit line of destinations, followed by a clear document sequence.\n\n**Specimen and flow.** *Common Room* is a fictional artist-run programme. Read its opening statement, follow the current programme link, and inspect one event’s practical details. Supporting pages are a chronological archive and a plain contact page with a functional demonstration form.\n\n**Mobile and motion.** Headline sizes adapt to the available width, while body text keeps a comfortable measure. Source order is visual order. The default experience contains no animation or overlay navigation.\n\n**Identity and effort.** Preserve textual force and deliberate sparseness; avoid turning minimal styling into broken layout or quietly restoring rounded cards and sales sections. **Effort: low.**",
-  "scope": "An expansive sample page with representative local interactions; no production business backend."
+  "scope": "An expansive sample page with representative local interactions; no production business backend.",
+  "discovery": {
+    "industries": ["Campaign", "Arts", "Publishing"],
+    "visitorGoals": ["Read an argument"],
+    "conversionActions": ["Explore supporting material"],
+    "siteSize": "One page",
+    "interactionTypes": ["Long-form reading", "Source links"],
+    "keywords": [
+      "Culture",
+      "Portfolio",
+      "Language carries the identity",
+      "Source order is visual order",
+      "Deliberate sparse hierarchy"
+    ]
+  },
+  "patterns": [
+    "Language carries the identity",
+    "Source order is visual order",
+    "Deliberate sparse hierarchy"
+  ]
 }

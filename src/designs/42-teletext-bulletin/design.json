@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "42",
   "slug": "teletext-bulletin",
   "name": "Teletext Bulletin",
@@ -7,10 +7,7 @@
   "family": "Retro & experimental",
   "status": "ready",
   "thesis": "Deliver compact, regularly structured information through explicit sections and numbered pages.",
-  "suitableFor": [
-    "News",
-    "Events"
-  ],
+  "suitableFor": ["News", "Events"],
   "character": "Expressive",
   "traits": {
     "composition": "Numbered broadcast bulletin with colour bands and compact text rows",
@@ -104,19 +101,33 @@
     }
   ],
   "sourcePath": "src/designs/42-teletext-bulletin",
-  "neighbours": [
-    "41",
-    "38"
-  ],
+  "neighbours": ["41", "38"],
   "palette": {
     "page": "#101514",
     "surface": "#1c302e",
     "ink": "#f1f0dc",
     "accent": "#f1d95e"
   },
-  "fonts": [
-    "IBM Plex Mono"
-  ],
+  "fonts": ["IBM Plex Mono"],
   "brief": "**Philosophy and fit.** Deliver compact, regularly structured information through explicit sections and numbered pages. Suitable for event bulletins, community updates, sports summaries, and small informational directories.\n\n**Visual grammar.** Use a broadcast-style title strip, visible page identifier, tightly organised text rows, block colour bands, and a footer of section links. Monospaced display text and rectangular graphics create the character. Keep a deliberately limited palette, while choosing text and background combinations that remain readable. Unlike a terminal, the page resembles an edited bulletin, without prompts or command history.\n\n**Specimen and flow.** *TownText* is a fictional community notice service. Choose What’s On, open a numbered event page, and follow its booking information. Supporting views are the subject index and a saved-pages list stored locally. Dates are labelled sample content.\n\n**Mobile and motion.** Preserve section order while allowing lines to wrap; do not shrink the entire broadcast frame into illegible miniature text. Page-number entry supplements visible links.\n\n**Identity and effort.** Preserve editorial compression and numbered navigation; avoid mandatory memorised codes, flashing text, and pixel-game decoration. **Effort: low.**",
-  "scope": "An expansive sample page with representative local interactions; no production business backend."
+  "scope": "An expansive sample page with representative local interactions; no production business backend.",
+  "discovery": {
+    "industries": ["News", "Public information"],
+    "visitorGoals": ["Find a bulletin"],
+    "conversionActions": ["Navigate a page number"],
+    "siteSize": "Digital publication",
+    "interactionTypes": ["Page index", "Keyboard navigation"],
+    "keywords": [
+      "News",
+      "Events",
+      "Edited information density",
+      "Numbered page hierarchy",
+      "Rectangular broadcast colour bands"
+    ]
+  },
+  "patterns": [
+    "Edited information density",
+    "Numbered page hierarchy",
+    "Rectangular broadcast colour bands"
+  ]
 }

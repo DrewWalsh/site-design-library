@@ -26,7 +26,7 @@ const captions = ref(false);
       <template v-if="state === 'start'"
         ><section class="cover">
           <div class="cover-type">
-            <p class="eyebrow">AUTUMN 2026 / THE IN-BETWEEN ISSUE</p>
+            <p class="eyebrow">Autumn 2026 / the in-between issue</p>
             <h1>The quiet<br /><em>edge.</em></h1>
             <p>On dressing for the space<br />between one thing and another.</p>
             <button @click="go('story')">ENTER THE COVER STORY ↗</button
@@ -45,7 +45,7 @@ const captions = ref(false);
           </figure>
         </section>
         <section class="contents">
-          <p class="eyebrow">INSIDE NO. 12</p>
+          <p class="eyebrow">Inside no. 12</p>
           <div class="row">
             <h2>People.<br />Places.<br />Ways of seeing.</h2>
             <ol>
@@ -76,7 +76,7 @@ const captions = ref(false);
       ><template v-else-if="state === 'story'"
         ><section class="story">
           <div>
-            <p class="eyebrow">NO. 12 / COVER STORY</p>
+            <p class="eyebrow">No. 12 / cover story</p>
             <h1>The quiet edge.</h1>
             <p>
               Clothes for the in-between. A fictional conversation about texture, season, and the
@@ -106,7 +106,7 @@ const captions = ref(false);
           />
         </section>
         <section class="interview">
-          <p class="eyebrow">THE CONVERSATION</p>
+          <p class="eyebrow">The conversation</p>
           <h2>What do you return to?</h2>
           <p>
             The things that make the day easier. A familiar silhouette. Pockets where you expect
@@ -121,7 +121,7 @@ const captions = ref(false);
         </section></template
       >
       <section v-else class="archive">
-        <p class="eyebrow">THE COLLECTION</p>
+        <p class="eyebrow">The collection</p>
         <h1>Another way<br />to look.</h1>
         <div>
           <button
@@ -602,5 +602,10 @@ nav button {
   .archive h2 {
     font-size: 34px;
   }
+}
+.eyebrow {
+  font: 500 11px/1.5 'DM Sans';
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
 }
 </style>

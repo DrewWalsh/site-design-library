@@ -1,0 +1,12 @@
+.specimen {
+  --page: #fff4d7;
+  --surface: #fff;
+  --ink: #4d2723;
+  --accent: #9c3029;
+  --line: color-mix(in srgb, var(--ink) 25%, transparent);
+  --heading: 'Archivo Black', sans-serif;
+  --body: 'DM Sans', sans-serif;
+  --measure: 65ch;
+  --space: 8px;
+  --content: 1240px;
+}

@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "17",
   "slug": "observatory",
   "name": "Observatory",
@@ -7,10 +7,7 @@
   "family": "Workspaces & discovery",
   "status": "ready",
   "thesis": "Help users detect patterns, compare measures, and inspect uncertainty within a coherent instrument panel.",
-  "suitableFor": [
-    "Dashboards",
-    "Research"
-  ],
+  "suitableFor": ["Dashboards", "Research"],
   "character": "Restrained",
   "traits": {
     "composition": "Aligned analytical plots on a dark instrument surface",
@@ -104,20 +101,33 @@
     }
   ],
   "sourcePath": "src/designs/17-observatory",
-  "neighbours": [
-    "11",
-    "49"
-  ],
+  "neighbours": ["11", "49"],
   "palette": {
     "page": "#101d24",
     "surface": "#192a33",
     "ink": "#d8e7e8",
     "accent": "#6ad0ce"
   },
-  "fonts": [
-    "Space Grotesk",
-    "IBM Plex Mono"
-  ],
+  "fonts": ["Space Grotesk", "IBM Plex Mono"],
   "brief": "**Philosophy and fit.** Help users detect patterns, compare measures, and inspect uncertainty within a coherent instrument panel. Suitable for analytics, monitoring, scientific demonstrations, and resource tracking.\n\n**Visual grammar.** Use a dark, quiet plotting surface with a persistent control strip and aligned charts sharing meaningful time axes. A technical sans, monospace readouts, muted grid lines, and restrained cyan, amber, and violet series colours support inspection. Keep charts large enough to read; choose panels because their measures relate, not because a grid needs filling.\n\n**Specimen and flow.** *Watershed Observatory* displays clearly labelled synthetic river measurements. Users change a date interval, compare two stations, and inspect a selected reading. Supporting states provide a data table and a missing-data interval with its cause explained in fixture text.\n\n**Adaptation and identity.** Mobile presents plots in a meaningful sequence and replaces small hover targets with selectable readings. Preserve scales, units, labels, and distinctions between missing and zero values; avoid animated counters, fake live activity, and ornamental gauges. **Effort: high.**",
-  "scope": "An expansive sample page with representative local interactions; no production business backend."
+  "scope": "An expansive sample page with representative local interactions; no production business backend.",
+  "discovery": {
+    "industries": ["Research", "Analytics"],
+    "visitorGoals": ["Understand change"],
+    "conversionActions": ["Inspect a dataset"],
+    "siteSize": "Application",
+    "interactionTypes": ["Charts", "Date filters"],
+    "keywords": [
+      "Dashboards",
+      "Research",
+      "Shared chart axes and units",
+      "Missing data distinct from zero",
+      "Selectable readings without hover"
+    ]
+  },
+  "patterns": [
+    "Shared chart axes and units",
+    "Missing data distinct from zero",
+    "Selectable readings without hover"
+  ]
 }

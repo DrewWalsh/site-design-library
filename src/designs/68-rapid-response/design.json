@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 2,
+  "id": "68",
+  "slug": "rapid-response",
+  "name": "Rapid Response",
+  "brand": "NOW / Home repairs",
+  "family": "Small business",
+  "status": "ready",
+  "thesis": "Put the next practical step within a thumb’s reach.",
+  "suitableFor": [
+    "Locksmith",
+    "Emergency plumbing",
+    "Restoration",
+    "Urgent repair"
+  ],
+  "character": "Expressive",
+  "traits": {
+    "composition": "mobile-first navy and amber dispatch card with an immediate decision",
+    "navigation": "Urgent-versus-routine choice, coverage check and callback request",
+    "typography": "DM Sans",
+    "density": "Low",
+    "imagery": "No hero photograph; contact and urgency choices lead",
+    "surface": "Navy decision board, yellow urgent action and clear service facts",
+    "motion": "Minimal"
+  },
+  "effort": "Low",
+  "definingFeatures": [
+    "Urgent or routine",
+    "Service coverage",
+    "Immediate contact"
+  ],
+  "adaptableChoices": [
+    "Verified business content",
+    "Brand and subject",
+    "Equivalent licensed typefaces"
+  ],
+  "discovery": {
+    "industries": [
+      "Locksmith",
+      "Emergency plumbing",
+      "Restoration",
+      "Urgent repair"
+    ],
+    "visitorGoals": [
+      "Find urgent help"
+    ],
+    "conversionActions": [
+      "Request urgent help"
+    ],
+    "siteSize": "One page",
+    "interactionTypes": [
+      "Urgency triage",
+      "Coverage check",
+      "Direct contact"
+    ],
+    "keywords": [
+      "Locksmith",
+      "Emergency plumbing",
+      "Restoration",
+      "Urgent repair",
+      "Request urgent help",
+      "One page",
+      "Urgent or routine",
+      "Service coverage",
+      "Immediate contact",
+      "small business",
+      "local business",
+      "one page brochure",
+      "single page",
+      "sole proprietor"
+    ]
+  },
+  "patterns": [
+    "Urgent or routine",
+    "Service coverage",
+    "Immediate contact"
+  ],
+  "entryRoute": "/preview/68-rapid-response/start",
+  "states": [
+    {
+      "key": "help",
+      "label": "Check coverage",
+      "route": "/preview/68-rapid-response/help"
+    },
+    {
+      "key": "request",
+      "label": "Request assistance",
+      "route": "/preview/68-rapid-response/request"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/68/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/68/d24b388ce32b8dc9-desktop.jpg",
+      "route": "/preview/68-rapid-response/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:9f20447c5236aca36cb73ff14ad7461dbafff8ef3490df2ee6ce38db7b0ac12f",
+      "sha256": "d24b388ce32b8dc92cd47644d5751f6a6f8bcbd2db53653e6aa420eadd48466e",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/68/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/68/261325b3128eae56-mobile.jpg",
+      "route": "/preview/68-rapid-response/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:9f20447c5236aca36cb73ff14ad7461dbafff8ef3490df2ee6ce38db7b0ac12f",
+      "sha256": "261325b3128eae56bc5ab85933cadbe857e92cbc6c554f055cbfcb8e204a4118",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/68/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/68/1e52071c1eab5437-detail.jpg",
+      "route": "/preview/68-rapid-response/help",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "help",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:9f20447c5236aca36cb73ff14ad7461dbafff8ef3490df2ee6ce38db7b0ac12f",
+      "sha256": "1e52071c1eab54375935277734a4345fdbb6f7769d9bde8f2c7f6f713916708b",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/68/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/68/3025c5b760703e03-full-page.jpg",
+      "route": "/preview/68-rapid-response/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:9f20447c5236aca36cb73ff14ad7461dbafff8ef3490df2ee6ce38db7b0ac12f",
+      "sha256": "3025c5b760703e03ab2295f41f85b181a3ba3ab0d4f9b41a0b9ca8b8ec69a1ad",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/68-rapid-response",
+  "neighbours": [
+    "25",
+    "01"
+  ],
+  "palette": {
+    "page": "#f5f4ec",
+    "surface": "#ffffff",
+    "ink": "#233448",
+    "accent": "#ffcf58"
+  },
+  "fonts": [
+    "DM Sans"
+  ],
+  "brief": "**Philosophy and fit.** Put the next practical step within a thumb’s reach. Built for locksmith, emergency plumbing, restoration, urgent repair. The visitor’s next step is to request urgent help.\n\n**Visual grammar.** Use a mobile-first navy and amber dispatch card with an immediate decision. Preserve the hierarchy of urgent or routine, service coverage, immediate contact; these patterns solve this business’s actual decision, rather than supplying interchangeable decoration.\n\n**Sample and interaction.** NOW / Home repairs is a fictional demonstration. The entry page establishes a complete visual direction, with check coverage and request assistance as supporting states. Inputs use local deterministic fixtures; no request, order, application or payment is sent.\n\n**Responsive behaviour.** On a phone, keep the primary decision first, stack facts with explicit labels, preserve the order of the workflow, and provide comfortably sized controls. Wide diagrams scale; tabular facts retain their labels.\n\n**Adaptation.** Replace the fictional brand, prices, availability, qualifications and claims with verified client information. Preserve urgent or routine, service coverage, immediate contact. Use imagery to explain the place, people, work or product, with deliberate crops and honest captions. Do not turn this into a generic hero-and-card layout.\n\n**Identity and adaptation.** Put the phone number and urgent-versus-routine decision within immediate reach. Avoid large images or promotional blocks before those actions; coverage and contact details belong directly in the request flow.",
+  "scope": "Complete visual reference with local sample interactions; no production business backend."
+}

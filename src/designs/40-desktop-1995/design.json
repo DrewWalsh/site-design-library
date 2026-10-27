@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "40",
   "slug": "desktop-1995",
   "name": "Desktop 1995",
@@ -7,10 +7,7 @@
   "family": "Playful & material",
   "status": "ready",
   "thesis": "Present a small collection as familiar, named tools and folders.",
-  "suitableFor": [
-    "Portfolio",
-    "Culture"
-  ],
+  "suitableFor": ["Portfolio", "Culture"],
   "character": "Expressive",
   "traits": {
     "composition": "Desktop tools with bevelled windows and an explicit task strip",
@@ -104,19 +101,33 @@
     }
   ],
   "sourcePath": "src/designs/40-desktop-1995",
-  "neighbours": [
-    "38",
-    "41"
-  ],
+  "neighbours": ["38", "41"],
   "palette": {
     "page": "#3e7573",
     "surface": "#e5e5df",
     "ink": "#19232a",
     "accent": "#253b80"
   },
-  "fonts": [
-    "DM Sans"
-  ],
+  "fonts": ["DM Sans"],
   "brief": "**Philosophy and fit.** Present a small collection as familiar, named tools and folders. Suitable for portfolios, digital exhibitions, personal project collections, and compact creative utilities.\n\n**Visual grammar.** A desktop, icon labels, bevelled window frames, title bars, and a task strip organise content into discrete applications. Use a neutral grey interface, one selected-state colour, compact system-like typography, and restrained bitmap accents. Windows have explicit open, close, minimise, and maximise controls; their content uses semantic document structure.\n\n**Specimen and flow.** *Parcel OS* is a fictional designer’s portfolio with only Projects, Contact, and Help windows. Open Projects, select a case study, then open its contact form. Supporting states are an application switcher and a help view explaining the controls. Window positioning is optional; a general desktop framework is outside the specimen's scope.\n\n**Mobile and motion.** Show one full-width application at a time, with a clear back control and application list. Keyboard focus follows the active window and returns to its launcher when closed.\n\n**Identity and effort.** Preserve the desktop’s task model; avoid decorative windows that obscure navigation or pretend to access the visitor’s filesystem. **Effort: high.**",
-  "scope": "An expansive sample page with representative local interactions; no production business backend."
+  "scope": "An expansive sample page with representative local interactions; no production business backend.",
+  "discovery": {
+    "industries": ["Software", "Retro computing"],
+    "visitorGoals": ["Explore a workspace"],
+    "conversionActions": ["Open a document"],
+    "siteSize": "Application",
+    "interactionTypes": ["Window controls", "File navigation"],
+    "keywords": [
+      "Portfolio",
+      "Culture",
+      "Three named tools with actual states",
+      "Window focus follows activation",
+      "A mobile application list"
+    ]
+  },
+  "patterns": [
+    "Three named tools with actual states",
+    "Window focus follows activation",
+    "A mobile application list"
+  ]
 }

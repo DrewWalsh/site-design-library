@@ -1,0 +1,64 @@
+{
+  "designId": "58",
+  "sourceRevision": "sha256:b5cc04f84f0f21661b144ba009730227f12fed8331143315f5f5fc35b2f6e82a",
+  "capturedAt": "2026-10-27T00:07:25.694Z",
+  "browser": "156.0.4314.42",
+  "captures": [
+    {
+      "file": "/previews/58/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/58/4ec67c9a594f563a-desktop.jpg",
+      "route": "/preview/58-service-bay/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:b5cc04f84f0f21661b144ba009730227f12fed8331143315f5f5fc35b2f6e82a",
+      "sha256": "4ec67c9a594f563a4b99ed289712165f3c36289a2b6a9818b4a96605a5690490",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/58/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/58/78d25613f6df4528-mobile.jpg",
+      "route": "/preview/58-service-bay/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:b5cc04f84f0f21661b144ba009730227f12fed8331143315f5f5fc35b2f6e82a",
+      "sha256": "78d25613f6df45285ca5fe62e89db20018d8a0f6ee3e8cb8b4714e0a2a22665d",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/58/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/58/da4642a0c7724bbf-detail.jpg",
+      "route": "/preview/58-service-bay/booking",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "booking",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:b5cc04f84f0f21661b144ba009730227f12fed8331143315f5f5fc35b2f6e82a",
+      "sha256": "da4642a0c7724bbf4a0560b5c5080fdff4824ea2b49a965ff88d51efbd86f99b",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/58/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/58/878c23173d286fec-full-page.jpg",
+      "route": "/preview/58-service-bay/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:b5cc04f84f0f21661b144ba009730227f12fed8331143315f5f5fc35b2f6e82a",
+      "sha256": "878c23173d286fecf62105176d6f139db2260db662f4c17ff6501ad3354e0e40",
+      "fullPage": true
+    }
+  ]
+}

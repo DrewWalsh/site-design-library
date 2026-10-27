@@ -42,7 +42,7 @@ pnpm capture
 Remove-Item Env:DESIGN_IDS
 ```
 
-Omit `DESIGN_IDS` to capture all 50. `PREVIEW_URL` can point to the production preview server instead of port 5173. Windows uses installed Edge by default; other platforms use Playwright Chromium. `BROWSER_CHANNEL` can override the channel. Four JPEGs per package are written locally and ignored by Git; provenance JSON is tracked.
+Omit `DESIGN_IDS` to capture all 75. `PREVIEW_URL` can point to the production preview server instead of port 5173. Windows uses installed Edge by default; other platforms use Playwright Chromium. `BROWSER_CHANNEL` can override the channel. Four JPEGs per package are written locally and ignored by Git; provenance JSON is tracked.
 
 Inspect the changed images and run the relevant tests. Once satisfactory, set the design's status to `ready`. Source hashes include the component, tokens, preview shell, routing/storage helper, and asset manifests; line endings are normalized. Shared changes invalidate every affected capture. A ready design with stale metadata fails the build.
 
@@ -63,4 +63,4 @@ The manifest uploader is in [codex-utility-scripts](https://github.com/DrewWalsh
 
 ## Assets
 
-See `ASSETS.md`, `public/fonts/manifest.json`, and `public/art/manifest.json`. The manifests contain provenance and checksums; font licenses are bundled. Keep the published references and the actual rendered assets consistent.
+See `ASSETS.md`, `COMMERCIAL_ASSETS.md`, `public/fonts/manifest.json`, `public/art/manifest.json`, and `public/art/commercial-manifest.json`. The commercial manifest records nineteen images hosted under `assets/commercial/` in the same Tigris bucket, including licensed photographs and labelled generated illustrations. Manifests contain provenance and checksums; font licenses are bundled. Keep published references and rendered assets consistent. The original local asset manifest participates in the shared capture hash; each specimen’s commercial asset URL is included in its component hash.

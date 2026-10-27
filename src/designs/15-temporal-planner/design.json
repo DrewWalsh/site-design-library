@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "15",
   "slug": "temporal-planner",
   "name": "Temporal Planner",
@@ -7,10 +7,7 @@
   "family": "Workspaces & discovery",
   "status": "ready",
   "thesis": "Make time, duration, overlap, and availability immediately legible.",
-  "suitableFor": [
-    "Planning",
-    "Workspaces"
-  ],
+  "suitableFor": ["Planning", "Workspaces"],
   "character": "Restrained",
   "traits": {
     "composition": "Time-based week grid paired with an agenda rail",
@@ -104,19 +101,33 @@
     }
   ],
   "sourcePath": "src/designs/15-temporal-planner",
-  "neighbours": [
-    "11",
-    "14"
-  ],
+  "neighbours": ["11", "14"],
   "palette": {
     "page": "#f7f8fa",
     "surface": "#ffffff",
     "ink": "#2c3d51",
     "accent": "#356d9c"
   },
-  "fonts": [
-    "DM Sans"
-  ],
+  "fonts": ["DM Sans"],
   "brief": "**Philosophy and fit.** Make time, duration, overlap, and availability immediately legible. Suitable for schedules, personal planning, project calendars, event programmes, and resource booking.\n\n**Visual grammar.** Use a time-based grid with explicit day and hour labels, a narrow agenda rail, and a compact toolbar for period and view changes. A friendly UI sans, clean white ground, dark blue-grey ink, and a small palette of labelled activity categories organise the page. Current selection, unavailable periods, and overlapping items have visibly different treatments.\n\n**Specimen and flow.** *Weekcraft* contains a fictional workshop schedule. Users select a session, move it through an explicit date-and-time form, and inspect the updated week. Supporting states show a scheduling conflict and an agenda view containing the same appointments.\n\n**Adaptation and identity.** Mobile defaults to the agenda or a single-day view; horizontal swiping is optional. Preserve the time structure and text labels; avoid drag-only editing, colour-only categories, and compressing a whole week into unreadable columns. Motion simply confirms a change. **Effort: medium.**",
-  "scope": "An expansive sample page with representative local interactions; no production business backend."
+  "scope": "An expansive sample page with representative local interactions; no production business backend.",
+  "discovery": {
+    "industries": ["Scheduling", "Studios"],
+    "visitorGoals": ["Plan a session"],
+    "conversionActions": ["Move a booking"],
+    "siteSize": "Application",
+    "interactionTypes": ["Calendar", "Conflict validation"],
+    "keywords": [
+      "Planning",
+      "Workspaces",
+      "Readable duration and overlap",
+      "Labelled activity categories",
+      "Non-drag scheduling controls"
+    ]
+  },
+  "patterns": [
+    "Readable duration and overlap",
+    "Labelled activity categories",
+    "Non-drag scheduling controls"
+  ]
 }

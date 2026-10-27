@@ -46,3 +46,7 @@ See [asset record](../../../docs/ASSETS.md). All vector diagrams and sample writ
 ## Verification
 
 Reviewed working sample. Browser checks cover entry-page reflow at 320, 390, 768, and 1440 pixels, keyboard entry, direct routes, and automated accessibility; both supporting routes are checked at 390 pixels. Capture metadata is stored in public/previews/25/capture.json and names the source content hash. Accessibility scans are supplementary; no formal WCAG certification or field-performance claim is made.
+
+## Distinctive composition
+
+A service-and-coverage board now leads the page: practical hours, three clearly priced work types, and an illustrated repair detail. This removes the product-marketing hero and pale information card shared with Precision SaaS, while avoiding Service Bay’s industrial ticket language.

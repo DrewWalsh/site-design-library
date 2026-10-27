@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "39",
   "slug": "personal-web-1999",
   "name": "Personal Web 1999",
@@ -7,10 +7,7 @@
   "family": "Playful & material",
   "status": "ready",
   "thesis": "Express a person’s interests through a small, hand maintained web of pages.",
-  "suitableFor": [
-    "Personal",
-    "Editorial"
-  ],
+  "suitableFor": ["Personal", "Editorial"],
   "character": "Expressive",
   "traits": {
     "composition": "Compact personal homepage with a visible link directory, updates, and original badges",
@@ -104,20 +101,33 @@
     }
   ],
   "sourcePath": "src/designs/39-personal-web-1999",
-  "neighbours": [
-    "40",
-    "42"
-  ],
+  "neighbours": ["40", "42"],
   "palette": {
     "page": "#dfe2cf",
     "surface": "#fffceb",
     "ink": "#262b43",
     "accent": "#3e4e8a"
   },
-  "fonts": [
-    "Libre Baskerville",
-    "DM Sans"
-  ],
+  "fonts": ["Libre Baskerville", "DM Sans"],
   "brief": "**Philosophy and fit.** Express a person’s interests through a small, hand maintained web of pages. Suitable for personal sites, fan communities, hobby collections, and informal project journals.\n\n**Visual grammar.** Use a compact masthead, a visible link directory, short update entries, tiny original badges, and an intentionally modest content width. Default-like serif copy and blue underlined links coexist with simple coloured table-like panels built using modern layout CSS. A repeating background pattern can surround a solid, readable content surface.\n\n**Specimen and flow.** *Moth Observatory* is a fictional enthusiast’s website. Follow a homepage journal link, read an entry, then navigate to adjacent entries. Supporting pages are a curated links directory and a guestbook with clearly local-only sample submissions. A site map keeps every destination discoverable.\n\n**Mobile and motion.** Collapse the link rail above the content, wrap badges, and keep text comfortably readable. Any small animated decoration has a pause control or a static alternative.\n\n**Identity and effort.** Preserve personal miscellany, direct linking, and homemade composition; avoid copying obsolete browser failures or inserting fake broken links. **Effort: low.**",
-  "scope": "An expansive sample page with representative local interactions; no production business backend."
+  "scope": "An expansive sample page with representative local interactions; no production business backend.",
+  "discovery": {
+    "industries": ["Personal website", "Hobby"],
+    "visitorGoals": ["Explore a personal collection"],
+    "conversionActions": ["Sign a sample guestbook"],
+    "siteSize": "One page",
+    "interactionTypes": ["Guestbook", "Personal links"],
+    "keywords": [
+      "Personal",
+      "Editorial",
+      "Personal miscellany",
+      "Modest hand-maintained page width",
+      "Underlined links and visible site map"
+    ]
+  },
+  "patterns": [
+    "Personal miscellany",
+    "Modest hand-maintained page width",
+    "Underlined links and visible site map"
+  ]
 }

@@ -658,4 +658,23 @@ main {
     font-size: 37px;
   }
 }
+@media (max-width: 600px) {
+  header {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  header > strong {
+    white-space: nowrap;
+    word-break: normal;
+    overflow-wrap: normal;
+    flex-shrink: 0;
+    font-size: 30px;
+  }
+  header nav {
+    flex-basis: 100%;
+    justify-content: space-between;
+    margin-left: 0;
+    gap: 12px;
+  }
+}
 </style>

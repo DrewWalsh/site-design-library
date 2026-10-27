@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "03",
   "slug": "swiss-grid",
   "name": "Swiss Grid",
@@ -7,10 +7,7 @@
   "family": "Clarity & editorial",
   "status": "ready",
   "thesis": "Build hierarchy through alignment, scale, and disciplined contrast.",
-  "suitableFor": [
-    "Events",
-    "Culture"
-  ],
+  "suitableFor": ["Events", "Culture"],
   "character": "Restrained",
   "traits": {
     "composition": "Rigorous typographic grid with indexed programme rows",
@@ -104,19 +101,33 @@
     }
   ],
   "sourcePath": "src/designs/03-swiss-grid",
-  "neighbours": [
-    "31",
-    "30"
-  ],
+  "neighbours": ["31", "30"],
   "palette": {
     "page": "#f4f2eb",
     "surface": "#ffffff",
     "ink": "#181a18",
     "accent": "#c6321e"
   },
-  "fonts": [
-    "Space Grotesk"
-  ],
+  "fonts": ["Space Grotesk"],
   "brief": "**Philosophy and fit.** Build hierarchy through alignment, scale, and disciplined contrast. Suitable for conferences, studios, exhibitions, and editorial brands that want typography to carry their identity.\n\n**Visual grammar.** Use a visibly rigorous grid, left-aligned oversized headings, numbered sections, generous outer margins, and restrained image crops. Small labels align with large type rather than floating in pills. A neutral sans works across a severe size range. An off-white ground, near-black text, and one vermilion accent organise the composition. Navigation is a short indexed list; rules and whitespace divide material instead of card backgrounds.\n\n**Specimen and flow.** *Form Conference* lets visitors inspect the programme, filter sessions by day, and open a speaker profile. Supporting screens provide a programme detail with venue information and a saved-session list held locally.\n\n**Adaptation and identity.** On mobile, preserve alignment relationships while reducing the number of columns; the oversized heading must wrap deliberately. Preserve the grid and typographic hierarchy; avoid symmetric feature tiles, decorative shapes, and unrelated typefaces. Motion is limited to quiet state changes. **Effort: low.**",
-  "scope": "An expansive sample page with representative local interactions; no production business backend."
+  "scope": "An expansive sample page with representative local interactions; no production business backend.",
+  "discovery": {
+    "industries": ["Events", "Design conference"],
+    "visitorGoals": ["Explore an event"],
+    "conversionActions": ["Reserve a place"],
+    "siteSize": "Small brochure",
+    "interactionTypes": ["Programme navigation", "Ticket selection"],
+    "keywords": [
+      "Events",
+      "Culture",
+      "Aligned large and small type",
+      "Programme as strong ruled rows",
+      "Oversized left-aligned titles"
+    ]
+  },
+  "patterns": [
+    "Aligned large and small type",
+    "Programme as strong ruled rows",
+    "Oversized left-aligned titles"
+  ]
 }

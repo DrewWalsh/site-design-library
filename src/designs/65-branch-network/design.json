@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 2,
+  "id": "65",
+  "slug": "branch-network",
+  "name": "Branch Network",
+  "brand": "LOCAL / Cycle care",
+  "family": "Small business",
+  "status": "ready",
+  "thesis": "Find the branch that does the work you need.",
+  "suitableFor": [
+    "Small chain",
+    "Multi-location services",
+    "Bike repair"
+  ],
+  "character": "Expressive",
+  "traits": {
+    "composition": "map-led mint and ink branch network with location-specific ledgers",
+    "navigation": "Service-filtered branch list, map selection and branch-specific booking",
+    "typography": "Space Grotesk",
+    "density": "Medium",
+    "imagery": "Original neighbourhood map with numbered selectable branches",
+    "surface": "Green map surface, numbered location rail and open whitespace",
+    "motion": "Minimal"
+  },
+  "effort": "Medium",
+  "definingFeatures": [
+    "Location finder",
+    "Branch hours",
+    "Service availability"
+  ],
+  "adaptableChoices": [
+    "Verified business content",
+    "Brand and subject",
+    "Equivalent licensed typefaces"
+  ],
+  "discovery": {
+    "industries": [
+      "Small chain",
+      "Multi-location services",
+      "Bike repair"
+    ],
+    "visitorGoals": [
+      "Find a nearby branch"
+    ],
+    "conversionActions": [
+      "Book at a branch"
+    ],
+    "siteSize": "Multi-location site",
+    "interactionTypes": [
+      "Branch finder",
+      "Location map",
+      "Availability"
+    ],
+    "keywords": [
+      "Small chain",
+      "Multi-location services",
+      "Bike repair",
+      "Book at a branch",
+      "Multi-location site",
+      "Location finder",
+      "Branch hours",
+      "Service availability",
+      "small business",
+      "local business",
+      "appointment based",
+      "booking",
+      "calendar"
+    ]
+  },
+  "patterns": [
+    "Location finder",
+    "Branch hours",
+    "Service availability"
+  ],
+  "entryRoute": "/preview/65-branch-network/start",
+  "states": [
+    {
+      "key": "location",
+      "label": "Branch details",
+      "route": "/preview/65-branch-network/location"
+    },
+    {
+      "key": "booking",
+      "label": "Book at this branch",
+      "route": "/preview/65-branch-network/booking"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/65/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/65/aeeda4b2f14457a3-desktop.jpg",
+      "route": "/preview/65-branch-network/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:33fee568623018d162b50bec36978ddd126727baad968e57770cefb4f8c7ab10",
+      "sha256": "aeeda4b2f14457a31ac4f15c2e38b91530d3a7c487321abd01a159cd228ebd68",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/65/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/65/52d5ca4d888c2111-mobile.jpg",
+      "route": "/preview/65-branch-network/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:33fee568623018d162b50bec36978ddd126727baad968e57770cefb4f8c7ab10",
+      "sha256": "52d5ca4d888c211130cecebf0d2c361f6246747ff4a854804b594c0685f06e26",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/65/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/65/5b98adfbaf7f70d0-detail.jpg",
+      "route": "/preview/65-branch-network/location",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "location",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:33fee568623018d162b50bec36978ddd126727baad968e57770cefb4f8c7ab10",
+      "sha256": "5b98adfbaf7f70d00d74fb220f7704ff954e4caa708c1c0aa616e7cf1e39b84a",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/65/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/65/acd13fe61d28cd34-full-page.jpg",
+      "route": "/preview/65-branch-network/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:33fee568623018d162b50bec36978ddd126727baad968e57770cefb4f8c7ab10",
+      "sha256": "acd13fe61d28cd34aeb30500c0978891c1de5ecc79e7694a400545e1a72dba01",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/65-branch-network",
+  "neighbours": [
+    "16",
+    "58"
+  ],
+  "palette": {
+    "page": "#f0f5ed",
+    "surface": "#ffffff",
+    "ink": "#273e3c",
+    "accent": "#35645b"
+  },
+  "fonts": [
+    "Space Grotesk",
+    "DM Sans"
+  ],
+  "brief": "**Philosophy and fit.** Find the branch that does the work you need. Built for small chain, multi-location services, bike repair. The visitor’s next step is to book at a branch.\n\n**Visual grammar.** Use a map-led mint and ink branch network with location-specific ledgers. Preserve the hierarchy of location finder, branch hours, service availability; these patterns solve this business’s actual decision, rather than supplying interchangeable decoration.\n\n**Sample and interaction.** LOCAL / Cycle care is a fictional demonstration. The entry page establishes a complete visual direction, with branch details and book at this branch as supporting states. Inputs use local deterministic fixtures; no request, order, application or payment is sent.\n\n**Responsive behaviour.** On a phone, keep the primary decision first, stack facts with explicit labels, preserve the order of the workflow, and provide comfortably sized controls. Wide diagrams scale; tabular facts retain their labels.\n\n**Adaptation.** Replace the fictional brand, prices, availability, qualifications and claims with verified client information. Preserve location finder, branch hours, service availability. Use imagery to explain the place, people, work or product, with deliberate crops and honest captions. Do not turn this into a generic hero-and-card layout.\n\n**Identity and adaptation.** Treat locations as distinct service choices, with their own hours, equipment and availability. The list and map are equivalent ways to choose a branch, and booking retains its address and supported service.",
+  "scope": "Complete visual reference with local sample interactions; no production business backend."
+}

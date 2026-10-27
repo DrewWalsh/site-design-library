@@ -1,0 +1,64 @@
+{
+  "designId": "74",
+  "sourceRevision": "sha256:ceb6ff326fef3de4e6b61b39d57b480d239941ded721007d62de2834e8dd9c10",
+  "capturedAt": "2026-10-27T00:08:30.414Z",
+  "browser": "156.0.4314.42",
+  "captures": [
+    {
+      "file": "/previews/74/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/74/a0fd13ebe76ecadc-desktop.jpg",
+      "route": "/preview/74-modern-docs-portal/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:ceb6ff326fef3de4e6b61b39d57b480d239941ded721007d62de2834e8dd9c10",
+      "sha256": "a0fd13ebe76ecadc131167a161f24893b51f7e782b710e723eb6c2575ed54c0e",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/74/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/74/cf909bccc22ed4f3-mobile.jpg",
+      "route": "/preview/74-modern-docs-portal/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:ceb6ff326fef3de4e6b61b39d57b480d239941ded721007d62de2834e8dd9c10",
+      "sha256": "cf909bccc22ed4f3e80f32a666fd1285e8ef0ec6ff470ba6c803139bc331c034",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/74/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/74/0492f16fafe5a322-detail.jpg",
+      "route": "/preview/74-modern-docs-portal/quickstart",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "quickstart",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:ceb6ff326fef3de4e6b61b39d57b480d239941ded721007d62de2834e8dd9c10",
+      "sha256": "0492f16fafe5a322535a51fb167c2fdd8908e723b8f47272af7fba46688a1dff",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/74/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/74/b370ef3a0018b365-full-page.jpg",
+      "route": "/preview/74-modern-docs-portal/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:ceb6ff326fef3de4e6b61b39d57b480d239941ded721007d62de2834e8dd9c10",
+      "sha256": "b370ef3a0018b365583471bb6f04b9e49f68fad2ed53152c89b4e56b373751f7",
+      "fullPage": true
+    }
+  ]
+}

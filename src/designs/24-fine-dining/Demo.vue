@@ -63,7 +63,7 @@ const menu = [
       <template v-if="state === 'start'"
         ><section class="opening">
           <div>
-            <p class="eyebrow">NORTHBANK / A TABLE FOR THE SEASON</p>
+            <p class="eyebrow">Northbank / a table for the season</p>
             <h1>Good things,<br />in their own time.</h1>
             <p>Fire, a small garden, and the pleasure<br />of sitting down together.</p>
             <button @click="go('reserve')">Find a table ↗</button>
@@ -82,7 +82,7 @@ const menu = [
         </section>
         <section class="menu">
           <div class="menu-title">
-            <p class="eyebrow">THE AUTUMN TABLE</p>
+            <p class="eyebrow">The autumn table</p>
             <h2>From the kitchen.</h2>
             <p>A short menu, following the season.</p>
             <label><input type="checkbox" v-model="vegetarian" />Show vegetarian dishes</label>
@@ -110,7 +110,7 @@ const menu = [
         </section></template
       >
       <section v-else-if="state === 'reserve'" class="reservation">
-        <p class="eyebrow">YOUR TABLE</p>
+        <p class="eyebrow">Your table</p>
         <h1>An occasion.<br />Or simply Tuesday.</h1>
         <form v-if="!confirmed" @submit.prevent="confirmed = true">
           <label>Date<input type="date" v-model="date" min="2026-11-01" required /></label
@@ -144,7 +144,7 @@ const menu = [
         </div>
       </section>
       <section v-else class="visit">
-        <p class="eyebrow">STAY A LITTLE LONGER</p>
+        <p class="eyebrow">Stay a little longer</p>
         <h1>A place<br />to gather.</h1>
         <h2>Private dining</h2>
         <p>
@@ -619,5 +619,13 @@ figcaption {
   .closing h2 {
     font-size: 30px;
   }
+}
+.eyebrow {
+  font:
+    italic 13px/1.7 'Libre Baskerville',
+    Georgia,
+    serif;
+  letter-spacing: 0.02em;
+  text-transform: none;
 }
 </style>

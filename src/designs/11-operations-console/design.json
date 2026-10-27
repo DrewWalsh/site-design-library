@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "11",
   "slug": "operations-console",
   "name": "Operations Console",
@@ -7,10 +7,7 @@
   "family": "Workspaces & discovery",
   "status": "ready",
   "thesis": "Help experienced users recognise exceptions and complete repetitive work quickly.",
-  "suitableFor": [
-    "Operations",
-    "Dashboards"
-  ],
+  "suitableFor": ["Operations", "Dashboards"],
   "character": "Restrained",
   "traits": {
     "composition": "Dense shipment table, narrow functional sidebar, and contextual detail",
@@ -104,19 +101,33 @@
     }
   ],
   "sourcePath": "src/designs/11-operations-console",
-  "neighbours": [
-    "10",
-    "13"
-  ],
+  "neighbours": ["10", "13"],
   "palette": {
     "page": "#f4f6f8",
     "surface": "#fff",
     "ink": "#263241",
     "accent": "#265f4d"
   },
-  "fonts": [
-    "DM Sans"
-  ],
+  "fonts": ["DM Sans"],
   "brief": "**Philosophy and fit.** Help experienced users recognise exceptions and complete repetitive work quickly. Suitable for inventory, fulfilment, support queues, administration, and internal operational tools.\n\n**Visual grammar.** A compact application bar and narrow functional sidebar frame a dense, well-aligned table. Use a readable UI sans, tabular numerals, cool white surfaces, slate text, and restrained amber or red for labelled exceptions. Row detail opens in a side panel; filtering and batch actions sit close to the affected records. Counts support the work rather than forming a decorative dashboard.\n\n**Specimen and flow.** *Dispatch Board* models fictional outbound shipments. Users filter delayed shipments, inspect one, and locally update its handling status. Supporting states show a batch action confirmation and an empty filtered result with a reset action.\n\n**Adaptation and identity.** Mobile shows the essential shipment fields in a list, with full detail on a separate view. Preserve data density, predictable selection, and efficient keyboard navigation; avoid oversized cards, ambiguous icon-only actions, and indiscriminate compression. **Effort: medium.**",
-  "scope": "An expansive sample page with representative local interactions; no production business backend."
+  "scope": "An expansive sample page with representative local interactions; no production business backend.",
+  "discovery": {
+    "industries": ["Logistics", "Operations", "B2B services"],
+    "visitorGoals": ["Manage work"],
+    "conversionActions": ["Update a record"],
+    "siteSize": "Application",
+    "interactionTypes": ["Batch actions", "Status filters"],
+    "keywords": [
+      "Operations",
+      "Dashboards",
+      "Labelled operational exceptions",
+      "Batch actions next to records",
+      "Tabular alignment and visible selection"
+    ]
+  },
+  "patterns": [
+    "Labelled operational exceptions",
+    "Batch actions next to records",
+    "Tabular alignment and visible selection"
+  ]
 }

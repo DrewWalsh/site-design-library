@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 2,
+  "id": "56",
+  "slug": "renovation-proof",
+  "name": "Renovation Proof",
+  "brand": "FOUND / Renovation",
+  "family": "Small business",
+  "status": "ready",
+  "thesis": "Show the work, its constraints, and how it changed a place.",
+  "suitableFor": [
+    "Renovation",
+    "Contractor",
+    "Landscaping",
+    "Roofing"
+  ],
+  "character": "Expressive",
+  "traits": {
+    "composition": "ochre and charcoal construction journal with a large matched comparison",
+    "navigation": "Project comparison, milestone specification and estimate intake",
+    "typography": "Space Grotesk",
+    "density": "Medium",
+    "imagery": "Matched generated before/after pair with an explicit illustrative caption",
+    "surface": "Workmanlike neutral paper and ochre project accents",
+    "motion": "Minimal"
+  },
+  "effort": "Medium",
+  "definingFeatures": [
+    "Before and after",
+    "Project specifications",
+    "Budget bands"
+  ],
+  "adaptableChoices": [
+    "Verified business content",
+    "Brand and subject",
+    "Equivalent licensed typefaces"
+  ],
+  "discovery": {
+    "industries": [
+      "Renovation",
+      "Contractor",
+      "Landscaping",
+      "Roofing"
+    ],
+    "visitorGoals": [
+      "Plan a renovation"
+    ],
+    "conversionActions": [
+      "Request an estimate"
+    ],
+    "siteSize": "Portfolio & enquiry",
+    "interactionTypes": [
+      "Before and after",
+      "Project timeline",
+      "Quote estimator"
+    ],
+    "keywords": [
+      "Renovation",
+      "Contractor",
+      "Landscaping",
+      "Roofing",
+      "Request an estimate",
+      "Portfolio & enquiry",
+      "Before and after",
+      "Project specifications",
+      "Budget bands",
+      "small business",
+      "local business",
+      "enquiry driven",
+      "inquiry",
+      "quote"
+    ]
+  },
+  "patterns": [
+    "Before and after",
+    "Project specifications",
+    "Budget bands"
+  ],
+  "entryRoute": "/preview/56-renovation-proof/start",
+  "states": [
+    {
+      "key": "estimate",
+      "label": "Estimate request",
+      "route": "/preview/56-renovation-proof/estimate"
+    },
+    {
+      "key": "project",
+      "label": "Project dossier",
+      "route": "/preview/56-renovation-proof/project"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/56/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/56/e6045d04af201c93-desktop.jpg",
+      "route": "/preview/56-renovation-proof/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:e1551745f7ff093e3739e327af44e90ed53fdee75c31557093c7910a3ea14cd8",
+      "sha256": "e6045d04af201c937923506aa450cc368474da4e7f9d5c27893ee5f7a9000831",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/56/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/56/f8a73aa4e6ae1cfb-mobile.jpg",
+      "route": "/preview/56-renovation-proof/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:e1551745f7ff093e3739e327af44e90ed53fdee75c31557093c7910a3ea14cd8",
+      "sha256": "f8a73aa4e6ae1cfb8096f2d53cbc8804312b7a0c76a35d65312d8e2efacf449c",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/56/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/56/26ba6878ff9c3be4-detail.jpg",
+      "route": "/preview/56-renovation-proof/estimate",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "estimate",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:e1551745f7ff093e3739e327af44e90ed53fdee75c31557093c7910a3ea14cd8",
+      "sha256": "26ba6878ff9c3be431c12a2536da9c4a333d39fcdc9a9de7443a8a26ee9058b0",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/56/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/56/850ae1539ee45da8-full-page.jpg",
+      "route": "/preview/56-renovation-proof/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:e1551745f7ff093e3739e327af44e90ed53fdee75c31557093c7910a3ea14cd8",
+      "sha256": "850ae1539ee45da86ee35cf83cbe183ba1715415343fe55ba2768432d6abccdf",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/56-renovation-proof",
+  "neighbours": [
+    "27",
+    "25"
+  ],
+  "palette": {
+    "page": "#efeee7",
+    "surface": "#ffffff",
+    "ink": "#30352f",
+    "accent": "#6a4d20"
+  },
+  "fonts": [
+    "Space Grotesk",
+    "DM Sans"
+  ],
+  "brief": "**Philosophy and fit.** Show the work, its constraints, and how it changed a place. Built for renovation, contractor, landscaping, roofing. The visitor’s next step is to request an estimate.\n\n**Visual grammar.** Use a ochre and charcoal construction journal with a large matched comparison. Preserve the hierarchy of before and after, project specifications, budget bands; these patterns solve this business’s actual decision, rather than supplying interchangeable decoration.\n\n**Sample and interaction.** FOUND / Renovation is a fictional demonstration. The entry page establishes a complete visual direction, with estimate request and project dossier as supporting states. Inputs use local deterministic fixtures; no request, order, application or payment is sent.\n\n**Responsive behaviour.** On a phone, keep the primary decision first, stack facts with explicit labels, preserve the order of the workflow, and provide comfortably sized controls. Wide diagrams scale; tabular facts retain their labels.\n\n**Adaptation.** Replace the fictional brand, prices, availability, qualifications and claims with verified client information. Preserve before and after, project specifications, budget bands. Use imagery to explain the place, people, work or product, with deliberate crops and honest captions. Do not turn this into a generic hero-and-card layout.\n\n**Identity and adaptation.** The before/after comparison is the lead evidence plate. Tie its caption and project facts to a sequence of milestones and a scoped estimate request; never present the generated example as completed client work.",
+  "scope": "Complete visual reference with local sample interactions; no production business backend."
+}

@@ -1,0 +1,64 @@
+{
+  "designId": "64",
+  "sourceRevision": "sha256:f5e99bde393846d9a35506e66f151525b15a978b73b290228ba336422e335525",
+  "capturedAt": "2026-10-27T00:07:52.166Z",
+  "browser": "156.0.4314.42",
+  "captures": [
+    {
+      "file": "/previews/64/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/64/02a683c6a9015787-desktop.jpg",
+      "route": "/preview/64-service-plans/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:f5e99bde393846d9a35506e66f151525b15a978b73b290228ba336422e335525",
+      "sha256": "02a683c6a9015787a87032a10c8348a044458f60f622484934df052d73740653",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/64/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/64/7714a3c4653b6029-mobile.jpg",
+      "route": "/preview/64-service-plans/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:f5e99bde393846d9a35506e66f151525b15a978b73b290228ba336422e335525",
+      "sha256": "7714a3c4653b60292df5f8290037e9fd01032167fde24ec705f63de6eb636838",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/64/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/64/09c3e9cfd1b1f0e0-detail.jpg",
+      "route": "/preview/64-service-plans/plan",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "plan",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:f5e99bde393846d9a35506e66f151525b15a978b73b290228ba336422e335525",
+      "sha256": "09c3e9cfd1b1f0e0f2f27bb24a3f8e9762f649a8940ce93347ee1570d3f68606",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/64/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/64/670e6b579bb7dc6a-full-page.jpg",
+      "route": "/preview/64-service-plans/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:f5e99bde393846d9a35506e66f151525b15a978b73b290228ba336422e335525",
+      "sha256": "670e6b579bb7dc6a6f52947343a0b193bdee5891fe707d528e2de8a231ce6ea8",
+      "fullPage": true
+    }
+  ]
+}

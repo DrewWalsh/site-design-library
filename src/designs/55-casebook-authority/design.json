@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 2,
+  "id": "55",
+  "slug": "casebook-authority",
+  "name": "Casebook Authority",
+  "brand": "BELL & ROWE / Accountants",
+  "family": "Small business",
+  "status": "ready",
+  "thesis": "Let organised evidence establish professional trust.",
+  "suitableFor": [
+    "Accountant",
+    "Law firm",
+    "Consultancy",
+    "B2B services"
+  ],
+  "character": "Restrained",
+  "traits": {
+    "composition": "document-like navy and parchment casebook with numbered margin notes",
+    "navigation": "Practice areas, case notes and structured consultation intake",
+    "typography": "Libre Baskerville",
+    "density": "Medium",
+    "imagery": "Document monogram and text-led case summaries",
+    "surface": "Ivory paper, navy casebook band and restrained rules",
+    "motion": "Minimal"
+  },
+  "effort": "Medium",
+  "definingFeatures": [
+    "Qualifications",
+    "Practice areas",
+    "Case summaries"
+  ],
+  "adaptableChoices": [
+    "Verified business content",
+    "Brand and subject",
+    "Equivalent licensed typefaces"
+  ],
+  "discovery": {
+    "industries": [
+      "Accountant",
+      "Law firm",
+      "Consultancy",
+      "B2B services"
+    ],
+    "visitorGoals": [
+      "Evaluate expertise"
+    ],
+    "conversionActions": [
+      "Request a consultation"
+    ],
+    "siteSize": "Service site",
+    "interactionTypes": [
+      "Case studies",
+      "Structured intake"
+    ],
+    "keywords": [
+      "Accountant",
+      "Law firm",
+      "Consultancy",
+      "B2B services",
+      "Request a consultation",
+      "Service site",
+      "Qualifications",
+      "Practice areas",
+      "Case summaries",
+      "Consultation intake",
+      "small business",
+      "local business",
+      "enquiry driven",
+      "inquiry",
+      "quote"
+    ]
+  },
+  "patterns": [
+    "Qualifications",
+    "Practice areas",
+    "Case summaries",
+    "Consultation intake"
+  ],
+  "entryRoute": "/preview/55-casebook-authority/start",
+  "states": [
+    {
+      "key": "consultation",
+      "label": "Consultation intake",
+      "route": "/preview/55-casebook-authority/consultation"
+    },
+    {
+      "key": "case",
+      "label": "Client case summary",
+      "route": "/preview/55-casebook-authority/case"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/55/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/55/b12d321f0d23c9ab-desktop.jpg",
+      "route": "/preview/55-casebook-authority/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:912380ff1d01c8a28fa4d25cf30f56df39922b151497e87e59f20eb70cca20fb",
+      "sha256": "b12d321f0d23c9ab7c9f5a3fb237b4557bc4bc3bca39d7867171af28df86a095",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/55/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/55/2d8c65259af2f9dd-mobile.jpg",
+      "route": "/preview/55-casebook-authority/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:912380ff1d01c8a28fa4d25cf30f56df39922b151497e87e59f20eb70cca20fb",
+      "sha256": "2d8c65259af2f9dd5be33628b821afb08029eb5b558e62539a8088265da02441",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/55/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/55/7a05a66a5d66efba-detail.jpg",
+      "route": "/preview/55-casebook-authority/consultation",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "consultation",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:912380ff1d01c8a28fa4d25cf30f56df39922b151497e87e59f20eb70cca20fb",
+      "sha256": "7a05a66a5d66efbae50c4199950863da5f6d7ba82950294900790c468fd1fb38",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/55/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/55/dbc8c2efef756603-full-page.jpg",
+      "route": "/preview/55-casebook-authority/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:912380ff1d01c8a28fa4d25cf30f56df39922b151497e87e59f20eb70cca20fb",
+      "sha256": "dbc8c2efef7566031dc2e38f551dce0b3814d600c4f3e71a6eaab54d90bd2779",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/55-casebook-authority",
+  "neighbours": [
+    "05",
+    "60"
+  ],
+  "palette": {
+    "page": "#f2efe7",
+    "surface": "#ffffff",
+    "ink": "#24354a",
+    "accent": "#364c69"
+  },
+  "fonts": [
+    "Libre Baskerville",
+    "DM Sans"
+  ],
+  "brief": "**Philosophy and fit.** Let organised evidence establish professional trust. Built for accountant, law firm, consultancy, b2b services. The visitor’s next step is to request a consultation.\n\n**Visual grammar.** Use a document-like navy and parchment casebook with numbered margin notes. Preserve the hierarchy of qualifications, practice areas, case summaries, consultation intake; these patterns solve this business’s actual decision, rather than supplying interchangeable decoration.\n\n**Sample and interaction.** BELL & ROWE / Accountants is a fictional demonstration. The entry page establishes a complete visual direction, with consultation intake and client case summary as supporting states. Inputs use local deterministic fixtures; no request, order, application or payment is sent.\n\n**Responsive behaviour.** On a phone, keep the primary decision first, stack facts with explicit labels, preserve the order of the workflow, and provide comfortably sized controls. Wide diagrams scale; tabular facts retain their labels.\n\n**Adaptation.** Replace the fictional brand, prices, availability, qualifications and claims with verified client information. Preserve qualifications, practice areas, case summaries. Use imagery to explain the place, people, work or product, with deliberate crops and honest captions. Do not turn this into a generic hero-and-card layout.\n\n**Identity and adaptation.** A marginal practice note, substantial reading columns and case summaries convey expertise without relying on a hero photograph. Consultation intake collects context rather than selling a standard booking slot.",
+  "scope": "Complete visual reference with local sample interactions; no production business backend."
+}

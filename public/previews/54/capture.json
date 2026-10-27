@@ -1,0 +1,64 @@
+{
+  "designId": "54",
+  "sourceRevision": "sha256:a125c428ff931f068d56f8df551aecff7b037e6a9376480a37848ce75fc80274",
+  "capturedAt": "2026-10-27T00:07:08.872Z",
+  "browser": "156.0.4314.42",
+  "captures": [
+    {
+      "file": "/previews/54/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/54/52e408bfc56c90ed-desktop.jpg",
+      "route": "/preview/54-clinical-practice/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:a125c428ff931f068d56f8df551aecff7b037e6a9376480a37848ce75fc80274",
+      "sha256": "52e408bfc56c90ed220c356013f1e5b8434af3eb90a4847ff7869f1bf577fe40",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/54/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/54/4cd7e95540fb9d4f-mobile.jpg",
+      "route": "/preview/54-clinical-practice/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:a125c428ff931f068d56f8df551aecff7b037e6a9376480a37848ce75fc80274",
+      "sha256": "4cd7e95540fb9d4f7819f805241cef92384b1ef63bd0cd8d371ae689c8262587",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/54/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/54/ce8fa956725f8470-detail.jpg",
+      "route": "/preview/54-clinical-practice/request",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "request",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:a125c428ff931f068d56f8df551aecff7b037e6a9376480a37848ce75fc80274",
+      "sha256": "ce8fa956725f84706acd31e589b6e0ce5549768503ef04d6ad201a6d27df67fa",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/54/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/54/e0623048f3d5e1cc-full-page.jpg",
+      "route": "/preview/54-clinical-practice/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:a125c428ff931f068d56f8df551aecff7b037e6a9376480a37848ce75fc80274",
+      "sha256": "e0623048f3d5e1cc9b7ba2fce346535bff9d3e610ffd75b8369e6853481884af",
+      "fullPage": true
+    }
+  ]
+}

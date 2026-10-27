@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 2,
+  "id": "52",
+  "slug": "corner-shop",
+  "name": "Corner Shop",
+  "brand": "Good Neighbour",
+  "family": "Small business",
+  "status": "ready",
+  "thesis": "Make a small shop feel like part of its neighbourhood.",
+  "suitableFor": [
+    "Independent retail",
+    "Gift shop",
+    "Local shopping"
+  ],
+  "character": "Expressive",
+  "traits": {
+    "composition": "warm yellow shop window with stacked notices and a stock shelf",
+    "navigation": "Shelf anchors and a local collection basket",
+    "typography": "DM Sans",
+    "density": "Medium",
+    "imagery": "Shop-window photograph, illustrated stock and a pinned announcement",
+    "surface": "Warm yellow paper, olive ink and a slightly angled photograph",
+    "motion": "Minimal"
+  },
+  "effort": "Low",
+  "definingFeatures": [
+    "Opening hours",
+    "Featured stock",
+    "Local pickup"
+  ],
+  "adaptableChoices": [
+    "Verified business content",
+    "Brand and subject",
+    "Equivalent licensed typefaces"
+  ],
+  "discovery": {
+    "industries": [
+      "Independent retail",
+      "Gift shop",
+      "Local shopping"
+    ],
+    "visitorGoals": [
+      "Shop locally"
+    ],
+    "conversionActions": [
+      "Reserve for collection"
+    ],
+    "siteSize": "Small brochure",
+    "interactionTypes": [
+      "Product selection",
+      "Collection order"
+    ],
+    "keywords": [
+      "Independent retail",
+      "Gift shop",
+      "Local shopping",
+      "Reserve for collection",
+      "Small brochure",
+      "Opening hours",
+      "Featured stock",
+      "Local pickup",
+      "small business",
+      "local business"
+    ]
+  },
+  "patterns": [
+    "Opening hours",
+    "Featured stock",
+    "Local pickup"
+  ],
+  "entryRoute": "/preview/52-corner-shop/start",
+  "states": [
+    {
+      "key": "pickup",
+      "label": "Collection basket",
+      "route": "/preview/52-corner-shop/pickup"
+    },
+    {
+      "key": "order",
+      "label": "Collection details",
+      "route": "/preview/52-corner-shop/order"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/52/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/52/7e442130f3dd897e-desktop.jpg",
+      "route": "/preview/52-corner-shop/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:485202317f3d76e600c21e37f451366bf127301dbadacd09abf5e4e639d22943",
+      "sha256": "7e442130f3dd897e018590784f9d7a62a2190ea0f991d6ef6ad2d9f1785408b6",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/52/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/52/45fc695a31f1ac9d-mobile.jpg",
+      "route": "/preview/52-corner-shop/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:485202317f3d76e600c21e37f451366bf127301dbadacd09abf5e4e639d22943",
+      "sha256": "45fc695a31f1ac9d3c0f400d63fefb220d69abfc26aeebb73ebe444622859b30",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/52/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/52/73984ed8eca49989-detail.jpg",
+      "route": "/preview/52-corner-shop/pickup",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "pickup",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:485202317f3d76e600c21e37f451366bf127301dbadacd09abf5e4e639d22943",
+      "sha256": "73984ed8eca49989eec5f10d900fac9df773196043072f5e42fb951652d4c731",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/52/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/52/357cea2f6e17cc00-full-page.jpg",
+      "route": "/preview/52-corner-shop/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:485202317f3d76e600c21e37f451366bf127301dbadacd09abf5e4e639d22943",
+      "sha256": "357cea2f6e17cc00e56c3ca4d1df52e1f95e9398b704197d5f1ca6c2aa6454ae",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/52-corner-shop",
+  "neighbours": [
+    "23",
+    "67"
+  ],
+  "palette": {
+    "page": "#fff9e8",
+    "surface": "#ffffff",
+    "ink": "#37372b",
+    "accent": "#4e5427"
+  },
+  "fonts": [
+    "DM Sans"
+  ],
+  "brief": "**Philosophy and fit.** Make a small shop feel like part of its neighbourhood. Built for independent retail, gift shop, local shopping. The visitor’s next step is to reserve for collection.\n\n**Visual grammar.** Use a warm yellow shop window with stacked notices and a stock shelf. Preserve the hierarchy of opening hours, featured stock, local pickup; these patterns solve this business’s actual decision, rather than supplying interchangeable decoration.\n\n**Sample and interaction.** Good Neighbour is a fictional demonstration. The entry page establishes a complete visual direction, with collection basket and collection details as supporting states. Inputs use local deterministic fixtures; no request, order, application or payment is sent.\n\n**Responsive behaviour.** On a phone, keep the primary decision first, stack facts with explicit labels, preserve the order of the workflow, and provide comfortably sized controls. Wide diagrams scale; tabular facts retain their labels.\n\n**Adaptation.** Replace the fictional brand, prices, availability, qualifications and claims with verified client information. Preserve opening hours, featured stock, local pickup. Use imagery to explain the place, people, work or product, with deliberate crops and honest captions. Do not turn this into a generic hero-and-card layout.\n\n**Identity and adaptation.** Organise the page like a neighbourhood shop window: an announcement, a small shelf and opening hours. The visitor reserves a few items for pickup rather than browsing a large ecommerce catalogue.",
+  "scope": "Complete visual reference with local sample interactions; no production business backend."
+}

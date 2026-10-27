@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "16",
   "slug": "field-atlas",
   "name": "Field Atlas",
@@ -7,10 +7,7 @@
   "family": "Workspaces & discovery",
   "status": "ready",
   "thesis": "Use location as the primary route into information.",
-  "suitableFor": [
-    "Maps",
-    "Discovery"
-  ],
+  "suitableFor": ["Maps", "Discovery"],
   "character": "Restrained",
   "traits": {
     "composition": "Large illustrated district map linked to a compact trail list",
@@ -104,19 +101,33 @@
     }
   ],
   "sourcePath": "src/designs/16-field-atlas",
-  "neighbours": [
-    "26",
-    "20"
-  ],
+  "neighbours": ["26", "20"],
   "palette": {
     "page": "#f0f0e4",
     "surface": "#ffffff",
     "ink": "#2b4439",
     "accent": "#35694c"
   },
-  "fonts": [
-    "DM Sans"
-  ],
+  "fonts": ["DM Sans"],
   "brief": "**Philosophy and fit.** Use location as the primary route into information. Suitable for local guides, public amenities, heritage trails, travel research, and geographically organised collections.\n\n**Visual grammar.** Pair a large, deliberately styled map with a compact searchable place list and a filter bar. Use an earthy cream ground, dark green labels, blue waterways, and distinct labelled place markers. A practical sans and small cartographic labels reinforce the atlas character. The selected place remains obvious in both map and list.\n\n**Specimen and flow.** *Northbank Footpaths* uses an original SVG map of a fictional district. Visitors filter trails by surface, select a route, and inspect its stops and access notes. Supporting states show a route detail and a list-only search result.\n\n**Adaptation and identity.** Mobile uses a clear map/list switch while preserving filters and selection. All places remain reachable through ordinary links; the reference needs no geolocation or external map service. Preserve geographic relationships and readable labels; avoid decorative maps disconnected from results or essential hover interactions. **Effort: medium.**",
-  "scope": "An expansive sample page with representative local interactions; no production business backend."
+  "scope": "An expansive sample page with representative local interactions; no production business backend.",
+  "discovery": {
+    "industries": ["Travel", "Local discovery"],
+    "visitorGoals": ["Explore a place"],
+    "conversionActions": ["Save a location"],
+    "siteSize": "Searchable catalogue",
+    "interactionTypes": ["Map", "List filters"],
+    "keywords": [
+      "Maps",
+      "Discovery",
+      "Geography is the entry point",
+      "Matching list and map state",
+      "Access notes beside route details"
+    ]
+  },
+  "patterns": [
+    "Geography is the entry point",
+    "Matching list and map state",
+    "Access notes beside route details"
+  ]
 }

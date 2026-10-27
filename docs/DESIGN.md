@@ -1,5 +1,7 @@
 # Site Design Library Design Document
 
+> Current implementation scope: 75 complete reference specimens. The original fifty-direction specification below is preserved as the founding design document. The October 2026 expansion adds 18 small-business references (51–68), seven community/institutional references (69–75), business-needs discovery metadata, and additional imagery. Current per-design rules, states and adaptation notes live in `src/designs/*/DESIGN.md`; see the README and catalogue for the implemented collection.
+
 **Repository:** `site-design-library`  
 **Version:** 1.0  
 **Date:** 26 October 2026  

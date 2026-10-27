@@ -1,0 +1,64 @@
+{
+  "designId": "62",
+  "sourceRevision": "sha256:ed0e577bd323a14174871bdb88585ff8d7ac4260b9bc26a8c559f40b63b6bb92",
+  "capturedAt": "2026-10-27T00:07:43.060Z",
+  "browser": "156.0.4314.42",
+  "captures": [
+    {
+      "file": "/previews/62/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/62/0803915e3f358ca0-desktop.jpg",
+      "route": "/preview/62-training-floor/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:ed0e577bd323a14174871bdb88585ff8d7ac4260b9bc26a8c559f40b63b6bb92",
+      "sha256": "0803915e3f358ca00445d6520142df93445cc3c187179bab0c7d4a03f3184172",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/62/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/62/87acf1ccce30d631-mobile.jpg",
+      "route": "/preview/62-training-floor/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:ed0e577bd323a14174871bdb88585ff8d7ac4260b9bc26a8c559f40b63b6bb92",
+      "sha256": "87acf1ccce30d631ac88810a4c76dc2b1a2911fa6efdc983c789590e9d2e16f8",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/62/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/62/71e63f57354146c3-detail.jpg",
+      "route": "/preview/62-training-floor/schedule",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "schedule",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:ed0e577bd323a14174871bdb88585ff8d7ac4260b9bc26a8c559f40b63b6bb92",
+      "sha256": "71e63f57354146c3972435ec034f29e7195a844b71357a28afbadf40293e72bc",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/62/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/62/4a474460953d7a5e-full-page.jpg",
+      "route": "/preview/62-training-floor/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:ed0e577bd323a14174871bdb88585ff8d7ac4260b9bc26a8c559f40b63b6bb92",
+      "sha256": "4a474460953d7a5e89924aec85c5a1366d06290d727f02858592a4bbadbcbf1c",
+      "fullPage": true
+    }
+  ]
+}

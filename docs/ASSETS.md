@@ -1,6 +1,6 @@
 # Asset sources
 
-Checked 26 October 2026. Assets are bundled locally, so specimens do not need a third-party font or image request. These images illustrate fictional design demonstrations; the photographers, subjects, buildings, and objects are not represented as clients or work made by the fictional brands.
+Checked 26 October 2026. The original seven images and eight font families below are bundled locally. The [commercial image collection](COMMERCIAL_ASSETS.md) adds nineteen WebP assets hosted in Tigris, with individual provenance and checksums. These images illustrate fictional design demonstrations; the photographers, subjects, buildings, and objects are not represented as clients or work made by the fictional brands.
 
 ## Fonts
 
@@ -23,7 +23,7 @@ Recommended fallbacks: DM Sans and Space Grotesk → `Arial, sans-serif`; Libre 
 
 ## Photography and visual imagery
 
-Every listed asset was opened and visually inspected after download. Source descriptions can differ from what a crop shows; the descriptions below identify the local image accurately. The compact WebP derivatives were requested from Unsplash's image delivery service. No AI generation or local image transformation was used.
+Every listed asset was opened and visually inspected after download. Source descriptions can differ from what a crop shows; the descriptions below identify the local image accurately. These seven compact WebP derivatives were requested from Unsplash's image delivery service. The separate commercial collection includes seven explicitly labelled generated illustrations.
 
 | Local asset | Description and useful context | Photographer / creator | Source |
 | --- | --- | --- | --- |

@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 2,
+  "id": "59",
+  "slug": "unit-finder",
+  "name": "Unit Finder",
+  "brand": "STACK / Storage",
+  "family": "Small business",
+  "status": "ready",
+  "thesis": "Help people picture the right amount of space.",
+  "suitableFor": [
+    "Self storage",
+    "Storage facility",
+    "Equipment rental"
+  ],
+  "character": "Expressive",
+  "traits": {
+    "composition": "electric blue storage planner with schematic volumes and a comparison matrix",
+    "navigation": "Size calculator, availability comparison and unit reservation",
+    "typography": "Space Grotesk",
+    "density": "Medium",
+    "imagery": "Original schematic storage volumes and item-capacity illustrations",
+    "surface": "Cool blue planning sheet with comparable unit columns",
+    "motion": "Minimal"
+  },
+  "effort": "Medium",
+  "definingFeatures": [
+    "Capacity calculator",
+    "Size diagrams",
+    "Availability"
+  ],
+  "adaptableChoices": [
+    "Verified business content",
+    "Brand and subject",
+    "Equivalent licensed typefaces"
+  ],
+  "discovery": {
+    "industries": [
+      "Self storage",
+      "Storage facility",
+      "Equipment rental"
+    ],
+    "visitorGoals": [
+      "Choose the right capacity"
+    ],
+    "conversionActions": [
+      "Reserve a unit"
+    ],
+    "siteSize": "Searchable catalogue",
+    "interactionTypes": [
+      "Capacity calculator",
+      "Availability matrix",
+      "Reservation"
+    ],
+    "keywords": [
+      "Self storage",
+      "Storage facility",
+      "Equipment rental",
+      "Reserve a unit",
+      "Searchable catalogue",
+      "Capacity calculator",
+      "Size diagrams",
+      "Availability",
+      "Monthly pricing",
+      "small business",
+      "local business"
+    ]
+  },
+  "patterns": [
+    "Capacity calculator",
+    "Size diagrams",
+    "Availability",
+    "Monthly pricing"
+  ],
+  "entryRoute": "/preview/59-unit-finder/start",
+  "states": [
+    {
+      "key": "size",
+      "label": "Find your size",
+      "route": "/preview/59-unit-finder/size"
+    },
+    {
+      "key": "reserve",
+      "label": "Reserve a unit",
+      "route": "/preview/59-unit-finder/reserve"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/59/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/59/46694cac93c42c3d-desktop.jpg",
+      "route": "/preview/59-unit-finder/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:7567fbcbc508d12f3f858cb8a69fd26096b5bbf061d03a2c8e2e45200738ce19",
+      "sha256": "46694cac93c42c3dcf30a1c4491686665a0fb02ec79b3c807b36ad8a8a3c1c0c",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/59/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/59/9ba453a052adcd1c-mobile.jpg",
+      "route": "/preview/59-unit-finder/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:7567fbcbc508d12f3f858cb8a69fd26096b5bbf061d03a2c8e2e45200738ce19",
+      "sha256": "9ba453a052adcd1cceacb015b2f1739201840914f468dd8acbdb896685895cb0",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/59/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/59/654bb7dcf080c66e-detail.jpg",
+      "route": "/preview/59-unit-finder/size",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "size",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:7567fbcbc508d12f3f858cb8a69fd26096b5bbf061d03a2c8e2e45200738ce19",
+      "sha256": "654bb7dcf080c66e93f554fa182ae0675b13a0bbb7f959d674c0a0f8b036dee4",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/59/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/59/2f6cdd9a2ea69ead-full-page.jpg",
+      "route": "/preview/59-unit-finder/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:7567fbcbc508d12f3f858cb8a69fd26096b5bbf061d03a2c8e2e45200738ce19",
+      "sha256": "2f6cdd9a2ea69eadf8a1d0cc04a05f8008faa56cf9baba1cae743b0d11751ae2",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/59-unit-finder",
+  "neighbours": [
+    "25",
+    "49"
+  ],
+  "palette": {
+    "page": "#f2f4f8",
+    "surface": "#ffffff",
+    "ink": "#24304c",
+    "accent": "#2145a3"
+  },
+  "fonts": [
+    "Space Grotesk",
+    "DM Sans"
+  ],
+  "brief": "**Philosophy and fit.** Help people picture the right amount of space. Built for self storage, storage facility, equipment rental. The visitor’s next step is to reserve a unit.\n\n**Visual grammar.** Use a electric blue storage planner with schematic volumes and a comparison matrix. Preserve the hierarchy of capacity calculator, size diagrams, availability, monthly pricing; these patterns solve this business’s actual decision, rather than supplying interchangeable decoration.\n\n**Sample and interaction.** STACK / Storage is a fictional demonstration. The entry page establishes a complete visual direction, with find your size and reserve a unit as supporting states. Inputs use local deterministic fixtures; no request, order, application or payment is sent.\n\n**Responsive behaviour.** On a phone, keep the primary decision first, stack facts with explicit labels, preserve the order of the workflow, and provide comfortably sized controls. Wide diagrams scale; tabular facts retain their labels.\n\n**Adaptation.** Replace the fictional brand, prices, availability, qualifications and claims with verified client information. Preserve capacity calculator, size diagrams, availability. Use imagery to explain the place, people, work or product, with deliberate crops and honest captions. Do not turn this into a generic hero-and-card layout.\n\n**Identity and adaptation.** Use schematic volumes, dimensions and item counts to make capacity tangible. Unlike Local Trades, the next action depends on a calculated size and actual sample availability, including a full-unit alternative.",
+  "scope": "Complete visual reference with local sample interactions; no production business backend."
+}

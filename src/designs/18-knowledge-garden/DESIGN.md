@@ -2,7 +2,7 @@
 
 **Philosophy and fit.** Encourage exploration through connected ideas while showing where each piece belongs. Suitable for personal knowledge bases, wikis, research notes, and living project documentation.
 
-**Visual grammar.** Use a readable central note, a compact topic tree, and a contextual rail for backlinks and related concepts. Soft grey-green surfaces, dark green-black text, a modest serif title, and a clear sans body create a cultivated, practical tone. The interface distinguishes a note's hierarchy from its cross-links; a small trail records the current route through the collection.
+**Visual grammar.** Use a readable central note, a compact topic tree, and a contextual rail for backlinks and related concepts. Soft grey-green surfaces, dark green-black text, compact sans-serif headings, and a clear sans body create a cultivated, practical tone. The interface distinguishes a note's hierarchy from its cross-links; a small trail records the current route through the collection.
 
 **Specimen and flow.** _The Small Systems Garden_ contains fictional notes on everyday design. Visitors open a concept, follow a contextual link, and inspect notes that link back to it. Supporting views show a topic overview and a local search result with matched passages.
 
@@ -24,7 +24,7 @@ Brand, subject, accent and equivalent licensed typefaces can change. Preserve co
 
 ## Tokens and typography
 
-Heading: Libre Baskerville. Reading: DM Sans. Local WOFF2 fonts with system fallbacks. Page #f4f5ee; surface #ffffff; text #344237; accent #4b6b4d. Eight-pixel base spacing; reading measure 65ch; width 1240px. See tokens.css for role values and Demo.vue for composition. Palette and type match the working specimen.
+Heading: DM Sans. Reading: DM Sans. Local WOFF2 fonts with system fallbacks. Page #f4f5ee; surface #ffffff; text #344237; accent #4b6b4d. Eight-pixel base spacing; reading measure 65ch; width 1240px. See tokens.css for role values and Demo.vue for composition. Palette and type match the working specimen.
 
 ## States
 
@@ -39,8 +39,12 @@ Heading: Libre Baskerville. Reading: DM Sans. Local WOFF2 fonts with system fall
 
 ## Assets
 
-See [asset record](../../../docs/ASSETS.md). All vector diagrams and sample writing are original to this repository. Photos are illustrative, not evidence of the fictional brands. Font faces: Libre Baskerville, DM Sans.
+See [asset record](../../../docs/ASSETS.md). All vector diagrams and sample writing are original to this repository. Photos are illustrative, not evidence of the fictional brands. Font faces: DM Sans.
 
 ## Verification
 
 Reviewed working sample. Browser checks cover entry-page reflow at 320, 390, 768, and 1440 pixels, keyboard entry, direct routes, and automated accessibility; both supporting routes are checked at 390 pixels. Capture metadata is stored in public/previews/18/capture.json and names the source content hash. Accessibility scans are supplementary; no formal WCAG certification or field-performance claim is made.
+
+## Distinctive composition
+
+A compact sans-serif note workspace separates the topic tree, developing-note metadata, reading surface, and coloured backlink panels. This gives Knowledge Garden an editable, connected character distinct from the book-like Scholarly Folio.

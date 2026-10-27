@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "20",
   "slug": "the-directory",
   "name": "The Directory",
@@ -7,10 +7,7 @@
   "family": "Workspaces & discovery",
   "status": "ready",
   "thesis": "Help users narrow a large collection and compare candidates efficiently.",
-  "suitableFor": [
-    "Directories",
-    "Discovery"
-  ],
+  "suitableFor": ["Directories", "Discovery"],
   "character": "Restrained",
   "traits": {
     "composition": "Stable facet rail and comparable horizontal venue listings",
@@ -104,19 +101,33 @@
     }
   ],
   "sourcePath": "src/designs/20-the-directory",
-  "neighbours": [
-    "21",
-    "50"
-  ],
+  "neighbours": ["21", "50"],
   "palette": {
     "page": "#f7f9f8",
     "surface": "#ffffff",
     "ink": "#263d3d",
     "accent": "#2b6b65"
   },
-  "fonts": [
-    "DM Sans"
-  ],
+  "fonts": ["DM Sans"],
   "brief": "**Philosophy and fit.** Help users narrow a large collection and compare candidates efficiently. Suitable for professional listings, software catalogues, resource collections, local services, and structured recommendations.\n\n**Visual grammar.** Use prominent search, a stable facet column, a concise results summary, and information-rich horizontal listings. A crisp sans, white and pale blue-grey surfaces, deep charcoal text, and restrained teal selections make the contents easy to scan. Each record exposes the same useful attributes; small thumbnails remain secondary. An optional comparison tray collects chosen records.\n\n**Specimen and flow.** *Useful Places* catalogues fictional workspaces. Visitors filter by equipment and opening day, compare selected venues, and inspect a detailed listing. Supporting states show no matching results with removable filters and a comparison view that highlights differing attributes.\n\n**Adaptation and identity.** Mobile uses an explicit filter panel, visible active filters, and stacked comparison attributes. Preserve comparability, predictable facets, and clear result feedback; avoid marketplace promotion modules, arbitrary recommendation ordering, and a wall of image-led cards. Motion is unnecessary. **Effort: medium.**",
-  "scope": "An expansive sample page with representative local interactions; no production business backend."
+  "scope": "An expansive sample page with representative local interactions; no production business backend.",
+  "discovery": {
+    "industries": ["Directory", "Local business"],
+    "visitorGoals": ["Find a provider"],
+    "conversionActions": ["Inspect a listing"],
+    "siteSize": "Searchable catalogue",
+    "interactionTypes": ["Faceted search", "Listing details"],
+    "keywords": [
+      "Directories",
+      "Discovery",
+      "Comparable attributes in every row",
+      "Visible result feedback",
+      "A practical shortlist"
+    ]
+  },
+  "patterns": [
+    "Comparable attributes in every row",
+    "Visible result feedback",
+    "A practical shortlist"
+  ]
 }

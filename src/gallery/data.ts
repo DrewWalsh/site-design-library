@@ -8,6 +8,15 @@ export interface Design {
   status: string;
   thesis: string;
   suitableFor: string[];
+  discovery: {
+    industries: string[];
+    visitorGoals: string[];
+    conversionActions: string[];
+    siteSize: string;
+    interactionTypes: string[];
+    keywords: string[];
+  };
+  patterns: string[];
   character: string;
   traits: {
     composition: string;
@@ -51,6 +60,8 @@ export const families = [
   'Commerce & places',
   'Playful & material',
   'Retro & experimental',
+  'Small business',
+  'Community & institutions',
 ];
 export function thumbnail(d: Design) {
   return (

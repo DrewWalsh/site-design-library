@@ -33,7 +33,7 @@ const notes = [
     </header>
     <main id="content" :class="{ reading: state === 'reading' }">
       <aside class="chapters">
-        <p class="eyebrow">CONTENTS</p>
+        <p class="eyebrow">Contents</p>
         <a href="#opening">I. On common ground</a><a href="#making">II. The work of making</a
         ><a href="#keeping">III. What we keep</a
         ><button @click="go('sources')">Bibliography →</button
@@ -117,7 +117,7 @@ const notes = [
         <button @click="go('start')">Return to annotated text</button>
       </article>
       <aside class="notes" v-if="state === 'start'">
-        <p class="eyebrow">IN THE MARGIN</p>
+        <p class="eyebrow">In the margin</p>
         <div v-for="(n, i) in notes" :key="n" :class="{ active: note === i + 1 }">
           <button @click="note = i + 1">0{{ i + 1 }}</button>
           <p>{{ n }}</p>
@@ -564,5 +564,13 @@ blockquote {
     font-size: 14px;
     line-height: 1.95;
   }
+}
+.eyebrow {
+  font:
+    italic 13px/1.6 'Libre Baskerville',
+    Georgia,
+    serif;
+  letter-spacing: 0;
+  text-transform: none;
 }
 </style>

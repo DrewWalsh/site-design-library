@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "12",
   "slug": "canvas-workspace",
   "name": "Canvas Workspace",
@@ -7,10 +7,7 @@
   "family": "Workspaces & discovery",
   "status": "ready",
   "thesis": "Make spatial arrangement part of thinking and organising.",
-  "suitableFor": [
-    "Workspaces",
-    "Research"
-  ],
+  "suitableFor": ["Workspaces", "Research"],
   "character": "Restrained",
   "traits": {
     "composition": "Bounded spatial research board with note clusters and an equivalent outline",
@@ -104,19 +101,33 @@
     }
   ],
   "sourcePath": "src/designs/12-canvas-workspace",
-  "neighbours": [
-    "18",
-    "13"
-  ],
+  "neighbours": ["18", "13"],
   "palette": {
     "page": "#f5f4ee",
     "surface": "#ffffff",
     "ink": "#343b35",
     "accent": "#5c654d"
   },
-  "fonts": [
-    "DM Sans"
-  ],
+  "fonts": ["DM Sans"],
   "brief": "**Philosophy and fit.** Make spatial arrangement part of thinking and organising. Suitable for planning boards, visual research, moodboards, and early concept development.\n\n**Visual grammar.** Place an open working surface beneath a compact toolbar, with a collapsible item library and a small context inspector. Use a light dot grid, warm neutral notes, dark text, and distinct labelled item types. The canvas is the main composition; the surrounding interface stays visually quiet. Spatial groups, connections, and relative position carry meaning.\n\n**Specimen and flow.** *Common Ground* provides a bounded fictional research board. Users add a source note, reposition it, and place it into a named group. Supporting states show a selected item's editable detail and a structured outline containing the same content.\n\n**Adaptation and identity.** Mobile defaults to the outline, with an optional canvas inspection mode. Every placement action also has keyboard and explicit-button controls. Preserve spatial relationships and a usable non-spatial view; avoid implementing an infinite rendering engine, requiring drag gestures, or hiding essential content off-screen. **Effort: high.**",
-  "scope": "An expansive sample page with representative local interactions; no production business backend."
+  "scope": "An expansive sample page with representative local interactions; no production business backend.",
+  "discovery": {
+    "industries": ["Creative tools", "Software"],
+    "visitorGoals": ["Organise ideas"],
+    "conversionActions": ["Create a canvas"],
+    "siteSize": "Application",
+    "interactionTypes": ["Canvas controls", "Selection"],
+    "keywords": [
+      "Workspaces",
+      "Research",
+      "Spatial grouping carries meaning",
+      "Editable note inspector",
+      "Keyboard alternatives to movement"
+    ]
+  },
+  "patterns": [
+    "Spatial grouping carries meaning",
+    "Editable note inspector",
+    "Keyboard alternatives to movement"
+  ]
 }

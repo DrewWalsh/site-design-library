@@ -586,4 +586,12 @@ blockquote {
     font-size: 17px;
   }
 }
+.eyebrow {
+  font:
+    italic 13px/1.6 'Libre Baskerville',
+    Georgia,
+    serif;
+  letter-spacing: 0;
+  text-transform: none;
+}
 </style>

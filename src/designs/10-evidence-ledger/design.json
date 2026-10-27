@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "10",
   "slug": "evidence-ledger",
   "name": "Evidence Ledger",
@@ -7,10 +7,7 @@
   "family": "Clarity & editorial",
   "status": "ready",
   "thesis": "Make claims inspectable and provenance visible.",
-  "suitableFor": [
-    "Research",
-    "Public services"
-  ],
+  "suitableFor": ["Research", "Public services"],
   "character": "Restrained",
   "traits": {
     "composition": "Faceted records table and an assertion/source comparison",
@@ -104,19 +101,33 @@
     }
   ],
   "sourcePath": "src/designs/10-evidence-ledger",
-  "neighbours": [
-    "11",
-    "18"
-  ],
+  "neighbours": ["11", "18"],
   "palette": {
     "page": "#f6f7f5",
     "surface": "#ffffff",
     "ink": "#23374a",
     "accent": "#80611d"
   },
-  "fonts": [
-    "DM Sans"
-  ],
+  "fonts": ["DM Sans"],
   "brief": "**Philosophy and fit.** Make claims inspectable and provenance visible. Suitable for institutional research, public record collections, policy trackers, and structured investigative resources.\n\n**Visual grammar.** Use a sober index with compact search, a faceted records table, and a persistent evidence summary. Record pages distinguish the statement, its supporting material, the applicable dates, and interpretation. A humanist sans, tabular numerals, thin rules, white surfaces, navy text, and restrained ochre status marks produce a documentary character. Status labels always include text.\n\n**Specimen and flow.** *Public Works Ledger* contains explicitly fictional contracts and organisations. Visitors filter records, inspect a single assertion, and open its source excerpt beside the assertion. Supporting states show conflicting fixture evidence and a record whose source is unavailable.\n\n**Adaptation and identity.** Mobile turns rows into labelled records and places source material after its associated claim. Preserve provenance, date context, and the distinction between evidence and interpretation; avoid unsupported score badges, dashboard ornament, and graphs that imply unrecorded relationships. Motion is unnecessary. **Effort: medium.**",
-  "scope": "An expansive sample page with representative local interactions; no production business backend."
+  "scope": "An expansive sample page with representative local interactions; no production business backend.",
+  "discovery": {
+    "industries": ["Research", "Public policy", "Reporting"],
+    "visitorGoals": ["Inspect evidence"],
+    "conversionActions": ["Compare source material"],
+    "siteSize": "Digital publication",
+    "interactionTypes": ["Data tables", "Source notes"],
+    "keywords": [
+      "Research",
+      "Public services",
+      "Provenance beside claims",
+      "Dates and status in every record",
+      "Evidence separated from interpretation"
+    ]
+  },
+  "patterns": [
+    "Provenance beside claims",
+    "Dates and status in every record",
+    "Evidence separated from interpretation"
+  ]
 }

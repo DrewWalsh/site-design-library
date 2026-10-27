@@ -1,0 +1,64 @@
+{
+  "designId": "61",
+  "sourceRevision": "sha256:d2db03243c16bb88b14fb7935f4bd5b53f5d4753af6f25c2fa83f8082dc4c854",
+  "capturedAt": "2026-10-27T00:07:37.963Z",
+  "browser": "156.0.4314.42",
+  "captures": [
+    {
+      "file": "/previews/61/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/61/1f09a1c9b989f886-desktop.jpg",
+      "route": "/preview/61-early-years/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:d2db03243c16bb88b14fb7935f4bd5b53f5d4753af6f25c2fa83f8082dc4c854",
+      "sha256": "1f09a1c9b989f886847d2e30a37fc638ef8c34e488daec23e3a1beeb97b02a4a",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/61/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/61/666344a0ffb745d7-mobile.jpg",
+      "route": "/preview/61-early-years/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:d2db03243c16bb88b14fb7935f4bd5b53f5d4753af6f25c2fa83f8082dc4c854",
+      "sha256": "666344a0ffb745d7718691d5c30c9479da0a9d094a8367e4fc59a4d4e86b01b9",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/61/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/61/9cd6ffc1167f40ad-detail.jpg",
+      "route": "/preview/61-early-years/tour",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "tour",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:d2db03243c16bb88b14fb7935f4bd5b53f5d4753af6f25c2fa83f8082dc4c854",
+      "sha256": "9cd6ffc1167f40ad3a14c2121827574fbf90443412b8ce73ae8258ea41763c36",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/61/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/61/1bdc78a21659fed7-full-page.jpg",
+      "route": "/preview/61-early-years/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:d2db03243c16bb88b14fb7935f4bd5b53f5d4753af6f25c2fa83f8082dc4c854",
+      "sha256": "1bdc78a21659fed703b1c9bd23d9de225c2384ede7c4e966df077510c707ba34",
+      "fullPage": true
+    }
+  ]
+}

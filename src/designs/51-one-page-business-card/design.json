@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 2,
+  "id": "51",
+  "slug": "one-page-business-card",
+  "name": "One-Page Business Card",
+  "brand": "Elias Reed / Piano care",
+  "family": "Small business",
+  "status": "ready",
+  "thesis": "A whole business, clearly expressed on a single page.",
+  "suitableFor": [
+    "Sole proprietor",
+    "Piano tuning",
+    "Independent services"
+  ],
+  "character": "Restrained",
+  "traits": {
+    "composition": "cream and oxblood typographic calling card",
+    "navigation": "One page with an inline enquiry and review",
+    "typography": "Libre Baskerville",
+    "density": "Low",
+    "imagery": "Small original piano-key mark; typography carries the page",
+    "surface": "Cream paper, oxblood contact action and fine rules",
+    "motion": "Minimal"
+  },
+  "effort": "Low",
+  "definingFeatures": [
+    "Service essentials",
+    "Direct contact",
+    "Short enquiry"
+  ],
+  "adaptableChoices": [
+    "Verified business content",
+    "Brand and subject",
+    "Equivalent licensed typefaces"
+  ],
+  "discovery": {
+    "industries": [
+      "Sole proprietor",
+      "Piano tuning",
+      "Independent services"
+    ],
+    "visitorGoals": [
+      "Contact a specialist"
+    ],
+    "conversionActions": [
+      "Enquire"
+    ],
+    "siteSize": "One page",
+    "interactionTypes": [
+      "Contact form",
+      "Direct contact"
+    ],
+    "keywords": [
+      "Sole proprietor",
+      "Piano tuning",
+      "Independent services",
+      "Enquire",
+      "One page",
+      "Service essentials",
+      "Direct contact",
+      "Short enquiry",
+      "small business",
+      "local business",
+      "one page brochure",
+      "single page",
+      "sole proprietor"
+    ]
+  },
+  "patterns": [
+    "Service essentials",
+    "Direct contact",
+    "Short enquiry"
+  ],
+  "entryRoute": "/preview/51-one-page-business-card/start",
+  "states": [
+    {
+      "key": "enquire",
+      "label": "Send an enquiry",
+      "route": "/preview/51-one-page-business-card/enquire"
+    },
+    {
+      "key": "thanks",
+      "label": "Enquiry summary",
+      "route": "/preview/51-one-page-business-card/thanks"
+    }
+  ],
+  "referenceImages": [
+    {
+      "file": "/previews/51/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/51/b3b99a07420ca44f-desktop.jpg",
+      "route": "/preview/51-one-page-business-card/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:9d651511e2fe93009005c6bde1a70c22c94fcf1cfd03a1f6d055ae3fc8989151",
+      "sha256": "b3b99a07420ca44fac5f9f38737b632f8ba830593fcfb92aeee5e92b51d47706",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/51/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/51/7aeeb1bb637953b3-mobile.jpg",
+      "route": "/preview/51-one-page-business-card/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:9d651511e2fe93009005c6bde1a70c22c94fcf1cfd03a1f6d055ae3fc8989151",
+      "sha256": "7aeeb1bb637953b37accace9ef4b8f6e3a0d254787f974a764cfb2a2e48ea9b8",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/51/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/51/85acb174e0e90189-detail.jpg",
+      "route": "/preview/51-one-page-business-card/enquire",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "enquire",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:9d651511e2fe93009005c6bde1a70c22c94fcf1cfd03a1f6d055ae3fc8989151",
+      "sha256": "85acb174e0e90189d3837692ea8143d400452895234b72dc0fec51e0c1ebd1a4",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/51/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/51/cdfb774516d5727d-full-page.jpg",
+      "route": "/preview/51-one-page-business-card/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:9d651511e2fe93009005c6bde1a70c22c94fcf1cfd03a1f6d055ae3fc8989151",
+      "sha256": "cdfb774516d5727d70de3fda370e1e91b4170931c9264c02ca406aefc2bdb522",
+      "fullPage": true
+    }
+  ],
+  "sourcePath": "src/designs/51-one-page-business-card",
+  "neighbours": [
+    "25",
+    "04"
+  ],
+  "palette": {
+    "page": "#f3eee4",
+    "surface": "#ffffff",
+    "ink": "#291e1b",
+    "accent": "#773c34"
+  },
+  "fonts": [
+    "Libre Baskerville",
+    "DM Sans"
+  ],
+  "brief": "**Philosophy and fit.** A whole business, clearly expressed on a single page. Built for sole proprietor, piano tuning, independent services. The visitor’s next step is to enquire.\n\n**Visual grammar.** Use a cream and oxblood typographic calling card. Preserve the hierarchy of service essentials, direct contact, short enquiry; these patterns solve this business’s actual decision, rather than supplying interchangeable decoration.\n\n**Sample and interaction.** Elias Reed / Piano care is a fictional demonstration. The entry page establishes a complete visual direction, with send an enquiry and enquiry summary as supporting states. Inputs use local deterministic fixtures; no request, order, application or payment is sent.\n\n**Responsive behaviour.** On a phone, keep the primary decision first, stack facts with explicit labels, preserve the order of the workflow, and provide comfortably sized controls. Wide diagrams scale; tabular facts retain their labels.\n\n**Adaptation.** Replace the fictional brand, prices, availability, qualifications and claims with verified client information. Preserve service essentials, direct contact, short enquiry. Use imagery to explain the place, people, work or product, with deliberate crops and honest captions. Do not turn this into a generic hero-and-card layout.\n\n**Identity and adaptation.** Keep the whole business within a compact calling-card composition. Unlike Local Trades, this is one named specialist, a short service list and direct contact rather than a service catalogue.",
+  "scope": "Complete visual reference with local sample interactions; no production business backend."
+}

@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "33",
   "slug": "playroom",
   "name": "Playroom",
@@ -7,10 +7,7 @@
   "family": "Playful & material",
   "status": "ready",
   "thesis": "Teach an interaction through visible, manipulable objects.",
-  "suitableFor": [
-    "Education",
-    "Interactive"
-  ],
+  "suitableFor": ["Education", "Interactive"],
   "character": "Expressive",
   "traits": {
     "composition": "Tactile tabletop with visible parts, slots, and a deterministic result",
@@ -104,20 +101,33 @@
     }
   ],
   "sourcePath": "src/designs/33-playroom",
-  "neighbours": [
-    "32",
-    "49"
-  ],
+  "neighbours": ["32", "49"],
   "palette": {
     "page": "#f7ecd4",
     "surface": "#fff8e8",
     "ink": "#3b3e37",
     "accent": "#a83d2a"
   },
-  "fonts": [
-    "Space Grotesk",
-    "DM Sans"
-  ],
+  "fonts": ["Space Grotesk", "DM Sans"],
   "brief": "**Philosophy and fit.** Teach an interaction through visible, manipulable objects. Suitable for learning tools, creative configurators, simple games, and approachable planning experiences.\n\n**Visual grammar.** A bounded tabletop contains chunky objects, recessed slots, tactile buttons, and a compact tool shelf. Rounded type, warm cream, tomato red, sky blue, and soft material shadows make the interface approachable. A clear instruction line sits outside the play area, and object labels remain ordinary readable text.\n\n**Specimen and flow.** *Little Machine Lab* uses a small fixed set of parts and slots with deterministic responses, without a general physics engine. Select parts, place them in slots, and run the demonstration. Supporting views include a parts library and a saved-construction view with an incomplete-machine state. Keyboard selection and explicit move controls provide every action available through dragging.\n\n**Responsive behaviour.** The tabletop changes to a vertical sequence of slots rather than shrinking a desktop canvas. Optional spring motion becomes immediate state changes under reduced motion.\n\n**Identity rules.** Preserve understandable cause and effect and tangible controls. Avoid ornamental toy shapes around conventional forms, mandatory sound, or physics effects that make precise actions unreliable. **Effort: high.**",
-  "scope": "An expansive sample page with representative local interactions; no production business backend."
+  "scope": "An expansive sample page with representative local interactions; no production business backend.",
+  "discovery": {
+    "industries": ["Children education", "Interactive learning"],
+    "visitorGoals": ["Learn by doing"],
+    "conversionActions": ["Complete an activity"],
+    "siteSize": "Application",
+    "interactionTypes": ["Interactive activity", "Feedback states"],
+    "keywords": [
+      "Education",
+      "Interactive",
+      "Objects express cause and effect",
+      "Button alternatives for every placement",
+      "A bounded machine with readable feedback"
+    ]
+  },
+  "patterns": [
+    "Objects express cause and effect",
+    "Button alternatives for every placement",
+    "A bounded machine with readable feedback"
+  ]
 }

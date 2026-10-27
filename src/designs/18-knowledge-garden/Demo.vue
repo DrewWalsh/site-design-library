@@ -62,7 +62,7 @@ function search() {
     </header>
     <main id="content">
       <aside class="tree">
-        <p class="eyebrow">THE GARDEN</p>
+        <p class="eyebrow">Workspace</p>
         <a
           :href="href('start')"
           @click.prevent="
@@ -101,10 +101,17 @@ function search() {
           / {{ state === 'search' ? 'Search' : notes[selected].title }}
         </nav>
         <template v-if="state !== 'search'"
-          ><p class="eyebrow">A GROWING NOTE / 00{{ selected + 1 }}</p>
+          ><div class="note-toolbar">
+            <span class="note-state">◐ Developing</span
+            ><span>Note 00{{ selected + 1 }} · Everyday design</span><span>Updated 6 Nov 2026</span>
+          </div>
           <h1>{{ notes[selected].title }}</h1>
           <p class="summary">{{ notes[selected].summary }}</p>
-          <div class="note-meta">Planted October 2026 · 4 minute read · Fictional notebook</div>
+          <div class="note-meta">
+            <span>Planted<br /><b>October 2026</b></span
+            ><span>Reading time<br /><b>4 minutes</b></span
+            ><span>Connections<br /><b>3 linked notes</b></span>
+          </div>
           <h2>Begin with what is close.</h2>
           <p>
             A system does not have to be large to be worth understanding. A shared calendar, a shelf
@@ -150,7 +157,7 @@ function search() {
         >
       </article>
       <aside class="connections">
-        <p class="eyebrow">CONNECTED TO THIS NOTE</p>
+        <p class="eyebrow">Connections</p>
         <h3>Backlinks</h3>
         <button
           v-for="(n, i) in notes.filter((n) => n !== notes[selected]).slice(0, 2)"
@@ -381,46 +388,60 @@ button {
     padding: 10px 8px;
   }
 }
+
 header {
-  padding: 25px 4%;
-  border-bottom: 1px solid var(--line);
+  padding: 19px 30px;
+  background: #2f493d;
+  color: #f6f8ef;
   display: flex;
-  gap: 35px;
+  gap: 25px;
   align-items: center;
+  border-bottom: 1px solid #213b2f;
 }
 header strong {
-  font: 23px 'Libre Baskerville';
+  font: 600 20px 'DM Sans';
+  letter-spacing: -0.02em;
 }
 header > span {
   font-size: 11px;
-  color: #5b6b54;
+  color: #dce7d7;
 }
 header label {
   margin-left: auto;
 }
 header input {
-  font-size: 11px;
-  background: #fbfcf6;
-  min-width: 230px;
+  font-size: 12px;
+  background: #f6f8f0;
+  min-width: 220px;
+  border-radius: 5px;
+  color: #344237;
 }
 main {
   display: grid;
-  grid-template-columns: 190px minmax(0, 680px) 210px;
-  gap: 50px;
-  padding: 40px 4% 90px;
-  max-width: 1420px;
+  grid-template-columns: 190px minmax(0, 720px) 230px;
+  gap: 25px;
+  padding: 30px 30px 70px;
+  max-width: 1450px;
   margin: auto;
+}
+.eyebrow {
+  font: 600 11px/1.5 'DM Sans';
+  text-transform: none;
+  letter-spacing: 0;
 }
 .tree {
   font-size: 12px;
-  padding-top: 18px;
+  padding: 20px 15px 25px 0;
+  border-right: 1px solid #cad7c6;
 }
 .tree > a {
   display: block;
   margin: 20px 0;
+  text-decoration: none;
+  font-weight: 600;
 }
 .tree details {
-  margin-top: 25px;
+  margin-top: 20px;
 }
 .tree summary {
   font-size: 12px;
@@ -433,165 +454,222 @@ main {
   width: 100%;
   font-size: 11px;
   margin-top: 8px;
-  padding: 9px 0 9px 12px;
+  padding: 10px 12px;
+  border-radius: 4px;
 }
 .tree button[aria-pressed='true'] {
-  background: #e3e9dc;
-  box-shadow: inset 2px 0 #637d57;
+  background: #dce8d7;
+  box-shadow: inset 3px 0 #49704d;
 }
 .garden-status {
-  border-top: 1px solid var(--line);
-  margin-top: 65px;
-  padding-top: 25px;
+  margin-top: 40px;
+  background: #e3ebdc;
+  padding: 18px;
+  border-radius: 6px;
 }
 .garden-status > span {
-  font-size: 35px;
-  color: #829975;
+  font-size: 28px;
+  color: #537249;
 }
 .garden-status p {
-  margin: 10px 0;
   font-size: 12px;
+  font-weight: 600;
 }
 .garden-status small {
   font-size: 10px;
-  line-height: 1.9;
-  color: #526948;
+  line-height: 1.8;
+  color: #415a39;
 }
 .trail {
-  font-size: 10px;
-  margin-bottom: 40px;
-  color: #5c6b51;
+  font-size: 11px;
+  margin-bottom: 25px;
+  color: #52644d;
 }
 .trail button {
   background: none;
   border: 0;
+  font-size: 11px;
+  padding: 0 8px 0 0;
+  min-height: 30px;
+}
+.note-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
   font-size: 10px;
-  min-height: 25px;
-  padding: 0;
-  margin-right: 10px;
+  color: #52644d;
+  border-bottom: 1px solid #d3ddce;
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+}
+.note-state {
+  background: #dce9ce;
+  border: 1px solid #9bb789;
+  color: #35532c;
+  padding: 3px 8px;
+  border-radius: 20px;
+}
+.note-toolbar > span:last-child {
+  margin-left: auto;
+}
+main > article {
+  background: #fffef8;
+  border: 1px solid #d4ddcd;
+  border-radius: 7px;
+  padding: 28px 32px;
+  box-shadow: 0 4px 15px #36553505;
 }
 article h1 {
-  font-size: 45px;
-  font-weight: 400;
-  line-height: 1.25;
+  font: 600 32px/1.2 'DM Sans';
+  letter-spacing: -0.025em;
+  margin: 0 0 20px;
 }
 .summary {
-  font: 17px/1.8 'Libre Baskerville';
+  font: 16px/1.7 'DM Sans';
+  color: #4a5d43;
 }
 .note-meta {
-  font-size: 9px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  font-size: 10px;
   line-height: 1.8;
-  color: #5c6b51;
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
-  padding: 15px 0;
-  margin: 28px 0 40px;
+  color: #52644d;
+  background: #f0f4e9;
+  padding: 16px 18px;
+  margin: 25px 0 30px;
+  border-radius: 5px;
+}
+.note-meta b {
+  font-size: 11px;
+  font-weight: 500;
+  color: #344237;
 }
 article h2 {
-  font: 27px 'Libre Baskerville';
-  margin-top: 35px;
+  font: 600 23px/1.3 'DM Sans';
+  margin-top: 30px;
+  letter-spacing: -0.02em;
 }
 article p,
 article li {
   font-size: 14px;
-  line-height: 1.95;
+  line-height: 1.9;
 }
 article h3 {
-  font-size: 20px;
-  font-weight: 400;
+  font: 600 18px 'DM Sans';
+  margin-top: 25px;
 }
 .inline {
   display: inline;
   border: 0;
-  background: #e7edde;
-  padding: 0 4px;
-  min-height: 24px;
+  background: #e5eedc;
+  padding: 1px 5px;
+  min-height: 26px;
   font-size: inherit;
   text-decoration: underline;
-  color: #3b613b;
+  color: #345832;
+  border-radius: 3px;
 }
 blockquote {
-  margin: 35px 0;
-  padding: 20px 25px;
-  background: #e8edde;
-  border-left: 2px solid #69835a;
-  font: 17px/1.8 'Libre Baskerville';
+  margin: 30px 0;
+  padding: 20px 23px;
+  background: #eff4e8;
+  border-left: 3px solid #7e9b6b;
+  font: 16px/1.7 'DM Sans';
 }
 .connections {
-  padding-top: 90px;
+  padding: 20px 0;
 }
 .connections h3 {
-  font: 13px 'DM Sans';
+  font: 600 13px 'DM Sans';
   margin: 25px 0 15px;
 }
 .connections button {
   display: block;
+  width: 100%;
   text-align: left;
-  background: none;
-  border: 0;
-  border-top: 1px solid var(--line);
-  padding: 18px 0;
-  font-size: 11px;
+  background: #e5eddd;
+  border: 1px solid #c4d4b8;
+  border-radius: 6px;
+  padding: 16px;
+  margin-bottom: 13px;
 }
-.connections p {
+.connections button b {
+  font-size: 12px;
+  font-weight: 600;
+}
+.connections button p {
   font-size: 11px;
-  line-height: 1.8;
-  color: #55664a;
+  line-height: 1.7;
+  margin: 10px 0 0;
+}
+.connections > p:last-child {
+  font-size: 12px;
+  line-height: 1.9;
 }
 .search-result {
   display: block;
   width: 100%;
-  background: none;
-  border: 0;
-  border-top: 1px solid var(--line);
   text-align: left;
-  padding: 15px 0;
+  background: #f2f6ea;
+  border: 1px solid #c9d6bf;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 15px 0;
 }
 .search-result h2 {
-  font-size: 24px;
-  margin: 10px 0;
+  font-size: 20px;
+  margin-top: 0;
 }
 .search-result p {
   font-size: 13px;
+  margin-bottom: 0;
 }
-@media (max-width: 1100px) {
+@media (max-width: 1150px) {
   main {
-    grid-template-columns: 160px minmax(0, 1fr);
-    gap: 35px;
+    grid-template-columns: 170px minmax(0, 1fr);
   }
   .connections {
     grid-column: 2;
-    padding-top: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
   }
-  .connections button {
-    display: inline-block;
-    width: 48%;
-    vertical-align: top;
-    padding: 20px;
-  }
+  .connections > .eyebrow,
+  .connections > h3,
   .connections > p {
-    max-width: none;
+    grid-column: 1/-1;
+  }
+  .connections h3 {
+    margin: 10px 0 0;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   header {
-    display: block;
-    padding: 22px;
+    padding: 18px 20px;
+    flex-wrap: wrap;
+    gap: 15px;
   }
   header > span {
     display: none;
   }
+  header label {
+    width: 100%;
+    margin: 0;
+  }
   header input {
-    margin-top: 18px;
     width: 100%;
     min-width: 0;
   }
   main {
     display: block;
-    padding: 20px 22px 60px;
+    padding: 20px 18px 45px;
   }
   .tree {
-    padding: 0;
+    border: 0;
+    padding: 0 0 20px;
   }
   .tree > .eyebrow,
   .tree > a,
@@ -599,29 +677,48 @@ blockquote {
     display: none;
   }
   .tree details {
-    margin: 0 0 25px;
+    margin: 0;
+    padding: 0;
+    border: 0;
   }
-  .tree button {
-    font-size: 11px;
+  .tree details button {
+    display: inline-block;
+    width: auto;
+    max-width: 100%;
+    margin-right: 7px;
   }
-  .trail {
-    margin: 20px 0;
+  .tree summary {
+    margin-bottom: 8px;
   }
-  .summary {
-    font-size: 15px;
+  main > article {
+    padding: 23px 20px;
+  }
+  .note-toolbar {
+    gap: 8px;
+  }
+  .note-toolbar > span:last-child {
+    margin: 0;
+  }
+  .note-meta {
+    gap: 12px;
+    padding: 14px 12px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .note-meta > span:last-child {
+    grid-column: 1/-1;
   }
   article h1 {
-    font-size: 35px;
-  }
-  article h2 {
-    font-size: 24px;
+    font-size: 28px;
   }
   .connections {
-    margin-top: 40px;
+    display: block;
+    padding-top: 25px;
+  }
+  .connections h3 {
+    margin: 20px 0 15px;
   }
   .connections button {
-    width: 100%;
-    padding: 15px 0;
+    margin-top: 12px;
   }
 }
 </style>

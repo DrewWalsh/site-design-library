@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "24",
   "slug": "fine-dining",
   "name": "Fine Dining",
@@ -48,7 +48,7 @@
   "referenceImages": [
     {
       "file": "/previews/24/desktop.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/24/67f40ab2c8de3c1f-desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/24/1c2724f1e0c483da-desktop.jpg",
       "route": "/preview/24-fine-dining/start",
       "viewport": {
         "width": 1440,
@@ -56,13 +56,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:af12c937fd5e2c65a6ba34e3f9841683b522bb39f4e3b3fa108028bcba4738d5",
-      "sha256": "67f40ab2c8de3c1ffb397bf3182e3fa914f3878d77ce526e0cf671b08004e08c",
+      "sourceRevision": "sha256:ce6e84abc5ef1f38ef73d15e9f32fd027a5dfae98c1ccedb5abccf8508f7e330",
+      "sha256": "1c2724f1e0c483dab9f617719adb60fa89bac24aa93b76cb342fc26230dbe97e",
       "fullPage": false
     },
     {
       "file": "/previews/24/mobile.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/24/abff22b908e689b0-mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/24/f03347dc7462d0eb-mobile.jpg",
       "route": "/preview/24-fine-dining/start",
       "viewport": {
         "width": 390,
@@ -70,13 +70,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:af12c937fd5e2c65a6ba34e3f9841683b522bb39f4e3b3fa108028bcba4738d5",
-      "sha256": "abff22b908e689b0c5e552db79cc9927bbc73a547e719f1afc53a4012d8cc077",
+      "sourceRevision": "sha256:ce6e84abc5ef1f38ef73d15e9f32fd027a5dfae98c1ccedb5abccf8508f7e330",
+      "sha256": "f03347dc7462d0eb40d4459eac416aee62f0336d18d36fa976df8ea5855aca27",
       "fullPage": false
     },
     {
       "file": "/previews/24/detail.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/24/fdb69516eb1e1ba8-detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/24/43595cb71a2e0e21-detail.jpg",
       "route": "/preview/24-fine-dining/reserve",
       "viewport": {
         "width": 1440,
@@ -84,13 +84,13 @@
       },
       "state": "reserve",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:af12c937fd5e2c65a6ba34e3f9841683b522bb39f4e3b3fa108028bcba4738d5",
-      "sha256": "fdb69516eb1e1ba811f4e4a4c2d988122db43e53b8b1656ee5dccfed72d4270b",
+      "sourceRevision": "sha256:ce6e84abc5ef1f38ef73d15e9f32fd027a5dfae98c1ccedb5abccf8508f7e330",
+      "sha256": "43595cb71a2e0e210dca5d20a99b5b96ea452eabd3732740ad66476d749b740c",
       "fullPage": false
     },
     {
       "file": "/previews/24/full-page.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/24/d4a879877d8d462f-full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/24/9bc1b84ecf6a5dd4-full-page.jpg",
       "route": "/preview/24-fine-dining/start",
       "viewport": {
         "width": 1440,
@@ -98,8 +98,8 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:af12c937fd5e2c65a6ba34e3f9841683b522bb39f4e3b3fa108028bcba4738d5",
-      "sha256": "d4a879877d8d462f6e38aa58385e410541000634811a44dda659eaa42595a2ef",
+      "sourceRevision": "sha256:ce6e84abc5ef1f38ef73d15e9f32fd027a5dfae98c1ccedb5abccf8508f7e330",
+      "sha256": "9bc1b84ecf6a5dd4fc0199875e1490f4b5618dd273a068bf4b0553d48f647e63",
       "fullPage": true
     }
   ],
@@ -118,6 +118,35 @@
     "Libre Baskerville",
     "DM Sans"
   ],
-  "brief": "**Philosophy and fit.** Build anticipation through pacing, seasonality, and precise hospitality. Suitable for restaurants, tasting experiences, wine bars, and small culinary venues.\n\n**Visual grammar.** The menu provides the main compositional rhythm: course titles, descriptions, and prices arranged as a carefully typeset sequence. A narrow navigation offers menu, visit, and reservations. Deep oxblood, ivory, and muted brass support editorial food photography, a characterful serif, and generous vertical intervals. Rules and small botanical details replace repeated boxes.\n\n**Specimen and flow.** *Ember & Orchard* presents a seasonal restaurant. Read the current menu, inspect dietary information, and choose a date and party size in a local reservation demonstration. Supporting views include private dining and a clear unavailable-time state with nearby alternatives. The final confirmation is visibly a sample reservation.\n\n**Responsive behaviour.** Menu descriptions and prices remain aligned without shrinking text. The reservation form becomes a simple vertical sequence; photography does not obstruct it.\n\n**Identity rules.** Preserve the menu’s reading rhythm and practical visit information. Avoid autoplay ambience, illegible gold text, and hiding prices behind photographs. **Effort: medium.**",
-  "scope": "An expansive sample page with representative local interactions; no production business backend."
+  "brief": "**Philosophy and fit.** Build anticipation through pacing, seasonality, and precise hospitality. Suitable for restaurants, tasting experiences, wine bars, and small culinary venues.\n\n**Visual grammar.** The menu provides the main compositional rhythm: course titles, descriptions, and prices arranged as a carefully typeset sequence. A narrow navigation offers menu, visit, and reservations. Deep oxblood, ivory, and muted brass support editorial food photography, a characterful serif, and generous vertical intervals. Rules and small botanical details replace repeated boxes.\n\n**Specimen and flow.** *Ember & Orchard* presents a seasonal restaurant. Read the current menu, inspect dietary information, and choose a date and party size in a local reservation demonstration. Supporting views include private dining and a clear unavailable-time state with nearby alternatives. The final confirmation is visibly a sample reservation.\n\n**Responsive behaviour.** Menu descriptions and prices remain aligned without shrinking text. The reservation form becomes a simple vertical sequence; photography does not obstruct it.\n\n**Identity rules.** Preserve the menu’s reading rhythm and practical visit information. Avoid autoplay ambience, illegible gold text, and hiding prices behind photographs. **Effort: medium.**\n\n**Distinctive composition.** Serif menu captions and a slower typographic cadence support fine dining, distinct from the new Everyday Eatery’s menu board.",
+  "scope": "An expansive sample page with representative local interactions; no production business backend.",
+  "discovery": {
+    "industries": [
+      "Restaurant",
+      "Fine dining"
+    ],
+    "visitorGoals": [
+      "Explore a dining experience"
+    ],
+    "conversionActions": [
+      "Request a table"
+    ],
+    "siteSize": "Small brochure",
+    "interactionTypes": [
+      "Tasting menu",
+      "Reservation"
+    ],
+    "keywords": [
+      "Hospitality",
+      "Food",
+      "Course-led typographic rhythm",
+      "Prices and dietary information visible",
+      "Atmosphere beside practical hospitality"
+    ]
+  },
+  "patterns": [
+    "Course-led typographic rhythm",
+    "Prices and dietary information visible",
+    "Atmosphere beside practical hospitality"
+  ]
 }

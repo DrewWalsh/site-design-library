@@ -20,7 +20,7 @@ const router = createRouter({
 router.afterEach((to) => {
   document.title =
     to.path === '/'
-      ? 'Design Library — Fifty ways to make a website'
+      ? 'Design Library — 75 ways to make a website'
       : 'Design Library · ' + (to.params.slug || to.path.slice(1));
 });
 createApp(App).use(router).mount('#app');

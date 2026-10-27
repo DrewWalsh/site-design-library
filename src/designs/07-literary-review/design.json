@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "07",
   "slug": "literary-review",
   "name": "Literary Review",
@@ -48,7 +48,7 @@
   "referenceImages": [
     {
       "file": "/previews/07/desktop.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/07/440712a59c8e9e27-desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/07/dc0844e2ef14e31f-desktop.jpg",
       "route": "/preview/07-literary-review/start",
       "viewport": {
         "width": 1440,
@@ -56,13 +56,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:41b8caf1fcf5a1fe9e5b36d18868a952628e66b407552b334387bc4eddb4a564",
-      "sha256": "440712a59c8e9e272e6d26170cabb97b6c205289f5e7fade18dffc9397df6e54",
+      "sourceRevision": "sha256:ad62dafd5cc790c4c4600c7f3a531da3d7d64829252f82aaa6f82f8ad879983a",
+      "sha256": "dc0844e2ef14e31fb27517683266bc19da69a448352f87f2fad9827f755c5934",
       "fullPage": false
     },
     {
       "file": "/previews/07/mobile.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/07/92901b46ac5407f0-mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/07/ca820b5677394325-mobile.jpg",
       "route": "/preview/07-literary-review/start",
       "viewport": {
         "width": 390,
@@ -70,13 +70,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:41b8caf1fcf5a1fe9e5b36d18868a952628e66b407552b334387bc4eddb4a564",
-      "sha256": "92901b46ac5407f0ca1c78be3b6ff251ab80131c8259ddeac433263024f7d9c7",
+      "sourceRevision": "sha256:ad62dafd5cc790c4c4600c7f3a531da3d7d64829252f82aaa6f82f8ad879983a",
+      "sha256": "ca820b5677394325af1c0379e45c7724bd5ed655fab160f93191e2e01e25e411",
       "fullPage": false
     },
     {
       "file": "/previews/07/detail.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/07/a88615168ea16378-detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/07/280967881e9f1989-detail.jpg",
       "route": "/preview/07-literary-review/essay",
       "viewport": {
         "width": 1440,
@@ -84,13 +84,13 @@
       },
       "state": "essay",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:41b8caf1fcf5a1fe9e5b36d18868a952628e66b407552b334387bc4eddb4a564",
-      "sha256": "a88615168ea163789376f1f2482ffed10ffc4de3f4cfdcb191decd2af6eb2639",
+      "sourceRevision": "sha256:ad62dafd5cc790c4c4600c7f3a531da3d7d64829252f82aaa6f82f8ad879983a",
+      "sha256": "280967881e9f19895bddefb950df001770a7e17cf7603166e998710ccf3cfdee",
       "fullPage": false
     },
     {
       "file": "/previews/07/full-page.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/07/b5396e28c0faf385-full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/07/3134793428ffd55b-full-page.jpg",
       "route": "/preview/07-literary-review/start",
       "viewport": {
         "width": 1440,
@@ -98,8 +98,8 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:41b8caf1fcf5a1fe9e5b36d18868a952628e66b407552b334387bc4eddb4a564",
-      "sha256": "b5396e28c0faf385e5ba52e42c3fb28f5b86fbbc618160858bee5e6d77b61953",
+      "sourceRevision": "sha256:ad62dafd5cc790c4c4600c7f3a531da3d7d64829252f82aaa6f82f8ad879983a",
+      "sha256": "3134793428ffd55b309963a31d280d8f80807f0d7c1f2288902f628c0edc25fb",
       "fullPage": true
     }
   ],
@@ -118,6 +118,36 @@
     "Libre Baskerville",
     "DM Sans"
   ],
-  "brief": "**Philosophy and fit.** Treat sustained reading as the main event. Suitable for essays, criticism, literary magazines, personal publications, and thoughtful cultural commentary.\n\n**Visual grammar.** An understated masthead opens into a current issue with one lead essay and a sparse textual contents list. Article pages use a generous book serif, a measured line length, clear paragraph rhythm, restrained drop capitals, and ample separation around section changes. Use ivory, charcoal, and muted forest accents. Navigation follows issues, authors, and subjects; small illustrations may punctuate reading without becoming the interface.\n\n**Specimen and flow.** *The Long Afternoon* lets visitors browse an issue, open an essay, and continue to the next essay through a deliberate end-of-article link. Supporting views include an author page and a reader preference panel for text size and line spacing.\n\n**Adaptation and identity.** Mobile protects reading width and keeps preferences simple. Preserve the cadence of essays and the identity of each issue; avoid scholarly annotation rails, news urgency, autoplay media, and constant related-content interruptions. **Effort: low.**",
-  "scope": "An expansive sample page with representative local interactions; no production business backend."
+  "brief": "**Philosophy and fit.** Treat sustained reading as the main event. Suitable for essays, criticism, literary magazines, personal publications, and thoughtful cultural commentary.\n\n**Visual grammar.** An understated masthead opens into a current issue with one lead essay and a sparse textual contents list. Article pages use a generous book serif, a measured line length, clear paragraph rhythm, restrained drop capitals, and ample separation around section changes. Use ivory, charcoal, and muted forest accents. Navigation follows issues, authors, and subjects; small illustrations may punctuate reading without becoming the interface.\n\n**Specimen and flow.** *The Long Afternoon* lets visitors browse an issue, open an essay, and continue to the next essay through a deliberate end-of-article link. Supporting views include an author page and a reader preference panel for text size and line spacing.\n\n**Adaptation and identity.** Mobile protects reading width and keeps preferences simple. Preserve the cadence of essays and the identity of each issue; avoid scholarly annotation rails, news urgency, autoplay media, and constant related-content interruptions. **Effort: low.**\n\n**Distinctive composition.** Literary italic captions replace the collection’s repeated monospaced label treatment. The review’s editorial composition is retained.",
+  "scope": "An expansive sample page with representative local interactions; no production business backend.",
+  "discovery": {
+    "industries": [
+      "Literature",
+      "Arts",
+      "Publishing"
+    ],
+    "visitorGoals": [
+      "Discover writing"
+    ],
+    "conversionActions": [
+      "Read a review"
+    ],
+    "siteSize": "Digital publication",
+    "interactionTypes": [
+      "Issue navigation",
+      "Reading list"
+    ],
+    "keywords": [
+      "Editorial",
+      "Reading",
+      "Measured serif reading",
+      "Issue-level identity",
+      "Deliberate end-of-essay continuation"
+    ]
+  },
+  "patterns": [
+    "Measured serif reading",
+    "Issue-level identity",
+    "Deliberate end-of-essay continuation"
+  ]
 }

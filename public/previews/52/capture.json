@@ -1,0 +1,64 @@
+{
+  "designId": "52",
+  "sourceRevision": "sha256:485202317f3d76e600c21e37f451366bf127301dbadacd09abf5e4e639d22943",
+  "capturedAt": "2026-10-27T00:07:00.101Z",
+  "browser": "156.0.4314.42",
+  "captures": [
+    {
+      "file": "/previews/52/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/52/7e442130f3dd897e-desktop.jpg",
+      "route": "/preview/52-corner-shop/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:485202317f3d76e600c21e37f451366bf127301dbadacd09abf5e4e639d22943",
+      "sha256": "7e442130f3dd897e018590784f9d7a62a2190ea0f991d6ef6ad2d9f1785408b6",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/52/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/52/45fc695a31f1ac9d-mobile.jpg",
+      "route": "/preview/52-corner-shop/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:485202317f3d76e600c21e37f451366bf127301dbadacd09abf5e4e639d22943",
+      "sha256": "45fc695a31f1ac9d3c0f400d63fefb220d69abfc26aeebb73ebe444622859b30",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/52/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/52/73984ed8eca49989-detail.jpg",
+      "route": "/preview/52-corner-shop/pickup",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "pickup",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:485202317f3d76e600c21e37f451366bf127301dbadacd09abf5e4e639d22943",
+      "sha256": "73984ed8eca49989eec5f10d900fac9df773196043072f5e42fb951652d4c731",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/52/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/52/357cea2f6e17cc00-full-page.jpg",
+      "route": "/preview/52-corner-shop/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:485202317f3d76e600c21e37f451366bf127301dbadacd09abf5e4e639d22943",
+      "sha256": "357cea2f6e17cc00e56c3ca4d1df52e1f95e9398b704197d5f1ca6c2aa6454ae",
+      "fullPage": true
+    }
+  ]
+}

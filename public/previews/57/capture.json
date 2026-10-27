@@ -1,0 +1,64 @@
+{
+  "designId": "57",
+  "sourceRevision": "sha256:6bec85e54d2c9db870f27926f9bc581864911e67052fbce0638bc9dd9946e000",
+  "capturedAt": "2026-10-27T00:07:21.506Z",
+  "browser": "156.0.4314.42",
+  "captures": [
+    {
+      "file": "/previews/57/desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/57/f957dfb83ac80927-desktop.jpg",
+      "route": "/preview/57-property-listing/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:6bec85e54d2c9db870f27926f9bc581864911e67052fbce0638bc9dd9946e000",
+      "sha256": "f957dfb83ac8092734daf402ddb7cfdda0b97ab792b571b693b308943e697b52",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/57/mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/57/88dbc6e4c0fcd065-mobile.jpg",
+      "route": "/preview/57-property-listing/start",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:6bec85e54d2c9db870f27926f9bc581864911e67052fbce0638bc9dd9946e000",
+      "sha256": "88dbc6e4c0fcd06508de962fd98a098afe3de9e3d2b4952a54441c1d61b544ff",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/57/detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/57/3a88a8dd82770d8e-detail.jpg",
+      "route": "/preview/57-property-listing/property",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "property",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:6bec85e54d2c9db870f27926f9bc581864911e67052fbce0638bc9dd9946e000",
+      "sha256": "3a88a8dd82770d8e5926804aea825f99c4b315288b74c32175f0ebbfef18e6ef",
+      "fullPage": false
+    },
+    {
+      "file": "/previews/57/full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/57/67751cfe9a6f4285-full-page.jpg",
+      "route": "/preview/57-property-listing/start",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "state": "start",
+      "fixture": "deterministic-2026-11-v1",
+      "sourceRevision": "sha256:6bec85e54d2c9db870f27926f9bc581864911e67052fbce0638bc9dd9946e000",
+      "sha256": "67751cfe9a6f4285d937b3ec404c1c4f4fc0ad316a1589363b554b8c7c2fa441",
+      "fullPage": true
+    }
+  ]
+}
