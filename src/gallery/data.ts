@@ -56,15 +56,7 @@ export const designs = (data as unknown as Design[]).map((design) => ({
 }));
 export const repository = 'https://github.com/DrewWalsh/site-design-library';
 export const site = 'https://drew-site-design-library.netlify.app';
-export const families = [
-  'Clarity & editorial',
-  'Workspaces & discovery',
-  'Commerce & places',
-  'Playful & material',
-  'Retro & experimental',
-  'Small business',
-  'Community & institutions',
-];
+export const families = [...new Set(designs.map((design) => design.family))];
 export function thumbnail(d: Design) {
   return (
     d.referenceImages.find((r: any) => r.state === 'start' && r.viewport.width === 1440)?.url || ''

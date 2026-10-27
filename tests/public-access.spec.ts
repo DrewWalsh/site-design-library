@@ -123,6 +123,10 @@ test('Inspector starts a real ZIP download, and crawler indexes expose the whole
   await page.goto('/');
   await expect(page.locator('.g-card').last()).toContainText('Powers of Scale');
   await page.setViewportSize({ width: 1440, height: 1000 });
+  await page.getByRole('button', { name: /Avant-garde & experimental/ }).click();
+  await expect(page.locator('.g-card')).toHaveCount(25);
+  await expect(page.locator('.g-card').first()).toContainText('Folded Matter');
+  await page.getByRole('button', { name: /All directions/ }).click();
   await page.getByText('Visual direction & effort', { exact: true }).click();
   await page.getByLabel('Character', { exact: true }).selectOption('Experimental');
   await expect(page.locator('.g-card')).toHaveCount(25);
