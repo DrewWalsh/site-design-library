@@ -7,10 +7,13 @@
   "family": "Retro & experimental",
   "status": "ready",
   "thesis": "Let spatial arrangement communicate relationships between a deliberately small collection of objects.",
-  "suitableFor": ["Culture", "Portfolio"],
+  "suitableFor": [
+    "Culture",
+    "Portfolio"
+  ],
   "character": "Expressive",
   "traits": {
-    "composition": "Shallow architectural stage with a permanent destination list and ordinary object details",
+    "composition": "The room is the opening surface. A small museum plaque hangs on its back wall; chair, vessel and lamp act as labelled entrances, with a complete object list along the floor edge. The surrounding webpage no longer frames the room beneath a marketing introduction.",
     "navigation": "Equivalent exhibit buttons and a complete collection list",
     "typography": "Libre Baskerville + DM Sans",
     "density": "Low",
@@ -45,7 +48,7 @@
   "referenceImages": [
     {
       "file": "/previews/48/desktop.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/48/4026eec2192e19f2-desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/48/ffc0eacad8402583-desktop.jpg",
       "route": "/preview/48-spatial-gallery/start",
       "viewport": {
         "width": 1440,
@@ -53,13 +56,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:198ca6f764512c15bd5b71a944488ed6c69a8cd70f30ba7111b82177d1d38973",
-      "sha256": "4026eec2192e19f25e0eebb5fa8d81f1f34b47c9f07b1c2e45fce7475ebb0025",
+      "sourceRevision": "sha256:2bde77578485f8c1763a015a8f26297964b45bd5bb2c889c6bedc7fa9d1c83cc",
+      "sha256": "ffc0eacad8402583151c353ace52e3afc5813bc734427e26c3501ce8b277370b",
       "fullPage": false
     },
     {
       "file": "/previews/48/mobile.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/48/30ff4a0e23ad8c43-mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/48/58028c33513c1da0-mobile.jpg",
       "route": "/preview/48-spatial-gallery/start",
       "viewport": {
         "width": 390,
@@ -67,8 +70,8 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:198ca6f764512c15bd5b71a944488ed6c69a8cd70f30ba7111b82177d1d38973",
-      "sha256": "30ff4a0e23ad8c432ba042949a22926eaec8ead9dc4785e88161db8117523214",
+      "sourceRevision": "sha256:2bde77578485f8c1763a015a8f26297964b45bd5bb2c889c6bedc7fa9d1c83cc",
+      "sha256": "58028c33513c1da071a1c8683a677106f847b20f6acf2a2634cb1f5b447ffe08",
       "fullPage": false
     },
     {
@@ -81,13 +84,13 @@
       },
       "state": "object",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:198ca6f764512c15bd5b71a944488ed6c69a8cd70f30ba7111b82177d1d38973",
+      "sourceRevision": "sha256:2bde77578485f8c1763a015a8f26297964b45bd5bb2c889c6bedc7fa9d1c83cc",
       "sha256": "763a005aa660e7677a647c38fc0484692ab60e6b5c7ffd1c148896912029dc89",
       "fullPage": false
     },
     {
       "file": "/previews/48/full-page.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/48/21c06f90622628c9-full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/48/3b4f0daa084edc5b-full-page.jpg",
       "route": "/preview/48-spatial-gallery/start",
       "viewport": {
         "width": 1440,
@@ -95,28 +98,45 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:198ca6f764512c15bd5b71a944488ed6c69a8cd70f30ba7111b82177d1d38973",
-      "sha256": "21c06f90622628c9e1bdf23fc16768647eb24a5c3a854fdb8383baf54ab0a1b6",
+      "sourceRevision": "sha256:2bde77578485f8c1763a015a8f26297964b45bd5bb2c889c6bedc7fa9d1c83cc",
+      "sha256": "3b4f0daa084edc5baadb61887cbe8b9cffe04731b487227e377ba29299595348",
       "fullPage": true
     }
   ],
   "sourcePath": "src/designs/48-spatial-gallery",
-  "neighbours": ["27", "50"],
+  "neighbours": [
+    "27",
+    "50"
+  ],
   "palette": {
     "page": "#f0eee7",
     "surface": "#fffdf5",
     "ink": "#3c413e",
     "accent": "#697b68"
   },
-  "fonts": ["Libre Baskerville", "DM Sans"],
-  "brief": "**Philosophy and fit.** Let spatial arrangement communicate relationships between a deliberately small collection of objects. Suitable for digital exhibitions, architecture showcases, art collections, and immersive portfolios.\n\n**Visual grammar.** Present a shallow spatial stage in CSS or SVG, with clearly labelled exhibits and a permanent destination list. A three-dimensional renderer is optional only if it adds necessary spatial meaning. Use quiet architectural surfaces, neutral framing, restrained type, and object-specific imagery. Distance and grouping convey curatorial relationships. A standard detail panel holds all substantive text.\n\n**Specimen and flow.** *Small Museum* exhibits fictional design objects. Choose an exhibit from the scene or its equivalent list, inspect its description, and move to a related object. Supporting views are the complete collection list and an object detail page with a stable URL.\n\n**Mobile and motion.** Default to a two-dimensional arrangement or the list on constrained devices. Reduced motion removes camera travel. Keyboard users can visit every exhibit without steering through space; failed rendering leaves the list available.\n\n**Identity and effort.** Preserve meaningful spatial grouping; avoid mandatory free movement, heavy introductory sequences, or essential text embedded in a canvas. **Effort: high.**",
+  "fonts": [
+    "Libre Baskerville",
+    "DM Sans"
+  ],
+  "brief": "**Philosophy and fit.** Let spatial arrangement communicate relationships between a deliberately small collection of objects. Suitable for digital exhibitions, architecture showcases, art collections, and immersive portfolios.\n\n**Visual grammar.** Present a shallow spatial stage in CSS or SVG, with clearly labelled exhibits and a permanent destination list. A three-dimensional renderer is optional only if it adds necessary spatial meaning. Use quiet architectural surfaces, neutral framing, restrained type, and object-specific imagery. Distance and grouping convey curatorial relationships. A standard detail panel holds all substantive text.\n\n**Composition.** The room is the opening surface. A small museum plaque hangs on its back wall; chair, vessel and lamp act as labelled entrances, with a complete object list along the floor edge. The surrounding webpage no longer frames the room beneath a marketing introduction.\n\n**Specimen and flow.** _Small Museum_ exhibits fictional design objects. Choose an exhibit from the scene or its equivalent list, inspect its description, and move to a related object. Supporting views are the complete collection list and an object detail page with a stable URL.\n\n**Responsive and inclusive behaviour.** A bounded two-dimensional room retains all three objects and explicit labels on phones. The complete text collection follows directly below the floor, and every object has a readable detail route. Native buttons, visible focus, a direct return path and reduced-motion support preserve access to the same content.\n\n**Identity and effort.** Preserve meaningful spatial grouping; avoid mandatory free movement, heavy introductory sequences, or essential text embedded in a canvas. **Effort: high.**",
   "scope": "An expansive sample page with representative local interactions; no production business backend.",
   "discovery": {
-    "industries": ["Gallery", "Museum", "Art"],
-    "visitorGoals": ["Explore an exhibition"],
-    "conversionActions": ["Inspect an object"],
+    "industries": [
+      "Gallery",
+      "Museum",
+      "Art"
+    ],
+    "visitorGoals": [
+      "Explore an exhibition"
+    ],
+    "conversionActions": [
+      "Inspect an object"
+    ],
     "siteSize": "Digital publication",
-    "interactionTypes": ["Spatial navigation", "Artwork details"],
+    "interactionTypes": [
+      "Spatial navigation",
+      "Artwork details"
+    ],
     "keywords": [
       "Culture",
       "Portfolio",

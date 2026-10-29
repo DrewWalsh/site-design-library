@@ -22,7 +22,7 @@ watch(area, () => {
 });
 </script>
 <template>
-  <div class="specimen">
+  <div class="specimen" :class="{ entry: state === 'start' }">
     <a class="skip" href="#content">Skip to content</a>
     <header class="now-header wrap">
       <a :href="href('start')" class="now-logo">NOW<span>HOME REPAIRS / SAMPLE SERVICE</span></a
@@ -31,23 +31,13 @@ watch(area, () => {
     <main id="content">
       <template v-if="state === 'start'"
         ><section class="dispatch wrap">
-          <div class="dispatch-heading">
-            <p class="eyebrow">When it can’t wait until next week.</p>
-            <h1>Something needs<br />sorting.<br /><span>Let’s start here.</span></h1>
-            <p>
-              Lockouts, leaks, and urgent repairs.<br />Clear coverage. A real conversation before a
-              call-out.
-            </p>
-            <div class="dispatch-hours">
-              <span class="status-dot"></span>
-              <div>
-                <strong>Sample dispatch desk</strong>
-                <p>Daily · 07:00–23:00<br />Fictional service and availability</p>
-              </div>
-            </div>
-          </div>
           <div class="help-card">
-            <p class="eyebrow">What kind of help do you need?</p>
+            <div class="call-direct">
+              <span>Prefer to speak to someone?</span><a href="tel:+12025550168">202 555 0168 ↗</a
+              ><small>Fictional demonstration number</small>
+            </div>
+            <h1>What needs attention?</h1>
+
             <button
               class="urgent-choice"
               @click="
@@ -75,11 +65,20 @@ watch(area, () => {
               </div>
               <b>→</b>
             </button>
-            <div class="call-direct">
-              <span>Prefer to speak to someone?</span><a href="tel:+12025550168">202 555 0168 ↗</a
-              ><small>Fictional demonstration number</small>
-            </div>
           </div>
+          <aside class="dispatch-heading">
+            <div class="dispatch-hours">
+              <span class="status-dot"></span>
+              <div>
+                <strong>Sample dispatch desk</strong>
+                <p>Daily · 07:00–23:00<br />Fictional service and availability</p>
+              </div>
+            </div>
+            <p>Lockouts · leaks · repairs</p>
+            <p>Northbank · Alder<br />NB1 · NB2 · AL1</p>
+            <strong>Call-out from $65</strong>
+            <p>Availability, arrival time and fee confirmed before dispatch.</p>
+          </aside>
         </section>
         <section class="coverage-board wrap">
           <div>
@@ -869,5 +868,84 @@ details p {
   font: 500 13px/1.5 var(--body);
   letter-spacing: 0;
   text-transform: none;
+}
+
+/* The entry is the experience itself; supporting routes retain its vocabulary. */
+.entry .dispatch {
+  grid-template-columns: 1.7fr 1fr;
+  gap: 40px;
+  padding-top: 28px;
+  align-items: center;
+  max-width: 1040px;
+}
+.entry .help-card {
+  padding: 26px;
+  border: 2px solid var(--ink);
+  box-shadow: 8px 8px 0 #c2d3dc;
+}
+.entry .help-card h1 {
+  font-size: 24px;
+  letter-spacing: -0.02em;
+  margin: 22px 0 12px;
+}
+.entry .call-direct {
+  margin: 0;
+  padding: 0 0 20px;
+  border-top: 0;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+}
+.entry .call-direct a {
+  font-size: 44px;
+  letter-spacing: -0.04em;
+}
+.entry .dispatch-heading {
+  padding: 25px;
+  border-left: 1px solid var(--line);
+}
+.entry .dispatch-heading > p {
+  font-size: 15px;
+  margin: 20px 0;
+}
+.entry .dispatch-hours {
+  margin: 0;
+}
+.entry .help-card h2 {
+  font-size: 22px;
+}
+.entry .help-card button {
+  padding: 20px 14px;
+}
+.entry .help-card button p {
+  font-size: 13px;
+}
+@media (max-width: 700px) {
+  .entry .dispatch {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding-top: 18px;
+  }
+  .entry .help-card {
+    padding: 17px;
+  }
+  .entry .call-direct a {
+    font-size: 34px;
+  }
+  .entry .help-card h1 {
+    font-size: 21px;
+    margin-top: 15px;
+  }
+  .entry .help-card h2 {
+    font-size: 20px;
+  }
+  .entry .help-card button {
+    padding: 16px 10px;
+  }
+  .entry .dispatch-heading {
+    padding: 10px 0 10px 20px;
+  }
+  .entry .dispatch-heading > p {
+    margin: 10px 0;
+  }
 }
 </style>

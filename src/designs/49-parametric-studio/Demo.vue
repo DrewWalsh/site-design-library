@@ -52,7 +52,7 @@ async function share() {
 }
 </script>
 <template>
-  <div class="specimen">
+  <div class="specimen" :class="{ entry: state !== 'compare' }">
     <a class="skip" href="#content">Skip to content</a>
     <header>
       <strong>PATTERN<br />WORKS</strong><span>MODULAR SCREEN STUDIES / 001</span>
@@ -62,15 +62,30 @@ async function share() {
       </nav>
     </header>
     <main id="content">
-      <div class="heading">
-        <div>
-          <p class="eyebrow">A RULE, MADE VISIBLE</p>
-          <h1>Change the rule.<br />Watch the relationship.</h1>
-        </div>
-        <p>Spacing and angle.<br />Two small decisions,<br />a different kind of screen.</p>
-      </div>
+      <h1 :class="{ sr: state !== 'compare' }">
+        {{
+          state === 'compare'
+            ? 'Compare screen configurations'
+            : 'Pattern Works — modular screen instrument'
+        }}
+      </h1>
       <template v-if="state !== 'compare'"
-        ><div class="studio">
+        ><section class="presets">
+          <p class="eyebrow">START WITH A PRESET</p>
+          <div>
+            <button
+              v-for="(p, i) in presets"
+              :key="p.name"
+              :aria-pressed="spacing === p.s && angle === p.a"
+              @click="preset(i)"
+            >
+              <span>0{{ i + 1 }}</span>
+              <h2>{{ p.name }}</h2>
+              <small>{{ p.s }} U / {{ p.a }}°</small>
+            </button>
+          </div>
+        </section>
+        <div class="studio">
           <section class="stage">
             <div class="stage-label">
               <span>SCREEN STUDY / LIVE SVG</span><span>600 × 440 UNITS</span>
@@ -156,21 +171,7 @@ async function share() {
             <p v-if="message" role="status">{{ message }}</p>
           </aside>
         </div>
-        <section class="presets">
-          <p class="eyebrow">START WITH A PRESET</p>
-          <div>
-            <button
-              v-for="(p, i) in presets"
-              :key="p.name"
-              :aria-pressed="spacing === p.s && angle === p.a"
-              @click="preset(i)"
-            >
-              <span>0{{ i + 1 }}</span>
-              <h2>{{ p.name }}</h2>
-              <small>{{ p.s }} U / {{ p.a }}°</small>
-            </button>
-          </div>
-        </section>
+
         <section class="principle">
           <h2>Variation with a reason.</h2>
           <p>
@@ -718,5 +719,225 @@ main {
   .comparison > h2 {
     font-size: 29px;
   }
+}
+
+/* The entry is the experience itself; supporting routes retain its vocabulary. */
+
+.entry {
+  background: #bcc4bb;
+  padding: 25px 3%;
+}
+.entry header {
+  max-width: none;
+  width: 100%;
+  padding: 0 0 20px;
+  margin: 0;
+  border: 0;
+}
+.entry header strong {
+  font-size: 19px;
+}
+.entry header > span {
+  font-size: 9px;
+}
+.entry header nav {
+  font-size: 11px;
+  gap: 20px;
+}
+.entry main {
+  max-width: none;
+  margin: 0;
+  padding: 20px;
+  width: 100%;
+  border: 4px solid #66776e;
+  background: #e8e9de;
+  box-shadow: 0 8px 0 #66776e;
+}
+.entry main > h1 {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip-path: inset(50%) !important;
+  white-space: nowrap !important;
+}
+.entry .presets {
+  padding: 0 0 20px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  border: 0;
+}
+.entry .presets > .eyebrow {
+  font-size: 9px;
+  max-width: 90px;
+}
+.entry .presets > div {
+  display: flex;
+  gap: 12px;
+  flex: 1;
+}
+.entry .presets button {
+  padding: 12px 18px;
+  background: #d0d8cb;
+  border: 1px solid #66776e;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex: 1;
+}
+.entry .presets button h2 {
+  font-size: 15px;
+  white-space: normal;
+  margin: 0;
+}
+.entry .presets button span,
+.entry .presets button small {
+  font-size: 9px;
+}
+.entry .studio {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 285px;
+  gap: 25px;
+}
+.entry .stage {
+  padding: 15px;
+  background: #c6d1c0;
+  border: 2px solid #66776e;
+}
+.entry .stage svg {
+  height: 65svh;
+  min-height: 450px;
+  max-height: 700px;
+  width: 100%;
+}
+.entry .stage-label,
+.entry .stage-foot {
+  font-size: 9px;
+  padding: 10px;
+}
+.entry .studio > aside {
+  background: #f7f8ef;
+  border: 1px solid #66776e;
+  padding: 22px;
+}
+.entry .studio > aside > .eyebrow {
+  font-size: 10px;
+}
+.entry .studio label {
+  font-size: 15px;
+}
+.entry .studio label > span {
+  font-size: 9px;
+}
+.entry .studio input[type='number'] {
+  font-size: 28px;
+  padding: 10px;
+  background: #d0d8cb;
+  border: 2px inset #66776e;
+}
+.entry .studio input[type='range'] {
+  accent-color: #365e51;
+  height: 32px;
+}
+.entry .studio aside p {
+  font-size: 10px;
+  line-height: 1.7;
+}
+.entry .studio aside button {
+  font-size: 10px;
+  padding: 13px;
+  width: 100%;
+  margin-top: 12px;
+}
+.entry .principle {
+  padding: 35px 2% 15px;
+}
+.entry .principle h2 {
+  font-size: 25px;
+}
+.entry .principle p {
+  font-size: 12px;
+}
+@media (max-width: 750px) {
+  .entry {
+    padding: 20px 4%;
+  }
+  .entry header {
+    gap: 12px;
+  }
+  .entry header > span {
+    display: none;
+  }
+  .entry header strong {
+    font-size: 16px;
+  }
+  .entry header nav {
+    font-size: 9px;
+    gap: 12px;
+  }
+  .entry main {
+    padding: 12px;
+    border-width: 3px;
+  }
+  .entry .presets {
+    display: block;
+    padding-bottom: 15px;
+  }
+  .entry .presets > .eyebrow {
+    max-width: none;
+    margin: 0 0 10px;
+    font-size: 8px;
+  }
+  .entry .presets > div {
+    gap: 7px;
+  }
+  .entry .presets button {
+    display: block;
+    padding: 10px 6px;
+  }
+  .entry .presets button h2 {
+    font-size: 11px;
+    margin: 6px 0;
+  }
+  .entry .presets button small {
+    font-size: 8px;
+  }
+  .entry .presets button span {
+    display: none;
+  }
+  .entry .studio {
+    display: block;
+  }
+  .entry .stage {
+    padding: 5px;
+  }
+  .entry .stage svg {
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 600/440;
+  }
+  .entry .stage-label,
+  .entry .stage-foot {
+    font-size: 7px;
+    padding: 8px 5px;
+    gap: 8px;
+  }
+  .entry .studio > aside {
+    margin-top: 15px;
+    padding: 20px;
+  }
+  .entry .studio label {
+    font-size: 14px;
+  }
+  .entry .studio input[type='number'] {
+    font-size: 24px;
+  }
+}
+.entry header > span {
+  color: #304737;
 }
 </style>

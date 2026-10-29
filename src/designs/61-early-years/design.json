@@ -14,7 +14,7 @@
   ],
   "character": "Restrained",
   "traits": {
-    "composition": "soft terracotta and oat with a hand-illustrated daily rhythm",
+    "composition": "Four illustrated moments form an uneven chronological sequence: open book, growing plant, lunch bowl and building blocks. The day itself introduces the nursery, followed by the real-space illustration, educator and parent information.",
     "navigation": "Daily schedule, parent information, fees and tour request",
     "typography": "DM Sans",
     "density": "Medium",
@@ -87,7 +87,7 @@
   "referenceImages": [
     {
       "file": "/previews/61/desktop.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/61/1f09a1c9b989f886-desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/61/23814d94a4f73182-desktop.jpg",
       "route": "/preview/61-early-years/start",
       "viewport": {
         "width": 1440,
@@ -95,13 +95,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:d2db03243c16bb88b14fb7935f4bd5b53f5d4753af6f25c2fa83f8082dc4c854",
-      "sha256": "1f09a1c9b989f886847d2e30a37fc638ef8c34e488daec23e3a1beeb97b02a4a",
+      "sourceRevision": "sha256:8d5db3e839c62c4fe2d29bd02abaca614778fa9b303a2912a8a20d4c9dc474f3",
+      "sha256": "23814d94a4f731825f1685c4184257aed998159f5c246374dc01b7daa0ca6aa5",
       "fullPage": false
     },
     {
       "file": "/previews/61/mobile.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/61/666344a0ffb745d7-mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/61/175d9256c9fca5f1-mobile.jpg",
       "route": "/preview/61-early-years/start",
       "viewport": {
         "width": 390,
@@ -109,8 +109,8 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:d2db03243c16bb88b14fb7935f4bd5b53f5d4753af6f25c2fa83f8082dc4c854",
-      "sha256": "666344a0ffb745d7718691d5c30c9479da0a9d094a8367e4fc59a4d4e86b01b9",
+      "sourceRevision": "sha256:8d5db3e839c62c4fe2d29bd02abaca614778fa9b303a2912a8a20d4c9dc474f3",
+      "sha256": "175d9256c9fca5f1c6b7b40fa6fcc3023e1b54882f6ad4bf604dc51a4d2104ca",
       "fullPage": false
     },
     {
@@ -123,13 +123,13 @@
       },
       "state": "tour",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:d2db03243c16bb88b14fb7935f4bd5b53f5d4753af6f25c2fa83f8082dc4c854",
+      "sourceRevision": "sha256:8d5db3e839c62c4fe2d29bd02abaca614778fa9b303a2912a8a20d4c9dc474f3",
       "sha256": "9cd6ffc1167f40ad3a14c2121827574fbf90443412b8ce73ae8258ea41763c36",
       "fullPage": false
     },
     {
       "file": "/previews/61/full-page.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/61/1bdc78a21659fed7-full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/61/5124008d5afc59fd-full-page.jpg",
       "route": "/preview/61-early-years/start",
       "viewport": {
         "width": 1440,
@@ -137,8 +137,8 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:d2db03243c16bb88b14fb7935f4bd5b53f5d4753af6f25c2fa83f8082dc4c854",
-      "sha256": "1bdc78a21659fed703b1c9bd23d9de225c2384ede7c4e966df077510c707ba34",
+      "sourceRevision": "sha256:8d5db3e839c62c4fe2d29bd02abaca614778fa9b303a2912a8a20d4c9dc474f3",
+      "sha256": "5124008d5afc59fd390328f58a8ef8ed78a95026e2cf63432a566bf8afa279fd",
       "fullPage": true
     }
   ],
@@ -156,6 +156,6 @@
   "fonts": [
     "DM Sans"
   ],
-  "brief": "**Philosophy and fit.** Help a family imagine an ordinary, well-cared-for day. Built for daycare, preschool, tutoring. The visitor’s next step is to request a tour.\n\n**Visual grammar.** Use a soft terracotta and oat with a hand-illustrated daily rhythm. Preserve the hierarchy of daily rhythm, staff introductions, fees, parent information; these patterns solve this business’s actual decision, rather than supplying interchangeable decoration.\n\n**Sample and interaction.** Little Orchard is a fictional demonstration. The entry page establishes a complete visual direction, with visit the nursery and a day at little orchard as supporting states. Inputs use local deterministic fixtures; no request, order, application or payment is sent.\n\n**Responsive behaviour.** On a phone, keep the primary decision first, stack facts with explicit labels, preserve the order of the workflow, and provide comfortably sized controls. Wide diagrams scale; tabular facts retain their labels.\n\n**Adaptation.** Replace the fictional brand, prices, availability, qualifications and claims with verified client information. Preserve daily rhythm, staff introductions, fees. Use imagery to explain the place, people, work or product, with deliberate crops and honest captions. Do not turn this into a generic hero-and-card layout.\n\n**Identity and adaptation.** The illustrated rhythm of the day and a familiar staff introduction establish warmth. Follow with clear practical information for parents, keeping the palette calm enough for an adult decision.",
+  "brief": "**Philosophy and fit.** Help a family imagine an ordinary, well-cared-for day. Built for daycare, preschool, tutoring. The visitor’s next step is to request a tour.\n\n**Visual grammar.** Use a soft terracotta and oat with a hand-illustrated daily rhythm. Preserve the hierarchy of daily rhythm, staff introductions, fees, parent information; these patterns solve this business’s actual decision, rather than supplying interchangeable decoration.\n\n**Composition.** Four illustrated moments form an uneven chronological sequence: open book, growing plant, lunch bowl and building blocks. The day itself introduces the nursery, followed by the real-space illustration, educator and parent information.\n\n**Sample and interaction.** Little Orchard is a fictional demonstration. The entry page establishes a complete visual direction, with visit the nursery and a day at little orchard as supporting states. Inputs use local deterministic fixtures; no request, order, application or payment is sent.\n\n**Responsive and inclusive behaviour.** The illustrated sequence becomes a vertical timeline with a small drawing beside each time and description, keeping the complete daily rhythm near the top. Native buttons, visible focus, a direct return path and reduced-motion support preserve access to the same content.\n\n**Adaptation.** Replace the fictional brand, prices, availability, qualifications and claims with verified client information. Preserve daily rhythm, staff introductions, fees. Use imagery to explain the place, people, work or product, with deliberate crops and honest captions. Do not turn this into a generic hero-and-card layout.",
   "scope": "Complete visual reference with local sample interactions; no production business backend."
 }

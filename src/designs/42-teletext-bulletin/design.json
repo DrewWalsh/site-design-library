@@ -7,10 +7,13 @@
   "family": "Retro & experimental",
   "status": "ready",
   "thesis": "Deliver compact, regularly structured information through explicit sections and numbered pages.",
-  "suitableFor": ["News", "Events"],
+  "suitableFor": [
+    "News",
+    "Events"
+  ],
   "character": "Expressive",
   "traits": {
-    "composition": "Numbered broadcast bulletin with colour bands and compact text rows",
+    "composition": "An edited broadcast index begins with page entry, town conditions, numbered event rows and a week-ahead column. Dense monospace information, strong coloured bands and page codes establish teletext; a large greeting no longer delays the bulletin.",
     "navigation": "Page numbers supplemented by ordinary visible links",
     "typography": "IBM Plex Mono",
     "density": "High",
@@ -45,7 +48,7 @@
   "referenceImages": [
     {
       "file": "/previews/42/desktop.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/42/9fa4a7ec3f1cd48a-desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/42/32dabdbcf7b4d8f7-desktop.jpg",
       "route": "/preview/42-teletext-bulletin/start",
       "viewport": {
         "width": 1440,
@@ -53,13 +56,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:8a5fdece058368c707fa5646e0472da1c2ddc64be54928df9f98fde7b51d4693",
-      "sha256": "9fa4a7ec3f1cd48a56b6ac6cf571a80930408e0dde7aaec3cf1cc5cba0357d80",
+      "sourceRevision": "sha256:69160e929170e90a7d15b69ffa1d6b9e23b2942e5f221cd9edf1a6da93387dc7",
+      "sha256": "32dabdbcf7b4d8f7a47ba96a52c640ae85db7b888258e1f7d7e1bac25c520ef9",
       "fullPage": false
     },
     {
       "file": "/previews/42/mobile.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/42/b2026c77481628ae-mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/42/117a2caec6522b65-mobile.jpg",
       "route": "/preview/42-teletext-bulletin/start",
       "viewport": {
         "width": 390,
@@ -67,13 +70,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:8a5fdece058368c707fa5646e0472da1c2ddc64be54928df9f98fde7b51d4693",
-      "sha256": "b2026c77481628ae62e2f843a9a9e3d7b51c88d990defcbf336de05ef2c087cd",
+      "sourceRevision": "sha256:69160e929170e90a7d15b69ffa1d6b9e23b2942e5f221cd9edf1a6da93387dc7",
+      "sha256": "117a2caec6522b653f22aeee5c6d47837b76cfc0592b02b33eea472da1d5a7b6",
       "fullPage": false
     },
     {
       "file": "/previews/42/detail.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/42/2037e94f25cac1a8-detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/42/db80fba0efac7b15-detail.jpg",
       "route": "/preview/42-teletext-bulletin/event",
       "viewport": {
         "width": 1440,
@@ -81,13 +84,13 @@
       },
       "state": "event",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:8a5fdece058368c707fa5646e0472da1c2ddc64be54928df9f98fde7b51d4693",
-      "sha256": "2037e94f25cac1a8134c0d77b3b4d73d28f1114795feb4b8de27247e251bc070",
+      "sourceRevision": "sha256:69160e929170e90a7d15b69ffa1d6b9e23b2942e5f221cd9edf1a6da93387dc7",
+      "sha256": "db80fba0efac7b15c81424a8f3add9392be5b8febfd0be219bac671242ee880c",
       "fullPage": false
     },
     {
       "file": "/previews/42/full-page.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/42/8220c1785a86378e-full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/42/124b525474f37ece-full-page.jpg",
       "route": "/preview/42-teletext-bulletin/start",
       "viewport": {
         "width": 1440,
@@ -95,28 +98,43 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:8a5fdece058368c707fa5646e0472da1c2ddc64be54928df9f98fde7b51d4693",
-      "sha256": "8220c1785a86378ee3d9d85c65957f72828e8441974a100a4d76df033bfbb315",
+      "sourceRevision": "sha256:69160e929170e90a7d15b69ffa1d6b9e23b2942e5f221cd9edf1a6da93387dc7",
+      "sha256": "124b525474f37ecec697cb0ea304c5d99c4e9024f097a913d9fde2ed51d90e57",
       "fullPage": true
     }
   ],
   "sourcePath": "src/designs/42-teletext-bulletin",
-  "neighbours": ["41", "38"],
+  "neighbours": [
+    "41",
+    "38"
+  ],
   "palette": {
     "page": "#101514",
     "surface": "#1c302e",
     "ink": "#f1f0dc",
     "accent": "#f1d95e"
   },
-  "fonts": ["IBM Plex Mono"],
-  "brief": "**Philosophy and fit.** Deliver compact, regularly structured information through explicit sections and numbered pages. Suitable for event bulletins, community updates, sports summaries, and small informational directories.\n\n**Visual grammar.** Use a broadcast-style title strip, visible page identifier, tightly organised text rows, block colour bands, and a footer of section links. Monospaced display text and rectangular graphics create the character. Keep a deliberately limited palette, while choosing text and background combinations that remain readable. Unlike a terminal, the page resembles an edited bulletin, without prompts or command history.\n\n**Specimen and flow.** *TownText* is a fictional community notice service. Choose What’s On, open a numbered event page, and follow its booking information. Supporting views are the subject index and a saved-pages list stored locally. Dates are labelled sample content.\n\n**Mobile and motion.** Preserve section order while allowing lines to wrap; do not shrink the entire broadcast frame into illegible miniature text. Page-number entry supplements visible links.\n\n**Identity and effort.** Preserve editorial compression and numbered navigation; avoid mandatory memorised codes, flashing text, and pixel-game decoration. **Effort: low.**",
+  "fonts": [
+    "IBM Plex Mono"
+  ],
+  "brief": "**Philosophy and fit.** Deliver compact, regularly structured information through explicit sections and numbered pages. Suitable for event bulletins, community updates, sports summaries, and small informational directories.\n\n**Visual grammar.** Use a broadcast-style title strip, visible page identifier, tightly organised text rows, block colour bands, and a footer of section links. Monospaced display text and rectangular graphics create the character. Keep a deliberately limited palette, while choosing text and background combinations that remain readable. Unlike a terminal, the page resembles an edited bulletin, without prompts or command history.\n\n**Composition.** An edited broadcast index begins with page entry, town conditions, numbered event rows and a week-ahead column. Dense monospace information, strong coloured bands and page codes establish teletext; a large greeting no longer delays the bulletin.\n\n**Specimen and flow.** _TownText_ is a fictional community notice service. Choose What’s On, open a numbered event page, and follow its booking information. Supporting views are the subject index and a saved-pages list stored locally. Dates are labelled sample content.\n\n**Responsive and inclusive behaviour.** The page number and first three event rows fit near the top of the phone view. Secondary weekly notices follow in the same broadcast vocabulary. Native buttons, visible focus, a direct return path and reduced-motion support preserve access to the same content.\n\n**Identity and effort.** Preserve editorial compression and numbered navigation; avoid mandatory memorised codes, flashing text, and pixel-game decoration. **Effort: low.**",
   "scope": "An expansive sample page with representative local interactions; no production business backend.",
   "discovery": {
-    "industries": ["News", "Public information"],
-    "visitorGoals": ["Find a bulletin"],
-    "conversionActions": ["Navigate a page number"],
+    "industries": [
+      "News",
+      "Public information"
+    ],
+    "visitorGoals": [
+      "Find a bulletin"
+    ],
+    "conversionActions": [
+      "Navigate a page number"
+    ],
     "siteSize": "Digital publication",
-    "interactionTypes": ["Page index", "Keyboard navigation"],
+    "interactionTypes": [
+      "Page index",
+      "Keyboard navigation"
+    ],
     "keywords": [
       "News",
       "Events",

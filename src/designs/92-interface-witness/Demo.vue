@@ -58,7 +58,7 @@ function reset() {
 }
 </script>
 <template>
-  <div class="specimen">
+  <div class="specimen" :class="{ entry: state === 'start' }">
     <a class="skip" href="#content">Skip to content</a>
 
     <header>
@@ -473,6 +473,134 @@ footer {
     transition: none !important;
     animation: none !important;
     scroll-behavior: auto !important;
+  }
+}
+
+/* The entry is the experience itself; supporting routes retain its vocabulary. */
+
+.entry {
+  position: relative;
+}
+.entry header {
+  position: absolute;
+  top: 26px;
+  left: 28px;
+  right: 28px;
+  border: 0;
+  padding: 0;
+  align-items: flex-start;
+  z-index: 3;
+}
+.entry header strong {
+  font-size: 12px;
+  letter-spacing: 0.3em;
+}
+.entry header > span {
+  font-size: 8px;
+  max-width: 110px;
+}
+.entry header button {
+  font-size: 10px;
+}
+.entry .performance {
+  padding: 110px 5% 40px;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.entry .performance h1 {
+  font: 10px var(--body);
+  text-align: center;
+  order: 2;
+  margin: 25px 0 0;
+  letter-spacing: 0.08em;
+}
+.entry .action-space {
+  min-height: 520px;
+  height: 60svh;
+  order: 1;
+}
+.entry .primary-action {
+  width: min(54vw, 58svh);
+  min-width: 300px;
+  max-width: 580px;
+  box-shadow: none;
+}
+.entry .primary-action > span {
+  font-size: clamp(70px, 10vw, 145px);
+  letter-spacing: -0.08em;
+}
+.entry .primary-action small {
+  font-size: 9px;
+}
+.entry .latest {
+  order: 3;
+  margin: 18px auto;
+  min-height: 0;
+}
+.entry .actions {
+  order: 4;
+  padding-top: 25px;
+  gap: 20px;
+}
+.entry .observation {
+  background: #faf9f4;
+  box-shadow: 5px 5px 0 #d7d5e4;
+  max-width: 210px;
+}
+@media (max-width: 750px) {
+  .entry header {
+    left: 20px;
+    right: 20px;
+    top: 20px;
+  }
+  .entry header > span {
+    display: none;
+  }
+  .entry .performance {
+    padding: 90px 5% 30px;
+    min-height: 100svh;
+  }
+  .entry .action-space {
+    height: auto;
+    min-height: 400px;
+  }
+  .entry .primary-action {
+    min-width: 0;
+    width: 83vw;
+    max-width: 410px;
+  }
+  .entry .primary-action > span {
+    font-size: 90px;
+  }
+  .entry .performance h1 {
+    font-size: 9px;
+  }
+  .entry .latest {
+    font-size: 10px;
+    max-width: 30ch;
+    text-align: center;
+    line-height: 1.6;
+  }
+  .entry .actions {
+    gap: 12px;
+    font-size: 10px;
+  }
+  .entry .observation {
+    position: relative;
+    max-width: none;
+    left: auto;
+    right: auto;
+    top: auto;
+    bottom: auto;
+    margin: 18px 0;
+    font-size: 17px;
+  }
+  .entry .action-space:has(.observation) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 </style>

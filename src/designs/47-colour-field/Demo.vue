@@ -20,7 +20,7 @@ const exhibitions = [
 ];
 </script>
 <template>
-  <div class="specimen">
+  <div class="specimen" :class="{ entry: state === 'start' }">
     <a class="skip" href="#content">Skip to content</a>
     <header>
       <a :href="href('start')" @click.prevent="go('start')">intervals</a>
@@ -31,26 +31,13 @@ const exhibitions = [
     </header>
     <main id="content">
       <template v-if="state === 'start'"
-        ><section class="fields">
-          <div class="rail">01 / A SPACE BETWEEN</div>
-          <div class="large-field">
-            <p class="eyebrow">EXHIBITIONS / CONVERSATIONS / ORDINARY DISCOVERIES</p>
-            <h1>Something<br />happens<br />in between.</h1>
-            <p>A place for looking longer.<br />A little room for another point of view.</p>
-            <a href="#programme">Explore the programme ↓</a>
-          </div>
-          <div class="side-field">
-            <span class="ring" aria-hidden="true"></span>
-            <p>NOW SHOWING</p>
-            <h2>Between one<br />thing and<br />another.</h2>
-            <span>06 NOV — 14 DEC 2026</span>
-          </div>
-        </section>
+        ><h1 class="sr">Intervals — exhibitions, visiting and membership</h1>
         <section id="programme" class="programme">
-          <div class="rail">02 / WHAT’S ON</div>
+          <div class="rail">01 / WHAT’S ON</div>
           <div>
             <p class="eyebrow">THE CURRENT SEASON</p>
-            <h2>Look. Stay.<br />Look again.</h2>
+            <h2>Now showing.</h2>
+            <p>06 NOV — 14 DEC 2026</p>
             <button
               v-for="(e, i) in exhibitions"
               :key="e"
@@ -66,9 +53,9 @@ const exhibitions = [
           </div>
         </section>
         <section id="visit" class="visit">
-          <div class="rail">03 / COME IN</div>
+          <div class="rail">02 / COME IN</div>
           <div>
-            <h2>A good place<br />to spend an hour.</h2>
+            <h2>11—18</h2>
             <p>
               Wednesday–Sunday / 11:00–18:00<br />12 Foundry Lane, fictional Northbank<br />Free
               entry to the sample programme
@@ -78,6 +65,15 @@ const exhibitions = [
             <p>Step-free access.<br />Seating in every room.<br />No expertise required.</p>
             <button @click="go('membership')">Stay connected →</button>
           </aside>
+        </section>
+        <section class="member-field">
+          <div class="rail">03 / BELONG</div>
+          <div>
+            <p class="eyebrow">MEMBERSHIP</p>
+            <h2>Come back.</h2>
+            <p>Visitor / free<br />Friend / £30 a year<br />Supporter / £60 a year</p>
+            <button @click="go('membership')">Compare the ways in ↗</button>
+          </div>
         </section></template
       >
       <section v-else-if="state === 'exhibition'" class="exhibition">
@@ -736,6 +732,246 @@ nav button {
   }
   .tiers p {
     min-height: 0;
+  }
+}
+
+/* The entry is the experience itself; supporting routes retain its vocabulary. */
+
+.entry {
+  position: relative;
+}
+.entry header {
+  position: absolute;
+  top: 20px;
+  left: 4%;
+  right: 4%;
+  z-index: 2;
+  max-width: none;
+  width: auto;
+  margin: 0;
+  padding: 15px 0;
+  border: 0;
+  color: #fff8e9;
+}
+.entry header > a {
+  font-size: 25px;
+}
+.entry header nav {
+  font-size: 11px;
+  gap: 25px;
+}
+.entry header button {
+  color: #2c3031;
+  background: #e7dfca;
+  padding: 8px 14px;
+}
+.entry main {
+  max-width: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 58% 42%;
+  grid-template-rows: minmax(560px, auto) minmax(350px, auto);
+}
+.entry main > h1 {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip-path: inset(50%) !important;
+  white-space: nowrap !important;
+}
+.entry .programme {
+  grid-column: 1;
+  grid-row: 1/3;
+  background: #44589a;
+  color: #fff8e9;
+  display: grid;
+  grid-template-columns: 50px minmax(0, 1fr);
+  padding: 140px 8% 70px 4%;
+  margin: 0;
+  gap: 25px;
+}
+.entry .programme > .rail {
+  font-size: 10px;
+}
+.entry .programme > div:last-child {
+  padding: 0;
+}
+.entry .programme h2 {
+  font-size: 23px;
+  font-weight: 400;
+  margin: 15px 0;
+}
+.entry .programme > .rail {
+  writing-mode: vertical-rl;
+}
+.entry .programme .eyebrow {
+  font-size: 9px;
+}
+.entry .programme > div > p:not(.eyebrow) {
+  font-size: 11px;
+}
+.entry .programme button {
+  border-color: #c0c4db;
+  color: #fff8e9;
+  background: none;
+  display: block;
+  padding: 30px 0;
+  text-align: left;
+}
+.entry .programme button h3 {
+  font-size: clamp(30px, 4vw, 58px);
+  line-height: 1.05;
+  font-weight: 400;
+  max-width: 8em;
+  letter-spacing: -0.055em;
+  margin: 15px 0;
+}
+.entry .programme button span {
+  font-size: 11px;
+}
+.entry .programme button b {
+  font-size: 24px;
+}
+.entry .visit {
+  grid-column: 2;
+  grid-row: 1;
+  background: #d7977b;
+  color: #292f2b;
+  display: grid;
+  grid-template-columns: 35px minmax(0, 1fr);
+  padding: 140px 10% 40px;
+  gap: 15px;
+}
+.entry .visit .rail {
+  writing-mode: vertical-rl;
+  font-size: 10px;
+}
+.entry .visit h2 {
+  font-size: clamp(55px, 7vw, 110px);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.08em;
+  margin: 0 0 30px;
+}
+.entry .visit p {
+  font-size: 14px;
+  line-height: 1.9;
+}
+.entry .visit aside {
+  grid-column: 2;
+}
+.entry .visit aside p {
+  font-size: 11px;
+}
+.entry .visit aside button {
+  display: none;
+}
+.entry .member-field {
+  grid-column: 2;
+  grid-row: 2;
+  background: #dfdf8f;
+  color: #2c3031;
+  display: grid;
+  grid-template-columns: 35px minmax(0, 1fr);
+  padding: 40px 10%;
+  gap: 15px;
+}
+.entry .member-field .rail {
+  writing-mode: vertical-rl;
+  font-size: 10px;
+}
+.entry .member-field h2 {
+  font-size: 42px;
+  font-weight: 400;
+  margin: 12px 0;
+}
+.entry .member-field p {
+  font-size: 13px;
+  line-height: 1.9;
+}
+.entry .member-field button {
+  border: 0;
+  border-bottom: 1px solid;
+  background: none;
+  padding: 8px 0;
+  font-size: 12px;
+}
+@media (max-width: 750px) {
+  .entry header {
+    position: absolute;
+    top: 20px;
+    left: 6%;
+    right: 6%;
+    gap: 20px;
+  }
+  .entry header > a {
+    font-size: 22px;
+  }
+  .entry header nav {
+    font-size: 9px;
+    gap: 12px;
+  }
+  .entry header button {
+    color: #fff8e9;
+    background: none;
+    padding: 0;
+  }
+  .entry main {
+    display: block;
+  }
+  .entry .programme {
+    padding: 120px 8% 45px 5%;
+    grid-template-columns: 20px minmax(0, 1fr);
+    gap: 20px;
+  }
+  .entry .programme button h3 {
+    font-size: 37px;
+  }
+  .entry .programme button {
+    padding: 25px 0;
+  }
+  .entry .visit {
+    padding: 45px 8%;
+    grid-template-columns: 20px minmax(0, 1fr);
+  }
+  .entry .visit h2 {
+    font-size: 86px;
+  }
+  .entry .visit p {
+    font-size: 13px;
+  }
+  .entry .member-field {
+    padding: 45px 8%;
+    grid-template-columns: 20px minmax(0, 1fr);
+  }
+  .entry .member-field h2 {
+    font-size: 36px;
+  }
+}
+
+.entry header {
+  background: transparent;
+}
+.entry header nav a,
+.entry header nav button {
+  background: #eee6d7;
+  color: #2c3031;
+  padding: 8px 12px;
+  font-size: 10px;
+}
+@media (max-width: 750px) {
+  .entry header nav {
+    gap: 8px;
+  }
+  .entry header nav a,
+  .entry header nav button {
+    font-size: 8px;
+    padding: 7px;
   }
 }
 </style>

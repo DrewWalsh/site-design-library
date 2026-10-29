@@ -2,11 +2,11 @@
 
 **Idea.** Independent contributions can meet in a composition nobody authored alone.
 
-**Composition.** Three full-width illustrated bands form a strange continuous landscape. Separate sky, figure and ground selectors expose the seams and the credits behind each combination.
+**Composition.** Three illustrated landscape bands fill the opening edge to edge. Controls and contributor labels are pinned to the drawing itself; a small rotated edition ticket sits near the lower horizon. There is no site masthead or separate introduction above the composition.
 
 **Navigation and complete example.** Combine three skies, three figures and three grounds from original SVG artwork, read the three contributors’ notes and save a numbered local edition with explicit credits.
 
-**Responsive and inclusive behaviour.** Each band keeps a wide illustration crop with controls below it. Previous and next buttons replace any reliance on swiping. All controls are native buttons or labelled inputs. Movement is discretionary, no sound starts automatically, reduced-motion preferences remove transitions, and a direct index exposes the same content.
+**Responsive and inclusive behaviour.** All three bands remain visible as a tall triptych on phones. Each has labelled previous/next controls and a contributor note, with a separate edition ticket. Native buttons, visible focus, a direct return path and reduced-motion support preserve access to the same content.
 
 **Adaptation.** Make the seams and authorship visible. Every combination should remain intentionally composed, and assets must be original or correctly licensed. Retain the relationship between navigation and content. Do not reduce the reference to a generic hero followed by interchangeable cards.
 

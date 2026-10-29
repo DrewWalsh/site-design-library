@@ -58,7 +58,7 @@ function open(i: number) {
 }
 </script>
 <template>
-  <div class="specimen">
+  <div class="specimen" :class="{ entry: state === 'start' }">
     <a class="skip" href="#content">Skip to content</a>
 
     <header>
@@ -70,10 +70,7 @@ function open(i: number) {
     </header>
     <main id="content">
       <template v-if="state === 'start'"
-        ><div class="object-title">
-          <h1>Everything<br />has an inside.</h1>
-          <p>Six parts. One deliberate exposure.<br />Choose a component to enter its story.</p>
-        </div>
+        ><h1 class="sr">Object 07: enter the mechanical camera</h1>
         <div class="camera" :class="{ assembled: !exploded }">
           <svg viewBox="0 0 1200 500" aria-hidden="true">
             <defs>
@@ -595,6 +592,160 @@ footer {
     transition: none !important;
     animation: none !important;
     scroll-behavior: auto !important;
+  }
+}
+
+/* The entry is the experience itself; supporting routes retain its vocabulary. */
+
+.entry {
+  position: relative;
+  padding-left: 90px;
+  background: #eef1eb;
+}
+.entry header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 90px;
+  padding: 25px 16px;
+  border: 0;
+  border-right: 1px solid #263732;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 50px;
+}
+.entry header strong {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 55px;
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+.entry header strong span {
+  font-size: 8px;
+  margin: 15px 10px 0 0;
+  letter-spacing: 0.12em;
+}
+.entry header nav {
+  writing-mode: vertical-rl;
+  display: flex;
+  gap: 25px;
+}
+.entry header nav button {
+  font-size: 10px;
+  padding: 10px;
+  border: 0;
+  border-left: 1px solid;
+}
+.entry main > h1 {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip-path: inset(50%) !important;
+  white-space: nowrap !important;
+}
+.entry .camera {
+  height: 83svh;
+  min-height: 650px;
+  margin: 0;
+  position: relative;
+  background-image:
+    linear-gradient(#26373208 1px, transparent 1px),
+    linear-gradient(90deg, #26373208 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+.entry .camera svg {
+  width: 100%;
+  height: 100%;
+}
+.entry .camera .part {
+  font-size: 11px;
+  padding: 10px 15px;
+  background: #eef1eb;
+  border: 1px solid #263732;
+  border-radius: 50%;
+  min-height: 58px;
+  max-width: 155px;
+}
+.entry .object-controls {
+  padding: 25px 4%;
+  border-top: 1px solid #263732;
+}
+.entry .parts-list {
+  margin: 0;
+  padding: 0 4% 50px;
+}
+@media (max-width: 750px) {
+  .entry {
+    padding-left: 0;
+  }
+  .entry header {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    border: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 14px 5%;
+  }
+  .entry header strong {
+    writing-mode: horizontal-tb;
+    transform: none;
+    font-size: 29px;
+  }
+  .entry header strong span {
+    display: none;
+  }
+  .entry header nav {
+    writing-mode: horizontal-tb;
+    gap: 6px;
+  }
+  .entry header nav button {
+    font-size: 9px;
+    border: 1px solid;
+    padding: 8px;
+  }
+  .entry .camera {
+    height: 440px;
+    min-height: 440px;
+  }
+  .entry .camera .part {
+    font-size: 8px;
+    padding: 7px;
+    min-height: 36px;
+    max-width: 100px;
+  }
+  .entry .camera .p0 {
+    top: 12%;
+  }
+  .entry .camera .p1 {
+    top: 2%;
+  }
+  .entry .camera .p2 {
+    top: 43%;
+  }
+  .entry .camera .p3 {
+    top: 79%;
+  }
+  .entry .camera .p4 {
+    top: 75%;
+  }
+  .entry .camera .p5 {
+    top: 35%;
+  }
+  .entry .object-controls {
+    padding: 20px 5%;
+  }
+  .entry .parts-list {
+    padding: 0 5% 35px;
   }
 }
 </style>

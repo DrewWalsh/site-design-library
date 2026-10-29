@@ -59,7 +59,7 @@ function save() {
 }
 </script>
 <template>
-  <div class="specimen">
+  <div class="specimen" :class="{ entry: state === 'start' }">
     <a class="skip" href="#content">Skip to content</a>
 
     <header>
@@ -77,13 +77,14 @@ function save() {
     </header>
     <main id="content">
       <template v-if="state === 'start'"
-        ><h1>There is more<br />than one way<br />to read a page.</h1>
+        ><h1 class="sr">Unfold: six contributions on one sheet</h1>
         <div class="sheet">
           <section v-for="(p, i) in pieces" :key="p.title" :class="{ closed: !opened.includes(i) }">
             <button class="crease" :aria-expanded="opened.includes(i)" @click="fold(i)">
               <span>FOLD 0{{ i + 1 }}</span
               ><span>{{ opened.includes(i) ? '−' : '↗' }}</span>
             </button>
+            <span class="fold-number" aria-hidden="true">0{{ i + 1 }}</span>
             <h2>{{ p.title }}</h2>
             <template v-if="opened.includes(i)"
               ><p>{{ p.text }}</p>
@@ -365,6 +366,186 @@ footer {
     transition: none !important;
     animation: none !important;
     scroll-behavior: auto !important;
+  }
+}
+
+/* The entry is the experience itself; supporting routes retain its vocabulary. */
+
+.entry {
+  background: #272a24;
+  color: #e7f44b;
+  position: relative;
+}
+.entry header {
+  position: relative;
+  min-height: 150px;
+  border: 0;
+  padding: 24px 4%;
+  align-items: center;
+}
+.entry header strong {
+  font-size: clamp(60px, 9vw, 130px);
+  letter-spacing: -0.08em;
+  line-height: 1;
+  transform: rotate(-5deg);
+}
+.entry header > span {
+  max-width: 150px;
+  margin-left: auto;
+}
+.entry header nav {
+  max-width: 230px;
+  justify-content: flex-end;
+}
+.entry main > h1 {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip-path: inset(50%) !important;
+  white-space: nowrap !important;
+}
+.entry .sheet {
+  width: 94%;
+  margin: 10px auto 90px;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-rows: auto auto;
+  transform: rotate(-1deg);
+}
+.entry .sheet section {
+  color: #171810;
+  background: #e7f44b;
+  min-height: 280px;
+  padding: 22px;
+  border: 1px dashed #343723;
+  overflow: visible;
+  box-shadow: 10px 10px 0 #141710;
+}
+.entry .sheet section:nth-child(1) {
+  grid-column: 1/5;
+  grid-row: 1;
+  transform: translateY(35px);
+}
+.entry .sheet section:nth-child(2) {
+  grid-column: 5/10;
+  grid-row: 1;
+  background: #f4ff92;
+}
+.entry .sheet section:nth-child(3) {
+  grid-column: 10/13;
+  grid-row: 1;
+  transform: perspective(1000px) rotateY(-15deg);
+  transform-origin: left;
+}
+.entry .sheet section:nth-child(4) {
+  grid-column: 2/6;
+  grid-row: 2;
+  background: #bdcb36;
+  margin-top: 35px;
+}
+.entry .sheet section:nth-child(5) {
+  grid-column: 6/10;
+  grid-row: 2;
+}
+.entry .sheet section:nth-child(6) {
+  grid-column: 10/13;
+  grid-row: 2;
+  transform: translateY(-18px);
+  background: #d5df49;
+}
+.fold-number {
+  font: clamp(60px, 8vw, 110px)/0.85 var(--heading);
+  display: block;
+  letter-spacing: -0.08em;
+  margin: 18px 0;
+}
+.entry .sheet h2 {
+  font-size: clamp(22px, 2.6vw, 38px);
+  max-width: 100%;
+}
+.entry .sheet p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+.entry .crease {
+  margin: 0 0 12px;
+}
+.entry .sheet .closed {
+  min-height: 300px;
+}
+.entry .sheet section:nth-child(2) .fold-number {
+  float: right;
+  font-size: 160px;
+  line-height: 0.8;
+  opacity: 0.15;
+  margin: 0;
+}
+.entry .fold-corner {
+  width: 90px;
+  height: 90px;
+}
+.entry .caption {
+  padding: 0 4%;
+  font-family: var(--heading);
+  font-size: 22px;
+}
+.entry footer {
+  border-color: #707663;
+}
+@media (max-width: 750px) {
+  .entry header {
+    min-height: 160px;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 20px 6%;
+  }
+  .entry header strong {
+    font-size: 67px;
+  }
+  .entry header > span {
+    font-size: 9px;
+    max-width: 105px;
+  }
+  .entry header nav {
+    max-width: none;
+    justify-content: flex-start;
+    gap: 8px;
+  }
+  .entry .sheet {
+    display: block;
+    width: 86%;
+    transform: none;
+    margin-bottom: 40px;
+  }
+  .entry .sheet section:nth-child(n) {
+    transform: none;
+    margin: 0;
+    min-height: 180px;
+    padding: 22px;
+  }
+  .entry .sheet section:nth-child(2n) {
+    transform: translateX(14px);
+  }
+  .entry .fold-number {
+    float: right;
+    font-size: 80px;
+    margin: 12px 0 16px 12px;
+  }
+  .entry .sheet section:nth-child(2) .fold-number {
+    font-size: 80px;
+    opacity: 1;
+  }
+  .entry .sheet h2 {
+    font-size: 28px;
+    padding-top: 12px;
+  }
+  .entry .sheet p {
+    clear: both;
+  }
+  .entry .sheet .closed {
+    min-height: 200px;
   }
 }
 </style>

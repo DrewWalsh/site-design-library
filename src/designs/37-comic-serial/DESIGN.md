@@ -4,9 +4,11 @@
 
 **Visual grammar.** Arrange scenes as panels with purposeful changes in scale: an establishing image, close detail, and explanatory beat. Chapter navigation sits above the story; a persistent progress label identifies the current scene. Use rounded display lettering for short dialogue, a readable sans serif for explanation, heavy ink boundaries, and a restrained illustration palette. Speech balloons never contain essential text solely inside an image.
 
+**Composition.** An illustrated comic cover is the entry: the story title lives in the sky of the establishing panel, followed by a close character portrait, a wide evening pause and a shared scene. Dialogue and captions pace the page; chapter controls occupy the book’s gutter.
+
 **Specimen and flow.** _Neighbourhood Mythologies_ presents fictional local history stories. Choose a chapter, move through its panels, then open the next episode. Supporting views are the illustrated chapter index and a complete text transcript with image descriptions.
 
-**Mobile and motion.** Stack panels in their authored reading order. Desktop spreads become vertical scenes without swipe dependence; optional panel transitions disappear under reduced motion.
+**Responsive and inclusive behaviour.** Panels become an authored vertical strip. The first panel retains an illustrated cover, while close and wide shots remain visibly different and captions stay selectable. Native buttons, visible focus, a direct return path and reduced-motion support preserve access to the same content.
 
 **Identity and effort.** Preserve narrative pacing and panel relationships; avoid rendering an ordinary landing page inside comic borders. **Effort: medium**, with a separate illustration workload.
 
@@ -26,7 +28,7 @@ Brand, subject, accent and equivalent licensed typefaces can change. Preserve co
 
 ## Tokens and typography
 
-Heading: Space Grotesk. Reading: DM Sans. Local WOFF2 fonts with system fallbacks. Page #f6e8cd; surface #ffffff; text #293d3b; accent #a74434. Eight-pixel base spacing; reading measure 65ch; width 1240px. See tokens.css for role values and Demo.vue for composition. Palette and type match the working specimen.
+Heading: Space Grotesk. Reading: DM Sans. Local WOFF2 fonts with system fallbacks. Page #f6e8cd; surface #ffffff; text #293d3b; accent #a74434. Base tokens define an eight-pixel spacing unit, 65ch reading measure and 1240px content width; the composition-specific rules in Demo.vue override these where the canvas, type or information density requires it. See tokens.css for role values and Demo.vue for composition. Palette and type match the working specimen.
 
 ## States
 

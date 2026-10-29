@@ -7,10 +7,13 @@
   "family": "Workspaces & discovery",
   "status": "ready",
   "thesis": "Use location as the primary route into information.",
-  "suitableFor": ["Maps", "Discovery"],
+  "suitableFor": [
+    "Maps",
+    "Discovery"
+  ],
   "character": "Restrained",
   "traits": {
-    "composition": "Large illustrated district map linked to a compact trail list",
+    "composition": "The atlas opens directly on its district map. A compact search and route drawer floats on the map edge; numbered native buttons occupy the actual route positions and respond to the same surface filter as the list. There is no introductory hero between navigation and geography.",
     "navigation": "Equivalent map and list selection",
     "typography": "DM Sans",
     "density": "Medium",
@@ -45,7 +48,7 @@
   "referenceImages": [
     {
       "file": "/previews/16/desktop.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/16/f680114693e7cc8c-desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/16/f01f5e7f6e834379-desktop.jpg",
       "route": "/preview/16-field-atlas/start",
       "viewport": {
         "width": 1440,
@@ -53,13 +56,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:e85dd591cf3b310868218d3612606731ef362932fc61a985b7255c271969ca22",
-      "sha256": "f680114693e7cc8c4482cbf1489a0cf92ae46435222e218beef122c9b55ef177",
+      "sourceRevision": "sha256:fef93aa72e64ca1312a009ab11408880a10c8fe8a9a78150813c1b78aa54d63b",
+      "sha256": "f01f5e7f6e83437998ed2624c16b1e87496d90a523444b347758c5b9a80bf2f0",
       "fullPage": false
     },
     {
       "file": "/previews/16/mobile.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/16/d5c472079e9ce461-mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/16/7a3c4c63b3b2bf29-mobile.jpg",
       "route": "/preview/16-field-atlas/start",
       "viewport": {
         "width": 390,
@@ -67,13 +70,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:e85dd591cf3b310868218d3612606731ef362932fc61a985b7255c271969ca22",
-      "sha256": "d5c472079e9ce461576f544804a5342420c8a38bb1e61563a15b28dc5718b87e",
+      "sourceRevision": "sha256:fef93aa72e64ca1312a009ab11408880a10c8fe8a9a78150813c1b78aa54d63b",
+      "sha256": "7a3c4c63b3b2bf29371a2d698a65a882c75bad37a8eec2978785a5c06e3c09e1",
       "fullPage": false
     },
     {
       "file": "/previews/16/detail.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/16/efa3e82b534e33fd-detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/16/671796de155ecb54-detail.jpg",
       "route": "/preview/16-field-atlas/detail",
       "viewport": {
         "width": 1440,
@@ -81,13 +84,13 @@
       },
       "state": "detail",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:e85dd591cf3b310868218d3612606731ef362932fc61a985b7255c271969ca22",
-      "sha256": "efa3e82b534e33fdc1a50e5400d9f190f2355dccc2805ff7690fa05679f0e212",
+      "sourceRevision": "sha256:fef93aa72e64ca1312a009ab11408880a10c8fe8a9a78150813c1b78aa54d63b",
+      "sha256": "671796de155ecb5411819d60ccf56a844d4b43287f4b67e60cc7eee10d448ae0",
       "fullPage": false
     },
     {
       "file": "/previews/16/full-page.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/16/1fab313843e8b426-full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/16/bd4d8b15039148ec-full-page.jpg",
       "route": "/preview/16-field-atlas/start",
       "viewport": {
         "width": 1440,
@@ -95,28 +98,43 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:e85dd591cf3b310868218d3612606731ef362932fc61a985b7255c271969ca22",
-      "sha256": "1fab313843e8b4263127bb694c1dfac663a63c9bc632deee5e9fc1aa7606be95",
+      "sourceRevision": "sha256:fef93aa72e64ca1312a009ab11408880a10c8fe8a9a78150813c1b78aa54d63b",
+      "sha256": "bd4d8b15039148ecd047438a07a8e5e92de3f8d9e517dad1b01537c7ffc231ac",
       "fullPage": true
     }
   ],
   "sourcePath": "src/designs/16-field-atlas",
-  "neighbours": ["26", "20"],
+  "neighbours": [
+    "26",
+    "20"
+  ],
   "palette": {
     "page": "#f0f0e4",
     "surface": "#ffffff",
     "ink": "#2b4439",
     "accent": "#35694c"
   },
-  "fonts": ["DM Sans"],
-  "brief": "**Philosophy and fit.** Use location as the primary route into information. Suitable for local guides, public amenities, heritage trails, travel research, and geographically organised collections.\n\n**Visual grammar.** Pair a large, deliberately styled map with a compact searchable place list and a filter bar. Use an earthy cream ground, dark green labels, blue waterways, and distinct labelled place markers. A practical sans and small cartographic labels reinforce the atlas character. The selected place remains obvious in both map and list.\n\n**Specimen and flow.** *Northbank Footpaths* uses an original SVG map of a fictional district. Visitors filter trails by surface, select a route, and inspect its stops and access notes. Supporting states show a route detail and a list-only search result.\n\n**Adaptation and identity.** Mobile uses a clear map/list switch while preserving filters and selection. All places remain reachable through ordinary links; the reference needs no geolocation or external map service. Preserve geographic relationships and readable labels; avoid decorative maps disconnected from results or essential hover interactions. **Effort: medium.**",
+  "fonts": [
+    "DM Sans"
+  ],
+  "brief": "**Philosophy and fit.** Use location as the primary route into information. Suitable for local guides, public amenities, heritage trails, travel research, and geographically organised collections.\n\n**Visual grammar.** Pair a large, deliberately styled map with a compact searchable place list and a filter bar. Use an earthy cream ground, dark green labels, blue waterways, and distinct labelled place markers. A practical sans and small cartographic labels reinforce the atlas character. The selected place remains obvious in both map and list.\n\n**Composition.** The atlas opens directly on its district map. A compact search and route drawer floats on the map edge; numbered native buttons occupy the actual route positions and respond to the same surface filter as the list. There is no introductory hero between navigation and geography.\n\n**Specimen and flow.** _Northbank Footpaths_ uses an original SVG map of a fictional district. Visitors filter trails by surface, select a route, and inspect its stops and access notes. Supporting states show a route detail and a list-only search result.\n\n**Adaptation and identity.** Mobile uses a clear map/list switch while preserving filters and selection. All places remain reachable through ordinary links; the reference needs no geolocation or external map service. Preserve geographic relationships and readable labels; avoid decorative maps disconnected from results or essential hover interactions. **Effort: medium.**",
   "scope": "An expansive sample page with representative local interactions; no production business backend.",
   "discovery": {
-    "industries": ["Travel", "Local discovery"],
-    "visitorGoals": ["Explore a place"],
-    "conversionActions": ["Save a location"],
+    "industries": [
+      "Travel",
+      "Local discovery"
+    ],
+    "visitorGoals": [
+      "Explore a place"
+    ],
+    "conversionActions": [
+      "Save a location"
+    ],
     "siteSize": "Searchable catalogue",
-    "interactionTypes": ["Map", "List filters"],
+    "interactionTypes": [
+      "Map",
+      "List filters"
+    ],
     "keywords": [
       "Maps",
       "Discovery",

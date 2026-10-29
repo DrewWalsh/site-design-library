@@ -4,9 +4,11 @@
 
 **Visual grammar.** A desktop, icon labels, bevelled window frames, title bars, and a task strip organise content into discrete applications. Use a neutral grey interface, one selected-state colour, compact system-like typography, and restrained bitmap accents. Windows have explicit open, close, minimise, and maximise controls; their content uses semantic document structure.
 
+**Composition.** The desktop opens a genuine file browser: an address bar, file name/type/year rows and a selected project preview. The personal introduction lives in About, while identities, publications and websites use different preview treatments.
+
 **Specimen and flow.** _Parcel OS_ is a fictional designer’s portfolio with only Projects, Contact, and Help windows. Open Projects, select a case study, then open its contact form. Supporting states are an application switcher and a help view explaining the controls. Window positioning is optional; a general desktop framework is outside the specimen's scope.
 
-**Mobile and motion.** Show one full-width application at a time, with a clear back control and application list. Keyboard focus follows the active window and returns to its launcher when closed.
+**Responsive and inclusive behaviour.** On phones the compact file rows remain above the selected preview, keeping application navigation and the selected file together. Native buttons, visible focus, a direct return path and reduced-motion support preserve access to the same content.
 
 **Identity and effort.** Preserve the desktop’s task model; avoid decorative windows that obscure navigation or pretend to access the visitor’s filesystem. **Effort: high.**
 
@@ -26,7 +28,7 @@ Brand, subject, accent and equivalent licensed typefaces can change. Preserve co
 
 ## Tokens and typography
 
-Heading: DM Sans. Reading: DM Sans. Local WOFF2 fonts with system fallbacks. Page #3e7573; surface #e5e5df; text #19232a; accent #253b80. Eight-pixel base spacing; reading measure 65ch; width 1240px. See tokens.css for role values and Demo.vue for composition. Palette and type match the working specimen.
+Heading: DM Sans. Reading: DM Sans. Local WOFF2 fonts with system fallbacks. Page #3e7573; surface #e5e5df; text #19232a; accent #253b80. Base tokens define an eight-pixel spacing unit, 65ch reading measure and 1240px content width; the composition-specific rules in Demo.vue override these where the canvas, type or information density requires it. See tokens.css for role values and Demo.vue for composition. Palette and type match the working specimen.
 
 ## States
 

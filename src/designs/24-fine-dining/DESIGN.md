@@ -4,9 +4,11 @@
 
 **Visual grammar.** The menu provides the main compositional rhythm: course titles, descriptions, and prices arranged as a carefully typeset sequence. A narrow navigation offers menu, visit, and reservations. Deep oxblood, ivory, and muted brass support editorial food photography, a characterful serif, and generous vertical intervals. Rules and small botanical details replace repeated boxes.
 
+**Composition.** The restaurant opens on a complete typeset menu sheet, with course headings, descriptions, prices and a vegetarian control. A narrow hospitality rail carries hours and reservations; botanical linework and a small photographic interlude establish atmosphere beside the menu.
+
 **Specimen and flow.** _Ember & Orchard_ presents a seasonal restaurant. Read the current menu, inspect dietary information, and choose a date and party size in a local reservation demonstration. Supporting views include private dining and a clear unavailable-time state with nearby alternatives. The final confirmation is visibly a sample reservation.
 
-**Responsive behaviour.** Menu descriptions and prices remain aligned without shrinking text. The reservation form becomes a simple vertical sequence; photography does not obstruct it.
+**Responsive and inclusive behaviour.** A compact hours/reservation strip precedes the menu. Dish titles, prices and dietary information remain aligned; the food photograph follows the practical menu. Native buttons, visible focus, a direct return path and reduced-motion support preserve access to the same content.
 
 **Identity rules.** Preserve the menu’s reading rhythm and practical visit information. Avoid autoplay ambience, illegible gold text, and hiding prices behind photographs. **Effort: medium.**
 
@@ -26,7 +28,7 @@ Brand, subject, accent and equivalent licensed typefaces can change. Preserve co
 
 ## Tokens and typography
 
-Heading: Libre Baskerville. Reading: DM Sans. Local WOFF2 fonts with system fallbacks. Page #321d23; surface #432c30; text #f4ebdc; accent #dec192. Eight-pixel base spacing; reading measure 65ch; width 1240px. See tokens.css for role values and Demo.vue for composition. Palette and type match the working specimen.
+Heading: Libre Baskerville. Reading: DM Sans. Local WOFF2 fonts with system fallbacks. Page #321d23; surface #432c30; text #f4ebdc; accent #dec192. Base tokens define an eight-pixel spacing unit, 65ch reading measure and 1240px content width; the composition-specific rules in Demo.vue override these where the canvas, type or information density requires it. See tokens.css for role values and Demo.vue for composition. Palette and type match the working specimen.
 
 ## States
 
@@ -49,4 +51,4 @@ Reviewed working sample. Browser checks cover entry-page reflow at 320, 390, 768
 
 ## Distinctive composition
 
-Serif menu captions and a slower typographic cadence support fine dining, distinct from the new Everyday Eatery’s menu board.
+The restaurant opens on a complete typeset menu sheet, with course headings, descriptions, prices and a vegetarian control. A narrow hospitality rail carries hours and reservations; botanical linework and a small photographic interlude establish atmosphere beside the menu.

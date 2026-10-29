@@ -48,6 +48,8 @@ Agents can read the gallery and every inspector without JavaScript. `/llms.txt`,
 
 Designs 76–100 explore folds, layers, apertures, tuning, braided narration, opposing accounts, depth, branching prose, causal systems, redactions, printing, object navigation, recursive containment, negative space, reversible ribbons, patch cables, interface performance, drawing, scores, film, rules, theatre, shadows, collage and semantic zoom. See the [primary research and implementation map](docs/EXPERIMENTAL_RESEARCH.md).
 
+The [collection diversity review](docs/DIVERSITY_AUDIT.md) records the composition audit of all 100 examples and the 58 revisions made to reduce repeated openings, navigation patterns and page rhythms. It explains which conventional patterns were retained for practical reasons.
+
 ## Maintain
 
 Change the individual package, run the relevant browser tests, refresh its captures, review them, and mark it ready only when it is complete. The catalogue build rejects stale captures on ready designs. See [operations](docs/OPERATIONS.md) for captures, Tigris publishing, Netlify deployment, and the exact project identifiers.

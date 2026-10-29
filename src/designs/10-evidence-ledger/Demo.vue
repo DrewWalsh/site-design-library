@@ -64,7 +64,7 @@ const filtered = computed(() =>
 );
 </script>
 <template>
-  <div class="specimen">
+  <div class="specimen" :class="{ entry: state === 'start' }">
     <a class="skip" href="#content">Skip to content</a>
     <header>
       <strong>▤ PUBLIC WORKS LEDGER</strong
@@ -77,13 +77,9 @@ const filtered = computed(() =>
         contracts.
       </div>
       <template v-if="state === 'start'"
-        ><div class="title">
-          <div>
-            <p class="eyebrow">NORTHBANK / PUBLIC RECORDS</p>
-            <h1>Follow the evidence.</h1>
-            <p>Inspect the claim. Read the source. Keep the distinction clear.</p>
-          </div>
-          <span>5 records<br />Updated 26 Oct 2026</span>
+        ><div class="records-heading">
+          <h1>Public records</h1>
+          <span>5 records · Updated 26 Oct 2026</span>
         </div>
         <div class="ledger">
           <aside>
@@ -699,6 +695,122 @@ main > h1 {
   }
   .ledger .scroll {
     overflow: visible;
+  }
+}
+
+/* The entry is the experience itself; supporting routes retain its vocabulary. */
+
+.entry header {
+  padding: 22px 3%;
+}
+.entry main {
+  max-width: 1500px;
+  width: 100%;
+  padding: 25px 3%;
+  margin: auto;
+}
+.entry .warning {
+  font-size: 10px;
+  padding: 12px;
+  margin-bottom: 20px;
+}
+.records-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.records-heading h1 {
+  font-size: 25px;
+  letter-spacing: -0.03em;
+  margin: 0;
+}
+.records-heading span {
+  font-size: 11px;
+}
+.entry .ledger {
+  grid-template-columns: 210px minmax(0, 1fr);
+  gap: 30px;
+}
+.entry .ledger aside {
+  padding-top: 10px;
+}
+.entry .ledger aside button {
+  font-size: 12px;
+  padding: 12px 0;
+}
+.entry .search {
+  font-size: 10px;
+}
+.entry .search input {
+  font-size: 13px;
+  padding: 14px;
+}
+.entry .count {
+  font-size: 11px;
+}
+.entry th {
+  font-size: 11px;
+}
+.entry td {
+  padding: 24px 12px;
+  font-size: 13px;
+}
+.entry td small {
+  font-size: 10px;
+}
+.entry td button {
+  font-size: 16px;
+}
+.entry .method {
+  margin-top: 40px;
+}
+@media (max-width: 750px) {
+  .records-heading {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .records-heading h1 {
+    font-size: 24px;
+    margin-bottom: 7px;
+  }
+  .records-heading span {
+    font-size: 10px;
+  }
+  .entry main {
+    padding: 20px 5%;
+  }
+  .entry .ledger {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .entry .ledger > aside {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 0;
+  }
+  .entry .ledger aside > .eyebrow {
+    width: 100%;
+    margin: 0;
+    font-size: 9px;
+  }
+  .entry .ledger aside button {
+    padding: 8px 10px;
+    border: 1px solid #b3bebf;
+    font-size: 10px;
+  }
+  .entry .ledger aside h3,
+  .entry .ledger aside p:not(.eyebrow) {
+    display: none;
+  }
+  .entry td {
+    padding: 14px 10px;
+  }
+  .entry td button {
+    font-size: 15px;
   }
 }
 </style>

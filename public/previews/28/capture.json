@@ -1,12 +1,12 @@
 {
   "designId": "28",
-  "sourceRevision": "sha256:d386970766548132e1d16d9be9c138acefbc4f01b6fd3ff1aeeabbe0e93698ce",
-  "capturedAt": "2026-10-27T00:06:37.752Z",
-  "browser": "156.0.4314.42",
+  "sourceRevision": "sha256:d3409d44fbfd2896dd9a3213ae7b89d0b0c059770409efb8e24084f6eba7f3f6",
+  "capturedAt": "2026-10-29T20:37:51.074Z",
+  "browser": "156.0.4314.50",
   "captures": [
     {
       "file": "/previews/28/desktop.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/28/5ff5530fb6cd7334-desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/28/9bdb6fa3db705675-desktop.jpg",
       "route": "/preview/28-grand-hotel/start",
       "viewport": {
         "width": 1440,
@@ -14,13 +14,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:d386970766548132e1d16d9be9c138acefbc4f01b6fd3ff1aeeabbe0e93698ce",
-      "sha256": "5ff5530fb6cd7334f5d11bb9a24e818b94d72bf66af6e7fa8fe0863e85bbf47b",
+      "sourceRevision": "sha256:d3409d44fbfd2896dd9a3213ae7b89d0b0c059770409efb8e24084f6eba7f3f6",
+      "sha256": "9bdb6fa3db705675dc73d1e37561312e6ef09a30b82470152f69ca805075fa96",
       "fullPage": false
     },
     {
       "file": "/previews/28/mobile.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/28/d01a5ac9dd5d79bc-mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/28/7220eaad7f5cba89-mobile.jpg",
       "route": "/preview/28-grand-hotel/start",
       "viewport": {
         "width": 390,
@@ -28,13 +28,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:d386970766548132e1d16d9be9c138acefbc4f01b6fd3ff1aeeabbe0e93698ce",
-      "sha256": "d01a5ac9dd5d79bc096d35f57daccae42f25f64669101ef98dc3b0d4c3c9dec4",
+      "sourceRevision": "sha256:d3409d44fbfd2896dd9a3213ae7b89d0b0c059770409efb8e24084f6eba7f3f6",
+      "sha256": "7220eaad7f5cba89215593d0e8b96994ebe41c83c852167d7b006b07fddc8115",
       "fullPage": false
     },
     {
       "file": "/previews/28/detail.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/28/df965ab15d73eb70-detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/28/8aff077a86c85a43-detail.jpg",
       "route": "/preview/28-grand-hotel/rooms",
       "viewport": {
         "width": 1440,
@@ -42,13 +42,13 @@
       },
       "state": "rooms",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:d386970766548132e1d16d9be9c138acefbc4f01b6fd3ff1aeeabbe0e93698ce",
-      "sha256": "df965ab15d73eb70ea19cd5c0f000d886da0acdbac31ede3fadf7648a809c972",
+      "sourceRevision": "sha256:d3409d44fbfd2896dd9a3213ae7b89d0b0c059770409efb8e24084f6eba7f3f6",
+      "sha256": "8aff077a86c85a43f12c2bcba1ecdc7e589e6c80b11c5d9c68afabe493784859",
       "fullPage": false
     },
     {
       "file": "/previews/28/full-page.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/28/aa63baa2bd856a42-full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/28/9ddfbffd79a8facd-full-page.jpg",
       "route": "/preview/28-grand-hotel/start",
       "viewport": {
         "width": 1440,
@@ -56,8 +56,8 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:d386970766548132e1d16d9be9c138acefbc4f01b6fd3ff1aeeabbe0e93698ce",
-      "sha256": "aa63baa2bd856a4227edf8025ec23cf22d18b0d9ba192ddc3a289804ade8ce6e",
+      "sourceRevision": "sha256:d3409d44fbfd2896dd9a3213ae7b89d0b0c059770409efb8e24084f6eba7f3f6",
+      "sha256": "9ddfbffd79a8facd3714de4f63cb1285ab755ce62c2b1cab98fb815a6c05e319",
       "fullPage": true
     }
   ]

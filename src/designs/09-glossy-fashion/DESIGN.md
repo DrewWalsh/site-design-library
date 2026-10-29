@@ -4,6 +4,8 @@
 
 **Visual grammar.** Compose a full-bleed cover image with an assertive display serif, tightly edited cover lines, and a discreet issue navigation. Interior pages alternate large photographic spreads, intentional white space, cropped details, and short interviews. Use black, paper white, and a single seasonal acid accent. Keep body copy on stable, readable surfaces even when headlines intersect images.
 
+**Composition.** The issue opens as a photographic magazine cover: full-bleed portrait, oversized integrated masthead, discreet issue line and cover story at the lower edge. Interior photography is larger than the text column, with a separate conversation spread.
+
 **Specimen and flow.** _Contour Quarterly_ presents a fictional visual culture issue. Visitors enter a cover story, move through its image-led chapters, and explore the contributors. Supporting screens provide an issue archive and an image detail view with caption and credit.
 
 **Adaptation and identity.** Mobile uses dedicated portrait crops and restores headings to predictable positions. Preserve editorial image scale and deliberate sequencing; avoid retail product grids, anonymous stock imagery, illegible type overlays, and page-turn gimmicks. Motion remains optional. **Effort: medium.**
@@ -24,7 +26,7 @@ Brand, subject, accent and equivalent licensed typefaces can change. Preserve co
 
 ## Tokens and typography
 
-Heading: Libre Baskerville. Reading: DM Sans. Local WOFF2 fonts with system fallbacks. Page #f3f2eb; surface #ffffff; text #191b18; accent #d8e34a. Eight-pixel base spacing; reading measure 65ch; width 1240px. See tokens.css for role values and Demo.vue for composition. Palette and type match the working specimen.
+Heading: Libre Baskerville. Reading: DM Sans. Local WOFF2 fonts with system fallbacks. Page #f3f2eb; surface #ffffff; text #191b18; accent #d8e34a. Base tokens define an eight-pixel spacing unit, 65ch reading measure and 1240px content width; the composition-specific rules in Demo.vue override these where the canvas, type or information density requires it. See tokens.css for role values and Demo.vue for composition. Palette and type match the working specimen.
 
 ## States
 
@@ -47,4 +49,4 @@ Reviewed working sample. Browser checks cover entry-page reflow at 320, 390, 768
 
 ## Distinctive composition
 
-Widely spaced fashion captions use the humanist sans rather than technical monospace; the image-led editorial hierarchy remains.
+The issue opens as a photographic magazine cover: full-bleed portrait, oversized integrated masthead, discreet issue line and cover story at the lower edge. Interior photography is larger than the text column, with a separate conversation spread.

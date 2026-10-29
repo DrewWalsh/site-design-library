@@ -58,7 +58,7 @@ function restore(i: number) {
 }
 </script>
 <template>
-  <div class="specimen">
+  <div class="specimen" :class="{ entry: state === 'start' }">
     <a class="skip" href="#content">Skip to content</a>
 
     <header>
@@ -67,12 +67,7 @@ function restore(i: number) {
     </header>
     <main id="content">
       <template v-if="state === 'start'"
-        ><div class="instruction">
-          <h1>Connect a subject<br />to a way of seeing.</h1>
-          <p>
-            01 Choose a left socket.<br />02 Choose a right socket.<br />03 Follow the connection.
-          </p>
-        </div>
+        ><h1 class="sr">Crosswire: connect a subject socket to a method</h1>
         <div class="patchbay">
           <svg class="cables" viewBox="0 0 1000 500" preserveAspectRatio="none" aria-hidden="true">
             <path
@@ -541,6 +536,206 @@ footer {
     transition: none !important;
     animation: none !important;
     scroll-behavior: auto !important;
+  }
+}
+
+/* The entry is the experience itself; supporting routes retain its vocabulary. */
+
+.entry {
+  background: #121a19;
+  position: relative;
+  padding: 22px;
+}
+.entry header {
+  border: 0;
+  padding: 12px 20px 25px;
+}
+.entry header strong {
+  font-size: 24px;
+  letter-spacing: 0.12em;
+}
+.entry header span {
+  font-size: 8px;
+}
+.entry header button {
+  border: 1px solid #edbd64;
+  color: #edbd64;
+}
+.entry main > h1 {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip-path: inset(50%) !important;
+  white-space: nowrap !important;
+}
+.entry .patchbay {
+  border: 16px solid #344440;
+  border-radius: 25px;
+  box-shadow:
+    inset 0 0 0 2px #85958b,
+    0 12px 0 #070e0b;
+  min-height: 77svh;
+  grid-template-columns: 180px minmax(0, 1fr) 180px;
+  gap: 5%;
+  padding: 35px 4%;
+  background: #202c29;
+}
+.entry .patchbay:before,
+.entry .patchbay:after {
+  content: '+';
+  position: absolute;
+  font: 27px var(--heading);
+  color: #9baa9c;
+  top: 0;
+  left: 9px;
+}
+.entry .patchbay:after {
+  left: auto;
+  right: 9px;
+  top: auto;
+  bottom: 0;
+}
+.entry .sockets button {
+  background: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  padding: 20px 0;
+  border-bottom: 1px solid #51645b;
+  font-size: 17px;
+}
+.entry .sockets.right button {
+  flex-direction: column-reverse;
+}
+.entry .sockets i {
+  width: 75px;
+  height: 75px;
+  border-width: 14px;
+  box-shadow:
+    inset 0 0 0 3px #070e0b,
+    0 5px 0 #070e0b;
+}
+.entry .sockets > span {
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  color: #edbd64;
+}
+.entry .connection {
+  border: 0;
+  background: #121a19;
+  box-shadow:
+    0 0 0 9px #3a4c42,
+    0 0 0 11px #758575;
+  padding: 35px;
+  max-width: 620px;
+}
+.entry .connection h2 {
+  font-size: clamp(30px, 3.5vw, 54px);
+  line-height: 1.12;
+}
+.entry .connection > span {
+  font-size: 10px;
+}
+.entry .connection p {
+  font-size: 17px;
+  line-height: 1.7;
+}
+.entry .cables {
+  z-index: 1;
+}
+.entry .sockets,
+.entry .connection {
+  z-index: 2;
+}
+.entry .legend {
+  border: 0;
+  padding: 30px 15px;
+}
+.entry .legend > span {
+  font-size: 10px;
+}
+.entry .legend button {
+  color: #edbd64;
+}
+@media (max-width: 750px) {
+  .entry {
+    padding: 12px;
+  }
+  .entry header {
+    padding: 12px 8px 22px;
+    gap: 12px;
+  }
+  .entry header strong {
+    font-size: 18px;
+  }
+  .entry header span {
+    font-size: 7px;
+    max-width: 170px;
+  }
+  .entry header button {
+    font-size: 9px;
+    padding: 10px;
+  }
+  .entry .patchbay {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-width: 9px;
+    border-radius: 18px;
+    gap: 25px;
+  }
+  .entry .sockets {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+  }
+  .entry .sockets > span {
+    writing-mode: vertical-rl;
+    font-size: 8px;
+    letter-spacing: 0.1em;
+  }
+  .entry .sockets button,
+  .entry .sockets.right button {
+    flex: 1;
+    font-size: 12px;
+    border: 0;
+    gap: 12px;
+    padding: 0;
+  }
+  .entry .sockets i {
+    width: 44px;
+    height: 44px;
+    border-width: 8px;
+  }
+  .entry .connection {
+    padding: 25px 18px;
+    box-shadow:
+      0 0 0 5px #3a4c42,
+      0 0 0 6px #758575;
+    margin: 8px 0;
+  }
+  .entry .connection h2 {
+    font-size: 28px;
+  }
+  .entry .connection p {
+    font-size: 14px;
+  }
+  .entry .cables {
+    display: block;
+    opacity: 0.5;
+  }
+  .entry .legend {
+    padding: 25px 6px;
+    gap: 15px;
+  }
+  .entry .legend p {
+    font-size: 10px;
   }
 }
 </style>

@@ -7,10 +7,13 @@
   "family": "Retro & experimental",
   "status": "ready",
   "thesis": "Make a finite collection feel explorable at several scales without surrendering orientation.",
-  "suitableFor": ["Directories", "Portfolio"],
+  "suitableFor": [
+    "Directories",
+    "Portfolio"
+  ],
   "character": "Expressive",
   "traits": {
-    "composition": "Dense finite visual index with discrete overview, medium, and detail densities",
+    "composition": "The visual archive starts immediately at the density and search strip, followed by twenty-four different graphic compositions. Overview shows all 24 studies at once; medium and detail modes paginate smaller selections, so density changes the amount of visible context rather than simply card size.",
     "navigation": "Anchored search, medium filters, pagination, and return-to-results",
     "typography": "DM Sans",
     "density": "High",
@@ -45,7 +48,7 @@
   "referenceImages": [
     {
       "file": "/previews/50/desktop.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/50/57d5ce18d4089465-desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/50/fc4cc5300368beba-desktop.jpg",
       "route": "/preview/50-infinite-index/start",
       "viewport": {
         "width": 1440,
@@ -53,13 +56,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:4b70820190de36456df67f2c60c0665bc7691391320e9925077c7d4a0e7cd0ee",
-      "sha256": "57d5ce18d40894653c6d1399bdeeb32852dbe862b5812b5dc93f37d56998c33a",
+      "sourceRevision": "sha256:8508ef691d68953d429188f4f0c59bec60cdc4b5975455990ee5b9ebaa2c73d9",
+      "sha256": "fc4cc5300368beba854d2bfb89c70547b586bec0c0a747687998ad36bd5964e5",
       "fullPage": false
     },
     {
       "file": "/previews/50/mobile.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/50/11fbc107566469b4-mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/50/105f155507363228-mobile.jpg",
       "route": "/preview/50-infinite-index/start",
       "viewport": {
         "width": 390,
@@ -67,8 +70,8 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:4b70820190de36456df67f2c60c0665bc7691391320e9925077c7d4a0e7cd0ee",
-      "sha256": "11fbc107566469b4d5d12d496f7cd93150d7306a0e852d5d437be68f7784922d",
+      "sourceRevision": "sha256:8508ef691d68953d429188f4f0c59bec60cdc4b5975455990ee5b9ebaa2c73d9",
+      "sha256": "105f155507363228a92a3de439340ce8770d064652b2e95eed5f1c4147889b3c",
       "fullPage": false
     },
     {
@@ -81,13 +84,13 @@
       },
       "state": "detail",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:4b70820190de36456df67f2c60c0665bc7691391320e9925077c7d4a0e7cd0ee",
+      "sourceRevision": "sha256:8508ef691d68953d429188f4f0c59bec60cdc4b5975455990ee5b9ebaa2c73d9",
       "sha256": "e68da803e79bf0efd38e701353627e7e43961ef9c0011f78f4fd1bfc8d4f20f4",
       "fullPage": false
     },
     {
       "file": "/previews/50/full-page.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/50/3fbbb467375f26b3-full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/50/73bcfd83d77ca93a-full-page.jpg",
       "route": "/preview/50-infinite-index/start",
       "viewport": {
         "width": 1440,
@@ -95,28 +98,44 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:4b70820190de36456df67f2c60c0665bc7691391320e9925077c7d4a0e7cd0ee",
-      "sha256": "3fbbb467375f26b3b8c9835763c328ebc255f922237aef0a9ebb96fea0266a26",
+      "sourceRevision": "sha256:8508ef691d68953d429188f4f0c59bec60cdc4b5975455990ee5b9ebaa2c73d9",
+      "sha256": "73bcfd83d77ca93a862cb384a4e5b0f48b2538f3029573679986d2cba70efacf",
       "fullPage": true
     }
   ],
   "sourcePath": "src/designs/50-infinite-index",
-  "neighbours": ["20", "48"],
+  "neighbours": [
+    "20",
+    "48"
+  ],
   "palette": {
     "page": "#eeeee8",
     "surface": "#ffffff",
     "ink": "#30382f",
     "accent": "#445f3d"
   },
-  "fonts": ["DM Sans"],
-  "brief": "**Philosophy and fit.** Make a finite collection feel explorable at several scales without surrendering orientation. Suitable for visual archives, design references, photography collections, and substantial creative portfolios.\n\n**Visual grammar.** Use a dense, edge-to-edge index with an anchored search strip, visible result count, clear grouping labels, and selectable overview, medium, and detail densities. Thumbnails and short captions carry the page; typography and chrome recede. Density changes alter how much context is visible, rather than simply enlarging cards inside a conventional landing page.\n\n**Specimen and flow.** *The Reference Room* holds a finite set of fictional graphic studies. Filter by medium, change the overview density, open a specimen, and return to the same position. Supporting views are a text list of results and an explicit empty-result state. Pagination, deep links, and the current page remain visible.\n\n**Mobile and motion.** Use discrete density controls instead of mandatory pinch or wheel gestures. Keep captions legible and preserve focus when returning from details. Reduced motion switches views immediately.\n\n**Identity and effort.** Preserve overview-to-detail exploration; avoid an endless feed, hidden destinations, or costly unbounded rendering. **Effort: medium.**",
+  "fonts": [
+    "DM Sans"
+  ],
+  "brief": "**Philosophy and fit.** Make a finite collection feel explorable at several scales without surrendering orientation. Suitable for visual archives, design references, photography collections, and substantial creative portfolios.\n\n**Visual grammar.** Use a dense, edge-to-edge index with an anchored search strip, visible result count, clear grouping labels, and selectable overview, medium, and detail densities. Thumbnails and short captions carry the page; typography and chrome recede. Density changes alter how much context is visible, rather than simply enlarging cards inside a conventional landing page.\n\n**Composition.** The visual archive starts immediately at the density and search strip, followed by twenty-four different graphic compositions. Overview shows all 24 studies at once; medium and detail modes paginate smaller selections, so density changes the amount of visible context rather than simply card size.\n\n**Specimen and flow.** _The Reference Room_ holds a finite set of fictional graphic studies. Filter by medium, change the overview density, open a specimen, and return to the same position. Supporting views are a text list of results and an explicit empty-result state. Pagination, deep links, and the current page remain visible.\n\n**Responsive and inclusive behaviour.** Phones retain three-column overview, two-column medium and single-column detail modes, with compact captions and explicit pagination. Text-list and detail routes retain the selected filters. Native buttons, visible focus, a direct return path and reduced-motion support preserve access to the same content.\n\n**Identity and effort.** Preserve overview-to-detail exploration; avoid an endless feed, hidden destinations, or costly unbounded rendering. **Effort: medium.**",
   "scope": "An expansive sample page with representative local interactions; no production business backend.",
   "discovery": {
-    "industries": ["Archive", "Directory", "Research"],
-    "visitorGoals": ["Discover connections"],
-    "conversionActions": ["Inspect an index entry"],
+    "industries": [
+      "Archive",
+      "Directory",
+      "Research"
+    ],
+    "visitorGoals": [
+      "Discover connections"
+    ],
+    "conversionActions": [
+      "Inspect an index entry"
+    ],
     "siteSize": "Searchable catalogue",
-    "interactionTypes": ["Index filters", "Record navigation"],
+    "interactionTypes": [
+      "Index filters",
+      "Record navigation"
+    ],
     "keywords": [
       "Directories",
       "Portfolio",

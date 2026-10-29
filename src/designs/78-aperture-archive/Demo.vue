@@ -50,7 +50,7 @@ function save() {
 }
 </script>
 <template>
-  <div class="specimen">
+  <div class="specimen" :class="{ entry: state === 'start' }">
     <a class="skip" href="#content">Skip to content</a>
 
     <header>
@@ -60,7 +60,7 @@ function save() {
     <main id="content">
       <template v-if="state === 'start'"
         ><div class="scene">
-          <h1>Look into<br />the dark.</h1>
+          <h1 class="sr">After: a night archive seen through an aperture</h1>
           <svg
             viewBox="0 0 1200 650"
             role="img"
@@ -506,6 +506,156 @@ footer {
     transition: none !important;
     animation: none !important;
     scroll-behavior: auto !important;
+  }
+}
+
+/* The entry is the experience itself; supporting routes retain its vocabulary. */
+
+.entry {
+  position: relative;
+  background: #05090e;
+}
+.entry header {
+  position: absolute;
+  z-index: 3;
+  inset: 0 auto auto 0;
+  width: 100%;
+  height: 100svh;
+  pointer-events: none;
+  border: 0;
+  padding: 0;
+}
+.entry header strong {
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  font-size: 23px;
+  letter-spacing: 0.5em;
+  writing-mode: vertical-rl;
+}
+.entry header span {
+  font-size: 8px;
+  letter-spacing: 0.14em;
+  line-height: 2;
+  margin-top: 20px;
+}
+.entry header button {
+  pointer-events: auto;
+  position: absolute;
+  right: 26px;
+  top: 24px;
+  background: #0b1118;
+}
+.entry .scene {
+  min-height: 100svh;
+  height: 100svh;
+  overflow: hidden;
+}
+.entry .scene svg {
+  width: 100%;
+  height: 100%;
+}
+.entry .scene h1 {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip-path: inset(50%) !important;
+  white-space: nowrap !important;
+}
+.entry .aperture-note {
+  bottom: 15%;
+  right: 5%;
+  text-align: left;
+  padding-left: 20px;
+  border-left: 1px solid var(--accent);
+}
+.entry .aperture-note h2 {
+  font-size: clamp(34px, 4vw, 68px);
+  max-width: 6em;
+  line-height: 1;
+}
+.entry .coordinate {
+  bottom: 16%;
+  left: 5%;
+}
+.entry .controls {
+  position: absolute;
+  z-index: 4;
+  top: calc(100svh - 105px);
+  left: 5%;
+  right: 5%;
+  border: 0;
+  padding: 12px 0;
+  background: transparent;
+}
+.entry .controls button {
+  border: 0;
+  border-bottom: 1px solid #66736d;
+}
+.entry .controls input {
+  width: min(22vw, 250px);
+}
+.entry .intro {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 45px 5%;
+}
+@media (max-width: 700px) {
+  .entry header {
+    height: 100svh;
+  }
+  .entry header strong {
+    font-size: 17px;
+    left: 16px;
+    top: 20px;
+  }
+  .entry header span {
+    display: none;
+  }
+  .entry header button {
+    right: 16px;
+    top: 18px;
+    font-size: 10px;
+    padding: 10px;
+  }
+  .entry .scene,
+  .entry .scene svg {
+    min-height: 720px;
+    height: 100svh;
+  }
+  .entry .aperture-note {
+    right: 6%;
+    bottom: 21%;
+  }
+  .entry .aperture-note h2 {
+    font-size: 37px;
+  }
+  .entry .coordinate {
+    bottom: 33%;
+    font-size: 9px;
+  }
+  .entry .controls {
+    top: auto;
+    bottom: auto;
+    position: relative;
+    margin-top: -125px;
+    left: auto;
+    right: auto;
+    margin-inline: 6%;
+    padding-bottom: 35px;
+    gap: 12px;
+  }
+  .entry .controls label {
+    font-size: 10px;
+  }
+  .entry .controls input {
+    width: 45%;
+  }
+  .entry .intro {
+    margin-top: 15px;
   }
 }
 </style>

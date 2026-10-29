@@ -4,9 +4,11 @@
 
 **Visual grammar.** Use a small number of oversized text compositions, strong negative space, and a restrained palette. Letter spacing, position, weight, or cropping may change as an enhancement. A conventional contents control and a stable text column provide the structural spine. Motion reinforces section boundaries or emphasis; it does not manufacture the only route through the content.
 
+**Composition.** The programme itself is a typographic performance: three session titles use sharply different scale, alignment, tracking and directional stress, with time and performer names held on a stable spine. The composition remains expressive in a still capture; optional motion only changes the first title’s slant.
+
 **Specimen and flow.** _Voice Assembly_ is a fictional spoken-word festival. Read its animated introduction, browse the programme, and inspect a performer’s session. Supporting views are the schedule and an entirely static reading mode containing identical information.
 
-**Mobile and motion.** Design static mobile typography first. Honour reduced motion on first render, retain normal scrolling, and provide a persistent animation toggle. Never require waiting for text to settle before it becomes usable.
+**Responsive and inclusive behaviour.** Each performance becomes a large readable typographic panel with a stable time and performer caption. Motion can be disabled without changing content or navigation. Native buttons, visible focus, a direct return path and reduced-motion support preserve access to the same content.
 
 **Identity and effort.** Preserve typographic performance and disciplined pacing; avoid scroll hijacking, endlessly moving navigation, or illegible letter tricks. **Effort: high.**
 
@@ -26,7 +28,7 @@ Brand, subject, accent and equivalent licensed typefaces can change. Preserve co
 
 ## Tokens and typography
 
-Heading: Bebas Neue. Reading: DM Sans. Local WOFF2 fonts with system fallbacks. Page #24232a; surface #36353b; text #f1eee3; accent #dce57b. Eight-pixel base spacing; reading measure 65ch; width 1240px. See tokens.css for role values and Demo.vue for composition. Palette and type match the working specimen.
+Heading: Bebas Neue. Reading: DM Sans. Local WOFF2 fonts with system fallbacks. Page #24232a; surface #36353b; text #f1eee3; accent #dce57b. Base tokens define an eight-pixel spacing unit, 65ch reading measure and 1240px content width; the composition-specific rules in Demo.vue override these where the canvas, type or information density requires it. See tokens.css for role values and Demo.vue for composition. Palette and type match the working specimen.
 
 ## States
 

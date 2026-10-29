@@ -17,7 +17,7 @@ const labels = ref(true),
   answer = ref('');
 </script>
 <template>
-  <div class="specimen">
+  <div class="specimen" :class="{ entry: state === 'start' }">
     <a class="skip" href="#content">Skip to content</a>
     <header>
       <strong>explain it<br /><span>slowly.</span></strong>
@@ -37,7 +37,7 @@ const labels = ref(true),
       <section v-if="state !== 'index'" class="lesson">
         <p class="eyebrow">Simple machines / 6 minutes</p>
         <h1>
-          {{ state === 'practice' ? 'What happens next?' : 'A small push. A bigger possibility.' }}
+          {{ state === 'practice' ? 'What happens next?' : 'Notebook 01 / A little lever' }}
         </h1>
         <p>
           A lever changes what a force can do. Let’s look at the relationship between the load, the
@@ -74,7 +74,10 @@ const labels = ref(true),
               stroke-width="5"
               stroke-linecap="round"
             />
-            <g v-if="labels" font-family="sans-serif" font-size="20" fill="#315b9a">
+            <g v-if="labels" font-family="Caveat, cursive" font-size="25" fill="#315b9a">
+              <text x="70" y="55" fill="#aa443b">more force?</text>
+              <path d="M65 46L205 65" stroke="#aa443b" stroke-width="2" />
+              <text x="220" y="56">try more distance ↘</text>
               <text x="60" y="105">01 / THE LOAD</text>
               <path d="M160 115L160 133" stroke="#315b9a" stroke-width="2" />
               <text x="310" y="365">02 / THE PIVOT</text>
@@ -631,5 +634,239 @@ aside b {
     cursive;
   letter-spacing: 0;
   text-transform: none;
+}
+
+/* The entry is the experience itself; supporting routes retain its vocabulary. */
+
+.entry {
+  background: #d6d3c5;
+  padding: 25px 4%;
+  position: relative;
+}
+.entry header {
+  padding: 0 0 20px;
+  border: 0;
+  max-width: none;
+  width: 100%;
+  margin: 0;
+  align-items: center;
+}
+.entry header strong {
+  font:
+    28px/1 'Caveat',
+    cursive;
+  transform: rotate(-5deg);
+}
+.entry header strong span {
+  font-size: 35px;
+}
+.entry header nav {
+  font-size: 11px;
+}
+.entry header nav > span {
+  display: none;
+}
+.entry main {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px 5% 60px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 155px;
+  gap: 30px;
+  background: #f7f0de;
+  background-image: linear-gradient(#315b9a0d 1px, transparent 1px);
+  background-size: 100% 32px;
+  box-shadow: 8px 10px 0 #b8b4a4;
+}
+.entry main > aside {
+  grid-column: 2;
+  grid-row: 1;
+  padding: 0;
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 0;
+}
+.entry main > aside > p:first-child {
+  display: none;
+}
+.entry main > aside button {
+  width: 100%;
+  padding: 15px 12px;
+  white-space: normal;
+  display: block;
+  text-align: left;
+  line-height: 1.5;
+  font-size: 12px;
+  min-width: 0;
+  background: #e4d6b3;
+  border: 0;
+  border-radius: 0 12px 12px 0;
+  transform: rotate(2deg);
+}
+.entry main > aside button:nth-of-type(2) {
+  background: #c9dbe0;
+  transform: rotate(-3deg);
+}
+.entry main > aside button:nth-of-type(3) {
+  background: #e2bbab;
+}
+.entry main > aside button b {
+  font-size: 24px;
+  display: block;
+  margin-bottom: 10px;
+}
+.entry .handwritten {
+  font:
+    25px/1.1 'Caveat',
+    cursive;
+}
+.entry .lesson {
+  grid-column: 1;
+  grid-row: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+.entry .lesson > .eyebrow {
+  order: 0;
+  font-size: 10px;
+}
+.entry .lesson h1 {
+  order: 1;
+  font:
+    42px/1.1 'Caveat',
+    cursive;
+  letter-spacing: 0;
+  margin: 0 0 15px;
+  max-width: none;
+}
+.entry .drawing {
+  order: 2;
+  margin: 0;
+  position: relative;
+}
+.entry .drawing svg {
+  height: 450px;
+  width: 100%;
+}
+.entry .drawing figcaption {
+  font-size: 11px;
+  max-width: 55ch;
+}
+.entry .margin-note {
+  font:
+    28px/1.1 'Caveat',
+    cursive;
+  right: 3%;
+  bottom: 80px;
+  transform: rotate(-8deg);
+}
+.entry .lesson > .labels {
+  order: 3;
+  align-self: flex-start;
+  font-size: 11px;
+  margin: 20px 0;
+}
+.entry .lesson > p:not(.eyebrow) {
+  order: 4;
+  font-size: 16px;
+  max-width: 58ch;
+  line-height: 1.9;
+}
+.entry .steps {
+  order: 5;
+}
+.entry .lesson > .primary {
+  order: 6;
+  align-self: flex-start;
+  background: #315b9a;
+  color: white;
+  border-radius: 0;
+  transform: rotate(-2deg);
+  padding: 16px 30px;
+}
+@media (max-width: 750px) {
+  .entry {
+    padding: 20px 4%;
+  }
+  .entry header {
+    gap: 18px;
+  }
+  .entry header nav {
+    font-size: 10px;
+    gap: 12px;
+  }
+  .entry main {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 7%;
+    gap: 20px;
+  }
+  .entry main > aside {
+    order: 2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+  }
+  .entry main > aside button {
+    flex: 1 1 110px;
+    width: auto;
+    min-width: 100px;
+    font-size: 11px;
+    padding: 12px;
+  }
+  .entry main > aside button b {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  .entry main > aside .handwritten {
+    width: 100%;
+    font-size: 25px;
+  }
+  .entry .lesson {
+    order: 1;
+  }
+  .entry .lesson h1 {
+    font-size: 34px;
+  }
+  .entry .drawing svg {
+    height: 280px;
+  }
+  .entry .margin-note {
+    font-size: 21px;
+    position: static;
+    display: block;
+    text-align: right;
+    margin: 12px 0;
+  }
+  .entry .drawing figcaption {
+    font-size: 10px;
+  }
+  .entry .lesson > p:not(.eyebrow) {
+    font-size: 14px;
+  }
+  .entry .steps {
+    display: block;
+  }
+  .entry .steps article {
+    margin: 20px 0;
+  }
+}
+@media (max-width: 750px) {
+  main > aside button {
+    min-width: 100px;
+    flex: 1 1 110px;
+    width: auto;
+    white-space: normal;
+  }
+  main > aside {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
 }
 </style>

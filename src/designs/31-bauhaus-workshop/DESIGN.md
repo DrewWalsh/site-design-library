@@ -4,9 +4,11 @@
 
 **Visual grammar.** Strong rectilinear grids support circular markers, primary-colour planes, black rules, and compact grotesque typography. Asymmetry comes from purposeful spans rather than scattered objects. Red identifies workshops, blue identifies resources, and yellow identifies demonstrations, with matching text labels so colour is never the only distinction.
 
+**Composition.** A strict asymmetric programme is the opening: a red circular workshop entrance, a blue resource block and a yellow material block carry real syllabuses. The school name occupies a black vertical nameplate; dates belong inside the programme grid.
+
 **Specimen and flow.** _Form School_ teaches fictional making workshops. Browse a geometric programme index, open a workshop syllabus, and select a session in a local registration demonstration. Supporting views include an instructor profile and a full-session state with alternative dates. A simple shape-building exercise illustrates the school’s practical approach.
 
-**Responsive behaviour.** Grid spans collapse into a coherent reading order. Decorative geometry moves around the content rather than forcing the content into tiny compartments; the exercise includes button-based controls.
+**Responsive and inclusive behaviour.** The phone starts with the circular workshop entrance, followed by distinct blue and yellow programme planes. Geometric regions remain large readable destinations. Native buttons, visible focus, a direct return path and reduced-motion support preserve access to the same content.
 
 **Identity rules.** Preserve geometric discipline, clear categories, and deliberate alignment. Avoid decorative primary-colour confetti or borrowing the same loose arrangement as Pop Memphis. **Effort: medium.**
 
@@ -26,7 +28,7 @@ Brand, subject, accent and equivalent licensed typefaces can change. Preserve co
 
 ## Tokens and typography
 
-Heading: Space Grotesk. Reading: DM Sans. Local WOFF2 fonts with system fallbacks. Page #eee9dc; surface #ffffff; text #252622; accent #b93627. Eight-pixel base spacing; reading measure 65ch; width 1240px. See tokens.css for role values and Demo.vue for composition. Palette and type match the working specimen.
+Heading: Space Grotesk. Reading: DM Sans. Local WOFF2 fonts with system fallbacks. Page #eee9dc; surface #ffffff; text #252622; accent #b93627. Base tokens define an eight-pixel spacing unit, 65ch reading measure and 1240px content width; the composition-specific rules in Demo.vue override these where the canvas, type or information density requires it. See tokens.css for role values and Demo.vue for composition. Palette and type match the working specimen.
 
 ## States
 

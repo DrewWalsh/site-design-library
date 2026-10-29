@@ -50,7 +50,7 @@ function open(i: number) {
 }
 </script>
 <template>
-  <div class="specimen">
+  <div class="specimen" :class="{ entry: state === 'start' }">
     <a class="skip" href="#content">Skip to content</a>
     <header class="careers-header wrap">
       <a :href="href('start')" class="fieldwork-logo"
@@ -59,59 +59,14 @@ function open(i: number) {
       <nav class="row">
         <a :href="href('start') + '#people'">Life here</a
         ><a :href="href('start') + '#roles'">Open roles</a
-        ><button class="primary" @click="go('role')">Find your next role →</button>
+        ><button class="primary" @click="go('start')">View roles ↓</button>
       </nav>
     </header>
     <main id="content">
       <template v-if="state === 'start'"
-        ><section class="careers-hero wrap">
-          <p class="eyebrow">Come as a person. do work that matters.</p>
-          <h1>Good work is<br />a team sport.</h1>
-          <div class="hero-bottom">
-            <p class="lead">
-              We make practical tools for people doing useful things. We’re looking for curious
-              colleagues who care about the work—and how it gets done.
-            </p>
-            <a class="roles-count" href="#roles"
-              ><strong>03</strong><span>sample open roles<br />Find your place ↙</span></a
-            >
-          </div>
-        </section>
-        <section id="people" class="staff-stories wrap">
-          <article class="staff-quote">
-            <div class="story-initial" aria-hidden="true">JL</div>
-            <p>
-              “The best part of a project is the conversation where we finally understand the
-              problem together.”
-            </p>
-            <footer>
-              Jamie Lin · Sample product designer<br /><small>Fictional staff story</small>
-            </footer>
-          </article>
-          <div class="work-practices">
-            <p class="eyebrow">What the everyday looks like</p>
-            <div>
-              <h2>Clear expectations.</h2>
-              <p>
-                Written priorities, time for focused work, and feedback while there is still room to
-                use it.
-              </p>
-            </div>
-            <div>
-              <h2>Room for a life.</h2>
-              <p>
-                Explain actual working hours, flexibility, leave, and location requirements plainly.
-              </p>
-            </div>
-            <div>
-              <h2>A fair process.</h2>
-              <p>Publish the stages, the compensation range, and what candidates should prepare.</p>
-            </div>
-          </div>
-        </section>
-        <section id="roles" class="wrap section role-index">
+        ><section id="roles" class="wrap section role-index">
           <div class="section-heading">
-            <h2>Find your place<br />in the work.</h2>
+            <h1>Open roles <span>03</span></h1>
             <p>
               Transparent sample roles. The details should help a candidate decide before they
               invest in an application.
@@ -146,6 +101,38 @@ function open(i: number) {
           <p class="notice" v-if="!filtered.length">
             No sample roles match. Clear the title or choose another team.
           </p>
+        </section>
+        <section id="people" class="staff-stories wrap">
+          <article class="staff-quote">
+            <div class="story-initial" aria-hidden="true">JL</div>
+            <p>
+              “The best part of a project is the conversation where we finally understand the
+              problem together.”
+            </p>
+            <footer>
+              Jamie Lin · Sample product designer<br /><small>Fictional staff story</small>
+            </footer>
+          </article>
+          <div class="work-practices">
+            <p class="eyebrow">What the everyday looks like</p>
+            <div>
+              <h2>Clear expectations.</h2>
+              <p>
+                Written priorities, time for focused work, and feedback while there is still room to
+                use it.
+              </p>
+            </div>
+            <div>
+              <h2>Room for a life.</h2>
+              <p>
+                Explain actual working hours, flexibility, leave, and location requirements plainly.
+              </p>
+            </div>
+            <div>
+              <h2>A fair process.</h2>
+              <p>Publish the stages, the compensation range, and what candidates should prepare.</p>
+            </div>
+          </div>
         </section>
         <section class="hiring-process">
           <div class="wrap">
@@ -891,5 +878,93 @@ details p {
   font: 500 13px/1.5 var(--body);
   letter-spacing: 0;
   text-transform: none;
+}
+
+/* The entry is the experience itself; supporting routes retain its vocabulary. */
+.entry .role-index {
+  padding-top: 24px;
+}
+.entry .role-index .section-heading {
+  align-items: end;
+  margin-bottom: 24px;
+}
+.entry .role-index h1 {
+  font-size: 46px;
+  letter-spacing: -0.04em;
+}
+.entry .role-index h1 span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #9c3b34;
+  color: #fff;
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  font-size: 28px;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+.entry .role-row {
+  padding: 30px 16px;
+  grid-template-columns: 130px 1fr 220px 35px;
+  background: transparent;
+  border-top: 2px solid var(--ink);
+}
+.entry .role-row h3 {
+  font-size: 32px;
+}
+.entry .role-row > strong {
+  font-size: 24px;
+}
+.entry .role-row:hover {
+  background: #ead5c8;
+}
+.entry .staff-stories {
+  border-top: 1px solid var(--line);
+  padding-top: 40px;
+}
+.entry .role-filters {
+  max-width: 800px;
+}
+.entry .section-heading > p {
+  font-size: 14px;
+  max-width: 32ch;
+}
+@media (max-width: 700px) {
+  .entry .role-index h1 {
+    font-size: 34px;
+  }
+  .entry .role-index h1 span {
+    width: 48px;
+    height: 48px;
+    font-size: 22px;
+  }
+  .entry .role-row {
+    grid-template-columns: 1fr 30px;
+    padding: 20px 10px;
+    gap: 10px;
+  }
+  .entry .role-row > span,
+  .entry .role-row > div,
+  .entry .role-row > strong {
+    grid-column: 1;
+  }
+  .entry .role-row > b {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .entry .role-row h3 {
+    font-size: 26px;
+  }
+  .entry .role-row > strong {
+    font-size: 23px;
+  }
+  .entry .role-filters {
+    gap: 14px;
+  }
+  .entry .role-index .section-heading {
+    margin-bottom: 15px;
+  }
 }
 </style>

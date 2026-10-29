@@ -7,10 +7,13 @@
   "family": "Playful & material",
   "status": "ready",
   "thesis": "Make a collection feel organised, discoverable, and worth returning to.",
-  "suitableFor": ["Research", "Directories"],
+  "suitableFor": [
+    "Research",
+    "Directories"
+  ],
   "character": "Expressive",
   "traits": {
-    "composition": "Tabbed category drawers, consistent index cards, and full record sheets",
+    "composition": "The visitor opens a physical recipe drawer: a mounted cabinet label, projecting category tabs, a search handle and immediate accession cards. Buff records sit inside an olive cabinet rather than beneath a slogan; selected records retain their full archival sheet.",
     "navigation": "Drawer tabs, ingredient search, and accession links",
     "typography": "Libre Baskerville + IBM Plex Mono",
     "density": "Medium",
@@ -45,7 +48,7 @@
   "referenceImages": [
     {
       "file": "/previews/35/desktop.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/35/38b123d643a0c398-desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/35/2be0e26f0ecd3e20-desktop.jpg",
       "route": "/preview/35-paper-cabinet/start",
       "viewport": {
         "width": 1440,
@@ -53,13 +56,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:25f3f2b91c3b6118553512b77e706c793af0c024f27a71cbb3a21b0948cef5d8",
-      "sha256": "38b123d643a0c39812a83687a05c9649d8f0e871a51e583691cdf659b43ce460",
+      "sourceRevision": "sha256:638055e14c5f5b6bb0845611ea713f959b60a2baad073b858385bf530bdcf823",
+      "sha256": "2be0e26f0ecd3e202e7f7d5a529756b88a5a4ac6abadaaa22977b368898a1e94",
       "fullPage": false
     },
     {
       "file": "/previews/35/mobile.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/35/8e93d11df8fcaab6-mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/35/fa9a8687d41914e5-mobile.jpg",
       "route": "/preview/35-paper-cabinet/start",
       "viewport": {
         "width": 390,
@@ -67,8 +70,8 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:25f3f2b91c3b6118553512b77e706c793af0c024f27a71cbb3a21b0948cef5d8",
-      "sha256": "8e93d11df8fcaab6e0b29b3aa63c2be041869920b2a0065c70394c25b9cf8c85",
+      "sourceRevision": "sha256:638055e14c5f5b6bb0845611ea713f959b60a2baad073b858385bf530bdcf823",
+      "sha256": "fa9a8687d41914e536f427f14f73e2cedf27a685fb85e9daa86b3c55e8f753b8",
       "fullPage": false
     },
     {
@@ -81,13 +84,13 @@
       },
       "state": "record",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:25f3f2b91c3b6118553512b77e706c793af0c024f27a71cbb3a21b0948cef5d8",
+      "sourceRevision": "sha256:638055e14c5f5b6bb0845611ea713f959b60a2baad073b858385bf530bdcf823",
       "sha256": "18d134240e3072a0d9d6d5464806db38d0f5b56e0c9c9638e5b67e088b9dc39a",
       "fullPage": false
     },
     {
       "file": "/previews/35/full-page.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/35/544519fb9fd155d1-full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/35/884f65debd627c35-full-page.jpg",
       "route": "/preview/35-paper-cabinet/start",
       "viewport": {
         "width": 1440,
@@ -95,28 +98,45 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:25f3f2b91c3b6118553512b77e706c793af0c024f27a71cbb3a21b0948cef5d8",
-      "sha256": "544519fb9fd155d1bf366a99ad3972605f50e61d9e881d176bc72dc49e5d654b",
+      "sourceRevision": "sha256:638055e14c5f5b6bb0845611ea713f959b60a2baad073b858385bf530bdcf823",
+      "sha256": "884f65debd627c35a4b576d66fff9078e77a66905f08cad6410f91d5159cfa56",
       "fullPage": true
     }
   ],
   "sourcePath": "src/designs/35-paper-cabinet",
-  "neighbours": ["34", "18"],
+  "neighbours": [
+    "34",
+    "18"
+  ],
   "palette": {
     "page": "#e8dfc9",
     "surface": "#f7efdc",
     "ink": "#493f2f",
     "accent": "#6c6d46"
   },
-  "fonts": ["Libre Baskerville", "IBM Plex Mono"],
-  "brief": "**Philosophy and fit.** Make a collection feel organised, discoverable, and worth returning to. Appropriate for archives, recipe libraries, reading collections, and curated research materials.\n\n**Visual grammar.** Tabbed drawers introduce categories; index cards present consistent metadata; a detail sheet holds the full record. Use buff paper, dark brown text, muted olive tabs, fine rules, and a modest serif paired with monospaced accession labels. Physical cues clarify organisation without requiring a simulated filing cabinet.\n\n**Specimen and flow.** *The Commonplace Cabinet* collects fictional historical recipes. Choose a drawer, filter cards by ingredient or period, and open a recipe record. Supporting views include saved selections and a record with missing provenance clearly marked. Users can add a private note stored locally and return to the same filtered list.\n\n**Responsive behaviour.** Drawer tabs become a labelled category selector. Cards stack in a single readable column; record sheets open as ordinary pages rather than floating paper windows.\n\n**Identity rules.** Preserve stable metadata, tactile hierarchy, and the index-to-record relationship. Avoid ornamental desk clutter, unreadable ageing effects, or hiding navigation inside decorative objects. **Effort: medium.**",
+  "fonts": [
+    "Libre Baskerville",
+    "IBM Plex Mono"
+  ],
+  "brief": "**Philosophy and fit.** Make a collection feel organised, discoverable, and worth returning to. Appropriate for archives, recipe libraries, reading collections, and curated research materials.\n\n**Visual grammar.** Tabbed drawers introduce categories; index cards present consistent metadata; a detail sheet holds the full record. Use buff paper, dark brown text, muted olive tabs, fine rules, and a modest serif paired with monospaced accession labels. Physical cues clarify organisation without requiring a simulated filing cabinet.\n\n**Composition.** The visitor opens a physical recipe drawer: a mounted cabinet label, projecting category tabs, a search handle and immediate accession cards. Buff records sit inside an olive cabinet rather than beneath a slogan; selected records retain their full archival sheet.\n\n**Specimen and flow.** _The Commonplace Cabinet_ collects fictional historical recipes. Choose a drawer, filter cards by ingredient or period, and open a recipe record. Supporting views include saved selections and a record with missing provenance clearly marked. Users can add a private note stored locally and return to the same filtered list.\n\n**Responsive and inclusive behaviour.** The phone keeps the cabinet label compact, wraps category tabs and places the first complete accession card directly below the search handle. Record sheets remain ordinary readable routes. Native buttons, visible focus, a direct return path and reduced-motion support preserve access to the same content.\n\n**Identity rules.** Preserve stable metadata, tactile hierarchy, and the index-to-record relationship. Avoid ornamental desk clutter, unreadable ageing effects, or hiding navigation inside decorative objects. **Effort: medium.**",
   "scope": "An expansive sample page with representative local interactions; no production business backend.",
   "discovery": {
-    "industries": ["Archive", "Museum", "Collections"],
-    "visitorGoals": ["Find an object"],
-    "conversionActions": ["Inspect a record"],
+    "industries": [
+      "Archive",
+      "Museum",
+      "Collections"
+    ],
+    "visitorGoals": [
+      "Find an object"
+    ],
+    "conversionActions": [
+      "Inspect a record"
+    ],
     "siteSize": "Searchable catalogue",
-    "interactionTypes": ["Collection filters", "Archival records"],
+    "interactionTypes": [
+      "Collection filters",
+      "Archival records"
+    ],
     "keywords": [
       "Research",
       "Directories",

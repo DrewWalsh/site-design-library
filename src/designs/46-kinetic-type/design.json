@@ -7,10 +7,13 @@
   "family": "Retro & experimental",
   "status": "ready",
   "thesis": "Let typography embody a subject’s rhythm while preserving a complete readable argument.",
-  "suitableFor": ["Events", "Culture"],
+  "suitableFor": [
+    "Events",
+    "Culture"
+  ],
   "character": "Expressive",
   "traits": {
-    "composition": "Oversized typographic performance with a stable programme spine",
+    "composition": "The programme itself is a typographic performance: three session titles use sharply different scale, alignment, tracking and directional stress, with time and performer names held on a stable spine. The composition remains expressive in a still capture; optional motion only changes the first title’s slant.",
     "navigation": "Persistent motion toggle, schedule, and static reading mode",
     "typography": "Bebas Neue + DM Sans",
     "density": "Medium",
@@ -45,7 +48,7 @@
   "referenceImages": [
     {
       "file": "/previews/46/desktop.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/46/e7d9fb3e512bf39e-desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/46/5fc2d0d4e6bb1888-desktop.jpg",
       "route": "/preview/46-kinetic-type/start",
       "viewport": {
         "width": 1440,
@@ -53,13 +56,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:ed810a503b37a35f3c7ae3786fb804104900a79c549c4c8422d74281fc6156ce",
-      "sha256": "e7d9fb3e512bf39e25695b09aa3e653185b14385539c777c7ca9a9d13225809c",
+      "sourceRevision": "sha256:8e2181b9d71e6ed2da15225cd4a39c5c525bda8e0f7143b7bcc686f0e07444e5",
+      "sha256": "5fc2d0d4e6bb1888946204f07c2af390d2231c0d934a6a91aeea5841ce03c27b",
       "fullPage": false
     },
     {
       "file": "/previews/46/mobile.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/46/f847240cfeac91eb-mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/46/b1c2f659130b8130-mobile.jpg",
       "route": "/preview/46-kinetic-type/start",
       "viewport": {
         "width": 390,
@@ -67,8 +70,8 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:ed810a503b37a35f3c7ae3786fb804104900a79c549c4c8422d74281fc6156ce",
-      "sha256": "f847240cfeac91eb627c3a1e4d7a242398e164a506240dcea256f17f697e1cb7",
+      "sourceRevision": "sha256:8e2181b9d71e6ed2da15225cd4a39c5c525bda8e0f7143b7bcc686f0e07444e5",
+      "sha256": "b1c2f659130b81307817fbe53aa41dae78707372dd3c660b8c41c79896480b85",
       "fullPage": false
     },
     {
@@ -81,13 +84,13 @@
       },
       "state": "schedule",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:ed810a503b37a35f3c7ae3786fb804104900a79c549c4c8422d74281fc6156ce",
+      "sourceRevision": "sha256:8e2181b9d71e6ed2da15225cd4a39c5c525bda8e0f7143b7bcc686f0e07444e5",
       "sha256": "e90e215c057927e692ffdf4517f58c1ba872a1bbeac381de651530b49fd287d5",
       "fullPage": false
     },
     {
       "file": "/previews/46/full-page.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/46/a09745c33ab41f40-full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/46/721e491f85db2fda-full-page.jpg",
       "route": "/preview/46-kinetic-type/start",
       "viewport": {
         "width": 1440,
@@ -95,28 +98,44 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:ed810a503b37a35f3c7ae3786fb804104900a79c549c4c8422d74281fc6156ce",
-      "sha256": "a09745c33ab41f407740b7a728dbcbc87c15ea7939356b6b01873bf00e027bab",
+      "sourceRevision": "sha256:8e2181b9d71e6ed2da15225cd4a39c5c525bda8e0f7143b7bcc686f0e07444e5",
+      "sha256": "721e491f85db2fdaa9b1af78e5eccb14c6b6d6f319d448ed290add8aae8a078b",
       "fullPage": true
     }
   ],
   "sourcePath": "src/designs/46-kinetic-type",
-  "neighbours": ["30", "47"],
+  "neighbours": [
+    "30",
+    "47"
+  ],
   "palette": {
     "page": "#24232a",
     "surface": "#36353b",
     "ink": "#f1eee3",
     "accent": "#dce57b"
   },
-  "fonts": ["Bebas Neue", "DM Sans"],
-  "brief": "**Philosophy and fit.** Let typography embody a subject’s rhythm while preserving a complete readable argument. Suitable for cultural festivals, creative studios, short campaigns, and expressive editorial introductions.\n\n**Visual grammar.** Use a small number of oversized text compositions, strong negative space, and a restrained palette. Letter spacing, position, weight, or cropping may change as an enhancement. A conventional contents control and a stable text column provide the structural spine. Motion reinforces section boundaries or emphasis; it does not manufacture the only route through the content.\n\n**Specimen and flow.** *Voice Assembly* is a fictional spoken-word festival. Read its animated introduction, browse the programme, and inspect a performer’s session. Supporting views are the schedule and an entirely static reading mode containing identical information.\n\n**Mobile and motion.** Design static mobile typography first. Honour reduced motion on first render, retain normal scrolling, and provide a persistent animation toggle. Never require waiting for text to settle before it becomes usable.\n\n**Identity and effort.** Preserve typographic performance and disciplined pacing; avoid scroll hijacking, endlessly moving navigation, or illegible letter tricks. **Effort: high.**",
+  "fonts": [
+    "Bebas Neue",
+    "DM Sans"
+  ],
+  "brief": "**Philosophy and fit.** Let typography embody a subject’s rhythm while preserving a complete readable argument. Suitable for cultural festivals, creative studios, short campaigns, and expressive editorial introductions.\n\n**Visual grammar.** Use a small number of oversized text compositions, strong negative space, and a restrained palette. Letter spacing, position, weight, or cropping may change as an enhancement. A conventional contents control and a stable text column provide the structural spine. Motion reinforces section boundaries or emphasis; it does not manufacture the only route through the content.\n\n**Composition.** The programme itself is a typographic performance: three session titles use sharply different scale, alignment, tracking and directional stress, with time and performer names held on a stable spine. The composition remains expressive in a still capture; optional motion only changes the first title’s slant.\n\n**Specimen and flow.** _Voice Assembly_ is a fictional spoken-word festival. Read its animated introduction, browse the programme, and inspect a performer’s session. Supporting views are the schedule and an entirely static reading mode containing identical information.\n\n**Responsive and inclusive behaviour.** Each performance becomes a large readable typographic panel with a stable time and performer caption. Motion can be disabled without changing content or navigation. Native buttons, visible focus, a direct return path and reduced-motion support preserve access to the same content.\n\n**Identity and effort.** Preserve typographic performance and disciplined pacing; avoid scroll hijacking, endlessly moving navigation, or illegible letter tricks. **Effort: high.**",
   "scope": "An expansive sample page with representative local interactions; no production business backend.",
   "discovery": {
-    "industries": ["Creative studio", "Typography"],
-    "visitorGoals": ["Explore a visual idea"],
-    "conversionActions": ["Inspect a project"],
+    "industries": [
+      "Creative studio",
+      "Typography"
+    ],
+    "visitorGoals": [
+      "Explore a visual idea"
+    ],
+    "conversionActions": [
+      "Inspect a project"
+    ],
     "siteSize": "Portfolio & enquiry",
-    "interactionTypes": ["Motion controls", "Project details"],
+    "interactionTypes": [
+      "Motion controls",
+      "Project details"
+    ],
     "keywords": [
       "Events",
       "Culture",

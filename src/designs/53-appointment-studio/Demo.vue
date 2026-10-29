@@ -39,9 +39,15 @@ function book() {
   }
   go('confirmation');
 }
+async function startBooking(i: number, time: string) {
+  stylist.value = i;
+  await nextTick();
+  slot.value = time;
+  go('book');
+}
 </script>
 <template>
-  <div class="specimen">
+  <div class="specimen" :class="{ entry: state === 'start' }">
     <a class="skip" href="#content">Skip to content</a>
     <header class="studio-header wrap">
       <a :href="href('start')" class="studio-logo">COMMON<span>BARBER STUDIO / NORTHBANK</span></a>
@@ -53,32 +59,11 @@ function book() {
     </header>
     <main id="content">
       <template v-if="state === 'start'"
-        ><section class="studio-hero wrap">
-          <div>
-            <p class="eyebrow">Good hair. your kind of people.</p>
-            <h1>A little time<br />in the chair.<br /><em>A fresh start.</em></h1>
-            <p class="lead">
-              Unhurried cuts, useful advice, and a familiar face. Pick your barber. We’ll find a
-              time that works.
-            </p>
-            <button class="primary" @click="go('book')">Meet your next barber →</button>
-          </div>
-          <figure>
-            <img
-              class="photo"
-              src="https://drew-site-design-library.t3.tigrisfiles.io/assets/commercial/7ed7f8b3e71dc836-barber-work.webp"
-              alt="Barber working carefully on a haircut in a studio"
-            />
-            <figcaption>
-              Technique, texture, and a considered finish · illustrative studio photograph
-            </figcaption>
-          </figure>
-        </section>
-        <section id="people" class="people wrap section">
+        ><section id="people" class="people wrap section">
           <div class="section-heading">
-            <h2>Two chairs.<br />A shared approach.</h2>
+            <h1>Choose your barber.</h1>
             <p>
-              Our fictional team demonstrates how personality and availability can lead a booking.
+              Thursday 12 November · Sample appointments. Choose a person and an available time.
               Portraits are AI-generated illustrations of fictional staff.
             </p>
           </div>
@@ -101,6 +86,17 @@ function book() {
                   "
                 >
                   Book with {{ person.name }} ↗
+                </button>
+              </div>
+              <div class="first-times">
+                <span>Thursday 12 Nov</span
+                ><button
+                  v-for="time in person.days"
+                  :key="time"
+                  :aria-label="'Book ' + person.name + ' at ' + time"
+                  @click="startBooking(i, time)"
+                >
+                  {{ time }} ↗
                 </button>
               </div>
             </article>
@@ -130,6 +126,16 @@ function book() {
           </div>
         </section>
         <section class="wrap section studio-details">
+          <figure>
+            <img
+              class="photo"
+              src="https://drew-site-design-library.t3.tigrisfiles.io/assets/commercial/7ed7f8b3e71dc836-barber-work.webp"
+              alt="Barber working carefully on a haircut in a studio"
+            />
+            <figcaption>
+              Technique, texture, and a considered finish · illustrative studio photograph
+            </figcaption>
+          </figure>
           <h2>A regular place<br />for a new look.</h2>
           <div>
             <p>22 Foundry Lane, Northbank<br />Tuesday–Friday 9–7 · Saturday 9–4</p>
@@ -763,5 +769,82 @@ details p {
   font: 500 13px/1.5 var(--body);
   letter-spacing: 0;
   text-transform: none;
+}
+
+/* The entry is the experience itself; supporting routes retain its vocabulary. */
+.entry .people {
+  padding-top: 24px;
+}
+.entry .section-heading {
+  align-items: end;
+  margin-bottom: 20px;
+}
+.entry .people h1 {
+  font-size: 32px;
+  letter-spacing: -0.03em;
+}
+.entry .people .two {
+  gap: 32px;
+}
+.entry .people article > .photo {
+  height: 420px;
+  object-position: 50% 32%;
+}
+.entry .person-info {
+  padding: 16px 0;
+}
+.entry .person-info h3 {
+  font-size: 44px;
+}
+.first-times {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-top: 1px solid var(--ink);
+  padding: 14px 0;
+  flex-wrap: wrap;
+}
+.first-times > span {
+  font: 12px var(--heading);
+  margin-right: auto;
+}
+.first-times button {
+  font: 14px var(--heading);
+}
+.studio-details {
+  grid-template-columns: 1fr 1fr 1fr !important;
+}
+.studio-details figure img {
+  height: 280px;
+  object-fit: cover;
+}
+.studio-details figcaption {
+  font-size: 11px;
+}
+@media (max-width: 700px) {
+  .entry .people {
+    padding-top: 12px;
+  }
+  .entry .people .two {
+    gap: 36px;
+  }
+  .entry .people article > .photo {
+    height: 290px;
+  }
+  .entry .person-info h3 {
+    font-size: 36px;
+  }
+  .entry .people h1 {
+    font-size: 27px;
+  }
+  .entry .section-heading p {
+    font-size: 13px;
+  }
+  .studio-details {
+    grid-template-columns: 1fr !important;
+  }
+  .first-times > span {
+    width: 100%;
+  }
 }
 </style>

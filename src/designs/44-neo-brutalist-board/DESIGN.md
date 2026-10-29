@@ -4,9 +4,11 @@
 
 **Visual grammar.** Use thick dark outlines, solid offset shadows, large utilitarian type, and a small palette of flat, vivid colours. Organise the page as a board of labelled notices in clearly separated horizontal zones. Filters and actions have the same physical vocabulary as the notices. A strong alignment system prevents the apparent roughness from becoming arbitrary.
 
+**Composition.** The entry is a workshop noticeboard, with a fixed discipline rack beside full-width dated notices. Oversized day numbers, horizontal colour zones and heavy dividing rules replace the common slogan-and-card-grid arrangement. Each notice is a complete destination.
+
 **Specimen and flow.** _Open Bench_ lists fictional maker workshops. Filter notices by discipline, open a workshop, and book a sample place locally. Supporting views are a full workshop detail sheet and the no-spaces-available state with alternative dates.
 
-**Mobile and motion.** Reflow notices into an ordered list and give filters their own wrapping row. A press response can shorten a button’s shadow without shifting its neighbours; reduced motion removes animated movement.
+**Responsive and inclusive behaviour.** A compact wrapping filter rack leads directly into dated notice rows. Day numbers remain beside workshop titles instead of taking a separate introductory screen. Native buttons, visible focus, a direct return path and reduced-motion support preserve access to the same content.
 
 **Identity and effort.** Preserve outlined objects and decisive hierarchy; avoid confusing this with raw HTML or covering every content fragment in a separate box. **Effort: low.**
 
@@ -26,7 +28,7 @@ Brand, subject, accent and equivalent licensed typefaces can change. Preserve co
 
 ## Tokens and typography
 
-Heading: Space Grotesk. Reading: DM Sans. Local WOFF2 fonts with system fallbacks. Page #f0efb1; surface #fffde9; text #222921; accent #c5e14e. Eight-pixel base spacing; reading measure 65ch; width 1240px. See tokens.css for role values and Demo.vue for composition. Palette and type match the working specimen.
+Heading: Space Grotesk. Reading: DM Sans. Local WOFF2 fonts with system fallbacks. Page #f0efb1; surface #fffde9; text #222921; accent #c5e14e. Base tokens define an eight-pixel spacing unit, 65ch reading measure and 1240px content width; the composition-specific rules in Demo.vue override these where the canvas, type or information density requires it. See tokens.css for role values and Demo.vue for composition. Palette and type match the working specimen.
 
 ## States
 

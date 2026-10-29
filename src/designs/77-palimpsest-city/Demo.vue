@@ -62,7 +62,7 @@ function open(i: number) {
 }
 </script>
 <template>
-  <div class="specimen">
+  <div class="specimen" :class="{ entry: state === 'start' }">
     <a class="skip" href="#content">Skip to content</a>
 
     <header>
@@ -83,7 +83,7 @@ function open(i: number) {
           >
         </div>
         <div class="atlas">
-          <svg viewBox="0 0 1000 650" aria-hidden="true">
+          <svg viewBox="0 0 1000 650" preserveAspectRatio="none" aria-hidden="true">
             <defs>
               <pattern id="grid77" width="25" height="25" patternUnits="userSpaceOnUse">
                 <path d="M25 0H0V25" fill="none" stroke="#555" stroke-opacity=".12" />
@@ -504,6 +504,135 @@ footer {
     transition: none !important;
     animation: none !important;
     scroll-behavior: auto !important;
+  }
+}
+
+/* The entry is the experience itself; supporting routes retain its vocabulary. */
+
+.entry {
+  position: relative;
+}
+.entry header {
+  position: absolute;
+  z-index: 3;
+  left: 24px;
+  top: 22px;
+  border: 0;
+  padding: 20px;
+  background: #e9e2cfee;
+  display: block;
+  width: 200px;
+  box-shadow: 3px 4px 0 #282a2920;
+}
+.entry header strong {
+  font-size: 64px;
+  line-height: 0.85;
+}
+.entry header p {
+  margin: 18px 0;
+  font-size: 16px;
+}
+.entry header nav {
+  display: block;
+}
+.entry header nav button {
+  display: block;
+  margin: 4px 0;
+}
+.entry .atlas {
+  width: 100%;
+  margin: 0;
+  border: 0;
+  min-height: 100svh;
+  aspect-ratio: auto;
+}
+.entry .atlas svg {
+  width: 100%;
+  height: 100svh;
+  display: block;
+}
+.entry .layer-key {
+  position: absolute;
+  right: 26px;
+  top: 24px;
+  z-index: 4;
+  display: grid;
+  gap: 12px;
+  background: #f4f0e5e8;
+  padding: 18px;
+  border-left: 3px solid #904b32;
+  max-width: 270px;
+}
+.entry .layer-key label {
+  font-size: 11px;
+}
+.entry .map-note {
+  top: auto;
+  bottom: 8%;
+  left: 5%;
+  font-size: 25px;
+  max-width: 220px;
+}
+.entry .pin {
+  width: 48px;
+  height: 48px;
+  border-radius: 0;
+  transform: translate(-50%, -50%) rotate(-8deg);
+  border: 2px solid #e9e2cf;
+  box-shadow: 3px 4px 0 #282a2930;
+}
+@media (max-width: 700px) {
+  .entry header {
+    left: 12px;
+    top: 12px;
+    width: 130px;
+    padding: 12px;
+  }
+  .entry header strong {
+    font-size: 46px;
+  }
+  .entry header p {
+    display: none;
+  }
+  .entry header nav button {
+    font-size: 10px;
+    padding: 6px 0;
+  }
+  .entry .layer-key {
+    top: 12px;
+    right: 12px;
+    max-width: 180px;
+    width: 43%;
+    padding: 10px;
+    gap: 7px;
+  }
+  .entry .layer-key label {
+    font-size: 9px;
+  }
+  .entry .atlas,
+  .entry .atlas svg {
+    min-height: 720px;
+    height: 90svh;
+  }
+  .entry .map-note {
+    bottom: 12%;
+    font-size: 21px;
+    left: 6%;
+  }
+  .entry .pin {
+    width: 38px;
+    height: 38px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 700px) {
+  .entry main {
+    padding-top: 210px;
+  }
+  .entry .atlas,
+  .entry .atlas svg {
+    min-height: 540px;
+    height: calc(90svh - 210px);
   }
 }
 </style>

@@ -2,11 +2,11 @@
 
 **Idea.** A reading can be arranged across time and simultaneous voices.
 
-**Composition.** Oversized measure numbers and four staves span a cream score. Coloured note blocks contain phrases; a playhead and voice controls make the score a working table of contents.
+**Composition.** A typeset score is the entire publication surface: huge measure numerals, four engraved staves and phrase blocks begin at the top. A dark vertical binding carries the identity and arrangement link; transport controls form a narrow strip at the score edge.
 
 **Navigation and complete example.** Explore six measures across four authored voices, optionally advance the score at a calm pace, read each movement and arrange a local reading order. Optional tones are triggered only by an explicit sound control.
 
-**Responsive and inclusive behaviour.** The score scrolls within a labelled bounded region, with measure buttons and a full transcript as alternatives. No content requires timed interaction. All controls are native buttons or labelled inputs. Movement is discretionary, no sound starts automatically, reduced-motion preferences remove transitions, and a direct index exposes the same content.
+**Responsive and inclusive behaviour.** The phone preserves the score as a labelled horizontal reading region rather than compressing its measures. Explicit measure controls, movement pages and a complete transcript provide direct alternatives. Native buttons, visible focus, a direct return path and reduced-motion support preserve access to the same content.
 
 **Adaptation.** Use timing and polyphony to organise the writing. Keep sound optional, volume modest and every spoken or musical idea available as text. Retain the relationship between navigation and content. Do not reduce the reference to a generic hero followed by interchangeable cards.
 

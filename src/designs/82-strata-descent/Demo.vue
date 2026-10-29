@@ -77,7 +77,7 @@ function collect() {
 }
 </script>
 <template>
-  <div class="specimen">
+  <div class="specimen" :class="{ entry: state === 'start' }">
     <a class="skip" href="#content">Skip to content</a>
 
     <header>
@@ -87,11 +87,16 @@ function collect() {
     <main id="content">
       <template v-if="state === 'start'"
         ><div class="surface">
-          <h1>The ground<br />is not empty.</h1>
-          <p>
-            Six layers. Six objects. A descent through the things a place keeps after it has
-            forgotten their names.
-          </p>
+          <h1>BELOW<span>12 metres of memory</span></h1>
+          <svg viewBox="0 0 1400 170" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M0 80Q120 140 260 80T510 90T800 80T1100 100T1400 70V170H0Z" fill="#34251f" />
+            <g stroke="#eee0bf" fill="none" stroke-width="2">
+              <path
+                d="M130 110l40 45 25-25M430 100l-20 50 25 20M730 90l35 65 40-25M1100 100l-30 60 40-15"
+              />
+              <path d="M0 155Q150 120 300 150T600 145T900 150T1200 140T1400 150" />
+            </g>
+          </svg>
           <nav aria-label="Jump to depth">
             <a v-for="(s, i) in strata" :key="s.depth" :href="'#layer-' + i">{{ s.depth }} m ↓</a>
           </nav>
@@ -465,6 +470,194 @@ footer {
     transition: none !important;
     animation: none !important;
     scroll-behavior: auto !important;
+  }
+}
+
+/* The entry is the experience itself; supporting routes retain its vocabulary. */
+
+.entry {
+  position: relative;
+}
+.entry header {
+  position: absolute;
+  right: 3%;
+  top: 24px;
+  width: auto;
+  z-index: 3;
+  padding: 0;
+  border: 0;
+  display: block;
+}
+.entry header strong {
+  display: none;
+}
+.entry header > span {
+  display: none;
+}
+.entry header button {
+  background: #eee0bf;
+}
+.entry .surface {
+  position: relative;
+  padding: 100px 0 0;
+  overflow: hidden;
+}
+.entry .surface h1 {
+  padding: 0 3%;
+  font-size: clamp(100px, 22vw, 330px);
+  line-height: 0.8;
+  letter-spacing: -0.08em;
+  margin: 0;
+}
+.entry .surface h1 span {
+  display: block;
+  font: 12px var(--body);
+  letter-spacing: 0.08em;
+  margin: 25px 0 0 5%;
+}
+.entry .surface svg {
+  display: block;
+  width: 100%;
+  height: 140px;
+  margin-top: -30px;
+}
+.entry .surface nav {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 22px 4%;
+  margin: 0;
+  background: #34251f;
+  color: #eee0bf;
+}
+.entry .surface nav a {
+  font: 12px var(--body);
+  padding: 5px;
+}
+.entry .stratum {
+  border: 0;
+  position: relative;
+  padding: 70px 8% 100px;
+  min-height: 650px;
+  grid-template-columns: 100px 1fr;
+  gap: 8%;
+  background-image: repeating-linear-gradient(
+    var(--grain),
+    transparent 0 30px,
+    #34251f09 31px 32px
+  ) !important;
+}
+.entry .stratum:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -20px;
+  height: 45px;
+  background: inherit;
+  clip-path: polygon(
+    0 50%,
+    9% 70%,
+    20% 20%,
+    34% 65%,
+    50% 10%,
+    65% 70%,
+    80% 30%,
+    100% 65%,
+    100% 100%,
+    0 100%
+  );
+}
+.entry .stratum:nth-of-type(2n) .buried {
+  padding-left: 25%;
+}
+.entry .stratum aside {
+  border-left: 1px dashed currentColor;
+  padding-left: 18px;
+}
+.entry .stratum aside > span {
+  font: 44px var(--heading);
+}
+.entry .buried h2 {
+  max-width: 10em;
+  font-size: clamp(34px, 4vw, 62px);
+}
+.entry .buried button {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  text-align: left;
+  border: 0;
+  border-bottom: 1px dashed;
+  padding: 30px 0;
+}
+.entry .object {
+  font-size: 110px;
+  min-width: 120px;
+}
+@media (max-width: 700px) {
+  .entry .surface {
+    padding-top: 100px;
+  }
+  .entry .surface h1 {
+    font-size: 25vw;
+  }
+  .entry .surface h1 span {
+    font-size: 10px;
+    margin-top: 18px;
+  }
+  .entry .surface svg {
+    height: 110px;
+    margin-top: 0;
+  }
+  .entry .surface nav {
+    gap: 10px;
+    justify-content: flex-start;
+  }
+  .entry .stratum {
+    padding: 40px 6% 70px;
+    grid-template-columns: 40px minmax(0, 1fr);
+    gap: 18px;
+    min-height: 520px;
+  }
+  .entry .stratum aside {
+    padding-left: 7px;
+    font-size: 8px;
+  }
+  .entry .stratum aside > span {
+    font-size: 24px;
+  }
+  .entry .stratum:nth-of-type(2n) .buried {
+    padding-left: 0;
+  }
+  .entry .buried h2 {
+    font-size: 30px;
+  }
+  .entry .buried button {
+    display: block;
+    font-size: 12px;
+  }
+  .entry .object {
+    display: block;
+    font-size: 90px;
+    min-width: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .entry .stratum aside {
+    padding-right: 3px;
+    font-size: 6px;
+    letter-spacing: -0.03em;
+  }
+  .entry .stratum aside b {
+    font-size: 26px;
+    margin-top: 100px;
+  }
+  .entry .stratum aside > span {
+    font-size: 20px;
   }
 }
 </style>

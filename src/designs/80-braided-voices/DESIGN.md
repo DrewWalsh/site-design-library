@@ -2,11 +2,11 @@
 
 **Idea.** Follow a life through the points where it crosses another.
 
-**Composition.** Four coloured text strands travel down a warm page, crossing at shared moments. Quotes, times and connecting curves become the navigation.
+**Composition.** A narrow vertical title spine accompanies a woven oral-history surface. Overscale shared times cut across four offset text strands; narrator controls are attached to the strands, and voices cross immediately without a separate introductory hero.
 
 **Navigation and complete example.** Follow four neighbours through six moments in one day, switch voices at a crossing and compare their accounts in a complete transcript.
 
-**Responsive and inclusive behaviour.** Narrator controls remain explicit; each chronological crossing becomes a compact two-column weave, then a readable stacked transcript on very narrow screens. All controls are native buttons or labelled inputs. Movement is discretionary, no sound starts automatically, reduced-motion preferences remove transitions, and a direct index exposes the same content.
+**Responsive and inclusive behaviour.** On phones the title remains a slim vertical spine and the voices weave through two columns. Four narrator controls and every shared moment remain directly selectable. Native buttons, visible focus, a direct return path and reduced-motion support preserve access to the same content.
 
 **Adaptation.** Maintain different voices with common coordinates. Give readers a way to see who is speaking without relying on strand colour. Retain the relationship between navigation and content. Do not reduce the reference to a generic hero followed by interchangeable cards.
 

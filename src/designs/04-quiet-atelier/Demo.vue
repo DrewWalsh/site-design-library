@@ -17,7 +17,7 @@ const project = ref('A room to return to'),
   sent = ref(false);
 </script>
 <template>
-  <div class="specimen">
+  <div class="specimen" :class="{ entry: state === 'start' }">
     <a class="skip" href="#content">Skip to content</a>
     <header>
       <a :href="href('start')" @click.prevent="go('start')">alder<span>STUDIO</span></a>
@@ -30,7 +30,7 @@ const project = ref('A room to return to'),
         ><section class="intro">
           <div>
             <p class="eyebrow">INTERIORS / OBJECTS / EVERYDAY LIFE</p>
-            <h1>Space to<br />feel at home.</h1>
+            <h1 class="sr">Alder Studio — selected interiors and objects</h1>
             <p>
               We make quiet interiors and useful objects. Thoughtful about material, generous in the
               way they are lived with.
@@ -38,14 +38,21 @@ const project = ref('A room to return to'),
             <a href="#work">Selected work, 2024–26 ↓</a>
           </div>
           <figure>
-            <img
-              class=""
-              src="/art/interior.webp"
-              alt="A warm room with a mustard armchair, wooden floor, and natural light"
-              width="1200"
-              height="900"
-              loading="lazy"
-            />
+            <button
+              @click="
+                project = 'A room to return to';
+                go('project');
+              "
+            >
+              <img
+                class=""
+                src="/art/interior.webp"
+                alt="A warm room with a mustard armchair, wooden floor, and natural light"
+                width="1200"
+                height="900"
+                loading="lazy"
+              />
+            </button>
             <figcaption>01 &nbsp; A room to return to · Residential, 2026</figcaption>
           </figure>
         </section>
@@ -70,7 +77,7 @@ const project = ref('A room to return to'),
           </figure>
           <div>
             <p class="eyebrow">A PRACTICE OF ATTENTION</p>
-            <h2>Less noise.<br />More belonging.</h2>
+            <h2>Alder Studio<br />Northbank, 2026</h2>
             <p>
               Good spaces leave room for people. We begin with the rhythms of a day: where you sit,
               what you reach for, how the light moves.
@@ -541,6 +548,169 @@ main > h1,
   .enquiry h1,
   main > h1 {
     font-size: 42px;
+  }
+}
+
+/* The entry is the experience itself; supporting routes retain its vocabulary. */
+
+.entry header {
+  border: 0;
+  width: 100%;
+  max-width: none;
+  padding: 35px 5%;
+  margin: 0;
+}
+.entry header > a {
+  font-size: 30px;
+}
+.entry header nav {
+  font-size: 11px;
+}
+.entry main {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0 5% 80px;
+}
+.entry .intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 240px;
+  gap: 7%;
+  padding: 25px 0 80px;
+  margin: 0;
+  align-items: end;
+}
+.entry .intro > div {
+  grid-column: 2;
+  grid-row: 1;
+  padding: 0 0 15px;
+}
+.entry .intro h1 {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip-path: inset(50%) !important;
+  white-space: nowrap !important;
+}
+.entry .intro > div > .eyebrow {
+  font-size: 9px;
+  max-width: 20ch;
+}
+.entry .intro > div > p:not(.eyebrow) {
+  font-size: 14px;
+  line-height: 1.9;
+}
+.entry .intro > div > a {
+  font-size: 11px;
+}
+.entry .intro > figure {
+  grid-column: 1;
+  grid-row: 1;
+  margin: 0;
+  width: 100%;
+}
+.entry .intro figure button {
+  border: 0;
+  padding: 0;
+  background: none;
+  width: 100%;
+  display: block;
+}
+.entry .intro img {
+  width: 100%;
+  height: 75svh;
+  max-height: 900px;
+  object-fit: cover;
+}
+.entry figcaption {
+  font-size: 10px;
+  margin-top: 14px;
+}
+.entry .projects {
+  grid-template-columns: 38% minmax(0, 1fr);
+  gap: 16%;
+  align-items: start;
+}
+.entry .projects > figure {
+  margin: 0;
+  padding-top: 70px;
+}
+.entry .projects > figure img {
+  height: 600px;
+  width: 100%;
+  object-fit: cover;
+}
+.entry .projects > div {
+  padding: 0;
+}
+.entry .projects > div h2 {
+  font-size: 27px;
+  line-height: 1.5;
+}
+.entry .projects > div > p {
+  font-size: 14px;
+  line-height: 1.9;
+  max-width: 40ch;
+}
+.entry .projects > div > figure {
+  margin: 50px 0 0;
+  width: 80%;
+}
+.entry .projects > div > figure img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+}
+@media (max-width: 750px) {
+  .entry header {
+    padding: 25px 6%;
+  }
+  .entry main {
+    padding: 0 6% 50px;
+  }
+  .entry .intro {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 0 0 45px;
+    align-items: stretch;
+  }
+  .entry .intro > figure {
+    order: 1;
+  }
+  .entry .intro > div {
+    order: 2;
+    max-width: 38ch;
+    margin-left: 15%;
+  }
+  .entry .intro img {
+    height: 490px;
+    max-height: 70svh;
+  }
+  .entry .intro > div > p:not(.eyebrow) {
+    font-size: 13px;
+  }
+  .entry .projects {
+    display: block;
+  }
+  .entry .projects > figure {
+    padding-top: 0;
+    width: 83%;
+  }
+  .entry .projects > figure img {
+    height: 400px;
+  }
+  .entry .projects > div {
+    margin: 45px 0 0 15%;
+  }
+  .entry .projects > div > figure {
+    width: 100%;
+  }
+  .entry .projects > div > figure img {
+    height: 340px;
   }
 }
 </style>

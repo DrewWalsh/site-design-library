@@ -1,12 +1,12 @@
 {
   "designId": "84",
-  "sourceRevision": "sha256:14a3ad8bb165c8ae147862a3d9c29c8d752c92c5c8e6d572dbb8dd129e74e98a",
-  "capturedAt": "2026-10-27T04:17:05.611Z",
-  "browser": "156.0.4314.42",
+  "sourceRevision": "sha256:105278b80ffe21ed44682ec05766b3ddeec30befb40e47e64ba033702db5f01d",
+  "capturedAt": "2026-10-29T20:39:50.290Z",
+  "browser": "156.0.4314.50",
   "captures": [
     {
       "file": "/previews/84/desktop.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/84/0b8b79f768a84a7e-desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/84/baf84996ecb6ae95-desktop.jpg",
       "route": "/preview/84-causal-theatre/start",
       "viewport": {
         "width": 1440,
@@ -14,13 +14,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:14a3ad8bb165c8ae147862a3d9c29c8d752c92c5c8e6d572dbb8dd129e74e98a",
-      "sha256": "0b8b79f768a84a7ebcdb4e045e7b3c9cd58a414953fc3de2acbc05465007bf10",
+      "sourceRevision": "sha256:105278b80ffe21ed44682ec05766b3ddeec30befb40e47e64ba033702db5f01d",
+      "sha256": "baf84996ecb6ae9554d8f46b27eb0b1e3d17c7fcb0ef43790fe77b58f9b4ea07",
       "fullPage": false
     },
     {
       "file": "/previews/84/mobile.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/84/c195fd68843841a5-mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/84/1aca99aad5c6e4c6-mobile.jpg",
       "route": "/preview/84-causal-theatre/start",
       "viewport": {
         "width": 390,
@@ -28,8 +28,8 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:14a3ad8bb165c8ae147862a3d9c29c8d752c92c5c8e6d572dbb8dd129e74e98a",
-      "sha256": "c195fd68843841a538e79631301b95135b6db7abd396a20a5d06bfb09d0e92b5",
+      "sourceRevision": "sha256:105278b80ffe21ed44682ec05766b3ddeec30befb40e47e64ba033702db5f01d",
+      "sha256": "1aca99aad5c6e4c69b7b4482b940df55b51fb1f59b9883a2133e63bde15236be",
       "fullPage": false
     },
     {
@@ -42,13 +42,13 @@
       },
       "state": "explanation",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:14a3ad8bb165c8ae147862a3d9c29c8d752c92c5c8e6d572dbb8dd129e74e98a",
+      "sourceRevision": "sha256:105278b80ffe21ed44682ec05766b3ddeec30befb40e47e64ba033702db5f01d",
       "sha256": "171d1d9f3868d21d3eab55c245df35673cf2d9120b717bd53913cc535fc5cd0c",
       "fullPage": false
     },
     {
       "file": "/previews/84/full-page.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/84/9687f953ae21b6b7-full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/84/ace777ac8686b398-full-page.jpg",
       "route": "/preview/84-causal-theatre/start",
       "viewport": {
         "width": 1440,
@@ -56,8 +56,8 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:14a3ad8bb165c8ae147862a3d9c29c8d752c92c5c8e6d572dbb8dd129e74e98a",
-      "sha256": "9687f953ae21b6b7a5541bd100f74853b0311f754eb86788bc753b85f70a723d",
+      "sourceRevision": "sha256:105278b80ffe21ed44682ec05766b3ddeec30befb40e47e64ba033702db5f01d",
+      "sha256": "ace777ac8686b398d06908bcad9417569cabff39dc4a15af66f902204797c01f",
       "fullPage": true
     }
   ]

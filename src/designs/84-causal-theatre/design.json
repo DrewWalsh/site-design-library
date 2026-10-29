@@ -14,7 +14,7 @@
   ],
   "character": "Experimental",
   "traits": {
-    "composition": "Oversized cut-out machines form a pastel theatre. A sorting tower, conveyor, warehouse and delivery cart span the page; explanations sit inside the system.",
+    "composition": "An illustrated parcel machine is the page: a tilted arrival hopper, rounded sorting tower and wheeled dispatch block sit on one heavy conveyor. Each control is physically attached to its machine and the output is a printed verdict slip. There is no promotional introduction.",
     "navigation": "Change parcel conditions, inspect consequences, compare two runs",
     "typography": "Space Grotesk / DM Sans",
     "density": "Medium",
@@ -81,7 +81,7 @@
   "referenceImages": [
     {
       "file": "/previews/84/desktop.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/84/0b8b79f768a84a7e-desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/84/baf84996ecb6ae95-desktop.jpg",
       "route": "/preview/84-causal-theatre/start",
       "viewport": {
         "width": 1440,
@@ -89,13 +89,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:14a3ad8bb165c8ae147862a3d9c29c8d752c92c5c8e6d572dbb8dd129e74e98a",
-      "sha256": "0b8b79f768a84a7ebcdb4e045e7b3c9cd58a414953fc3de2acbc05465007bf10",
+      "sourceRevision": "sha256:105278b80ffe21ed44682ec05766b3ddeec30befb40e47e64ba033702db5f01d",
+      "sha256": "baf84996ecb6ae9554d8f46b27eb0b1e3d17c7fcb0ef43790fe77b58f9b4ea07",
       "fullPage": false
     },
     {
       "file": "/previews/84/mobile.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/84/c195fd68843841a5-mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/84/1aca99aad5c6e4c6-mobile.jpg",
       "route": "/preview/84-causal-theatre/start",
       "viewport": {
         "width": 390,
@@ -103,8 +103,8 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:14a3ad8bb165c8ae147862a3d9c29c8d752c92c5c8e6d572dbb8dd129e74e98a",
-      "sha256": "c195fd68843841a538e79631301b95135b6db7abd396a20a5d06bfb09d0e92b5",
+      "sourceRevision": "sha256:105278b80ffe21ed44682ec05766b3ddeec30befb40e47e64ba033702db5f01d",
+      "sha256": "1aca99aad5c6e4c69b7b4482b940df55b51fb1f59b9883a2133e63bde15236be",
       "fullPage": false
     },
     {
@@ -117,13 +117,13 @@
       },
       "state": "explanation",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:14a3ad8bb165c8ae147862a3d9c29c8d752c92c5c8e6d572dbb8dd129e74e98a",
+      "sourceRevision": "sha256:105278b80ffe21ed44682ec05766b3ddeec30befb40e47e64ba033702db5f01d",
       "sha256": "171d1d9f3868d21d3eab55c245df35673cf2d9120b717bd53913cc535fc5cd0c",
       "fullPage": false
     },
     {
       "file": "/previews/84/full-page.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/84/9687f953ae21b6b7-full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/84/ace777ac8686b398-full-page.jpg",
       "route": "/preview/84-causal-theatre/start",
       "viewport": {
         "width": 1440,
@@ -131,8 +131,8 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:14a3ad8bb165c8ae147862a3d9c29c8d752c92c5c8e6d572dbb8dd129e74e98a",
-      "sha256": "9687f953ae21b6b7a5541bd100f74853b0311f754eb86788bc753b85f70a723d",
+      "sourceRevision": "sha256:105278b80ffe21ed44682ec05766b3ddeec30befb40e47e64ba033702db5f01d",
+      "sha256": "ace777ac8686b398d06908bcad9417569cabff39dc4a15af66f902204797c01f",
       "fullPage": true
     }
   ],
@@ -161,6 +161,6 @@
     "Space Grotesk",
     "DM Sans"
   ],
-  "brief": "**Idea.** A visitor should be able to change the argument and see why it changes.\n\n**Composition.** Oversized cut-out machines form a pastel theatre. A sorting tower, conveyor, warehouse and delivery cart span the page; explanations sit inside the system.\n\n**Navigation and complete example.** Change incoming parcels, sorting capacity and route frequency in a deterministic parcel-system model. Inspect the bottleneck and save two outcomes for comparison.\n\n**Responsive and inclusive behaviour.** The stage becomes a vertical process diagram with visible connecting arrows. Native number inputs and labelled presets replace any need to drag machinery. All controls are native buttons or labelled inputs. Movement is discretionary, no sound starts automatically, reduced-motion preferences remove transitions, and a direct index exposes the same content.\n\n**Adaptation.** Expose the model’s assumptions and connect each control to a visible consequence. Do not present a toy model as a real operational forecast. Retain the relationship between navigation and content. Do not reduce the reference to a generic hero followed by interchangeable cards.\n\n**Research.** [Nicky Case — The Wisdom and/or Madness of Crowds](https://ncase.me/crowds/); [Conditional Design manifesto](https://conditionaldesign.org/manifesto/). These are conceptual precedents, not copied artwork, source code, branding or text. All diagrams and sample writing in this specimen are original, fictional material.",
+  "brief": "**Idea.** A visitor should be able to change the argument and see why it changes.\n\n**Composition.** An illustrated parcel machine is the page: a tilted arrival hopper, rounded sorting tower and wheeled dispatch block sit on one heavy conveyor. Each control is physically attached to its machine and the output is a printed verdict slip. There is no promotional introduction.\n\n**Navigation and complete example.** Change incoming parcels, sorting capacity and route frequency in a deterministic parcel-system model. Inspect the bottleneck and save two outcomes for comparison.\n\n**Responsive and inclusive behaviour.** On phones the same mechanism becomes a vertical conveyor, with each machine and its control kept together. All model inputs and explanations remain native, explicit controls. Native buttons, visible focus, a direct return path and reduced-motion support preserve access to the same content.\n\n**Adaptation.** Expose the model’s assumptions and connect each control to a visible consequence. Do not present a toy model as a real operational forecast. Retain the relationship between navigation and content. Do not reduce the reference to a generic hero followed by interchangeable cards.\n\n**Research.** [Nicky Case — The Wisdom and/or Madness of Crowds](https://ncase.me/crowds/); [Conditional Design manifesto](https://conditionaldesign.org/manifesto/). These are conceptual precedents, not copied artwork, source code, branding or text. All diagrams and sample writing in this specimen are original, fictional material.",
   "scope": "Complete visual reference with deterministic local interactions and fictional content; no production backend."
 }

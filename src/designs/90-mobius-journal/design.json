@@ -14,7 +14,7 @@
   ],
   "character": "Experimental",
   "traits": {
-    "composition": "A cobalt ribbon folds across a cream field, with numbered seams, reversed faces and long horizontal passages. Flipping exposes process writing on the back.",
+    "composition": "A cream ribbon folds diagonally through a cobalt field, with visible return faces, a huge seam number and prose printed directly on its surface. A rounded flip control and six seam marks operate the publication; there is no separate title-and-description opening.",
     "navigation": "Follow six seams, flip finished writing to field notes, inspect the finite index",
     "typography": "Libre Baskerville / IBM Plex Mono",
     "density": "Medium",
@@ -81,7 +81,7 @@
   "referenceImages": [
     {
       "file": "/previews/90/desktop.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/90/370d38f6aa258fa9-desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/90/3e4b86d7f6667b62-desktop.jpg",
       "route": "/preview/90-mobius-journal/start",
       "viewport": {
         "width": 1440,
@@ -89,13 +89,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:9dffbdf2355092d026db93e6cf37161a72c323443f53a3234182c9e2a0a70613",
-      "sha256": "370d38f6aa258fa9db3c4307565abfd3c9c771067f34c84b30b9d51527dca649",
+      "sourceRevision": "sha256:a1d9fd35b219efe35a43217c2b20a25ce519efdfb8ac6061fa4c207d523add0e",
+      "sha256": "3e4b86d7f6667b62e70314c519be4a54723df181a31ac3dca855a5bf39bc2819",
       "fullPage": false
     },
     {
       "file": "/previews/90/mobile.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/90/24535860ef2f31c4-mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/90/03504d4f85e0b14b-mobile.jpg",
       "route": "/preview/90-mobius-journal/start",
       "viewport": {
         "width": 390,
@@ -103,8 +103,8 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:9dffbdf2355092d026db93e6cf37161a72c323443f53a3234182c9e2a0a70613",
-      "sha256": "24535860ef2f31c45ea250059eb78d38ef9f74c85ecc4f6937ddcbdb97e477a1",
+      "sourceRevision": "sha256:a1d9fd35b219efe35a43217c2b20a25ce519efdfb8ac6061fa4c207d523add0e",
+      "sha256": "03504d4f85e0b14bee560aa0af54fd96cacf49fe204bc3f0953b7008401d1d53",
       "fullPage": false
     },
     {
@@ -117,13 +117,13 @@
       },
       "state": "station",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:9dffbdf2355092d026db93e6cf37161a72c323443f53a3234182c9e2a0a70613",
+      "sourceRevision": "sha256:a1d9fd35b219efe35a43217c2b20a25ce519efdfb8ac6061fa4c207d523add0e",
       "sha256": "128ce7686f8ff069289bfe97661920e1abcf462a30632f5dd06b549eb31034f9",
       "fullPage": false
     },
     {
       "file": "/previews/90/full-page.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/90/fcaca8ca50b119c2-full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/90/0e7d720b17135ead-full-page.jpg",
       "route": "/preview/90-mobius-journal/start",
       "viewport": {
         "width": 1440,
@@ -131,8 +131,8 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:9dffbdf2355092d026db93e6cf37161a72c323443f53a3234182c9e2a0a70613",
-      "sha256": "fcaca8ca50b119c28cd84f4ab9dd4a1dcd67877783c5f48c189fa376a510dd23",
+      "sourceRevision": "sha256:a1d9fd35b219efe35a43217c2b20a25ce519efdfb8ac6061fa4c207d523add0e",
+      "sha256": "0e7d720b17135ead21527dc3d7aa92c1739a79b183472d0c6cbbc58010f53111",
       "fullPage": true
     }
   ],
@@ -161,6 +161,6 @@
     "Libre Baskerville",
     "IBM Plex Mono"
   ],
-  "brief": "**Idea.** A finished account and its discarded drafts belong to the same surface.\n\n**Composition.** A cobalt ribbon folds across a cream field, with numbered seams, reversed faces and long horizontal passages. Flipping exposes process writing on the back.\n\n**Navigation and complete example.** Follow six stations of an imagined river walk, flip between polished prose and field notes and read a station’s two versions together.\n\n**Responsive and inclusive behaviour.** The ribbon becomes a vertically folded strip with discrete seam controls. Flipping is a button action, never a motion or orientation requirement. All controls are native buttons or labelled inputs. Movement is discretionary, no sound starts automatically, reduced-motion preferences remove transitions, and a direct index exposes the same content.\n\n**Adaptation.** Use the two faces for a meaningful editorial relation such as account/evidence or finished/draft. Keep a finite index and stable location labels. Retain the relationship between navigation and content. Do not reduce the reference to a generic hero followed by interchangeable cards.\n\n**Research.** [Conditional Design manifesto](https://conditionaldesign.org/manifesto/); [Aaron Koblin — The Wilderness Downtown](https://www.aaronkoblin.com/project/the-wilderness-downtown/). These are conceptual precedents, not copied artwork, source code, branding or text. All diagrams and sample writing in this specimen are original, fictional material.",
+  "brief": "**Idea.** A finished account and its discarded drafts belong to the same surface.\n\n**Composition.** A cream ribbon folds diagonally through a cobalt field, with visible return faces, a huge seam number and prose printed directly on its surface. A rounded flip control and six seam marks operate the publication; there is no separate title-and-description opening.\n\n**Navigation and complete example.** Follow six stations of an imagined river walk, flip between polished prose and field notes and read a station’s two versions together.\n\n**Responsive and inclusive behaviour.** On phones the ribbon keeps its folds, a narrow numbered edge and a readable central passage. Discrete seam and flip controls provide the same finite reading journey. Native buttons, visible focus, a direct return path and reduced-motion support preserve access to the same content.\n\n**Adaptation.** Use the two faces for a meaningful editorial relation such as account/evidence or finished/draft. Keep a finite index and stable location labels. Retain the relationship between navigation and content. Do not reduce the reference to a generic hero followed by interchangeable cards.\n\n**Research.** [Conditional Design manifesto](https://conditionaldesign.org/manifesto/); [Aaron Koblin — The Wilderness Downtown](https://www.aaronkoblin.com/project/the-wilderness-downtown/). These are conceptual precedents, not copied artwork, source code, branding or text. All diagrams and sample writing in this specimen are original, fictional material.",
   "scope": "Complete visual reference with deterministic local interactions and fictional content; no production backend."
 }

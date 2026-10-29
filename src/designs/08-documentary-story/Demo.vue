@@ -23,7 +23,7 @@ const chapters = [
 const captions = ref(false);
 </script>
 <template>
-  <div class="specimen">
+  <div class="specimen" :class="{ entry: state === 'start' }">
     <a class="skip" href="#content">Skip to content</a>
     <header>
       <strong>FIELD DOCUMENTS / 004</strong>
@@ -46,11 +46,11 @@ const captions = ref(false);
           />
           <div>
             <p class="eyebrow">A NORTHBANK STORY IN FIVE CHAPTERS</p>
-            <h1>The river<br />remembers.</h1>
+            <h1>The River Works</h1>
             <p>Following the water through a town<br />that learned to live around it.</p>
             <a href="#chapter-one">Begin the story ↓</a>
           </div>
-          <span>Illustrative landscape / fictional account</span>
+          <span class="plate-label">PLATE 01 / ILLUSTRATIVE LANDSCAPE / FICTIONAL ACCOUNT</span>
         </section>
         <section class="chapter" id="chapter-one">
           <aside>01 / BEFORE US</aside>
@@ -586,5 +586,170 @@ nav button {
   .continuous > h1 {
     font-size: 45px;
   }
+}
+
+/* The entry is the experience itself; supporting routes retain its vocabulary. */
+
+.entry header {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background: #23302e;
+  color: #eae7dc;
+  border: 0;
+  padding: 20px 3%;
+  max-width: none;
+  width: 100%;
+  margin: 0;
+}
+.entry header strong {
+  font-size: 11px;
+}
+.entry header button {
+  color: #eae7dc;
+  font-size: 11px;
+}
+.entry main {
+  max-width: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.entry .cover {
+  position: relative;
+  min-height: 0;
+  height: auto;
+  display: grid;
+  grid-template-columns: 65px minmax(0, 1fr);
+  background: #eae7dc;
+  color: #232e2d;
+  padding: 0;
+}
+.entry .cover::after,
+.entry .cover::before {
+  display: none;
+}
+.entry .cover img {
+  position: static;
+  grid-column: 2;
+  grid-row: 1;
+  height: 68svh;
+  min-height: 450px;
+  width: 100%;
+  object-fit: cover;
+  filter: none;
+  opacity: 1;
+}
+.entry .cover > div {
+  position: static;
+  grid-column: 2;
+  grid-row: 2;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 10px 40px;
+  padding: 35px 5%;
+  background: #eae7dc;
+}
+.entry .cover .eyebrow {
+  grid-column: 1;
+  font:
+    9px/1.6 'DM Sans',
+    sans-serif;
+  letter-spacing: 0.12em;
+  margin: 0;
+}
+.entry .cover h1 {
+  grid-column: 1;
+  grid-row: 2;
+  font:
+    38px/1.1 'DM Sans',
+    sans-serif;
+  letter-spacing: -0.04em;
+  margin: 0;
+  color: #232e2d;
+}
+.entry .cover > div > p:not(.eyebrow) {
+  grid-column: 2;
+  grid-row: 1/3;
+  font-size: 13px;
+  line-height: 1.8;
+  margin: 0;
+}
+.entry .cover a {
+  grid-column: 2;
+  font:
+    10px/1.6 'DM Sans',
+    sans-serif;
+  color: #232e2d;
+}
+.entry .cover > .plate-label {
+  position: static;
+  grid-column: 1;
+  grid-row: 1/3;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  padding: 30px 20px;
+  font:
+    9px/1.5 'DM Sans',
+    sans-serif;
+  letter-spacing: 0.15em;
+}
+.entry .chapter {
+  padding: 65px 8%;
+}
+.entry .mechanism {
+  padding: 60px 8%;
+}
+@media (max-width: 750px) {
+  .entry header {
+    padding: 18px 5%;
+    gap: 20px;
+  }
+  .entry header strong {
+    font-size: 8px;
+  }
+  .entry header nav {
+    gap: 12px;
+  }
+  .entry header button {
+    font-size: 9px;
+  }
+  .entry .cover {
+    grid-template-columns: 27px minmax(0, 1fr);
+  }
+  .entry .cover img {
+    min-height: 360px;
+    height: 54svh;
+  }
+  .entry .cover > div {
+    display: block;
+    padding: 25px 8%;
+  }
+  .entry .cover h1 {
+    font-size: 32px;
+    margin: 15px 0;
+  }
+  .entry .cover > div > p:not(.eyebrow) {
+    font-size: 12px;
+  }
+  .entry .cover a {
+    display: inline-block;
+    margin-top: 18px;
+    font-size: 11px;
+  }
+  .entry .cover > .plate-label {
+    font-size: 7px;
+    padding: 20px 8px;
+  }
+  .entry .chapter {
+    padding: 45px 8%;
+  }
+  .entry .mechanism {
+    padding: 45px 8%;
+  }
+}
+.entry .cover > .plate-label {
+  color: #23312b;
 }
 </style>

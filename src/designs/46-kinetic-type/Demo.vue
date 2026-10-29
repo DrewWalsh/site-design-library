@@ -21,7 +21,7 @@ const sessions = [
 ];
 </script>
 <template>
-  <div class="specimen">
+  <div class="specimen" :class="{ entry: state === 'start' }">
     <a class="skip" href="#content">Skip to content</a>
     <header>
       <strong>VA / 26</strong>
@@ -41,25 +41,10 @@ const sessions = [
     </header>
     <main id="content" :class="{ moving: motion && state === 'start' }">
       <template v-if="state === 'start'"
-        ><section class="type-stage">
-          <div class="issue"><span>SPOKEN WORD / NORTHBANK</span><span>14 NOVEMBER 2026</span></div>
-          <h1><span>GIVE</span><span class="voice">IT A</span><span>VOICE.</span></h1>
-          <div class="under-title">
-            <p>One room. Many ways<br />of saying what matters.</p>
-            <a href="#programme">THE ASSEMBLY BEGINS BELOW ↓</a>
-          </div>
-        </section>
-        <section class="words">
-          <p class="eyebrow">WORDS ARE MEANT TO TRAVEL.</p>
-          <h2>FROM THE PAGE.<br />INTO THE ROOM.<br />BETWEEN US.</h2>
-          <p>
-            A fictional evening of poems, stories, and conversations. Voice Assembly makes space for
-            the rhythm of language and the people who give it shape.
-          </p>
-        </section>
+        ><h1 class="sr">Voice Assembly — 14 November 2026</h1>
         <section id="programme" class="programme">
           <p class="eyebrow">THE EVENING / 14 NOVEMBER</p>
-          <h2>THREE WAYS IN.</h2>
+          <h2 class="sr">Three performances</h2>
           <button
             v-for="(s, i) in sessions"
             :key="s.title"
@@ -597,6 +582,172 @@ main {
   }
   .schedule h2 {
     font-size: 36px;
+  }
+}
+
+/* The entry is the experience itself; supporting routes retain its vocabulary. */
+
+.entry {
+  background: #24232a;
+}
+.entry header {
+  max-width: none;
+  margin: 0;
+  width: 100%;
+  border: 0;
+  padding: 22px 3%;
+}
+.entry header strong {
+  font:
+    38px/1 'Bebas Neue',
+    sans-serif;
+}
+.entry header nav {
+  font-size: 11px;
+}
+.entry main {
+  max-width: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.entry main > h1,
+.entry .programme > h2 {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip-path: inset(50%) !important;
+  white-space: nowrap !important;
+}
+.entry .programme {
+  margin: 0;
+  padding: 0;
+  max-width: none;
+  border: 0;
+}
+.entry .programme > .eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  margin: 0;
+  padding: 20px 3%;
+  border-block: 1px solid #727078;
+}
+.entry .programme > button {
+  display: grid;
+  grid-template-columns: 90px minmax(0, 1fr) 140px 30px;
+  gap: 25px;
+  align-items: center;
+  width: 100%;
+  padding: 25px 4%;
+  border: 0;
+  border-bottom: 1px solid #727078;
+  min-height: 260px;
+  text-align: left;
+  background: none;
+  color: #f1eee3;
+  overflow: hidden;
+}
+.entry .programme > button > span {
+  font-size: 12px;
+}
+.entry .programme > button h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  line-height: 0.82;
+  font-size: clamp(60px, 9vw, 150px);
+  letter-spacing: -0.025em;
+  margin: 0;
+  max-width: 8em;
+}
+.entry .programme > button:nth-of-type(1) h3 {
+  transform: skewX(-8deg);
+  color: #dce57b;
+}
+.entry .programme > button:nth-of-type(2) {
+  background: #dce57b;
+  color: #24232a;
+  min-height: 330px;
+}
+.entry .programme > button:nth-of-type(2) h3 {
+  font-size: clamp(65px, 11vw, 170px);
+  line-height: 0.82;
+  letter-spacing: 0.015em;
+  max-width: 6.5em;
+  text-align: center;
+  margin-left: auto;
+}
+.entry .programme > button:nth-of-type(3) h3 {
+  font-size: clamp(45px, 6vw, 95px);
+  letter-spacing: 0.16em;
+  line-height: 1.05;
+  max-width: 9em;
+}
+.entry .moving .programme > button:first-of-type h3 {
+  animation: syllable 7s ease-in-out infinite;
+}
+@keyframes syllable {
+  0%,
+  100% {
+    transform: skewX(-8deg);
+  }
+  50% {
+    transform: skewX(4deg);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .entry .moving .programme > button:first-of-type h3 {
+    animation: none;
+  }
+}
+@media (max-width: 750px) {
+  .entry header {
+    padding: 20px 5%;
+    gap: 20px;
+  }
+  .entry header strong {
+    font-size: 28px;
+  }
+  .entry header nav {
+    font-size: 9px;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .entry .programme > .eyebrow {
+    font-size: 9px;
+    padding: 15px 5%;
+  }
+  .entry .programme > button {
+    grid-template-columns: 45px minmax(0, 1fr) 20px;
+    gap: 15px;
+    padding: 25px 5%;
+    min-height: 290px;
+  }
+  .entry .programme > button > span {
+    font-size: 10px;
+  }
+  .entry .programme > button > span:nth-of-type(2) {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .entry .programme > button > b {
+    grid-column: 3;
+    grid-row: 1;
+  }
+  .entry .programme > button h3 {
+    font-size: 58px;
+  }
+  .entry .programme > button:nth-of-type(2) {
+    min-height: 330px;
+  }
+  .entry .programme > button:nth-of-type(2) h3 {
+    font-size: 64px;
+  }
+  .entry .programme > button:nth-of-type(3) h3 {
+    font-size: 43px;
+    letter-spacing: 0.09em;
   }
 }
 </style>

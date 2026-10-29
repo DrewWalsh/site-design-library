@@ -4,9 +4,11 @@
 
 **Visual grammar.** Organise the page into recognisable stalls rather than a uniform product wall. Each vendor receives a coloured sign, short introduction, and horizontal shelf of items. Warm cream supports paprika, cobalt, and mustard accents. Rounded display lettering identifies stalls; straightforward body type handles prices, ingredients, and collection information.
 
+**Composition.** A striped market awning, actual date and collection hours lead immediately into individual vendor stalls. Coloured signs and product shelves carry the identity. Vendor detail sheets retain the same seller colour and sign-like title rather than reverting to a generic article.
+
 **Specimen and flow.** _Saturday Market_ contains fictional bakers, potters, and growers. Choose a market date, browse stalls, and assemble a local collection basket. Supporting views include a vendor profile and a basket grouped by collection location. An empty date state explains when the next market occurs.
 
-**Responsive behaviour.** Stalls become stacked sections with anchor navigation. Shelves use explicit previous and next controls as well as touch scrolling; products remain reachable without dragging.
+**Responsive and inclusive behaviour.** The date selector sits beside short practical market details. Each coloured vendor sign introduces its product shelf, with ordinary labelled purchase controls. Native buttons, visible focus, a direct return path and reduced-motion support preserve access to the same content.
 
 **Identity rules.** Preserve vendor personality within predictable buying controls. Avoid making every stall a different application or replacing useful categories with decorative chaos. **Effort: medium.**
 
@@ -26,7 +28,7 @@ Brand, subject, accent and equivalent licensed typefaces can change. Preserve co
 
 ## Tokens and typography
 
-Heading: Space Grotesk. Reading: DM Sans. Local WOFF2 fonts with system fallbacks. Page #fff6df; surface #ffffff; text #3f3429; accent #b3482d. Eight-pixel base spacing; reading measure 65ch; width 1240px. See tokens.css for role values and Demo.vue for composition. Palette and type match the working specimen.
+Heading: Space Grotesk. Reading: DM Sans. Local WOFF2 fonts with system fallbacks. Page #fff6df; surface #ffffff; text #3f3429; accent #b3482d. Base tokens define an eight-pixel spacing unit, 65ch reading measure and 1240px content width; the composition-specific rules in Demo.vue override these where the canvas, type or information density requires it. See tokens.css for role values and Demo.vue for composition. Palette and type match the working specimen.
 
 ## States
 

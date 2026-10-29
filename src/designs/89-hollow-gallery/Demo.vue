@@ -52,7 +52,7 @@ function keep() {
 }
 </script>
 <template>
-  <div class="specimen">
+  <div class="specimen" :class="{ entry: state === 'start' }">
     <a class="skip" href="#content">Skip to content</a>
 
     <header>
@@ -64,10 +64,7 @@ function keep() {
     </header>
     <main id="content" :class="{ inverted }">
       <template v-if="state === 'start'"
-        ><div class="exhibition-title">
-          <h1>Enter<br />the absence.</h1>
-          <p>Six works. The way in<br />is the part left out.</p>
-        </div>
+        ><h1 class="sr">Hollow: enter through the spaces left out</h1>
         <div class="hollows">
           <article v-for="(w, i) in works" :key="w[0]" :class="'hollow h' + i">
             <div class="void">
@@ -470,6 +467,181 @@ footer {
     transition: none !important;
     animation: none !important;
     scroll-behavior: auto !important;
+  }
+}
+
+/* The entry is the experience itself; supporting routes retain its vocabulary. */
+
+.entry {
+  position: relative;
+  background: #161b18;
+  color: #e7e6df;
+}
+.entry header {
+  position: relative;
+  border: 0;
+  background: #161b18;
+  color: #e7e6df;
+  padding: 20px 4%;
+  gap: 20px;
+}
+.entry header strong {
+  font-size: 40px;
+  letter-spacing: -0.08em;
+}
+.entry header > span {
+  font-size: 9px;
+  max-width: 140px;
+}
+.entry header nav {
+  gap: 15px;
+}
+.entry header button {
+  font-size: 11px;
+}
+.entry main > h1 {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip-path: inset(50%) !important;
+  white-space: nowrap !important;
+}
+.entry .hollows {
+  background: #161b18;
+  grid-template-columns: 1.3fr 1fr 1fr;
+  padding: 0 3% 50px;
+  gap: 0;
+}
+.entry .hollow {
+  background: transparent;
+  margin: 0;
+  padding: 25px 12%;
+  min-height: 390px;
+  border-radius: 0;
+}
+.entry .h0 {
+  grid-row: span 2;
+  padding: 40px 9% 90px;
+}
+.entry .h0 .void {
+  min-height: 700px;
+  border-radius: 48% 48% 0 0;
+}
+.entry .h1 .void {
+  min-height: 300px;
+  border-radius: 50%;
+}
+.entry .h2 {
+  padding: 25px 8% 25px 20%;
+}
+.entry .h2 .void {
+  min-height: 350px;
+  width: 100%;
+}
+.entry .h3 .void {
+  min-height: 310px;
+}
+.entry .h4 .void {
+  min-height: 300px;
+  transform: rotate(8deg);
+}
+.entry .h5 {
+  grid-column: 1/4;
+  min-height: 380px;
+  padding: 30px 25%;
+}
+.entry .h5 .void {
+  min-height: 300px;
+  border-radius: 50% 30% 50% 30%;
+}
+.entry .void h2 {
+  font-size: clamp(20px, 2.1vw, 31px);
+  max-width: 8em;
+  margin: 22px auto;
+}
+.entry .h0 .void h2 {
+  font-size: clamp(35px, 4vw, 60px);
+}
+.entry .edge-label {
+  left: 15%;
+  bottom: 14px;
+}
+.entry main.inverted .hollows {
+  background: #e7e6df;
+}
+.entry main.inverted .hollow {
+  background: transparent;
+}
+.entry footer {
+  background: #161b18;
+  color: #e7e6df;
+  border-color: #51564e;
+}
+@media (max-width: 750px) {
+  .entry header {
+    flex-wrap: wrap;
+    padding: 20px 6%;
+  }
+  .entry header strong {
+    font-size: 31px;
+  }
+  .entry header > span {
+    font-size: 8px;
+  }
+  .entry header nav {
+    width: 100%;
+  }
+  .entry header button {
+    font-size: 9px;
+  }
+  .entry .hollows {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 3% 35px;
+  }
+  .entry .hollow:nth-child(n) {
+    grid-row: auto;
+    grid-column: auto;
+    padding: 15px 8%;
+    min-height: 290px;
+  }
+  .entry .h0 {
+    grid-column: 1/3 !important;
+  }
+  .entry .h0 .void {
+    min-height: 480px;
+    max-width: 270px;
+  }
+  .entry .void {
+    padding: 30px 12px;
+  }
+  .entry .h0 .void h2 {
+    font-size: 43px;
+  }
+  .entry .void h2 {
+    font-size: 20px;
+  }
+  .entry .h1 .void,
+  .entry .h2 .void,
+  .entry .h3 .void,
+  .entry .h4 .void,
+  .entry .h5 .void {
+    min-height: 270px;
+  }
+  .entry .void button {
+    font-size: 9px;
+    padding: 8px 0;
+  }
+  .entry .h5 {
+    grid-column: 1/3 !important;
+    padding: 25px 15% !important;
+  }
+  .entry .edge-label {
+    font-size: 7px;
+    bottom: 2px;
   }
 }
 </style>

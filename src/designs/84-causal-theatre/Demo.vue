@@ -33,7 +33,7 @@ function snapshot() {
 }
 </script>
 <template>
-  <div class="specimen">
+  <div class="specimen" :class="{ entry: state === 'start' }">
     <a class="skip" href="#content">Skip to content</a>
 
     <header>
@@ -47,20 +47,22 @@ function snapshot() {
     </header>
     <main id="content">
       <template v-if="state === 'start'"
-        ><div class="title">
-          <span>ACT I / THE DAY BEGINS</span>
-          <h1>Where does<br />the waiting go?</h1>
-          <p>
-            More parcels do not always need more vans. Change one condition and follow its
-            consequence.
-          </p>
-        </div>
+        ><h1 class="sr">A parcel's progress: operate the machine</h1>
         <div class="stage">
           <section class="incoming">
             <span>01 / ARRIVAL</span>
             <div class="parcels" aria-hidden="true"><i v-for="i in 9" :key="i"></i></div>
             <strong>{{ arrivals }}</strong>
             <p>parcels arrive</p>
+            <label
+              >Incoming parcels / hour<input
+                type="number"
+                min="20"
+                max="180"
+                step="10"
+                v-model.number="arrivals"
+                @change="arrivals = Math.max(20, Math.min(180, Number(arrivals) || 20))"
+            /></label>
           </section>
           <b class="arrow" aria-hidden="true">→</b>
           <section class="sorting">
@@ -68,6 +70,11 @@ function snapshot() {
             <div class="machine" aria-hidden="true"><i></i><i></i><i></i></div>
             <strong>{{ sorted }}</strong>
             <p>sorted this hour<br />{{ arrivals - sorted }} still at intake</p>
+            <label
+              >Sorting staff<input type="range" min="1" max="5" v-model.number="sorters" /><span
+                >{{ sorters }} people × 30 parcels</span
+              ></label
+            >
           </section>
           <b class="arrow" aria-hidden="true">→</b>
           <section class="dispatch">
@@ -75,27 +82,14 @@ function snapshot() {
             <div class="van" aria-hidden="true"><i></i></div>
             <strong>{{ delivered }}</strong>
             <p>leave the depot<br />{{ sorted - delivered }} wait for a route</p>
+            <label
+              >Delivery routes<input type="range" min="1" max="6" v-model.number="routes" /><span
+                >{{ routes }} routes × 20 parcels</span
+              ></label
+            >
           </section>
         </div>
-        <div class="levers">
-          <label
-            >Incoming parcels / hour<input
-              type="number"
-              min="20"
-              max="180"
-              step="10"
-              v-model.number="arrivals"
-              @change="arrivals = Math.max(20, Math.min(180, Number(arrivals) || 20))" /></label
-          ><label
-            >Sorting staff<input type="range" min="1" max="5" v-model.number="sorters" /><span
-              >{{ sorters }} people × 30 parcels</span
-            ></label
-          ><label
-            >Delivery routes<input type="range" min="1" max="6" v-model.number="routes" /><span
-              >{{ routes }} routes × 20 parcels</span
-            ></label
-          >
-        </div>
+
         <div class="verdict" role="status">
           <strong>{{ waiting }} waiting.</strong>
           <p>
@@ -601,6 +595,191 @@ footer {
     transition: none !important;
     animation: none !important;
     scroll-behavior: auto !important;
+  }
+}
+
+/* The entry is the experience itself; supporting routes retain its vocabulary. */
+
+.entry {
+  background: #cad4ed;
+  position: relative;
+}
+.entry header {
+  border: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 25px 4%;
+  gap: 30px;
+}
+.entry header strong {
+  font: 32px/0.9 var(--heading);
+  max-width: 160px;
+  transform: rotate(-7deg);
+}
+.entry header > p {
+  font-size: 10px;
+  max-width: 170px;
+}
+.entry header nav {
+  margin-left: auto;
+}
+.entry main > h1 {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip-path: inset(50%) !important;
+  white-space: nowrap !important;
+}
+.entry .stage {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 80px 1.2fr 80px 1fr;
+  align-items: start;
+  gap: 0;
+  padding: 20px 4% 65px;
+  min-height: 680px;
+}
+.entry .stage:before {
+  content: '';
+  position: absolute;
+  left: 3%;
+  right: 3%;
+  top: 55%;
+  height: 90px;
+  background: repeating-linear-gradient(90deg, #292c34 0 7px, #5a6273 8px 10px);
+  transform: rotate(7deg);
+  border-block: 9px solid #292c34;
+}
+.entry .stage section {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 20px 25px;
+  min-width: 0;
+}
+.entry .stage .incoming {
+  background: #efab72;
+  transform: rotate(-5deg);
+  margin-top: 15px;
+  box-shadow: 12px 12px 0 #292c34;
+}
+.entry .stage .sorting {
+  background: #8ba99b;
+  margin-top: 75px;
+  border-radius: 40% 40% 0 0;
+  padding-top: 40px;
+  box-shadow: 12px 12px 0 #292c34;
+}
+.entry .stage .dispatch {
+  background: #dfa4c3;
+  margin-top: 155px;
+  transform: rotate(4deg);
+  box-shadow: 12px 12px 0 #292c34;
+}
+.entry .stage section > strong {
+  font: 100px/0.9 var(--heading);
+  letter-spacing: -0.08em;
+  margin: 12px 0;
+}
+.entry .stage section > p {
+  font-size: 13px;
+  min-height: 42px;
+}
+.entry .stage section > span {
+  font-size: 11px;
+  letter-spacing: 0.1em;
+}
+.entry .stage .arrow {
+  z-index: 2;
+  align-self: center;
+  font-size: 60px;
+  text-align: center;
+}
+.entry .stage label {
+  border-top: 2px solid #292c34;
+  padding-top: 18px;
+  display: grid;
+  gap: 10px;
+  font-size: 12px;
+  width: 100%;
+  text-align: left;
+}
+.entry .stage label input {
+  width: 100%;
+  accent-color: #292c34;
+  padding: 10px;
+  background: #ffffff65;
+  border: 1px solid;
+}
+.entry .stage label span {
+  font-size: 10px;
+}
+.entry .verdict {
+  margin: 0 4% 55px;
+  border: 2px solid;
+  background: #fff2cf;
+  box-shadow: 10px 10px 0 #292c34;
+  position: relative;
+  padding: 28px;
+}
+.entry .verdict > strong {
+  font-size: 50px;
+}
+@media (max-width: 900px) {
+  .entry header {
+    flex-wrap: wrap;
+  }
+  .entry header nav {
+    margin-left: 0;
+  }
+  .entry .stage {
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding: 25px 9% 50px;
+  }
+  .entry .stage:before {
+    left: 45%;
+    right: auto;
+    top: 5%;
+    width: 55px;
+    height: 90%;
+    transform: none;
+  }
+  .entry .stage section {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto !important;
+    transform: none !important;
+    padding: 25px;
+  }
+  .entry .stage .sorting {
+    padding-top: 35px;
+  }
+  .entry .stage .arrow {
+    transform: rotate(90deg);
+    font-size: 55px;
+    padding: 15px;
+  }
+  .entry .stage section > strong {
+    font-size: 78px;
+  }
+  .entry .stage .parcels,
+  .entry .stage .machine,
+  .entry .stage .van {
+    margin: 20px auto;
+  }
+  .entry .verdict {
+    margin: 0 8% 40px;
+  }
+  .entry .verdict > strong {
+    font-size: 35px;
   }
 }
 </style>

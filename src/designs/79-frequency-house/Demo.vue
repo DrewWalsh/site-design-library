@@ -58,7 +58,7 @@ function add() {
 }
 </script>
 <template>
-  <div class="specimen">
+  <div class="specimen" :class="{ entry: state === 'start' }">
     <a class="skip" href="#content">Skip to content</a>
 
     <header>
@@ -502,5 +502,137 @@ footer {
     animation: none !important;
     scroll-behavior: auto !important;
   }
+}
+
+/* The entry is the experience itself; supporting routes retain its vocabulary. */
+
+.entry {
+  position: relative;
+  background: radial-gradient(ellipse at 45% 45%, #3b3c33, #151b19 73%);
+}
+.entry header {
+  position: absolute;
+  top: 25px;
+  left: 28px;
+  right: 28px;
+  padding: 0;
+  border: 0;
+  z-index: 4;
+  align-items: flex-start;
+}
+.entry header > span {
+  writing-mode: vertical-rl;
+  letter-spacing: 0.18em;
+  max-width: 25px;
+}
+.entry header strong {
+  position: absolute;
+  left: 0;
+  top: calc(100svh - 125px);
+  font-size: 14px;
+  letter-spacing: 0.3em;
+}
+.entry header button {
+  margin-left: auto;
+  border-radius: 50%;
+  width: 116px;
+  height: 116px;
+  font-size: 10px;
+  border: 1px dashed #d0c4a1;
+  background: #202322;
+}
+.entry .instrument {
+  height: 100svh;
+  min-height: 700px;
+  display: grid;
+  place-items: center;
+  padding: 30px;
+}
+.entry .dial {
+  width: min(80vw, 82svh);
+  height: auto;
+  aspect-ratio: 1;
+  max-width: none;
+  box-shadow:
+    0 0 0 18px #ffffff05,
+    0 0 0 20px #f2e5cb22;
+}
+.entry .dial-centre h1 {
+  font-size: clamp(28px, 4vw, 66px);
+  line-height: 1.05;
+}
+.entry .dial-centre > p {
+  font-size: 30px;
+}
+.entry .serial {
+  left: auto;
+  right: 30px;
+  bottom: 150px;
+}
+.entry .tuner {
+  border: 0;
+  max-width: 650px;
+  margin: -110px auto 25px;
+  position: relative;
+  z-index: 3;
+  background: #151b19c9;
+  border-radius: 80px;
+  padding: 20px 30px;
+}
+.entry .intro {
+  padding-top: 50px;
+  text-align: center;
+  max-width: 660px;
+  margin: auto;
+}
+@media (max-width: 700px) {
+  .entry header {
+    left: 16px;
+    right: 16px;
+    top: 18px;
+  }
+  .entry header > span {
+    display: none;
+  }
+  .entry header strong {
+    top: 4px;
+    font-size: 10px;
+    max-width: 100px;
+  }
+  .entry header button {
+    width: 84px;
+    height: 84px;
+    font-size: 9px;
+  }
+  .entry .instrument {
+    min-height: 620px;
+    height: 80svh;
+    padding: 15px;
+  }
+  .entry .dial {
+    width: 87vw;
+  }
+  .entry .dial-centre h1 {
+    font-size: 27px;
+  }
+  .entry .tuner {
+    margin: 0 5%;
+    padding: 15px 10px;
+    gap: 10px;
+  }
+  .entry .serial {
+    bottom: 20px;
+    right: 20px;
+    font-size: 8px;
+  }
+  .entry .intro {
+    padding: 35px 7%;
+  }
+}
+.entry header {
+  pointer-events: none;
+}
+.entry header button {
+  pointer-events: auto;
 }
 </style>

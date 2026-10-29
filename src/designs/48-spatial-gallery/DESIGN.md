@@ -4,9 +4,11 @@
 
 **Visual grammar.** Present a shallow spatial stage in CSS or SVG, with clearly labelled exhibits and a permanent destination list. A three-dimensional renderer is optional only if it adds necessary spatial meaning. Use quiet architectural surfaces, neutral framing, restrained type, and object-specific imagery. Distance and grouping convey curatorial relationships. A standard detail panel holds all substantive text.
 
+**Composition.** The room is the opening surface. A small museum plaque hangs on its back wall; chair, vessel and lamp act as labelled entrances, with a complete object list along the floor edge. The surrounding webpage no longer frames the room beneath a marketing introduction.
+
 **Specimen and flow.** _Small Museum_ exhibits fictional design objects. Choose an exhibit from the scene or its equivalent list, inspect its description, and move to a related object. Supporting views are the complete collection list and an object detail page with a stable URL.
 
-**Mobile and motion.** Default to a two-dimensional arrangement or the list on constrained devices. Reduced motion removes camera travel. Keyboard users can visit every exhibit without steering through space; failed rendering leaves the list available.
+**Responsive and inclusive behaviour.** A bounded two-dimensional room retains all three objects and explicit labels on phones. The complete text collection follows directly below the floor, and every object has a readable detail route. Native buttons, visible focus, a direct return path and reduced-motion support preserve access to the same content.
 
 **Identity and effort.** Preserve meaningful spatial grouping; avoid mandatory free movement, heavy introductory sequences, or essential text embedded in a canvas. **Effort: high.**
 
@@ -26,7 +28,7 @@ Brand, subject, accent and equivalent licensed typefaces can change. Preserve co
 
 ## Tokens and typography
 
-Heading: Libre Baskerville. Reading: DM Sans. Local WOFF2 fonts with system fallbacks. Page #f0eee7; surface #fffdf5; text #3c413e; accent #697b68. Eight-pixel base spacing; reading measure 65ch; width 1240px. See tokens.css for role values and Demo.vue for composition. Palette and type match the working specimen.
+Heading: Libre Baskerville. Reading: DM Sans. Local WOFF2 fonts with system fallbacks. Page #f0eee7; surface #fffdf5; text #3c413e; accent #697b68. Base tokens define an eight-pixel spacing unit, 65ch reading measure and 1240px content width; the composition-specific rules in Demo.vue override these where the canvas, type or information density requires it. See tokens.css for role values and Demo.vue for composition. Palette and type match the working specimen.
 
 ## States
 

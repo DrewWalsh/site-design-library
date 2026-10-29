@@ -337,7 +337,7 @@ const journeys: [string, string, (page: Page) => Promise<void>][] = [
         'The folded road',
       ]);
       await p.getByRole('button', { name: 'Open this composition' }).click();
-      await expect(p.locator('.edition-title b')).toHaveText('24');
+      await expect(p.locator('.composition-number')).toHaveText('EDITION 24 / 27');
     },
   ],
   [

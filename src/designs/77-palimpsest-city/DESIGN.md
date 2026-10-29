@@ -2,11 +2,11 @@
 
 **Idea.** A place is several histories occupying the same coordinates.
 
-**Composition.** Translucent blue, rust and charcoal plans overlap on parchment. Street names, contour marks and marginal testimony form a full-page atlas.
+**Composition.** The atlas occupies the entire opening viewport. A compact catalogue label floats over its upper-left margin, independent layer switches occupy the opposite corner, and irregular numbered tags sit directly in the map. There is no introductory banner.
 
 **Navigation and complete example.** Explore four fictional periods of the Silt railway district, select one of six addresses, compare its uses and read the resident accounts associated with it.
 
-**Responsive and inclusive behaviour.** The plan retains a square aspect ratio, with large numbered location controls and a text key underneath. All controls are native buttons or labelled inputs. Movement is discretionary, no sound starts automatically, reduced-motion preferences remove transitions, and a direct index exposes the same content.
+**Responsive and inclusive behaviour.** The map remains the first surface on phones. Two small overlay controls leave the centre available, with a text address key below and large location buttons. Native buttons, visible focus, a direct return path and reduced-motion support preserve access to the same content.
 
 **Adaptation.** Use independently legible evidence layers and honest source labels; preserve spatial relationships when simplifying the map. Retain the relationship between navigation and content. Do not reduce the reference to a generic hero followed by interchangeable cards.
 

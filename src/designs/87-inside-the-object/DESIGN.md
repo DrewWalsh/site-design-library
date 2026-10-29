@@ -2,11 +2,11 @@
 
 **Idea.** The parts of an object can be the architecture of its story.
 
-**Composition.** An enormous exploded camera floats on a pale technical field. Thin leaders connect labelled parts; selecting a component opens its account in the space the object occupied.
+**Composition.** An exploded mechanical camera occupies a measured full-height drawing field. Its component labels are the site map; the publication identity sits on a narrow vertical binding edge. The visitor encounters the object before any explanatory prose.
 
 **Navigation and complete example.** Separate a simplified camera into six components, read their roles and histories, then work through a six-step fictional inspection sequence.
 
-**Responsive and inclusive behaviour.** The exploded drawing remains contained and scales; a numbered component list supplies large touch targets and complete text navigation. All controls are native buttons or labelled inputs. Movement is discretionary, no sound starts automatically, reduced-motion preferences remove transitions, and a direct index exposes the same content.
+**Responsive and inclusive behaviour.** A bounded camera drawing leads the phone screen, with compact attached labels and a full numbered part list directly underneath. Assembly and inspection controls remain ordinary buttons. Native buttons, visible focus, a direct return path and reduced-motion support preserve access to the same content.
 
 **Adaptation.** Use a simplified, clearly labelled object model. Keep repair guidance demonstrative unless verified for a real device. Retain the relationship between navigation and content. Do not reduce the reference to a generic hero followed by interchangeable cards.
 

@@ -57,7 +57,7 @@ function save() {
 }
 </script>
 <template>
-  <div class="specimen">
+  <div class="specimen" :class="{ entry: state === 'start' }">
     <a class="skip" href="#content">Skip to content</a>
     <header>
       <strong>FORM®</strong><span>CONFERENCE<br />NORTHBANK, 2026</span>
@@ -71,7 +71,7 @@ function save() {
         ><section class="title">
           <div>
             <p>DESIGN / CULTURE / WHAT COMES NEXT</p>
-            <h1>{{ state === 'saved' ? 'Your programme.' : 'Form follows conversation.' }}</h1>
+            <h1>{{ state === 'saved' ? 'Your programme.' : 'FORM / 26' }}</h1>
           </div>
           <aside>
             <strong>06—07<br />NOV</strong>
@@ -581,6 +581,191 @@ main {
   }
   .speaker h1 {
     font-size: 48px;
+  }
+}
+
+/* The entry is the experience itself; supporting routes retain its vocabulary. */
+
+.entry header {
+  padding: 22px 4%;
+  max-width: none;
+  width: 100%;
+  margin: 0;
+  border: 0;
+}
+.entry header strong {
+  font-size: 21px;
+}
+.entry header > span {
+  font-size: 10px;
+}
+.entry header nav {
+  font-size: 11px;
+}
+.entry main {
+  max-width: none;
+  width: 100%;
+  margin: 0;
+  padding: 0 4% 70px;
+  display: grid;
+  grid-template-columns: 46% minmax(0, 1fr);
+  column-gap: 5%;
+}
+.entry .title {
+  grid-column: 1;
+  grid-row: 1;
+  background: #c6321e;
+  color: #fff6e4;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 0;
+  min-height: 780px;
+  margin: 0;
+}
+.entry .title h1 {
+  font-size: clamp(95px, 11.5vw, 180px);
+  letter-spacing: -0.085em;
+  line-height: 0.83;
+  max-width: 3.6em;
+  margin: 45px 0;
+  overflow-wrap: normal;
+}
+.entry .title > div > p {
+  font-size: 10px;
+  letter-spacing: 0.13em;
+}
+.entry .title aside {
+  display: flex;
+  gap: 35px;
+  align-items: end;
+  padding: 0;
+  border: 0;
+}
+.entry .title aside strong {
+  font-size: 54px;
+  line-height: 0.9;
+  color: inherit;
+}
+.entry .title aside p {
+  font-size: 12px;
+  margin: 0;
+}
+.entry #programme {
+  grid-column: 2;
+  grid-row: 1/3;
+  align-self: start;
+  padding: 0;
+  border-top: 3px solid;
+}
+.entry .days {
+  padding: 20px 0;
+  border-bottom: 1px solid;
+  gap: 10px;
+}
+.entry .days button {
+  font-size: 12px;
+}
+.entry .session {
+  display: grid;
+  grid-template-columns: 75px minmax(0, 1fr) 20px;
+  gap: 15px;
+  padding: 27px 0;
+}
+.entry .session h2 {
+  font-size: 35px;
+  line-height: 1.05;
+  margin: 0;
+  letter-spacing: -0.055em;
+}
+.entry .session > span {
+  font-size: 11px;
+}
+.entry .session > div {
+  grid-column: 2;
+  grid-row: 2;
+  font-size: 12px;
+}
+.entry .session > b {
+  grid-column: 3;
+  grid-row: 1;
+}
+.entry .statement {
+  grid-column: 1;
+  grid-row: 2;
+  display: block;
+  padding: 30px 0;
+  border: 0;
+}
+.entry .statement span {
+  font-size: 10px;
+}
+.entry .statement p {
+  font-size: 15px;
+  line-height: 1.8;
+  max-width: 48ch;
+}
+.entry .visit {
+  grid-column: 1/3;
+  margin-top: 40px;
+}
+@media (max-width: 750px) {
+  .entry header {
+    gap: 15px;
+    padding: 20px 5%;
+  }
+  .entry header > span {
+    display: none;
+  }
+  .entry header nav {
+    font-size: 9px;
+    gap: 15px;
+  }
+  .entry main {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5% 50px;
+  }
+  .entry .title {
+    order: 1;
+    min-height: 550px;
+    padding: 28px;
+  }
+  .entry .title h1 {
+    font-size: 105px;
+    margin: 35px 0;
+    max-width: 3em;
+  }
+  .entry .title aside {
+    gap: 20px;
+  }
+  .entry .title aside strong {
+    font-size: 43px;
+  }
+  .entry .title aside p {
+    font-size: 10px;
+  }
+  .entry #programme {
+    order: 2;
+    margin-top: 30px;
+    width: 100%;
+  }
+  .entry .session {
+    grid-template-columns: 55px minmax(0, 1fr) 15px;
+    gap: 12px;
+  }
+  .entry .session h2 {
+    font-size: 28px;
+  }
+  .entry .session > span {
+    font-size: 10px;
+  }
+  .entry .statement {
+    order: 3;
+  }
+  .entry .visit {
+    order: 4;
   }
 }
 </style>

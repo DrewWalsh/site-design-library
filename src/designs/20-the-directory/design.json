@@ -7,10 +7,13 @@
   "family": "Workspaces & discovery",
   "status": "ready",
   "thesis": "Help users narrow a large collection and compare candidates efficiently.",
-  "suitableFor": ["Directories", "Discovery"],
+  "suitableFor": [
+    "Directories",
+    "Discovery"
+  ],
   "character": "Restrained",
   "traits": {
-    "composition": "Stable facet rail and comparable horizontal venue listings",
+    "composition": "Search and comparable workspace rows are the opening. A compact title and result count accompany the faceted directory; venue details and comparison views now have their own task headings instead of inheriting the same promotional introduction.",
     "navigation": "Facets, detail pages, and a short comparison tray",
     "typography": "DM Sans",
     "density": "Medium",
@@ -45,7 +48,7 @@
   "referenceImages": [
     {
       "file": "/previews/20/desktop.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/20/c4a101b1bb565d99-desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/20/84ff85364f1c541c-desktop.jpg",
       "route": "/preview/20-the-directory/start",
       "viewport": {
         "width": 1440,
@@ -53,13 +56,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:a9cee339bff71bbdc1436f1f79cde118422e5af0341ad79b024e9fbbdf1ce110",
-      "sha256": "c4a101b1bb565d99b7316b47f27a3694d4bb1e4e7aaf7d0de066ae6ad3051597",
+      "sourceRevision": "sha256:e289065259a5a5cc4e2b6d59551067c4c339b209ac68915db5ac063def03a3c1",
+      "sha256": "84ff85364f1c541c4a404e0dcfdb94d35d14f6b8f499bbe62422ea0c6d1d7575",
       "fullPage": false
     },
     {
       "file": "/previews/20/mobile.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/20/8e9cda6b010e7c82-mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/20/48411fe4e651cd16-mobile.jpg",
       "route": "/preview/20-the-directory/start",
       "viewport": {
         "width": 390,
@@ -67,13 +70,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:a9cee339bff71bbdc1436f1f79cde118422e5af0341ad79b024e9fbbdf1ce110",
-      "sha256": "8e9cda6b010e7c821527bef3e031d210d2db9e02dabd3600566c0bc46ad91f7b",
+      "sourceRevision": "sha256:e289065259a5a5cc4e2b6d59551067c4c339b209ac68915db5ac063def03a3c1",
+      "sha256": "48411fe4e651cd16d1bc161d9684735becf15d6824b29b3794221d07f25b066f",
       "fullPage": false
     },
     {
       "file": "/previews/20/detail.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/20/f631246332b04e7c-detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/20/266bcf906588b843-detail.jpg",
       "route": "/preview/20-the-directory/detail",
       "viewport": {
         "width": 1440,
@@ -81,13 +84,13 @@
       },
       "state": "detail",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:a9cee339bff71bbdc1436f1f79cde118422e5af0341ad79b024e9fbbdf1ce110",
-      "sha256": "f631246332b04e7c68c49e045488f8def03d2107b542e070e58263b6b4da36b4",
+      "sourceRevision": "sha256:e289065259a5a5cc4e2b6d59551067c4c339b209ac68915db5ac063def03a3c1",
+      "sha256": "266bcf906588b8438468961cbd456ee613ea6d1b4e0949d347184b1cc71552dc",
       "fullPage": false
     },
     {
       "file": "/previews/20/full-page.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/20/6c8873e75af10f2f-full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/20/dbe9f598f189eaec-full-page.jpg",
       "route": "/preview/20-the-directory/start",
       "viewport": {
         "width": 1440,
@@ -95,28 +98,43 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:a9cee339bff71bbdc1436f1f79cde118422e5af0341ad79b024e9fbbdf1ce110",
-      "sha256": "6c8873e75af10f2f0a10ae10561a1c328a02e2d5c82e4a452584e82db332f0a5",
+      "sourceRevision": "sha256:e289065259a5a5cc4e2b6d59551067c4c339b209ac68915db5ac063def03a3c1",
+      "sha256": "dbe9f598f189eaecbaf518a0a466c18e7ad67a2687c223d5c0cbce4395941d4b",
       "fullPage": true
     }
   ],
   "sourcePath": "src/designs/20-the-directory",
-  "neighbours": ["21", "50"],
+  "neighbours": [
+    "21",
+    "50"
+  ],
   "palette": {
     "page": "#f7f9f8",
     "surface": "#ffffff",
     "ink": "#263d3d",
     "accent": "#2b6b65"
   },
-  "fonts": ["DM Sans"],
-  "brief": "**Philosophy and fit.** Help users narrow a large collection and compare candidates efficiently. Suitable for professional listings, software catalogues, resource collections, local services, and structured recommendations.\n\n**Visual grammar.** Use prominent search, a stable facet column, a concise results summary, and information-rich horizontal listings. A crisp sans, white and pale blue-grey surfaces, deep charcoal text, and restrained teal selections make the contents easy to scan. Each record exposes the same useful attributes; small thumbnails remain secondary. An optional comparison tray collects chosen records.\n\n**Specimen and flow.** *Useful Places* catalogues fictional workspaces. Visitors filter by equipment and opening day, compare selected venues, and inspect a detailed listing. Supporting states show no matching results with removable filters and a comparison view that highlights differing attributes.\n\n**Adaptation and identity.** Mobile uses an explicit filter panel, visible active filters, and stacked comparison attributes. Preserve comparability, predictable facets, and clear result feedback; avoid marketplace promotion modules, arbitrary recommendation ordering, and a wall of image-led cards. Motion is unnecessary. **Effort: medium.**",
+  "fonts": [
+    "DM Sans"
+  ],
+  "brief": "**Philosophy and fit.** Help users narrow a large collection and compare candidates efficiently. Suitable for professional listings, software catalogues, resource collections, local services, and structured recommendations.\n\n**Visual grammar.** Use prominent search, a stable facet column, a concise results summary, and information-rich horizontal listings. A crisp sans, white and pale blue-grey surfaces, deep charcoal text, and restrained teal selections make the contents easy to scan. Each record exposes the same useful attributes; small thumbnails remain secondary. An optional comparison tray collects chosen records.\n\n**Composition.** Search and comparable workspace rows are the opening. A compact title and result count accompany the faceted directory; venue details and comparison views now have their own task headings instead of inheriting the same promotional introduction.\n\n**Specimen and flow.** _Useful Places_ catalogues fictional workspaces. Visitors filter by equipment and opening day, compare selected venues, and inspect a detailed listing. Supporting states show no matching results with removable filters and a comparison view that highlights differing attributes.\n\n**Adaptation and identity.** Mobile uses an explicit filter panel, visible active filters, and stacked comparison attributes. Preserve comparability, predictable facets, and clear result feedback; avoid marketplace promotion modules, arbitrary recommendation ordering, and a wall of image-led cards. Motion is unnecessary. **Effort: medium.**",
   "scope": "An expansive sample page with representative local interactions; no production business backend.",
   "discovery": {
-    "industries": ["Directory", "Local business"],
-    "visitorGoals": ["Find a provider"],
-    "conversionActions": ["Inspect a listing"],
+    "industries": [
+      "Directory",
+      "Local business"
+    ],
+    "visitorGoals": [
+      "Find a provider"
+    ],
+    "conversionActions": [
+      "Inspect a listing"
+    ],
     "siteSize": "Searchable catalogue",
-    "interactionTypes": ["Faceted search", "Listing details"],
+    "interactionTypes": [
+      "Faceted search",
+      "Listing details"
+    ],
     "keywords": [
       "Directories",
       "Discovery",

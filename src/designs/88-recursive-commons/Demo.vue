@@ -60,7 +60,7 @@ function keep() {
 }
 </script>
 <template>
-  <div class="specimen">
+  <div class="specimen" :class="{ entry: state === 'start' }">
     <a class="skip" href="#content">Skip to content</a>
 
     <header>
@@ -82,12 +82,7 @@ function keep() {
     <main id="content">
       <template v-if="state === 'start'"
         ><div v-if="wing < 0" class="museum">
-          <section class="threshold">
-            <span>A MUSEUM OF ORDINARY THINGS</span>
-            <h1>There is<br />always<br />another<br />room.</h1>
-            <p>Enter a surface.<br />Find what it contains.</p>
-            <b aria-hidden="true">↘</b>
-          </section>
+          <h1 class="sr">Room Within: enter a museum by its surfaces</h1>
           <div class="wings">
             <button
               v-for="(w, i) in wings"
@@ -597,6 +592,188 @@ footer {
     transition: none !important;
     animation: none !important;
     scroll-behavior: auto !important;
+  }
+}
+
+/* The entry is the experience itself; supporting routes retain its vocabulary. */
+
+.entry {
+  position: relative;
+  background: #233a39;
+}
+.entry header {
+  position: absolute;
+  z-index: 5;
+  left: 24px;
+  top: 24px;
+  background: #f1e8d5;
+  padding: 12px 18px;
+  max-width: 640px;
+  box-shadow: 5px 5px 0 #233a39;
+  gap: 25px;
+}
+.entry header strong {
+  font-size: 13px;
+  letter-spacing: 0.1em;
+}
+.entry header button {
+  font-size: 10px;
+}
+.entry .museum {
+  display: block;
+  min-height: 100svh;
+  padding: 0;
+}
+.entry .museum > h1 {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip-path: inset(50%) !important;
+  white-space: nowrap !important;
+}
+.entry .wings {
+  min-height: 100svh;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+  grid-template-rows: 1fr 1.2fr;
+  gap: 0;
+  border: 22px solid #233a39;
+}
+.entry .wings > button {
+  border: 16px solid #233a39;
+  padding: 60px 7% 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.entry .wings > button:first-child {
+  grid-column: 1;
+  grid-row: 1/3;
+  display: flex;
+  border-width: 30px 25px 65px 35px;
+  padding-top: 100px;
+}
+.entry .wings > button:nth-child(2) {
+  grid-column: 2;
+  grid-row: 1;
+}
+.entry .wings > button:nth-child(3) {
+  grid-column: 2;
+  grid-row: 2;
+}
+.entry .wings > button > span {
+  font-size: clamp(30px, 4.5vw, 70px);
+  max-width: 7em;
+}
+.entry .wings > button:first-child > span {
+  font-size: clamp(45px, 7vw, 110px);
+  line-height: 0.9;
+}
+.entry .wings .nested {
+  height: 120px;
+  width: 85%;
+  align-self: flex-end;
+  margin: 20px 0;
+}
+.entry .wings > button:first-child .nested {
+  height: 230px;
+}
+.entry .nested i,
+.entry .nested i i,
+.entry .nested i i i {
+  transform: none;
+  border-width: 10px;
+  padding: 8%;
+}
+.entry .wings b {
+  margin: 0;
+}
+.entry .wings small {
+  margin-bottom: 10px;
+}
+.entry .wing {
+  padding-top: 120px;
+  min-height: 100svh;
+}
+.entry .rooms {
+  gap: 40px;
+}
+.entry .rooms > button {
+  border-width: 20px;
+}
+@media (max-width: 750px) {
+  .entry header {
+    top: 12px;
+    left: 12px;
+    right: 12px;
+    padding: 10px;
+    gap: 10px;
+    box-shadow: 3px 3px 0 #233a39;
+  }
+  .entry header strong {
+    font-size: 10px;
+    max-width: 70px;
+  }
+  .entry header nav {
+    gap: 3px;
+  }
+  .entry header button {
+    font-size: 9px;
+    padding: 7px 4px;
+  }
+  .entry .wings {
+    display: block;
+    border: 10px solid #233a39;
+    padding-top: 75px;
+  }
+  .entry .wings > button:nth-child(n) {
+    width: 100%;
+    min-height: 290px;
+    padding: 24px;
+    border: 16px solid #233a39;
+    display: grid;
+    grid-template-columns: 1fr 85px;
+    gap: 10px;
+  }
+  .entry .wings > button:first-child {
+    min-height: 420px;
+    border-width: 20px;
+  }
+  .entry .wings > button > span,
+  .entry .wings > button:first-child > span {
+    font-size: 35px;
+    line-height: 1;
+    grid-column: 1/3;
+    max-width: 9em;
+  }
+  .entry .wings small {
+    grid-column: 1/3;
+  }
+  .entry .wings .nested,
+  .entry .wings > button:first-child .nested {
+    height: 90px;
+    width: 100%;
+    margin: 0;
+    grid-column: 2;
+    grid-row: 3;
+  }
+  .entry .nested i,
+  .entry .nested i i,
+  .entry .nested i i i {
+    border-width: 4px;
+  }
+  .entry .wings b {
+    grid-column: 1;
+    grid-row: 3;
+    align-self: end;
+  }
+  .entry .wing {
+    padding-top: 100px;
+  }
+  .entry .rooms > button {
+    border-width: 10px;
   }
 }
 </style>

@@ -2,11 +2,11 @@
 
 **Idea.** Changing scale should change the question, not only the magnification.
 
-**Composition.** The opening screen is an extreme close-up of a woven thread. Discrete semantic zooms replace it with cloth, garment, workshop and town, with scale rulers embedded in each full-page illustration.
+**Composition.** The opening is an extreme close-up of woven fibre with a floating scale ladder. A physical ruler, circular zoom controls and a small specimen caption are attached to the scene. Changing scale replaces the whole visual field and the question it supports.
 
 **Navigation and complete example.** Move through fibre, cloth, garment, workshop and town in an original illustrated material journey. Each zoom changes the content and units, and the complete account links all five scales.
 
-**Responsive and inclusive behaviour.** The scene uses responsive vector art with a persistent scale selector. Zoom is discrete and button-controlled, so pinch gestures, motion and precise pointing are unnecessary. All controls are native buttons or labelled inputs. Movement is discretionary, no sound starts automatically, reduced-motion preferences remove transitions, and a direct index exposes the same content.
+**Responsive and inclusive behaviour.** The phone keeps a compact scale ladder over the artwork, a separate ruler and large zoom controls. The caption stays low in the scene rather than becoming an opening hero. Native buttons, visible focus, a direct return path and reduced-motion support preserve access to the same content.
 
 **Adaptation.** Give each scale a different level of explanation. Preserve a stable material identity across transitions and provide a complete linear account. Retain the relationship between navigation and content. Do not reduce the reference to a generic hero followed by interchangeable cards.
 

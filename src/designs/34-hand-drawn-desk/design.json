@@ -13,7 +13,7 @@
   ],
   "character": "Expressive",
   "traits": {
-    "composition": "Numbered illustrated steps with attached callouts and a practice question",
+    "composition": "The opening is an annotated notebook sheet: a large lever drawing, a crossed-out hypothesis and corrected distance note, short attached callouts and coloured lesson tabs. The lesson title is a handwritten margin label; the drawing comes before its prose explanation.",
     "navigation": "Step index, diagram labels, and answer feedback",
     "typography": "Space Grotesk + DM Sans + Caveat",
     "density": "Medium",
@@ -48,7 +48,7 @@
   "referenceImages": [
     {
       "file": "/previews/34/desktop.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/34/ddc9f36dc5c5c6b6-desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/34/b1636185ab7cb977-desktop.jpg",
       "route": "/preview/34-hand-drawn-desk/start",
       "viewport": {
         "width": 1440,
@@ -56,13 +56,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:a5dd3c2c51dda64772e9ecdde1560eec1a541284b0dd0059bff6624447f39903",
-      "sha256": "ddc9f36dc5c5c6b6d2e742407ad5b6c8ebb73032c51e42136e7e125596371675",
+      "sourceRevision": "sha256:44a44469847cf92a5fba8d2762c8dc70db7484916121fe63d7fd594c45959bda",
+      "sha256": "b1636185ab7cb9778f0e12b05f28ca72cb46822abe2d0cc2eac6e268701e4f62",
       "fullPage": false
     },
     {
       "file": "/previews/34/mobile.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/34/8005b9d1051a7161-mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/34/4e7a1fe2076e4eaf-mobile.jpg",
       "route": "/preview/34-hand-drawn-desk/start",
       "viewport": {
         "width": 390,
@@ -70,13 +70,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:a5dd3c2c51dda64772e9ecdde1560eec1a541284b0dd0059bff6624447f39903",
-      "sha256": "8005b9d1051a71614aa903b388f5ae2c0463e4e2b447941c66b577b31e3a55fa",
+      "sourceRevision": "sha256:44a44469847cf92a5fba8d2762c8dc70db7484916121fe63d7fd594c45959bda",
+      "sha256": "4e7a1fe2076e4eaf5f33f7cfbbccc5cd06523cf98d1f71a3a53982cc425ee8f9",
       "fullPage": false
     },
     {
       "file": "/previews/34/detail.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/34/a920173bb1db0e2e-detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/34/9bb8ac2a935af052-detail.jpg",
       "route": "/preview/34-hand-drawn-desk/practice",
       "viewport": {
         "width": 1440,
@@ -84,13 +84,13 @@
       },
       "state": "practice",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:a5dd3c2c51dda64772e9ecdde1560eec1a541284b0dd0059bff6624447f39903",
-      "sha256": "a920173bb1db0e2e1f1f10204421fdf3973de208227565b07eda897812cbb8ce",
+      "sourceRevision": "sha256:44a44469847cf92a5fba8d2762c8dc70db7484916121fe63d7fd594c45959bda",
+      "sha256": "9bb8ac2a935af052d38d57e04bbb91dfe28b074de13ad4ded65518a7fe8f9bfa",
       "fullPage": false
     },
     {
       "file": "/previews/34/full-page.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/34/2b73a52d018ee6c9-full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/34/325942db328d9bc9-full-page.jpg",
       "route": "/preview/34-hand-drawn-desk/start",
       "viewport": {
         "width": 1440,
@@ -98,8 +98,8 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:a5dd3c2c51dda64772e9ecdde1560eec1a541284b0dd0059bff6624447f39903",
-      "sha256": "2b73a52d018ee6c91c0246b39231c3fa459321191e5aeb03803e360ef12cf3bb",
+      "sourceRevision": "sha256:44a44469847cf92a5fba8d2762c8dc70db7484916121fe63d7fd594c45959bda",
+      "sha256": "325942db328d9bc911da53e6e67f6068678390992362b087b83ee64460bc8963",
       "fullPage": true
     }
   ],
@@ -119,7 +119,7 @@
     "DM Sans",
     "Caveat"
   ],
-  "brief": "**Philosophy and fit.** Show thought developing through explanation, annotation, and revision. Fits tutorials, workshop materials, personal teaching sites, and approachable technical writing.\n\n**Visual grammar.** Make numbered illustrated steps the main structure: a large diagram, a short explanation, and a practice prompt. Attach callouts to parts of the drawing rather than maintaining a prose annotation margin. Warm paper, graphite, blue ink, and a red correction accent support a readable sans body face. Handwriting appears only in short secondary notes; a compact step index supplies navigation.\n\n**Specimen and flow.** *Explain It Slowly* teaches an original simple mechanism. Inspect a diagram, reveal labelled forces or moving parts, and predict the next step. Supporting views include the illustrated lesson index and answer feedback that connects the prediction to the diagram. The reader can toggle annotations without losing their position.\n\n**Responsive behaviour.** Drawing callouts become a numbered explanation below each diagram. Diagrams include captions and text accounts; animation never replaces the written explanation of how a mechanism works.\n\n**Identity rules.** Preserve explanatory annotation and visible thinking. Avoid fake handwritten paragraphs, random scribbles with no meaning, and confusing a teaching notebook with an archival card cabinet. **Effort: medium.**\n\n**Distinctive composition.** Handwritten labels belong to the sketchbook, making its annotations distinct from the paper archive and playful geometric references.",
+  "brief": "**Philosophy and fit.** Show thought developing through explanation, annotation, and revision. Fits tutorials, workshop materials, personal teaching sites, and approachable technical writing.\n\n**Visual grammar.** Make numbered illustrated steps the main structure: a large diagram, a short explanation, and a practice prompt. Attach callouts to parts of the drawing rather than maintaining a prose annotation margin. Warm paper, graphite, blue ink, and a red correction accent support a readable sans body face. Handwriting appears only in short secondary notes; a compact step index supplies navigation.\n\n**Composition.** The opening is an annotated notebook sheet: a large lever drawing, a crossed-out hypothesis and corrected distance note, short attached callouts and coloured lesson tabs. The lesson title is a handwritten margin label; the drawing comes before its prose explanation.\n\n**Specimen and flow.** _Explain It Slowly_ teaches an original simple mechanism. Inspect a diagram, reveal labelled forces or moving parts, and predict the next step. Supporting views include the illustrated lesson index and answer feedback that connects the prediction to the diagram. The reader can toggle annotations without losing their position.\n\n**Responsive and inclusive behaviour.** Phone drawings keep a bounded diagram with readable captions. Lesson tabs wrap with a real minimum width, correcting the former vertical-letter collapse; numbered explanations follow the drawing. Native buttons, visible focus, a direct return path and reduced-motion support preserve access to the same content.\n\n**Identity rules.** Preserve explanatory annotation and visible thinking. Avoid fake handwritten paragraphs, random scribbles with no meaning, and confusing a teaching notebook with an archival card cabinet. **Effort: medium.**",
   "scope": "An expansive sample page with representative local interactions; no production business backend.",
   "discovery": {
     "industries": [

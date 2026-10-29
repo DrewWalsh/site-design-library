@@ -2,11 +2,11 @@
 
 **Idea.** A small opening gives a large collection a deliberate pace.
 
-**Composition.** A nearly black urban drawing is revealed through a circular aperture; lime coordinates and perimeter typography locate six exposures.
+**Composition.** A single night field fills the viewport, interrupted by one circular aperture and spare perimeter coordinates. The brand reads vertically at the edge; exposure title and controls sit low in the darkness. No headline sits above the image.
 
 **Navigation and complete example.** Inspect six original night-city vector exposures, move the aperture with native controls, read a field note and mark a favourite exposure.
 
-**Responsive and inclusive behaviour.** The aperture scene uses a compact landscape crop, while labelled previous/next controls and the full contact list remain visible. All controls are native buttons or labelled inputs. Movement is discretionary, no sound starts automatically, reduced-motion preferences remove transitions, and a direct index exposes the same content.
+**Responsive and inclusive behaviour.** The full-height phone scene keeps the aperture, current exposure and explicit previous/next controls visible. A complete contact strip offers direct access. Native buttons, visible focus, a direct return path and reduced-motion support preserve access to the same content.
 
 **Adaptation.** Keep selective visibility as a discovery device, with a complete text index. Use purposeful crops and credited photographs when adapting the original vector study. Retain the relationship between navigation and content. Do not reduce the reference to a generic hero followed by interchangeable cards.
 

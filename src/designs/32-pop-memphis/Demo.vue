@@ -21,7 +21,7 @@ const incompatible = computed(
 );
 </script>
 <template>
-  <div class="specimen">
+  <div class="specimen" :class="{ entry: state === 'start' }">
     <a class="skip" href="#content">Skip to content</a>
     <header>
       <strong>odd objects<br /><span>CLUB ✷</span></strong>
@@ -32,27 +32,10 @@ const incompatible = computed(
     </header>
     <main id="content">
       <template v-if="state === 'start'"
-        ><section class="hello">
-          <div class="headline">
-            <span class="tag">SERIOUS ABOUT PLAYING.</span>
-            <h1>Make a little<br /><em>beautiful</em><br />mess.</h1>
-            <p>
-              Creative kits for people who like trying things.<br />No special talent required.
-              Curiosity helps.
-            </p>
-            <button @click="go('bundle')">Find your next thing →</button>
-          </div>
-          <div class="kit-art">
-            <div class="blob"></div>
-            <div class="paper">
-              <b>THE<br />ODD<br />BOX.</b><span>OPEN / TRY / REPEAT</span>
-            </div>
-            <span class="sticker">A NEW<br />WAY TO<br />WEEKEND.</span>
-            <div class="squiggle">〰〰〰</div>
-          </div>
-        </section>
+        ><h1 class="sr">Odd Objects Club: choose a creative kit</h1>
+        <span class="club-stamp" aria-hidden="true">ODD<br />IS GOOD ✷</span>
         <section id="kits" class="kits">
-          <h2>Pick a starting point.</h2>
+          <h2 class="sr">This month’s three kits</h2>
           <div>
             <article v-for="(kit, i) in kits" :key="kit" :class="'kit k' + i">
               <div :class="'collection-shape shape-' + i" aria-hidden="true">
@@ -946,6 +929,217 @@ main {
   }
   .shape-2 i {
     height: 120px;
+  }
+}
+
+/* The entry is the experience itself; supporting routes retain its vocabulary. */
+
+.entry {
+  position: relative;
+  background: #b4c9ad;
+  background-image: radial-gradient(#332a44 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+.entry header {
+  max-width: none;
+  width: 100%;
+  padding: 20px 3%;
+  margin: 0;
+  border: 0;
+  background: #332a44;
+  color: #fff0dd;
+  align-items: center;
+}
+.entry header strong {
+  font-size: 22px;
+  line-height: 0.9;
+}
+.entry header strong span {
+  font-size: 13px;
+}
+.entry header nav {
+  font-size: 12px;
+}
+.entry header button,
+.entry header a {
+  color: #fff0dd;
+}
+.entry main {
+  max-width: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.entry main > h1,
+.entry .kits > h2 {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip-path: inset(50%) !important;
+  white-space: nowrap !important;
+}
+.club-stamp {
+  position: absolute;
+  right: 31%;
+  top: 18px;
+  z-index: 4;
+  width: 130px;
+  height: 130px;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  font: 25px/0.95 var(--font-heading);
+  font-weight: 700;
+  background: #ffce44;
+  color: #332a44;
+  transform: rotate(13deg);
+  border: 3px solid;
+  clip-path: polygon(
+    50% 0,
+    60% 8%,
+    75% 3%,
+    80% 18%,
+    96% 22%,
+    92% 40%,
+    100% 50%,
+    90% 62%,
+    96% 78%,
+    80% 82%,
+    75% 98%,
+    58% 92%,
+    50% 100%,
+    39% 91%,
+    23% 97%,
+    18% 81%,
+    4% 77%,
+    9% 60%,
+    0 50%,
+    9% 38%,
+    4% 22%,
+    20% 18%,
+    25% 3%,
+    40% 8%
+  );
+}
+.entry .kits {
+  padding: 60px 4% 70px;
+  margin: 0;
+}
+.entry .kits > div {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr 1fr;
+  align-items: start;
+  gap: 4%;
+}
+.entry .kit {
+  grid-column: auto !important;
+  grid-row: auto !important;
+  padding: 30px;
+  min-height: 680px;
+  border: 3px solid #332a44;
+  box-shadow: 9px 10px 0 #332a44;
+}
+.entry .k0 {
+  border-radius: 45% 45% 3% 3%;
+  background: #cbb9e3;
+  padding-top: 45px;
+  transform: rotate(-4deg);
+}
+.entry .k1 {
+  margin-top: 135px;
+  background: #b9e5d6;
+  transform: rotate(5deg);
+  border-radius: 0;
+  min-height: 600px;
+}
+.entry .k2 {
+  margin-top: 25px;
+  background: #f4ad88;
+  transform: rotate(-2deg);
+  border-radius: 0 35% 0 0;
+}
+.entry .collection-shape {
+  height: 250px;
+  margin: 0 0 30px;
+}
+.entry .kit h3 {
+  font-size: 42px;
+  line-height: 0.95;
+  max-width: 7em;
+  letter-spacing: -0.06em;
+}
+.entry .kit p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.entry .kit ul {
+  font-size: 12px;
+}
+.entry .kit > span {
+  font-size: 9px;
+}
+.entry .kit button {
+  background: #332a44;
+  color: #fff0dd;
+  border: 0;
+  padding: 14px 18px;
+  font-size: 12px;
+}
+.entry .clubnote {
+  margin: 0;
+  background: #fff0dd;
+  padding: 60px 8%;
+  border-block: 4px solid #332a44;
+}
+@media (max-width: 900px) {
+  .entry header {
+    padding: 18px 5%;
+    gap: 16px;
+  }
+  .entry header nav {
+    font-size: 10px;
+    gap: 12px;
+  }
+  .entry .kits {
+    padding: 35px 8% 50px;
+  }
+  .entry .kits > div {
+    display: block;
+  }
+  .entry .kit {
+    min-height: 0;
+    margin: 0 0 50px !important;
+    padding: 28px;
+  }
+  .entry .k0 {
+    padding-top: 35px;
+  }
+  .entry .k1 {
+    transform: rotate(3deg);
+  }
+  .entry .k2 {
+    transform: rotate(-2deg);
+  }
+  .entry .collection-shape {
+    height: 210px;
+    margin-bottom: 20px;
+  }
+  .entry .kit h3 {
+    font-size: 38px;
+  }
+  .club-stamp {
+    width: 95px;
+    height: 95px;
+    font-size: 18px;
+    right: 4%;
+    top: 18px;
+  }
+  .entry .kit p {
+    font-size: 15px;
   }
 }
 </style>

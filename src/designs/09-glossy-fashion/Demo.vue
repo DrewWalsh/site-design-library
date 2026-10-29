@@ -16,7 +16,7 @@ function reset() {
 const captions = ref(false);
 </script>
 <template>
-  <div class="specimen">
+  <div class="specimen" :class="{ entry: state === 'start' }">
     <a class="skip" href="#content">Skip to content</a>
     <header>
       <a :href="href('start')" @click.prevent="go('start')">CONTOUR</a>
@@ -607,5 +607,205 @@ nav button {
   font: 500 11px/1.5 'DM Sans';
   letter-spacing: 0.18em;
   text-transform: uppercase;
+}
+
+/* The entry is the experience itself; supporting routes retain its vocabulary. */
+
+.entry {
+  position: relative;
+  background: #181b18;
+}
+.entry header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 3;
+  max-width: none;
+  width: 100%;
+  margin: 0;
+  padding: 20px 4% 80px;
+  border: 0;
+  display: block;
+  background: linear-gradient(#101510aa, transparent);
+  color: #fff4df;
+}
+.entry header > a {
+  display: block;
+  font:
+    clamp(70px, 14vw, 210px)/1 'Libre Baskerville',
+    serif;
+  letter-spacing: -0.095em;
+  color: #fff4df;
+  text-align: center;
+}
+.entry header nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+  font-size: 10px;
+  letter-spacing: 0.15em;
+}
+.entry header button {
+  color: #fff4df;
+  font-size: 11px;
+  border: 0;
+  background: none;
+}
+.entry main {
+  max-width: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.entry .cover {
+  height: 100svh;
+  min-height: 850px;
+  position: relative;
+  display: block;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+.entry .cover figure {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+.entry .cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 35%;
+}
+.entry .cover figure::after {
+  content: '';
+  position: absolute;
+  inset: 40% 0 0;
+  background: linear-gradient(transparent, #111b16d9);
+}
+.entry .cover figcaption {
+  position: absolute;
+  right: 4%;
+  bottom: 25px;
+  color: #fff4df;
+  z-index: 2;
+  font-size: 8px;
+  background: none;
+}
+.entry .cover-type {
+  position: absolute;
+  z-index: 2;
+  left: 5%;
+  right: 5%;
+  bottom: 70px;
+  padding: 0;
+  background: none;
+  color: #fff4df;
+}
+.entry .cover-type .eyebrow {
+  font-size: 10px;
+  letter-spacing: 0.2em;
+}
+.entry .cover-type h1 {
+  font-size: clamp(65px, 7.5vw, 115px);
+  line-height: 0.95;
+  font-weight: 400;
+  margin: 25px 0;
+  max-width: 6em;
+  letter-spacing: -0.05em;
+}
+.entry .cover-type > p:not(.eyebrow) {
+  font-size: 14px;
+  line-height: 1.8;
+}
+.entry .cover-type button {
+  background: #d8e34a;
+  color: #191b18;
+  border: 0;
+  padding: 15px 22px;
+  font-size: 11px;
+}
+.entry .vertical {
+  right: 0;
+  left: auto;
+  font-size: 9px;
+}
+.entry .contents {
+  padding: 65px 7%;
+  background: #d8e34a;
+  color: #191b18;
+}
+.story {
+  grid-template-columns: 1fr 1.3fr;
+}
+.story > img {
+  height: 850px;
+  object-fit: cover;
+}
+.story > div {
+  padding-top: 45px;
+}
+@media (max-width: 750px) {
+  .entry header {
+    padding: 25px 5% 65px;
+  }
+  .entry header > a {
+    font-size: 13vw;
+    letter-spacing: -0.08em;
+  }
+  .entry header nav {
+    font-size: 8px;
+  }
+  .entry header button {
+    font-size: 10px;
+  }
+  .entry .cover {
+    min-height: 760px;
+    height: 100svh;
+  }
+  .entry .cover img {
+    object-position: 62% 35%;
+  }
+  .entry .cover-type {
+    bottom: 65px;
+    left: 7%;
+    right: 7%;
+  }
+  .entry .cover-type h1 {
+    font-size: 63px;
+    margin: 20px 0;
+  }
+  .entry .cover-type .eyebrow {
+    font-size: 8px;
+  }
+  .entry .cover-type > p:not(.eyebrow) {
+    font-size: 12px;
+  }
+  .entry .cover-type button {
+    font-size: 9px;
+    padding: 14px 17px;
+  }
+  .entry .vertical {
+    display: none;
+  }
+  .entry .cover figcaption {
+    font-size: 7px;
+    left: 7%;
+    right: auto;
+  }
+  .story {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .story > img {
+    height: 500px;
+    width: 100%;
+  }
+  .story > div {
+    padding-top: 15px;
+  }
 }
 </style>

@@ -4,9 +4,11 @@
 
 **Visual grammar.** Pair a large specimen stage with an explicitly labelled control column, a short explanation, and a compact preset strip. Use fine measurement rules, neutral surfaces, technical typography, and colour that identifies adjustable properties. Render suitable geometry with SVG or CSS so the demonstration remains crisp and inspectable.
 
+**Composition.** A working pattern instrument fills the entry: preset switches, a large measured SVG screen and a compact parameter panel. Numeric readouts, slider tracks and the screen’s frame share a hardware vocabulary; the explanatory prose follows the working controls.
+
 **Specimen and flow.** _Pattern Works_ demonstrates a fictional modular screen system. Choose a preset, adjust spacing and angle, and inspect the resulting pattern and parameter summary. Supporting states are a side-by-side preset comparison and a restored-default configuration. Values can persist in the URL for direct sharing.
 
-**Mobile and motion.** Stack the specimen above controls and provide numeric inputs alongside sliders. Changes update directly, with no perpetual animation or pointer-only controls. A static preset remains available if an enhancement fails.
+**Responsive and inclusive behaviour.** Compact preset switches and the live screen appear first on phones, immediately followed by the first parameter. Numeric controls provide the same edits as sliders. Native buttons, visible focus, a direct return path and reduced-motion support preserve access to the same content.
 
 **Identity and effort.** Preserve visible relationships between controls and outcomes; avoid random decorative generators without a meaningful design question. **Effort: medium.**
 
@@ -26,7 +28,7 @@ Brand, subject, accent and equivalent licensed typefaces can change. Preserve co
 
 ## Tokens and typography
 
-Heading: Space Grotesk. Reading: IBM Plex Mono. Local WOFF2 fonts with system fallbacks. Page #ecece5; surface #f7f8ef; text #293b39; accent #3f756a. Eight-pixel base spacing; reading measure 65ch; width 1240px. See tokens.css for role values and Demo.vue for composition. Palette and type match the working specimen.
+Heading: Space Grotesk. Reading: IBM Plex Mono. Local WOFF2 fonts with system fallbacks. Page #ecece5; surface #f7f8ef; text #293b39; accent #3f756a. Base tokens define an eight-pixel spacing unit, 65ch reading measure and 1240px content width; the composition-specific rules in Demo.vue override these where the canvas, type or information density requires it. See tokens.css for role values and Demo.vue for composition. Palette and type match the working specimen.
 
 ## States
 

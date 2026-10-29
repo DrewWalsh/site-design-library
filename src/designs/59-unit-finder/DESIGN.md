@@ -4,9 +4,11 @@
 
 **Visual grammar.** Use a electric blue storage planner with schematic volumes and a comparison matrix. Preserve the hierarchy of capacity calculator, size diagrams, availability, monthly pricing; these patterns solve this business’s actual decision, rather than supplying interchangeable decoration.
 
+**Composition.** The inventory calculator is the front door: labelled object counts produce a schematic capacity recommendation, availability and a reservation action. A four-size comparison matrix follows immediately; no promotional hero precedes the tool.
+
 **Sample and interaction.** STACK / Storage is a fictional demonstration. The entry page establishes a complete visual direction, with find your size and reserve a unit as supporting states. Inputs use local deterministic fixtures; no request, order, application or payment is sent.
 
-**Responsive behaviour.** On a phone, keep the primary decision first, stack facts with explicit labels, preserve the order of the workflow, and provide comfortably sized controls. Wide diagrams scale; tabular facts retain their labels.
+**Responsive and inclusive behaviour.** The inventory rows stay compact, followed by the recommendation and comparison matrix. Numbers, availability and reservation remain labelled at every width. Native buttons, visible focus, a direct return path and reduced-motion support preserve access to the same content.
 
 **Adaptation.** Replace the fictional brand, prices, availability, qualifications and claims with verified client information. Preserve capacity calculator, size diagrams, availability. Use imagery to explain the place, people, work or product, with deliberate crops and honest captions. Do not turn this into a generic hero-and-card layout.
 

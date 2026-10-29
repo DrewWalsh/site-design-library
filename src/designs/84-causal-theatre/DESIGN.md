@@ -2,11 +2,11 @@
 
 **Idea.** A visitor should be able to change the argument and see why it changes.
 
-**Composition.** Oversized cut-out machines form a pastel theatre. A sorting tower, conveyor, warehouse and delivery cart span the page; explanations sit inside the system.
+**Composition.** An illustrated parcel machine is the page: a tilted arrival hopper, rounded sorting tower and wheeled dispatch block sit on one heavy conveyor. Each control is physically attached to its machine and the output is a printed verdict slip. There is no promotional introduction.
 
 **Navigation and complete example.** Change incoming parcels, sorting capacity and route frequency in a deterministic parcel-system model. Inspect the bottleneck and save two outcomes for comparison.
 
-**Responsive and inclusive behaviour.** The stage becomes a vertical process diagram with visible connecting arrows. Native number inputs and labelled presets replace any need to drag machinery. All controls are native buttons or labelled inputs. Movement is discretionary, no sound starts automatically, reduced-motion preferences remove transitions, and a direct index exposes the same content.
+**Responsive and inclusive behaviour.** On phones the same mechanism becomes a vertical conveyor, with each machine and its control kept together. All model inputs and explanations remain native, explicit controls. Native buttons, visible focus, a direct return path and reduced-motion support preserve access to the same content.
 
 **Adaptation.** Expose the model’s assumptions and connect each control to a visible consequence. Do not present a toy model as a real operational forecast. Retain the relationship between navigation and content. Do not reduce the reference to a generic hero followed by interchangeable cards.
 

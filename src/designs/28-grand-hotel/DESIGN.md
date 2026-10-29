@@ -4,9 +4,11 @@
 
 **Visual grammar.** A sequence of wide photographic scenes introduces arrival, rooms, surroundings, and daily life. A compact booking rail accompanies the story. Use restrained serif display type, warm white surfaces, deep forest text, and terracotta accents. Navigation separates staying, exploring, and planning; room information uses consistent comparisons beneath the narrative.
 
+**Composition.** The arrival photograph is the opening, accompanied by a narrow booking ledger with dates, guests and price context. A smaller bedroom photograph is inset as a second scene. Availability rows use room dimensions and illustrative plans at the point of choice.
+
 **Specimen and flow.** _Alder House_ is a fictional lakeside hotel. Select dates, compare rooms, and review a sample booking summary. Supporting views include a room detail and an availability result with no matching rooms. Amenities, occupancy, and cancellation examples appear beside the decision they affect.
 
-**Responsive behaviour.** The booking rail becomes an accessible expandable section with a persistent summary. Photographic scenes retain ordinary scrolling; essential room details load before optional imagery.
+**Responsive and inclusive behaviour.** A compact expandable booking summary precedes the arrival photograph. The form is available immediately on request; room comparisons keep their size and plan beside the description. Native buttons, visible focus, a direct return path and reduced-motion support preserve access to the same content.
 
 **Identity rules.** Preserve the arrival narrative and explicit booking information. Avoid scroll hijacking, looping video as a requirement, and identical full-screen photographs with no useful content. **Effort: medium.**
 
@@ -26,7 +28,7 @@ Brand, subject, accent and equivalent licensed typefaces can change. Preserve co
 
 ## Tokens and typography
 
-Heading: Libre Baskerville. Reading: DM Sans. Local WOFF2 fonts with system fallbacks. Page #f5f1e8; surface #ffffff; text #304535; accent #8a503a. Eight-pixel base spacing; reading measure 65ch; width 1240px. See tokens.css for role values and Demo.vue for composition. Palette and type match the working specimen.
+Heading: Libre Baskerville. Reading: DM Sans. Local WOFF2 fonts with system fallbacks. Page #f5f1e8; surface #ffffff; text #304535; accent #8a503a. Base tokens define an eight-pixel spacing unit, 65ch reading measure and 1240px content width; the composition-specific rules in Demo.vue override these where the canvas, type or information density requires it. See tokens.css for role values and Demo.vue for composition. Palette and type match the working specimen.
 
 ## States
 
@@ -49,4 +51,4 @@ Reviewed working sample. Browser checks cover entry-page reflow at 320, 390, 768
 
 ## Distinctive composition
 
-Hospitality has a centred house masthead, a separate welcome and booking rail, and staggered arrival/bedroom photographs. Dedicated exterior and bedroom images establish arrival and rest, distinct from Documentary Story’s landscape narrative and Quiet Atelier’s object study.
+The arrival photograph is the opening, accompanied by a narrow booking ledger with dates, guests and price context. A smaller bedroom photograph is inset as a second scene. Availability rows use room dimensions and illustrative plans at the point of choice.

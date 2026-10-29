@@ -70,7 +70,7 @@ function reveal(i: number) {
 }
 </script>
 <template>
-  <div class="specimen">
+  <div class="specimen" :class="{ entry: state === 'start' }">
     <a class="skip" href="#content">Skip to content</a>
 
     <header>
@@ -85,7 +85,8 @@ function reveal(i: number) {
       <template v-if="state === 'start'"
         ><div class="opening">
           <span>RELEASED FOR READING / FICTIONAL MATERIAL</span>
-          <h1>What the letter<br />did not say.</h1>
+          <h1 class="sr">The garden that closed: dossier 014</h1>
+          <b class="file-stamp" aria-hidden="true">014<br /><span>RELEASED</span></b>
           <p>Six lines of correspondence. Six ways an ordinary gate became a public question.</p>
           <button @click="revealed = [0, 1, 2, 3, 4, 5]">Reveal the complete dossier</button
           ><button @click="revealed = []">Restore redactions</button>
@@ -469,6 +470,208 @@ footer {
     transition: none !important;
     animation: none !important;
     scroll-behavior: auto !important;
+  }
+}
+
+/* The entry is the experience itself; supporting routes retain its vocabulary. */
+
+.entry {
+  background: #d9d7d1;
+  position: relative;
+  padding: 40px 4%;
+}
+.entry header {
+  position: relative;
+  width: 225px;
+  padding: 0 0 25px;
+  display: block;
+  border: 0;
+}
+.entry header strong {
+  font-size: 21px;
+}
+.entry header > p {
+  font-size: 11px;
+  margin: 20px 0;
+}
+.entry header nav {
+  display: grid;
+  gap: 7px;
+  justify-items: start;
+}
+.entry main {
+  background: #f0e8f5;
+  margin: -195px 0 50px 260px;
+  min-height: 1000px;
+  padding: 35px 5% 65px;
+  box-shadow: 12px 15px 0 #bcb8bf;
+  transform: rotate(-1deg);
+}
+.entry .opening {
+  padding: 0 0 30px;
+  position: relative;
+  border-bottom: 2px solid;
+}
+.entry .opening h1 {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip-path: inset(50%) !important;
+  white-space: nowrap !important;
+}
+.entry .opening > span {
+  font-size: 9px;
+  letter-spacing: 0.1em;
+}
+.entry .opening > p {
+  max-width: 32ch;
+  margin: 18px 0;
+  font-size: 15px;
+}
+.entry .opening > button {
+  font-size: 10px;
+  margin: 4px 8px 4px 0;
+}
+.file-stamp {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font: 80px/0.8 var(--heading);
+  color: #70467d;
+  transform: rotate(9deg);
+  border: 3px solid;
+  padding: 15px;
+  text-align: center;
+}
+.file-stamp span {
+  display: block;
+  font-size: 12px;
+  margin-top: 13px;
+  letter-spacing: 0.2em;
+}
+.entry .document {
+  display: block;
+  padding: 25px 0 20px;
+  border: 0;
+  position: relative;
+}
+.entry .document aside {
+  font-size: 10px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.entry .document aside small {
+  font-size: 12px;
+  margin: 0;
+}
+.entry .document .redaction {
+  min-height: 82px;
+  padding: 20px 25px;
+  font-size: 12px;
+  box-shadow: none;
+}
+.entry .document:nth-of-type(2) {
+  margin-left: 15%;
+}
+.entry .document:nth-of-type(3) {
+  margin-right: 20%;
+}
+.entry .document:nth-of-type(4) {
+  margin-left: 7%;
+}
+.entry .document:nth-of-type(5) {
+  margin-right: 12%;
+}
+.entry .document .redaction[aria-expanded='true'] {
+  font: 22px/1.7 var(--heading);
+  background: #f0e8f5;
+  color: #19171c;
+  outline: 1px solid #19171c;
+}
+.entry .context {
+  border-left: 3px solid #70467d;
+  padding: 15px 20px;
+  margin-top: 15px;
+}
+.entry footer {
+  border: 0;
+}
+@media (max-width: 750px) {
+  .entry {
+    padding: 20px 5%;
+  }
+  .entry header {
+    width: auto;
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    padding-bottom: 22px;
+  }
+  .entry header > p {
+    display: none;
+  }
+  .entry header strong {
+    font-size: 18px;
+  }
+  .entry header nav {
+    margin-left: auto;
+  }
+  .entry header nav button {
+    font-size: 10px;
+    padding: 6px;
+  }
+  .entry main {
+    margin: 0;
+    padding: 24px 7% 45px;
+    min-height: 0;
+    transform: none;
+    box-shadow: 6px 8px 0 #bcb8bf;
+  }
+  .entry .opening {
+    padding-top: 105px;
+  }
+  .file-stamp {
+    font-size: 54px;
+    left: 0;
+    right: auto;
+    top: 0;
+    padding: 12px;
+  }
+  .file-stamp span {
+    font-size: 10px;
+  }
+  .entry .opening > span {
+    display: block;
+  }
+  .entry .opening > p {
+    font-size: 13px;
+  }
+  .entry .document {
+    padding: 20px 0 10px;
+  }
+  .entry .document:nth-of-type(n) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .entry .document:nth-of-type(2n) {
+    padding-left: 12%;
+  }
+  .entry .document aside {
+    display: block;
+    font-size: 9px;
+  }
+  .entry .document .redaction {
+    font-size: 10px;
+    min-height: 80px;
+    padding: 18px 14px;
+  }
+  .entry .document .redaction[aria-expanded='true'] {
+    font-size: 17px;
   }
 }
 </style>

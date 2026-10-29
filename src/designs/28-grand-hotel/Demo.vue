@@ -13,6 +13,7 @@ function reset() {
     .forEach((k) => localStorage.removeItem(k));
   location.href = href('start');
 }
+const bookingOpen = ref(!matchMedia('(max-width: 750px)').matches);
 const arrival = ref('2026-11-06'),
   departure = ref('2026-11-08'),
   guests = ref('2');
@@ -41,7 +42,7 @@ const unavailable = computed(
 );
 </script>
 <template>
-  <div class="specimen">
+  <div class="specimen" :class="{ entry: state === 'start' }">
     <a class="skip" href="#content">Skip to content</a>
     <header class="hotel-masthead">
       <nav>
@@ -54,21 +55,26 @@ const unavailable = computed(
     </header>
     <main id="content">
       <template v-if="state === 'start'"
-        ><section class="arrival">
-          <p class="eyebrow">A welcome, and a little breathing room.</p>
-          <h1>Somewhere to arrive.<br />A reason to linger.</h1>
-          <p>A small house, considered rooms, and a morning with nowhere else to be.</p>
-        </section>
-        <form class="booking" @submit.prevent="go('rooms')">
-          <label>Arrival<input type="date" v-model="arrival" required /></label
-          ><label>Departure<input type="date" v-model="departure" required /></label
-          ><label
-            >Guests<select v-model="guests">
-              <option>1</option>
-              <option>2</option>
-            </select></label
-          ><button class="primary">Find a sample room →</button>
-        </form>
+        ><h1 class="sr">Alder House — rooms by the water</h1>
+        <details
+          class="booking-drawer"
+          :open="bookingOpen"
+          @toggle="bookingOpen = ($event.target as HTMLDetailsElement).open"
+        >
+          <summary>Plan your stay <span>From £145 / night</span></summary>
+          <form class="booking" @submit.prevent="go('rooms')">
+            <h2>Stay at<br />Alder House.</h2>
+            <p>Three considered rooms.<br />Breakfast included.<br />From £145 per night.</p>
+            <label>Arrival<input type="date" v-model="arrival" required /></label
+            ><label>Departure<input type="date" v-model="departure" required /></label
+            ><label
+              >Guests<select v-model="guests">
+                <option>1</option>
+                <option>2</option>
+              </select></label
+            ><button class="primary">Find a sample room →</button>
+          </form>
+        </details>
         <section class="arrival-photos">
           <figure>
             <img
@@ -124,7 +130,7 @@ const unavailable = computed(
       >
       <section v-else-if="state === 'rooms'" class="rooms">
         <p class="eyebrow">PLAN YOUR STAY / SAMPLE AVAILABILITY</p>
-        <h1>Room to settle in.</h1>
+        <h1>Rooms for your dates</h1>
         <form
           class="booking"
           @submit.prevent="message = 'Availability updated for the sample dates.'"
@@ -145,6 +151,27 @@ const unavailable = computed(
           </p>
         </div>
         <article v-else v-for="(room, i) in rooms" :key="room.name">
+          <svg
+            class="room-plan"
+            viewBox="0 0 180 140"
+            role="img"
+            :aria-label="room.name + ' — illustrative floor plan'"
+          >
+            <path
+              :d="i === 2 ? 'M10 10H170V130H10Z M110 10V85 M110 115V130' : 'M25 10H155V130H25Z'"
+              fill="#e9e1cf"
+              stroke="#53684f"
+              stroke-width="2"
+            />
+            <rect x="40" y="30" width="55" height="70" fill="#f6f3e8" stroke="#53684f" />
+            <path d="M40 48H95M67 30V48" stroke="#53684f" />
+            <path d="M105 105H140M122 88V122" stroke="#53684f" />
+            <rect v-if="i === 2" x="125" y="25" width="30" height="48" rx="4" fill="#b3be9f" />
+            <path d="M50 10H110" stroke="#a5c9c2" stroke-width="5" />
+            <text x="90" y="137" text-anchor="middle" font-size="7" fill="#304535">
+              {{ room.size }} / ILLUSTRATIVE PLAN
+            </text>
+          </svg>
           <div>
             <h2>{{ room.name }}</h2>
             <p>{{ room.desc }}</p>
@@ -922,5 +949,240 @@ main > .booking {
 
 .arrival-photos figure:first-child img {
   object-position: center 78%;
+}
+
+/* The entry is the experience itself; supporting routes retain its vocabulary. */
+
+.entry main {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 280px;
+  gap: 35px;
+  max-width: none;
+  width: 100%;
+  padding: 25px 4% 70px;
+  margin: 0;
+}
+.entry main > h1 {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip-path: inset(50%) !important;
+  white-space: nowrap !important;
+}
+.entry .arrival-photos {
+  grid-column: 1;
+  grid-row: 1;
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+  min-height: 690px;
+}
+.entry .arrival-photos > figure:first-child {
+  width: 100%;
+  margin: 0;
+}
+.entry .arrival-photos > figure:first-child img {
+  height: 75svh;
+  min-height: 650px;
+  max-height: 950px;
+  width: 100%;
+  object-fit: cover;
+}
+.entry .arrival-photos > figure:last-child {
+  position: absolute;
+  bottom: 45px;
+  right: 25px;
+  width: 35%;
+  padding: 8px;
+  background: #f5f1e8;
+  margin: 0;
+  box-shadow: 0 4px 18px #26352644;
+}
+.entry .arrival-photos > figure:last-child img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+.entry .arrival-photos figcaption {
+  font-size: 8px;
+  margin: 12px 0;
+}
+.entry .arrival-photos > figure:last-child figcaption {
+  font-size: 7px;
+  margin: 8px 0 0;
+}
+.booking-drawer {
+  grid-column: 2;
+  grid-row: 1;
+  align-self: start;
+  border-top: 1px solid #8e9b85;
+  border-bottom: 1px solid #8e9b85;
+  padding: 15px 0;
+}
+.booking-drawer summary {
+  font-size: 13px;
+  cursor: pointer;
+}
+.booking-drawer summary > span {
+  display: block;
+  font-size: 10px;
+  margin-top: 8px;
+  margin-left: 15px;
+}
+.entry .booking {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  padding: 20px 0;
+  background: none;
+  border: 0;
+  margin: 0;
+}
+.entry .booking h2 {
+  font:
+    28px/1.4 'Libre Baskerville',
+    serif;
+  font-weight: 400;
+  margin: 5px 0;
+}
+.entry .booking p {
+  font-size: 12px;
+  line-height: 1.9;
+  margin: 0;
+}
+.entry .booking label {
+  width: 100%;
+  font-size: 10px;
+}
+.entry .booking input,
+.entry .booking select {
+  width: 100%;
+  font-size: 13px;
+  padding: 13px;
+}
+.entry .booking button {
+  font-size: 11px;
+  padding: 15px;
+  width: 100%;
+}
+.entry .staying,
+.entry .exploring {
+  grid-column: 1/3;
+}
+.entry .staying {
+  padding: 65px 5%;
+}
+.entry .exploring {
+  padding: 50px 5%;
+}
+.rooms > article {
+  display: grid;
+  grid-template-columns: 200px minmax(0, 1fr) 190px;
+  gap: 35px;
+  align-items: center;
+}
+.room-plan {
+  width: 100%;
+  height: 180px;
+  background: #f0ebdd;
+  padding: 15px;
+}
+.rooms > article h2 {
+  font-size: 28px;
+}
+.rooms > article p {
+  font-size: 13px;
+}
+@media (max-width: 750px) {
+  .entry main {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5% 45px;
+    gap: 25px;
+  }
+  .booking-drawer {
+    order: 1;
+    width: 100%;
+    padding: 15px 0;
+  }
+  .booking-drawer summary {
+    font-size: 12px;
+  }
+  .booking-drawer summary > span {
+    display: inline;
+    font-size: 10px;
+    margin-left: 15px;
+  }
+  .entry .booking {
+    gap: 15px;
+    padding: 20px 5%;
+  }
+  .entry .booking h2 {
+    font-size: 24px;
+  }
+  .entry .booking p {
+    font-size: 11px;
+  }
+  .entry .arrival-photos {
+    order: 2;
+    min-height: 0;
+  }
+  .entry .arrival-photos > figure:first-child img {
+    height: 520px;
+    min-height: 0;
+  }
+  .entry .arrival-photos > figure:last-child {
+    width: 45%;
+    right: 15px;
+    bottom: 50px;
+    padding: 6px;
+  }
+  .entry .arrival-photos > figure:last-child img {
+    height: 180px;
+  }
+  .entry .arrival-photos > figure:last-child figcaption {
+    font-size: 6px;
+  }
+  .entry .staying {
+    order: 3;
+    padding: 30px 0;
+  }
+  .entry .exploring {
+    order: 4;
+    padding: 20px 0;
+  }
+  .rooms > article {
+    grid-template-columns: 100px minmax(0, 1fr);
+    gap: 20px;
+  }
+  .room-plan {
+    height: 140px;
+    padding: 5px;
+  }
+  .rooms > article > div:last-child {
+    grid-column: 2;
+  }
+  .rooms > article h2 {
+    font-size: 23px;
+  }
+  .rooms > article p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 750px) {
+  .entry .staying {
+    min-width: 0;
+    width: 100%;
+  }
+  .entry .staying > div,
+  .entry .staying > figure {
+    min-width: 0;
+    width: 100%;
+  }
 }
 </style>

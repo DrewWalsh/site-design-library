@@ -14,7 +14,7 @@
   ],
   "character": "Expressive",
   "traits": {
-    "composition": "earthy campaign publication with project-led contribution allocation",
+    "composition": "A measured 120-metre planting target and a graphic bank transect open the nonprofit. An allocation receipt reacts to contribution amounts alongside it. Project records, the river diagram and volunteering follow, with planned outcomes clearly distinguished from completed results.",
     "navigation": "Project detail, contribution allocation and volunteering",
     "typography": "Space Grotesk",
     "density": "Medium",
@@ -83,7 +83,7 @@
   "referenceImages": [
     {
       "file": "/previews/69/desktop.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/69/7f87edcc4f83a2c0-desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/69/f58ea8ebbf116965-desktop.jpg",
       "route": "/preview/69-impact-nonprofit/start",
       "viewport": {
         "width": 1440,
@@ -91,13 +91,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:228739a23775eb36a317f020e36a37ea6a223a5a8140d07fdf372b7b08486f18",
-      "sha256": "7f87edcc4f83a2c0c5b967a658031e20fac4f91fe4dfa03492154bf8fd65b16f",
+      "sourceRevision": "sha256:24a25fee704394d66565ccfe166c44e884ce8d54403703a2edac0de29c5b3a86",
+      "sha256": "f58ea8ebbf116965b5041db7ad5e82fe48c32cbbeba922a211aba7b3b65477ee",
       "fullPage": false
     },
     {
       "file": "/previews/69/mobile.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/69/9ff3edfa7cccda62-mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/69/fed91ec068877884-mobile.jpg",
       "route": "/preview/69-impact-nonprofit/start",
       "viewport": {
         "width": 390,
@@ -105,8 +105,8 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:228739a23775eb36a317f020e36a37ea6a223a5a8140d07fdf372b7b08486f18",
-      "sha256": "9ff3edfa7cccda62434fcf4b62e03d1b16d4565024bea3c121300143d23db29a",
+      "sourceRevision": "sha256:24a25fee704394d66565ccfe166c44e884ce8d54403703a2edac0de29c5b3a86",
+      "sha256": "fed91ec06887788447c45754e8a503624960f332c0229b38d8e514689057c314",
       "fullPage": false
     },
     {
@@ -119,13 +119,13 @@
       },
       "state": "contribute",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:228739a23775eb36a317f020e36a37ea6a223a5a8140d07fdf372b7b08486f18",
+      "sourceRevision": "sha256:24a25fee704394d66565ccfe166c44e884ce8d54403703a2edac0de29c5b3a86",
       "sha256": "77e299790fa14dd5e80615fbaca94ecd3af346ae189bf950eeccf7cab1862607",
       "fullPage": false
     },
     {
       "file": "/previews/69/full-page.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/69/9bd4a9592775ff21-full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/69/8255edff5a004649-full-page.jpg",
       "route": "/preview/69-impact-nonprofit/start",
       "viewport": {
         "width": 1440,
@@ -133,8 +133,8 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:228739a23775eb36a317f020e36a37ea6a223a5a8140d07fdf372b7b08486f18",
-      "sha256": "9bd4a9592775ff211e6f8396ad1e8430fcce80be9abdeef637104c5977267f9b",
+      "sourceRevision": "sha256:24a25fee704394d66565ccfe166c44e884ce8d54403703a2edac0de29c5b3a86",
+      "sha256": "8255edff5a0046493d0c7fd8a80ce8f9e72d442f8e1f3239e85939cef21e4cf2",
       "fullPage": true
     }
   ],
@@ -153,6 +153,6 @@
     "Space Grotesk",
     "DM Sans"
   ],
-  "brief": "**Philosophy and fit.** Connect a contribution to a specific, accountable project. Built for nonprofit, charity, environment. The visitor’s next step is to choose a contribution.\n\n**Visual grammar.** Use a earthy campaign publication with project-led contribution allocation. Preserve the hierarchy of project outcomes, use of funds, contribution choices; these patterns solve this business’s actual decision, rather than supplying interchangeable decoration.\n\n**Sample and interaction.** Common Ground / River trust is a fictional demonstration. The entry page establishes a complete visual direction, with choose your contribution and project outcomes as supporting states. Inputs use local deterministic fixtures; no request, order, application or payment is sent.\n\n**Responsive behaviour.** On a phone, keep the primary decision first, stack facts with explicit labels, preserve the order of the workflow, and provide comfortably sized controls. Wide diagrams scale; tabular facts retain their labels.\n\n**Adaptation.** Replace the fictional brand, prices, availability, qualifications and claims with verified client information. Preserve project outcomes, use of funds, contribution choices. Use imagery to explain the place, people, work or product, with deliberate crops and honest captions. Do not turn this into a generic hero-and-card layout.\n\n**Identity and adaptation.** Connect the mission to named projects and transparent outcomes. The contribution flow explains how support is allocated; volunteering remains an equally clear route into the organisation.",
+  "brief": "**Philosophy and fit.** Connect a contribution to a specific, accountable project. Built for nonprofit, charity, environment. The visitor’s next step is to choose a contribution.\n\n**Visual grammar.** Use a earthy campaign publication with project-led contribution allocation. Preserve the hierarchy of project outcomes, use of funds, contribution choices; these patterns solve this business’s actual decision, rather than supplying interchangeable decoration.\n\n**Composition.** A measured 120-metre planting target and a graphic bank transect open the nonprofit. An allocation receipt reacts to contribution amounts alongside it. Project records, the river diagram and volunteering follow, with planned outcomes clearly distinguished from completed results.\n\n**Sample and interaction.** Common Ground / River trust is a fictional demonstration. The entry page establishes a complete visual direction, with choose your contribution and project outcomes as supporting states. Inputs use local deterministic fixtures; no request, order, application or payment is sent.\n\n**Responsive and inclusive behaviour.** The target and transect come first, then the contribution receipt. Allocation figures retain their labels and update without motion. Native buttons, visible focus, a direct return path and reduced-motion support preserve access to the same content.\n\n**Adaptation.** Replace the fictional brand, prices, availability, qualifications and claims with verified client information. Preserve project outcomes, use of funds, contribution choices. Use imagery to explain the place, people, work or product, with deliberate crops and honest captions. Do not turn this into a generic hero-and-card layout.",
   "scope": "Complete visual reference with local sample interactions; no production business backend."
 }

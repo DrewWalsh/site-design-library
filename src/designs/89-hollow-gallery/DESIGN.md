@@ -2,11 +2,11 @@
 
 **Idea.** The empty part of an image can carry the invitation.
 
-**Composition.** Monumental dark silhouettes contain pale cut-outs. Titles and entrances inhabit the negative spaces, with burnt-orange margins and almost no conventional container furniture.
+**Composition.** An almost continuous black mass is punctured by six unequal pale entrances: one towering arch, circles, a tilted slot and an elongated void. Titles live inside these negative spaces. The work begins at the first cut-out, without an introductory headline or card grid.
 
 **Navigation and complete example.** Enter six original silhouette studies through their cut-outs, inspect the process behind a work, reverse its figure-ground relation and assemble up to three works in a local exhibition.
 
-**Responsive and inclusive behaviour.** Each cut-out fills the available width and contains a large labelled button. The complete work index remains visible in reading order. All controls are native buttons or labelled inputs. Movement is discretionary, no sound starts automatically, reduced-motion preferences remove transitions, and a direct index exposes the same content.
+**Responsive and inclusive behaviour.** The phone sequence begins with a full-height arch, then paired smaller voids. Every entrance keeps its title and button within an untransformed readable space; figure/ground reversal retains contrast. Native buttons, visible focus, a direct return path and reduced-motion support preserve access to the same content.
 
 **Adaptation.** Make the empty area a real, legible entrance. Preserve labels and focus outlines when silhouettes become complex. Retain the relationship between navigation and content. Do not reduce the reference to a generic hero followed by interchangeable cards.
 

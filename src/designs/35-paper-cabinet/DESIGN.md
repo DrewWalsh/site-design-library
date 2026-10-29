@@ -4,9 +4,11 @@
 
 **Visual grammar.** Tabbed drawers introduce categories; index cards present consistent metadata; a detail sheet holds the full record. Use buff paper, dark brown text, muted olive tabs, fine rules, and a modest serif paired with monospaced accession labels. Physical cues clarify organisation without requiring a simulated filing cabinet.
 
+**Composition.** The visitor opens a physical recipe drawer: a mounted cabinet label, projecting category tabs, a search handle and immediate accession cards. Buff records sit inside an olive cabinet rather than beneath a slogan; selected records retain their full archival sheet.
+
 **Specimen and flow.** _The Commonplace Cabinet_ collects fictional historical recipes. Choose a drawer, filter cards by ingredient or period, and open a recipe record. Supporting views include saved selections and a record with missing provenance clearly marked. Users can add a private note stored locally and return to the same filtered list.
 
-**Responsive behaviour.** Drawer tabs become a labelled category selector. Cards stack in a single readable column; record sheets open as ordinary pages rather than floating paper windows.
+**Responsive and inclusive behaviour.** The phone keeps the cabinet label compact, wraps category tabs and places the first complete accession card directly below the search handle. Record sheets remain ordinary readable routes. Native buttons, visible focus, a direct return path and reduced-motion support preserve access to the same content.
 
 **Identity rules.** Preserve stable metadata, tactile hierarchy, and the index-to-record relationship. Avoid ornamental desk clutter, unreadable ageing effects, or hiding navigation inside decorative objects. **Effort: medium.**
 
@@ -26,7 +28,7 @@ Brand, subject, accent and equivalent licensed typefaces can change. Preserve co
 
 ## Tokens and typography
 
-Heading: Libre Baskerville. Reading: IBM Plex Mono. Local WOFF2 fonts with system fallbacks. Page #e8dfc9; surface #f7efdc; text #493f2f; accent #6c6d46. Eight-pixel base spacing; reading measure 65ch; width 1240px. See tokens.css for role values and Demo.vue for composition. Palette and type match the working specimen.
+Heading: Libre Baskerville. Reading: IBM Plex Mono. Local WOFF2 fonts with system fallbacks. Page #e8dfc9; surface #f7efdc; text #493f2f; accent #6c6d46. Base tokens define an eight-pixel spacing unit, 65ch reading measure and 1240px content width; the composition-specific rules in Demo.vue override these where the canvas, type or information density requires it. See tokens.css for role values and Demo.vue for composition. Palette and type match the working specimen.
 
 ## States
 

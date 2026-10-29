@@ -39,7 +39,7 @@ function keep() {
 }
 </script>
 <template>
-  <div class="specimen">
+  <div class="specimen" :class="{ entry: state === 'start' }">
     <a class="skip" href="#content">Skip to content</a>
 
     <header>
@@ -48,13 +48,8 @@ function keep() {
     </header>
     <main id="content">
       <template v-if="state === 'start'"
-        ><div class="edition-title">
-          <h1>Meet in<br />the middle.</h1>
-          <p>Three independent drawings.<br />Twenty-seven possible agreements.</p>
-          <span
-            >COMPOSITION<br /><b>{{ String(number).padStart(2, '0') }}</b></span
-          >
-        </div>
+        ><h1 class="sr">Three Horizons: compose a landscape with three authors</h1>
+        <span class="composition-number">EDITION {{ String(number).padStart(2, '0') }} / 27</span>
         <div class="assembly">
           <section class="band sky">
             <svg viewBox="0 0 1200 230" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
@@ -578,6 +573,157 @@ footer {
     transition: none !important;
     animation: none !important;
     scroll-behavior: auto !important;
+  }
+}
+
+/* The entry is the experience itself; supporting routes retain its vocabulary. */
+
+.entry {
+  position: relative;
+}
+.entry header {
+  position: absolute;
+  z-index: 4;
+  left: 4%;
+  bottom: auto;
+  top: calc(100svh - 105px);
+  width: 340px;
+  max-width: 92%;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  padding: 18px;
+  border: 0;
+  background: #f3eddadf;
+  box-shadow: 4px 4px 0 #34332f;
+  transform: rotate(-3deg);
+}
+.entry header strong {
+  font-size: 13px;
+  max-width: 100px;
+  line-height: 1.2;
+}
+.entry header > span {
+  display: none;
+}
+.entry header button {
+  font-size: 10px;
+  margin-left: auto;
+}
+.entry main > h1 {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip-path: inset(50%) !important;
+  white-space: nowrap !important;
+}
+.entry .composition-number {
+  position: absolute;
+  right: 25px;
+  top: 20px;
+  z-index: 3;
+  font: 11px var(--body);
+  background: #f3eddadc;
+  padding: 8px 12px;
+}
+.entry .band {
+  height: 33.333svh;
+  min-height: 240px;
+  border: 0;
+  overflow: hidden;
+}
+.entry .band svg,
+.entry .band.figure svg {
+  height: 100%;
+  width: 100%;
+}
+.entry .band-label {
+  left: 25px;
+  top: 25px;
+  padding: 12px;
+  background: #f3eddae8;
+  border: 0;
+  max-width: 170px;
+}
+.entry .band-label > span {
+  font-size: 9px;
+}
+.entry .band-label button {
+  font-size: 10px;
+}
+.entry .band-controls {
+  right: 25px;
+  bottom: 25px;
+  background: #f3eddade;
+  border-radius: 50px;
+  padding: 5px 10px;
+}
+.entry .band-controls button {
+  font-size: 24px;
+  width: 45px;
+  height: 45px;
+  padding: 0;
+}
+.entry .band-controls span {
+  font-size: 11px;
+}
+.entry .assembly-end {
+  padding: 40px 5%;
+}
+@media (max-width: 750px) {
+  .entry header {
+    top: calc(100svh - 100px);
+    left: 5%;
+    padding: 13px;
+    width: 240px;
+    gap: 10px;
+  }
+  .entry header strong {
+    font-size: 10px;
+    max-width: 85px;
+  }
+  .entry header button {
+    font-size: 9px;
+  }
+  .entry .composition-number {
+    right: 15px;
+    top: 15px;
+    font-size: 8px;
+    padding: 7px;
+  }
+  .entry .band {
+    height: 33.333svh;
+    min-height: 230px;
+  }
+  .entry .band-label {
+    left: 15px;
+    top: 20px;
+    max-width: 130px;
+    padding: 10px;
+  }
+  .entry .band.sky .band-label {
+    top: 55px;
+  }
+  .entry .band-label > span {
+    font-size: 8px;
+  }
+  .entry .band-label button {
+    font-size: 9px;
+  }
+  .entry .band-controls {
+    right: 15px;
+    bottom: 18px;
+  }
+  .entry .band-controls button {
+    width: 35px;
+    height: 35px;
+    font-size: 21px;
+  }
+  .entry .band-controls span {
+    font-size: 9px;
   }
 }
 </style>

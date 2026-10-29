@@ -39,7 +39,7 @@ function reserve() {
 }
 </script>
 <template>
-  <div class="specimen">
+  <div class="specimen" :class="{ entry: state === 'start' || state === 'performance' }">
     <a class="skip" href="#content">Skip to content</a>
 
     <header>
@@ -49,9 +49,9 @@ function reserve() {
     <main id="content">
       <template v-if="state === 'start' || state === 'performance'"
         ><div class="proscenium">
-          <div class="marquee">
+          <div class="marquee" :class="{ quiet: open }">
             <span>TONIGHT, AT YOUR OWN PACE</span>
-            <h1>A room<br />for the next person.</h1>
+            <h1><span>A room</span><em>for the</em><span>next person.</span></h1>
           </div>
           <div class="stage">
             <div class="spotlight" aria-hidden="true"></div>
@@ -637,6 +637,231 @@ footer {
     transition: none !important;
     animation: none !important;
     scroll-behavior: auto !important;
+  }
+}
+
+/* The entry is the experience itself; supporting routes retain its vocabulary. */
+
+.entry {
+  position: relative;
+  background: #4d120f;
+}
+.entry header {
+  position: absolute;
+  z-index: 5;
+  left: 25px;
+  right: 25px;
+  top: 24px;
+  padding: 0;
+  border: 0;
+  align-items: flex-start;
+}
+.entry header strong {
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  max-width: 110px;
+  line-height: 1.4;
+}
+.entry header > span {
+  display: none;
+}
+.entry header button {
+  background: #f1dfba;
+  color: #4f251e;
+  border: 0;
+  padding: 15px 20px;
+  transform: rotate(7deg);
+  font-size: 11px;
+}
+.entry .proscenium {
+  position: relative;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  background: #4d120f;
+}
+.entry .stage {
+  height: calc(100svh - 35px);
+  min-height: 780px;
+  margin: 0;
+  overflow: hidden;
+  border: 0;
+}
+.entry .marquee {
+  position: absolute;
+  inset: 16% 12% auto;
+  z-index: 3;
+  pointer-events: none;
+  background: transparent;
+  padding: 0;
+  text-align: center;
+}
+.entry .marquee > span {
+  font-size: 10px;
+  letter-spacing: 0.3em;
+}
+.entry .marquee h1 {
+  font-size: clamp(60px, 9.5vw, 145px);
+  line-height: 1.02;
+  letter-spacing: -0.06em;
+  margin: 40px 0 0;
+}
+.entry .marquee h1 span,
+.entry .marquee h1 em {
+  display: block;
+}
+.entry .marquee h1 em {
+  font-size: 0.42em;
+  font-weight: 400;
+  line-height: 1.6;
+}
+.entry .marquee.quiet {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip-path: inset(50%) !important;
+  white-space: nowrap !important;
+}
+.entry .curtain {
+  background: repeating-linear-gradient(90deg, #5c1715 0 25px, #be3c2e 42px, #8c241c 70px);
+}
+.entry .curtain-control {
+  left: auto;
+  right: 5%;
+  bottom: 10%;
+  transform: rotate(-8deg);
+  width: 110px;
+  height: 110px;
+  white-space: normal;
+  border: 5px double #8e6b3e;
+  border-radius: 50%;
+  font-size: 14px;
+  font-family: var(--heading);
+}
+.entry .curtain-control:before {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  height: 60svh;
+  width: 2px;
+  left: 50%;
+  background: #e9bd65;
+}
+.entry .stage-copy {
+  top: 15%;
+  left: 13%;
+  max-width: 430px;
+  padding: 30px;
+}
+.entry .stage-copy h2 {
+  font-size: 45px;
+}
+.entry .stage-copy p {
+  font-size: 17px;
+}
+.entry .set .frame {
+  width: 240px;
+  height: 320px;
+  bottom: 100px;
+}
+.entry .visitor {
+  height: 230px;
+  bottom: 95px;
+}
+.entry .keeper {
+  height: 210px;
+  bottom: 95px;
+}
+.entry .floor {
+  height: 110px;
+}
+.entry .footlights {
+  height: 35px;
+  padding: 12px 8%;
+  background: #4d120f;
+}
+.entry .act-controls {
+  background: #4d120f;
+  padding: 25px 5%;
+}
+.entry .invitation {
+  background: #4d120f;
+}
+.entry footer {
+  background: #4d120f;
+}
+@media (max-width: 750px) {
+  .entry header {
+    left: 20px;
+    right: 20px;
+    top: 22px;
+  }
+  .entry header strong {
+    font-size: 9px;
+    max-width: 95px;
+  }
+  .entry header button {
+    font-size: 9px;
+    padding: 12px;
+  }
+  .entry .stage {
+    min-height: 720px;
+    height: calc(100svh - 35px);
+  }
+  .entry .marquee {
+    inset: 20% 7% auto;
+  }
+  .entry .marquee > span {
+    font-size: 8px;
+    letter-spacing: 0.15em;
+  }
+  .entry .marquee h1 {
+    font-size: 15vw;
+    line-height: 1.1;
+    margin-top: 35px;
+  }
+  .entry .curtain-control {
+    width: 90px;
+    height: 90px;
+    bottom: 8%;
+    right: 8%;
+    font-size: 12px;
+  }
+  .entry .curtain-control:before {
+    height: 70px;
+  }
+  .entry .stage-copy {
+    top: 18%;
+    left: 10%;
+    right: 10%;
+    max-width: none;
+    padding: 20px;
+  }
+  .entry .stage-copy h2 {
+    font-size: 30px;
+  }
+  .entry .stage-copy p {
+    font-size: 14px;
+  }
+  .entry .set .frame {
+    left: 42%;
+    width: 140px;
+    height: 230px;
+  }
+  .entry .visitor {
+    left: 20%;
+    height: 170px;
+  }
+  .entry .keeper {
+    left: 73%;
+    height: 150px;
+  }
+  .entry .act-controls {
+    gap: 10px;
+    font-size: 10px;
   }
 }
 </style>

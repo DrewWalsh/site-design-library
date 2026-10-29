@@ -4,6 +4,8 @@
 
 **Visual grammar.** Use a visibly rigorous grid, left-aligned oversized headings, numbered sections, generous outer margins, and restrained image crops. Small labels align with large type rather than floating in pills. A neutral sans works across a severe size range. An off-white ground, near-black text, and one vermilion accent organise the composition. Navigation is a short indexed list; rules and whitespace divide material instead of card backgrounds.
 
+**Composition.** The conference is a single asymmetric typographic poster: an oversized FORM / 26 title and date share a vermilion slab, directly beside the ruled session programme. Actual event information replaces the separate promotional headline and introductory band.
+
 **Specimen and flow.** _Form Conference_ lets visitors inspect the programme, filter sessions by day, and open a speaker profile. Supporting screens provide a programme detail with venue information and a saved-session list held locally.
 
 **Adaptation and identity.** On mobile, preserve alignment relationships while reducing the number of columns; the oversized heading must wrap deliberately. Preserve the grid and typographic hierarchy; avoid symmetric feature tiles, decorative shapes, and unrelated typefaces. Motion is limited to quiet state changes. **Effort: low.**
@@ -24,7 +26,7 @@ Brand, subject, accent and equivalent licensed typefaces can change. Preserve co
 
 ## Tokens and typography
 
-Heading: Space Grotesk. Reading: Space Grotesk. Local WOFF2 fonts with system fallbacks. Page #f4f2eb; surface #ffffff; text #181a18; accent #c6321e. Eight-pixel base spacing; reading measure 65ch; width 1240px. See tokens.css for role values and Demo.vue for composition. Palette and type match the working specimen.
+Heading: Space Grotesk. Reading: Space Grotesk. Local WOFF2 fonts with system fallbacks. Page #f4f2eb; surface #ffffff; text #181a18; accent #c6321e. Base tokens define an eight-pixel spacing unit, 65ch reading measure and 1240px content width; the composition-specific rules in Demo.vue override these where the canvas, type or information density requires it. See tokens.css for role values and Demo.vue for composition. Palette and type match the working specimen.
 
 ## States
 

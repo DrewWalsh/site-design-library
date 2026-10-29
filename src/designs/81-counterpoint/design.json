@@ -14,7 +14,7 @@
   ],
   "character": "Experimental",
   "traits": {
-    "composition": "Opposing coral and aubergine columns run edge to edge. One shared seam controls the space between monumental serif headlines and paired passages.",
+    "composition": "Two uninterrupted opposing colour fields occupy the whole opening. Monumental opposing statements face across a controllable seam; the navigation is a small edition slip near the lower edge, while paired prose continues in the same two-sided architecture.",
     "navigation": "Adjust the seam, synchronise passages, inspect common sources",
     "typography": "Libre Baskerville / DM Sans",
     "density": "Medium",
@@ -81,7 +81,7 @@
   "referenceImages": [
     {
       "file": "/previews/81/desktop.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/81/41c394f501c5587d-desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/81/adff3b92b51bab0f-desktop.jpg",
       "route": "/preview/81-counterpoint/start",
       "viewport": {
         "width": 1440,
@@ -89,13 +89,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:d54b61795125482b3a66d724e52295c6236b82d974922a88dc6b35b152448fb0",
-      "sha256": "41c394f501c5587db9a2ca84c93e145ac1b80e76f76fa068894e8f1843bcd46f",
+      "sourceRevision": "sha256:85ec91fa47f6e901f1c96ccd44d7275cc570c34fb513f2a27e2e979cc9ec6665",
+      "sha256": "adff3b92b51bab0f684b2aea66cdd34a91eb3db41ccdba4592865be0e602b486",
       "fullPage": false
     },
     {
       "file": "/previews/81/mobile.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/81/6940abcf03e08bc8-mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/81/db38e69123a15563-mobile.jpg",
       "route": "/preview/81-counterpoint/start",
       "viewport": {
         "width": 390,
@@ -103,8 +103,8 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:d54b61795125482b3a66d724e52295c6236b82d974922a88dc6b35b152448fb0",
-      "sha256": "6940abcf03e08bc893c565fb420cba869cf5e5ebc76aedfc694c0e174459c2b6",
+      "sourceRevision": "sha256:85ec91fa47f6e901f1c96ccd44d7275cc570c34fb513f2a27e2e979cc9ec6665",
+      "sha256": "db38e69123a15563438bf5007b28e913d3d82c1b82374e2c96d2823a9bba2838",
       "fullPage": false
     },
     {
@@ -117,13 +117,13 @@
       },
       "state": "passage",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:d54b61795125482b3a66d724e52295c6236b82d974922a88dc6b35b152448fb0",
+      "sourceRevision": "sha256:85ec91fa47f6e901f1c96ccd44d7275cc570c34fb513f2a27e2e979cc9ec6665",
       "sha256": "8f82af00befdef9b8c9d7c10813143b335fff3a900e57cde1d325930c35cd996",
       "fullPage": false
     },
     {
       "file": "/previews/81/full-page.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/81/5d3ea64d3f222cb4-full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/81/fecd213ab0aa6e6b-full-page.jpg",
       "route": "/preview/81-counterpoint/start",
       "viewport": {
         "width": 1440,
@@ -131,8 +131,8 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:d54b61795125482b3a66d724e52295c6236b82d974922a88dc6b35b152448fb0",
-      "sha256": "5d3ea64d3f222cb4ec6eb53b99dc581a5cdef7a5d41a7261e657eed52acb37b0",
+      "sourceRevision": "sha256:85ec91fa47f6e901f1c96ccd44d7275cc570c34fb513f2a27e2e979cc9ec6665",
+      "sha256": "fecd213ab0aa6e6ba96d3c160b841985a8aeef0ba0055a23635e28c9a59f314e",
       "fullPage": true
     }
   ],
@@ -161,6 +161,6 @@
     "Libre Baskerville",
     "DM Sans"
   ],
-  "brief": "**Idea.** Two accounts deserve equal space without pretending to agree.\n\n**Composition.** Opposing coral and aubergine columns run edge to edge. One shared seam controls the space between monumental serif headlines and paired passages.\n\n**Navigation and complete example.** Read six paired accounts of one fictional public-art commission, adjust the balance, isolate a pair and examine the common source notes.\n\n**Responsive and inclusive behaviour.** The two accounts stack in reading order with clear speaker names. The balance control becomes three labelled focus choices; no text is squeezed into unusable columns. All controls are native buttons or labelled inputs. Movement is discretionary, no sound starts automatically, reduced-motion preferences remove transitions, and a direct index exposes the same content.\n\n**Adaptation.** Preserve the tension between two independently voiced accounts. Changing the seam must never erase the less favoured side. Retain the relationship between navigation and content. Do not reduce the reference to a generic hero followed by interchangeable cards.\n\n**Research.** [Conditional Design manifesto](https://conditionaldesign.org/manifesto/); [Rafaël Rozendaal — Internet works](https://www.newrafael.com/internet?filter=website). These are conceptual precedents, not copied artwork, source code, branding or text. All diagrams and sample writing in this specimen are original, fictional material.",
+  "brief": "**Idea.** Two accounts deserve equal space without pretending to agree.\n\n**Composition.** Two uninterrupted opposing colour fields occupy the whole opening. Monumental opposing statements face across a controllable seam; the navigation is a small edition slip near the lower edge, while paired prose continues in the same two-sided architecture.\n\n**Navigation and complete example.** Read six paired accounts of one fictional public-art commission, adjust the balance, isolate a pair and examine the common source notes.\n\n**Responsive and inclusive behaviour.** The opening keeps two readable opposing fields on phones, using short titles and small speaker labels. Longer paired passages stack in explicit speaker order. Native buttons, visible focus, a direct return path and reduced-motion support preserve access to the same content.\n\n**Adaptation.** Preserve the tension between two independently voiced accounts. Changing the seam must never erase the less favoured side. Retain the relationship between navigation and content. Do not reduce the reference to a generic hero followed by interchangeable cards.\n\n**Research.** [Conditional Design manifesto](https://conditionaldesign.org/manifesto/); [Rafaël Rozendaal — Internet works](https://www.newrafael.com/internet?filter=website). These are conceptual precedents, not copied artwork, source code, branding or text. All diagrams and sample writing in this specimen are original, fictional material.",
   "scope": "Complete visual reference with deterministic local interactions and fictional content; no production backend."
 }

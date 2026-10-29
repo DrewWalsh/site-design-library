@@ -27,7 +27,7 @@ watch(interval, () => {
 });
 </script>
 <template>
-  <div class="specimen">
+  <div class="specimen" :class="{ entry: state === 'start' }">
     <a class="skip" href="#content">Skip to content</a>
     <header>
       <strong>◉ WATERSHED</strong><span>OBSERVATORY / NORTHBANK BASIN</span
@@ -37,8 +37,8 @@ watch(interval, () => {
       <div class="title">
         <div>
           <p class="eyebrow">RIVER CONDITIONS / STUDY 004</p>
-          <h1>Read the river.</h1>
-          <p>Patterns, exceptions, and the space between measurements.</p>
+          <h1>River conditions</h1>
+          <p>Northbank basin / synthetic observations</p>
         </div>
         <div class="controls">
           <label
@@ -690,6 +690,163 @@ main {
   .data td,
   .data th {
     font-size: 9px;
+  }
+}
+
+/* The entry is the experience itself; supporting routes retain its vocabulary. */
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  order: 0;
+  padding: 0 0 20px;
+  align-items: center;
+}
+.title h1 {
+  font-size: 25px;
+  margin: 8px 0;
+  letter-spacing: -0.035em;
+}
+.title .eyebrow {
+  font-size: 9px;
+}
+.title p {
+  font-size: 10px;
+}
+.views {
+  order: 1;
+}
+.plot,
+.data {
+  order: 2;
+}
+.readouts {
+  order: 3;
+}
+.method {
+  order: 4;
+}
+.entry main {
+  max-width: 1500px;
+  width: 100%;
+  padding: 25px 3%;
+}
+.entry .readouts {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1.3fr;
+  gap: 25px;
+  border-block: 1px solid #3a505a;
+  margin-top: 25px;
+}
+.entry .readouts > div {
+  background: none;
+  border: 0;
+  padding: 20px 0;
+}
+.entry .readouts strong {
+  font-size: 31px;
+  margin: 8px 0;
+}
+.entry .readouts small {
+  font-size: 9px;
+}
+.entry .readouts p {
+  font-size: 10px;
+}
+.entry .plot {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #3a505a;
+}
+.entry .plot svg {
+  width: 100%;
+  max-height: 560px;
+}
+.entry .plot h2 {
+  font-size: 18px;
+}
+.entry .reading-controls {
+  padding: 15px 0 0;
+}
+.entry .reading-controls label,
+.entry .reading-controls p {
+  font-size: 10px;
+}
+.entry .controls {
+  gap: 15px;
+}
+.entry .controls label {
+  font-size: 10px;
+}
+@media (max-width: 750px) {
+  .title {
+    display: block;
+    padding-bottom: 15px;
+  }
+  .title h1 {
+    font-size: 23px;
+  }
+  .title > div > p {
+    font-size: 9px;
+  }
+  .title > .controls {
+    margin-top: 18px;
+    display: flex;
+    gap: 12px;
+  }
+  .controls label {
+    flex: 1;
+    font-size: 9px;
+  }
+  .controls select {
+    font-size: 11px;
+  }
+  .entry main {
+    padding: 20px 5%;
+  }
+  .entry .plot {
+    padding: 14px 10px;
+    margin-top: 15px;
+  }
+  .entry .plot h2 {
+    font-size: 15px;
+  }
+  .entry .plot .key {
+    font-size: 8px;
+  }
+  .entry .plot svg {
+    min-height: 190px;
+  }
+  .entry .readouts {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+  }
+  .entry .readouts strong {
+    font-size: 25px;
+  }
+  .entry .readouts strong span {
+    font-size: 10px;
+  }
+  .entry .readouts small {
+    font-size: 8px;
+  }
+  .entry .readouts p {
+    font-size: 9px;
+  }
+  .entry .readouts .interpretation {
+    grid-column: 1/4;
+    padding-top: 0;
+  }
+  .entry .readouts > div {
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 750px) {
+  .entry .plot svg text {
+    font-size: 24px;
   }
 }
 </style>

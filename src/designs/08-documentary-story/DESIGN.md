@@ -4,6 +4,8 @@
 
 **Visual grammar.** Use a linear chapter structure with substantial text, full-width documentary images, maps or diagrams where useful, and short transitional passages. A small chapter index provides orientation. A sober sans heading and readable serif body sit on alternating ink and paper sections, with an ochre accent for annotations. Sticky imagery may accompany a passage, but all content remains meaningful in normal document order.
 
+**Composition.** The documentary begins as an evidence plate: an unobstructed landscape, vertical plate identifier and compact title/caption block. A persistent chapter control anchors the subsequent image, mechanism and substantial reading sequence. Oversized marketing copy no longer overlays the landscape.
+
 **Specimen and flow.** _The River Works_ explains a fictional town's abandoned water system. Readers progress through five chapters, inspect a labelled mechanism diagram, and open evidence captions. Supporting states provide a chapter overview and a plain continuous-reading version.
 
 **Adaptation and identity.** Mobile replaces sticky side-by-side scenes with image-and-text sequences. Reduced motion removes animated transitions. Preserve the explanatory progression and substantial writing; avoid scroll hijacking, text revealed too slowly to read, and spectacle unsupported by content. **Effort: medium.**
@@ -24,7 +26,7 @@ Brand, subject, accent and equivalent licensed typefaces can change. Preserve co
 
 ## Tokens and typography
 
-Heading: DM Sans. Reading: Libre Baskerville. Local WOFF2 fonts with system fallbacks. Page #eae7dc; surface #ffffff; text #232e2d; accent #b08a37. Eight-pixel base spacing; reading measure 65ch; width 1240px. See tokens.css for role values and Demo.vue for composition. Palette and type match the working specimen.
+Heading: DM Sans. Reading: Libre Baskerville. Local WOFF2 fonts with system fallbacks. Page #eae7dc; surface #ffffff; text #232e2d; accent #b08a37. Base tokens define an eight-pixel spacing unit, 65ch reading measure and 1240px content width; the composition-specific rules in Demo.vue override these where the canvas, type or information density requires it. See tokens.css for role values and Demo.vue for composition. Palette and type match the working specimen.
 
 ## States
 

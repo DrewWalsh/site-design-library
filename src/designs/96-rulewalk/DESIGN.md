@@ -2,11 +2,11 @@
 
 **Idea.** A simple movement rule can become a curatorial point of view.
 
-**Composition.** A saturated field of large numbered stepping stones fills the page. Arrows, a single rule and a visible route make the exhibition read like a graphic board rather than a gallery wall.
+**Composition.** Nine overscale numbered stones form a graphic movement board: circles, squared turns and cut corners carry the navigation, while the current work appears as a side annotation. The rule is a small operational placard, not a headline. Selected and unreachable moves have visibly different geometry.
 
 **Navigation and complete example.** Traverse nine original exhibition studies using adjacent or diagonal moves, inspect the work reached and review a route that exposes what the chosen rule omitted.
 
-**Responsive and inclusive behaviour.** The board remains three columns with large numbered buttons; full work names and the current rule are repeated below it. A direct index reaches every work. All controls are native buttons or labelled inputs. Movement is discretionary, no sound starts automatically, reduced-motion preferences remove transitions, and a direct index exposes the same content.
+**Responsive and inclusive behaviour.** The phone board keeps all nine large numbered targets within the first screen beneath one compact rule selector. Full work names and the current reading follow immediately. Native buttons, visible focus, a direct return path and reduced-motion support preserve access to the same content.
 
 **Adaptation.** Keep the movement rule explicit and use it to change the order of a real collection. Avoid scores, streaks or penalties that distract from reading. Retain the relationship between navigation and content. Do not reduce the reference to a generic hero followed by interchangeable cards.
 

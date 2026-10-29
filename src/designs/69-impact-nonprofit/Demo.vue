@@ -17,7 +17,7 @@ const allocations = computed(() => [
 ]);
 </script>
 <template>
-  <div class="specimen">
+  <div class="specimen" :class="{ entry: state === 'start' }">
     <a class="skip" href="#content">Skip to content</a>
     <header class="ground-header wrap">
       <a :href="href('start')" class="ground-logo"
@@ -31,55 +31,44 @@ const allocations = computed(() => [
     </header>
     <main id="content">
       <template v-if="state === 'start'"
-        ><section class="river-hero wrap">
-          <div>
-            <p class="eyebrow">ONE RIVER. A SHARED RESPONSIBILITY.</p>
-            <h1>A healthier river.<br />A closer community.</h1>
-            <p class="lead">
-              Small, practical projects that reconnect people with the water running through their
-              neighbourhood.
+        ><section class="project-opening wrap">
+          <div class="project-measure">
+            <p class="eyebrow">01 / Riverbank planting / planned work</p>
+            <h1>120<span>metres</span></h1>
+            <p class="measure-caption">A patchy riverbank. A specific place to begin.</p>
+            <div class="transect" aria-hidden="true">
+              <i v-for="n in 24" :key="n" :style="{ height: 20 + ((n * 17) % 70) + '%' }"></i>
+            </div>
+            <div class="measure-scale"><span>0 m</span><span>60 m</span><span>120 m</span></div>
+            <p>
+              Planned restoration with locally appropriate plants.<br />Fictional project target; no
+              completed impact is claimed.
             </p>
-            <button class="primary" @click="go('contribute')">Find your part in the work →</button>
-            <p class="muted">Fictional nonprofit · illustrative projects and results</p>
+            <button class="text-link" @click="go('impact')">Read the project record →</button>
           </div>
-          <figure class="river-illustration">
-            <svg
-              viewBox="0 0 500 500"
-              role="img"
-              aria-label="Illustrated river landscape with planted banks, footpath, and three project markers"
-            >
-              <rect width="500" height="500" fill="#dce2b9" />
-              <path
-                d="M335-40C70 75 480 190 245 300S160 440 330 540"
-                fill="none"
-                stroke="#80aca5"
-                stroke-width="85"
-              />
-              <path
-                d="M240-20C-25 125 375 190 150 320S55 450 220 530"
-                fill="none"
-                stroke="#faf2d3"
-                stroke-width="15"
-              />
-              <g fill="#7b9860">
-                <circle cx="70" cy="80" r="42" />
-                <circle cx="410" cy="340" r="65" />
-                <circle cx="90" cy="400" r="45" />
-                <circle cx="390" cy="110" r="34" />
-              </g>
-              <g fill="#2b4336" stroke="#f0f0dc" stroke-width="4">
-                <circle cx="235" cy="92" r="23" />
-                <circle cx="322" cy="250" r="23" />
-                <circle cx="200" cy="390" r="23" />
-              </g>
-              <g fill="#fff" font-family="sans-serif" font-size="15" text-anchor="middle">
-                <text x="235" y="98">01</text>
-                <text x="322" y="256">02</text>
-                <text x="200" y="396">03</text>
-              </g>
-            </svg>
-            <figcaption>Three sample projects along one fictional river</figcaption>
-          </figure>
+          <aside class="allocation-entry">
+            <h2>Where a contribution goes</h2>
+            <div class="row">
+              <button
+                v-for="a in [25, 50, 100]"
+                :key="a"
+                :aria-pressed="amount === a"
+                @click="amount = a"
+              >
+                $ {{ a }}
+              </button>
+            </div>
+            <dl aria-live="polite">
+              <div v-for="a in allocations" :key="a.name">
+                <dt>
+                  {{ a.name }}<small>{{ a.percent }}%</small>
+                </dt>
+                <dd>$ {{ a.value.toFixed(2) }}</dd>
+              </div>
+            </dl>
+            <p>Illustrative allocation. No payment is collected.</p>
+            <button class="primary" @click="go('contribute')">Explore a contribution →</button>
+          </aside>
         </section>
         <section id="projects" class="wrap section projects">
           <div class="section-heading">
@@ -123,6 +112,53 @@ const allocations = computed(() => [
               Explore ↗
             </button>
           </article>
+        </section>
+        <section class="wrap river-context">
+          <figure class="river-illustration">
+            <svg
+              viewBox="0 0 500 500"
+              role="img"
+              aria-label="Illustrated river landscape with planted banks, footpath, and three project markers"
+            >
+              <rect width="500" height="500" fill="#dce2b9" />
+              <path
+                d="M335-40C70 75 480 190 245 300S160 440 330 540"
+                fill="none"
+                stroke="#80aca5"
+                stroke-width="85"
+              />
+              <path
+                d="M240-20C-25 125 375 190 150 320S55 450 220 530"
+                fill="none"
+                stroke="#faf2d3"
+                stroke-width="15"
+              />
+              <g fill="#7b9860">
+                <circle cx="70" cy="80" r="42" />
+                <circle cx="410" cy="340" r="65" />
+                <circle cx="90" cy="400" r="45" />
+                <circle cx="390" cy="110" r="34" />
+              </g>
+              <g fill="#2b4336" stroke="#f0f0dc" stroke-width="4">
+                <circle cx="235" cy="92" r="23" />
+                <circle cx="322" cy="250" r="23" />
+                <circle cx="200" cy="390" r="23" />
+              </g>
+              <g fill="#fff" font-family="sans-serif" font-size="15" text-anchor="middle">
+                <text x="235" y="98">01</text>
+                <text x="322" y="256">02</text>
+                <text x="200" y="396">03</text>
+              </g>
+            </svg>
+            <figcaption>Three sample projects along one fictional river</figcaption>
+          </figure>
+          <div>
+            <h2>One river, three places to work.</h2>
+            <p>
+              Planting, observation and access form a connected programme. Each project has its own
+              record, methods and reporting limits.
+            </p>
+          </div>
         </section>
         <section class="impact-band">
           <div class="wrap two">
@@ -874,6 +910,145 @@ details p {
   }
   .allocation {
     padding: 25px;
+  }
+}
+
+/* The entry is the experience itself; supporting routes retain its vocabulary. */
+.project-opening {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 70px;
+  padding: 30px 0 45px;
+}
+.project-measure h1 {
+  font-size: 180px;
+  line-height: 0.95;
+  letter-spacing: -0.065em;
+}
+.project-measure h1 span {
+  font-size: 30px;
+  letter-spacing: 0;
+  margin-left: 10px;
+}
+.measure-caption {
+  font-size: 22px;
+}
+.transect {
+  height: 95px;
+  display: flex;
+  gap: 5px;
+  align-items: end;
+  border-bottom: 6px solid #80aca5;
+  margin-top: 25px;
+}
+.transect i {
+  flex: 1;
+  background: #7b9860;
+  border-radius: 60% 40% 0 0;
+}
+.measure-scale {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-bottom: 18px;
+}
+.project-measure > p:not(.eyebrow):not(.measure-caption) {
+  font-size: 14px;
+}
+.project-measure button {
+  margin-top: 15px;
+}
+.allocation-entry {
+  border: 1px solid var(--ink);
+  padding: 28px;
+  align-self: center;
+  transform: rotate(1deg);
+  background: #e6e4c5;
+}
+.allocation-entry h2 {
+  font-size: 27px;
+  margin-bottom: 20px;
+}
+.allocation-entry button[aria-pressed='true'] {
+  background: var(--accent);
+  color: white;
+}
+.allocation-entry dl {
+  margin: 20px 0;
+}
+.allocation-entry dl > div {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--line);
+  padding: 14px 0;
+}
+.allocation-entry dt small {
+  display: block;
+}
+.allocation-entry dd {
+  font-size: 27px;
+  margin: 0;
+}
+.allocation-entry > p {
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+.river-context {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 45px;
+  align-items: center;
+  padding-bottom: 45px;
+}
+.river-context svg {
+  max-height: 270px;
+}
+.river-context figcaption {
+  font-size: 11px;
+}
+.river-context h2 {
+  font-size: 34px;
+}
+@media (max-width: 700px) {
+  .project-opening {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 20px 0 35px;
+  }
+  .project-measure h1 {
+    font-size: 120px;
+  }
+  .project-measure h1 span {
+    font-size: 23px;
+  }
+  .measure-caption {
+    font-size: 19px;
+  }
+  .allocation-entry {
+    padding: 22px;
+    transform: none;
+  }
+  .river-context {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .river-context svg {
+    width: 100%;
+  }
+}
+.project-opening {
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+  gap: clamp(25px, 4vw, 70px);
+}
+.project-measure h1 {
+  font-size: clamp(100px, 12.5vw, 180px);
+}
+@media (max-width: 900px) {
+  .project-opening {
+    grid-template-columns: 1fr;
+  }
+  .allocation-entry {
+    transform: none;
   }
 }
 </style>

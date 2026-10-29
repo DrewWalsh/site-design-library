@@ -13,7 +13,7 @@
   ],
   "character": "Expressive",
   "traits": {
-    "composition": "Playful kit composition with unequal arch, print and sculpture panels",
+    "composition": "The opening is a crowded kit shop window: an arched paper kit, a tilted print box and a tall clay parcel carry attached contents and purchase controls. A starburst club stamp crosses the display; a solid ink strip anchors navigation. No marketing hero precedes the objects.",
     "navigation": "Kit selection and an ordinary bundle builder",
     "typography": "Space Grotesk + DM Sans",
     "density": "Medium",
@@ -48,7 +48,7 @@
   "referenceImages": [
     {
       "file": "/previews/32/desktop.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/32/c08418d0d078851e-desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/32/d3eefa288eb52e17-desktop.jpg",
       "route": "/preview/32-pop-memphis/start",
       "viewport": {
         "width": 1440,
@@ -56,13 +56,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:b77cac416f23c60b8d479885e35ef18aed386c17e6c02bfb4339e6648358f781",
-      "sha256": "c08418d0d078851efd3a0956a7a7040e724a9b63fadbab65f14fe693a2aeec00",
+      "sourceRevision": "sha256:fdfc88b1a606a5e00abde25fc2d49c154472d7410dd3fcd779953b9c161a2af5",
+      "sha256": "d3eefa288eb52e175ec94cf373cbc392349bfc908e12f4a0d24e9adbefdf258b",
       "fullPage": false
     },
     {
       "file": "/previews/32/mobile.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/32/4a175ede6901eda9-mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/32/061c1b3d9362aad8-mobile.jpg",
       "route": "/preview/32-pop-memphis/start",
       "viewport": {
         "width": 390,
@@ -70,8 +70,8 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:b77cac416f23c60b8d479885e35ef18aed386c17e6c02bfb4339e6648358f781",
-      "sha256": "4a175ede6901eda92aabfc2e3fb828e2ce905e7a3eb7e52afba924700865fc73",
+      "sourceRevision": "sha256:fdfc88b1a606a5e00abde25fc2d49c154472d7410dd3fcd779953b9c161a2af5",
+      "sha256": "061c1b3d9362aad86cd03d30808bd20beef49d06dbd7d02a45d68c059e1eaa42",
       "fullPage": false
     },
     {
@@ -84,13 +84,13 @@
       },
       "state": "bundle",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:b77cac416f23c60b8d479885e35ef18aed386c17e6c02bfb4339e6648358f781",
+      "sourceRevision": "sha256:fdfc88b1a606a5e00abde25fc2d49c154472d7410dd3fcd779953b9c161a2af5",
       "sha256": "f2dc272e01f5d6bc24107eeaa9354d25a85ad2930f772439146338d5a33721ea",
       "fullPage": false
     },
     {
       "file": "/previews/32/full-page.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/32/8c7cd328f0309e8d-full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/32/2a9a591a2b473070-full-page.jpg",
       "route": "/preview/32-pop-memphis/start",
       "viewport": {
         "width": 1440,
@@ -98,8 +98,8 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:b77cac416f23c60b8d479885e35ef18aed386c17e6c02bfb4339e6648358f781",
-      "sha256": "8c7cd328f0309e8d6a77e1d6ae0c9d9084bcda9fec60ee10639f3ba6fe033ba0",
+      "sourceRevision": "sha256:fdfc88b1a606a5e00abde25fc2d49c154472d7410dd3fcd779953b9c161a2af5",
+      "sha256": "2a9a591a2b47307017806c05205be3829cb9ca803ca099a25edf1fae24c4eab8",
       "fullPage": true
     }
   ],
@@ -118,7 +118,7 @@
     "Space Grotesk",
     "DM Sans"
   ],
-  "brief": "**Philosophy and fit.** Make browsing feel exuberant and surprising while keeping decisions predictable. Fits playful lifestyle brands, creative clubs, youth-oriented events, and cheerful product launches.\n\n**Visual grammar.** Offset blocks, squiggles, stipple patterns, contrasting outlines, and deliberately mismatched geometric frames provide the visual language. Lavender, mint, melon, and black carry a bold rounded display face over plain body text. Navigation stays anchored in a solid strip; patterns occupy margins and section transitions.\n\n**Specimen and flow.** *Odd Objects Club* offers fictional monthly creative kits. Explore a themed collection, inspect kit contents, and customise a sample bundle. Supporting views include a member-project gallery and a bundle summary with an incompatible-item explanation. The interaction is ordinary selection, supported by lively visual responses.\n\n**Responsive behaviour.** Offset layouts become staggered but readable vertical sections. Pattern density decreases on small screens; reduced motion removes bouncing and rotation while preserving selected-state feedback.\n\n**Identity rules.** Preserve deliberate clashes of pattern and shape. Avoid repeating identical cards, using patterns beneath body copy, or letting random rotation impair controls. **Effort: medium.**\n\n**Distinctive composition.** The kit collection uses an oversized arch, a patterned print panel, and an asymmetric sculpture panel rather than three equal outlined cards. Geometric material play and patterned transitions distinguish it from Neo Brutalist Board’s regular hard-shadow grid.",
+  "brief": "**Philosophy and fit.** Make browsing feel exuberant and surprising while keeping decisions predictable. Fits playful lifestyle brands, creative clubs, youth-oriented events, and cheerful product launches.\n\n**Visual grammar.** Offset blocks, squiggles, stipple patterns, contrasting outlines, and deliberately mismatched geometric frames provide the visual language. Lavender, mint, melon, and black carry a bold rounded display face over plain body text. Navigation stays anchored in a solid strip; patterns occupy margins and section transitions.\n\n**Composition.** The opening is a crowded kit shop window: an arched paper kit, a tilted print box and a tall clay parcel carry attached contents and purchase controls. A starburst club stamp crosses the display; a solid ink strip anchors navigation. No marketing hero precedes the objects.\n\n**Specimen and flow.** _Odd Objects Club_ offers fictional monthly creative kits. Explore a themed collection, inspect kit contents, and customise a sample bundle. Supporting views include a member-project gallery and a bundle summary with an incompatible-item explanation. The interaction is ordinary selection, supported by lively visual responses.\n\n**Responsive and inclusive behaviour.** The phone display becomes a sequence of differently shaped, slightly offset parcels. Labels and selection controls remain straight and large inside each object. Native buttons, visible focus, a direct return path and reduced-motion support preserve access to the same content.\n\n**Identity rules.** Preserve deliberate clashes of pattern and shape. Avoid repeating identical cards, using patterns beneath body copy, or letting random rotation impair controls. **Effort: medium.**",
   "scope": "An expansive sample page with representative local interactions; no production business backend.",
   "discovery": {
     "industries": [

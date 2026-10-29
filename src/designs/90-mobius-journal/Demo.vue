@@ -55,7 +55,7 @@ function step(n: number) {
 }
 </script>
 <template>
-  <div class="specimen">
+  <div class="specimen" :class="{ entry: state === 'start' }">
     <a class="skip" href="#content">Skip to content</a>
 
     <header>
@@ -67,10 +67,7 @@ function step(n: number) {
     </header>
     <main id="content">
       <template v-if="state === 'start'"
-        ><div class="opening">
-          <h1>A story has<br />another side.</h1>
-          <p>A river walk, and the notes<br />that would not fit inside it.</p>
-        </div>
+        ><h1 class="sr">Both Sides: a walking edition on a folded ribbon</h1>
         <div class="ribbon" :class="{ reverse: back }">
           <div class="ribbon-edge" aria-hidden="true">
             {{ back ? 'DRAFT / FIELD / DRAFT / FIELD' : 'READ / WALK / READ / WALK' }}
@@ -504,6 +501,185 @@ footer {
     transition: none !important;
     animation: none !important;
     scroll-behavior: auto !important;
+  }
+}
+
+/* The entry is the experience itself; supporting routes retain its vocabulary. */
+
+.entry {
+  position: relative;
+  background: #1b3c89;
+  color: #e8e6da;
+  padding-top: 30px;
+  overflow-x: clip;
+}
+.entry header {
+  border: 0;
+  background: transparent;
+  padding: 10px 5%;
+  align-items: center;
+}
+.entry header strong {
+  font-size: 24px;
+  font-style: italic;
+}
+.entry header > span {
+  font-size: 9px;
+}
+.entry header nav button {
+  font-size: 11px;
+}
+.entry main > h1 {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip-path: inset(50%) !important;
+  white-space: nowrap !important;
+}
+.entry .ribbon {
+  margin: 90px 4% 85px;
+  width: 92%;
+  background: #e8e6da;
+  color: #1b3c89;
+  min-height: 570px;
+  grid-template-columns: 7% 1fr 17%;
+  transform: skewY(-7deg);
+}
+.entry .ribbon:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -40px;
+  right: 17%;
+  height: 40px;
+  background: #a8b3cd;
+  transform: skewX(-45deg);
+  transform-origin: bottom left;
+}
+.entry .ribbon:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -55px;
+  left: 17%;
+  height: 55px;
+  background: #c1bfae;
+  transform: skewX(-45deg);
+  transform-origin: top right;
+}
+.entry .ribbon article {
+  padding: 60px 8%;
+  transform: skewY(7deg);
+}
+.entry .ribbon article > span {
+  font-size: 10px;
+}
+.entry .ribbon h2 {
+  font-size: 20px;
+  font-style: italic;
+  margin: 25px 0;
+}
+.entry .ribbon article p {
+  font-size: clamp(28px, 3vw, 43px);
+  line-height: 1.65;
+  max-width: 30ch;
+}
+.entry .ribbon-edge {
+  border-color: #1b3c8980;
+}
+.entry .fold-end {
+  background: #9baacb;
+  color: #1b3c89;
+  font-size: 180px;
+}
+.entry .ribbon.reverse {
+  background: #bbc8de;
+  color: #122a65;
+}
+.entry .ribbon.reverse .fold-end {
+  background: #e8e6da;
+}
+.entry .seam-controls {
+  padding: 30px 5%;
+  gap: 15px;
+}
+.entry .flip {
+  background: #e8e6da;
+  color: #1b3c89;
+  border-radius: 50%;
+  width: 180px;
+  height: 85px;
+}
+.entry .seam-index {
+  margin: 20px 5%;
+  border-color: #e8e6da;
+}
+.entry .seam-index button[aria-current='step'] {
+  background: #e8e6da;
+  color: #1b3c89;
+}
+.entry footer {
+  border-color: #e8e6da70;
+}
+@media (max-width: 750px) {
+  .entry {
+    padding-top: 10px;
+  }
+  .entry header {
+    padding: 12px 6%;
+    flex-wrap: wrap;
+  }
+  .entry header > span {
+    display: none;
+  }
+  .entry header strong {
+    font-size: 20px;
+  }
+  .entry header nav {
+    gap: 12px;
+  }
+  .entry header nav button {
+    font-size: 10px;
+  }
+  .entry .ribbon {
+    margin: 70px 4% 60px;
+    grid-template-columns: 20px 1fr 35px;
+    min-height: 510px;
+  }
+  .entry .ribbon article {
+    padding: 35px 20px;
+  }
+  .entry .ribbon article p {
+    font-size: 25px;
+    line-height: 1.65;
+  }
+  .entry .ribbon h2 {
+    font-size: 18px;
+  }
+  .entry .fold-end {
+    font-size: 52px;
+  }
+  .entry .ribbon-edge {
+    font-size: 7px;
+    padding: 18px 5px;
+  }
+  .entry .seam-controls {
+    gap: 10px;
+    font-size: 10px;
+    flex-wrap: wrap;
+  }
+  .entry .flip {
+    width: 145px;
+    height: 85px;
+  }
+  .entry .seam-index {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .entry .seam-index span {
+    font-size: 9px;
   }
 }
 </style>

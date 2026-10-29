@@ -50,7 +50,7 @@ const menu = [
 ];
 </script>
 <template>
-  <div class="specimen">
+  <div class="specimen" :class="{ entry: state === 'start' }">
     <a class="skip" href="#content">Skip to content</a>
     <header>
       <a :href="href('start')" @click.prevent="go('start')">Ember <i>&</i> Orchard</a>
@@ -61,29 +61,24 @@ const menu = [
     </header>
     <main id="content">
       <template v-if="state === 'start'"
-        ><section class="opening">
-          <div>
-            <p class="eyebrow">Northbank / a table for the season</p>
-            <h1>Good things,<br />in their own time.</h1>
-            <p>Fire, a small garden, and the pleasure<br />of sitting down together.</p>
-            <button @click="go('reserve')">Find a table ↗</button>
-          </div>
-          <figure>
-            <img
-              class=""
-              src="/art/food.webp"
-              alt="A carefully plated seafood dish with herbs and sauce"
-              width="1200"
-              height="900"
-              loading="lazy"
-            />
-            <figcaption>A seasonal plate / illustrative food study</figcaption>
-          </figure>
-        </section>
+        ><aside class="service-rail">
+          <p class="eyebrow">NORTHBANK / ORCHARD LANE</p>
+          <svg viewBox="0 0 120 190" aria-hidden="true">
+            <path d="M55 180Q50 95 82 15" stroke="currentColor" stroke-width="2" fill="none" />
+            <g fill="none" stroke="currentColor" stroke-width="1.5">
+              <path
+                d="M60 145Q8 135 18 110Q50 112 60 145ZM60 135Q108 120 104 95Q72 98 60 135ZM65 108Q20 95 28 72Q58 77 65 108ZM70 85Q112 70 105 50Q80 55 70 85ZM76 59Q40 45 49 28Q73 33 76 59Z"
+              />
+            </g>
+          </svg>
+          <p>Wednesday–Saturday<br />17:30–22:00<br /><br />Sunday lunch<br />12:00–16:00</p>
+          <button @click="go('reserve')">Reserve a table ↗</button
+          ><button @click="go('visit')">Directions &amp; private dining</button>
+        </aside>
         <section class="menu">
           <div class="menu-title">
-            <p class="eyebrow">The autumn table</p>
-            <h2>From the kitchen.</h2>
+            <p class="eyebrow">November 2026 / seasonal menu</p>
+            <h1>The autumn table</h1>
             <p>A short menu, following the season.</p>
             <label><input type="checkbox" v-model="vegetarian" />Show vegetarian dishes</label>
           </div>
@@ -100,8 +95,21 @@ const menu = [
             prices, and availability are fictional.
           </p>
         </section>
+        <section class="plate-interlude">
+          <figure>
+            <img
+              class=""
+              src="/art/food.webp"
+              alt="A carefully plated seafood dish with herbs and sauce"
+              width="1200"
+              height="900"
+              loading="lazy"
+            />
+            <figcaption>A seasonal plate / illustrative food study</figcaption>
+          </figure>
+        </section>
         <section class="closing">
-          <h2>An evening, well spent.</h2>
+          <h2>Visit the restaurant</h2>
           <p>
             Wednesday–Saturday, 17:30–22:00<br />Sunday lunch, 12:00–16:00<br />14 Orchard Lane,
             fictional Northbank
@@ -111,7 +119,7 @@ const menu = [
       >
       <section v-else-if="state === 'reserve'" class="reservation">
         <p class="eyebrow">Your table</p>
-        <h1>An occasion.<br />Or simply Tuesday.</h1>
+        <h1>Reserve a table</h1>
         <form v-if="!confirmed" @submit.prevent="confirmed = true">
           <label>Date<input type="date" v-model="date" min="2026-11-01" required /></label
           ><label
@@ -145,7 +153,7 @@ const menu = [
       </section>
       <section v-else class="visit">
         <p class="eyebrow">Stay a little longer</p>
-        <h1>A place<br />to gather.</h1>
+        <h1>Visit &amp; private dining</h1>
         <h2>Private dining</h2>
         <p>
           The orchard room seats up to twelve around one long table. A seasonal menu arrives in
@@ -627,5 +635,240 @@ figcaption {
     serif;
   letter-spacing: 0.02em;
   text-transform: none;
+}
+
+/* The entry is the experience itself; supporting routes retain its vocabulary. */
+
+.entry header {
+  max-width: 1350px;
+  width: 100%;
+  margin: auto;
+  padding: 35px 4%;
+}
+.entry header > a {
+  font-size: 25px;
+}
+.entry header nav {
+  font-size: 12px;
+}
+.entry main {
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr);
+  column-gap: 65px;
+  max-width: 1250px;
+  width: 100%;
+  padding: 30px 4% 70px;
+  margin: auto;
+}
+.service-rail {
+  grid-column: 1;
+  grid-row: 1;
+  padding: 25px 0;
+  text-align: center;
+  color: #dec192;
+}
+.service-rail > .eyebrow {
+  font-size: 9px;
+}
+.service-rail svg {
+  height: 175px;
+  width: 110px;
+  margin: 20px auto;
+}
+.service-rail p {
+  font-size: 13px;
+  line-height: 1.9;
+}
+.service-rail button {
+  display: block;
+  font-size: 11px;
+  background: none;
+  color: #f4ebdc;
+  border: 0;
+  border-bottom: 1px solid #9d866a;
+  margin: 20px auto;
+  padding: 10px 0;
+}
+.entry .menu {
+  grid-column: 2;
+  grid-row: 1/4;
+  background: #f4ebdc;
+  color: #321d23;
+  padding: 45px 9%;
+  margin: 0;
+  max-width: none;
+  border: 7px double #bda581;
+}
+.entry .menu-title {
+  text-align: center;
+  padding: 0 0 30px;
+}
+.entry .menu-title > .eyebrow {
+  font-size: 10px;
+}
+.entry .menu-title h1 {
+  font:
+    34px/1.2 'Libre Baskerville',
+    serif;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  margin: 20px 0;
+}
+.entry .menu-title p {
+  font-size: 12px;
+}
+.entry .menu-title label {
+  font-size: 10px;
+  color: #321d23;
+}
+.entry .menu article {
+  padding: 30px 0;
+  border-top: 1px solid #bda581;
+}
+.entry .menu article small {
+  font-size: 9px;
+  color: #69533e;
+}
+.entry .menu article h3 {
+  font:
+    22px/1.4 'Libre Baskerville',
+    serif;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  max-width: 18em;
+}
+.entry .menu article > div {
+  gap: 25px;
+}
+.entry .menu article > div > span {
+  font-size: 15px;
+  white-space: nowrap;
+}
+.entry .menu article p {
+  font-size: 12px;
+  color: #61493d;
+  line-height: 1.8;
+}
+.entry .menu article em {
+  font-size: 10px;
+}
+.entry .menu-note {
+  font-size: 10px;
+  color: #61493d;
+  line-height: 1.8;
+}
+.plate-interlude {
+  grid-column: 1;
+  grid-row: 2;
+  align-self: start;
+  margin-top: 25px;
+}
+.plate-interlude figure {
+  margin: 0;
+}
+.plate-interlude img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+.plate-interlude figcaption {
+  font-size: 8px;
+  line-height: 1.6;
+  margin-top: 12px;
+  color: #dec192;
+}
+.entry .closing {
+  grid-column: 1/3;
+  padding: 60px 0 0;
+}
+.entry .closing h2 {
+  font-size: 29px;
+}
+@media (max-width: 750px) {
+  .entry header {
+    padding: 25px 6%;
+    gap: 20px;
+  }
+  .entry header > a {
+    font-size: 22px;
+  }
+  .entry header nav {
+    font-size: 10px;
+    gap: 14px;
+  }
+  .entry main {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5% 50px;
+  }
+  .service-rail {
+    order: 1;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px 20px;
+    text-align: left;
+    padding: 15px 3% 25px;
+  }
+  .service-rail svg,
+  .service-rail > .eyebrow {
+    display: none;
+  }
+  .service-rail p {
+    font-size: 10px;
+    line-height: 1.5;
+    margin: 0;
+    flex: 1;
+  }
+  .service-rail button {
+    font-size: 10px;
+    margin: 0;
+  }
+  .service-rail button:last-child {
+    width: 100%;
+    text-align: left;
+    border: 0;
+  }
+  .entry .menu {
+    order: 2;
+    padding: 30px 8%;
+    border-width: 5px;
+  }
+  .entry .menu-title h1 {
+    font-size: 28px;
+  }
+  .entry .menu-title > .eyebrow {
+    font-size: 8px;
+  }
+  .entry .menu article {
+    padding: 25px 0;
+  }
+  .entry .menu article h3 {
+    font-size: 20px;
+  }
+  .entry .menu article > div {
+    gap: 15px;
+  }
+  .entry .menu article > div > span {
+    font-size: 13px;
+  }
+  .entry .menu article p {
+    font-size: 11px;
+  }
+  .plate-interlude {
+    order: 3;
+    width: 65%;
+    margin: 35px auto 0;
+  }
+  .plate-interlude img {
+    height: 330px;
+  }
+  .entry .closing {
+    order: 4;
+    padding: 45px 3% 0;
+  }
+}
+.entry .menu article p em {
+  color: #76542f;
 }
 </style>

@@ -4,9 +4,11 @@
 
 **Visual grammar.** Use a broadcast-style title strip, visible page identifier, tightly organised text rows, block colour bands, and a footer of section links. Monospaced display text and rectangular graphics create the character. Keep a deliberately limited palette, while choosing text and background combinations that remain readable. Unlike a terminal, the page resembles an edited bulletin, without prompts or command history.
 
+**Composition.** An edited broadcast index begins with page entry, town conditions, numbered event rows and a week-ahead column. Dense monospace information, strong coloured bands and page codes establish teletext; a large greeting no longer delays the bulletin.
+
 **Specimen and flow.** _TownText_ is a fictional community notice service. Choose What’s On, open a numbered event page, and follow its booking information. Supporting views are the subject index and a saved-pages list stored locally. Dates are labelled sample content.
 
-**Mobile and motion.** Preserve section order while allowing lines to wrap; do not shrink the entire broadcast frame into illegible miniature text. Page-number entry supplements visible links.
+**Responsive and inclusive behaviour.** The page number and first three event rows fit near the top of the phone view. Secondary weekly notices follow in the same broadcast vocabulary. Native buttons, visible focus, a direct return path and reduced-motion support preserve access to the same content.
 
 **Identity and effort.** Preserve editorial compression and numbered navigation; avoid mandatory memorised codes, flashing text, and pixel-game decoration. **Effort: low.**
 
@@ -26,7 +28,7 @@ Brand, subject, accent and equivalent licensed typefaces can change. Preserve co
 
 ## Tokens and typography
 
-Heading: IBM Plex Mono. Reading: IBM Plex Mono. Local WOFF2 fonts with system fallbacks. Page #101514; surface #1c302e; text #f1f0dc; accent #f1d95e. Eight-pixel base spacing; reading measure 65ch; width 1240px. See tokens.css for role values and Demo.vue for composition. Palette and type match the working specimen.
+Heading: IBM Plex Mono. Reading: IBM Plex Mono. Local WOFF2 fonts with system fallbacks. Page #101514; surface #1c302e; text #f1f0dc; accent #f1d95e. Base tokens define an eight-pixel spacing unit, 65ch reading measure and 1240px content width; the composition-specific rules in Demo.vue override these where the canvas, type or information density requires it. See tokens.css for role values and Demo.vue for composition. Palette and type match the working specimen.
 
 ## States
 

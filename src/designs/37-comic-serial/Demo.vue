@@ -16,7 +16,7 @@ function reset() {
 const chapter = ref(1);
 </script>
 <template>
-  <div class="specimen">
+  <div class="specimen" :class="{ entry: state === 'start' }">
     <a class="skip" href="#content">Skip to content</a>
     <header>
       <strong>NEIGHBOURHOOD<br />MYTHOLOGIES</strong>
@@ -27,43 +27,48 @@ const chapter = ref(1);
       <span>SMALL STORIES / SHARED PLACES</span>
     </header>
     <main id="content">
-      <template v-if="state === 'start'"
-        ><div class="story-heading">
-          <span class="chapter">CHAPTER 0{{ chapter }}</span>
-          <h1>
-            {{ chapter === 1 ? 'The bench that knew everyone.' : 'The clock that took its time.' }}
-          </h1>
-          <p>An original fictional story from a town that could be anywhere.</p>
-        </div>
+      <template v-if="state === 'start'">
         <section class="panels">
           <figure class="panel establish">
+            <div class="story-heading">
+              <span class="chapter">CHAPTER 0{{ chapter }}</span>
+              <h1>
+                {{
+                  chapter === 1 ? 'The bench that knew everyone.' : 'The clock that took its time.'
+                }}
+              </h1>
+              <p>An original fictional story from a town that could be anywhere.</p>
+            </div>
             <svg
-              viewBox="0 0 600 320"
+              viewBox="0 0 600 500"
               role="img"
               aria-label="A quiet neighbourhood square with a clock tower"
             >
-              <rect width="600" height="320" fill="#d9e6d8" />
-              <circle cx="480" cy="60" r="35" fill="#f6e6a0" />
-              <path
-                d="M0 210L70 170L140 200L200 150L290 190L370 170L480 200L600 150V320H0Z"
-                fill="#7d9984"
-              />
-              <g stroke="#293d3b" stroke-width="4">
+              <rect width="600" height="500" fill="#d9e6d8" />
+              <g transform="translate(0 180)">
+                <rect width="600" height="320" fill="#d9e6d8" />
+                <circle cx="480" cy="60" r="35" fill="#f6e6a0" />
                 <path
-                  d="M40 260V110H145V260M175 260V145H280V260M470 260V120H575V260"
-                  fill="#c8b494"
+                  d="M0 210L70 170L140 200L200 150L290 190L370 170L480 200L600 150V320H0Z"
+                  fill="#7d9984"
                 />
-                <path d="M300 260V70H390V260" fill="#efe4c5" />
-                <circle cx="345" cy="110" r="24" fill="#fff6db" />
-                <path d="M345 93V110L357 118" fill="none" />
-                <path d="M0 265H600" />
-                <path
-                  d="M165 230H280M180 230V260M267 230V260M165 220H280"
-                  fill="none"
-                  stroke-width="7"
-                />
-                <circle cx="410" cy="203" r="16" fill="#e2b6a0" />
-                <path d="M410 222V260" stroke-width="20" />
+                <g stroke="#293d3b" stroke-width="4">
+                  <path
+                    d="M40 260V110H145V260M175 260V145H280V260M470 260V120H575V260"
+                    fill="#c8b494"
+                  />
+                  <path d="M300 260V70H390V260" fill="#efe4c5" />
+                  <circle cx="345" cy="110" r="24" fill="#fff6db" />
+                  <path d="M345 93V110L357 118" fill="none" />
+                  <path d="M0 265H600" />
+                  <path
+                    d="M165 230H280M180 230V260M267 230V260M165 220H280"
+                    fill="none"
+                    stroke-width="7"
+                  />
+                  <circle cx="410" cy="203" r="16" fill="#e2b6a0" />
+                  <path d="M410 222V260" stroke-width="20" />
+                </g>
               </g>
             </svg>
             <figcaption>
@@ -73,59 +78,61 @@ const chapter = ref(1);
             <span class="caption-label">NORTHBANK / JUST AFTER FOUR</span>
           </figure>
           <figure class="panel close">
-            <svg viewBox="0 0 600 320" role="img" aria-label="A figure beside an old public bench">
-              <rect width="600" height="320" fill="#edcf9d" />
-              <circle cx="480" cy="60" r="35" fill="#f6e6a0" />
+            <svg
+              viewBox="0 0 600 400"
+              role="img"
+              aria-label="Close view of Mara seated on the wooden bench"
+            >
+              <rect width="600" height="400" fill="#e8bd83" />
+              <path d="M0 285H600M0 325H600M0 365H600" stroke="#7c5d40" stroke-width="22" />
+              <path d="M410 390V400M100 390V400" stroke="#293d3b" stroke-width="18" />
               <path
-                d="M0 210L70 170L140 200L200 150L290 190L370 170L480 200L600 150V320H0Z"
-                fill="#7d9984"
+                d="M320 270Q310 180 385 175Q465 180 455 300L430 390H325Z"
+                fill="#667b67"
+                stroke="#293d3b"
+                stroke-width="5"
               />
-              <g stroke="#293d3b" stroke-width="4">
-                <path
-                  d="M40 260V110H145V260M175 260V145H280V260M470 260V120H575V260"
-                  fill="#c8b494"
-                />
-                <path d="M300 260V70H390V260" fill="#efe4c5" />
-                <circle cx="345" cy="110" r="24" fill="#fff6db" />
-                <path d="M345 93V110L357 118" fill="none" />
-                <path d="M0 265H600" />
-                <path
-                  d="M165 230H280M180 230V260M267 230V260M165 220H280"
-                  fill="none"
-                  stroke-width="7"
-                />
-                <circle cx="340" cy="203" r="16" fill="#e2b6a0" />
-                <path d="M340 222V260" stroke-width="20" />
-              </g>
+              <circle cx="390" cy="140" r="58" fill="#dfae8c" stroke="#293d3b" stroke-width="5" />
+              <path
+                d="M333 132Q325 60 395 75Q465 75 445 148L430 112Q373 130 333 132Z"
+                fill="#64645a"
+              />
+              <path
+                d="M365 144H377M407 144H419M380 169Q392 178 407 168"
+                fill="none"
+                stroke="#293d3b"
+                stroke-width="5"
+              />
+              <path
+                d="M323 250L230 300M450 250L490 300"
+                stroke="#293d3b"
+                stroke-width="15"
+                stroke-linecap="round"
+              />
             </svg>
             <div class="speech">“Someone always gets here before me.”</div>
             <figcaption>Mara had been saying this for twenty years.</figcaption>
           </figure>
           <figure class="panel pause">
-            <svg viewBox="0 0 600 320" role="img" aria-label="The bench under a wide evening sky">
-              <rect width="600" height="320" fill="#eab598" />
-              <circle cx="480" cy="60" r="35" fill="#f6e6a0" />
+            <svg
+              viewBox="0 0 600 400"
+              role="img"
+              aria-label="A small empty bench under an immense evening sky"
+            >
+              <rect width="600" height="400" fill="#bb8f89" />
+              <circle cx="460" cy="105" r="60" fill="#efd7a4" />
+              <path d="M0 330Q300 280 600 330V400H0Z" fill="#4b6258" />
               <path
-                d="M0 210L70 170L140 200L200 150L290 190L370 170L480 200L600 150V320H0Z"
-                fill="#7d9984"
+                d="M220 325H360M220 310H360M235 325V365M345 325V365"
+                stroke="#e5c891"
+                stroke-width="7"
               />
-              <g stroke="#293d3b" stroke-width="4">
-                <path
-                  d="M40 260V110H145V260M175 260V145H280V260M470 260V120H575V260"
-                  fill="#c8b494"
-                />
-                <path d="M300 260V70H390V260" fill="#efe4c5" />
-                <circle cx="345" cy="110" r="24" fill="#fff6db" />
-                <path d="M345 93V110L357 118" fill="none" />
-                <path d="M0 265H600" />
-                <path
-                  d="M165 230H280M180 230V260M267 230V260M165 220H280"
-                  fill="none"
-                  stroke-width="7"
-                />
-                <circle cx="410" cy="203" r="16" fill="#e2b6a0" />
-                <path d="M410 222V260" stroke-width="20" />
-              </g>
+              <path
+                d="M70 80l15 -7 16 7M110 60l15 -7 16 7"
+                fill="none"
+                stroke="#604944"
+                stroke-width="3"
+              />
             </svg>
             <figcaption>The bench had heard it before.<br />It was good at listening.</figcaption>
           </figure>
@@ -194,7 +201,7 @@ const chapter = ref(1);
             {{
               [
                 'Establishing illustration: a quiet square, small buildings, a clock tower, and an empty bench.',
-                'A figure stands near the bench. A speech balloon contains Mara’s remark.',
+                'Close view: Mara sits on the wooden bench. A speech balloon contains her remark.',
                 'A wider view of the bench beneath an evening sky creates a pause in the story.',
                 'Two neighbours stand together in the square. The reply appears in a speech balloon.',
               ][i]
@@ -688,5 +695,198 @@ main {
   .chapter-index b {
     display: none;
   }
+}
+
+/* The entry is the experience itself; supporting routes retain its vocabulary. */
+
+.entry {
+  padding: 25px 4%;
+  background: #293d3b;
+}
+.entry header {
+  background: #f6e8cd;
+  max-width: 1300px;
+  width: 100%;
+  margin: auto;
+  padding: 20px 4%;
+  border: 0;
+}
+.entry header strong {
+  font-size: 17px;
+}
+.entry header nav {
+  font-size: 11px;
+}
+.entry header > span {
+  font-size: 8px;
+}
+.entry main {
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 25px 35px;
+  background: #f6e8cd;
+}
+.entry .panels {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.entry .panel {
+  margin: 0;
+  border: 4px solid #293d3b;
+  position: relative;
+  background: #f6e8cd;
+}
+.entry .establish {
+  grid-column: 1/3;
+}
+.entry .establish svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.entry .story-heading {
+  position: absolute;
+  top: 4%;
+  left: 5%;
+  right: 5%;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+.entry .story-heading .chapter {
+  font-size: 12px;
+  background: #f6e8cd;
+  border: 2px solid;
+  padding: 6px 10px;
+}
+.entry .story-heading h1 {
+  font: 700 clamp(36px, 5vw, 78px)/0.98 var(--font-heading);
+  letter-spacing: -0.055em;
+  max-width: 11em;
+  margin: 20px 0;
+}
+.entry .story-heading > p {
+  font-size: 12px;
+  max-width: none;
+}
+.entry .caption-label {
+  top: auto;
+  bottom: 110px;
+  left: 4%;
+  font-size: 10px;
+  background: #f6e8cd;
+}
+.entry .panel figcaption {
+  font-size: 15px;
+  padding: 20px 5%;
+  line-height: 1.6;
+  border-top: 3px solid;
+}
+.entry .close svg,
+.entry .pause svg {
+  height: auto;
+  aspect-ratio: 3/2;
+  width: 100%;
+}
+.entry .speech {
+  font-size: 19px;
+  max-width: 12em;
+  border: 3px solid;
+  padding: 20px;
+  left: 5%;
+  top: 6%;
+  transform: rotate(-3deg);
+}
+.entry .wide {
+  grid-column: 1/3;
+}
+.entry .wide svg {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  background: #d5dfeb;
+}
+.entry .end {
+  padding: 50px 5%;
+}
+@media (max-width: 750px) {
+  .entry {
+    padding: 12px 3%;
+  }
+  .entry header {
+    padding: 18px 5%;
+    gap: 12px;
+    align-items: flex-start;
+  }
+  .entry header strong {
+    font-size: 12px;
+  }
+  .entry header nav {
+    font-size: 10px;
+    gap: 12px;
+  }
+  .entry header > span {
+    display: none;
+  }
+  .entry main {
+    padding: 0 12px 25px;
+  }
+  .entry .panels {
+    display: block;
+  }
+  .entry .panel {
+    margin-bottom: 15px;
+    border-width: 3px;
+  }
+  .entry .establish svg {
+    height: 490px;
+    object-fit: cover;
+  }
+  .entry .story-heading {
+    top: 25px;
+    left: 7%;
+    right: 7%;
+  }
+  .entry .story-heading h1 {
+    font-size: 34px;
+    max-width: 9em;
+    margin: 20px 0 10px;
+  }
+  .entry .story-heading .chapter {
+    font-size: 9px;
+  }
+  .entry .story-heading > p {
+    font-size: 10px;
+    max-width: 25ch;
+  }
+  .entry .panel figcaption {
+    font-size: 12px;
+    padding: 15px 7%;
+  }
+  .entry .caption-label {
+    bottom: 115px;
+    font-size: 8px;
+  }
+  .entry .speech {
+    font-size: 13px;
+    padding: 12px;
+  }
+  .entry .wide svg {
+    height: 250px;
+  }
+  .entry .end h2 {
+    font-size: 30px;
+  }
+}
+
+.entry .establish {
+  display: block;
+  background: #dbe5d7;
+}
+.entry .establish svg {
+  max-height: none;
 }
 </style>

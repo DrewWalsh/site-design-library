@@ -38,9 +38,14 @@ const results = computed(() =>
       (s.title + ' ' + s.medium).toLowerCase().includes(q.value.toLowerCase()),
   ),
 );
-const pages = computed(() => Math.max(1, Math.ceil(results.value.length / 12)));
-const visible = computed(() => results.value.slice((page.value - 1) * 12, page.value * 12));
-watch([q, tab], () => (page.value = 1));
+const pageSize = computed(() =>
+  density.value === 'Overview' ? 24 : density.value === 'Medium' ? 12 : 6,
+);
+const pages = computed(() => Math.max(1, Math.ceil(results.value.length / pageSize.value)));
+const visible = computed(() =>
+  results.value.slice((page.value - 1) * pageSize.value, page.value * pageSize.value),
+);
+watch([q, tab, density], () => (page.value = 1));
 const backY = ref(0);
 function open(i: number) {
   selected.value = i;
@@ -53,7 +58,7 @@ async function back() {
 }
 </script>
 <template>
-  <div class="specimen">
+  <div class="specimen" :class="{ entry: state === 'start' }">
     <a class="skip" href="#content">Skip to content</a>
     <header>
       <strong>THE REFERENCE ROOM</strong><span>A FINITE INDEX OF GRAPHIC STUDIES.</span
@@ -63,13 +68,7 @@ async function back() {
     </header>
     <main id="content">
       <template v-if="state !== 'detail'"
-        ><section class="index-heading">
-          <div>
-            <p class="eyebrow">COLLECTION 01 / 24 ORIGINAL STUDIES</p>
-            <h1>Look closer.<br />Or step back.</h1>
-          </div>
-          <p>Composition at different scales.<br />Find the relationship that catches your eye.</p>
-        </section>
+        ><h1 class="sr">The Reference Room — 24 graphic studies</h1>
         <div class="control-strip">
           <label
             ><input
@@ -99,7 +98,7 @@ async function back() {
         <div v-if="state === 'start'" :class="['index-grid', density.toLowerCase()]">
           <button v-for="s in visible" :key="s.id" @click="open(s.id - 1)">
             <div
-              :class="['graphic', 'g' + (s.id % 6)]"
+              :class="['graphic', 'g' + s.id]"
               role="img"
               :aria-label="'Original ' + s.medium.toLowerCase() + ' composition, study ' + s.id"
             >
@@ -166,7 +165,7 @@ async function back() {
         <button class="back" @click="back">← Return to the same results</button>
         <div class="detail-layout">
           <div
-            :class="['graphic', 'g' + (studies[selected].id % 6)]"
+            :class="['graphic', 'g' + studies[selected].id]"
             role="img"
             :aria-label="'Enlarged original graphic study ' + studies[selected].id"
           >
@@ -930,6 +929,482 @@ main {
   }
   .index-note p {
     font-size: 12px;
+  }
+}
+
+/* The entry is the experience itself; supporting routes retain its vocabulary. */
+
+h1.sr {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip-path: inset(50%) !important;
+  white-space: nowrap !important;
+}
+.entry header {
+  padding: 18px 2%;
+  gap: 20px;
+  border: 0;
+}
+.entry header strong {
+  font-size: 13px;
+}
+.entry main {
+  max-width: none;
+  margin: 0;
+  padding: 0 2% 45px;
+}
+.entry .control-strip {
+  padding: 12px 0;
+  margin-bottom: 15px;
+  gap: 20px;
+  border-block: 1px solid #a8b19e;
+}
+.entry .index-grid.overview {
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  gap: 22px 12px;
+}
+.entry .index-grid.medium {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.entry .index-grid.detail {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.entry .graphic b {
+  font-size: 12px;
+  background: #f5f1e5;
+  padding: 4px 6px;
+  left: 6%;
+  top: 5%;
+  color: #273c36;
+}
+.entry .graphic small {
+  display: none;
+}
+.entry .caption h2 {
+  font-size: 11px;
+}
+.entry .caption > span {
+  font-size: 9px;
+}
+.entry .index-note {
+  max-width: 850px;
+  margin: 40px auto;
+}
+.g7 {
+  background: #f1b977;
+}
+.g7 .shape-one {
+  border-radius: 0;
+  width: 25%;
+  height: 80%;
+  left: 40%;
+  top: 10%;
+  background: #ba3d36;
+  transform: rotate(20deg);
+}
+.g7 .shape-two {
+  width: 90%;
+  height: 20%;
+  top: 40%;
+  right: 5%;
+  border: 0;
+  background: #264563;
+  transform: rotate(-20deg);
+}
+.g8 {
+  background: #232c3a;
+}
+.g8 .shape-one {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 0;
+  background: repeating-linear-gradient(135deg, #e6d9c2 0 10px, transparent 10px 28px);
+  clip-path: polygon(0 35%, 35% 35%, 35% 0, 65% 0, 65% 65%, 100% 65%, 100% 100%, 0 100%);
+}
+.g8 .shape-two {
+  display: none;
+}
+.g9 {
+  background: #bdd0d5;
+}
+.g9 .shape-one {
+  width: 70%;
+  height: 70%;
+  left: 15%;
+  top: 15%;
+  border-radius: 45% 45% 0 0;
+  background:
+    repeating-linear-gradient(90deg, transparent 0 21%, #3d5a65 21% 24%),
+    repeating-linear-gradient(0deg, #ecd69b 0 21%, #3d5a65 21% 24%);
+}
+.g9 .shape-two {
+  border: 0;
+  border-radius: 50%;
+  background: #bd583d;
+  width: 20%;
+  height: 16%;
+  right: 0;
+  top: 75%;
+}
+.g10 {
+  background: #dbccc5;
+}
+.g10 .shape-one {
+  border-radius: 30% 70% 65% 35%/70% 30% 70% 30%;
+  width: 90%;
+  height: 80%;
+  top: 5%;
+  left: 10%;
+  background: #4c6657;
+}
+.g10 .shape-two {
+  border: 0;
+  border-radius: 50%;
+  background: #e7be58;
+  width: 40%;
+  height: 35%;
+  right: 10%;
+  top: 45%;
+}
+.g11 {
+  background: #be4434;
+}
+.g11 .shape-one {
+  border-radius: 0;
+  clip-path: polygon(0 35%, 65% 35%, 65% 0, 100% 50%, 65% 100%, 65% 65%, 0 65%);
+  background: #eedbc5;
+  width: 90%;
+  height: 70%;
+  top: 15%;
+  left: 5%;
+}
+.g11 .shape-two {
+  display: none;
+}
+.g12 {
+  background: #e7d7b7;
+}
+.g12 .shape-one {
+  width: 25%;
+  height: 20%;
+  left: 10%;
+  top: 15%;
+  background: #526a92;
+  box-shadow:
+    35px 55px 0 #b8533d,
+    70px 110px 0 #526a92,
+    105px 165px 0 #b8533d;
+}
+.g12 .shape-two {
+  border: 0;
+  right: 0;
+  top: 0;
+  width: 15%;
+  height: 100%;
+  background: #c6b795;
+  transform: none;
+}
+.g13 {
+  background: repeating-radial-gradient(
+    ellipse at 100% 0,
+    #e3ae83 0 10px,
+    #593f53 11px 14px,
+    #e3ae83 15px 28px
+  );
+}
+.g13 .shape-one {
+  width: 45%;
+  height: 70%;
+  left: 5%;
+  top: 40%;
+  background: #ded8bd;
+  border-radius: 50% 50% 0 0;
+}
+.g13 .shape-two {
+  display: none;
+}
+.g14 {
+  background: #d4ddd5;
+}
+.g14 .shape-one {
+  width: 75%;
+  height: 80%;
+  left: 12%;
+  top: 10%;
+  border-radius: 0;
+  background: repeating-linear-gradient(20deg, transparent 0 8px, #34483d 9px 11px);
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+}
+.g14 .shape-two {
+  border: 0;
+  background: #b54b37;
+  width: 70%;
+  height: 6%;
+  right: 15%;
+  top: 50%;
+  transform: rotate(-15deg);
+}
+.g15 {
+  background: #dcc0ca;
+}
+.g15 .shape-one {
+  width: 22%;
+  height: 70%;
+  left: 12%;
+  top: 15%;
+  border-radius: 50px;
+  background: #4f4d7d;
+  box-shadow:
+    55px 0 0 #e1a954,
+    110px 0 0 #4f4d7d;
+}
+.g15 .shape-two {
+  display: none;
+}
+.g16 {
+  background: #2f5a77;
+}
+.g16 .shape-one {
+  width: 100%;
+  height: 80%;
+  left: 0;
+  top: 20%;
+  background: #f3dbaf;
+  border-radius: 100% 0 0 0;
+}
+.g16 .shape-two {
+  width: 55%;
+  height: 45%;
+  right: 0;
+  top: 55%;
+  background: #c27d64;
+  border: 0;
+  border-radius: 100% 0 0 0;
+  transform: none;
+}
+.g17 {
+  background: conic-gradient(#443838 25%, #e0ceab 0 50%, #443838 0 75%, #e0ceab 0) 0 0/55px 55px;
+}
+.g17 .shape-one {
+  background: #c34c3b;
+  width: 80%;
+  height: 65%;
+  top: 20%;
+  left: 10%;
+}
+.g17 .shape-two {
+  border: 0;
+  background: #e0ceab;
+  width: 30%;
+  height: 25%;
+  right: 35%;
+  top: 40%;
+  border-radius: 50%;
+  transform: none;
+}
+.g18 {
+  background: #e8cc83;
+}
+.g18 .shape-one {
+  border-radius: 0;
+  background: #27483f;
+  width: 20%;
+  height: 80%;
+  left: 20%;
+  top: 10%;
+  transform: rotate(20deg);
+  box-shadow: 70px 0 0 #27483f;
+}
+.g18 .shape-two {
+  background: #27483f;
+  border: 0;
+  width: 70%;
+  height: 10%;
+  right: 15%;
+  top: 50%;
+  transform: none;
+}
+.g19 {
+  background: #dbc6b5;
+}
+.g19 .shape-one {
+  background: #87514d;
+  width: 90%;
+  height: 80%;
+  top: 10%;
+  left: 5%;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  border-radius: 0;
+}
+.g19 .shape-two {
+  background: #dbc6b5;
+  border: 0;
+  width: 60%;
+  height: 50%;
+  right: 20%;
+  top: 0;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  transform: none;
+}
+.g20 {
+  background: #a8b8aa;
+}
+.g20 .shape-one {
+  border-radius: 0;
+  left: 10%;
+  top: 10%;
+  width: 80%;
+  height: 80%;
+  background: conic-gradient(from 45deg, #e7d8b8 25%, #354c45 0 50%, #c6b68f 0 75%, #536759 0);
+}
+.g20 .shape-two {
+  border: 2px solid #273c36;
+  transform: rotate(-15deg);
+  background: none;
+}
+.g21 {
+  background: #d8a799;
+}
+.g21 .shape-one {
+  border-radius: 0;
+  background: #d9e2c5;
+  width: 70%;
+  height: 65%;
+  left: 15%;
+  top: 10%;
+  clip-path: polygon(0 0, 100% 0, 80% 100%, 0 70%);
+}
+.g21 .shape-two {
+  border: 0;
+  background: #714958;
+  width: 4%;
+  height: 85%;
+  right: 82%;
+  top: 10%;
+  transform: none;
+}
+.g22 {
+  background: #ece7d5;
+}
+.g22 .shape-one {
+  border-radius: 0;
+  background: repeating-linear-gradient(0deg, transparent 0 20px, #30483f 20px 25px);
+  border-inline: 6px solid #30483f;
+  width: 45%;
+  height: 90%;
+  top: 5%;
+  left: 27%;
+  transform: rotate(15deg);
+}
+.g22 .shape-two {
+  border: 0;
+  border-radius: 50%;
+  background: #b9573d;
+  width: 35%;
+  height: 28%;
+  right: -5%;
+  top: 60%;
+}
+.g23 {
+  background: repeating-radial-gradient(circle at 20% 50%, #ecdaaa 0 15px, #8c4d41 16px 21px);
+}
+.g23 .shape-one {
+  background: #425967;
+  width: 55%;
+  height: 100%;
+  left: 45%;
+  top: 0;
+  border-radius: 0;
+  mix-blend-mode: multiply;
+}
+.g23 .shape-two {
+  display: none;
+}
+.g24 {
+  background: #8f9eaa;
+}
+.g24 .shape-one {
+  background: linear-gradient(90deg, #e7dab7 50%, #354957 50%);
+  width: 90%;
+  height: 70%;
+  left: 5%;
+  top: 15%;
+  border-radius: 50%;
+}
+.g24 .shape-two {
+  background: #b9543b;
+  border: 0;
+  border-radius: 0;
+  width: 8%;
+  height: 100%;
+  right: 46%;
+  top: 0;
+  transform: rotate(30deg);
+}
+@media (max-width: 950px) {
+  .entry .index-grid.overview {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
+@media (max-width: 600px) {
+  .entry header {
+    padding: 18px 5%;
+  }
+  .entry header > span {
+    display: none;
+  }
+  .entry main {
+    padding: 0 4% 35px;
+  }
+  .entry .control-strip {
+    gap: 10px;
+    flex-wrap: wrap;
+    position: static;
+  }
+  .entry .control-strip > label:first-child {
+    flex-basis: 60%;
+  }
+  .entry .control-strip > label {
+    font-size: 9px;
+  }
+  .entry .density button {
+    font-size: 10px;
+    padding: 10px 8px;
+  }
+  .entry .control-strip > span {
+    margin-left: auto;
+    font-size: 9px;
+  }
+  .entry .index-grid.overview {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px 10px;
+  }
+  .entry .index-grid.medium {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .entry .index-grid.detail {
+    grid-template-columns: 1fr;
+  }
+  .entry .caption {
+    display: block;
+  }
+  .entry .caption > span:first-child {
+    display: none;
+  }
+  .entry .caption h2 {
+    font-size: 10px;
+  }
+  .entry .caption > span:last-child {
+    font-size: 9px;
+  }
+  .entry .graphic b {
+    font-size: 9px;
   }
 }
 </style>

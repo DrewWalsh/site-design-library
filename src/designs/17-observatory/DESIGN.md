@@ -4,6 +4,8 @@
 
 **Visual grammar.** Use a dark, quiet plotting surface with a persistent control strip and aligned charts sharing meaningful time axes. A technical sans, monospace readouts, muted grid lines, and restrained cyan, amber, and violet series colours support inspection. Keep charts large enough to read; choose panels because their measures relate, not because a grid needs filling.
 
+**Composition.** The observatory starts with station and interval controls followed immediately by the measured plot. A restrained readout band sits below the chart, so an actual analytical relationship leads the page instead of a slogan and a row of dashboard tiles.
+
 **Specimen and flow.** _Watershed Observatory_ displays clearly labelled synthetic river measurements. Users change a date interval, compare two stations, and inspect a selected reading. Supporting states provide a data table and a missing-data interval with its cause explained in fixture text.
 
 **Adaptation and identity.** Mobile presents plots in a meaningful sequence and replaces small hover targets with selectable readings. Preserve scales, units, labels, and distinctions between missing and zero values; avoid animated counters, fake live activity, and ornamental gauges. **Effort: high.**
@@ -24,7 +26,7 @@ Brand, subject, accent and equivalent licensed typefaces can change. Preserve co
 
 ## Tokens and typography
 
-Heading: Space Grotesk. Reading: IBM Plex Mono. Local WOFF2 fonts with system fallbacks. Page #101d24; surface #192a33; text #d8e7e8; accent #6ad0ce. Eight-pixel base spacing; reading measure 65ch; width 1240px. See tokens.css for role values and Demo.vue for composition. Palette and type match the working specimen.
+Heading: Space Grotesk. Reading: IBM Plex Mono. Local WOFF2 fonts with system fallbacks. Page #101d24; surface #192a33; text #d8e7e8; accent #6ad0ce. Base tokens define an eight-pixel spacing unit, 65ch reading measure and 1240px content width; the composition-specific rules in Demo.vue override these where the canvas, type or information density requires it. See tokens.css for role values and Demo.vue for composition. Palette and type match the working specimen.
 
 ## States
 

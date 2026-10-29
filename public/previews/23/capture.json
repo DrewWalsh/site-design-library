@@ -1,12 +1,12 @@
 {
   "designId": "23",
-  "sourceRevision": "sha256:dca5f2354bac384e60c727140bb61aa224c290d08fda449637ca5a33600b2711",
-  "capturedAt": "2026-10-26T22:49:02.367Z",
-  "browser": "156.0.4314.42",
+  "sourceRevision": "sha256:6cb94184e337bec54e4e2dd148c958c641ba4a6120d663fa607d10e0ff13dc71",
+  "capturedAt": "2026-10-29T20:37:38.470Z",
+  "browser": "156.0.4314.50",
   "captures": [
     {
       "file": "/previews/23/desktop.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/23/2e61109b68c55c59-desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/23/e0b50fa1c1238313-desktop.jpg",
       "route": "/preview/23-market-bazaar/start",
       "viewport": {
         "width": 1440,
@@ -14,13 +14,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:dca5f2354bac384e60c727140bb61aa224c290d08fda449637ca5a33600b2711",
-      "sha256": "2e61109b68c55c593876cfc97a0deb890152f6bb5936f244899bfe39bdd9fec0",
+      "sourceRevision": "sha256:6cb94184e337bec54e4e2dd148c958c641ba4a6120d663fa607d10e0ff13dc71",
+      "sha256": "e0b50fa1c12383138b01b406d159af24a531dd20bcaf3d9fb0c89ddc23a315fa",
       "fullPage": false
     },
     {
       "file": "/previews/23/mobile.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/23/a06a4f7dcba17af8-mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/23/a8110cf4c4434f7f-mobile.jpg",
       "route": "/preview/23-market-bazaar/start",
       "viewport": {
         "width": 390,
@@ -28,13 +28,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:dca5f2354bac384e60c727140bb61aa224c290d08fda449637ca5a33600b2711",
-      "sha256": "a06a4f7dcba17af8d1af1adced2fd627f364d8078e4b07b8353c416bc66046a8",
+      "sourceRevision": "sha256:6cb94184e337bec54e4e2dd148c958c641ba4a6120d663fa607d10e0ff13dc71",
+      "sha256": "a8110cf4c4434f7fdeae0d19fe986b67e9ac8fe1803e9939aea0bbe9638f91ce",
       "fullPage": false
     },
     {
       "file": "/previews/23/detail.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/23/350707012b92c201-detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/23/a14e78d9aeecf257-detail.jpg",
       "route": "/preview/23-market-bazaar/vendor",
       "viewport": {
         "width": 1440,
@@ -42,13 +42,13 @@
       },
       "state": "vendor",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:dca5f2354bac384e60c727140bb61aa224c290d08fda449637ca5a33600b2711",
-      "sha256": "350707012b92c20103473899522133f45820c02d0805d5171c1bf5e29681c42a",
+      "sourceRevision": "sha256:6cb94184e337bec54e4e2dd148c958c641ba4a6120d663fa607d10e0ff13dc71",
+      "sha256": "a14e78d9aeecf257e335ec39f86896a5e2144c80ef8aee519043c37a5b07e744",
       "fullPage": false
     },
     {
       "file": "/previews/23/full-page.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/23/f19e56b50c0d79a8-full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/23/fad2c58a62581cb4-full-page.jpg",
       "route": "/preview/23-market-bazaar/start",
       "viewport": {
         "width": 1440,
@@ -56,8 +56,8 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:dca5f2354bac384e60c727140bb61aa224c290d08fda449637ca5a33600b2711",
-      "sha256": "f19e56b50c0d79a8c039f4acc973e8e8edda1044b78e03e5fa2a3cc33c2727c5",
+      "sourceRevision": "sha256:6cb94184e337bec54e4e2dd148c958c641ba4a6120d663fa607d10e0ff13dc71",
+      "sha256": "fad2c58a62581cb49fd4c97c381da53cd2ab00d5f84d27b4f82ec88586d0d94a",
       "fullPage": true
     }
   ]

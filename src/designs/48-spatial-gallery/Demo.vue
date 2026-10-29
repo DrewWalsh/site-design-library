@@ -35,7 +35,7 @@ const objects = [
 ];
 </script>
 <template>
-  <div class="specimen">
+  <div class="specimen" :class="{ entry: state === 'start' }">
     <a class="skip" href="#content">Skip to content</a>
     <header>
       <a :href="href('start')" @click.prevent="go('start')">small museum</a
@@ -44,13 +44,7 @@ const objects = [
     </header>
     <main id="content">
       <template v-if="state === 'start'"
-        ><div class="intro">
-          <p class="eyebrow">ROOM 01 / PLACES FOR ATTENTION</p>
-          <h1>A few things.<br />A little space.</h1>
-          <p>
-            Three original object studies, arranged around the ways we pause, listen, and begin.
-          </p>
-        </div>
+        ><h1 class="sr">Small Museum — room one</h1>
         <div class="exhibition">
           <section class="room" aria-label="Exhibition room">
             <svg
@@ -753,5 +747,176 @@ main {
   height: 360px;
   display: block;
   margin: auto;
+}
+
+/* The entry is the experience itself; supporting routes retain its vocabulary. */
+
+.entry {
+  position: relative;
+  background: #dfddd5;
+}
+.entry header {
+  position: absolute;
+  z-index: 3;
+  top: 6%;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 340px;
+  width: 45%;
+  padding: 20px 25px;
+  margin: 0;
+  background: #f0eee7;
+  border: 0;
+  box-shadow: 2px 3px 0 #a9aca5;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+.entry header > a {
+  font-size: 22px;
+}
+.entry header > span {
+  font-size: 8px;
+}
+.entry header button {
+  font-size: 10px;
+  padding: 0;
+}
+.entry main {
+  max-width: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.entry main > h1 {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip-path: inset(50%) !important;
+  white-space: nowrap !important;
+}
+.entry .exhibition {
+  display: block;
+  position: relative;
+}
+.entry .room {
+  height: 100svh;
+  min-height: 750px;
+  width: 100%;
+  border: 0;
+  position: relative;
+}
+.entry .room svg {
+  width: 100%;
+  height: 100%;
+}
+.entry .exhibit-buttons {
+  left: 7%;
+  right: 7%;
+  bottom: 18%;
+  gap: 12%;
+}
+.entry .object-button {
+  background: #f0eee7;
+  border: 0;
+  box-shadow: 2px 3px 0 #9ca393;
+  text-align: left;
+  padding: 14px;
+  font-size: 10px;
+  max-width: 230px;
+}
+.entry .object-button span {
+  font-size: 12px;
+  line-height: 1.4;
+}
+.entry .exhibition > aside {
+  background: #c4c5ba;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 40px;
+  padding: 30px 6% 45px;
+}
+.entry .exhibition > aside > .eyebrow {
+  display: none;
+}
+.entry .exhibition > aside > button {
+  border-top: 1px solid #7e8776;
+  padding: 20px 0;
+}
+.entry .exhibition aside h2 {
+  font-size: 21px;
+}
+.entry .exhibition aside p {
+  font-size: 12px;
+}
+.entry .curator {
+  max-width: none;
+  padding: 65px 10%;
+  background: #f0eee7;
+  margin: 0;
+}
+.entry .curator h2 {
+  font-size: 35px;
+}
+.entry .curator p {
+  font-size: 14px;
+}
+@media (max-width: 750px) {
+  .entry header {
+    top: 30px;
+    width: 65%;
+    max-width: 290px;
+    padding: 18px;
+  }
+  .entry header > a {
+    font-size: 20px;
+  }
+  .entry header > span {
+    display: block;
+    font-size: 7px;
+  }
+  .entry .room {
+    height: 680px;
+    min-height: 0;
+  }
+  .entry .room svg {
+    height: 500px;
+    position: absolute;
+    top: 100px;
+  }
+  .entry .exhibit-buttons {
+    left: 5%;
+    right: 5%;
+    bottom: 65px;
+    gap: 12px;
+  }
+  .entry .object-button {
+    font-size: 9px;
+    padding: 10px 7px;
+  }
+  .entry .object-button span {
+    font-size: 10px;
+  }
+  .entry .exhibition > aside {
+    display: block;
+    padding: 25px 8%;
+  }
+  .entry .exhibition aside h2 {
+    font-size: 24px;
+  }
+  .entry .curator {
+    padding: 50px 8%;
+  }
+  .entry .curator h2 {
+    font-size: 29px;
+  }
+}
+
+.entry .exhibit-buttons {
+  position: absolute;
 }
 </style>

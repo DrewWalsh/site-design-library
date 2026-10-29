@@ -2,11 +2,11 @@
 
 **Idea.** Two accounts deserve equal space without pretending to agree.
 
-**Composition.** Opposing coral and aubergine columns run edge to edge. One shared seam controls the space between monumental serif headlines and paired passages.
+**Composition.** Two uninterrupted opposing colour fields occupy the whole opening. Monumental opposing statements face across a controllable seam; the navigation is a small edition slip near the lower edge, while paired prose continues in the same two-sided architecture.
 
 **Navigation and complete example.** Read six paired accounts of one fictional public-art commission, adjust the balance, isolate a pair and examine the common source notes.
 
-**Responsive and inclusive behaviour.** The two accounts stack in reading order with clear speaker names. The balance control becomes three labelled focus choices; no text is squeezed into unusable columns. All controls are native buttons or labelled inputs. Movement is discretionary, no sound starts automatically, reduced-motion preferences remove transitions, and a direct index exposes the same content.
+**Responsive and inclusive behaviour.** The opening keeps two readable opposing fields on phones, using short titles and small speaker labels. Longer paired passages stack in explicit speaker order. Native buttons, visible focus, a direct return path and reduced-motion support preserve access to the same content.
 
 **Adaptation.** Preserve the tension between two independently voiced accounts. Changing the seam must never erase the less favoured side. Retain the relationship between navigation and content. Do not reduce the reference to a generic hero followed by interchangeable cards.
 

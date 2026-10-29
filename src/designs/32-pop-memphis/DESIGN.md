@@ -4,9 +4,11 @@
 
 **Visual grammar.** Offset blocks, squiggles, stipple patterns, contrasting outlines, and deliberately mismatched geometric frames provide the visual language. Lavender, mint, melon, and black carry a bold rounded display face over plain body text. Navigation stays anchored in a solid strip; patterns occupy margins and section transitions.
 
+**Composition.** The opening is a crowded kit shop window: an arched paper kit, a tilted print box and a tall clay parcel carry attached contents and purchase controls. A starburst club stamp crosses the display; a solid ink strip anchors navigation. No marketing hero precedes the objects.
+
 **Specimen and flow.** _Odd Objects Club_ offers fictional monthly creative kits. Explore a themed collection, inspect kit contents, and customise a sample bundle. Supporting views include a member-project gallery and a bundle summary with an incompatible-item explanation. The interaction is ordinary selection, supported by lively visual responses.
 
-**Responsive behaviour.** Offset layouts become staggered but readable vertical sections. Pattern density decreases on small screens; reduced motion removes bouncing and rotation while preserving selected-state feedback.
+**Responsive and inclusive behaviour.** The phone display becomes a sequence of differently shaped, slightly offset parcels. Labels and selection controls remain straight and large inside each object. Native buttons, visible focus, a direct return path and reduced-motion support preserve access to the same content.
 
 **Identity rules.** Preserve deliberate clashes of pattern and shape. Avoid repeating identical cards, using patterns beneath body copy, or letting random rotation impair controls. **Effort: medium.**
 
@@ -26,7 +28,7 @@ Brand, subject, accent and equivalent licensed typefaces can change. Preserve co
 
 ## Tokens and typography
 
-Heading: Space Grotesk. Reading: DM Sans. Local WOFF2 fonts with system fallbacks. Page #fff0dd; surface #ffffff; text #332a44; accent #ab4167. Eight-pixel base spacing; reading measure 65ch; width 1240px. See tokens.css for role values and Demo.vue for composition. Palette and type match the working specimen.
+Heading: Space Grotesk. Reading: DM Sans. Local WOFF2 fonts with system fallbacks. Page #fff0dd; surface #ffffff; text #332a44; accent #ab4167. Base tokens define an eight-pixel spacing unit, 65ch reading measure and 1240px content width; the composition-specific rules in Demo.vue override these where the canvas, type or information density requires it. See tokens.css for role values and Demo.vue for composition. Palette and type match the working specimen.
 
 ## States
 
@@ -49,4 +51,4 @@ Reviewed working sample. Browser checks cover entry-page reflow at 320, 390, 768
 
 ## Distinctive composition
 
-The kit collection uses an oversized arch, a patterned print panel, and an asymmetric sculpture panel rather than three equal outlined cards. Geometric material play and patterned transitions distinguish it from Neo Brutalist Board’s regular hard-shadow grid.
+The opening is a crowded kit shop window: an arched paper kit, a tilted print box and a tall clay parcel carry attached contents and purchase controls. A starburst club stamp crosses the display; a solid ink strip anchors navigation. No marketing hero precedes the objects.

@@ -86,7 +86,7 @@ function reset() {
 }
 </script>
 <template>
-  <div class="specimen">
+  <div class="specimen" :class="{ entry: state === 'start' }">
     <a class="skip" href="#content">Skip to content</a>
 
     <header>
@@ -104,13 +104,22 @@ function reset() {
           {{ passages[node].text
           }}<template v-if="passages[node].choices.length"
             ><span v-for="(choice, i) in passages[node].choices" :key="String(choice[1])"
-              ><span v-if="i > 0">{{
-                i === passages[node].choices.length - 1 ? ' or ' : ', '
-              }}</span
-              ><button class="phrase" @click="choose(Number(choice[1]))">
-                {{ choice[0] }}
+              ><span v-if="i > 0">{{ i === passages[node].choices.length - 1 ? ' or ' : ' ' }}</span
+              ><button
+                class="phrase"
+                :aria-label="String(choice[0])"
+                @click="choose(Number(choice[1]))"
+              >
+                {{ choice[0]
+                }}<span aria-hidden="true">{{
+                  i === passages[node].choices.length - 1
+                    ? '.'
+                    : i < passages[node].choices.length - 2
+                      ? ','
+                      : ''
+                }}</span>
               </button></span
-            >.</template
+            ></template
           >
         </p>
         <p v-if="!passages[node].choices.length" class="ending">
@@ -411,6 +420,88 @@ footer {
     transition: none !important;
     animation: none !important;
     scroll-behavior: auto !important;
+  }
+}
+
+/* The entry is the experience itself; supporting routes retain its vocabulary. */
+
+.entry header {
+  border: 0;
+  padding: 25px 5%;
+  font-size: 10px;
+}
+.entry .novella {
+  max-width: 1100px;
+  padding: 70px 8% 100px;
+  margin: auto;
+  position: relative;
+}
+.entry .chapter {
+  font-size: 9px;
+  letter-spacing: 0.15em;
+}
+.entry .novella h1 {
+  font: 14px/1.4 var(--body);
+  letter-spacing: 0;
+  margin: 12px 0 55px;
+  color: #446c56;
+}
+.entry .prose {
+  font: clamp(30px, 3.5vw, 54px)/1.6 var(--heading);
+  max-width: 23ch;
+  letter-spacing: -0.04em;
+}
+.entry .prose:first-letter {
+  float: left;
+  font-size: 3.6em;
+  line-height: 0.87;
+  padding-right: 15px;
+}
+.entry .phrase {
+  display: inline;
+  font: inherit;
+  color: #446c56;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 8px;
+  padding: 0;
+  border: 0;
+}
+.entry .running {
+  position: absolute;
+  right: 3%;
+  top: 100px;
+  writing-mode: vertical-rl;
+  font-size: 14px;
+  letter-spacing: 0.2em;
+}
+.entry .edition-note {
+  max-width: 42ch;
+  font-size: 11px;
+  margin-left: 20%;
+  margin-top: 65px;
+}
+@media (max-width: 700px) {
+  .entry header {
+    padding: 18px 7%;
+  }
+  .entry .novella {
+    padding: 25px 8% 60px;
+  }
+  .entry .novella h1 {
+    margin-bottom: 35px;
+  }
+  .entry .prose {
+    font-size: 30px;
+    line-height: 1.6;
+  }
+  .entry .running {
+    position: static;
+    writing-mode: horizontal-tb;
+    margin-top: 30px;
+  }
+  .entry .edition-note {
+    margin-left: 0;
   }
 }
 </style>

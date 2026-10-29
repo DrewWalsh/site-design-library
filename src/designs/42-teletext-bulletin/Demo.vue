@@ -50,7 +50,7 @@ function save() {
 }
 </script>
 <template>
-  <div class="specimen">
+  <div class="specimen" :class="{ entry: state === 'start' }">
     <a class="skip" href="#content">Skip to content</a>
     <div class="broadcast">
       <header>
@@ -61,12 +61,22 @@ function save() {
         ><strong>TOWNTEXT</strong><span>26 OCT 2026</span><b>12:00</b>
       </header>
       <div class="titleband"><span>YOUR TOWN. IN A FEW PAGES.</span><span>NORTHBANK</span></div>
+      <form class="page-entry" @submit.prevent="openPage">
+        <label
+          >GO TO PAGE<input
+            v-model="pageNumber"
+            inputmode="numeric"
+            maxlength="3"
+            aria-label="Page number" /></label
+        ><button>GO →</button>
+        <p v-if="message" role="status">{{ message }}</p>
+      </form>
       <main id="content">
         <template v-if="state === 'start'"
-          ><h1>GOOD AFTERNOON,<br />NORTHBANK.</h1>
-          <p class="strap">
-            Community notices, useful dates, and things<br />worth knowing before you head out.
-          </p>
+          ><h1 class="index-title">NORTHBANK / LOCAL INDEX</h1>
+          <div class="signal-lines">
+            <span>12°C OVERCAST</span><span>BUSES RUNNING</span><span>MARKET: SAT 09:00</span>
+          </div>
           <section class="bulletins">
             <div>
               <h2>WHAT’S ON <span>200</span></h2>
@@ -95,9 +105,10 @@ function save() {
             </aside>
           </section>
           <section class="notice-strip">
-            <h2>NOTHING FLASHES. EVERYTHING IS A LINK.</h2>
+            <h2>TONIGHT / IN THE TOWN</h2>
             <p>
-              Use the visible links or enter a page number below. This is a finite, edited bulletin.
+              18:30 / Community choir · 19:00 / Library reading group · 20:00 / Late museum opening.
+              Fictional local listings.
             </p>
           </section></template
         ><template v-else-if="state === 'event'"
@@ -141,16 +152,7 @@ function save() {
           </button></template
         >
       </main>
-      <form class="page-entry" @submit.prevent="openPage">
-        <label
-          >GO TO PAGE<input
-            v-model="pageNumber"
-            inputmode="numeric"
-            maxlength="3"
-            aria-label="Page number" /></label
-        ><button>GO →</button>
-        <p v-if="message" role="status">{{ message }}</p>
-      </form>
+
       <nav class="sections">
         <button @click="go('start')">100 HOME</button
         ><button
@@ -684,6 +686,186 @@ h2 {
   }
   main > p {
     font-size: 13px;
+  }
+}
+
+/* The entry is the experience itself; supporting routes retain its vocabulary. */
+
+.entry {
+  padding: 30px 4%;
+  background: #101514;
+}
+.entry .broadcast {
+  max-width: 1050px;
+  margin: auto;
+  border: 8px solid #28302c;
+  box-shadow: 0 0 0 2px #4b5951;
+}
+.entry .broadcast header {
+  padding: 15px 20px;
+  font-size: 13px;
+  background: #173f98;
+}
+.entry .broadcast header strong {
+  font-size: 32px;
+  letter-spacing: 0.13em;
+}
+.entry .titleband {
+  padding: 10px 20px;
+  background: #e0d85b;
+  color: #101514;
+  font-size: 11px;
+}
+.entry .page-entry {
+  margin: 0;
+  padding: 14px 25px;
+  border-bottom: 3px solid #4bc3bb;
+  font-size: 12px;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+.entry .page-entry input {
+  font-size: 18px;
+  max-width: 80px;
+}
+.entry .page-entry button {
+  font-size: 12px;
+}
+.entry main {
+  padding: 22px 25px;
+}
+.entry .index-title {
+  font-size: 21px;
+  letter-spacing: 0.12em;
+  line-height: 1.4;
+  margin: 0 0 15px;
+  color: #e0d85b;
+}
+.signal-lines {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  border-block: 1px dashed #4bc3bb;
+  padding: 12px 0;
+  font-size: 11px;
+  color: #f1eee3;
+}
+.entry .bulletins {
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+  gap: 30px;
+  margin-top: 20px;
+}
+.entry .bulletins h2 {
+  font-size: 16px;
+  background: #223b37;
+  padding: 12px 10px;
+  margin: 0 0 10px;
+}
+.entry .bulletins button {
+  font-size: 16px;
+  padding: 18px 7px;
+  border-bottom: 1px dashed #4bc3bb;
+}
+.entry .bulletins button b {
+  font-size: 21px;
+  color: #e0d85b;
+  min-width: 55px;
+}
+.entry .bulletins > div > p {
+  font-size: 12px;
+  padding: 15px 0;
+  border-bottom: 1px dashed #677b70;
+}
+.entry .bulletins aside {
+  padding: 0 15px 15px;
+  background: #182c29;
+}
+.entry .bulletins aside p {
+  font-size: 14px;
+  padding: 10px 0;
+  border-bottom: 1px dashed #4bc3bb;
+}
+.entry .bulletins .sample {
+  font-size: 10px;
+  padding: 12px;
+}
+.entry .notice-strip {
+  margin: 20px 0 0;
+  padding: 18px 0;
+  border-top: 3px solid #4bc3bb;
+}
+.entry .notice-strip h2 {
+  font-size: 13px;
+}
+.entry .notice-strip p {
+  font-size: 12px;
+}
+.entry .sections button {
+  font-size: 13px;
+  padding: 14px;
+}
+@media (max-width: 750px) {
+  .entry {
+    padding: 12px 3%;
+  }
+  .entry .broadcast {
+    border-width: 4px;
+  }
+  .entry .broadcast header {
+    padding: 12px 8px;
+    font-size: 8px;
+    gap: 8px;
+  }
+  .entry .broadcast header strong {
+    font-size: 19px;
+    letter-spacing: 0.03em;
+  }
+  .entry .titleband {
+    font-size: 8px;
+    padding: 10px;
+  }
+  .entry .page-entry {
+    padding: 12px 10px;
+    gap: 10px;
+    font-size: 9px;
+  }
+  .entry .page-entry input {
+    font-size: 16px;
+    max-width: 60px;
+  }
+  .entry .page-entry button {
+    font-size: 10px;
+  }
+  .entry main {
+    padding: 20px 12px;
+  }
+  .entry .index-title {
+    font-size: 16px;
+  }
+  .signal-lines {
+    font-size: 8px;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .entry .bulletins {
+    display: block;
+    margin-top: 20px;
+  }
+  .entry .bulletins button {
+    font-size: 13px;
+    padding: 15px 4px;
+  }
+  .entry .bulletins button b {
+    font-size: 16px;
+    min-width: 42px;
+  }
+  .entry .bulletins aside {
+    margin-top: 25px;
+  }
+  .entry .sections button {
+    font-size: 10px;
+    padding: 12px 8px;
   }
 }
 </style>

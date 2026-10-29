@@ -2,11 +2,11 @@
 
 **Idea.** A finished account and its discarded drafts belong to the same surface.
 
-**Composition.** A cobalt ribbon folds across a cream field, with numbered seams, reversed faces and long horizontal passages. Flipping exposes process writing on the back.
+**Composition.** A cream ribbon folds diagonally through a cobalt field, with visible return faces, a huge seam number and prose printed directly on its surface. A rounded flip control and six seam marks operate the publication; there is no separate title-and-description opening.
 
 **Navigation and complete example.** Follow six stations of an imagined river walk, flip between polished prose and field notes and read a station’s two versions together.
 
-**Responsive and inclusive behaviour.** The ribbon becomes a vertically folded strip with discrete seam controls. Flipping is a button action, never a motion or orientation requirement. All controls are native buttons or labelled inputs. Movement is discretionary, no sound starts automatically, reduced-motion preferences remove transitions, and a direct index exposes the same content.
+**Responsive and inclusive behaviour.** On phones the ribbon keeps its folds, a narrow numbered edge and a readable central passage. Discrete seam and flip controls provide the same finite reading journey. Native buttons, visible focus, a direct return path and reduced-motion support preserve access to the same content.
 
 **Adaptation.** Use the two faces for a meaningful editorial relation such as account/evidence or finished/draft. Keep a finite index and stable location labels. Retain the relationship between navigation and content. Do not reduce the reference to a generic hero followed by interchangeable cards.
 

@@ -70,7 +70,7 @@ function choose(i: number) {
 }
 </script>
 <template>
-  <div class="specimen">
+  <div class="specimen" :class="{ entry: state === 'start' }">
     <a class="skip" href="#content">Skip to content</a>
     <header class="stack-header wrap">
       <a :href="href('start')" class="stack-logo"
@@ -83,62 +83,90 @@ function choose(i: number) {
       </nav>
     </header>
     <main id="content">
-      <template v-if="state === 'start'"
-        ><section class="storage-hero wrap">
-          <div>
-            <p class="eyebrow">A LITTLE MORE ROOM FOR LIFE.</p>
-            <h1>How much space<br />do you actually need?</h1>
-            <p class="lead">
-              Picture your things in a space that fits. Compare clear sizes, check sample
-              availability, and choose without the guesswork.
-            </p>
-            <button class="primary" @click="go('size')">Help me choose a size →</button>
-            <div class="storage-points">
-              <span>Month to month</span><span>Ground-level access</span
-              ><span>Sample prices shown</span>
-            </div>
+      <section v-if="state !== 'reserve'" class="wrap capacity-entry">
+        <div class="capacity-title">
+          <h1>What are you storing?</h1>
+          <p>
+            Count the things. Compare the space.<br />Estimate includes a 25% packing allowance.
+          </p>
+        </div>
+        <div class="calculator">
+          <div class="inventory">
+            <label v-for="(item, i) in items" :key="item.name"
+              ><span
+                >{{ item.name }}<small>{{ item.volume }} m³ per item, approximate</small></span
+              ><input
+                type="number"
+                min="0"
+                max="100"
+                v-model.number="quantities[i]"
+                :aria-label="item.name"
+            /></label>
           </div>
-          <div class="volume-stage">
-            <svg
-              viewBox="0 0 440 330"
-              role="img"
-              aria-label="Schematic small storage unit showing boxes and furniture in a five by five foot footprint"
-            >
+          <aside class="recommendation" aria-live="polite">
+            <p class="eyebrow">YOUR STARTING POINT</p>
+            <svg class="capacity-drawing" viewBox="0 0 320 180" aria-hidden="true">
+              <path d="M35 85 170 25 285 75 150 140Z" fill="#e4e9f8" stroke="#2145a3" />
               <path
-                d="M65 130 240 50 380 130 205 220Z"
-                fill="#d6def8"
+                d="M35 85V125L150 178V140M150 140 285 75V115L150 178"
+                fill="#b2c4ed"
                 stroke="#2145a3"
-                stroke-width="2"
               />
-              <path d="M65 130V245L205 320V220Z" fill="#a8b9eb" stroke="#2145a3" stroke-width="2" />
-              <path
-                d="M205 220 380 130V245L205 320Z"
-                fill="#6c87d1"
-                stroke="#2145a3"
-                stroke-width="2"
-              />
-              <path
-                d="M95 100 240 35 350 100V210L205 280 95 220Z"
-                fill="none"
-                stroke="#2145a3"
-                stroke-dasharray="6 5"
-              />
-              <g fill="#ead4a3" stroke="#6c5126" stroke-width="2">
-                <path
-                  d="M135 150 185 126 225 148 176 175Z M135 150V194L176 218V175 M176 175 225 148V193L176 218"
-                />
-                <path
-                  d="M235 127 280 107 315 126 270 149Z M235 127V163L270 184V149 M270 149 315 126V163L270 184"
+              <g fill="#ead4a3" stroke="#6c5126">
+                <rect
+                  v-for="n in Math.min(12, Math.max(1, Math.ceil(volume * 2)))"
+                  :key="n"
+                  :x="72 + ((n - 1) % 4) * 38"
+                  :y="65 + Math.floor((n - 1) / 4) * 24"
+                  width="29"
+                  height="22"
                 />
               </g>
-              <text x="205" y="18" text-anchor="middle" fill="#2145a3" font-size="13">
-                SMALL / 5 × 5 FT
-              </text>
             </svg>
-            <p>One clear footprint.<br /><b>More useful than a vague size name.</b></p>
-          </div>
-        </section>
-        <section id="sizes" class="wrap section size-section">
+            <p v-if="!validInventory" role="alert">
+              Enter a whole number from 0 to 100 for each item to estimate your space.
+            </p>
+            <template v-else-if="recommendation >= 0"
+              ><h2>{{ units[recommendation].name }}</h2>
+              <p class="capacity">
+                {{ units[recommendation].label
+                }}<span>{{ (volume * 1.25).toFixed(1) }} m³ including allowance</span>
+              </p>
+              <p>{{ units[recommendation].fit }}.</p>
+              <button
+                class="primary"
+                :disabled="!units[recommendation].available"
+                @click="choose(recommendation)"
+              >
+                {{
+                  units[recommendation].available
+                    ? 'Reserve this size →'
+                    : 'This size is currently full'
+                }}</button
+              ><button
+                class="text-link"
+                v-if="!units[recommendation].available && recommendation < 3"
+                @click="choose(recommendation + 1)"
+              >
+                Consider the next available size →
+              </button></template
+            ><template v-else
+              ><h2>Let’s talk it through.</h2>
+              <p>
+                Your inventory exceeds the sample sizes. A facility could discuss a larger unit or
+                split storage.
+              </p></template
+            >
+            <p class="muted">
+              An estimate, not a guarantee of fit. Dimensions refer to the approximate floor
+              footprint.
+            </p>
+          </aside>
+        </div>
+        <a :href="href('start') + '#sizes'" class="all-sizes">Compare all sizes and prices ↓</a>
+      </section>
+      <template v-if="state === 'start'"
+        ><section id="sizes" class="wrap section size-section">
           <div class="section-heading">
             <h2>A space for<br />what comes next.</h2>
             <p>
@@ -211,71 +239,10 @@ function choose(i: number) {
           </div>
         </section></template
       >
-      <section v-else class="wrap state-page">
+      <section v-else-if="state === 'reserve'" class="wrap state-page">
         <button class="back text-link" @click="go('start')">← Compare storage sizes</button>
-        <h1>{{ state === 'size' ? 'Let’s make room.' : 'Your space, clearly set out.' }}</h1>
-        <template v-if="state === 'size'"
-          ><p class="lead">
-            Add a rough inventory. This sample adds 25% packing allowance; unusual shapes and access
-            space still need a conversation.
-          </p>
-          <div class="calculator">
-            <div class="inventory">
-              <label v-for="(item, i) in items" :key="item.name"
-                ><span
-                  >{{ item.name }}<small>{{ item.volume }} m³ per item, approximate</small></span
-                ><input
-                  type="number"
-                  min="0"
-                  max="100"
-                  v-model.number="quantities[i]"
-                  :aria-label="item.name"
-              /></label>
-            </div>
-            <aside class="recommendation" aria-live="polite">
-              <p class="eyebrow">YOUR STARTING POINT</p>
-              <p v-if="!validInventory" role="alert">
-                Enter a whole number from 0 to 100 for each item to estimate your space.
-              </p>
-              <template v-else-if="recommendation >= 0"
-                ><h2>{{ units[recommendation].name }}</h2>
-                <p class="capacity">
-                  {{ units[recommendation].label
-                  }}<span>{{ (volume * 1.25).toFixed(1) }} m³ including allowance</span>
-                </p>
-                <p>{{ units[recommendation].fit }}.</p>
-                <button
-                  class="primary"
-                  :disabled="!units[recommendation].available"
-                  @click="choose(recommendation)"
-                >
-                  {{
-                    units[recommendation].available
-                      ? 'Reserve this size →'
-                      : 'This size is currently full'
-                  }}</button
-                ><button
-                  class="text-link"
-                  v-if="!units[recommendation].available && recommendation < 3"
-                  @click="choose(recommendation + 1)"
-                >
-                  Consider the next available size →
-                </button></template
-              ><template v-else
-                ><h2>Let’s talk it through.</h2>
-                <p>
-                  Your inventory exceeds the sample sizes. A facility could discuss a larger unit or
-                  split storage.
-                </p></template
-              >
-              <p class="muted">
-                An estimate, not a guarantee of fit. Dimensions refer to the approximate floor
-                footprint.
-              </p>
-            </aside>
-          </div></template
-        >
-        <div v-else class="state-grid">
+        <h1>Your space, clearly set out.</h1>
+        <div class="state-grid">
           <form class="form" v-if="!sent" @submit.prevent="sent = true">
             <label
               >Unit size<select v-model.number="chosen">
@@ -962,6 +929,94 @@ details p {
   }
   .recommendation {
     padding: 25px;
+  }
+}
+
+/* The entry is the experience itself; supporting routes retain its vocabulary. */
+.capacity-entry {
+  padding-top: 24px;
+}
+.capacity-title {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 18px;
+}
+.capacity-title h1 {
+  font-size: 34px;
+  letter-spacing: -0.035em;
+}
+.capacity-title p {
+  font-size: 13px;
+}
+.capacity-entry .calculator {
+  gap: 0;
+  border: 2px solid var(--accent);
+  margin-top: 0;
+  grid-template-columns: 1fr 1fr;
+}
+.capacity-entry .inventory {
+  padding: 24px 36px;
+  background: #fff;
+}
+.capacity-entry .inventory label {
+  padding: 12px 0;
+}
+.capacity-entry .recommendation {
+  position: relative;
+  padding: 28px 32px;
+  background: #e6ecfa;
+  border: 0;
+}
+.capacity-entry .recommendation h2 {
+  font-size: 54px;
+}
+.capacity-drawing {
+  float: right;
+  width: 42%;
+  height: 160px;
+}
+.all-sizes {
+  display: block;
+  padding: 15px 0;
+}
+.entry .size-section {
+  padding-top: 25px;
+}
+.entry .size-section h2 {
+  font-size: 28px;
+}
+@media (max-width: 700px) {
+  .capacity-title {
+    display: block;
+  }
+  .capacity-title h1 {
+    font-size: 29px;
+  }
+  .capacity-title p {
+    margin-top: 10px;
+  }
+  .capacity-entry .calculator {
+    grid-template-columns: 1fr;
+  }
+  .capacity-entry .inventory {
+    padding: 12px 18px;
+  }
+  .capacity-entry .inventory label {
+    padding: 8px 0;
+  }
+  .capacity-entry .recommendation {
+    padding: 20px;
+  }
+  .capacity-entry .recommendation h2 {
+    font-size: 40px;
+  }
+  .capacity-drawing {
+    height: 115px;
+  }
+  .capacity-entry {
+    padding-top: 12px;
   }
 }
 </style>

@@ -47,6 +47,7 @@ const places = [
     desc: 'An informal workspace in the middle of the neighbourhood.',
   },
 ];
+const filtersOpen = ref(!matchMedia('(max-width: 750px)').matches);
 const equipment = ref('All'),
   weekend = ref(false),
   shortlist = ref<string[]>([]);
@@ -65,17 +66,17 @@ function toggle(name: string) {
 }
 </script>
 <template>
-  <div class="specimen">
+  <div class="specimen" :class="{ entry: state === 'start' }">
     <a class="skip" href="#content">Skip to content</a>
     <header>
       <strong>↗ Useful Places</strong><span>Good spaces for getting things done.</span
       ><button @click="go('start')">Explore Northbank</button>
     </header>
     <main id="content">
-      <div class="heading">
+      <div v-if="state === 'start'" class="heading">
         <p class="eyebrow">THE WORKSPACE DIRECTORY / NORTHBANK</p>
-        <h1>Find your kind of place.</h1>
-        <p>Compare the practical details. Make a little room for your working day.</p>
+        <h1>Northbank workspaces</h1>
+        <p>Equipment, access, opening days and a clear daily price.</p>
         <label class="search"
           >Search workspaces<input v-model="q" placeholder="A name or a neighbourhood"
         /></label>
@@ -83,31 +84,42 @@ function toggle(name: string) {
       <template v-if="state === 'start'"
         ><div class="directory">
           <aside>
-            <p class="eyebrow">NARROW IT DOWN</p>
-            <fieldset>
-              <legend>What do you need?</legend>
-              <label
-                v-for="item in ['All', 'Quiet desks', 'Meeting rooms', 'Workshop tools']"
-                :key="item"
-                ><input type="radio" v-model="equipment" :value="item" name="equipment" />{{
-                  item
-                }}</label
-              >
-            </fieldset>
-            <fieldset>
-              <legend>Opening days</legend>
-              <label><input type="checkbox" v-model="weekend" />Open on weekends</label>
-            </fieldset>
-            <button
-              @click="
-                equipment = 'All';
-                weekend = false;
-                q = '';
-              "
+            <details
+              class="facets"
+              :open="filtersOpen"
+              @toggle="filtersOpen = ($event.target as HTMLDetailsElement).open"
             >
-              Clear all filters
-            </button>
-            <p class="small">All places, prices, and amenities are fictional samples.</p>
+              <summary>
+                Filter workspaces
+                <span>{{ equipment !== 'All' || weekend ? '· active' : '' }}</span>
+              </summary>
+              <div>
+                <fieldset>
+                  <legend>What do you need?</legend>
+                  <label
+                    v-for="item in ['All', 'Quiet desks', 'Meeting rooms', 'Workshop tools']"
+                    :key="item"
+                    ><input type="radio" v-model="equipment" :value="item" name="equipment" />{{
+                      item
+                    }}</label
+                  >
+                </fieldset>
+                <fieldset>
+                  <legend>Opening days</legend>
+                  <label><input type="checkbox" v-model="weekend" />Open on weekends</label>
+                </fieldset>
+                <button
+                  @click="
+                    equipment = 'All';
+                    weekend = false;
+                    q = '';
+                  "
+                >
+                  Clear all filters
+                </button>
+                <p class="small">All places, prices, and amenities are fictional samples.</p>
+              </div>
+            </details>
           </aside>
           <section>
             <div class="result-count">
@@ -183,7 +195,7 @@ function toggle(name: string) {
       <section v-else-if="state === 'detail'" class="detail">
         <button @click="go('start')">← All workspaces</button>
         <p class="eyebrow">{{ places[selected].area }}</p>
-        <h2>{{ places[selected].name }}</h2>
+        <h1>{{ places[selected].name }}</h1>
         <p>{{ places[selected].desc }}</p>
         <div class="detail-grid">
           <article>
@@ -210,7 +222,7 @@ function toggle(name: string) {
         </div>
       </section>
       <section v-else class="comparison">
-        <h2>Compare the useful details.</h2>
+        <h1>Compare workspaces</h1>
         <p v-if="shortlist.length < 2">
           Choose two workspaces from the directory to compare. Showing two examples below.
         </p>
@@ -757,6 +769,123 @@ aside > button {
   }
   .detail h2 {
     font-size: 34px;
+  }
+}
+
+/* The entry is the experience itself; supporting routes retain its vocabulary. */
+
+.entry main {
+  max-width: 1420px;
+  padding: 25px 4%;
+  margin: auto;
+  width: 100%;
+}
+.entry .heading {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 30px;
+  padding: 0 0 25px;
+}
+.entry .heading > .eyebrow {
+  font-size: 9px;
+  margin: 0;
+}
+.entry .heading h1 {
+  font-size: 25px;
+  letter-spacing: -0.035em;
+  margin: 0;
+  grid-column: 1;
+}
+.entry .heading > p:not(.eyebrow) {
+  font-size: 11px;
+  margin: 0;
+  grid-column: 1;
+}
+.entry .heading .search {
+  grid-column: 2;
+  grid-row: 1/4;
+  align-self: center;
+  max-width: none;
+  width: 100%;
+  font-size: 10px;
+}
+.entry .search input {
+  width: 100%;
+  font-size: 13px;
+  padding: 16px;
+}
+.facets {
+  border: 0;
+}
+.facets summary {
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 12px 0;
+  border-bottom: 1px solid #b9c9c4;
+}
+.facets summary span {
+  font-size: 10px;
+}
+.facets > div {
+  padding-top: 20px;
+}
+.entry .directory {
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: 35px;
+}
+.entry .listing {
+  padding: 24px 0;
+}
+.entry .result-count {
+  font-size: 11px;
+}
+.detail > h1,
+.comparison > h1 {
+  font-size: 38px;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+}
+@media (max-width: 750px) {
+  .entry main {
+    padding: 20px 5%;
+  }
+  .entry .heading {
+    display: block;
+    padding-bottom: 20px;
+  }
+  .entry .heading h1 {
+    font-size: 25px;
+    margin: 10px 0;
+  }
+  .entry .heading > p:not(.eyebrow) {
+    font-size: 11px;
+  }
+  .entry .heading .search {
+    margin: 20px 0 0;
+  }
+  .entry .directory {
+    display: block;
+  }
+  .entry .directory > aside {
+    margin-bottom: 20px;
+  }
+  .facets summary {
+    background: #e3ece7;
+    border: 1px solid #a6bdb4;
+    padding: 14px;
+    font-size: 12px;
+  }
+  .facets > div {
+    padding: 20px 15px;
+    background: #eef3ef;
+  }
+  .entry .listing {
+    padding: 22px 0;
+  }
+  .detail > h1,
+  .comparison > h1 {
+    font-size: 30px;
   }
 }
 </style>

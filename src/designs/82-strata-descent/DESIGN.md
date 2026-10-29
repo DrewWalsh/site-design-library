@@ -2,11 +2,11 @@
 
 **Idea.** Depth is both the navigation and the argument of the archive.
 
-**Composition.** A continuous geological section descends from chalk through ochre and rust to blue-black. Depth markers and embedded artefacts replace a conventional page grid.
+**Composition.** The word BELOW sits at the cut edge of a drawn ground surface. An irregular geological section starts immediately underneath; depth ticks, oversized finds and alternating buried records replace the opening slogan and repeated rectangular sections.
 
 **Navigation and complete example.** Descend through six invented layers of a former railway site, examine a found object in each and collect a cross-section of findings.
 
-**Responsive and inclusive behaviour.** Depth markers stay in a narrow rail; content occupies the remaining width. All strata have labelled anchor links, so scrolling distance is optional. All controls are native buttons or labelled inputs. Movement is discretionary, no sound starts automatically, reduced-motion preferences remove transitions, and a direct index exposes the same content.
+**Responsive and inclusive behaviour.** Phone strata keep a narrow depth gauge beside full-width finds. The six depth anchors provide direct navigation without requiring the full descent. Native buttons, visible focus, a direct return path and reduced-motion support preserve access to the same content.
 
 **Adaptation.** Use depth for meaningful chronology or scale, not merely a long scroll. Clearly distinguish fictional findings from research evidence. Retain the relationship between navigation and content. Do not reduce the reference to a generic hero followed by interchangeable cards.
 

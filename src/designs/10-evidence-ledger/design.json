@@ -7,10 +7,13 @@
   "family": "Clarity & editorial",
   "status": "ready",
   "thesis": "Make claims inspectable and provenance visible.",
-  "suitableFor": ["Research", "Public services"],
+  "suitableFor": [
+    "Research",
+    "Public services"
+  ],
   "character": "Restrained",
   "traits": {
-    "composition": "Faceted records table and an assertion/source comparison",
+    "composition": "The ledger starts with a compact record count, evidence-status controls, search and the actual records table. Claim, organisation, value and evidence remain directly comparable; the explanatory method follows the records. The assertion and source comparison remain its distinctive secondary composition.",
     "navigation": "Record index with explicit evidence links",
     "typography": "DM Sans",
     "density": "High",
@@ -45,7 +48,7 @@
   "referenceImages": [
     {
       "file": "/previews/10/desktop.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/10/62a4aa7d1bdb1562-desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/10/ff53382a64e1b20f-desktop.jpg",
       "route": "/preview/10-evidence-ledger/start",
       "viewport": {
         "width": 1440,
@@ -53,13 +56,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:6ac4ad3a7c357ef3c04fc51ba09d80638e412089f62b80309c4aa19f00ed6510",
-      "sha256": "62a4aa7d1bdb1562832ea42f9f0a17ac67d82cf5c45cd62c4f29e66f99ac4e6f",
+      "sourceRevision": "sha256:b16aa94ba36e3366ce1778dfe22dc2c2b491f0b863895ce9a79d415efd268db9",
+      "sha256": "ff53382a64e1b20f71afb2ff9336591361b0d6bf7ade6abb8aa896f1d3fb52a2",
       "fullPage": false
     },
     {
       "file": "/previews/10/mobile.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/10/1bb38eadd7234ad3-mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/10/e239081ddb200bce-mobile.jpg",
       "route": "/preview/10-evidence-ledger/start",
       "viewport": {
         "width": 390,
@@ -67,8 +70,8 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:6ac4ad3a7c357ef3c04fc51ba09d80638e412089f62b80309c4aa19f00ed6510",
-      "sha256": "1bb38eadd7234ad392b716785e715a64fe6e6e823571e78821dc483f252079a7",
+      "sourceRevision": "sha256:b16aa94ba36e3366ce1778dfe22dc2c2b491f0b863895ce9a79d415efd268db9",
+      "sha256": "e239081ddb200bce89a547b3da16a36de4081763ffa32ad208721342900c35db",
       "fullPage": false
     },
     {
@@ -81,13 +84,13 @@
       },
       "state": "record",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:6ac4ad3a7c357ef3c04fc51ba09d80638e412089f62b80309c4aa19f00ed6510",
+      "sourceRevision": "sha256:b16aa94ba36e3366ce1778dfe22dc2c2b491f0b863895ce9a79d415efd268db9",
       "sha256": "29cf2ff2d7e76ecb636ecdb4a66da6015b880e22e2b87907a40b09caa0a37723",
       "fullPage": false
     },
     {
       "file": "/previews/10/full-page.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/10/813554089025cbbb-full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/10/e9ebce4450525ced-full-page.jpg",
       "route": "/preview/10-evidence-ledger/start",
       "viewport": {
         "width": 1440,
@@ -95,28 +98,44 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:6ac4ad3a7c357ef3c04fc51ba09d80638e412089f62b80309c4aa19f00ed6510",
-      "sha256": "813554089025cbbb3e824a37abf9b203a7ac0234312a5bcad6ec3b2223a97356",
+      "sourceRevision": "sha256:b16aa94ba36e3366ce1778dfe22dc2c2b491f0b863895ce9a79d415efd268db9",
+      "sha256": "e9ebce4450525ced9d63879db526827c82cd179440dbe97606b47349e8ec4c2b",
       "fullPage": true
     }
   ],
   "sourcePath": "src/designs/10-evidence-ledger",
-  "neighbours": ["11", "18"],
+  "neighbours": [
+    "11",
+    "18"
+  ],
   "palette": {
     "page": "#f6f7f5",
     "surface": "#ffffff",
     "ink": "#23374a",
     "accent": "#80611d"
   },
-  "fonts": ["DM Sans"],
-  "brief": "**Philosophy and fit.** Make claims inspectable and provenance visible. Suitable for institutional research, public record collections, policy trackers, and structured investigative resources.\n\n**Visual grammar.** Use a sober index with compact search, a faceted records table, and a persistent evidence summary. Record pages distinguish the statement, its supporting material, the applicable dates, and interpretation. A humanist sans, tabular numerals, thin rules, white surfaces, navy text, and restrained ochre status marks produce a documentary character. Status labels always include text.\n\n**Specimen and flow.** *Public Works Ledger* contains explicitly fictional contracts and organisations. Visitors filter records, inspect a single assertion, and open its source excerpt beside the assertion. Supporting states show conflicting fixture evidence and a record whose source is unavailable.\n\n**Adaptation and identity.** Mobile turns rows into labelled records and places source material after its associated claim. Preserve provenance, date context, and the distinction between evidence and interpretation; avoid unsupported score badges, dashboard ornament, and graphs that imply unrecorded relationships. Motion is unnecessary. **Effort: medium.**",
+  "fonts": [
+    "DM Sans"
+  ],
+  "brief": "**Philosophy and fit.** Make claims inspectable and provenance visible. Suitable for institutional research, public record collections, policy trackers, and structured investigative resources.\n\n**Visual grammar.** Use a sober index with compact search, a faceted records table, and a persistent evidence summary. Record pages distinguish the statement, its supporting material, the applicable dates, and interpretation. A humanist sans, tabular numerals, thin rules, white surfaces, navy text, and restrained ochre status marks produce a documentary character. Status labels always include text.\n\n**Composition.** The ledger starts with a compact record count, evidence-status controls, search and the actual records table. Claim, organisation, value and evidence remain directly comparable; the explanatory method follows the records. The assertion and source comparison remain its distinctive secondary composition.\n\n**Specimen and flow.** _Public Works Ledger_ contains explicitly fictional contracts and organisations. Visitors filter records, inspect a single assertion, and open its source excerpt beside the assertion. Supporting states show conflicting fixture evidence and a record whose source is unavailable.\n\n**Adaptation and identity.** Mobile turns rows into labelled records and places source material after its associated claim. Preserve provenance, date context, and the distinction between evidence and interpretation; avoid unsupported score badges, dashboard ornament, and graphs that imply unrecorded relationships. Motion is unnecessary. **Effort: medium.**",
   "scope": "An expansive sample page with representative local interactions; no production business backend.",
   "discovery": {
-    "industries": ["Research", "Public policy", "Reporting"],
-    "visitorGoals": ["Inspect evidence"],
-    "conversionActions": ["Compare source material"],
+    "industries": [
+      "Research",
+      "Public policy",
+      "Reporting"
+    ],
+    "visitorGoals": [
+      "Inspect evidence"
+    ],
+    "conversionActions": [
+      "Compare source material"
+    ],
     "siteSize": "Digital publication",
-    "interactionTypes": ["Data tables", "Source notes"],
+    "interactionTypes": [
+      "Data tables",
+      "Source notes"
+    ],
     "keywords": [
       "Research",
       "Public services",

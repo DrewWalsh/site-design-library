@@ -7,10 +7,13 @@
   "family": "Playful & material",
   "status": "ready",
   "thesis": "Teach an interaction through visible, manipulable objects.",
-  "suitableFor": ["Education", "Interactive"],
+  "suitableFor": [
+    "Education",
+    "Interactive"
+  ],
   "character": "Expressive",
   "traits": {
-    "composition": "Tactile tabletop with visible parts, slots, and a deterministic result",
+    "composition": "A tactile circuit workbench is the whole opening. A tray of illustrated battery, switch and bulb parts sits beside recessed machine sockets, visible wiring and a status lamp. Run and save controls are part of the wooden control deck; there is no promotional heading.",
     "navigation": "Parts library, explicit placement, and saved construction",
     "typography": "Space Grotesk + DM Sans",
     "density": "Medium",
@@ -45,7 +48,7 @@
   "referenceImages": [
     {
       "file": "/previews/33/desktop.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/33/0201f239d23e84b4-desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/33/e945c990a949307b-desktop.jpg",
       "route": "/preview/33-playroom/start",
       "viewport": {
         "width": 1440,
@@ -53,13 +56,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:8464a55ea62f8f441311607d85ab18f6f923f67370276891e775bf998f133dcf",
-      "sha256": "0201f239d23e84b42a06bb9398f2bfb9f4a99bdc4b64543fc20b86c768cc6a56",
+      "sourceRevision": "sha256:9ac7ca8c87542c41d0511ad79ea60bad9773b11291866094d5bd54f2c5c40eb5",
+      "sha256": "e945c990a949307b23e2491b0effbbd44412145ad263ddf8fcc35ba7e1d383b9",
       "fullPage": false
     },
     {
       "file": "/previews/33/mobile.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/33/5ba7dfb650148da0-mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/33/3f1afad00dda1343-mobile.jpg",
       "route": "/preview/33-playroom/start",
       "viewport": {
         "width": 390,
@@ -67,8 +70,8 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:8464a55ea62f8f441311607d85ab18f6f923f67370276891e775bf998f133dcf",
-      "sha256": "5ba7dfb650148da0dfe9b5054f7110308ab045e524006c5598cfaa15a3d32bb8",
+      "sourceRevision": "sha256:9ac7ca8c87542c41d0511ad79ea60bad9773b11291866094d5bd54f2c5c40eb5",
+      "sha256": "3f1afad00dda1343736a51601e8c9b90fe52c44bb96491062984269cdab76db5",
       "fullPage": false
     },
     {
@@ -81,13 +84,13 @@
       },
       "state": "library",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:8464a55ea62f8f441311607d85ab18f6f923f67370276891e775bf998f133dcf",
+      "sourceRevision": "sha256:9ac7ca8c87542c41d0511ad79ea60bad9773b11291866094d5bd54f2c5c40eb5",
       "sha256": "ab1d71a755245f8fb0c91e96eaec31730638a99b51d0eccd7225348d45b207ed",
       "fullPage": false
     },
     {
       "file": "/previews/33/full-page.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/33/03907e4f5198d33a-full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/33/33ac91e027bc2fc8-full-page.jpg",
       "route": "/preview/33-playroom/start",
       "viewport": {
         "width": 1440,
@@ -95,28 +98,44 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:8464a55ea62f8f441311607d85ab18f6f923f67370276891e775bf998f133dcf",
-      "sha256": "03907e4f5198d33ab3a0b13d212030879feae54fca70b8dc72a2208466f6636e",
+      "sourceRevision": "sha256:9ac7ca8c87542c41d0511ad79ea60bad9773b11291866094d5bd54f2c5c40eb5",
+      "sha256": "33ac91e027bc2fc86ba811bb64b079dc3060c2891fd940a0379f43190b417158",
       "fullPage": true
     }
   ],
   "sourcePath": "src/designs/33-playroom",
-  "neighbours": ["32", "49"],
+  "neighbours": [
+    "32",
+    "49"
+  ],
   "palette": {
     "page": "#f7ecd4",
     "surface": "#fff8e8",
     "ink": "#3b3e37",
     "accent": "#a83d2a"
   },
-  "fonts": ["Space Grotesk", "DM Sans"],
-  "brief": "**Philosophy and fit.** Teach an interaction through visible, manipulable objects. Suitable for learning tools, creative configurators, simple games, and approachable planning experiences.\n\n**Visual grammar.** A bounded tabletop contains chunky objects, recessed slots, tactile buttons, and a compact tool shelf. Rounded type, warm cream, tomato red, sky blue, and soft material shadows make the interface approachable. A clear instruction line sits outside the play area, and object labels remain ordinary readable text.\n\n**Specimen and flow.** *Little Machine Lab* uses a small fixed set of parts and slots with deterministic responses, without a general physics engine. Select parts, place them in slots, and run the demonstration. Supporting views include a parts library and a saved-construction view with an incomplete-machine state. Keyboard selection and explicit move controls provide every action available through dragging.\n\n**Responsive behaviour.** The tabletop changes to a vertical sequence of slots rather than shrinking a desktop canvas. Optional spring motion becomes immediate state changes under reduced motion.\n\n**Identity rules.** Preserve understandable cause and effect and tangible controls. Avoid ornamental toy shapes around conventional forms, mandatory sound, or physics effects that make precise actions unreliable. **Effort: high.**",
+  "fonts": [
+    "Space Grotesk",
+    "DM Sans"
+  ],
+  "brief": "**Philosophy and fit.** Teach an interaction through visible, manipulable objects. Suitable for learning tools, creative configurators, simple games, and approachable planning experiences.\n\n**Visual grammar.** A bounded tabletop contains chunky objects, recessed slots, tactile buttons, and a compact tool shelf. Rounded type, warm cream, tomato red, sky blue, and soft material shadows make the interface approachable. A clear instruction line sits outside the play area, and object labels remain ordinary readable text.\n\n**Composition.** A tactile circuit workbench is the whole opening. A tray of illustrated battery, switch and bulb parts sits beside recessed machine sockets, visible wiring and a status lamp. Run and save controls are part of the wooden control deck; there is no promotional heading.\n\n**Specimen and flow.** _Little Machine Lab_ uses a small fixed set of parts and slots with deterministic responses, without a general physics engine. Select parts, place them in slots, and run the demonstration. Supporting views include a parts library and a saved-construction view with an incomplete-machine state. Keyboard selection and explicit move controls provide every action available through dragging.\n\n**Responsive and inclusive behaviour.** Phones keep the illustrated parts tray and all three compact slots together. Explicit slot and part buttons provide every construction action; the machine result stays directly underneath. Native buttons, visible focus, a direct return path and reduced-motion support preserve access to the same content.\n\n**Identity rules.** Preserve understandable cause and effect and tangible controls. Avoid ornamental toy shapes around conventional forms, mandatory sound, or physics effects that make precise actions unreliable. **Effort: high.**",
   "scope": "An expansive sample page with representative local interactions; no production business backend.",
   "discovery": {
-    "industries": ["Children education", "Interactive learning"],
-    "visitorGoals": ["Learn by doing"],
-    "conversionActions": ["Complete an activity"],
+    "industries": [
+      "Children education",
+      "Interactive learning"
+    ],
+    "visitorGoals": [
+      "Learn by doing"
+    ],
+    "conversionActions": [
+      "Complete an activity"
+    ],
     "siteSize": "Application",
-    "interactionTypes": ["Interactive activity", "Feedback states"],
+    "interactionTypes": [
+      "Interactive activity",
+      "Feedback states"
+    ],
     "keywords": [
       "Education",
       "Interactive",

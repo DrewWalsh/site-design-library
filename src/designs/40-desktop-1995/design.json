@@ -7,10 +7,13 @@
   "family": "Playful & material",
   "status": "ready",
   "thesis": "Present a small collection as familiar, named tools and folders.",
-  "suitableFor": ["Portfolio", "Culture"],
+  "suitableFor": [
+    "Portfolio",
+    "Culture"
+  ],
   "character": "Expressive",
   "traits": {
-    "composition": "Desktop tools with bevelled windows and an explicit task strip",
+    "composition": "The desktop opens a genuine file browser: an address bar, file name/type/year rows and a selected project preview. The personal introduction lives in About, while identities, publications and websites use different preview treatments.",
     "navigation": "Named application launchers and window controls",
     "typography": "DM Sans",
     "density": "Medium",
@@ -45,7 +48,7 @@
   "referenceImages": [
     {
       "file": "/previews/40/desktop.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/40/52b9d83d549e5bf4-desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/40/e60c17f64d77e402-desktop.jpg",
       "route": "/preview/40-desktop-1995/start",
       "viewport": {
         "width": 1440,
@@ -53,13 +56,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:43441ff2811ad8ce6de5ee08fd95c812d9d4e3af23ae97a21832253d58f6d34c",
-      "sha256": "52b9d83d549e5bf412b279575fdf51e5609701b5975f43a7e2350988b93bd979",
+      "sourceRevision": "sha256:8e6c514b1599d688478e9b29443f3b786b6c4eb28ddf7cf56d3567cb46ef624a",
+      "sha256": "e60c17f64d77e402711ea662c5e7323eb9cb95c7b59d06c3111ead66f400bc0d",
       "fullPage": false
     },
     {
       "file": "/previews/40/mobile.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/40/e80767e1ae421684-mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/40/bd18ec70043ccf7d-mobile.jpg",
       "route": "/preview/40-desktop-1995/start",
       "viewport": {
         "width": 390,
@@ -67,8 +70,8 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:43441ff2811ad8ce6de5ee08fd95c812d9d4e3af23ae97a21832253d58f6d34c",
-      "sha256": "e80767e1ae421684c72bcdf66b7e16d7cc68c25ceec4b49cf5597eb4835b6046",
+      "sourceRevision": "sha256:8e6c514b1599d688478e9b29443f3b786b6c4eb28ddf7cf56d3567cb46ef624a",
+      "sha256": "bd18ec70043ccf7db5af85ba33cd4b2434f685d604ae7e8cc277031c5f3f94a5",
       "fullPage": false
     },
     {
@@ -81,13 +84,13 @@
       },
       "state": "contact",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:43441ff2811ad8ce6de5ee08fd95c812d9d4e3af23ae97a21832253d58f6d34c",
+      "sourceRevision": "sha256:8e6c514b1599d688478e9b29443f3b786b6c4eb28ddf7cf56d3567cb46ef624a",
       "sha256": "2d621783fa46aced64b93fa403030a03037cde9b10ff8c5569a90f08e0052313",
       "fullPage": false
     },
     {
       "file": "/previews/40/full-page.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/40/a6a33cc4d23e8742-full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/40/a034e8689f3216e8-full-page.jpg",
       "route": "/preview/40-desktop-1995/start",
       "viewport": {
         "width": 1440,
@@ -95,28 +98,43 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:43441ff2811ad8ce6de5ee08fd95c812d9d4e3af23ae97a21832253d58f6d34c",
-      "sha256": "a6a33cc4d23e874270cc23d98bca7b2c0fc0c576f5bc01e8800a2f2dcf53fa22",
+      "sourceRevision": "sha256:8e6c514b1599d688478e9b29443f3b786b6c4eb28ddf7cf56d3567cb46ef624a",
+      "sha256": "a034e8689f3216e8d9483b83b3b482ad55c7ccea99b48330efa0ac27c93cf743",
       "fullPage": true
     }
   ],
   "sourcePath": "src/designs/40-desktop-1995",
-  "neighbours": ["38", "41"],
+  "neighbours": [
+    "38",
+    "41"
+  ],
   "palette": {
     "page": "#3e7573",
     "surface": "#e5e5df",
     "ink": "#19232a",
     "accent": "#253b80"
   },
-  "fonts": ["DM Sans"],
-  "brief": "**Philosophy and fit.** Present a small collection as familiar, named tools and folders. Suitable for portfolios, digital exhibitions, personal project collections, and compact creative utilities.\n\n**Visual grammar.** A desktop, icon labels, bevelled window frames, title bars, and a task strip organise content into discrete applications. Use a neutral grey interface, one selected-state colour, compact system-like typography, and restrained bitmap accents. Windows have explicit open, close, minimise, and maximise controls; their content uses semantic document structure.\n\n**Specimen and flow.** *Parcel OS* is a fictional designer’s portfolio with only Projects, Contact, and Help windows. Open Projects, select a case study, then open its contact form. Supporting states are an application switcher and a help view explaining the controls. Window positioning is optional; a general desktop framework is outside the specimen's scope.\n\n**Mobile and motion.** Show one full-width application at a time, with a clear back control and application list. Keyboard focus follows the active window and returns to its launcher when closed.\n\n**Identity and effort.** Preserve the desktop’s task model; avoid decorative windows that obscure navigation or pretend to access the visitor’s filesystem. **Effort: high.**",
+  "fonts": [
+    "DM Sans"
+  ],
+  "brief": "**Philosophy and fit.** Present a small collection as familiar, named tools and folders. Suitable for portfolios, digital exhibitions, personal project collections, and compact creative utilities.\n\n**Visual grammar.** A desktop, icon labels, bevelled window frames, title bars, and a task strip organise content into discrete applications. Use a neutral grey interface, one selected-state colour, compact system-like typography, and restrained bitmap accents. Windows have explicit open, close, minimise, and maximise controls; their content uses semantic document structure.\n\n**Composition.** The desktop opens a genuine file browser: an address bar, file name/type/year rows and a selected project preview. The personal introduction lives in About, while identities, publications and websites use different preview treatments.\n\n**Specimen and flow.** _Parcel OS_ is a fictional designer’s portfolio with only Projects, Contact, and Help windows. Open Projects, select a case study, then open its contact form. Supporting states are an application switcher and a help view explaining the controls. Window positioning is optional; a general desktop framework is outside the specimen's scope.\n\n**Responsive and inclusive behaviour.** On phones the compact file rows remain above the selected preview, keeping application navigation and the selected file together. Native buttons, visible focus, a direct return path and reduced-motion support preserve access to the same content.\n\n**Identity and effort.** Preserve the desktop’s task model; avoid decorative windows that obscure navigation or pretend to access the visitor’s filesystem. **Effort: high.**",
   "scope": "An expansive sample page with representative local interactions; no production business backend.",
   "discovery": {
-    "industries": ["Software", "Retro computing"],
-    "visitorGoals": ["Explore a workspace"],
-    "conversionActions": ["Open a document"],
+    "industries": [
+      "Software",
+      "Retro computing"
+    ],
+    "visitorGoals": [
+      "Explore a workspace"
+    ],
+    "conversionActions": [
+      "Open a document"
+    ],
     "siteSize": "Application",
-    "interactionTypes": ["Window controls", "File navigation"],
+    "interactionTypes": [
+      "Window controls",
+      "File navigation"
+    ],
     "keywords": [
       "Portfolio",
       "Culture",

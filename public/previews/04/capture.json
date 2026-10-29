@@ -1,12 +1,12 @@
 {
   "designId": "04",
-  "sourceRevision": "sha256:93e635bbf276f5244d7e1ee0318cdd19f3d32010bc569fbd476baead1cbaf6f6",
-  "capturedAt": "2026-10-26T22:48:02.830Z",
-  "browser": "156.0.4314.42",
+  "sourceRevision": "sha256:891706d1c6ac07e046f30166e083099c89361f1ddf6224d3cc40b2a657a2e85a",
+  "capturedAt": "2026-10-29T20:37:06.692Z",
+  "browser": "156.0.4314.50",
   "captures": [
     {
       "file": "/previews/04/desktop.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/04/16b274f55096686d-desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/04/3e9016cdf49be187-desktop.jpg",
       "route": "/preview/04-quiet-atelier/start",
       "viewport": {
         "width": 1440,
@@ -14,13 +14,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:93e635bbf276f5244d7e1ee0318cdd19f3d32010bc569fbd476baead1cbaf6f6",
-      "sha256": "16b274f55096686d8af8e84800d1e0adb2d48068ed54fb87e242a23dbccd056a",
+      "sourceRevision": "sha256:891706d1c6ac07e046f30166e083099c89361f1ddf6224d3cc40b2a657a2e85a",
+      "sha256": "3e9016cdf49be187db3f2dc9b9ac5dcd62f4e269fcc08366a349962312b3d52c",
       "fullPage": false
     },
     {
       "file": "/previews/04/mobile.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/04/9bc84cb892e3d8df-mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/04/41e1188d7190c1bc-mobile.jpg",
       "route": "/preview/04-quiet-atelier/start",
       "viewport": {
         "width": 390,
@@ -28,8 +28,8 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:93e635bbf276f5244d7e1ee0318cdd19f3d32010bc569fbd476baead1cbaf6f6",
-      "sha256": "9bc84cb892e3d8dfcdb4a40b672814458e071859c3db920e3df00869b60e5554",
+      "sourceRevision": "sha256:891706d1c6ac07e046f30166e083099c89361f1ddf6224d3cc40b2a657a2e85a",
+      "sha256": "41e1188d7190c1bc9a6fce57f6113c36ddd173972b35af31aefb19eb34381dd1",
       "fullPage": false
     },
     {
@@ -42,13 +42,13 @@
       },
       "state": "project",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:93e635bbf276f5244d7e1ee0318cdd19f3d32010bc569fbd476baead1cbaf6f6",
+      "sourceRevision": "sha256:891706d1c6ac07e046f30166e083099c89361f1ddf6224d3cc40b2a657a2e85a",
       "sha256": "58661d7f41249fdfbfad84cc827bfe1106ecf69e8d05291d828d06cdf74ecd97",
       "fullPage": false
     },
     {
       "file": "/previews/04/full-page.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/04/9e530bd4e444d305-full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/04/66d6d14c47ada9dd-full-page.jpg",
       "route": "/preview/04-quiet-atelier/start",
       "viewport": {
         "width": 1440,
@@ -56,8 +56,8 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:93e635bbf276f5244d7e1ee0318cdd19f3d32010bc569fbd476baead1cbaf6f6",
-      "sha256": "9e530bd4e444d305481e46bf334284aced9c3a49406905b77bdf4cc8f8277262",
+      "sourceRevision": "sha256:891706d1c6ac07e046f30166e083099c89361f1ddf6224d3cc40b2a657a2e85a",
+      "sha256": "66d6d14c47ada9ddce513387a63c96c0b3015e9a99dad5753c31ad83e4b6a631",
       "fullPage": true
     }
   ]

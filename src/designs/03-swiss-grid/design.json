@@ -7,10 +7,13 @@
   "family": "Clarity & editorial",
   "status": "ready",
   "thesis": "Build hierarchy through alignment, scale, and disciplined contrast.",
-  "suitableFor": ["Events", "Culture"],
+  "suitableFor": [
+    "Events",
+    "Culture"
+  ],
   "character": "Restrained",
   "traits": {
-    "composition": "Rigorous typographic grid with indexed programme rows",
+    "composition": "The conference is a single asymmetric typographic poster: an oversized FORM / 26 title and date share a vermilion slab, directly beside the ruled session programme. Actual event information replaces the separate promotional headline and introductory band.",
     "navigation": "Numbered sections and day filters",
     "typography": "Space Grotesk",
     "density": "Medium",
@@ -45,7 +48,7 @@
   "referenceImages": [
     {
       "file": "/previews/03/desktop.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/03/548518c54ef40c33-desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/03/1113c68acfadc032-desktop.jpg",
       "route": "/preview/03-swiss-grid/start",
       "viewport": {
         "width": 1440,
@@ -53,13 +56,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:be0af4de92315b109ca07cbb6badc215df66b70465077608899b77721b3456fb",
-      "sha256": "548518c54ef40c339f35828af79b419c7bd56d53c88efc1bb6560a5b5a4b76bf",
+      "sourceRevision": "sha256:cdcfb28119bd3bd5b2c4ae081638584ebdb3697d72f3ab43090ee2affe50b788",
+      "sha256": "1113c68acfadc032c6e69867263b727e65f3711f3f883abaebf07cca6818cb65",
       "fullPage": false
     },
     {
       "file": "/previews/03/mobile.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/03/239efd6294d44a4d-mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/03/5999c17578671209-mobile.jpg",
       "route": "/preview/03-swiss-grid/start",
       "viewport": {
         "width": 390,
@@ -67,8 +70,8 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:be0af4de92315b109ca07cbb6badc215df66b70465077608899b77721b3456fb",
-      "sha256": "239efd6294d44a4df99d8acf09b59015d58c57d725378e65ce54226542ecef91",
+      "sourceRevision": "sha256:cdcfb28119bd3bd5b2c4ae081638584ebdb3697d72f3ab43090ee2affe50b788",
+      "sha256": "5999c17578671209d506b2c2486b9774e0162e7a4857ba634050e8a4bc5f76de",
       "fullPage": false
     },
     {
@@ -81,13 +84,13 @@
       },
       "state": "speaker",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:be0af4de92315b109ca07cbb6badc215df66b70465077608899b77721b3456fb",
+      "sourceRevision": "sha256:cdcfb28119bd3bd5b2c4ae081638584ebdb3697d72f3ab43090ee2affe50b788",
       "sha256": "f8c5344a84df881a263c6bae2ddb8e2262288029ae3c13676394570ff0111c42",
       "fullPage": false
     },
     {
       "file": "/previews/03/full-page.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/03/77f5adbe28cd061f-full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/03/7b148d12aec240b8-full-page.jpg",
       "route": "/preview/03-swiss-grid/start",
       "viewport": {
         "width": 1440,
@@ -95,28 +98,43 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:be0af4de92315b109ca07cbb6badc215df66b70465077608899b77721b3456fb",
-      "sha256": "77f5adbe28cd061fe346d50a74fbf8ffe5547a5cce548bae6f9af28700015d21",
+      "sourceRevision": "sha256:cdcfb28119bd3bd5b2c4ae081638584ebdb3697d72f3ab43090ee2affe50b788",
+      "sha256": "7b148d12aec240b8eef0b4904a00def8b70b9b7855f4b1355837def56c334c5b",
       "fullPage": true
     }
   ],
   "sourcePath": "src/designs/03-swiss-grid",
-  "neighbours": ["31", "30"],
+  "neighbours": [
+    "31",
+    "30"
+  ],
   "palette": {
     "page": "#f4f2eb",
     "surface": "#ffffff",
     "ink": "#181a18",
     "accent": "#c6321e"
   },
-  "fonts": ["Space Grotesk"],
-  "brief": "**Philosophy and fit.** Build hierarchy through alignment, scale, and disciplined contrast. Suitable for conferences, studios, exhibitions, and editorial brands that want typography to carry their identity.\n\n**Visual grammar.** Use a visibly rigorous grid, left-aligned oversized headings, numbered sections, generous outer margins, and restrained image crops. Small labels align with large type rather than floating in pills. A neutral sans works across a severe size range. An off-white ground, near-black text, and one vermilion accent organise the composition. Navigation is a short indexed list; rules and whitespace divide material instead of card backgrounds.\n\n**Specimen and flow.** *Form Conference* lets visitors inspect the programme, filter sessions by day, and open a speaker profile. Supporting screens provide a programme detail with venue information and a saved-session list held locally.\n\n**Adaptation and identity.** On mobile, preserve alignment relationships while reducing the number of columns; the oversized heading must wrap deliberately. Preserve the grid and typographic hierarchy; avoid symmetric feature tiles, decorative shapes, and unrelated typefaces. Motion is limited to quiet state changes. **Effort: low.**",
+  "fonts": [
+    "Space Grotesk"
+  ],
+  "brief": "**Philosophy and fit.** Build hierarchy through alignment, scale, and disciplined contrast. Suitable for conferences, studios, exhibitions, and editorial brands that want typography to carry their identity.\n\n**Visual grammar.** Use a visibly rigorous grid, left-aligned oversized headings, numbered sections, generous outer margins, and restrained image crops. Small labels align with large type rather than floating in pills. A neutral sans works across a severe size range. An off-white ground, near-black text, and one vermilion accent organise the composition. Navigation is a short indexed list; rules and whitespace divide material instead of card backgrounds.\n\n**Composition.** The conference is a single asymmetric typographic poster: an oversized FORM / 26 title and date share a vermilion slab, directly beside the ruled session programme. Actual event information replaces the separate promotional headline and introductory band.\n\n**Specimen and flow.** _Form Conference_ lets visitors inspect the programme, filter sessions by day, and open a speaker profile. Supporting screens provide a programme detail with venue information and a saved-session list held locally.\n\n**Adaptation and identity.** On mobile, preserve alignment relationships while reducing the number of columns; the oversized heading must wrap deliberately. Preserve the grid and typographic hierarchy; avoid symmetric feature tiles, decorative shapes, and unrelated typefaces. Motion is limited to quiet state changes. **Effort: low.**",
   "scope": "An expansive sample page with representative local interactions; no production business backend.",
   "discovery": {
-    "industries": ["Events", "Design conference"],
-    "visitorGoals": ["Explore an event"],
-    "conversionActions": ["Reserve a place"],
+    "industries": [
+      "Events",
+      "Design conference"
+    ],
+    "visitorGoals": [
+      "Explore an event"
+    ],
+    "conversionActions": [
+      "Reserve a place"
+    ],
     "siteSize": "Small brochure",
-    "interactionTypes": ["Programme navigation", "Ticket selection"],
+    "interactionTypes": [
+      "Programme navigation",
+      "Ticket selection"
+    ],
     "keywords": [
       "Events",
       "Culture",

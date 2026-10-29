@@ -4,9 +4,11 @@
 
 **Visual grammar.** Use notebook-like entries with location, season, conditions, and annotated photographs. A modest section index gives access to routes, observations, and equipment. Moss green, sand, and charcoal accompany a readable serif, compact sans labels, and restrained line illustrations. Texture stays behind content and never carries information.
 
+**Composition.** An actual field entry opens the journal: report number, recorded conditions, distance and duration beside a tipped-in observation photograph. Ruled paper, a restrained annotation and practical route details establish a working notebook; there is no scenic marketing preface.
+
 **Specimen and flow.** _Ridge Journal_ documents fictional walking routes. Filter routes by terrain, read a route’s field report, and add required equipment to a local packing checklist. Supporting views include an observation detail and a saved-routes list with an empty state. Distances and conditions are explicitly sample data.
 
-**Responsive behaviour.** Annotations move beneath images in a numbered list. Route information appears before decorative imagery; checklists use large labelled controls and work without map gestures.
+**Responsive and inclusive behaviour.** Route conditions and preparation appear before the photograph on phones. The image becomes a clearly captioned notebook plate, followed by the terrain-filtered route index. Native buttons, visible focus, a direct return path and reduced-motion support preserve access to the same content.
 
 **Identity rules.** Preserve the relationship between observation and practical detail. Avoid turning the design into a generic green wellness site or making essential information resemble faint handwriting. **Effort: medium.**
 
@@ -26,7 +28,7 @@ Brand, subject, accent and equivalent licensed typefaces can change. Preserve co
 
 ## Tokens and typography
 
-Heading: Libre Baskerville. Reading: DM Sans. Local WOFF2 fonts with system fallbacks. Page #eeeadd; surface #ffffff; text #384331; accent #5b6f43. Eight-pixel base spacing; reading measure 65ch; width 1240px. See tokens.css for role values and Demo.vue for composition. Palette and type match the working specimen.
+Heading: Libre Baskerville. Reading: DM Sans. Local WOFF2 fonts with system fallbacks. Page #eeeadd; surface #ffffff; text #384331; accent #5b6f43. Base tokens define an eight-pixel spacing unit, 65ch reading measure and 1240px content width; the composition-specific rules in Demo.vue override these where the canvas, type or information density requires it. See tokens.css for role values and Demo.vue for composition. Palette and type match the working specimen.
 
 ## States
 
@@ -49,4 +51,4 @@ Reviewed working sample. Browser checks cover entry-page reflow at 320, 390, 768
 
 ## Distinctive composition
 
-The RIDGE wordmark stays unbroken on narrow phones; navigation wraps onto its own row. The field-journal composition is retained.
+An actual field entry opens the journal: report number, recorded conditions, distance and duration beside a tipped-in observation photograph. Ruled paper, a restrained annotation and practical route details establish a working notebook; there is no scenic marketing preface.

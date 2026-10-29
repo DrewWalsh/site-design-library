@@ -27,7 +27,7 @@ const filtered = computed(() =>
 );
 </script>
 <template>
-  <div class="specimen">
+  <div class="specimen" :class="{ entry: state === 'start' }">
     <a class="skip" href="#content">Skip to content</a>
     <header>
       <strong>↟ Northbank Footpaths</strong><span>A field atlas of a fictional district.</span>
@@ -37,13 +37,7 @@ const filtered = computed(() =>
       </nav>
     </header>
     <main id="content">
-      <div class="atlas-head">
-        <div>
-          <p class="eyebrow">FIND A DIFFERENT WAY THROUGH</p>
-          <h1>A little further<br />from the usual route.</h1>
-        </div>
-        <p>Three paths. A shared landscape.<br />Start with the ground beneath your feet.</p>
-      </div>
+      <h1 class="sr">Northbank Footpaths — map and trail atlas</h1>
       <div class="filters">
         <label>Find a trail<input v-model="q" placeholder="Search by name" /></label
         ><label
@@ -107,7 +101,12 @@ const filtered = computed(() =>
           </article>
         </section>
         <figure class="map" v-if="state !== 'list'">
-          <svg viewBox="0 0 820 620" role="img" aria-labelledby="map-title">
+          <svg
+            preserveAspectRatio="none"
+            viewBox="0 0 820 620"
+            role="img"
+            aria-labelledby="map-title"
+          >
             <title id="map-title">
               Fictional Northbank district: a river, woodland, orchard, and three selectable routes.
               The adjacent list provides every destination.
@@ -146,38 +145,19 @@ const filtered = computed(() =>
               <text x="450" y="565">RIVER ALDER</text>
               <text x="745" y="570">N ↑</text>
             </g>
-            <g
-              v-for="(t, i) in trails"
-              :key="t.name"
-              :transform="'translate(' + t.x + ',' + t.y + ')'"
-            >
-              <circle
-                r="22"
-                :fill="selected === i ? '#305e46' : '#fffdf0'"
-                stroke="#305e46"
-                stroke-width="2"
-              />
-              <text
-                text-anchor="middle"
-                y="5"
-                :fill="selected === i ? 'white' : '#305e46'"
-                font-family="sans-serif"
-                font-size="14"
-              >
-                0{{ i + 1 }}
-              </text>
-            </g>
           </svg>
           <div class="map-actions">
             <button
-              v-for="(t, i) in trails"
+              v-for="t in filtered"
               :key="t.name"
+              :style="{ left: (t.x / 820) * 100 + '%', top: (t.y / 620) * 100 + '%' }"
+              :aria-pressed="selected === trails.indexOf(t)"
               @click="
-                selected = i;
+                selected = trails.indexOf(t);
                 go('detail');
               "
             >
-              0{{ i + 1 }} {{ t.name }}
+              0{{ trails.indexOf(t) + 1 }}<span class="sr"> {{ t.name }}</span>
             </button>
           </div>
           <figcaption>
@@ -612,6 +592,236 @@ main {
   }
   .places > button {
     padding: 20px;
+  }
+}
+
+/* The entry is the experience itself; supporting routes retain its vocabulary. */
+
+h1.sr,
+.map-actions .sr {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip-path: inset(50%) !important;
+  white-space: nowrap !important;
+}
+.entry header {
+  max-width: none;
+  width: 100%;
+  padding: 20px 25px;
+  margin: 0;
+  border: 0;
+  background: #2b4439;
+  color: #f5f2df;
+  position: relative;
+  z-index: 5;
+}
+.entry header strong {
+  font-size: 17px;
+}
+.entry header > span {
+  font-size: 10px;
+}
+.entry header button {
+  font-size: 11px;
+  color: #f5f2df;
+}
+.entry main {
+  max-width: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.entry .filters {
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  z-index: 4;
+  background: #f5f2df;
+  padding: 18px;
+  width: 310px;
+  display: grid;
+  grid-template-columns: 1fr 95px;
+  gap: 12px;
+  box-shadow: 3px 4px 0 #83957f77;
+  border: 1px solid #8e9e87;
+}
+.entry .filters label {
+  font-size: 9px;
+}
+.entry .filters input,
+.entry .filters select {
+  font-size: 11px;
+  width: 100%;
+  min-width: 0;
+  max-width: none;
+  padding: 10px 8px;
+}
+.entry .filters > span {
+  grid-column: 1/3;
+  font-size: 10px;
+}
+.entry .atlas {
+  display: block;
+  position: relative;
+}
+.entry .places {
+  position: absolute;
+  left: 25px;
+  top: 180px;
+  z-index: 3;
+  background: #f5f2df;
+  width: 310px;
+  padding: 10px 18px;
+  box-shadow: 3px 4px 0 #83957f77;
+  border: 1px solid #8e9e87;
+}
+.entry .places > button {
+  padding: 18px 0;
+  gap: 12px;
+  border-bottom: 1px solid #aeb9a0;
+}
+.entry .places h2 {
+  font-size: 18px;
+  margin: 0 0 7px;
+}
+.entry .places p {
+  font-size: 11px;
+}
+.entry .places small {
+  font-size: 9px;
+}
+.entry .route-number {
+  font-size: 11px;
+}
+.entry .map {
+  height: calc(100svh - 80px);
+  min-height: 750px;
+  margin: 0;
+  border: 0;
+  position: relative;
+}
+.entry .map svg {
+  height: 100%;
+  width: 100%;
+}
+.entry .map figcaption {
+  position: absolute;
+  bottom: 12px;
+  right: 20px;
+  font-size: 9px;
+  background: #f5f2df;
+  padding: 8px 12px;
+  max-width: 300px;
+}
+.map-actions {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+.map-actions button {
+  position: absolute;
+  pointer-events: auto;
+  width: 44px;
+  height: 44px;
+  border: 2px solid #305e46;
+  border-radius: 50%;
+  background: #fffdf0;
+  color: #305e46;
+  font-size: 13px;
+  padding: 0;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 3px 0 #657c5d66;
+}
+.map-actions button[aria-pressed='true'] {
+  background: #305e46;
+  color: white;
+}
+.map {
+  position: relative;
+}
+.entry .atlas-note {
+  padding: 55px 7%;
+  background: #f0f0e4;
+}
+@media (max-width: 750px) {
+  .entry header {
+    padding: 18px 5%;
+    gap: 15px;
+  }
+  .entry header strong {
+    font-size: 13px;
+  }
+  .entry header > span {
+    display: none;
+  }
+  .entry header nav {
+    gap: 12px;
+  }
+  .entry header button {
+    font-size: 9px;
+  }
+  .entry .filters {
+    position: relative;
+    left: auto;
+    top: auto;
+    width: auto;
+    margin: 0;
+    padding: 18px 5%;
+    box-shadow: none;
+    border: 0;
+    grid-template-columns: minmax(0, 1fr) 95px 45px;
+    gap: 10px;
+  }
+  .entry .filters > span {
+    grid-column: 3;
+    align-self: end;
+    font-size: 9px;
+    padding-bottom: 12px;
+  }
+  .entry .atlas {
+    display: flex;
+    flex-direction: column;
+  }
+  .entry .map {
+    order: 1;
+    min-height: 0;
+    height: 460px;
+    width: 100%;
+  }
+  .entry .map figcaption {
+    font-size: 7px;
+    right: 10px;
+    bottom: 10px;
+    max-width: 180px;
+  }
+  .entry .places {
+    order: 2;
+    position: static;
+    width: auto;
+    margin: 0;
+    padding: 20px 6%;
+    box-shadow: none;
+    border: 0;
+  }
+  .entry .places h2 {
+    font-size: 21px;
+  }
+  .entry .places small {
+    font-size: 10px;
+  }
+  .entry .places > button {
+    padding: 20px 0;
+  }
+  .entry .atlas-note {
+    padding: 35px 6%;
   }
 }
 </style>

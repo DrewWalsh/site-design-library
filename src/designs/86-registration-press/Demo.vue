@@ -40,7 +40,7 @@ function printEdition() {
 }
 </script>
 <template>
-  <div class="specimen">
+  <div class="specimen" :class="{ entry: state === 'start' }">
     <a class="skip" href="#content">Skip to content</a>
 
     <header>
@@ -530,6 +530,153 @@ footer {
     transition: none !important;
     animation: none !important;
     scroll-behavior: auto !important;
+  }
+}
+
+/* The entry is the experience itself; supporting routes retain its vocabulary. */
+
+.entry {
+  position: relative;
+  background: #fff8e1;
+}
+.entry header {
+  position: absolute;
+  right: 28px;
+  bottom: auto;
+  top: 30px;
+  width: 220px;
+  z-index: 4;
+  display: block;
+  padding: 0;
+  border: 0;
+}
+.entry header strong {
+  display: none;
+}
+.entry header > span {
+  display: block;
+  font-size: 10px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  max-width: 120px;
+}
+.entry header button {
+  font-size: 11px;
+  background: #fff8e1;
+}
+.entry .print-sheet {
+  margin: 0;
+  width: 100%;
+  height: 100svh;
+  min-height: 800px;
+  border: 0;
+  overflow: hidden;
+  background: repeating-linear-gradient(0deg, transparent 0 29px, #182d3306 30px 31px);
+}
+.entry .plate {
+  position: absolute;
+  left: 3%;
+  top: 4%;
+  width: 74%;
+  height: 90%;
+}
+.entry .plate .ink {
+  font-size: clamp(100px, 23vw, 340px);
+  line-height: 0.76;
+  letter-spacing: -0.1em;
+}
+.entry .target {
+  right: 5%;
+  top: 36%;
+  width: 230px;
+  height: 230px;
+}
+.entry .target i {
+  border-width: 20px;
+}
+.entry .sheet-note {
+  right: 5%;
+  bottom: 18%;
+  max-width: 180px;
+  font-size: 14px;
+}
+.entry .sheet-note small {
+  font-size: 10px;
+}
+.entry .sheet-number {
+  right: 28px;
+  bottom: 25px;
+}
+.entry .press-controls {
+  position: relative;
+  z-index: 5;
+  margin: -90px 5% 0;
+  padding: 20px;
+  border: 2px solid;
+  background: #fff8e1;
+  box-shadow: 6px 6px 0 #182d33;
+}
+.entry .registration {
+  margin-top: 35px;
+}
+.entry .note-index {
+  margin: 30px 5% 60px;
+}
+@media (max-width: 750px) {
+  .entry header {
+    top: 18px;
+    right: 16px;
+    width: 135px;
+  }
+  .entry header > span {
+    font-size: 8px;
+    max-width: 120px;
+    margin-bottom: 8px;
+  }
+  .entry header button {
+    font-size: 9px;
+    padding: 8px;
+  }
+  .entry .print-sheet {
+    height: 670px;
+    min-height: 670px;
+  }
+  .entry .plate {
+    top: 140px;
+    left: 4%;
+    width: 92%;
+    height: 460px;
+  }
+  .entry .plate .ink {
+    font-size: 30vw;
+    line-height: 0.86;
+  }
+  .entry .target {
+    right: 5%;
+    top: 440px;
+    width: 105px;
+    height: 105px;
+  }
+  .entry .target i {
+    border-width: 10px;
+  }
+  .entry .sheet-note {
+    bottom: 35px;
+    left: 6%;
+    right: auto;
+    font-size: 11px;
+    max-width: 150px;
+  }
+  .entry .sheet-note small {
+    font-size: 9px;
+  }
+  .entry .press-controls {
+    margin: 0 5%;
+    padding: 18px;
+    gap: 15px;
+  }
+  .entry .registration {
+    padding: 0 5%;
   }
 }
 </style>

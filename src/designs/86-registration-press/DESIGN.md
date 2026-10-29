@@ -2,11 +2,11 @@
 
 **Idea.** Alignment is an editorial act: the layers only make sense together.
 
-**Composition.** Cyan and magenta print plates cross the whole viewport. Crop marks, overprinted letterforms and a large registration target make the browser feel like a sheet on a press.
+**Composition.** Overscale cyan and magenta letterforms bleed across an entire press bed. Registration rings, crop marks and a small edition docket are part of the physical sheet; a separate control bar operates the ink plates at its lower edge.
 
 **Navigation and complete example.** Align two ink plates for a fictional print exhibition, inspect six workshop notes and prepare a local print sheet containing the selected registration state.
 
-**Responsive and inclusive behaviour.** The print surface scales within the page; labelled numeric offset and snap buttons offer precise control without dragging. All controls are native buttons or labelled inputs. Movement is discretionary, no sound starts automatically, reduced-motion preferences remove transitions, and a direct index exposes the same content.
+**Responsive and inclusive behaviour.** The phone sheet uses a deliberate oversized crop while leaving the registration rings and edition action visible. Ink, offset and snap controls stay readable immediately below it. Native buttons, visible focus, a direct return path and reduced-motion support preserve access to the same content.
 
 **Adaptation.** Use overprinting for large display layers while keeping reading text single-colour. The registration state should expose a meaningful compositional relationship. Retain the relationship between navigation and content. Do not reduce the reference to a generic hero followed by interchangeable cards.
 

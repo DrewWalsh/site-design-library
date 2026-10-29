@@ -22,33 +22,22 @@ const workshops = [
 const booked = ref(false);
 </script>
 <template>
-  <div class="specimen">
+  <div class="specimen" :class="{ entry: state === 'start' }">
     <a class="skip" href="#content">Skip to content</a>
     <header>
       <strong>OPEN<br />BENCH↗</strong>
       <nav>
         <a :href="href('start') + '#board'">The workshop board</a
-        ><button @click="go('start')">About the space</button><span>MAKE / SHARE / REPEAT</span>
+        ><a :href="href('start') + '#space'">About the space</a><span>MAKE / SHARE / REPEAT</span>
       </nav>
     </header>
     <main id="content">
       <template v-if="state === 'start'"
-        ><section class="announcement">
-          <div>
-            <span class="label">YOUR HANDS HAVE IDEAS.</span>
-            <h1>COME IN.<br />MAKE A THING.</h1>
-            <p>
-              A shared workshop for useful skills, good company,<br />and projects that don’t fit on
-              your kitchen table.
-            </p>
-          </div>
-          <div class="notice">
-            <span>OPEN<br />TO<br />BEGINNERS.</span><b>YES, YOU. →</b>
-          </div>
-        </section>
+        ><h1 class="sr">Open Bench workshop noticeboard</h1>
         <section id="board" class="board">
           <div class="board-head">
-            <h2>WHAT’S ON THE BENCH?</h2>
+            <h2>NOVEMBER<br />ON THE BENCH.</h2>
+            <p>Tools, materials &amp; good company.<br />Beginners welcome.</p>
             <div class="row">
               <button
                 v-for="type in ['All', 'Wood', 'Print', 'Repair', 'Clay']"
@@ -75,6 +64,10 @@ const booked = ref(false);
                 <span>{{ w.type.toUpperCase() }}</span
                 ><span class="grow"></span><span>{{ w.date }}</span>
               </div>
+              <span class="date-stamp"
+                ><b>{{ w.date.split(' ')[1] }}</b
+                >NOV</span
+              >
               <h3>{{ w.name }}</h3>
               <div class="row">
                 <p>{{ w.places ? w.places + ' sample places' : 'FULL / SEE ALTERNATIVES' }}</p>
@@ -83,7 +76,7 @@ const booked = ref(false);
             </button>
           </div>
         </section>
-        <section class="how">
+        <section id="space" class="how">
           <h2>NO SECRET<br />HANDSHAKE.</h2>
           <div>
             <p>
@@ -647,5 +640,245 @@ header nav a {
   display: inline-flex;
   align-items: center;
   min-height: 32px;
+}
+
+/* The entry is the experience itself; supporting routes retain its vocabulary. */
+
+.entry {
+  background: #ecec79;
+  position: relative;
+}
+.entry header {
+  max-width: none;
+  width: 100%;
+  margin: 0;
+  padding: 20px 3%;
+  border-bottom: 6px solid #222921;
+  align-items: center;
+}
+.entry header strong {
+  font-size: 25px;
+  line-height: 0.85;
+}
+.entry header nav {
+  font-size: 12px;
+  gap: 30px;
+}
+.entry header nav > span {
+  font-size: 10px;
+}
+.entry main {
+  max-width: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.entry main > h1 {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip-path: inset(50%) !important;
+  white-space: nowrap !important;
+}
+.entry .board {
+  display: grid;
+  grid-template-columns: 260px minmax(0, 1fr);
+  gap: 0;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+.entry .board-head {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 35px 25px;
+  border-right: 6px solid #222921;
+  gap: 20px;
+}
+.entry .board-head h2 {
+  font-size: 31px;
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+.entry .board-head p {
+  font-size: 12px;
+}
+.entry .board-head .row {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  gap: 10px;
+}
+.entry .board-head button {
+  padding: 12px 18px;
+  font-size: 13px;
+  border: 3px solid #222921;
+  box-shadow: 5px 5px 0 #222921;
+  text-align: left;
+}
+.entry .board-head button[aria-pressed='true'] {
+  background: #222921;
+  color: #ecec79;
+  box-shadow: 5px 5px 0 #969d38;
+}
+.entry .notices {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.entry .notice-card {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  grid-template-rows: auto 1fr auto;
+  column-gap: 30px;
+  position: relative;
+  padding: 25px 35px;
+  border: 0;
+  border-bottom: 6px solid #222921;
+  box-shadow: none;
+  transform: none;
+  min-height: 235px;
+}
+.entry .notice-card > .row:first-child {
+  grid-column: 2;
+  grid-row: 1;
+  font-size: 10px;
+}
+.entry .notice-card > .row:first-child > span:last-child {
+  display: none;
+}
+.entry .date-stamp {
+  grid-column: 1;
+  grid-row: 1/4;
+  align-self: center;
+  font-weight: 700;
+  text-align: center;
+  font-size: 19px;
+  line-height: 1;
+  letter-spacing: 0.15em;
+}
+.entry .date-stamp b {
+  display: block;
+  font-size: 100px;
+  line-height: 0.9;
+  letter-spacing: -0.08em;
+  margin-bottom: 8px;
+}
+.entry .notice-card h3 {
+  grid-column: 2;
+  grid-row: 2;
+  font-size: clamp(30px, 4vw, 60px);
+  line-height: 1;
+  margin: 16px 0;
+}
+.entry .notice-card > .row:last-child {
+  grid-column: 2;
+  grid-row: 3;
+  font-size: 12px;
+}
+.entry .notice-card .row p {
+  font-size: 12px;
+  margin: 0;
+}
+.entry .n0 {
+  background: #ead5bc;
+}
+.entry .n1 {
+  background: #8dbac9;
+}
+.entry .n2 {
+  background: #c7b4de;
+}
+.entry .n3 {
+  background: #bdd594;
+}
+.entry .how {
+  padding: 60px 7%;
+  border: 0;
+}
+@media (max-width: 750px) {
+  .entry header {
+    padding: 20px 5%;
+    border-width: 4px;
+    gap: 15px;
+  }
+  .entry header strong {
+    font-size: 22px;
+  }
+  .entry header nav {
+    font-size: 10px;
+    gap: 12px;
+  }
+  .entry header nav > span {
+    display: none;
+  }
+  .entry .board {
+    display: block;
+  }
+  .entry .board-head {
+    border-right: 0;
+    border-bottom: 4px solid;
+    padding: 25px 6%;
+    gap: 12px;
+  }
+  .entry .board-head h2 {
+    font-size: 25px;
+    margin: 0;
+  }
+  .entry .board-head h2 br {
+    display: none;
+  }
+  .entry .board-head p {
+    font-size: 11px;
+    margin: 0;
+  }
+  .entry .board-head .row {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .entry .board-head button {
+    font-size: 10px;
+    padding: 10px 12px;
+    border-width: 2px;
+    box-shadow: 3px 3px 0;
+  }
+  .entry .notice-card {
+    grid-template-columns: 65px minmax(0, 1fr);
+    gap: 0 18px;
+    padding: 22px 6%;
+    min-height: 210px;
+    border-width: 4px;
+  }
+  .entry .date-stamp {
+    font-size: 12px;
+  }
+  .entry .date-stamp b {
+    font-size: 58px;
+  }
+  .entry .notice-card h3 {
+    font-size: 31px;
+  }
+  .entry .notice-card > .row:first-child {
+    font-size: 9px;
+  }
+  .entry .notice-card .row p {
+    font-size: 10px;
+  }
+}
+
+.entry .date-stamp b {
+  white-space: nowrap;
+}
+@media (max-width: 750px) {
+  .entry .date-stamp b {
+    font-size: 48px;
+  }
 }
 </style>

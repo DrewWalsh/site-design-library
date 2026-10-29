@@ -26,7 +26,7 @@ function save() {
 }
 </script>
 <template>
-  <div class="specimen">
+  <div class="specimen" :class="{ entry: state === 'start' }">
     <a class="skip" href="#content">Skip to content</a>
     <header>
       <strong>RIDGE<br /><span>JOURNAL</span></strong>
@@ -38,10 +38,8 @@ function save() {
     </header>
     <main id="content">
       <template v-if="state === 'start'"
-        ><div class="title">
-          <p class="eyebrow">FIELD SEASON / AUTUMN 2026</p>
-          <h1>Take the long<br />way round.</h1>
-          <p>Routes, observations, and the things worth noticing along the way.</p>
+        ><div class="field-record">
+          <span>FIELD NOTE / 014</span><span>26 OCT 2026<br />WOODLAND / AUTUMN</span>
         </div>
         <section class="featured">
           <figure>
@@ -54,11 +52,12 @@ function save() {
               loading="lazy"
             />
             <figcaption>FIG. 01 · Woodland and water, illustrative field study.</figcaption>
-            <span class="annotation">01 / STILL WATER<br />Look for reflected light.</span>
+            <span class="annotation">01 / STILL WATER<br />Look for reflected light.</span
+            ><span class="field-mark" aria-hidden="true">A</span>
           </figure>
           <article>
             <p class="eyebrow">REPORT 014 / WOODLAND</p>
-            <h2>The upper<br />lake circuit.</h2>
+            <h1>The upper<br />lake circuit.</h1>
             <p>
               A morning route through sheltering trees and open water. Best taken slowly, with time
               to stop.
@@ -68,6 +67,8 @@ function save() {
               <dd>7.2 km</dd>
               <dt>Time</dt>
               <dd>2½ hours</dd>
+              <dt>Recorded</dt>
+              <dd>08:15 / cool &amp; overcast</dd>
               <dt>Conditions</dt>
               <dd>Mixed paths / sample data</dd>
             </dl>
@@ -675,6 +676,224 @@ main {
     justify-content: space-between;
     margin-left: 0;
     gap: 12px;
+  }
+}
+
+/* The entry is the experience itself; supporting routes retain its vocabulary. */
+
+.entry {
+  background: #c8c4b4;
+  padding: 30px 5%;
+}
+.entry header {
+  max-width: 1350px;
+  width: 100%;
+  margin: auto;
+  padding: 0 0 25px;
+  border: 0;
+}
+.entry header strong {
+  font-size: 28px;
+}
+.entry header nav {
+  font-size: 11px;
+}
+.entry header > span {
+  font-size: 9px;
+}
+.entry main {
+  max-width: 1350px;
+  width: 100%;
+  padding: 30px 6% 60px;
+  margin: auto;
+  background: #eeeadd;
+  background-image:
+    linear-gradient(90deg, transparent 35px, #b5837133 35px, #b5837133 36px, transparent 36px),
+    repeating-linear-gradient(0deg, transparent 0 31px, #53634710 31px 32px);
+  box-shadow: 8px 9px 0 #a8a592;
+}
+.field-record {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #88917a;
+  padding: 0 0 25px;
+  font-size: 10px;
+  letter-spacing: 0.13em;
+}
+.field-record > span:last-child {
+  text-align: right;
+  font-size: 9px;
+  line-height: 1.8;
+}
+.entry .featured {
+  display: grid;
+  grid-template-columns: 40% minmax(0, 1fr);
+  gap: 7%;
+  padding: 40px 0 55px;
+  margin: 0;
+  align-items: start;
+}
+.entry .featured article {
+  grid-column: 1;
+  grid-row: 1;
+  padding-top: 0;
+}
+.entry .featured article > .eyebrow {
+  font-size: 9px;
+}
+.entry .featured h1 {
+  font:
+    36px/1.25 'Libre Baskerville',
+    serif;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  margin: 20px 0;
+}
+.entry .featured article > p:not(.eyebrow) {
+  font-size: 13px;
+  line-height: 1.9;
+}
+.entry .featured dl {
+  font-size: 11px;
+  gap: 15px 20px;
+  border-block: 1px solid #a5ae97;
+  padding: 20px 0;
+  margin: 25px 0;
+}
+.entry .featured button {
+  font-size: 11px;
+}
+.entry .featured figure {
+  grid-column: 2;
+  grid-row: 1;
+  transform: rotate(3deg);
+  padding: 12px 12px 55px;
+  background: #fffdf4;
+  box-shadow: 4px 7px 0 #b5b3a155;
+  position: relative;
+  margin: 20px 0 0;
+}
+.entry .featured figure::before {
+  content: '';
+  position: absolute;
+  top: -12px;
+  left: 35%;
+  width: 105px;
+  height: 30px;
+  background: #ccb89099;
+  transform: rotate(-8deg);
+  z-index: 2;
+}
+.entry .featured img {
+  width: 100%;
+  height: 430px;
+  object-fit: cover;
+}
+.entry .featured figcaption {
+  font-size: 9px;
+  line-height: 1.6;
+  margin: 14px 3px 0;
+}
+.entry .annotation {
+  bottom: 110px;
+  left: 25px;
+  font-size: 9px;
+  line-height: 1.6;
+  background: #eeeadd;
+  padding: 10px;
+  transform: rotate(-3deg);
+}
+.field-mark {
+  position: absolute;
+  right: 10%;
+  top: 35%;
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-content: center;
+  border: 2px solid white;
+  border-radius: 50%;
+  color: white;
+  font: 20px Georgia;
+}
+.entry .routes {
+  padding-top: 35px;
+  border-top: 2px solid #7e8b70;
+}
+.entry .routes h2 {
+  font-size: 27px;
+}
+.entry .routes button {
+  padding: 25px 0;
+}
+.entry .routes h3 {
+  font-size: 24px;
+}
+@media (max-width: 750px) {
+  .entry {
+    padding: 22px 4%;
+  }
+  .entry header {
+    padding: 0 2% 22px;
+  }
+  .entry header > span {
+    display: none;
+  }
+  .entry main {
+    padding: 25px 8% 40px;
+  }
+  .field-record {
+    font-size: 8px;
+    gap: 15px;
+    padding-bottom: 18px;
+  }
+  .field-record > span:last-child {
+    font-size: 7px;
+  }
+  .entry .featured {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px 0 40px;
+  }
+  .entry .featured article {
+    order: 1;
+    width: 100%;
+  }
+  .entry .featured h1 {
+    font-size: 30px;
+  }
+  .entry .featured article > p:not(.eyebrow) {
+    font-size: 12px;
+  }
+  .entry .featured dl {
+    font-size: 10px;
+    gap: 12px;
+  }
+  .entry .featured figure {
+    order: 2;
+    width: 100%;
+    padding: 8px 8px 25px;
+    transform: rotate(2deg);
+    margin: 15px 0;
+  }
+  .entry .featured img {
+    height: 330px;
+  }
+  .entry .annotation {
+    font-size: 8px;
+    bottom: 95px;
+    left: 20px;
+    padding: 9px;
+  }
+  .entry .featured figcaption {
+    font-size: 8px;
+  }
+  .entry .routes h2 {
+    font-size: 24px;
+  }
+  .entry .routes h3 {
+    font-size: 22px;
   }
 }
 </style>

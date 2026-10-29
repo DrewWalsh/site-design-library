@@ -47,7 +47,7 @@ function zoom(n: number) {
 }
 </script>
 <template>
-  <div class="specimen">
+  <div class="specimen" :class="{ entry: state === 'start' }">
     <a class="skip" href="#content">Skip to content</a>
 
     <header>
@@ -650,6 +650,178 @@ footer {
     transition: none !important;
     animation: none !important;
     scroll-behavior: auto !important;
+  }
+}
+
+/* The entry is the experience itself; supporting routes retain its vocabulary. */
+
+.entry {
+  position: relative;
+}
+.entry header {
+  position: absolute;
+  z-index: 4;
+  left: 3%;
+  right: 3%;
+  top: 25px;
+  padding: 0;
+  border: 0;
+  align-items: flex-start;
+}
+.entry header strong {
+  font-size: 14px;
+  letter-spacing: 0.2em;
+  background: #eee6d1d9;
+  padding: 12px;
+}
+.entry header > span {
+  display: none;
+}
+.entry header button {
+  background: #eee6d1e8;
+  font-size: 10px;
+  padding: 12px;
+}
+.entry .scale-scene {
+  height: 100svh;
+  min-height: 800px;
+  overflow: hidden;
+}
+.entry .scale-scene > svg {
+  height: 100%;
+  width: 100%;
+}
+.entry .scene-caption {
+  left: auto;
+  right: 5%;
+  bottom: 8%;
+  max-width: 340px;
+  background: #eee6d1ee;
+  padding: 22px;
+  box-shadow: 6px 6px 0 #354a4230;
+}
+.entry .scene-caption h1 {
+  font-size: 27px;
+  line-height: 1.2;
+  margin: 15px 0;
+}
+.entry .scene-caption > span {
+  font-size: 9px;
+}
+.entry .scene-caption button {
+  font-size: 10px;
+}
+.entry .ruler {
+  top: 110px;
+  right: 5%;
+  background: #eee6d1d9;
+  padding: 18px;
+}
+.entry .zoom-controls {
+  right: 5%;
+  top: 45%;
+  bottom: auto;
+  display: flex;
+  gap: 10px;
+}
+.entry .zoom-controls button {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  font-size: 30px;
+  background: #eee6d1e8;
+}
+.entry .scale-index {
+  position: absolute;
+  left: 3%;
+  top: 20%;
+  width: 150px;
+  display: grid;
+  grid-template-columns: 1fr;
+  border: 0;
+  margin: 0;
+  background: #eee6d1e8;
+}
+.entry .scale-index button {
+  border: 0;
+  border-left: 3px solid #354a4250;
+  padding: 14px 18px;
+  font-size: 16px;
+}
+.entry .scale-index button:first-child {
+  border-left: 3px solid #354a4250;
+}
+.entry .scale-index span {
+  font-size: 8px;
+}
+.entry .scale-index small {
+  font-size: 8px;
+}
+.entry .scale-index button[aria-pressed='true'] {
+  border-left: 9px solid #9c5f43;
+}
+.entry .scale-question {
+  padding: 40px 5%;
+}
+@media (max-width: 750px) {
+  .entry header {
+    top: 18px;
+    left: 5%;
+    right: 5%;
+    gap: 15px;
+  }
+  .entry header strong {
+    font-size: 10px;
+    padding: 9px;
+  }
+  .entry header button {
+    font-size: 9px;
+    padding: 9px;
+  }
+  .entry .scale-scene {
+    min-height: 760px;
+    height: 100svh;
+  }
+  .entry .scale-index {
+    left: 5%;
+    top: 100px;
+    width: 110px;
+  }
+  .entry .scale-index button {
+    font-size: 12px;
+    padding: 10px 12px;
+  }
+  .entry .scale-index small {
+    font-size: 8px;
+  }
+  .entry .ruler {
+    top: 100px;
+    right: 5%;
+    padding: 12px;
+    max-width: 135px;
+  }
+  .entry .ruler i {
+    width: 100px;
+  }
+  .entry .zoom-controls {
+    top: 45%;
+    right: 5%;
+    flex-direction: column;
+  }
+  .entry .zoom-controls button {
+    width: 45px;
+    height: 45px;
+    font-size: 27px;
+  }
+  .entry .scene-caption {
+    left: 5%;
+    right: 5%;
+    bottom: 5%;
+    max-width: none;
+    padding: 22px;
+  }
+  .entry .scene-caption h1 {
+    font-size: 27px;
   }
 }
 </style>

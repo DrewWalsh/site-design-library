@@ -20,7 +20,7 @@ const form = ref('Circle'),
   registered = ref(false);
 </script>
 <template>
-  <div class="specimen">
+  <div class="specimen" :class="{ entry: state === 'start' }">
     <a class="skip" href="#content">Skip to content</a>
     <header>
       <strong>FORM<br />SCHOOL</strong>
@@ -31,29 +31,12 @@ const form = ref('Circle'),
     </header>
     <main id="content">
       <template v-if="state === 'start'"
-        ><section class="composition">
-          <div class="type">
-            <p class="eyebrow">A SCHOOL FOR CURIOUS HANDS</p>
-            <h1>Think.<br />Make.<br />Begin again.</h1>
-            <p>Practical workshops in shape, colour, and the useful act of trying something.</p>
-          </div>
-          <div
-            class="geometry"
-            aria-label="Original composition of a red circle, blue plane, and yellow square"
-            role="img"
-          >
-            <i class="circle"></i><i class="square"></i><i class="triangle"></i
-            ><span>01 / FORM IS A QUESTION.</span>
-          </div>
-          <div class="small-block">
-            <span>OPEN<br />TO EVERYONE.</span>
-            <p>No experience required.<br />Just a willingness to begin.</p>
-          </div>
-        </section>
+        ><h1 class="sr">Form School: learn through three geometric programmes</h1>
         <section class="programme" id="programme">
           <div class="sectionlabel">
             <span>01 / PROGRAMME</span>
-            <h2>Put an idea<br />in your hands.</h2>
+            <h2>SATURDAY<br />STUDIO</h2>
+            <p>07 / 14 / 21 NOVEMBER<br />Materials included.</p>
           </div>
           <button
             v-for="(w, i) in workshops"
@@ -683,6 +666,222 @@ main {
   .shape-stage {
     gap: 15px;
     min-height: 260px;
+  }
+}
+
+/* The entry is the experience itself; supporting routes retain its vocabulary. */
+
+.entry {
+  position: relative;
+  background: #e8e3d5;
+  padding-left: 95px;
+}
+.entry header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 95px;
+  max-width: none;
+  margin: 0;
+  padding: 30px 15px;
+  background: #252622;
+  color: #eee9dc;
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 40px;
+}
+.entry header strong {
+  font: 38px/0.9 var(--font-heading);
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+.entry header nav {
+  display: flex;
+  flex-direction: column;
+  writing-mode: vertical-rl;
+  gap: 25px;
+  font-size: 11px;
+}
+.entry header nav span {
+  display: none;
+}
+.entry header button {
+  color: inherit;
+}
+.entry main {
+  width: auto;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+.entry main > h1 {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip-path: inset(50%) !important;
+  white-space: nowrap !important;
+}
+.entry .programme {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  min-height: 100svh;
+  border: 0;
+}
+.entry .sectionlabel {
+  grid-column: 1;
+  grid-row: 2;
+  padding: 30px 7%;
+  align-self: end;
+  border: 0;
+}
+.entry .sectionlabel > span {
+  font-size: 10px;
+}
+.entry .sectionlabel h2 {
+  font: 28px/1.1 var(--font-heading);
+  margin: 15px 0;
+}
+.entry .sectionlabel p {
+  font-size: 12px;
+  line-height: 1.8;
+}
+.entry .workshop {
+  padding: 40px 12%;
+  border: 0;
+  box-shadow: none;
+  text-align: left;
+  border-radius: 0;
+  min-width: 0;
+}
+.entry .w0 {
+  grid-column: 1;
+  grid-row: 1/3;
+  align-self: start;
+  justify-self: center;
+  width: 92%;
+  aspect-ratio: 1;
+  min-height: 0;
+  background: #bc3525;
+  color: #fff2dc;
+  border-radius: 50%;
+  margin-top: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 12%;
+}
+.entry .w1 {
+  grid-column: 2;
+  grid-row: 1;
+  background: #24539a;
+  color: #fff2dc;
+}
+.entry .w2 {
+  grid-column: 2;
+  grid-row: 2;
+  background: #e8c344;
+  color: #252622;
+}
+.entry .workshop .symbol {
+  height: 90px;
+  font-size: 80px;
+  line-height: 1;
+}
+.entry .w0 .symbol {
+  display: none;
+}
+.entry .workshop h3 {
+  font: clamp(30px, 4vw, 62px)/1 var(--font-heading);
+  letter-spacing: -0.05em;
+  margin: 25px 0;
+}
+.entry .workshop small {
+  font-size: 11px;
+}
+.entry .workshop p {
+  font-size: 14px;
+}
+.entry .workshop b {
+  font-size: 11px;
+}
+@media (max-width: 750px) {
+  .entry {
+    padding-left: 38px;
+  }
+  .entry header {
+    width: 38px;
+    padding: 18px 8px;
+    gap: 25px;
+  }
+  .entry header strong {
+    font-size: 24px;
+  }
+  .entry header nav {
+    font-size: 10px;
+    gap: 18px;
+  }
+  .entry .programme {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+  }
+  .entry .w0 {
+    order: 1;
+    width: 94%;
+    padding: 45px 13%;
+    margin: 15px auto;
+    min-height: 330px;
+  }
+  .entry .w1 {
+    order: 2;
+  }
+  .entry .w2 {
+    order: 3;
+  }
+  .entry .sectionlabel {
+    order: 4;
+    padding: 30px 9%;
+  }
+  .entry .workshop {
+    padding: 30px 9%;
+    min-height: 300px;
+  }
+  .entry .workshop h3 {
+    font-size: 38px;
+  }
+  .entry .w0 h3 {
+    font-size: 37px;
+    max-width: 7em;
+  }
+  .entry .workshop .symbol {
+    height: 60px;
+    font-size: 60px;
+  }
+}
+@media (max-width: 750px) {
+  .entry header {
+    padding: 18px 3px;
+    z-index: 4;
+  }
+  .entry header strong {
+    font-size: 16px;
+  }
+  .entry header nav {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
   }
 }
 </style>

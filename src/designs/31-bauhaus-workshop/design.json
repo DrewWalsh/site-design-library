@@ -7,10 +7,13 @@
   "family": "Playful & material",
   "status": "ready",
   "thesis": "Give each shape, colour, and alignment a clear organising role.",
-  "suitableFor": ["Education", "Events"],
+  "suitableFor": [
+    "Education",
+    "Events"
+  ],
   "character": "Expressive",
   "traits": {
-    "composition": "Rectilinear programme grid with geometric category markers",
+    "composition": "A strict asymmetric programme is the opening: a red circular workshop entrance, a blue resource block and a yellow material block carry real syllabuses. The school name occupies a black vertical nameplate; dates belong inside the programme grid.",
     "navigation": "Geometric programme index and syllabus",
     "typography": "Space Grotesk + DM Sans",
     "density": "Medium",
@@ -45,7 +48,7 @@
   "referenceImages": [
     {
       "file": "/previews/31/desktop.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/31/a339bd30789484c7-desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/31/be1328ea7d989daa-desktop.jpg",
       "route": "/preview/31-bauhaus-workshop/start",
       "viewport": {
         "width": 1440,
@@ -53,13 +56,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:e421eb9c96d2936a740bbca8044c8b15cfba79ecfbc6413252eea39df6fd5407",
-      "sha256": "a339bd30789484c705404fbbfe4f72386e27cc67900314e295cf6c0e3a4e4189",
+      "sourceRevision": "sha256:9827dcf326ad656aeb3cfcd58f515ce08a67aca3128576cb9b95e13afae222eb",
+      "sha256": "be1328ea7d989daa01f081f3c2214c3e20b1e2942a112f3e379dfcec12bcaea1",
       "fullPage": false
     },
     {
       "file": "/previews/31/mobile.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/31/819a8e567e989f03-mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/31/0dd7aaab2d708cb4-mobile.jpg",
       "route": "/preview/31-bauhaus-workshop/start",
       "viewport": {
         "width": 390,
@@ -67,8 +70,8 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:e421eb9c96d2936a740bbca8044c8b15cfba79ecfbc6413252eea39df6fd5407",
-      "sha256": "819a8e567e989f033ebf59517cf8069f0edfbb6503628ade8d38e72b07c113c9",
+      "sourceRevision": "sha256:9827dcf326ad656aeb3cfcd58f515ce08a67aca3128576cb9b95e13afae222eb",
+      "sha256": "0dd7aaab2d708cb4f0a1f8d8ff57a21e1dbd19ab90fbb98df13d40915c54181f",
       "fullPage": false
     },
     {
@@ -81,13 +84,13 @@
       },
       "state": "workshop",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:e421eb9c96d2936a740bbca8044c8b15cfba79ecfbc6413252eea39df6fd5407",
+      "sourceRevision": "sha256:9827dcf326ad656aeb3cfcd58f515ce08a67aca3128576cb9b95e13afae222eb",
       "sha256": "17a3f6638c3c4f61c46519275dadd861bfc24f065990c3dce359265a3fc52a80",
       "fullPage": false
     },
     {
       "file": "/previews/31/full-page.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/31/4289ae93a5a71408-full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/31/88d48855a8f760a9-full-page.jpg",
       "route": "/preview/31-bauhaus-workshop/start",
       "viewport": {
         "width": 1440,
@@ -95,28 +98,45 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:e421eb9c96d2936a740bbca8044c8b15cfba79ecfbc6413252eea39df6fd5407",
-      "sha256": "4289ae93a5a71408f3001cd8243bb8d5a3fd26056dd5306f6819669a280ec40f",
+      "sourceRevision": "sha256:9827dcf326ad656aeb3cfcd58f515ce08a67aca3128576cb9b95e13afae222eb",
+      "sha256": "88d48855a8f760a99bdada05046548dfd169b9b24892865b7126357bfb9e84f3",
       "fullPage": true
     }
   ],
   "sourcePath": "src/designs/31-bauhaus-workshop",
-  "neighbours": ["03", "32"],
+  "neighbours": [
+    "03",
+    "32"
+  ],
   "palette": {
     "page": "#eee9dc",
     "surface": "#ffffff",
     "ink": "#252622",
     "accent": "#b93627"
   },
-  "fonts": ["Space Grotesk", "DM Sans"],
-  "brief": "**Philosophy and fit.** Give each shape, colour, and alignment a clear organising role. Useful for design schools, creative workshops, modular products, and educational programmes.\n\n**Visual grammar.** Strong rectilinear grids support circular markers, primary-colour planes, black rules, and compact grotesque typography. Asymmetry comes from purposeful spans rather than scattered objects. Red identifies workshops, blue identifies resources, and yellow identifies demonstrations, with matching text labels so colour is never the only distinction.\n\n**Specimen and flow.** *Form School* teaches fictional making workshops. Browse a geometric programme index, open a workshop syllabus, and select a session in a local registration demonstration. Supporting views include an instructor profile and a full-session state with alternative dates. A simple shape-building exercise illustrates the school’s practical approach.\n\n**Responsive behaviour.** Grid spans collapse into a coherent reading order. Decorative geometry moves around the content rather than forcing the content into tiny compartments; the exercise includes button-based controls.\n\n**Identity rules.** Preserve geometric discipline, clear categories, and deliberate alignment. Avoid decorative primary-colour confetti or borrowing the same loose arrangement as Pop Memphis. **Effort: medium.**",
+  "fonts": [
+    "Space Grotesk",
+    "DM Sans"
+  ],
+  "brief": "**Philosophy and fit.** Give each shape, colour, and alignment a clear organising role. Useful for design schools, creative workshops, modular products, and educational programmes.\n\n**Visual grammar.** Strong rectilinear grids support circular markers, primary-colour planes, black rules, and compact grotesque typography. Asymmetry comes from purposeful spans rather than scattered objects. Red identifies workshops, blue identifies resources, and yellow identifies demonstrations, with matching text labels so colour is never the only distinction.\n\n**Composition.** A strict asymmetric programme is the opening: a red circular workshop entrance, a blue resource block and a yellow material block carry real syllabuses. The school name occupies a black vertical nameplate; dates belong inside the programme grid.\n\n**Specimen and flow.** _Form School_ teaches fictional making workshops. Browse a geometric programme index, open a workshop syllabus, and select a session in a local registration demonstration. Supporting views include an instructor profile and a full-session state with alternative dates. A simple shape-building exercise illustrates the school’s practical approach.\n\n**Responsive and inclusive behaviour.** The phone starts with the circular workshop entrance, followed by distinct blue and yellow programme planes. Geometric regions remain large readable destinations. Native buttons, visible focus, a direct return path and reduced-motion support preserve access to the same content.\n\n**Identity rules.** Preserve geometric discipline, clear categories, and deliberate alignment. Avoid decorative primary-colour confetti or borrowing the same loose arrangement as Pop Memphis. **Effort: medium.**",
   "scope": "An expansive sample page with representative local interactions; no production business backend.",
   "discovery": {
-    "industries": ["Design", "Art", "Education"],
-    "visitorGoals": ["Explore a workshop"],
-    "conversionActions": ["Choose a workshop"],
+    "industries": [
+      "Design",
+      "Art",
+      "Education"
+    ],
+    "visitorGoals": [
+      "Explore a workshop"
+    ],
+    "conversionActions": [
+      "Choose a workshop"
+    ],
     "siteSize": "Small brochure",
-    "interactionTypes": ["Composition controls", "Workshop details"],
+    "interactionTypes": [
+      "Composition controls",
+      "Workshop details"
+    ],
     "keywords": [
       "Education",
       "Events",

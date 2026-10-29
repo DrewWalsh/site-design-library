@@ -13,7 +13,7 @@
   ],
   "character": "Restrained",
   "traits": {
-    "composition": "Field report with observation labels, annotated landscape, and preparation notes",
+    "composition": "An actual field entry opens the journal: report number, recorded conditions, distance and duration beside a tipped-in observation photograph. Ruled paper, a restrained annotation and practical route details establish a working notebook; there is no scenic marketing preface.",
     "navigation": "Terrain filters, route reports, and a packing checklist",
     "typography": "Libre Baskerville + DM Sans",
     "density": "Medium",
@@ -48,7 +48,7 @@
   "referenceImages": [
     {
       "file": "/previews/26/desktop.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/26/31c98a58d844b94d-desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/26/de10125af3ce4034-desktop.jpg",
       "route": "/preview/26-field-notes/start",
       "viewport": {
         "width": 1440,
@@ -56,13 +56,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:be0865a7eb35e0ed1e718f7e966e8888ff4f89965c3e46c210894abddab7bf41",
-      "sha256": "31c98a58d844b94d984529ec33064a4405a53a4a916934a76f5e3ea97ac5083c",
+      "sourceRevision": "sha256:96faf9539641a4e98323315d5db2385ea39a28a3940f34a2ae7094f1b9379183",
+      "sha256": "de10125af3ce403493a7063a929955a76a73d15c5862f40fbf791bef0745f64c",
       "fullPage": false
     },
     {
       "file": "/previews/26/mobile.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/26/b89fd7df8346f428-mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/26/4abfa78b1e8c3bdf-mobile.jpg",
       "route": "/preview/26-field-notes/start",
       "viewport": {
         "width": 390,
@@ -70,8 +70,8 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:be0865a7eb35e0ed1e718f7e966e8888ff4f89965c3e46c210894abddab7bf41",
-      "sha256": "b89fd7df8346f428dc507d5c3a8afd8458693ef5bee44acae0d1beaf215eedb3",
+      "sourceRevision": "sha256:96faf9539641a4e98323315d5db2385ea39a28a3940f34a2ae7094f1b9379183",
+      "sha256": "4abfa78b1e8c3bdfd45ae8fe47b302ef018558e14959025619ac4897629a3b9b",
       "fullPage": false
     },
     {
@@ -84,13 +84,13 @@
       },
       "state": "report",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:be0865a7eb35e0ed1e718f7e966e8888ff4f89965c3e46c210894abddab7bf41",
+      "sourceRevision": "sha256:96faf9539641a4e98323315d5db2385ea39a28a3940f34a2ae7094f1b9379183",
       "sha256": "f39f503e777b795a06e173de364d344600c5b66def23bbed032bb9d357b2169a",
       "fullPage": false
     },
     {
       "file": "/previews/26/full-page.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/26/62da6cd20480b9d4-full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/26/7b89841e4748ced4-full-page.jpg",
       "route": "/preview/26-field-notes/start",
       "viewport": {
         "width": 1440,
@@ -98,8 +98,8 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:be0865a7eb35e0ed1e718f7e966e8888ff4f89965c3e46c210894abddab7bf41",
-      "sha256": "62da6cd20480b9d49b1e8edcc67f30345317e39f1c248fddfdc9a700db5632ed",
+      "sourceRevision": "sha256:96faf9539641a4e98323315d5db2385ea39a28a3940f34a2ae7094f1b9379183",
+      "sha256": "7b89841e4748ced4f1a6a56cfe771e2962fd5ae4498d4bd3a506ab10feca1451",
       "fullPage": true
     }
   ],
@@ -118,7 +118,7 @@
     "Libre Baskerville",
     "DM Sans"
   ],
-  "brief": "**Philosophy and fit.** Organise discovery around observation, place, and practical preparation. Fits outdoor guides, conservation groups, travel journals, and field-based education.\n\n**Visual grammar.** Use notebook-like entries with location, season, conditions, and annotated photographs. A modest section index gives access to routes, observations, and equipment. Moss green, sand, and charcoal accompany a readable serif, compact sans labels, and restrained line illustrations. Texture stays behind content and never carries information.\n\n**Specimen and flow.** *Ridge Journal* documents fictional walking routes. Filter routes by terrain, read a route’s field report, and add required equipment to a local packing checklist. Supporting views include an observation detail and a saved-routes list with an empty state. Distances and conditions are explicitly sample data.\n\n**Responsive behaviour.** Annotations move beneath images in a numbered list. Route information appears before decorative imagery; checklists use large labelled controls and work without map gestures.\n\n**Identity rules.** Preserve the relationship between observation and practical detail. Avoid turning the design into a generic green wellness site or making essential information resemble faint handwriting. **Effort: medium.**\n\n**Distinctive composition.** The RIDGE wordmark stays unbroken on narrow phones; navigation wraps onto its own row. The field-journal composition is retained.",
+  "brief": "**Philosophy and fit.** Organise discovery around observation, place, and practical preparation. Fits outdoor guides, conservation groups, travel journals, and field-based education.\n\n**Visual grammar.** Use notebook-like entries with location, season, conditions, and annotated photographs. A modest section index gives access to routes, observations, and equipment. Moss green, sand, and charcoal accompany a readable serif, compact sans labels, and restrained line illustrations. Texture stays behind content and never carries information.\n\n**Composition.** An actual field entry opens the journal: report number, recorded conditions, distance and duration beside a tipped-in observation photograph. Ruled paper, a restrained annotation and practical route details establish a working notebook; there is no scenic marketing preface.\n\n**Specimen and flow.** _Ridge Journal_ documents fictional walking routes. Filter routes by terrain, read a route’s field report, and add required equipment to a local packing checklist. Supporting views include an observation detail and a saved-routes list with an empty state. Distances and conditions are explicitly sample data.\n\n**Responsive and inclusive behaviour.** Route conditions and preparation appear before the photograph on phones. The image becomes a clearly captioned notebook plate, followed by the terrain-filtered route index. Native buttons, visible focus, a direct return path and reduced-motion support preserve access to the same content.\n\n**Identity rules.** Preserve the relationship between observation and practical detail. Avoid turning the design into a generic green wellness site or making essential information resemble faint handwriting. **Effort: medium.**",
   "scope": "An expansive sample page with representative local interactions; no production business backend.",
   "discovery": {
     "industries": [

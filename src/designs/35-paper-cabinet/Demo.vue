@@ -65,7 +65,7 @@ function save() {
 }
 </script>
 <template>
-  <div class="specimen">
+  <div class="specimen" :class="{ entry: state === 'start' }">
     <a class="skip" href="#content">Skip to content</a>
     <header>
       <strong>The Commonplace<br />Cabinet</strong>
@@ -76,11 +76,9 @@ function save() {
     </header>
     <main id="content">
       <template v-if="state !== 'record'"
-        ><div class="intro">
-          <p class="eyebrow">CATALOGUE / DRAWER 01–03</p>
-          <h1>{{ state === 'saved' ? 'Kept for later.' : 'A place for things worth keeping.' }}</h1>
-          <p>Recipes, records, and the stories that travel with them.</p>
-        </div>
+        ><h1 class="cabinet-title" :class="{ sr: state === 'start' }">
+          {{ state === 'saved' ? 'Saved selections' : 'The Commonplace Cabinet: recipe drawers' }}
+        </h1>
         <nav class="drawers">
           <button
             v-for="drawer in ['All', 'Baking', 'Kitchen', 'Preserving']"
@@ -674,5 +672,198 @@ main {
   .collection-note h2 {
     font-size: 23px;
   }
+}
+
+/* The entry is the experience itself; supporting routes retain its vocabulary. */
+
+.entry {
+  background: #68705a;
+  padding: 40px 5%;
+}
+.entry header {
+  display: block;
+  max-width: 650px;
+  width: 100%;
+  margin: 0 auto 45px;
+  padding: 20px 30px;
+  background: #e5ddc6;
+  color: #493f2f;
+  border: 7px double #493f2f;
+  text-align: center;
+  box-shadow: 4px 6px 0 #3b4434;
+}
+.entry header strong {
+  font-size: 27px;
+  line-height: 1.25;
+}
+.entry header > div {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.entry header > div > span {
+  font-size: 8px;
+  max-width: 180px;
+}
+.entry header button {
+  font-size: 10px;
+}
+.entry main {
+  width: 100%;
+  max-width: 1250px;
+  margin: auto;
+  padding: 0;
+}
+.entry .cabinet-title {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip-path: inset(50%) !important;
+  white-space: nowrap !important;
+}
+.entry .drawers {
+  padding: 0 25px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  border: 0;
+}
+.entry .drawers button {
+  padding: 18px 25px;
+  border: 1px solid #493f2f;
+  border-bottom: 0;
+  border-radius: 14px 14px 0 0;
+  background: #c3c3a3;
+  color: #493f2f;
+  font-size: 13px;
+}
+.entry .drawers button[aria-pressed='true'] {
+  background: #f7efdc;
+  transform: translateY(2px);
+}
+.entry .drawer-body {
+  background: #e8dfc9;
+  padding: 30px;
+  border: 2px solid #493f2f;
+  border-top: 8px solid #f7efdc;
+  box-shadow: 10px 12px 0 #3b4434;
+}
+.entry .drawer-body > .row {
+  padding: 15px 20px;
+  background: #c4b89d;
+  border: 3px solid #81725a;
+  margin: 0 0 30px;
+  align-items: center;
+}
+.entry .drawer-body label {
+  font-size: 10px;
+}
+.entry .drawer-body input {
+  background: #f7efdc;
+  min-width: 320px;
+  padding: 12px;
+  margin-top: 7px;
+}
+.entry .cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 25px;
+}
+.entry .cards > button {
+  min-height: 300px;
+  border: 1px solid #9c8c70;
+  background: #f7efdc;
+  box-shadow: 4px 5px 0 #c2b49a;
+  padding: 25px;
+  text-align: left;
+}
+.entry .cards > button:nth-child(2) {
+  transform: translateY(18px);
+}
+.entry .cards > button:nth-child(4) {
+  transform: translateY(18px);
+}
+.entry .cards h2 {
+  font-size: 26px;
+  line-height: 1.3;
+}
+.entry .collection-note {
+  color: #f7efdc;
+  border: 0;
+  padding: 55px 0 10px;
+}
+.entry footer {
+  color: #f7efdc;
+  border-color: #b5bea6;
+}
+@media (max-width: 750px) {
+  .entry {
+    padding: 20px 5%;
+  }
+  .entry header {
+    padding: 15px;
+    border-width: 5px;
+    margin-bottom: 25px;
+  }
+  .entry header strong {
+    font-size: 21px;
+  }
+  .entry header > div {
+    display: block;
+    margin-top: 12px;
+  }
+  .entry header > div > span {
+    display: none;
+  }
+  .entry header button {
+    font-size: 10px;
+  }
+  .entry .drawers {
+    padding: 0;
+    gap: 4px;
+  }
+  .entry .drawers button {
+    font-size: 10px;
+    padding: 12px 10px;
+  }
+  .entry .drawer-body {
+    padding: 18px 13px;
+    box-shadow: 5px 7px 0 #3b4434;
+  }
+  .entry .drawer-body > .row {
+    padding: 12px;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .entry .drawer-body input {
+    min-width: 0;
+    width: 100%;
+    font-size: 12px;
+  }
+  .entry .drawer-body small {
+    display: block;
+    margin-top: 12px;
+    font-size: 9px;
+  }
+  .entry .cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .entry .cards > button:nth-child(n) {
+    transform: none;
+    padding: 20px;
+    min-height: 290px;
+  }
+  .entry .cards h2 {
+    font-size: 24px;
+  }
+}
+.entry footer button {
+  color: #fff5df;
 }
 </style>

@@ -14,7 +14,7 @@
   ],
   "character": "Experimental",
   "traits": {
-    "composition": "A vermilion proscenium fills the browser. Folded curtains, deep black wings, a small illuminated stage and original paper performers create a theatrical reading space.",
+    "composition": "The browser opens inside a full-height theatre curtain. The title is printed as a stacked theatrical bill on the fabric; a round rope-pull opens the stage, while a small angled ticket leads to the programme. The performance replaces the page shell.",
     "navigation": "Open the curtain, choose an act, move backstage and reserve a sample programme",
     "typography": "Libre Baskerville / DM Sans",
     "density": "Medium",
@@ -86,7 +86,7 @@
   "referenceImages": [
     {
       "file": "/previews/97/desktop.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/97/811dc651576adbde-desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/97/db3428ff169ee8a4-desktop.jpg",
       "route": "/preview/97-curtain-bureau/start",
       "viewport": {
         "width": 1440,
@@ -94,13 +94,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:159f28b6ad207cf67d1701dd1d5224dbfe1db40e7da772ba88cce91e36ea3af0",
-      "sha256": "811dc651576adbde44935f636d995c62d7448ee02619e07d99e0e1354e65d3f2",
+      "sourceRevision": "sha256:1069b9045913a4c9b4d2e24b9f4e76e2cd1a430d3e40b1595e0eaa0f6a59e79f",
+      "sha256": "db3428ff169ee8a4da09abb7d4f7d52b872a5ff50cc749534f47da7fef3cea6a",
       "fullPage": false
     },
     {
       "file": "/previews/97/mobile.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/97/dd5eea520fc27890-mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/97/24d092384a2e2a4f-mobile.jpg",
       "route": "/preview/97-curtain-bureau/start",
       "viewport": {
         "width": 390,
@@ -108,13 +108,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:159f28b6ad207cf67d1701dd1d5224dbfe1db40e7da772ba88cce91e36ea3af0",
-      "sha256": "dd5eea520fc27890f47ab745c224d948042d26bc9c691760424c6522212abca7",
+      "sourceRevision": "sha256:1069b9045913a4c9b4d2e24b9f4e76e2cd1a430d3e40b1595e0eaa0f6a59e79f",
+      "sha256": "24d092384a2e2a4f8bd10fbd61b5295b5a5a72390372bb073c641bfec52d32bc",
       "fullPage": false
     },
     {
       "file": "/previews/97/detail.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/97/5f9c6301b5816eda-detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/97/797ecdfdf3aa1dee-detail.jpg",
       "route": "/preview/97-curtain-bureau/performance",
       "viewport": {
         "width": 1440,
@@ -122,13 +122,13 @@
       },
       "state": "performance",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:159f28b6ad207cf67d1701dd1d5224dbfe1db40e7da772ba88cce91e36ea3af0",
-      "sha256": "5f9c6301b5816edafdbb140aa8a1130e8ad158f1aa88309eed852208a2c5cece",
+      "sourceRevision": "sha256:1069b9045913a4c9b4d2e24b9f4e76e2cd1a430d3e40b1595e0eaa0f6a59e79f",
+      "sha256": "797ecdfdf3aa1dee726b2604ecd7ac44a6b573bc82db6a8c59665561d669fabe",
       "fullPage": false
     },
     {
       "file": "/previews/97/full-page.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/97/6ab8dc4c4799c1e5-full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/97/036ae605f94c62ad-full-page.jpg",
       "route": "/preview/97-curtain-bureau/start",
       "viewport": {
         "width": 1440,
@@ -136,8 +136,8 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:159f28b6ad207cf67d1701dd1d5224dbfe1db40e7da772ba88cce91e36ea3af0",
-      "sha256": "6ab8dc4c4799c1e5cf2d8251d83f3927ffebdf50d0b5bdf8f67535e4527479ae",
+      "sourceRevision": "sha256:1069b9045913a4c9b4d2e24b9f4e76e2cd1a430d3e40b1595e0eaa0f6a59e79f",
+      "sha256": "036ae605f94c62ad63991d97180b023fb13d3904874dde72a8ac2487d1bd16e9",
       "fullPage": true
     }
   ],
@@ -166,6 +166,6 @@
     "Libre Baskerville",
     "DM Sans"
   ],
-  "brief": "**Idea.** A website can be read through entrances, acts and the space behind a performance.\n\n**Composition.** A vermilion proscenium fills the browser. Folded curtains, deep black wings, a small illuminated stage and original paper performers create a theatrical reading space.\n\n**Navigation and complete example.** Open a fictional theatre, move through three short acts, read the three corresponding backstage notes, then reserve a sample programme locally.\n\n**Responsive and inclusive behaviour.** The stage remains a contained composition. Native act selectors, curtain control and backstage links sit outside moving scenery. All controls are native buttons or labelled inputs. Movement is discretionary, no sound starts automatically, reduced-motion preferences remove transitions, and a direct index exposes the same content.\n\n**Adaptation.** Let theatrical depth organise the story, with controls always available. Avoid gating essential content behind animation or timed entrances. Retain the relationship between navigation and content. Do not reduce the reference to a generic hero followed by interchangeable cards.\n\n**Research.** [Aaron Koblin — The Wilderness Downtown](https://www.aaronkoblin.com/project/the-wilderness-downtown/); [Rafaël Rozendaal — Internet works](https://www.newrafael.com/internet?filter=website). These are conceptual precedents, not copied artwork, source code, branding or text. All diagrams and sample writing in this specimen are original, fictional material.",
+  "brief": "**Idea.** A website can be read through entrances, acts and the space behind a performance.\n\n**Composition.** The browser opens inside a full-height theatre curtain. The title is printed as a stacked theatrical bill on the fabric; a round rope-pull opens the stage, while a small angled ticket leads to the programme. The performance replaces the page shell.\n\n**Navigation and complete example.** Open a fictional theatre, move through three short acts, read the three corresponding backstage notes, then reserve a sample programme locally.\n\n**Responsive and inclusive behaviour.** The phone preserves the curtain, bill and reachable pull without squeezing stage controls. Act selectors and backstage notes remain available below; no content requires animation to finish. Native buttons, visible focus, a direct return path and reduced-motion support preserve access to the same content.\n\n**Adaptation.** Let theatrical depth organise the story, with controls always available. Avoid gating essential content behind animation or timed entrances. Retain the relationship between navigation and content. Do not reduce the reference to a generic hero followed by interchangeable cards.\n\n**Research.** [Aaron Koblin — The Wilderness Downtown](https://www.aaronkoblin.com/project/the-wilderness-downtown/); [Rafaël Rozendaal — Internet works](https://www.newrafael.com/internet?filter=website). These are conceptual precedents, not copied artwork, source code, branding or text. All diagrams and sample writing in this specimen are original, fictional material.",
   "scope": "Complete visual reference with deterministic local interactions and fictional content; no production backend."
 }

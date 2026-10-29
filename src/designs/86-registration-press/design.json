@@ -14,7 +14,7 @@
   ],
   "character": "Experimental",
   "traits": {
-    "composition": "Cyan and magenta print plates cross the whole viewport. Crop marks, overprinted letterforms and a large registration target make the browser feel like a sheet on a press.",
+    "composition": "Overscale cyan and magenta letterforms bleed across an entire press bed. Registration rings, crop marks and a small edition docket are part of the physical sheet; a separate control bar operates the ink plates at its lower edge.",
     "navigation": "Toggle ink plates, snap registration, reveal an essay and issue a print sheet",
     "typography": "Archivo Black / IBM Plex Mono",
     "density": "Medium",
@@ -81,7 +81,7 @@
   "referenceImages": [
     {
       "file": "/previews/86/desktop.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/86/0da3dff4a75e0dba-desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/86/3d4ab25204b32bcc-desktop.jpg",
       "route": "/preview/86-registration-press/start",
       "viewport": {
         "width": 1440,
@@ -89,13 +89,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:272d064b367458ded614fefec9e7d78bdb0ff78b1721ce7b3ae2bc74442aef87",
-      "sha256": "0da3dff4a75e0dbac3493a282ca10e9a4b50957d754986e740957ed636c70a07",
+      "sourceRevision": "sha256:a8447beb2017c99440fd5fecd167fbc198f7f818c277a0c69774a1d9d707ac03",
+      "sha256": "3d4ab25204b32bcce96c4caf15cc235fe014bec4d5f20bd5ea54c674e72ac147",
       "fullPage": false
     },
     {
       "file": "/previews/86/mobile.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/86/537c521851df4eb3-mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/86/6522cc710739bf88-mobile.jpg",
       "route": "/preview/86-registration-press/start",
       "viewport": {
         "width": 390,
@@ -103,8 +103,8 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:272d064b367458ded614fefec9e7d78bdb0ff78b1721ce7b3ae2bc74442aef87",
-      "sha256": "537c521851df4eb348720339ef90ccd08b0b18ec620b2e8c0f0ee5d9d216eaa0",
+      "sourceRevision": "sha256:a8447beb2017c99440fd5fecd167fbc198f7f818c277a0c69774a1d9d707ac03",
+      "sha256": "6522cc710739bf881ef000f952a55a8d84ce378e74b28247c3b1bafb3bdf96fe",
       "fullPage": false
     },
     {
@@ -117,13 +117,13 @@
       },
       "state": "essay",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:272d064b367458ded614fefec9e7d78bdb0ff78b1721ce7b3ae2bc74442aef87",
+      "sourceRevision": "sha256:a8447beb2017c99440fd5fecd167fbc198f7f818c277a0c69774a1d9d707ac03",
       "sha256": "2a0f724d583699b23d49592fdf0fceb3aaa9563aef36c273804f927af7a3b466",
       "fullPage": false
     },
     {
       "file": "/previews/86/full-page.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/86/6b4991d5bd098fdd-full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/86/a3cbf32c673c660d-full-page.jpg",
       "route": "/preview/86-registration-press/start",
       "viewport": {
         "width": 1440,
@@ -131,8 +131,8 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:272d064b367458ded614fefec9e7d78bdb0ff78b1721ce7b3ae2bc74442aef87",
-      "sha256": "6b4991d5bd098fdd22301d81f0730ac5d36f1a3831be02d3430aaadeaf17b77d",
+      "sourceRevision": "sha256:a8447beb2017c99440fd5fecd167fbc198f7f818c277a0c69774a1d9d707ac03",
+      "sha256": "a3cbf32c673c660d1aacecc9cafb2a27bd62d5e8a26d409a57ef15c5dfae7499",
       "fullPage": true
     }
   ],
@@ -161,6 +161,6 @@
     "Archivo Black",
     "IBM Plex Mono"
   ],
-  "brief": "**Idea.** Alignment is an editorial act: the layers only make sense together.\n\n**Composition.** Cyan and magenta print plates cross the whole viewport. Crop marks, overprinted letterforms and a large registration target make the browser feel like a sheet on a press.\n\n**Navigation and complete example.** Align two ink plates for a fictional print exhibition, inspect six workshop notes and prepare a local print sheet containing the selected registration state.\n\n**Responsive and inclusive behaviour.** The print surface scales within the page; labelled numeric offset and snap buttons offer precise control without dragging. All controls are native buttons or labelled inputs. Movement is discretionary, no sound starts automatically, reduced-motion preferences remove transitions, and a direct index exposes the same content.\n\n**Adaptation.** Use overprinting for large display layers while keeping reading text single-colour. The registration state should expose a meaningful compositional relationship. Retain the relationship between navigation and content. Do not reduce the reference to a generic hero followed by interchangeable cards.\n\n**Research.** [Moniker — Conditional Design Workbook](https://studiomoniker.com/projects/conditional-design-workbook); [Conditional Design manifesto](https://conditionaldesign.org/manifesto/). These are conceptual precedents, not copied artwork, source code, branding or text. All diagrams and sample writing in this specimen are original, fictional material.",
+  "brief": "**Idea.** Alignment is an editorial act: the layers only make sense together.\n\n**Composition.** Overscale cyan and magenta letterforms bleed across an entire press bed. Registration rings, crop marks and a small edition docket are part of the physical sheet; a separate control bar operates the ink plates at its lower edge.\n\n**Navigation and complete example.** Align two ink plates for a fictional print exhibition, inspect six workshop notes and prepare a local print sheet containing the selected registration state.\n\n**Responsive and inclusive behaviour.** The phone sheet uses a deliberate oversized crop while leaving the registration rings and edition action visible. Ink, offset and snap controls stay readable immediately below it. Native buttons, visible focus, a direct return path and reduced-motion support preserve access to the same content.\n\n**Adaptation.** Use overprinting for large display layers while keeping reading text single-colour. The registration state should expose a meaningful compositional relationship. Retain the relationship between navigation and content. Do not reduce the reference to a generic hero followed by interchangeable cards.\n\n**Research.** [Moniker — Conditional Design Workbook](https://studiomoniker.com/projects/conditional-design-workbook); [Conditional Design manifesto](https://conditionaldesign.org/manifesto/). These are conceptual precedents, not copied artwork, source code, branding or text. All diagrams and sample writing in this specimen are original, fictional material.",
   "scope": "Complete visual reference with deterministic local interactions and fictional content; no production backend."
 }

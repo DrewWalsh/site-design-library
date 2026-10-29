@@ -4,9 +4,11 @@
 
 **Visual grammar.** A bounded tabletop contains chunky objects, recessed slots, tactile buttons, and a compact tool shelf. Rounded type, warm cream, tomato red, sky blue, and soft material shadows make the interface approachable. A clear instruction line sits outside the play area, and object labels remain ordinary readable text.
 
+**Composition.** A tactile circuit workbench is the whole opening. A tray of illustrated battery, switch and bulb parts sits beside recessed machine sockets, visible wiring and a status lamp. Run and save controls are part of the wooden control deck; there is no promotional heading.
+
 **Specimen and flow.** _Little Machine Lab_ uses a small fixed set of parts and slots with deterministic responses, without a general physics engine. Select parts, place them in slots, and run the demonstration. Supporting views include a parts library and a saved-construction view with an incomplete-machine state. Keyboard selection and explicit move controls provide every action available through dragging.
 
-**Responsive behaviour.** The tabletop changes to a vertical sequence of slots rather than shrinking a desktop canvas. Optional spring motion becomes immediate state changes under reduced motion.
+**Responsive and inclusive behaviour.** Phones keep the illustrated parts tray and all three compact slots together. Explicit slot and part buttons provide every construction action; the machine result stays directly underneath. Native buttons, visible focus, a direct return path and reduced-motion support preserve access to the same content.
 
 **Identity rules.** Preserve understandable cause and effect and tangible controls. Avoid ornamental toy shapes around conventional forms, mandatory sound, or physics effects that make precise actions unreliable. **Effort: high.**
 
@@ -26,7 +28,7 @@ Brand, subject, accent and equivalent licensed typefaces can change. Preserve co
 
 ## Tokens and typography
 
-Heading: Space Grotesk. Reading: DM Sans. Local WOFF2 fonts with system fallbacks. Page #f7ecd4; surface #fff8e8; text #3b3e37; accent #a83d2a. Eight-pixel base spacing; reading measure 65ch; width 1240px. See tokens.css for role values and Demo.vue for composition. Palette and type match the working specimen.
+Heading: Space Grotesk. Reading: DM Sans. Local WOFF2 fonts with system fallbacks. Page #f7ecd4; surface #fff8e8; text #3b3e37; accent #a83d2a. Base tokens define an eight-pixel spacing unit, 65ch reading measure and 1240px content width; the composition-specific rules in Demo.vue override these where the canvas, type or information density requires it. See tokens.css for role values and Demo.vue for composition. Palette and type match the working specimen.
 
 ## States
 

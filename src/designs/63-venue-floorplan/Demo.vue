@@ -44,7 +44,7 @@ function submit() {
 }
 </script>
 <template>
-  <div class="specimen">
+  <div class="specimen" :class="{ entry: state === 'start' }">
     <a class="skip" href="#content">Skip to content</a>
     <header class="assembly-header wrap">
       <a class="assembly-logo" :href="href('start')">The Assembly<br /><em>Rooms</em></a>
@@ -55,19 +55,107 @@ function submit() {
       </nav>
     </header>
     <main id="content">
-      <template v-if="state === 'start'"
-        ><section class="assembly-intro wrap">
-          <p class="eyebrow">ROOM FOR YOUR KIND OF GATHERING.</p>
-          <h1>Bring people together.<br />We’ll make room.</h1>
-          <div class="intro-caption">
-            <p>
-              Weddings, conversations, workshops, and the occasions that deserve a place of their
-              own.
+      <section class="wrap plan-entry">
+        <div class="plan-label">
+          <h1>
+            {{ state === 'enquiry' ? 'Enquire about your arrangement' : 'Arrange the main hall' }}
+          </h1>
+          <p>180 m² / Northbank / sample venue</p>
+        </div>
+        <div class="room-planner">
+          <div class="floorplan-panel">
+            <div class="row layout-options">
+              <button
+                v-for="(l, i) in layouts"
+                :key="l.name"
+                :aria-pressed="layout === i"
+                @click="
+                  layout = i;
+                  error = '';
+                "
+              >
+                {{ l.name }}
+              </button>
+            </div>
+            <svg
+              viewBox="0 0 600 420"
+              role="img"
+              :aria-label="
+                layouts[layout].name + ' room layout, capacity ' + layouts[layout].capacity
+              "
+            >
+              <rect
+                x="25"
+                y="25"
+                width="550"
+                height="370"
+                fill="#faf5ec"
+                stroke="#764259"
+                stroke-width="4"
+              />
+              <rect x="225" y="26" width="150" height="50" fill="#d3bcc7" stroke="#764259" />
+              <text x="300" y="57" text-anchor="middle" fill="#463442" font-size="13">
+                STAGE / PRESENTATION
+              </text>
+              <g v-if="layout === 0" fill="#e3d6bb" stroke="#764259">
+                <circle
+                  v-for="n in 6"
+                  :key="n"
+                  :cx="120 + ((n - 1) % 3) * 180"
+                  :cy="165 + Math.floor((n - 1) / 3) * 130"
+                  r="43"
+                />
+              </g>
+              <g v-else-if="layout === 1" fill="#d8c6d1" stroke="#764259">
+                <rect
+                  v-for="n in 48"
+                  :key="n"
+                  :x="90 + ((n - 1) % 8) * 54"
+                  :y="115 + Math.floor((n - 1) / 8) * 39"
+                  width="25"
+                  height="20"
+                  rx="3"
+                />
+              </g>
+              <g v-else fill="#e0ccad" stroke="#764259">
+                <rect
+                  v-for="n in 6"
+                  :key="n"
+                  :x="85 + ((n - 1) % 3) * 165"
+                  :y="130 + Math.floor((n - 1) / 3) * 130"
+                  width="105"
+                  height="65"
+                />
+              </g>
+              <path d="M25 310V365" stroke="#faf5ec" stroke-width="7" />
+              <text x="45" y="345" fill="#463442" font-size="11">ENTRY</text>
+              <text x="400" y="382" fill="#463442" font-size="11">SERVICE ACCESS →</text>
+            </svg>
+            <p class="muted">
+              Schematic arrangement · representative furniture, not a scaled seating plan
             </p>
-            <button class="text-link" @click="go('plan')">Start with the floorplan →</button>
           </div>
-        </section>
-        <section class="venue-stage wrap">
+          <aside class="layout-facts">
+            <p class="eyebrow">{{ layouts[layout].name }} ARRANGEMENT</p>
+            <strong>{{ layouts[layout].capacity }}<small>guest capacity</small></strong>
+            <p>{{ layouts[layout].desc }}</p>
+            <label
+              >Expected guests<input type="number" min="1" max="150" v-model.number="guests"
+            /></label>
+            <p v-if="guests > layouts[layout].capacity" role="alert">
+              Your guest count exceeds this layout’s capacity.
+            </p>
+            <p v-else role="status">
+              {{ layouts[layout].capacity - guests }} places within the sample capacity.
+            </p>
+            <button v-if="state !== 'enquiry'" class="primary" @click="go('enquiry')">
+              Enquire with this layout →
+            </button>
+          </aside>
+        </div>
+      </section>
+      <template v-if="state === 'start'"
+        ><section class="venue-stage wrap">
           <figure>
             <img
               class="photo"
@@ -170,100 +258,7 @@ function submit() {
       >
       <section v-else class="wrap state-page">
         <button class="back text-link" @click="go('start')">← The Assembly Rooms</button>
-        <h1>
-          {{ state === 'plan' ? 'Picture your gathering.' : 'Tell us what you’re imagining.' }}
-        </h1>
-        <div class="room-planner">
-          <div class="floorplan-panel">
-            <div class="row layout-options">
-              <button
-                v-for="(l, i) in layouts"
-                :key="l.name"
-                :aria-pressed="layout === i"
-                @click="
-                  layout = i;
-                  error = '';
-                "
-              >
-                {{ l.name }}
-              </button>
-            </div>
-            <svg
-              viewBox="0 0 600 420"
-              role="img"
-              :aria-label="
-                layouts[layout].name + ' room layout, capacity ' + layouts[layout].capacity
-              "
-            >
-              <rect
-                x="25"
-                y="25"
-                width="550"
-                height="370"
-                fill="#faf5ec"
-                stroke="#764259"
-                stroke-width="4"
-              />
-              <rect x="225" y="26" width="150" height="50" fill="#d3bcc7" stroke="#764259" />
-              <text x="300" y="57" text-anchor="middle" fill="#463442" font-size="13">
-                STAGE / PRESENTATION
-              </text>
-              <g v-if="layout === 0" fill="#e3d6bb" stroke="#764259">
-                <circle
-                  v-for="n in 6"
-                  :key="n"
-                  :cx="120 + ((n - 1) % 3) * 180"
-                  :cy="165 + Math.floor((n - 1) / 3) * 130"
-                  r="43"
-                />
-              </g>
-              <g v-else-if="layout === 1" fill="#d8c6d1" stroke="#764259">
-                <rect
-                  v-for="n in 48"
-                  :key="n"
-                  :x="90 + ((n - 1) % 8) * 54"
-                  :y="115 + Math.floor((n - 1) / 8) * 39"
-                  width="25"
-                  height="20"
-                  rx="3"
-                />
-              </g>
-              <g v-else fill="#e0ccad" stroke="#764259">
-                <rect
-                  v-for="n in 6"
-                  :key="n"
-                  :x="85 + ((n - 1) % 3) * 165"
-                  :y="130 + Math.floor((n - 1) / 3) * 130"
-                  width="105"
-                  height="65"
-                />
-              </g>
-              <path d="M25 310V365" stroke="#faf5ec" stroke-width="7" />
-              <text x="45" y="345" fill="#463442" font-size="11">ENTRY</text>
-              <text x="400" y="382" fill="#463442" font-size="11">SERVICE ACCESS →</text>
-            </svg>
-            <p class="muted">
-              Schematic arrangement · representative furniture, not a scaled seating plan
-            </p>
-          </div>
-          <aside class="layout-facts">
-            <p class="eyebrow">{{ layouts[layout].name }} ARRANGEMENT</p>
-            <strong>{{ layouts[layout].capacity }}<small>guest capacity</small></strong>
-            <p>{{ layouts[layout].desc }}</p>
-            <label
-              >Expected guests<input type="number" min="1" max="150" v-model.number="guests"
-            /></label>
-            <p v-if="guests > layouts[layout].capacity" role="alert">
-              Your guest count exceeds this layout’s capacity.
-            </p>
-            <p v-else role="status">
-              {{ layouts[layout].capacity - guests }} places within the sample capacity.
-            </p>
-            <button v-if="state === 'plan'" class="primary" @click="go('enquiry')">
-              Enquire with this layout →
-            </button>
-          </aside>
-        </div>
+
         <form v-if="state === 'enquiry' && !sent" class="form event-form" @submit.prevent="submit">
           <div class="two">
             <label>Event type<input required v-model="event" /></label
@@ -912,5 +907,95 @@ details p {
     serif;
   letter-spacing: 0.025em;
   text-transform: none;
+}
+
+/* The entry is the experience itself; supporting routes retain its vocabulary. */
+.plan-entry {
+  padding-top: 20px;
+}
+.plan-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.plan-label h1 {
+  font-size: 30px;
+  letter-spacing: -0.02em;
+}
+.plan-label p {
+  font-size: 12px;
+}
+.plan-entry .room-planner {
+  margin-top: 15px;
+  grid-template-columns: 1.7fr 1fr;
+  gap: 0;
+  border: 1px solid var(--accent);
+}
+.plan-entry .floorplan-panel {
+  padding: 20px;
+  background: #ede7dc;
+}
+.plan-entry .floorplan-panel svg {
+  max-height: 445px;
+}
+.plan-entry .layout-facts {
+  padding: 32px;
+  background: #764259;
+  color: #fff;
+}
+.plan-entry .layout-facts input {
+  color: var(--ink);
+}
+.plan-entry .layout-facts strong {
+  font-size: 100px;
+}
+.plan-entry .layout-facts .primary {
+  background: #faf5ec;
+  color: #463442;
+}
+.entry .venue-stage {
+  margin-top: 40px;
+  grid-template-columns: 1.7fr 1fr;
+}
+.entry .venue-stage img {
+  height: 360px;
+}
+.entry .venue-stage aside {
+  background: transparent;
+  padding: 20px;
+  color: var(--ink);
+}
+.entry .venue-stage h2 {
+  font-size: 28px;
+}
+@media (max-width: 700px) {
+  .plan-label {
+    display: block;
+  }
+  .plan-label h1 {
+    font-size: 26px;
+  }
+  .plan-label p {
+    margin-top: 8px;
+  }
+  .plan-entry .room-planner {
+    grid-template-columns: 1fr;
+  }
+  .plan-entry .floorplan-panel {
+    padding: 10px;
+  }
+  .plan-entry .layout-facts {
+    padding: 20px;
+  }
+  .plan-entry .layout-facts strong {
+    font-size: 70px;
+  }
+  .entry .venue-stage {
+    grid-template-columns: 1fr;
+  }
+  .entry .venue-stage img {
+    height: 270px;
+  }
 }
 </style>

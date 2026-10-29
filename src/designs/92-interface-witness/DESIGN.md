@@ -2,11 +2,11 @@
 
 **Idea.** The interface can make your actions the material of a short performance.
 
-**Composition.** One enormous violet circular button occupies a mostly empty page. Numbered observations accumulate around it, gradually turning the whitespace into a visible transcript.
+**Composition.** A single unshadowed violet disc is the opening action, surrounded by deliberate blank space. Only tiny corner labels and a trace link precede it; observations accumulate around the disc after explicit actions, becoming the composition itself.
 
 **Navigation and complete example.** Perform six explicit actions, see deterministic observations appear, open the essay behind an observation and revisit or clear the session transcript. No passive behavioural profiling occurs.
 
-**Responsive and inclusive behaviour.** The main action scales to the screen; observations appear in a readable list below it instead of overlapping. All actions remain labelled native buttons. All controls are native buttons or labelled inputs. Movement is discretionary, no sound starts automatically, reduced-motion preferences remove transitions, and a direct index exposes the same content.
+**Responsive and inclusive behaviour.** The primary action fits the phone width; subsequent observations become a readable stack. No timing, movement, sound or inferred behaviour is required. Native buttons, visible focus, a direct return path and reduced-motion support preserve access to the same content.
 
 **Adaptation.** Observe only intentional actions, state the local scope and avoid inferred personal traits. The performance should reveal its rules rather than manipulate the visitor. Retain the relationship between navigation and content. Do not reduce the reference to a generic hero followed by interchangeable cards.
 

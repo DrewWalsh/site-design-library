@@ -4,9 +4,11 @@
 
 **Visual grammar.** Compose substantial flat-colour planes with sharp boundaries, sparse geometric markers, large headings, and deliberately limited image use. A chapter rail crosses these planes with a consistent navigation position. Typography stays restrained so the relationship between colour, proportion, and whitespace provides the identity. Each field includes a visible section label; colour never carries its meaning alone.
 
+**Composition.** Three unequal, adjoining colour planes are the whole entry: a tall cobalt exhibition programme, a clay visiting-hours field and a sulphur membership field. Real chapter content establishes proportion and navigation, with the institution name crossing their upper edge.
+
 **Specimen and flow.** _Intervals_ is a fictional exhibition space. Move between programme, visiting information, and membership chapters, then open an exhibition’s details. Supporting views are the complete exhibition index and a membership comparison laid out as aligned text columns.
 
-**Mobile and motion.** Turn side-by-side planes into an orderly vertical sequence. Keep ordinary scrolling and explicit anchor links; any transition simply fades between static compositions and can be disabled.
+**Responsive and inclusive behaviour.** The planes become a continuous vertical sequence, retaining different scale and density. The programme contains actual exhibitions; hours and membership options occupy their own full fields. Native buttons, visible focus, a direct return path and reduced-motion support preserve access to the same content.
 
 **Identity and effort.** Preserve large-scale colour composition; avoid shrinking the concept into many pastel cards or requiring full-screen snapping. **Effort: medium.**
 
@@ -26,7 +28,7 @@ Brand, subject, accent and equivalent licensed typefaces can change. Preserve co
 
 ## Tokens and typography
 
-Heading: Space Grotesk. Reading: DM Sans. Local WOFF2 fonts with system fallbacks. Page #eee6d7; surface #ffffff; text #2c3031; accent #4a60a2. Eight-pixel base spacing; reading measure 65ch; width 1240px. See tokens.css for role values and Demo.vue for composition. Palette and type match the working specimen.
+Heading: Space Grotesk. Reading: DM Sans. Local WOFF2 fonts with system fallbacks. Page #eee6d7; surface #ffffff; text #2c3031; accent #4a60a2. Base tokens define an eight-pixel spacing unit, 65ch reading measure and 1240px content width; the composition-specific rules in Demo.vue override these where the canvas, type or information density requires it. See tokens.css for role values and Demo.vue for composition. Palette and type match the working specimen.
 
 ## States
 

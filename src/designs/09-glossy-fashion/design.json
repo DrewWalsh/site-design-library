@@ -13,7 +13,7 @@
   ],
   "character": "Expressive",
   "traits": {
-    "composition": "Photographic cover with large display type and alternating editorial spreads",
+    "composition": "The issue opens as a photographic magazine cover: full-bleed portrait, oversized integrated masthead, discreet issue line and cover story at the lower edge. Interior photography is larger than the text column, with a separate conversation spread.",
     "navigation": "Issue chapters and contributor credits",
     "typography": "Libre Baskerville + DM Sans",
     "density": "Low",
@@ -48,7 +48,7 @@
   "referenceImages": [
     {
       "file": "/previews/09/desktop.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/09/844c846a75b06e6c-desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/09/e261a83b01b515ea-desktop.jpg",
       "route": "/preview/09-glossy-fashion/start",
       "viewport": {
         "width": 1440,
@@ -56,13 +56,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:dd7f72f1c9ddbd90151d8d36e12895aadf96beb1b123f2dc8a5b1d43764db101",
-      "sha256": "844c846a75b06e6c87bcf0ccfa91da3326e472204c4b581f7c5ff42d96dc2ff6",
+      "sourceRevision": "sha256:7e15b05c0647dd2e45515adbc54d5fd058d645908ad89506432d74ccc93a4c8b",
+      "sha256": "e261a83b01b515ea58748a44c727ae9e08bfe15003c84e5f285ed941fe403195",
       "fullPage": false
     },
     {
       "file": "/previews/09/mobile.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/09/f460d2f9fd5c7d43-mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/09/f3354a4e412e6af2-mobile.jpg",
       "route": "/preview/09-glossy-fashion/start",
       "viewport": {
         "width": 390,
@@ -70,13 +70,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:dd7f72f1c9ddbd90151d8d36e12895aadf96beb1b123f2dc8a5b1d43764db101",
-      "sha256": "f460d2f9fd5c7d434f1c42e410cc7746d16e04f4fc9a61a67050f6a06171c122",
+      "sourceRevision": "sha256:7e15b05c0647dd2e45515adbc54d5fd058d645908ad89506432d74ccc93a4c8b",
+      "sha256": "f3354a4e412e6af254b7f6ad6d4b9bed44b02bb6ab253e600c19d39e827b210e",
       "fullPage": false
     },
     {
       "file": "/previews/09/detail.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/09/e20905f4be8bb032-detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/09/ab139c46719a0563-detail.jpg",
       "route": "/preview/09-glossy-fashion/story",
       "viewport": {
         "width": 1440,
@@ -84,13 +84,13 @@
       },
       "state": "story",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:dd7f72f1c9ddbd90151d8d36e12895aadf96beb1b123f2dc8a5b1d43764db101",
-      "sha256": "e20905f4be8bb0323066c80204862fc082f723439dc32897989d59f929fc4143",
+      "sourceRevision": "sha256:7e15b05c0647dd2e45515adbc54d5fd058d645908ad89506432d74ccc93a4c8b",
+      "sha256": "ab139c46719a05632dfb6072fc2493e1c14c5a2e65dac2b287873a88ef916f23",
       "fullPage": false
     },
     {
       "file": "/previews/09/full-page.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/09/47eda8441e6aec65-full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/09/d273b752ccd36a62-full-page.jpg",
       "route": "/preview/09-glossy-fashion/start",
       "viewport": {
         "width": 1440,
@@ -98,8 +98,8 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:dd7f72f1c9ddbd90151d8d36e12895aadf96beb1b123f2dc8a5b1d43764db101",
-      "sha256": "47eda8441e6aec65499f3306a369be4e7764c293517595d8f824086c4f0fe0d9",
+      "sourceRevision": "sha256:7e15b05c0647dd2e45515adbc54d5fd058d645908ad89506432d74ccc93a4c8b",
+      "sha256": "d273b752ccd36a621cf9cdcd3cbbabc5e3bb752a5e675a51a5ffae8420c02556",
       "fullPage": true
     }
   ],
@@ -118,7 +118,7 @@
     "Libre Baskerville",
     "DM Sans"
   ],
-  "brief": "**Philosophy and fit.** Use art direction and image sequencing to establish a strong editorial world. Suitable for fashion publications, visual culture platforms, photography features, and campaign-led brands.\n\n**Visual grammar.** Compose a full-bleed cover image with an assertive display serif, tightly edited cover lines, and a discreet issue navigation. Interior pages alternate large photographic spreads, intentional white space, cropped details, and short interviews. Use black, paper white, and a single seasonal acid accent. Keep body copy on stable, readable surfaces even when headlines intersect images.\n\n**Specimen and flow.** *Contour Quarterly* presents a fictional visual culture issue. Visitors enter a cover story, move through its image-led chapters, and explore the contributors. Supporting screens provide an issue archive and an image detail view with caption and credit.\n\n**Adaptation and identity.** Mobile uses dedicated portrait crops and restores headings to predictable positions. Preserve editorial image scale and deliberate sequencing; avoid retail product grids, anonymous stock imagery, illegible type overlays, and page-turn gimmicks. Motion remains optional. **Effort: medium.**\n\n**Distinctive composition.** Widely spaced fashion captions use the humanist sans rather than technical monospace; the image-led editorial hierarchy remains.",
+  "brief": "**Philosophy and fit.** Use art direction and image sequencing to establish a strong editorial world. Suitable for fashion publications, visual culture platforms, photography features, and campaign-led brands.\n\n**Visual grammar.** Compose a full-bleed cover image with an assertive display serif, tightly edited cover lines, and a discreet issue navigation. Interior pages alternate large photographic spreads, intentional white space, cropped details, and short interviews. Use black, paper white, and a single seasonal acid accent. Keep body copy on stable, readable surfaces even when headlines intersect images.\n\n**Composition.** The issue opens as a photographic magazine cover: full-bleed portrait, oversized integrated masthead, discreet issue line and cover story at the lower edge. Interior photography is larger than the text column, with a separate conversation spread.\n\n**Specimen and flow.** _Contour Quarterly_ presents a fictional visual culture issue. Visitors enter a cover story, move through its image-led chapters, and explore the contributors. Supporting screens provide an issue archive and an image detail view with caption and credit.\n\n**Adaptation and identity.** Mobile uses dedicated portrait crops and restores headings to predictable positions. Preserve editorial image scale and deliberate sequencing; avoid retail product grids, anonymous stock imagery, illegible type overlays, and page-turn gimmicks. Motion remains optional. **Effort: medium.**",
   "scope": "An expansive sample page with representative local interactions; no production business backend.",
   "discovery": {
     "industries": [

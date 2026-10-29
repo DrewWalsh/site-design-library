@@ -35,7 +35,7 @@ function restore() {
 }
 </script>
 <template>
-  <div class="specimen">
+  <div class="specimen" :class="{ entry: state === 'start' }">
     <a class="skip" href="#content">Skip to content</a>
     <header>
       <strong>little machine<br /><span>LAB.</span></strong>
@@ -47,11 +47,7 @@ function restore() {
     </header>
     <main id="content">
       <template v-if="state === 'start'"
-        ><div class="intro">
-          <p class="eyebrow">EXPERIMENT 01 / FOLLOW THE ENERGY</p>
-          <h1>Make something<br />happen.</h1>
-          <p>Three parts. Three slots. One little light.</p>
-        </div>
+        ><h1 class="sr">Little Machine Lab: build a working light circuit</h1>
         <div class="instructions">
           <b>1. Choose a slot.</b><span>2. Add a part below.</span><span>3. Run your machine.</span>
         </div>
@@ -64,9 +60,61 @@ function restore() {
               @click="activeSlot = i"
             >
               <small>SLOT 0{{ i + 1 }}</small
-              ><span class="object">{{
-                slot === 'Power' ? '▥' : slot === 'Switch' ? '⊖' : slot === 'Lamp' ? '☼' : '+'
-              }}</span
+              ><svg class="part-picture" viewBox="0 0 120 110" aria-hidden="true">
+                <g v-if="slot === 'Power'">
+                  <rect x="38" y="5" width="44" height="12" rx="4" fill="#3b3e37" />
+                  <rect
+                    x="22"
+                    y="15"
+                    width="76"
+                    height="90"
+                    rx="12"
+                    fill="#d95239"
+                    stroke="#3b3e37"
+                    stroke-width="4"
+                  />
+                  <path d="M22 60H98" stroke="#3b3e37" stroke-width="4" />
+                  <path d="M50 37H70M60 27V47" stroke="#fff3cf" stroke-width="5" />
+                  <path d="M50 82H70" stroke="#fff3cf" stroke-width="5" />
+                </g>
+                <g v-else-if="slot === 'Switch'">
+                  <rect
+                    x="10"
+                    y="22"
+                    width="100"
+                    height="72"
+                    rx="18"
+                    fill="#7fa3c4"
+                    stroke="#3b3e37"
+                    stroke-width="4"
+                  />
+                  <circle cx="60" cy="58" r="23" fill="#f4ead2" stroke="#3b3e37" stroke-width="4" />
+                  <path
+                    d="M60 60L82 20"
+                    stroke="#3b3e37"
+                    stroke-width="12"
+                    stroke-linecap="round"
+                  />
+                </g>
+                <g v-else-if="slot === 'Lamp'">
+                  <path
+                    d="M36 76C36 62 17 54 24 31C32 3 88 3 96 31C103 54 84 62 84 76Z"
+                    fill="#f3ce5b"
+                    stroke="#3b3e37"
+                    stroke-width="4"
+                  />
+                  <path d="M42 80H78M42 90H78M49 100H71" stroke="#3b3e37" stroke-width="6" />
+                  <path
+                    d="M50 75L43 40 60 50 77 40 70 75"
+                    fill="none"
+                    stroke="#a4712a"
+                    stroke-width="3"
+                  />
+                </g>
+                <g v-else fill="none" stroke="#777d72" stroke-width="3">
+                  <circle cx="60" cy="56" r="38" stroke-dasharray="5 7" />
+                  <path d="M40 56H80M60 36V76" />
+                </g></svg
               ><strong>{{ slot || 'Add a part' }}</strong>
             </button>
           </div>
@@ -79,10 +127,59 @@ function restore() {
         <section class="tool-shelf">
           <div>
             <p class="eyebrow">PARTS SHELF</p>
-            <h2>Choose a part<br />for slot {{ activeSlot + 1 }}.</h2>
+            <h2>Add to slot {{ activeSlot + 1 }}</h2>
           </div>
           <button v-for="part in parts" :key="part" @click="place(part)">
-            <span>{{ part === 'Power' ? '▥' : part === 'Switch' ? '⊖' : '☼' }}</span
+            <svg class="part-picture" viewBox="0 0 120 110" aria-hidden="true">
+              <g v-if="part === 'Power'">
+                <rect x="38" y="5" width="44" height="12" rx="4" fill="#3b3e37" />
+                <rect
+                  x="22"
+                  y="15"
+                  width="76"
+                  height="90"
+                  rx="12"
+                  fill="#d95239"
+                  stroke="#3b3e37"
+                  stroke-width="4"
+                />
+                <path d="M22 60H98" stroke="#3b3e37" stroke-width="4" />
+                <path d="M50 37H70M60 27V47" stroke="#fff3cf" stroke-width="5" />
+                <path d="M50 82H70" stroke="#fff3cf" stroke-width="5" />
+              </g>
+              <g v-else-if="part === 'Switch'">
+                <rect
+                  x="10"
+                  y="22"
+                  width="100"
+                  height="72"
+                  rx="18"
+                  fill="#7fa3c4"
+                  stroke="#3b3e37"
+                  stroke-width="4"
+                />
+                <circle cx="60" cy="58" r="23" fill="#f4ead2" stroke="#3b3e37" stroke-width="4" />
+                <path d="M60 60L82 20" stroke="#3b3e37" stroke-width="12" stroke-linecap="round" />
+              </g>
+              <g v-else-if="part === 'Lamp'">
+                <path
+                  d="M36 76C36 62 17 54 24 31C32 3 88 3 96 31C103 54 84 62 84 76Z"
+                  fill="#f3ce5b"
+                  stroke="#3b3e37"
+                  stroke-width="4"
+                />
+                <path d="M42 80H78M42 90H78M49 100H71" stroke="#3b3e37" stroke-width="6" />
+                <path
+                  d="M50 75L43 40 60 50 77 40 70 75"
+                  fill="none"
+                  stroke="#a4712a"
+                  stroke-width="3"
+                />
+              </g>
+              <g v-else fill="none" stroke="#777d72" stroke-width="3">
+                <circle cx="60" cy="56" r="38" stroke-dasharray="5 7" />
+                <path d="M40 56H80M60 36V76" />
+              </g></svg
             >{{ part }} +
           </button>
         </section>
@@ -703,5 +800,312 @@ main {
   .saved-parts span {
     padding: 20px;
   }
+}
+
+/* The entry is the experience itself; supporting routes retain its vocabulary. */
+
+.entry {
+  background: #7ca9a6;
+  padding: 25px;
+}
+.entry header {
+  max-width: none;
+  width: 100%;
+  margin: 0;
+  padding: 0 15px 25px;
+  border: 0;
+  align-items: center;
+}
+.entry header strong {
+  font-size: 18px;
+  line-height: 1;
+}
+.entry header strong span {
+  font-size: 38px;
+}
+.entry header nav {
+  font-size: 12px;
+  gap: 15px;
+}
+.entry main {
+  max-width: none;
+  margin: 0;
+  width: 100%;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr);
+  gap: 25px;
+  background: #d8b681;
+  border: 7px solid #715b41;
+  border-radius: 35px;
+  box-shadow: 0 15px 0 #4b4436;
+}
+.entry main > h1 {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip-path: inset(50%) !important;
+  white-space: nowrap !important;
+}
+.entry .instructions {
+  grid-column: 1/3;
+  padding: 12px 20px;
+  background: #594b3c;
+  color: #fff3d7;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  font-size: 12px;
+  margin: 0;
+}
+.entry .tabletop {
+  grid-column: 2;
+  grid-row: 2;
+  padding: 35px 25px;
+  background: #bfd2c0;
+  border: 5px solid #728a7c;
+  border-radius: 25px;
+  margin: 0;
+  box-shadow: inset 0 7px 0 #6e847930;
+}
+.entry .machine {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+  position: relative;
+  z-index: 1;
+}
+.entry .slot {
+  min-height: 260px;
+  background: #e7ead7;
+  border: 3px solid #657063;
+  border-radius: 15px;
+  padding: 22px 12px;
+  box-shadow: inset 0 7px 0 #99a694;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.entry .slot.active {
+  outline: 5px solid #a83d2a;
+  outline-offset: 6px;
+}
+.entry .slot small {
+  font-size: 10px;
+}
+.entry .slot strong {
+  font-size: 14px;
+}
+.part-picture {
+  display: block;
+  width: 115px;
+  max-width: 100%;
+  height: 130px;
+}
+.entry .wire {
+  margin: 15px 8%;
+  height: 30px;
+  border: 5px solid #ac4232;
+  border-top: 0;
+  border-radius: 0 0 18px 18px;
+}
+.entry .result {
+  font-size: 13px;
+  min-height: 65px;
+  padding: 20px 0 0;
+}
+.entry .tool-shelf {
+  grid-column: 1;
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  background: #f4ddaf;
+  padding: 20px;
+  border: 3px solid #715b41;
+  border-radius: 20px;
+  margin: 0;
+  gap: 12px;
+  box-shadow: inset 0 7px 0 #c1a472;
+}
+.entry .tool-shelf > div {
+  width: 100%;
+}
+.entry .tool-shelf h2 {
+  font-size: 21px;
+  margin: 7px 0;
+}
+.entry .tool-shelf .eyebrow {
+  font-size: 9px;
+  margin: 0;
+}
+.entry .tool-shelf button {
+  background: #f7ecd4;
+  border: 2px solid #715b41;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 12px;
+  width: 100%;
+  font-size: 14px;
+  box-shadow: 0 4px 0 #92754c;
+}
+.entry .tool-shelf .part-picture {
+  height: 75px;
+  width: 70px;
+}
+.entry .actions {
+  grid-column: 1/3;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+.entry .actions button {
+  background: #f7ecd4;
+  border: 2px solid #715b41;
+  box-shadow: 0 5px 0 #715b41;
+  border-radius: 35px;
+  padding: 17px 25px;
+  font-size: 13px;
+}
+.entry .actions .primary {
+  background: #a83d2a;
+  color: #fff3d7;
+}
+.entry .explain {
+  grid-column: 1/3;
+  padding: 20px 4%;
+  border: 0;
+  max-width: 850px;
+  margin: auto;
+}
+.entry .explain h2 {
+  font-size: 23px;
+}
+.entry .explain p {
+  font-size: 15px;
+}
+@media (max-width: 800px) {
+  .entry {
+    padding: 12px;
+  }
+  .entry header {
+    padding: 12px 5px 20px;
+    gap: 12px;
+  }
+  .entry header strong {
+    font-size: 12px;
+  }
+  .entry header strong span {
+    font-size: 26px;
+  }
+  .entry header nav {
+    gap: 10px;
+    font-size: 10px;
+  }
+  .entry main {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 12px;
+    gap: 18px;
+    border-width: 4px;
+    border-radius: 22px;
+  }
+  .entry .instructions {
+    order: 1;
+    font-size: 10px;
+    padding: 12px;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .entry .tool-shelf {
+    order: 2;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    padding: 12px;
+    gap: 10px;
+  }
+  .entry .tool-shelf > div {
+    grid-column: 1/4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .entry .tool-shelf h2 {
+    font-size: 16px;
+  }
+  .entry .tool-shelf button {
+    padding: 8px 4px;
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    gap: 5px;
+  }
+  .entry .tool-shelf .part-picture {
+    width: 55px;
+    height: 65px;
+  }
+  .entry .tabletop {
+    order: 3;
+    padding: 22px 12px;
+    border-width: 3px;
+  }
+  .entry .machine {
+    gap: 12px;
+  }
+  .entry .slot {
+    min-height: 150px;
+    padding: 12px 5px;
+    border-width: 2px;
+  }
+  .entry .slot.active {
+    outline-width: 3px;
+    outline-offset: 3px;
+  }
+  .entry .slot small {
+    font-size: 8px;
+  }
+  .entry .slot strong {
+    font-size: 10px;
+  }
+  .entry .slot .part-picture {
+    height: 75px;
+  }
+  .entry .wire {
+    height: 20px;
+    margin: 10px 8%;
+    border-width: 3px;
+  }
+  .entry .result {
+    font-size: 11px;
+    min-height: 50px;
+    padding-top: 10px;
+  }
+  .entry .actions {
+    order: 4;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .entry .actions button {
+    font-size: 10px;
+    padding: 12px;
+  }
+  .entry .explain {
+    order: 5;
+    padding: 20px 4%;
+  }
+}
+.entry header,
+.entry header button,
+.entry footer,
+.entry footer button {
+  color: #29362f;
 }
 </style>

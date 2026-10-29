@@ -14,7 +14,7 @@
   ],
   "character": "Experimental",
   "traits": {
-    "composition": "Four coloured text strands travel down a warm page, crossing at shared moments. Quotes, times and connecting curves become the navigation.",
+    "composition": "A narrow vertical title spine accompanies a woven oral-history surface. Overscale shared times cut across four offset text strands; narrator controls are attached to the strands, and voices cross immediately without a separate introductory hero.",
     "navigation": "Choose a narrator, switch at a crossing, compare recollections",
     "typography": "Libre Baskerville / DM Sans",
     "density": "Medium",
@@ -81,7 +81,7 @@
   "referenceImages": [
     {
       "file": "/previews/80/desktop.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/80/f5ba6b9d21946242-desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/80/2711318bcf158822-desktop.jpg",
       "route": "/preview/80-braided-voices/start",
       "viewport": {
         "width": 1440,
@@ -89,13 +89,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:8081bb1ec25452d874a222d0b8ad4cb6be379ba967f85e72dc9c583cb0202fd3",
-      "sha256": "f5ba6b9d219462421c640ee5776d2e64a4e5d63b548030a4bc096ec47cb7d558",
+      "sourceRevision": "sha256:2822d1d51fc7871503ee3c7566d6f93b864803591c5b887e5c2749fd95b50a68",
+      "sha256": "2711318bcf158822a41875e29b1fe32624bd677b0064723e23ac73613663eacd",
       "fullPage": false
     },
     {
       "file": "/previews/80/mobile.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/80/8d1af8b400407515-mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/80/942594e6fc229f07-mobile.jpg",
       "route": "/preview/80-braided-voices/start",
       "viewport": {
         "width": 390,
@@ -103,8 +103,8 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:8081bb1ec25452d874a222d0b8ad4cb6be379ba967f85e72dc9c583cb0202fd3",
-      "sha256": "8d1af8b4004075157f66b6204174ce4367011878a645214d9dfb63ea4be016ee",
+      "sourceRevision": "sha256:2822d1d51fc7871503ee3c7566d6f93b864803591c5b887e5c2749fd95b50a68",
+      "sha256": "942594e6fc229f07c26e40cdca1c127186b423885906ba8686021c3d5278ca37",
       "fullPage": false
     },
     {
@@ -117,13 +117,13 @@
       },
       "state": "crossing",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:8081bb1ec25452d874a222d0b8ad4cb6be379ba967f85e72dc9c583cb0202fd3",
+      "sourceRevision": "sha256:2822d1d51fc7871503ee3c7566d6f93b864803591c5b887e5c2749fd95b50a68",
       "sha256": "016bd64a93e10d8ad15a258693905f8fd83b9ffd36e6b13e5a18b5bc2e37bb68",
       "fullPage": false
     },
     {
       "file": "/previews/80/full-page.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/80/4404c04a94130824-full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/80/d9df32e8d145f80a-full-page.jpg",
       "route": "/preview/80-braided-voices/start",
       "viewport": {
         "width": 1440,
@@ -131,8 +131,8 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:8081bb1ec25452d874a222d0b8ad4cb6be379ba967f85e72dc9c583cb0202fd3",
-      "sha256": "4404c04a94130824ffbef888d02b9011e39113f61e0a1ae68355e09b68bb3002",
+      "sourceRevision": "sha256:2822d1d51fc7871503ee3c7566d6f93b864803591c5b887e5c2749fd95b50a68",
+      "sha256": "d9df32e8d145f80a1a38855fafe3d830e402d47eef468576130e6c650325acc7",
       "fullPage": true
     }
   ],
@@ -161,6 +161,6 @@
     "Libre Baskerville",
     "DM Sans"
   ],
-  "brief": "**Idea.** Follow a life through the points where it crosses another.\n\n**Composition.** Four coloured text strands travel down a warm page, crossing at shared moments. Quotes, times and connecting curves become the navigation.\n\n**Navigation and complete example.** Follow four neighbours through six moments in one day, switch voices at a crossing and compare their accounts in a complete transcript.\n\n**Responsive and inclusive behaviour.** Narrator controls remain explicit; each chronological crossing becomes a compact two-column weave, then a readable stacked transcript on very narrow screens. All controls are native buttons or labelled inputs. Movement is discretionary, no sound starts automatically, reduced-motion preferences remove transitions, and a direct index exposes the same content.\n\n**Adaptation.** Maintain different voices with common coordinates. Give readers a way to see who is speaking without relying on strand colour. Retain the relationship between navigation and content. Do not reduce the reference to a generic hero followed by interchangeable cards.\n\n**Research.** [Aaron Koblin — The Wilderness Downtown](https://www.aaronkoblin.com/project/the-wilderness-downtown/); [Conditional Design manifesto](https://conditionaldesign.org/manifesto/). These are conceptual precedents, not copied artwork, source code, branding or text. All diagrams and sample writing in this specimen are original, fictional material.",
+  "brief": "**Idea.** Follow a life through the points where it crosses another.\n\n**Composition.** A narrow vertical title spine accompanies a woven oral-history surface. Overscale shared times cut across four offset text strands; narrator controls are attached to the strands, and voices cross immediately without a separate introductory hero.\n\n**Navigation and complete example.** Follow four neighbours through six moments in one day, switch voices at a crossing and compare their accounts in a complete transcript.\n\n**Responsive and inclusive behaviour.** On phones the title remains a slim vertical spine and the voices weave through two columns. Four narrator controls and every shared moment remain directly selectable. Native buttons, visible focus, a direct return path and reduced-motion support preserve access to the same content.\n\n**Adaptation.** Maintain different voices with common coordinates. Give readers a way to see who is speaking without relying on strand colour. Retain the relationship between navigation and content. Do not reduce the reference to a generic hero followed by interchangeable cards.\n\n**Research.** [Aaron Koblin — The Wilderness Downtown](https://www.aaronkoblin.com/project/the-wilderness-downtown/); [Conditional Design manifesto](https://conditionaldesign.org/manifesto/). These are conceptual precedents, not copied artwork, source code, branding or text. All diagrams and sample writing in this specimen are original, fictional material.",
   "scope": "Complete visual reference with deterministic local interactions and fictional content; no production backend."
 }

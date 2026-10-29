@@ -4,9 +4,11 @@
 
 **Visual grammar.** Use a dense, edge-to-edge index with an anchored search strip, visible result count, clear grouping labels, and selectable overview, medium, and detail densities. Thumbnails and short captions carry the page; typography and chrome recede. Density changes alter how much context is visible, rather than simply enlarging cards inside a conventional landing page.
 
+**Composition.** The visual archive starts immediately at the density and search strip, followed by twenty-four different graphic compositions. Overview shows all 24 studies at once; medium and detail modes paginate smaller selections, so density changes the amount of visible context rather than simply card size.
+
 **Specimen and flow.** _The Reference Room_ holds a finite set of fictional graphic studies. Filter by medium, change the overview density, open a specimen, and return to the same position. Supporting views are a text list of results and an explicit empty-result state. Pagination, deep links, and the current page remain visible.
 
-**Mobile and motion.** Use discrete density controls instead of mandatory pinch or wheel gestures. Keep captions legible and preserve focus when returning from details. Reduced motion switches views immediately.
+**Responsive and inclusive behaviour.** Phones retain three-column overview, two-column medium and single-column detail modes, with compact captions and explicit pagination. Text-list and detail routes retain the selected filters. Native buttons, visible focus, a direct return path and reduced-motion support preserve access to the same content.
 
 **Identity and effort.** Preserve overview-to-detail exploration; avoid an endless feed, hidden destinations, or costly unbounded rendering. **Effort: medium.**
 
@@ -26,7 +28,7 @@ Brand, subject, accent and equivalent licensed typefaces can change. Preserve co
 
 ## Tokens and typography
 
-Heading: DM Sans. Reading: DM Sans. Local WOFF2 fonts with system fallbacks. Page #eeeee8; surface #ffffff; text #30382f; accent #445f3d. Eight-pixel base spacing; reading measure 65ch; width 1240px. See tokens.css for role values and Demo.vue for composition. Palette and type match the working specimen.
+Heading: DM Sans. Reading: DM Sans. Local WOFF2 fonts with system fallbacks. Page #eeeee8; surface #ffffff; text #30382f; accent #445f3d. Base tokens define an eight-pixel spacing unit, 65ch reading measure and 1240px content width; the composition-specific rules in Demo.vue override these where the canvas, type or information density requires it. See tokens.css for role values and Demo.vue for composition. Palette and type match the working specimen.
 
 ## States
 

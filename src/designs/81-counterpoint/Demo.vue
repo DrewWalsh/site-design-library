@@ -40,7 +40,7 @@ const pairs = [
 ];
 </script>
 <template>
-  <div class="specimen">
+  <div class="specimen" :class="{ entry: state === 'start' }">
     <a class="skip" href="#content">Skip to content</a>
 
     <header>
@@ -426,6 +426,148 @@ footer {
     transition: none !important;
     animation: none !important;
     scroll-behavior: auto !important;
+  }
+}
+
+/* The entry is the experience itself; supporting routes retain its vocabulary. */
+
+.entry {
+  position: relative;
+}
+.entry header {
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  top: calc(100svh - 100px);
+  z-index: 4;
+  padding: 15px 20px;
+  border: 1px solid #eee3c6;
+  background: #eee3c6;
+  color: #241d2b;
+  max-width: 520px;
+  gap: 20px;
+  box-shadow: 6px 6px 0 #241d2b;
+}
+.entry header > span {
+  display: none;
+}
+.entry header strong {
+  font-size: 13px;
+  letter-spacing: 0.14em;
+}
+.entry .balance {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+  padding: 15px;
+  max-width: 440px;
+  width: max-content;
+  gap: 8px;
+  border: 0;
+  background: #eee3c6;
+  color: #241d2b;
+}
+.entry .balance label {
+  font-size: 10px;
+}
+.entry .balance button {
+  font-size: 10px;
+  padding: 8px;
+}
+.entry .duet:first-of-type {
+  min-height: 100svh;
+}
+.entry main > .duet:not(.pair) {
+  min-height: 100svh;
+}
+.entry main > .duet:not(.pair) > section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 120px 7% 160px;
+}
+.entry .duet h1,
+.entry .duet h2 {
+  font-size: clamp(64px, 11vw, 175px);
+  line-height: 0.9;
+  letter-spacing: -0.08em;
+  max-width: 5em;
+  margin: 30px 0;
+}
+.entry .duet section > p {
+  max-width: 25ch;
+  font-size: 17px;
+}
+.entry .voice-b {
+  text-align: right;
+}
+.entry .voice-b > p,
+.entry .voice-b > h2 {
+  margin-left: auto;
+}
+.entry .pair {
+  border-top: 2px solid #eee3c6;
+}
+.entry .pair article {
+  padding: 70px 9%;
+}
+@media (max-width: 700px) {
+  .entry header {
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    margin: 0;
+    max-width: none;
+    border: 0;
+    border-bottom: 2px solid;
+    padding: 12px 5%;
+    box-shadow: none;
+  }
+  .entry header nav {
+    gap: 8px;
+  }
+  .entry .balance {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    width: 100%;
+    max-width: none;
+    justify-content: center;
+    padding: 14px 5%;
+    flex-wrap: wrap;
+  }
+  .entry main > .duet:not(.pair) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 680px;
+  }
+  .entry main > .duet:not(.pair) > section {
+    padding: 45px 12px;
+    justify-content: flex-start;
+    min-width: 0;
+  }
+  .entry .duet h1,
+  .entry .duet h2 {
+    font-size: clamp(43px, 12vw, 80px);
+    margin: 55px 0 35px;
+    letter-spacing: -0.07em;
+  }
+  .entry .duet section > p {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+  .entry .duet section > small {
+    font-size: 9px;
+  }
+  .entry .pair .voice-b {
+    text-align: left;
+  }
+  .entry .pair article {
+    padding: 35px 7%;
   }
 }
 </style>

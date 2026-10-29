@@ -14,7 +14,7 @@
   ],
   "character": "Experimental",
   "traits": {
-    "composition": "A continuous geological section descends from chalk through ochre and rust to blue-black. Depth markers and embedded artefacts replace a conventional page grid.",
+    "composition": "The word BELOW sits at the cut edge of a drawn ground surface. An irregular geological section starts immediately underneath; depth ticks, oversized finds and alternating buried records replace the opening slogan and repeated rectangular sections.",
     "navigation": "Depth anchors, embedded artefacts and collected cross-section",
     "typography": "Archivo Black / Libre Baskerville",
     "density": "Medium",
@@ -81,7 +81,7 @@
   "referenceImages": [
     {
       "file": "/previews/82/desktop.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/82/79eab04df9d95d77-desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/82/8a551d9defe89ced-desktop.jpg",
       "route": "/preview/82-strata-descent/start",
       "viewport": {
         "width": 1440,
@@ -89,13 +89,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:30c03e52e633e054128c2b8ce78a9ba5ff12b9a7caaf80626040fc408ef140a9",
-      "sha256": "79eab04df9d95d77ab307a825eba4482a548e537a3be10dcedd2c946b51a65bd",
+      "sourceRevision": "sha256:8fef657c6d2a10a9bf9317356e9755d2f9c50bf4bebd425bc5b4bcca645d70fa",
+      "sha256": "8a551d9defe89ced39547b7206fb526df0b6c10a8473512dfe91e084cbf87692",
       "fullPage": false
     },
     {
       "file": "/previews/82/mobile.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/82/cfe327b0a6fd696f-mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/82/0ead4b1cb2db32bc-mobile.jpg",
       "route": "/preview/82-strata-descent/start",
       "viewport": {
         "width": 390,
@@ -103,13 +103,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:30c03e52e633e054128c2b8ce78a9ba5ff12b9a7caaf80626040fc408ef140a9",
-      "sha256": "cfe327b0a6fd696fcbb73412aa2e5241c8f877d6f15fb3913f9d35653b6bfdc7",
+      "sourceRevision": "sha256:8fef657c6d2a10a9bf9317356e9755d2f9c50bf4bebd425bc5b4bcca645d70fa",
+      "sha256": "0ead4b1cb2db32bc2bc8df08f44e799a5f1730c30dc4a2c1b05205bfdbe5f245",
       "fullPage": false
     },
     {
       "file": "/previews/82/detail.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/82/2d898be53ce61e27-detail.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/82/72899ede877ebd36-detail.jpg",
       "route": "/preview/82-strata-descent/artefact",
       "viewport": {
         "width": 1440,
@@ -117,13 +117,13 @@
       },
       "state": "artefact",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:30c03e52e633e054128c2b8ce78a9ba5ff12b9a7caaf80626040fc408ef140a9",
-      "sha256": "2d898be53ce61e2777ac4c4acc8744fc6bee81df085a6f58dc4c540958da3896",
+      "sourceRevision": "sha256:8fef657c6d2a10a9bf9317356e9755d2f9c50bf4bebd425bc5b4bcca645d70fa",
+      "sha256": "72899ede877ebd36f5d448724a61ef2c38f3c6a0f16a71c7cc6f9a758c42335f",
       "fullPage": false
     },
     {
       "file": "/previews/82/full-page.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/82/0b6db40342be72cb-full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/82/f60336050289b9ac-full-page.jpg",
       "route": "/preview/82-strata-descent/start",
       "viewport": {
         "width": 1440,
@@ -131,8 +131,8 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:30c03e52e633e054128c2b8ce78a9ba5ff12b9a7caaf80626040fc408ef140a9",
-      "sha256": "0b6db40342be72cb4d7c3d25faa998b05e561de2fb84a4adbf662726f36fe4be",
+      "sourceRevision": "sha256:8fef657c6d2a10a9bf9317356e9755d2f9c50bf4bebd425bc5b4bcca645d70fa",
+      "sha256": "f60336050289b9acc7d079ea1c2d62a2a78adb1a2edd66fdd71e2d79b56c4c1c",
       "fullPage": true
     }
   ],
@@ -157,6 +157,6 @@
     "Archivo Black",
     "Libre Baskerville"
   ],
-  "brief": "**Idea.** Depth is both the navigation and the argument of the archive.\n\n**Composition.** A continuous geological section descends from chalk through ochre and rust to blue-black. Depth markers and embedded artefacts replace a conventional page grid.\n\n**Navigation and complete example.** Descend through six invented layers of a former railway site, examine a found object in each and collect a cross-section of findings.\n\n**Responsive and inclusive behaviour.** Depth markers stay in a narrow rail; content occupies the remaining width. All strata have labelled anchor links, so scrolling distance is optional. All controls are native buttons or labelled inputs. Movement is discretionary, no sound starts automatically, reduced-motion preferences remove transitions, and a direct index exposes the same content.\n\n**Adaptation.** Use depth for meaningful chronology or scale, not merely a long scroll. Clearly distinguish fictional findings from research evidence. Retain the relationship between navigation and content. Do not reduce the reference to a generic hero followed by interchangeable cards.\n\n**Research.** [Neal Agarwal — The Deep Sea](https://neal.fun/deep-sea/). These are conceptual precedents, not copied artwork, source code, branding or text. All diagrams and sample writing in this specimen are original, fictional material.",
+  "brief": "**Idea.** Depth is both the navigation and the argument of the archive.\n\n**Composition.** The word BELOW sits at the cut edge of a drawn ground surface. An irregular geological section starts immediately underneath; depth ticks, oversized finds and alternating buried records replace the opening slogan and repeated rectangular sections.\n\n**Navigation and complete example.** Descend through six invented layers of a former railway site, examine a found object in each and collect a cross-section of findings.\n\n**Responsive and inclusive behaviour.** Phone strata keep a narrow depth gauge beside full-width finds. The six depth anchors provide direct navigation without requiring the full descent. Native buttons, visible focus, a direct return path and reduced-motion support preserve access to the same content.\n\n**Adaptation.** Use depth for meaningful chronology or scale, not merely a long scroll. Clearly distinguish fictional findings from research evidence. Retain the relationship between navigation and content. Do not reduce the reference to a generic hero followed by interchangeable cards.\n\n**Research.** [Neal Agarwal — The Deep Sea](https://neal.fun/deep-sea/). These are conceptual precedents, not copied artwork, source code, branding or text. All diagrams and sample writing in this specimen are original, fictional material.",
   "scope": "Complete visual reference with deterministic local interactions and fictional content; no production backend."
 }

@@ -96,7 +96,7 @@ onUnmounted(() => {
 watch(state, () => stop());
 </script>
 <template>
-  <div class="specimen">
+  <div class="specimen" :class="{ entry: state === 'start' }">
     <a class="skip" href="#content">Skip to content</a>
 
     <header>
@@ -108,10 +108,7 @@ watch(state, () => stop());
     </header>
     <main id="content">
       <template v-if="state === 'start'"
-        ><div class="opening">
-          <h1>Read with<br />more than one voice.</h1>
-          <p>Six measures for a room,<br />a street, a body and a pause.</p>
-        </div>
+        ><h1 class="sr">Interval: a publication in six measures and four voices</h1>
         <div class="transport">
           <button @click="play">{{ playing ? 'Pause reading' : 'Perform the sequence' }}</button
           ><button
@@ -582,6 +579,182 @@ footer {
     transition: none !important;
     animation: none !important;
     scroll-behavior: auto !important;
+  }
+}
+
+/* The entry is the experience itself; supporting routes retain its vocabulary. */
+
+.entry {
+  position: relative;
+  padding-left: 80px;
+}
+.entry header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 80px;
+  padding: 25px 12px;
+  background: #28223c;
+  color: #f2eddf;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 35px;
+  border: 0;
+}
+.entry header strong {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 43px;
+  line-height: 1;
+  letter-spacing: 0.1em;
+}
+.entry header strong span {
+  font: 8px var(--body);
+  letter-spacing: 0.15em;
+}
+.entry header nav {
+  writing-mode: vertical-rl;
+  gap: 20px;
+}
+.entry header nav button {
+  font-size: 10px;
+  border: 0;
+  border-left: 1px solid;
+  padding: 12px 8px;
+}
+.entry main > h1 {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip-path: inset(50%) !important;
+  white-space: nowrap !important;
+}
+.entry .transport {
+  padding: 20px 3%;
+  border: 0;
+  border-bottom: 1px solid #b3a8bb;
+  background: #e7ddc7;
+  gap: 22px;
+}
+.entry .transport > span {
+  font-size: 8px;
+}
+.entry .score-scroll {
+  padding: 0 0 30px;
+}
+.entry .score {
+  min-width: 1250px;
+}
+.entry .measure-head,
+.entry .staff {
+  grid-template-columns: 140px repeat(6, minmax(0, 1fr));
+}
+.entry .measure-head b {
+  font-size: 130px;
+  line-height: 1;
+  margin: 0 0 15px;
+}
+.entry .measure-head button {
+  padding: 20px 12px;
+  font-size: 11px;
+}
+.entry .measure-head > span {
+  writing-mode: vertical-rl;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+}
+.entry .staff {
+  min-height: 180px;
+  margin-top: 0;
+  background: repeating-linear-gradient(0deg, transparent 0 29px, #b3a8bb 29px 30px);
+}
+.entry .note {
+  padding: 20px 10px;
+}
+.entry .note > span {
+  font-size: 15px;
+  line-height: 1.5;
+  border-left: 3px solid;
+  padding: 10px;
+}
+.entry .note small {
+  font-size: 9px;
+}
+.entry .voice-name {
+  padding: 18px;
+  font-size: 11px;
+}
+.entry .voice-name strong {
+  font-size: 22px;
+}
+.entry .current {
+  background: #28223c;
+  color: #f2eddf;
+  border: 0;
+  padding: 30px 4%;
+}
+.entry .current > span {
+  color: #d9b9ec;
+}
+.entry .current button {
+  color: inherit;
+}
+@media (max-width: 750px) {
+  .entry {
+    padding-left: 38px;
+  }
+  .entry header {
+    width: 38px;
+    padding: 18px 7px;
+    gap: 30px;
+  }
+  .entry header strong {
+    font-size: 23px;
+  }
+  .entry header strong span {
+    display: none;
+  }
+  .entry header nav {
+    gap: 15px;
+  }
+  .entry header nav button {
+    font-size: 9px;
+    padding: 10px 3px;
+  }
+  .entry .transport {
+    padding: 16px 6%;
+    gap: 13px;
+    font-size: 10px;
+  }
+  .entry .transport > span {
+    display: none;
+  }
+  .entry .score {
+    min-width: 1100px;
+  }
+  .entry .measure-head,
+  .entry .staff {
+    grid-template-columns: 100px repeat(6, minmax(0, 1fr));
+  }
+  .entry .measure-head b {
+    font-size: 100px;
+  }
+  .entry .staff {
+    min-height: 170px;
+  }
+  .entry .voice-name strong {
+    font-size: 18px;
+  }
+  .entry .current {
+    padding: 25px 7%;
+  }
+  .entry .current p {
+    font-size: 25px;
   }
 }
 </style>

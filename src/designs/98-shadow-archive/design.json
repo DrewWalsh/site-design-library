@@ -14,7 +14,7 @@
   ],
   "character": "Experimental",
   "traits": {
-    "composition": "Small original geometric objects cast enormous lavender silhouettes across an ochre field. Directional light controls transform the composition and the captions attached to it.",
+    "composition": "Six small objects are scattered over one continuous light table, casting very long blue projections across neighbouring space. Their labels sit at the ends of the shadows; a four-way compass changes the illumination. The former card grid and headline are gone.",
     "navigation": "Choose light direction, enter a labelled shadow, compare projections",
     "typography": "Space Grotesk / IBM Plex Mono",
     "density": "Medium",
@@ -81,7 +81,7 @@
   "referenceImages": [
     {
       "file": "/previews/98/desktop.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/98/9f7869303b62e244-desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/98/c5539d42fe9d8405-desktop.jpg",
       "route": "/preview/98-shadow-archive/start",
       "viewport": {
         "width": 1440,
@@ -89,13 +89,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:f2e4ca2ba9f67b43c960206c95e16e9b57fea3cb274ec425fcf520546a2bc638",
-      "sha256": "9f7869303b62e244d402a513fd020eaa3b827cb73676cf805ba681385bf05577",
+      "sourceRevision": "sha256:0b5dfc1d787b0d6e6d0ddca485a7f3325e7886e36ea87773c16ba9d45e18060e",
+      "sha256": "c5539d42fe9d840513940583a1af366279c1ce449cbf7b852092e84a726f6c2c",
       "fullPage": false
     },
     {
       "file": "/previews/98/mobile.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/98/56b1a5dc51622aee-mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/98/eaccfcea0cdd5465-mobile.jpg",
       "route": "/preview/98-shadow-archive/start",
       "viewport": {
         "width": 390,
@@ -103,8 +103,8 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:f2e4ca2ba9f67b43c960206c95e16e9b57fea3cb274ec425fcf520546a2bc638",
-      "sha256": "56b1a5dc51622aee00c82ec5acc38095b576dc36cd2046ee7c9931f0334fd2f9",
+      "sourceRevision": "sha256:0b5dfc1d787b0d6e6d0ddca485a7f3325e7886e36ea87773c16ba9d45e18060e",
+      "sha256": "eaccfcea0cdd54659c7fba5d53d09e23e258611236c05e0ee60d0f700ae677b3",
       "fullPage": false
     },
     {
@@ -117,13 +117,13 @@
       },
       "state": "object",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:f2e4ca2ba9f67b43c960206c95e16e9b57fea3cb274ec425fcf520546a2bc638",
+      "sourceRevision": "sha256:0b5dfc1d787b0d6e6d0ddca485a7f3325e7886e36ea87773c16ba9d45e18060e",
       "sha256": "86d07a340d67b9470232cdaad5e0c87eca8e7c59f66849d2f8d2197f623239bb",
       "fullPage": false
     },
     {
       "file": "/previews/98/full-page.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/98/1a6cf389d1d7131c-full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/98/6d69d1dcd95633bb-full-page.jpg",
       "route": "/preview/98-shadow-archive/start",
       "viewport": {
         "width": 1440,
@@ -131,8 +131,8 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:f2e4ca2ba9f67b43c960206c95e16e9b57fea3cb274ec425fcf520546a2bc638",
-      "sha256": "1a6cf389d1d7131ced8ef464cce4ad6dda9d1ddf5c30fce9e2dfc84d11445323",
+      "sourceRevision": "sha256:0b5dfc1d787b0d6e6d0ddca485a7f3325e7886e36ea87773c16ba9d45e18060e",
+      "sha256": "6d69d1dcd95633bbad18195c7408b6cdb53315786655528b838a49bba1dc7898",
       "fullPage": true
     }
   ],
@@ -157,6 +157,6 @@
     "Space Grotesk",
     "IBM Plex Mono"
   ],
-  "brief": "**Idea.** Changing the light can change which part of an object becomes readable.\n\n**Composition.** Small original geometric objects cast enormous lavender silhouettes across an ochre field. Directional light controls transform the composition and the captions attached to it.\n\n**Navigation and complete example.** Choose one of four light directions, inspect six object studies through their labelled shadows and compare how each projection supports a different reading.\n\n**Responsive and inclusive behaviour.** Each shadow is clipped within its own generous field, while labels remain untransformed and controls retain a fixed position. All controls are native buttons or labelled inputs. Movement is discretionary, no sound starts automatically, reduced-motion preferences remove transitions, and a direct index exposes the same content.\n\n**Adaptation.** Keep projected shapes secondary to clear labels and focus targets. Light should reveal an authored interpretation, not merely animate an ornamental shadow. Retain the relationship between navigation and content. Do not reduce the reference to a generic hero followed by interchangeable cards.\n\n**Research.** [Rafaël Rozendaal — Internet works](https://www.newrafael.com/internet?filter=website). These are conceptual precedents, not copied artwork, source code, branding or text. All diagrams and sample writing in this specimen are original, fictional material.",
+  "brief": "**Idea.** Changing the light can change which part of an object becomes readable.\n\n**Composition.** Six small objects are scattered over one continuous light table, casting very long blue projections across neighbouring space. Their labels sit at the ends of the shadows; a four-way compass changes the illumination. The former card grid and headline are gone.\n\n**Navigation and complete example.** Choose one of four light directions, inspect six object studies through their labelled shadows and compare how each projection supports a different reading.\n\n**Responsive and inclusive behaviour.** The phone light table follows an alternating vertical path of objects. A compact compass precedes it, and untransformed labels remain readable even when shadows cross. Native buttons, visible focus, a direct return path and reduced-motion support preserve access to the same content.\n\n**Adaptation.** Keep projected shapes secondary to clear labels and focus targets. Light should reveal an authored interpretation, not merely animate an ornamental shadow. Retain the relationship between navigation and content. Do not reduce the reference to a generic hero followed by interchangeable cards.\n\n**Research.** [Rafaël Rozendaal — Internet works](https://www.newrafael.com/internet?filter=website). These are conceptual precedents, not copied artwork, source code, branding or text. All diagrams and sample writing in this specimen are original, fictional material.",
   "scope": "Complete visual reference with deterministic local interactions and fictional content; no production backend."
 }

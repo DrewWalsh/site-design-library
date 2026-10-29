@@ -76,7 +76,7 @@ function crossing(i: number) {
 }
 </script>
 <template>
-  <div class="specimen">
+  <div class="specimen" :class="{ entry: state === 'start' }">
     <a class="skip" href="#content">Skip to content</a>
 
     <header>
@@ -89,13 +89,7 @@ function crossing(i: number) {
     </header>
     <main id="content">
       <template v-if="state === 'start'"
-        ><div class="opening">
-          <span>ONE DAY / FOUR LIVES</span>
-          <h1>We were there<br />at the same time.</h1>
-          <p>
-            Choose a voice. Follow its thread. At a crossing, listen to what someone else remembers.
-          </p>
-        </div>
+        ><h1 class="sr">Common Hour: four lives crossing through one day</h1>
         <div class="voices">
           <button
             v-for="(name, i) in names"
@@ -494,6 +488,229 @@ footer {
     transition: none !important;
     animation: none !important;
     scroll-behavior: auto !important;
+  }
+}
+
+/* The entry is the experience itself; supporting routes retain its vocabulary. */
+
+.entry {
+  position: relative;
+  padding-left: 125px;
+  background: #fbf8f1;
+}
+.entry header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 125px;
+  padding: 30px 18px;
+  border: 0;
+  border-right: 1px solid #d1c4b5;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 45px;
+}
+.entry header strong {
+  font-size: 36px;
+  line-height: 0.95;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  height: 220px;
+}
+.entry header p {
+  font-size: 11px;
+}
+.entry header nav {
+  display: grid;
+  gap: 15px;
+}
+.entry header nav button {
+  font-size: 11px;
+  text-align: left;
+}
+.entry main > h1 {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip-path: inset(50%) !important;
+  white-space: nowrap !important;
+}
+.entry main > .voices {
+  padding: 20px 3%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  border-bottom: 1px solid #c5b6a9;
+}
+.entry main > .voices button {
+  padding: 18px 8px;
+  font-size: 12px;
+  border: 0;
+  border-bottom: 7px solid var(--thread);
+  background: none;
+  color: var(--thread);
+}
+.entry main > .voices button[aria-pressed='true'] {
+  background: color-mix(in srgb, var(--thread) 12%, transparent);
+}
+.entry .weave {
+  padding: 0 3% 80px;
+}
+.entry .moment {
+  position: relative;
+  z-index: 2;
+  justify-content: center;
+  gap: 16px;
+  padding: 12px;
+  border: 0;
+}
+.entry .moment time {
+  font-size: 45px;
+  letter-spacing: -0.06em;
+  font-family: var(--heading);
+}
+.entry .moment button {
+  font-size: 13px;
+  max-width: 150px;
+  line-height: 1.3;
+}
+.entry .strands {
+  padding: 0 0 15px;
+  gap: 3%;
+  min-height: 340px;
+  align-items: center;
+}
+.entry .strands article {
+  width: 22.75%;
+  padding: 25px 0 25px 25px;
+}
+.entry .strands article:nth-child(2) {
+  transform: translateY(45px);
+}
+.entry .strands article:nth-child(4) {
+  transform: translateY(-15px);
+}
+.entry .strands p {
+  font-size: clamp(17px, 1.7vw, 26px);
+  line-height: 1.4;
+}
+.entry .thread {
+  top: -40px;
+  bottom: -70px;
+  width: 2px;
+  transform: skew(-19deg);
+}
+.entry .strands article:nth-child(even) .thread {
+  transform: skew(22deg);
+}
+.entry .chosen .thread {
+  width: 7px;
+}
+@media (max-width: 750px) {
+  .entry {
+    padding-left: 42px;
+  }
+  .entry header {
+    width: 42px;
+    padding: 16px 8px;
+    gap: 20px;
+  }
+  .entry header strong {
+    font-size: 19px;
+    line-height: 1;
+    writing-mode: vertical-rl;
+    height: 180px;
+  }
+  .entry header p {
+    display: none;
+  }
+  .entry header nav {
+    writing-mode: vertical-rl;
+  }
+  .entry header nav button {
+    font-size: 10px;
+    padding: 12px 4px;
+  }
+  .entry main > .voices {
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    gap: 5px;
+  }
+  .entry main > .voices button {
+    font-size: 10px;
+    padding: 10px 4px;
+  }
+  .entry .moment {
+    padding: 18px 0;
+  }
+  .entry .moment time {
+    font-size: 35px;
+  }
+  .entry .moment button {
+    font-size: 12px;
+  }
+  .entry .strands {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+    padding: 8px 12px 45px;
+  }
+  .entry .strands article {
+    width: auto !important;
+    padding: 12px 0 12px 12px;
+    transform: none !important;
+  }
+  .entry .strands p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .entry .thread {
+    top: -12px;
+    bottom: -45px;
+  }
+  .entry .weave {
+    padding: 0 10px 60px;
+  }
+  .entry .strands small {
+    font-size: 9px;
+  }
+}
+@media (max-width: 750px) {
+  .entry {
+    padding-left: 54px;
+  }
+  .entry header {
+    width: 54px;
+    z-index: 4;
+  }
+  .entry header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+  }
+  .entry .strands {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .entry .strands article {
+    min-width: 0;
+    overflow-wrap: break-word;
+  }
+}
+@media (max-width: 360px) {
+  .entry .strands {
+    gap: 12px;
+    padding-inline: 8px;
+  }
+  .entry .strands p {
+    font-size: 15px;
   }
 }
 </style>

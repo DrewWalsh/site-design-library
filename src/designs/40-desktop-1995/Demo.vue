@@ -24,7 +24,7 @@ function open(app: string) {
 }
 </script>
 <template>
-  <div class="specimen">
+  <div class="specimen" :class="{ entry: state === 'start' }">
     <a class="skip" href="#content">Skip to content</a>
     <div class="osbar">
       <strong>▣ Parcel OS</strong><span>Portfolio desktop · Build 1.0</span
@@ -59,25 +59,40 @@ function open(app: string) {
         </div>
         <div class="windowcontent">
           <template v-if="state === 'start'"
-            ><div class="intro">
-              <p class="eyebrow">Hello, I’m Sam.</p>
-              <h1>Good work.<br />Neatly filed.</h1>
-              <p>A small collection of identities, websites, and things made to be used.</p>
+            ><h1 class="sr">Projects — Parcel file browser</h1>
+            <div class="addressbar">
+              <span>Location</span><b>▰ C:\Portfolio\Selected work</b><span>3 files</span>
             </div>
             <div class="explorer">
               <aside>
-                <strong>Folders</strong
+                <strong class="file-columns"><span>Name</span><span>Kind / Year</span></strong
                 ><button
                   v-for="p in ['Northbank identity', 'Field guide', 'Common Room website']"
                   :key="p"
                   :aria-pressed="project === p"
                   @click="project = p"
                 >
-                  ▰ {{ p }}
+                  <span>▰ {{ p }}</span
+                  ><small
+                    >{{
+                      p === 'Northbank identity'
+                        ? 'Identity'
+                        : p === 'Field guide'
+                          ? 'Publication'
+                          : 'Website'
+                    }}
+                    / 2026</small
+                  >
                 </button>
               </aside>
               <article>
-                <div class="project-art">
+                <div
+                  class="project-art"
+                  :class="{
+                    book: project === 'Field guide',
+                    web: project === 'Common Room website',
+                  }"
+                >
                   <span>{{
                     project === 'Northbank identity'
                       ? 'N/'
@@ -125,7 +140,11 @@ function open(app: string) {
               <button @click="sent = false">Write another</button>
             </div></template
           ><template v-else
-            ><h1>A very small desktop.</h1>
+            ><h1>About this desktop.</h1>
+            <p>
+              Hello, I’m Sam. I design identities, websites, and things made to be used. The
+              Projects folder holds three selected commissions from 2026.
+            </p>
             <p>Three applications. No hidden gestures.</p>
             <h2>Getting around</h2>
             <ul>
@@ -634,6 +653,156 @@ button:active {
   .statusbar {
     font-size: 9px;
     gap: 10px;
+  }
+}
+
+/* The entry is the experience itself; supporting routes retain its vocabulary. */
+
+.entry h1.sr {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip-path: inset(50%) !important;
+  white-space: nowrap !important;
+}
+.entry .windowcontent {
+  padding: 12px;
+  background: #e5e4db;
+}
+.addressbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 11px;
+  padding: 8px 5px 16px;
+}
+.addressbar b {
+  flex: 1;
+  border: 2px inset #c7c7bc;
+  background: white;
+  padding: 5px;
+  font-weight: 400;
+}
+.entry .explorer {
+  display: grid;
+  grid-template-columns: minmax(250px, 1fr) minmax(0, 1.2fr);
+  gap: 15px;
+  margin: 0;
+}
+.entry .explorer > aside {
+  border: 2px inset #cecec6;
+  background: #fffef7;
+  padding: 0;
+}
+.entry .file-columns {
+  display: flex;
+  justify-content: space-between;
+  background: #cfcec5;
+  border-bottom: 2px outset #fff;
+  padding: 7px;
+  font-size: 10px;
+}
+.entry .explorer > aside button {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border: 0;
+  border-bottom: 1px dotted #bcbdb5;
+  padding: 13px 10px;
+  width: 100%;
+  text-align: left;
+  background: #fffef7;
+  font-size: 12px;
+}
+.entry .explorer > aside button small {
+  font-size: 10px;
+  margin-left: 18px;
+}
+.entry .explorer > aside button[aria-pressed='true'] {
+  background: #182d7d;
+  color: #fff;
+  box-shadow: none;
+}
+.entry .explorer article {
+  background: #f9f8ee;
+  border: 2px inset #cecec6;
+  padding: 18px;
+}
+.entry .project-art {
+  min-height: 330px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 25px;
+}
+.entry .project-art span {
+  font-size: 90px;
+}
+.entry .project-art.book {
+  background: #d7b98d;
+  box-shadow: inset 22px 0 #8f4a38;
+}
+.entry .project-art.book span {
+  font:
+    65px/0.9 Georgia,
+    serif;
+  letter-spacing: 0.05em;
+  writing-mode: vertical-rl;
+}
+.entry .project-art.web {
+  background: #d8e1eb;
+  border: 12px solid #252b35;
+  box-shadow: inset 0 20px #aebfd2;
+}
+.entry .project-art.web span {
+  font-size: 47px;
+  line-height: 1;
+  margin-top: 40px;
+}
+.entry .explorer article h2 {
+  font-size: 25px;
+}
+.entry .explorer article p {
+  font-size: 13px;
+}
+.entry .explorer dl {
+  font-size: 11px;
+}
+.entry .explorer article button {
+  font-size: 11px;
+}
+@media (max-width: 750px) {
+  .entry .addressbar {
+    font-size: 8px;
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+  .entry .addressbar b {
+    min-width: 150px;
+  }
+  .entry .explorer {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .entry .explorer > aside button {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 8px;
+    font-size: 10px;
+    gap: 10px;
+  }
+  .entry .explorer > aside button small {
+    font-size: 8px;
+    margin: 0;
+  }
+  .entry .project-art {
+    min-height: 270px;
+  }
+  .entry .windowcontent {
+    padding: 8px;
   }
 }
 </style>

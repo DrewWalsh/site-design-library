@@ -115,7 +115,7 @@ function keep() {
 }
 </script>
 <template>
-  <div class="specimen">
+  <div class="specimen" :class="{ entry: state === 'start' }">
     <a class="skip" href="#content">Skip to content</a>
 
     <header>
@@ -124,10 +124,7 @@ function keep() {
     </header>
     <main id="content">
       <template v-if="state === 'start'"
-        ><div class="opening">
-          <h1>What does<br />your line remember?</h1>
-          <p>Draw a shape, or choose one below.<br />Follow its resemblance into the archive.</p>
-        </div>
+        ><h1 class="sr">Lineage: draw a form to find its relatives</h1>
         <div class="drawing-pad">
           <svg
             viewBox="0 0 900 340"
@@ -599,6 +596,223 @@ footer {
     transition: none !important;
     animation: none !important;
     scroll-behavior: auto !important;
+  }
+}
+
+/* The entry is the experience itself; supporting routes retain its vocabulary. */
+
+@font-face {
+  font-family: 'Caveat';
+  src: url('/fonts/caveat.woff2') format('woff2');
+  font-weight: 400 700;
+  font-display: swap;
+}
+.entry {
+  position: relative;
+  background: #f8f7f1;
+}
+.entry header {
+  position: absolute;
+  z-index: 3;
+  top: 22px;
+  left: 4%;
+  right: 4%;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  align-items: flex-start;
+}
+.entry header strong {
+  font:
+    48px/1 'Caveat',
+    cursive;
+  transform: rotate(-8deg);
+}
+.entry header > span {
+  font:
+    21px 'Caveat',
+    cursive;
+  max-width: 150px;
+  transform: rotate(7deg);
+}
+.entry header button {
+  font-size: 10px;
+}
+.entry main {
+  position: relative;
+}
+.entry main > h1 {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip-path: inset(50%) !important;
+  white-space: nowrap !important;
+}
+.entry .drawing-pad {
+  margin: 0;
+  border: 0;
+  min-height: 82svh;
+}
+.entry .drawing-pad svg {
+  height: 82svh;
+  min-height: 650px;
+}
+.entry .drawing-pad > span {
+  left: 5%;
+  bottom: 25px;
+  font-size: 10px;
+}
+.entry .forms {
+  position: relative;
+  padding: 20px 5%;
+  gap: 15px;
+  background: #f8f7f1;
+  border-block: 1px dashed #a5a69c;
+}
+.entry .forms button {
+  border: 0;
+  border-radius: 60% 45% 50% 55%;
+  padding: 10px 20px;
+  font-family: 'Caveat', cursive;
+  font-size: 23px;
+}
+.entry .forms svg {
+  width: 38px;
+}
+.entry .forms button:last-child {
+  font: 11px var(--body);
+}
+.entry .matches {
+  position: absolute;
+  top: 48svh;
+  left: 4%;
+  right: 4%;
+  padding: 0;
+  border: 0;
+  justify-content: space-between;
+  gap: 40%;
+  pointer-events: none;
+}
+.entry .matches > span {
+  position: absolute;
+  top: 100px;
+  left: 2%;
+  font-size: 8px;
+  writing-mode: horizontal-tb;
+}
+.entry .matches > button {
+  pointer-events: auto;
+  background: #f4e8a8;
+  box-shadow: 3px 4px 0 #d4cfb6;
+  padding: 20px;
+  display: block;
+  flex: 0 1 230px;
+  transform: rotate(-7deg);
+}
+.entry .matches > button:nth-of-type(2) {
+  transform: rotate(8deg);
+  margin-top: -70px;
+}
+.entry .matches b {
+  font:
+    34px 'Caveat',
+    cursive;
+  display: block;
+}
+.entry .matches strong {
+  font:
+    30px/1 'Caveat',
+    cursive;
+  display: block;
+  margin: 8px 0;
+}
+.entry .matches small {
+  font-size: 8px;
+}
+.entry .matches button > span {
+  display: block;
+  font-size: 9px;
+}
+.entry .match-status {
+  padding: 18px 5%;
+}
+@media (max-width: 750px) {
+  .entry header {
+    left: 5%;
+    right: 5%;
+    top: 20px;
+    gap: 10px;
+  }
+  .entry header strong {
+    font-size: 38px;
+  }
+  .entry header > span {
+    display: none;
+  }
+  .entry header button {
+    font-size: 9px;
+    max-width: 155px;
+  }
+  .entry .drawing-pad,
+  .entry .drawing-pad svg {
+    height: 530px;
+    min-height: 530px;
+  }
+  .entry .drawing-pad > span {
+    font-size: 8px;
+    bottom: 20px;
+  }
+  .entry .forms {
+    gap: 7px;
+    padding: 15px 4%;
+  }
+  .entry .forms button {
+    font-size: 19px;
+    padding: 8px 10px;
+    gap: 6px;
+  }
+  .entry .forms svg {
+    width: 25px;
+    height: 25px;
+  }
+  .entry .forms button:last-child {
+    margin-left: 0;
+    font-size: 10px;
+  }
+  .entry .matches {
+    position: relative;
+    inset: auto;
+    padding: 25px 7% 40px;
+    gap: 25px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .entry .matches > span {
+    position: static;
+    width: 100%;
+    font-size: 9px;
+  }
+  .entry .matches > button {
+    max-width: none;
+    flex: 1 1 130px;
+    padding: 15px;
+  }
+  .entry .matches > button:nth-of-type(2) {
+    margin-top: 25px;
+  }
+  .entry .matches strong {
+    font-size: 27px;
+  }
+  .entry .matches button > span {
+    font-size: 9px;
+  }
+  .entry .match-status {
+    font-size: 9px;
+    margin: 0;
+    padding: 15px 5%;
   }
 }
 </style>

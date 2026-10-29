@@ -4,6 +4,8 @@
 
 **Visual grammar.** Use prominent search, a stable facet column, a concise results summary, and information-rich horizontal listings. A crisp sans, white and pale blue-grey surfaces, deep charcoal text, and restrained teal selections make the contents easy to scan. Each record exposes the same useful attributes; small thumbnails remain secondary. An optional comparison tray collects chosen records.
 
+**Composition.** Search and comparable workspace rows are the opening. A compact title and result count accompany the faceted directory; venue details and comparison views now have their own task headings instead of inheriting the same promotional introduction.
+
 **Specimen and flow.** _Useful Places_ catalogues fictional workspaces. Visitors filter by equipment and opening day, compare selected venues, and inspect a detailed listing. Supporting states show no matching results with removable filters and a comparison view that highlights differing attributes.
 
 **Adaptation and identity.** Mobile uses an explicit filter panel, visible active filters, and stacked comparison attributes. Preserve comparability, predictable facets, and clear result feedback; avoid marketplace promotion modules, arbitrary recommendation ordering, and a wall of image-led cards. Motion is unnecessary. **Effort: medium.**
@@ -24,7 +26,7 @@ Brand, subject, accent and equivalent licensed typefaces can change. Preserve co
 
 ## Tokens and typography
 
-Heading: DM Sans. Reading: DM Sans. Local WOFF2 fonts with system fallbacks. Page #f7f9f8; surface #ffffff; text #263d3d; accent #2b6b65. Eight-pixel base spacing; reading measure 65ch; width 1240px. See tokens.css for role values and Demo.vue for composition. Palette and type match the working specimen.
+Heading: DM Sans. Reading: DM Sans. Local WOFF2 fonts with system fallbacks. Page #f7f9f8; surface #ffffff; text #263d3d; accent #2b6b65. Base tokens define an eight-pixel spacing unit, 65ch reading measure and 1240px content width; the composition-specific rules in Demo.vue override these where the canvas, type or information density requires it. See tokens.css for role values and Demo.vue for composition. Palette and type match the working specimen.
 
 ## States
 

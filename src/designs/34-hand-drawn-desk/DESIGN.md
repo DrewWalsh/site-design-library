@@ -4,9 +4,11 @@
 
 **Visual grammar.** Make numbered illustrated steps the main structure: a large diagram, a short explanation, and a practice prompt. Attach callouts to parts of the drawing rather than maintaining a prose annotation margin. Warm paper, graphite, blue ink, and a red correction accent support a readable sans body face. Handwriting appears only in short secondary notes; a compact step index supplies navigation.
 
+**Composition.** The opening is an annotated notebook sheet: a large lever drawing, a crossed-out hypothesis and corrected distance note, short attached callouts and coloured lesson tabs. The lesson title is a handwritten margin label; the drawing comes before its prose explanation.
+
 **Specimen and flow.** _Explain It Slowly_ teaches an original simple mechanism. Inspect a diagram, reveal labelled forces or moving parts, and predict the next step. Supporting views include the illustrated lesson index and answer feedback that connects the prediction to the diagram. The reader can toggle annotations without losing their position.
 
-**Responsive behaviour.** Drawing callouts become a numbered explanation below each diagram. Diagrams include captions and text accounts; animation never replaces the written explanation of how a mechanism works.
+**Responsive and inclusive behaviour.** Phone drawings keep a bounded diagram with readable captions. Lesson tabs wrap with a real minimum width, correcting the former vertical-letter collapse; numbered explanations follow the drawing. Native buttons, visible focus, a direct return path and reduced-motion support preserve access to the same content.
 
 **Identity rules.** Preserve explanatory annotation and visible thinking. Avoid fake handwritten paragraphs, random scribbles with no meaning, and confusing a teaching notebook with an archival card cabinet. **Effort: medium.**
 
@@ -26,7 +28,7 @@ Brand, subject, accent and equivalent licensed typefaces can change. Preserve co
 
 ## Tokens and typography
 
-Heading: Space Grotesk. Reading: DM Sans. Local WOFF2 fonts with system fallbacks. Page #f7f0de; surface #ffffff; text #37414a; accent #315b9a. Eight-pixel base spacing; reading measure 65ch; width 1240px. See tokens.css for role values and Demo.vue for composition. Palette and type match the working specimen.
+Heading: Space Grotesk. Reading: DM Sans. Local WOFF2 fonts with system fallbacks. Page #f7f0de; surface #ffffff; text #37414a; accent #315b9a. Base tokens define an eight-pixel spacing unit, 65ch reading measure and 1240px content width; the composition-specific rules in Demo.vue override these where the canvas, type or information density requires it. See tokens.css for role values and Demo.vue for composition. Palette and type match the working specimen.
 
 ## States
 
@@ -49,4 +51,4 @@ Reviewed working sample. Browser checks cover entry-page reflow at 320, 390, 768
 
 ## Distinctive composition
 
-Handwritten labels belong to the sketchbook, making its annotations distinct from the paper archive and playful geometric references.
+The opening is an annotated notebook sheet: a large lever drawing, a crossed-out hypothesis and corrected distance note, short attached callouts and coloured lesson tabs. The lesson title is a handwritten margin label; the drawing comes before its prose explanation.

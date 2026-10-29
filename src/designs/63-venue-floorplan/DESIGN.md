@@ -4,9 +4,11 @@
 
 **Visual grammar.** Use a plum and cream architectural plan with selectable seating configurations. Preserve the hierarchy of floorplans, room configurations, event packages; these patterns solve this business’s actual decision, rather than supplying interchangeable decoration.
 
+**Composition.** A working floorplan fills the opening: arrangement buttons change the furniture and capacity while a plum facts rail holds guest count and enquiry. Venue photography and packages follow the spatial decision.
+
 **Sample and interaction.** The Assembly Rooms is a fictional demonstration. The entry page establishes a complete visual direction, with configure the room and event enquiry as supporting states. Inputs use local deterministic fixtures; no request, order, application or payment is sent.
 
-**Responsive behaviour.** On a phone, keep the primary decision first, stack facts with explicit labels, preserve the order of the workflow, and provide comfortably sized controls. Wide diagrams scale; tabular facts retain their labels.
+**Responsive and inclusive behaviour.** Arrangement buttons, drawing and capacity are kept in that order. The guest count and enquiry carry into the same planner on the supporting route. Native buttons, visible focus, a direct return path and reduced-motion support preserve access to the same content.
 
 **Adaptation.** Replace the fictional brand, prices, availability, qualifications and claims with verified client information. Preserve floorplans, room configurations, event packages. Use imagery to explain the place, people, work or product, with deliberate crops and honest captions. Do not turn this into a generic hero-and-card layout.
 

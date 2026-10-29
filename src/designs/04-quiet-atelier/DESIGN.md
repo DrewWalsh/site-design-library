@@ -4,6 +4,8 @@
 
 **Visual grammar.** The opening view pairs a short introduction with one carefully positioned image, followed by a staggered sequence of selected projects. Use a modest text navigation and an index rather than a persistent sidebar. Warm white, brown-black ink, muted clay accents, a refined serif heading, and a small neutral sans create a subdued rhythm. Avoid treating every project as an identically sized tile.
 
+**Composition.** A generous interior photograph and precise project caption open the portfolio. A small studio note sits at its lower edge; architecture and object plates follow at different widths and offsets. The work establishes the studio before any promotional claim.
+
 **Specimen and flow.** _Alder Studio_ presents furniture and interiors. Visitors choose a project, move through its image-and-caption sequence, and open an enquiry form prefilled with that project. Supporting states show the complete project index and locally validated enquiry feedback.
 
 **Adaptation and identity.** Mobile converts the staggered composition into an intentional image sequence with captions directly beneath each image. Preserve selective curation, spaciousness, and material imagery; avoid enormous empty areas, hidden contact information, and compulsory animation. **Effort: low.**
@@ -24,7 +26,7 @@ Brand, subject, accent and equivalent licensed typefaces can change. Preserve co
 
 ## Tokens and typography
 
-Heading: Libre Baskerville. Reading: DM Sans. Local WOFF2 fonts with system fallbacks. Page #f6f2eb; surface #ffffff; text #3c372d; accent #79614e. Eight-pixel base spacing; reading measure 65ch; width 1240px. See tokens.css for role values and Demo.vue for composition. Palette and type match the working specimen.
+Heading: Libre Baskerville. Reading: DM Sans. Local WOFF2 fonts with system fallbacks. Page #f6f2eb; surface #ffffff; text #3c372d; accent #79614e. Base tokens define an eight-pixel spacing unit, 65ch reading measure and 1240px content width; the composition-specific rules in Demo.vue override these where the canvas, type or information density requires it. See tokens.css for role values and Demo.vue for composition. Palette and type match the working specimen.
 
 ## States
 

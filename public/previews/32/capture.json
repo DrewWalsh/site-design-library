@@ -1,12 +1,12 @@
 {
   "designId": "32",
-  "sourceRevision": "sha256:b77cac416f23c60b8d479885e35ef18aed386c17e6c02bfb4339e6648358f781",
-  "capturedAt": "2026-10-27T00:06:44.697Z",
-  "browser": "156.0.4314.42",
+  "sourceRevision": "sha256:fdfc88b1a606a5e00abde25fc2d49c154472d7410dd3fcd779953b9c161a2af5",
+  "capturedAt": "2026-10-29T20:37:58.509Z",
+  "browser": "156.0.4314.50",
   "captures": [
     {
       "file": "/previews/32/desktop.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/32/c08418d0d078851e-desktop.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/32/d3eefa288eb52e17-desktop.jpg",
       "route": "/preview/32-pop-memphis/start",
       "viewport": {
         "width": 1440,
@@ -14,13 +14,13 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:b77cac416f23c60b8d479885e35ef18aed386c17e6c02bfb4339e6648358f781",
-      "sha256": "c08418d0d078851efd3a0956a7a7040e724a9b63fadbab65f14fe693a2aeec00",
+      "sourceRevision": "sha256:fdfc88b1a606a5e00abde25fc2d49c154472d7410dd3fcd779953b9c161a2af5",
+      "sha256": "d3eefa288eb52e175ec94cf373cbc392349bfc908e12f4a0d24e9adbefdf258b",
       "fullPage": false
     },
     {
       "file": "/previews/32/mobile.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/32/4a175ede6901eda9-mobile.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/32/061c1b3d9362aad8-mobile.jpg",
       "route": "/preview/32-pop-memphis/start",
       "viewport": {
         "width": 390,
@@ -28,8 +28,8 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:b77cac416f23c60b8d479885e35ef18aed386c17e6c02bfb4339e6648358f781",
-      "sha256": "4a175ede6901eda92aabfc2e3fb828e2ce905e7a3eb7e52afba924700865fc73",
+      "sourceRevision": "sha256:fdfc88b1a606a5e00abde25fc2d49c154472d7410dd3fcd779953b9c161a2af5",
+      "sha256": "061c1b3d9362aad86cd03d30808bd20beef49d06dbd7d02a45d68c059e1eaa42",
       "fullPage": false
     },
     {
@@ -42,13 +42,13 @@
       },
       "state": "bundle",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:b77cac416f23c60b8d479885e35ef18aed386c17e6c02bfb4339e6648358f781",
+      "sourceRevision": "sha256:fdfc88b1a606a5e00abde25fc2d49c154472d7410dd3fcd779953b9c161a2af5",
       "sha256": "f2dc272e01f5d6bc24107eeaa9354d25a85ad2930f772439146338d5a33721ea",
       "fullPage": false
     },
     {
       "file": "/previews/32/full-page.jpg",
-      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/32/8c7cd328f0309e8d-full-page.jpg",
+      "url": "https://drew-site-design-library.t3.tigrisfiles.io/references/32/2a9a591a2b473070-full-page.jpg",
       "route": "/preview/32-pop-memphis/start",
       "viewport": {
         "width": 1440,
@@ -56,8 +56,8 @@
       },
       "state": "start",
       "fixture": "deterministic-2026-11-v1",
-      "sourceRevision": "sha256:b77cac416f23c60b8d479885e35ef18aed386c17e6c02bfb4339e6648358f781",
-      "sha256": "8c7cd328f0309e8d6a77e1d6ae0c9d9084bcda9fec60ee10639f3ba6fe033ba0",
+      "sourceRevision": "sha256:fdfc88b1a606a5e00abde25fc2d49c154472d7410dd3fcd779953b9c161a2af5",
+      "sha256": "2a9a591a2b47307017806c05205be3829cb9ca803ca099a25edf1fae24c4eab8",
       "fullPage": true
     }
   ]

@@ -47,7 +47,7 @@ function add(name: string) {
 }
 </script>
 <template>
-  <div class="specimen">
+  <div class="specimen" :class="{ entry: state === 'start' }">
     <a class="skip" href="#content">Skip to content</a>
     <header>
       <strong>Saturday<br /><span>MARKET ☼</span></strong>
@@ -62,9 +62,9 @@ function add(name: string) {
       <template v-if="state === 'start'"
         ><section class="welcome">
           <p class="eyebrow">NORTHBANK SQUARE / MADE AROUND HERE</p>
-          <h1>A good morning.<br />A very good market.</h1>
+          <h1 class="sr">Saturday Market — stalls and collection</h1>
           <div class="row">
-            <p>Meet the makers. Fill a bag.<br />Stay for another conversation.</p>
+            <p>Saturdays, 09:00–14:00<br />Northbank Square · Three independent stalls</p>
             <span class="grow"></span
             ><label
               >Market date<select v-model="date">
@@ -152,7 +152,11 @@ function add(name: string) {
           </p>
         </section></template
       >
-      <section v-else-if="state === 'vendor'" class="vendor">
+      <section
+        v-else-if="state === 'vendor'"
+        class="vendor"
+        :style="{ '--stall': stalls[selected].color }"
+      >
         <p class="eyebrow">STALL 0{{ selected + 1 }} / {{ stalls[selected].type }}</p>
         <h1>{{ stalls[selected].name }}</h1>
         <p>{{ stalls[selected].desc }}</p>
@@ -646,6 +650,166 @@ main {
   }
   .visit h2 {
     font-size: 32px;
+  }
+}
+
+/* The entry is the experience itself; supporting routes retain its vocabulary. */
+
+.entry header {
+  max-width: none;
+  width: 100%;
+  margin: 0;
+  padding: 25px 4%;
+  border-bottom: 0;
+}
+.entry header strong {
+  font-size: 28px;
+  line-height: 1;
+}
+.entry header strong span {
+  font-size: 22px;
+}
+.entry header nav {
+  font-size: 12px;
+}
+.entry main {
+  max-width: none;
+  width: 100%;
+  padding: 0 4% 60px;
+  margin: 0;
+}
+.entry .welcome {
+  padding: 18px 0 25px;
+  margin: 0;
+  border: 0;
+  border-top: 12px solid;
+  border-image: repeating-linear-gradient(90deg, #b94a2d 0 45px, #fff6df 45px 90px) 12;
+}
+.entry .welcome h1 {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip-path: inset(50%) !important;
+  white-space: nowrap !important;
+}
+.entry .welcome > .eyebrow {
+  font-size: 9px;
+  margin: 5px 0 12px;
+}
+.entry .welcome .row {
+  align-items: center;
+}
+.entry .welcome .row > p {
+  font-size: 13px;
+  line-height: 1.7;
+  margin: 0;
+}
+.entry .welcome label {
+  font-size: 10px;
+}
+.entry .stall {
+  grid-template-columns: 230px minmax(0, 1fr);
+  margin-bottom: 30px;
+}
+.entry .sign {
+  padding: 30px;
+}
+.entry .sign h2 {
+  font-size: 38px;
+  line-height: 1;
+}
+.entry .shelf {
+  padding: 25px;
+}
+.entry .product-art {
+  min-height: 190px;
+}
+.entry .product-art svg {
+  height: 190px;
+}
+.entry .shelf h3 {
+  font-size: 16px;
+}
+.vendor {
+  border-left: 45px solid var(--stall);
+  padding: 35px 6%;
+  background: #fff6df;
+}
+.vendor > h1 {
+  font-size: 55px;
+  max-width: 7em;
+  color: var(--stall);
+  line-height: 1.05;
+}
+.vendor > .eyebrow {
+  color: var(--stall);
+}
+.vendor > button {
+  background: var(--stall);
+  color: white;
+  border: 0;
+  padding: 15px 25px;
+}
+@media (max-width: 750px) {
+  .entry header {
+    padding: 20px 5%;
+    gap: 20px;
+  }
+  .entry header strong {
+    font-size: 24px;
+  }
+  .entry header strong span {
+    font-size: 17px;
+  }
+  .entry header nav {
+    font-size: 10px;
+    gap: 15px;
+  }
+  .entry main {
+    padding: 0 5% 45px;
+  }
+  .entry .welcome {
+    border-top-width: 9px;
+  }
+  .entry .welcome .row {
+    gap: 15px;
+  }
+  .entry .welcome .row > p {
+    font-size: 11px;
+  }
+  .entry .welcome label {
+    font-size: 9px;
+  }
+  .entry .stall {
+    display: block;
+  }
+  .entry .sign {
+    padding: 25px;
+  }
+  .entry .sign h2 {
+    font-size: 32px;
+  }
+  .entry .shelf {
+    padding: 18px;
+  }
+  .entry .product-art {
+    min-height: 120px;
+  }
+  .entry .product-art svg {
+    height: 120px;
+  }
+  .entry .shelf h3 {
+    font-size: 14px;
+  }
+  .vendor {
+    border-left-width: 15px;
+    padding: 25px;
+  }
+  .vendor > h1 {
+    font-size: 39px;
   }
 }
 </style>

@@ -4,9 +4,11 @@
 
 **Visual grammar.** Use a energetic coral careers journal with transparent job rows. Preserve the hierarchy of staff stories, salary ranges, requirements, applications; these patterns solve this business’s actual decision, rather than supplying interchangeable decoration.
 
+**Composition.** A vacancy register leads with three complete job rows, team filters, locations and visible salary ranges. A circular vacancy count punctuates the title; staff stories and hiring expectations follow the actual opportunities.
+
 **Sample and interaction.** FIELDWORK / Careers is a fictional demonstration. The entry page establishes a complete visual direction, with role details and sample application as supporting states. Inputs use local deterministic fixtures; no request, order, application or payment is sent.
 
-**Responsive behaviour.** On a phone, keep the primary decision first, stack facts with explicit labels, preserve the order of the workflow, and provide comfortably sized controls. Wide diagrams scale; tabular facts retain their labels.
+**Responsive and inclusive behaviour.** Each vacancy becomes a compact labelled stack with salary directly beneath the title and location. Filters precede the first job, and employer stories follow the list. Native buttons, visible focus, a direct return path and reduced-motion support preserve access to the same content.
 
 **Adaptation.** Replace the fictional brand, prices, availability, qualifications and claims with verified client information. Preserve staff stories, salary ranges, requirements. Use imagery to explain the place, people, work or product, with deliberate crops and honest captions. Do not turn this into a generic hero-and-card layout.
 

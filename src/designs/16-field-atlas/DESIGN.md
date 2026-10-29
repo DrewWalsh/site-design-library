@@ -4,6 +4,8 @@
 
 **Visual grammar.** Pair a large, deliberately styled map with a compact searchable place list and a filter bar. Use an earthy cream ground, dark green labels, blue waterways, and distinct labelled place markers. A practical sans and small cartographic labels reinforce the atlas character. The selected place remains obvious in both map and list.
 
+**Composition.** The atlas opens directly on its district map. A compact search and route drawer floats on the map edge; numbered native buttons occupy the actual route positions and respond to the same surface filter as the list. There is no introductory hero between navigation and geography.
+
 **Specimen and flow.** _Northbank Footpaths_ uses an original SVG map of a fictional district. Visitors filter trails by surface, select a route, and inspect its stops and access notes. Supporting states show a route detail and a list-only search result.
 
 **Adaptation and identity.** Mobile uses a clear map/list switch while preserving filters and selection. All places remain reachable through ordinary links; the reference needs no geolocation or external map service. Preserve geographic relationships and readable labels; avoid decorative maps disconnected from results or essential hover interactions. **Effort: medium.**
@@ -24,7 +26,7 @@ Brand, subject, accent and equivalent licensed typefaces can change. Preserve co
 
 ## Tokens and typography
 
-Heading: DM Sans. Reading: DM Sans. Local WOFF2 fonts with system fallbacks. Page #f0f0e4; surface #ffffff; text #2b4439; accent #35694c. Eight-pixel base spacing; reading measure 65ch; width 1240px. See tokens.css for role values and Demo.vue for composition. Palette and type match the working specimen.
+Heading: DM Sans. Reading: DM Sans. Local WOFF2 fonts with system fallbacks. Page #f0f0e4; surface #ffffff; text #2b4439; accent #35694c. Base tokens define an eight-pixel spacing unit, 65ch reading measure and 1240px content width; the composition-specific rules in Demo.vue override these where the canvas, type or information density requires it. See tokens.css for role values and Demo.vue for composition. Palette and type match the working specimen.
 
 ## States
 

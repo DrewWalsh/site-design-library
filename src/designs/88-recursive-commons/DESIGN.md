@@ -2,11 +2,11 @@
 
 **Idea.** Enter a collection by changing the composition of the entire page.
 
-**Composition.** Unequal nested rectangles cover the browser with ochre, teal, rose and cream. Each region is both a surface and a doorway into a smaller collection.
+**Composition.** The entire opening is a nested museum plan made from unequal, heavily framed colour regions. Each region is a real entrance; the first region contains further frame geometry and sibling regions occupy the remainder. A small ancestry label floats over the plan instead of forming a page header.
 
 **Navigation and complete example.** Enter three wings of a fictional museum, subdivide their rooms, read six object records and keep a personal cabinet. An ancestry trail and full index provide direct access.
 
-**Responsive and inclusive behaviour.** The planar composition becomes a vertically nested set of large regions; ancestry and sibling navigation remain explicit. All controls are native buttons or labelled inputs. Movement is discretionary, no sound starts automatically, reduced-motion preferences remove transitions, and a direct index exposes the same content.
+**Responsive and inclusive behaviour.** On phones the large nested regions unfold vertically, preserving heavy parent frames and distinct sibling colours. The ancestry control stays compact and every room has a direct labelled entrance. Native buttons, visible focus, a direct return path and reduced-motion support preserve access to the same content.
 
 **Adaptation.** Make each level change the whole composition while retaining a clear parent path. Avoid an endless zoom with no readable destination. Retain the relationship between navigation and content. Do not reduce the reference to a generic hero followed by interchangeable cards.
 

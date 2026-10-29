@@ -46,7 +46,7 @@ function open(i: number) {
 }
 </script>
 <template>
-  <div class="specimen">
+  <div class="specimen" :class="{ entry: state === 'start' }">
     <a class="skip" href="#content">Skip to content</a>
 
     <header>
@@ -56,7 +56,7 @@ function open(i: number) {
     <main id="content">
       <template v-if="state === 'start'"
         ><div class="opening">
-          <h1>The object is small.<br />Its consequence is not.</h1>
+          <h1 class="sr">Cast: an archive entered through its shadows</h1>
           <div class="light-controls">
             <span>LIGHT FROM</span
             ><button
@@ -74,7 +74,7 @@ function open(i: number) {
             <div
               class="shadow"
               :class="o.shape"
-              :style="{ transform: 'rotate(' + angles[light] + 'deg) scale(2.5,1.7)' }"
+              :style="{ transform: 'rotate(' + angles[light] + 'deg) scale(4.5,2.1)' }"
               aria-hidden="true"
             ></div>
             <div class="small-object" :class="o.shape" aria-hidden="true"></div>
@@ -552,5 +552,283 @@ footer {
     animation: none !important;
     scroll-behavior: auto !important;
   }
+}
+
+/* The entry is the experience itself; supporting routes retain its vocabulary. */
+
+.entry {
+  position: relative;
+  background: #e7e8df;
+}
+.entry header {
+  position: absolute;
+  z-index: 5;
+  left: 3%;
+  right: 3%;
+  top: 25px;
+  padding: 0;
+  border: 0;
+  align-items: flex-start;
+}
+.entry header strong {
+  font-size: 65px;
+  letter-spacing: -0.07em;
+  writing-mode: vertical-rl;
+}
+.entry header > span {
+  font-size: 9px;
+  max-width: 110px;
+  margin: 0 auto 0 15px;
+}
+.entry header button {
+  font-size: 10px;
+  background: #e7e8df;
+}
+.entry .opening {
+  position: absolute;
+  z-index: 5;
+  left: 4%;
+  top: calc(100svh - 220px);
+  padding: 0;
+  background: #e7e8df;
+}
+.entry .opening h1 {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip-path: inset(50%) !important;
+  white-space: nowrap !important;
+}
+.entry .opening .light-controls {
+  display: grid;
+  grid-template-columns: 65px 65px 65px;
+  grid-template-rows: 50px 50px 50px;
+  gap: 0;
+  align-items: center;
+}
+.entry .light-controls > span {
+  grid-column: 2;
+  grid-row: 2;
+  font-size: 8px;
+  margin: 0;
+  text-align: center;
+  letter-spacing: 0;
+}
+.entry .light-controls button {
+  font-size: 10px;
+  border: 0;
+  border-radius: 50%;
+  padding: 10px 5px;
+}
+.entry .light-controls button:nth-of-type(1) {
+  grid-column: 2;
+  grid-row: 1;
+}
+.entry .light-controls button:nth-of-type(2) {
+  grid-column: 3;
+  grid-row: 2;
+}
+.entry .light-controls button:nth-of-type(3) {
+  grid-column: 2;
+  grid-row: 3;
+}
+.entry .light-controls button:nth-of-type(4) {
+  grid-column: 1;
+  grid-row: 2;
+}
+.entry .shadow-fields {
+  position: relative;
+  display: block;
+  height: 100svh;
+  min-height: 900px;
+  background: radial-gradient(ellipse at 25% 20%, #fffff6, #d9ddcf);
+  overflow: hidden;
+  border: 0;
+}
+.entry .field {
+  position: absolute;
+  width: 230px;
+  height: 210px;
+  min-height: 0;
+  overflow: visible;
+  border: 0;
+  background: none !important;
+}
+.entry .f0 {
+  left: 18%;
+  top: 17%;
+}
+.entry .f1 {
+  left: 63%;
+  top: 14%;
+}
+.entry .f2 {
+  left: 42%;
+  top: 37%;
+}
+.entry .f3 {
+  left: 14%;
+  top: 57%;
+}
+.entry .f4 {
+  left: 64%;
+  top: 67%;
+}
+.entry .f5 {
+  left: 73%;
+  top: 40%;
+}
+.entry .field .shadow {
+  background: #2f4273;
+  opacity: 0.65;
+  filter: blur(1px);
+  width: 60px;
+  height: 90px;
+  left: 25%;
+  top: 10%;
+}
+.entry .field .shadow.ring {
+  border-color: #2f4273;
+}
+.entry .field .small-object {
+  width: 45px;
+  height: 65px;
+  left: 25%;
+  top: 10%;
+  background: #fffef2;
+  box-shadow: 3px 4px 0 #969e99;
+}
+.entry .field .small-object.ring {
+  border-width: 12px;
+}
+.entry .field > button {
+  left: 0;
+  right: auto;
+  bottom: 0;
+  width: 220px;
+  padding: 10px 14px;
+  background: #f6f7eee8;
+  border: 0;
+  border-left: 1px solid #2f4273;
+}
+.entry .field strong {
+  font-size: 20px;
+  margin: 8px 0;
+}
+.entry .field button > span {
+  font-size: 8px;
+}
+.entry .field small {
+  font-size: 9px;
+}
+.entry .reading-note {
+  padding: 35px 5%;
+  font-size: 19px;
+}
+@media (max-width: 750px) {
+  .entry header {
+    left: 6%;
+    right: 6%;
+    top: 20px;
+  }
+  .entry header strong {
+    writing-mode: horizontal-tb;
+    font-size: 43px;
+  }
+  .entry header > span {
+    display: none;
+  }
+  .entry header button {
+    font-size: 9px;
+  }
+  .entry .shadow-fields {
+    height: 1500px;
+    min-height: 0;
+  }
+  .entry .field {
+    width: 170px;
+    height: 200px;
+  }
+  .entry .f0 {
+    left: 5%;
+    top: 160px;
+  }
+  .entry .f1 {
+    left: 45%;
+    top: 370px;
+  }
+  .entry .f2 {
+    left: 5%;
+    top: 590px;
+  }
+  .entry .f3 {
+    left: 45%;
+    top: 810px;
+  }
+  .entry .f4 {
+    left: 5%;
+    top: 1030px;
+  }
+  .entry .f5 {
+    left: 45%;
+    top: 1240px;
+  }
+  .entry .field > button {
+    width: 160px;
+    padding: 10px;
+  }
+  .entry .field strong {
+    font-size: 17px;
+  }
+  .entry .field .shadow {
+    width: 50px;
+    height: 75px;
+  }
+  .entry .opening {
+    position: relative;
+    left: auto;
+    top: auto;
+    margin: 0;
+    padding: 90px 6% 10px;
+    height: 220px;
+  }
+  .entry .opening .light-controls {
+    grid-template-columns: 55px 55px 55px;
+    grid-template-rows: 35px 35px 35px;
+  }
+  .entry .shadow-fields {
+    margin-top: 0;
+  }
+  .entry .f0 {
+    top: 40px;
+  }
+  .entry .f1 {
+    top: 250px;
+  }
+  .entry .f2 {
+    top: 470px;
+  }
+  .entry .f3 {
+    top: 690px;
+  }
+  .entry .f4 {
+    top: 910px;
+  }
+  .entry .f5 {
+    top: 1130px;
+  }
+  .entry .shadow-fields {
+    height: 1380px;
+  }
+}
+.entry header {
+  z-index: 6;
+  pointer-events: none;
+}
+.entry header button {
+  pointer-events: auto;
 }
 </style>

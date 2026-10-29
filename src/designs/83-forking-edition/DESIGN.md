@@ -2,11 +2,11 @@
 
 **Idea.** The sentence itself can be a doorway into another reading.
 
-**Composition.** A nearly bare cream page carries large literary prose. Underlined branching phrases, indentation and a small path trace do the work of a navigation system.
+**Composition.** The visitor enters directly into large branching prose, led by a drop cap. The chapter title is a small running label; a narrow vertical path trace marks the page edge. Underlined phrases, rather than a hero or menu, provide the central navigation.
 
 **Navigation and complete example.** Read a complete miniature branching novella: three opening choices lead through six passages to three distinct endings. Undo a choice or review the route without losing your place.
 
-**Responsive and inclusive behaviour.** Prose keeps a comfortable line length and inline choices wrap naturally. A visible back action complements the embedded links. All controls are native buttons or labelled inputs. Movement is discretionary, no sound starts automatically, reduced-motion preferences remove transitions, and a direct index exposes the same content.
+**Responsive and inclusive behaviour.** Phone typography retains generous literary prose and inline choices. The running path moves below the passage, with an explicit undo control. Native buttons, visible focus, a direct return path and reduced-motion support preserve access to the same content.
 
 **Adaptation.** Write choices as part of the voice, and make every branch pay off in content. Avoid turning the story into a survey or a card-based wizard. Retain the relationship between navigation and content. Do not reduce the reference to a generic hero followed by interchangeable cards.
 

@@ -4,9 +4,11 @@
 
 **Visual grammar.** Use a soft terracotta and oat with a hand-illustrated daily rhythm. Preserve the hierarchy of daily rhythm, staff introductions, fees, parent information; these patterns solve this business’s actual decision, rather than supplying interchangeable decoration.
 
+**Composition.** Four illustrated moments form an uneven chronological sequence: open book, growing plant, lunch bowl and building blocks. The day itself introduces the nursery, followed by the real-space illustration, educator and parent information.
+
 **Sample and interaction.** Little Orchard is a fictional demonstration. The entry page establishes a complete visual direction, with visit the nursery and a day at little orchard as supporting states. Inputs use local deterministic fixtures; no request, order, application or payment is sent.
 
-**Responsive behaviour.** On a phone, keep the primary decision first, stack facts with explicit labels, preserve the order of the workflow, and provide comfortably sized controls. Wide diagrams scale; tabular facts retain their labels.
+**Responsive and inclusive behaviour.** The illustrated sequence becomes a vertical timeline with a small drawing beside each time and description, keeping the complete daily rhythm near the top. Native buttons, visible focus, a direct return path and reduced-motion support preserve access to the same content.
 
 **Adaptation.** Replace the fictional brand, prices, availability, qualifications and claims with verified client information. Preserve daily rhythm, staff introductions, fees. Use imagery to explain the place, people, work or product, with deliberate crops and honest captions. Do not turn this into a generic hero-and-card layout.
 

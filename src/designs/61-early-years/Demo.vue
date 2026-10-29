@@ -17,7 +17,7 @@ const rhythm = [
 ];
 </script>
 <template>
-  <div class="specimen">
+  <div class="specimen" :class="{ entry: state === 'start' }">
     <a class="skip" href="#content">Skip to content</a>
     <header class="orchard-header wrap">
       <a :href="href('start')" class="orchard-logo"
@@ -35,17 +35,74 @@ const rhythm = [
     </header>
     <main id="content">
       <template v-if="state === 'start'"
-        ><section class="orchard-hero wrap">
-          <div>
-            <p class="eyebrow">Room to grow, at their own pace.</p>
-            <h1>Little discoveries.<br />A lovely ordinary day.</h1>
-            <p class="lead">
-              A small early-years setting where familiar faces, everyday routines, and curious play
-              help children find their feet.
-            </p>
-            <button class="primary" @click="go('tour')">See what a day feels like →</button>
-            <p class="muted">Fictional nursery · sample information for families</p>
+        ><section class="rhythm-section">
+          <div class="wrap">
+            <div class="section-heading">
+              <div>
+                <p class="eyebrow">A rhythm, not a rush</p>
+                <h1>A day at Little Orchard</h1>
+              </div>
+              <button class="text-link" @click="go('day')">Walk through the day →</button>
+            </div>
+            <div class="daily-rhythm">
+              <article v-for="(moment, i) in rhythm" :key="moment[0]">
+                <svg class="day-drawing" viewBox="0 0 220 180" aria-hidden="true">
+                  <g v-if="i === 0" stroke="#665c45" stroke-width="3">
+                    <path
+                      d="M25 50Q65 25 110 50Q155 25 195 50V140Q155 115 110 140Q65 115 25 140Z"
+                      fill="#e6c77b"
+                    />
+                    <path
+                      d="M110 50V140M40 65Q70 50 95 65M125 65Q155 50 180 65M40 85Q70 70 95 85M125 85Q155 70 180 85"
+                      fill="none"
+                    />
+                  </g>
+                  <g v-else-if="i === 1">
+                    <circle cx="165" cy="35" r="25" fill="#dbb953" />
+                    <path
+                      d="M25 155Q110 110 200 155"
+                      fill="none"
+                      stroke="#79694c"
+                      stroke-width="4"
+                    />
+                    <path
+                      d="M95 145V55M95 110 60 80M95 90 130 60"
+                      stroke="#69774e"
+                      stroke-width="7"
+                    />
+                    <ellipse cx="60" cy="68" rx="25" ry="17" fill="#9aa66f" />
+                    <ellipse cx="135" cy="45" rx="23" ry="28" fill="#aab17c" />
+                    <ellipse cx="90" cy="35" rx="19" ry="30" fill="#788a5a" />
+                  </g>
+                  <g v-else-if="i === 2">
+                    <ellipse cx="110" cy="132" rx="90" ry="14" fill="#d6cbb1" />
+                    <path d="M40 65H180Q175 140 110 140Q45 140 40 65Z" fill="#c58759" />
+                    <ellipse cx="110" cy="65" rx="70" ry="20" fill="#ecd79a" />
+                    <path d="M165 82 200 20" stroke="#665c45" stroke-width="10" />
+                    <circle cx="85" cy="62" r="8" fill="#788a5a" />
+                    <circle cx="115" cy="70" r="6" fill="#c58759" />
+                  </g>
+                  <g v-else>
+                    <rect
+                      x="35"
+                      y="90"
+                      width="65"
+                      height="65"
+                      fill="#c58759"
+                      transform="rotate(-8 65 120)"
+                    />
+                    <rect x="115" y="90" width="65" height="65" fill="#aab17c" />
+                    <path d="M80 85 125 15 170 85Z" fill="#dfbb62" />
+                    <circle cx="50" cy="55" r="25" fill="#bc7668" />
+                  </g></svg
+                ><time>{{ moment[0] }}</time>
+                <h3>{{ moment[1] }}</h3>
+                <p>{{ moment[2] }}</p>
+              </article>
+            </div>
           </div>
+        </section>
+        <section class="wrap classroom-note">
           <figure>
             <img
               class="photo"
@@ -54,24 +111,13 @@ const rhythm = [
             />
             <figcaption>AI-generated classroom illustration</figcaption>
           </figure>
-        </section>
-        <section class="rhythm-section">
-          <div class="wrap">
-            <div class="section-heading">
-              <div>
-                <p class="eyebrow">A rhythm, not a rush</p>
-                <h2>Small moments.<br />A whole day.</h2>
-              </div>
-              <button class="text-link" @click="go('day')">Walk through the day →</button>
-            </div>
-            <div class="daily-rhythm">
-              <article v-for="moment in rhythm" :key="moment[0]">
-                <span class="day-symbol" aria-hidden="true">{{ moment[3] }}</span
-                ><time>{{ moment[0] }}</time>
-                <h3>{{ moment[1] }}</h3>
-                <p>{{ moment[2] }}</p>
-              </article>
-            </div>
+          <div>
+            <h2>A small, familiar place.</h2>
+            <p>
+              Low tables, books within reach, and space for everyday discoveries. Sample hours:
+              08:00–17:30.
+            </p>
+            <button class="primary" @click="go('tour')">Visit the rooms →</button>
           </div>
         </section>
         <section class="wrap section teacher-section">
@@ -818,5 +864,103 @@ details p {
   font: 500 13px/1.5 var(--body);
   letter-spacing: 0;
   text-transform: none;
+}
+
+/* The entry is the experience itself; supporting routes retain its vocabulary. */
+.entry .rhythm-section {
+  padding: 30px 0 55px;
+  background: var(--page);
+}
+.entry .rhythm-section h1 {
+  font-size: 32px;
+  letter-spacing: -0.025em;
+}
+.entry .daily-rhythm {
+  gap: 28px;
+  align-items: start;
+}
+.entry .daily-rhythm article {
+  border: 0;
+  padding: 0;
+  border-bottom: 2px dotted #aab17c;
+  padding-bottom: 25px;
+}
+.entry .daily-rhythm article:nth-child(even) {
+  margin-top: 70px;
+}
+.day-drawing {
+  width: 100%;
+  height: 185px;
+}
+.entry .daily-rhythm time {
+  display: block;
+  font-size: 34px;
+  color: #665c45;
+}
+.entry .daily-rhythm h3 {
+  font-size: 23px;
+  margin: 8px 0;
+}
+.classroom-note {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 45px;
+  align-items: center;
+  border-top: 1px solid var(--line);
+  padding-top: 35px;
+}
+.classroom-note img {
+  height: 280px;
+  object-fit: cover;
+  width: 100%;
+}
+.classroom-note figcaption {
+  font-size: 11px;
+}
+.classroom-note h2 {
+  font-size: 32px;
+}
+.classroom-note button {
+  margin-top: 18px;
+}
+@media (max-width: 700px) {
+  .entry .rhythm-section {
+    padding: 20px 0;
+  }
+  .entry .daily-rhythm {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .entry .daily-rhythm article,
+  .entry .daily-rhythm article:nth-child(even) {
+    margin: 0;
+    padding: 0 0 15px 100px;
+    position: relative;
+    min-height: 105px;
+  }
+  .day-drawing {
+    position: absolute;
+    width: 85px;
+    height: 95px;
+    left: 0;
+    top: 0;
+  }
+  .entry .daily-rhythm time {
+    font-size: 24px;
+  }
+  .entry .daily-rhythm h3 {
+    font-size: 21px;
+    margin: 2px 0;
+  }
+  .entry .daily-rhythm p {
+    font-size: 14px;
+  }
+  .entry .rhythm-section h1 {
+    font-size: 28px;
+  }
+  .classroom-note {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 }
 </style>

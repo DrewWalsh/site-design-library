@@ -67,7 +67,7 @@ function reset() {
 }
 </script>
 <template>
-  <div class="specimen">
+  <div class="specimen" :class="{ entry: state === 'start' }">
     <a class="skip" href="#content">Skip to content</a>
 
     <header>
@@ -77,7 +77,7 @@ function reset() {
     <main id="content">
       <template v-if="state === 'start'"
         ><div class="rule-banner">
-          <h1>Follow a rule.<br />Find a different exhibition.</h1>
+          <h1 class="sr">Rulewalk: nine works and two ways through</h1>
           <label
             >The current rule<select v-model="rule">
               <option value="edge">Move across a shared edge</option>
@@ -505,6 +505,191 @@ footer {
     transition: none !important;
     animation: none !important;
     scroll-behavior: auto !important;
+  }
+}
+
+/* The entry is the experience itself; supporting routes retain its vocabulary. */
+
+.entry {
+  background: #f1a8ca;
+  position: relative;
+}
+.entry header {
+  padding: 22px 3%;
+  border: 0;
+  align-items: center;
+}
+.entry header strong {
+  font-size: 28px;
+  letter-spacing: -0.08em;
+}
+.entry header > span {
+  font-size: 9px;
+}
+.entry header button {
+  background: #24273d;
+  color: #f1a8ca;
+  font-size: 11px;
+}
+.entry .rule-banner {
+  position: absolute;
+  right: 3%;
+  top: 110px;
+  width: 25%;
+  padding: 0;
+  display: block;
+  z-index: 3;
+}
+.entry .rule-banner h1 {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip-path: inset(50%) !important;
+  white-space: nowrap !important;
+}
+.entry .rule-banner label {
+  min-width: 0;
+  display: block;
+  font-size: 10px;
+}
+.entry .rule-banner select {
+  font-size: 12px;
+  border: 2px solid;
+  background: #f6eabf;
+  padding: 15px;
+}
+.entry .board-area {
+  grid-template-columns: minmax(0, 2.4fr) minmax(0, 1fr);
+  gap: 5%;
+  padding: 10px 3% 50px;
+  align-items: center;
+}
+.entry .board {
+  gap: 12px;
+  background: repeating-linear-gradient(45deg, transparent 0 40px, #24273d10 40px 42px);
+  padding: 12px;
+}
+.entry .board > button {
+  min-height: 220px;
+  border: 3px solid #24273d;
+  border-radius: 50%;
+  padding: 30px;
+  align-items: center;
+  justify-content: center;
+  background: #f6eabf;
+  position: relative;
+}
+.entry .board > button:nth-child(2n) {
+  border-radius: 0;
+  transform: rotate(-4deg);
+  background: #a2c0dd;
+}
+.entry .board > button:nth-child(3n) {
+  border-radius: 50% 0 50% 0;
+}
+.entry .board > button > span {
+  font-size: clamp(70px, 8vw, 125px);
+  letter-spacing: -0.08em;
+  line-height: 1;
+}
+.entry .board strong {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip-path: inset(50%) !important;
+  white-space: nowrap !important;
+}
+.entry .board b {
+  font-size: 10px;
+  margin-top: 10px;
+}
+.entry .board > button:disabled {
+  background: transparent;
+  color: #62374e;
+  border-style: dashed;
+}
+.entry .board > button.current {
+  background: #24273d;
+  color: #e9ec59;
+  border-radius: 0;
+  transform: rotate(5deg);
+  box-shadow: 8px 8px 0 #e9ec59;
+}
+.entry .board-area aside {
+  padding: 130px 0 20px;
+}
+.entry .board-area aside > p:first-of-type {
+  font-size: 20px;
+  margin: 18px 0 30px;
+}
+.entry .board-area aside h2 {
+  font-size: 30px;
+  line-height: 1.1;
+}
+.entry .board-area aside > p {
+  font-size: 14px;
+}
+.entry .board-area aside button {
+  border: 2px solid;
+  background: #f6eabf;
+}
+@media (max-width: 750px) {
+  .entry header {
+    padding: 20px 5%;
+    gap: 15px;
+  }
+  .entry header strong {
+    font-size: 22px;
+  }
+  .entry header > span {
+    display: none;
+  }
+  .entry header button {
+    font-size: 9px;
+    padding: 10px;
+  }
+  .entry .rule-banner {
+    position: static;
+    width: auto;
+    margin: 0 5% 20px;
+  }
+  .entry .rule-banner select {
+    padding: 10px;
+    font-size: 11px;
+  }
+  .entry .board-area {
+    display: block;
+    padding: 0 4% 40px;
+  }
+  .entry .board {
+    gap: 8px;
+    padding: 7px;
+  }
+  .entry .board > button {
+    min-height: 110px;
+    padding: 12px 5px;
+    border-width: 2px;
+  }
+  .entry .board > button > span {
+    font-size: 47px;
+  }
+  .entry .board b {
+    font-size: 7px;
+  }
+  .entry .board-area aside {
+    padding: 35px 5% 0;
+  }
+  .entry .board-area aside > p:first-of-type {
+    font-size: 18px;
+  }
+  .entry .board-area aside h2 {
+    font-size: 27px;
   }
 }
 </style>

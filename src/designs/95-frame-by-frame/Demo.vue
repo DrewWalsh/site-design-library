@@ -63,7 +63,7 @@ onUnmounted(stop);
 watch(state, stop);
 </script>
 <template>
-  <div class="specimen">
+  <div class="specimen" :class="{ entry: state === 'start' }">
     <a class="skip" href="#content">Skip to content</a>
 
     <header>
@@ -72,10 +72,7 @@ watch(state, stop);
     </header>
     <main id="content">
       <template v-if="state === 'start'"
-        ><div class="film-title">
-          <h1>Between<br />one frame and the next.</h1>
-          <p>A small movement.<br />A different room.</p>
-        </div>
+        ><h1 class="sr">Night Window: read a film one frame at a time</h1>
         <div class="screen" :class="{ sketch }">
           <svg
             viewBox="0 0 1000 440"
@@ -580,6 +577,176 @@ footer {
     transition: none !important;
     animation: none !important;
     scroll-behavior: auto !important;
+  }
+}
+
+/* The entry is the experience itself; supporting routes retain its vocabulary. */
+
+.entry {
+  position: relative;
+  background: #080c0e;
+}
+.entry header {
+  position: absolute;
+  top: 24px;
+  left: 3%;
+  right: 3%;
+  padding: 0;
+  border: 0;
+  z-index: 4;
+}
+.entry header strong {
+  font-size: 15px;
+  letter-spacing: 0.26em;
+}
+.entry header > span {
+  font-size: 8px;
+}
+.entry header button {
+  font-size: 10px;
+  background: #080c0e;
+}
+.entry main > h1 {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip-path: inset(50%) !important;
+  white-space: nowrap !important;
+}
+.entry .screen {
+  margin: 0;
+  border: 0;
+  border-inline: 35px solid #080c0e;
+  position: relative;
+  height: 80svh;
+  min-height: 660px;
+  padding: 65px 0 0;
+  background: #080c0e;
+}
+.entry .screen:before,
+.entry .screen:after {
+  content: '';
+  position: absolute;
+  top: 10%;
+  bottom: 5%;
+  width: 12px;
+  background: repeating-linear-gradient(0deg, #e4e1cc 0 18px, transparent 18px 32px);
+  left: -23px;
+}
+.entry .screen:after {
+  left: auto;
+  right: -23px;
+}
+.entry .screen svg {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+.entry .frame-number {
+  font-size: clamp(90px, 17vw, 250px);
+  line-height: 1;
+  right: 3%;
+  top: auto;
+  bottom: 25px;
+  opacity: 0.4;
+  letter-spacing: -0.08em;
+  pointer-events: none;
+}
+.entry .screen > button {
+  left: 4%;
+  right: auto;
+  bottom: 35px;
+  background: #080c0e;
+  font-size: 11px;
+}
+.entry .timecode {
+  top: 90px;
+  bottom: auto;
+  left: 4%;
+}
+.entry .jog {
+  border: 0;
+  padding: 20px 3%;
+  gap: 20px;
+  background: #080c0e;
+}
+.entry .jog button {
+  font-size: 10px;
+}
+.entry .filmstrip {
+  margin: 0;
+  padding: 20px 3%;
+  border-block: 1px dashed #738181;
+  gap: 12px;
+  background: #10181e;
+}
+.entry .filmstrip button {
+  min-width: 160px;
+}
+.entry .filmstrip .mini {
+  height: 100px;
+}
+@media (max-width: 750px) {
+  .entry header {
+    top: 20px;
+    left: 6%;
+    right: 6%;
+    gap: 12px;
+  }
+  .entry header strong {
+    font-size: 10px;
+    max-width: 120px;
+  }
+  .entry header > span {
+    display: none;
+  }
+  .entry header button {
+    font-size: 9px;
+    padding: 8px;
+  }
+  .entry .screen {
+    height: 66svh;
+    min-height: 520px;
+    border-inline-width: 18px;
+    padding-top: 70px;
+  }
+  .entry .screen:before,
+  .entry .screen:after {
+    width: 7px;
+    left: -12px;
+    background-size: auto 30px;
+  }
+  .entry .screen:after {
+    left: auto;
+    right: -12px;
+  }
+  .entry .frame-number {
+    font-size: 105px;
+    bottom: 70px;
+  }
+  .entry .screen > button {
+    bottom: 25px;
+  }
+  .entry .timecode {
+    top: 100px;
+    font-size: 9px;
+  }
+  .entry .jog {
+    padding: 18px 6%;
+    gap: 10px;
+  }
+  .entry .jog label {
+    order: -1;
+    width: 100%;
+  }
+  .entry .filmstrip {
+    padding: 16px 6%;
+  }
+  .entry .filmstrip button {
+    min-width: 135px;
   }
 }
 </style>
