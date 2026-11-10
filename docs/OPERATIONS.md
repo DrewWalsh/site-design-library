@@ -18,7 +18,7 @@ pnpm build
 pnpm test
 ```
 
-The build generates metadata and public reference packages, checks TypeScript, and builds both gallery and isolated specimen entry points. References hosted in Tigris are omitted from the Netlify artifact to avoid duplicate image storage. Netlify rewrites `/preview/*` to `preview.html`, before the gallery fallback.
+The build generates metadata and public reference packages, checks TypeScript, and builds both gallery and isolated specimen entry points. Published reference images and complete ZIPs are served directly from Tigris. The artifact contains the download index and permanent redirects for legacy ZIP URLs. Built preview pages supply per-specimen metadata, with `preview.html` as the fallback.
 
 Deploy through the existing authenticated Netlify CLI. `.netlify/state.json` is a local link and is ignored by Git.
 
@@ -30,7 +30,7 @@ pnpm --package=netlify-cli dlx netlify deploy --prod --no-build --dir dist --sit
 
 The initial release uses a verified local static build and explicit CLI deployment. Git pushes do not themselves publish the frontend. Commit and push changes to `master`, then deploy the checked artifact. Fix a bad release in source and deploy the correction.
 
-After a release, open the gallery, a design inspector, a direct specimen deep link, and a comparison. Check `/catalogue.json`, a public source package, one font, and a Tigris reference image. Verify actual browser behavior as well as HTTP responses; there is no backend health endpoint to probe.
+After a release, open the gallery, a design inspector, a direct specimen deep link, and a comparison. Check `/catalogue.json`, a public source package, one font, and a Tigris reference image. Check a representative original and ZIP request at its direct Tigris URL. Verify actual browser behavior as well as HTTP responses; there is no backend health endpoint to probe.
 
 ## Refresh reference images
 
@@ -67,10 +67,10 @@ See `ASSETS.md`, `COMMERCIAL_ASSETS.md`, `public/fonts/manifest.json`, `public/a
 
 ## Public references and ZIP builds
 
-The GitHub repository is public. Original material is MIT, with separate photo/font notices. `pnpm build` validates 100 metadata records, typechecks, builds Vite, omits hosted capture copies, constructs deterministic ZIPs, and writes static gallery/guide/inspector HTML plus crawler indexes. No SSR server or backend is needed.
+The GitHub repository is public. Original material is MIT, with separate photo/font notices. `pnpm build` validates 100 metadata records, typechecks, builds Vite, omits hosted capture copies, checks published ZIP receipts, and writes static gallery, guide, inspector, and preview HTML plus crawler indexes. No SSR server or backend is needed.
 
-`scripts/build-packages.ts` uses an explicit file allowlist, checks asset bytes against manifests, includes local fonts/images and screenshots, preserves exact originals under `reference/`, and emits `/downloads/index.json` with size and SHA-256. Public Tigris files are downloaded only when verified local copies are absent; downloads are cached under ignored `.work/download-assets/`. A clean CI build therefore needs public network access to Tigris. No Tigris credentials are needed to build. The reusable path-safe ZIP adapter also lives in codex-utility-scripts/node/zip-archive.mjs.
+`scripts/build-packages.ts` uses an explicit file allowlist, checks asset bytes against manifests, includes local fonts/images and screenshots, preserves exact originals under `reference/`, and emits `.work/downloads/index.json` with size and SHA-256. Use `pnpm downloads:build` when publishing changed packages. It reuses verified local assets and restores missing ones from Tigris into `.work/download-assets/`. Publish only changed ZIPs to the public delivery bucket at `objects/<sha256>.zip`. Verify anonymous SHA-256 and length, then update `published-downloads.json` before running the frontend build. The reusable path-safe ZIP adapter also lives in codex-utility-scripts/node/zip-archive.mjs.
 
 `scripts/prepare-agent-pages.ts` adds readable static content to the same Vue mount points and emits robots.txt, sitemap.xml, llms.txt and llms-full.txt. Netlify file shadowing serves the generated inspector files before the SPA fallback. Preview specimens retain noindex because their fictional business copy should not appear as real businesses in search; inspector pages and all source/reference links remain crawlable. Missing download files return 404 rather than the gallery HTML.
 
-After changing ZIP composition, run the archive integrity test and build at least one extracted starter. After changing crawler pages, run the JavaScript-disabled tests. Verify the deployed ZIP MIME type, archive checksum, anonymous repository access and bot-user-agent responses.
+After changing ZIP composition, run `pnpm downloads:build`, verify and publish the changed artifacts, run `pnpm build`, then enable `CHECK_LOCAL_ARCHIVES=1` for the archive integrity test. Build at least one extracted starter. After changing crawler pages, run the JavaScript-disabled tests. Verify the deployed ZIP MIME type, archive checksum, anonymous repository access and bot-user-agent responses.

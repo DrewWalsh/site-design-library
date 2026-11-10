@@ -13,7 +13,7 @@ const commercialRecords = JSON.parse(
 ).assets;
 const cache = new Map<string, Promise<Uint8Array>>();
 const site = 'https://drew-site-design-library.netlify.app';
-fs.mkdirSync('dist/downloads', { recursive: true });
+fs.mkdirSync('.work/downloads', { recursive: true });
 fs.mkdirSync('.work/download-assets', { recursive: true });
 
 function verified(local: string, url: string | undefined, checksum: string): Promise<Uint8Array> {
@@ -57,7 +57,7 @@ for (const d of catalogue) {
     if (files.has(name)) throw new Error(`Duplicate bundle file ${name}`);
     files.set(name, data);
   };
-  const read = (name: string) => fs.readFileSync(name, 'utf8');
+  const read = (name: string) => fs.readFileSync(name, 'utf8').replaceAll('\r\n', '\n');
   const original = read(`${source}/Demo.vue`);
   let runnable = original;
   const assets: any[] = [];
@@ -222,7 +222,7 @@ for (const d of catalogue) {
     zipSync,
   );
   const url = `/downloads/${directory}.zip`;
-  fs.writeFileSync('dist' + url, bytes);
+  fs.writeFileSync('.work' + url, bytes);
   downloads.push({
     id: d.id,
     name: d.name,
@@ -232,7 +232,7 @@ for (const d of catalogue) {
     sourceRevision: d.referenceImages[0].sourceRevision,
   });
 }
-fs.writeFileSync('dist/downloads/index.json', JSON.stringify(downloads, null, 2) + '\n');
+fs.writeFileSync('.work/downloads/index.json', JSON.stringify(downloads, null, 2) + '\n');
 console.log(
   `Built ${downloads.length} self-contained ZIPs (${(downloads.reduce((sum, d) => sum + d.bytes, 0) / 1024 / 1024).toFixed(1)} MiB), with verified local assets and screenshots.`,
 );

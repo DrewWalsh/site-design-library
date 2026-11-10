@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { renderShareHead, emitSharePages } from './share-head.mjs';
 const designs = JSON.parse(fs.readFileSync('catalogue.json', 'utf8'));
 const site = 'https://drew-site-design-library.netlify.app';
 const escape = (value: string) =>
@@ -10,16 +11,46 @@ const escape = (value: string) =>
     .replaceAll('"', '&quot;');
 const template = fs.readFileSync('dist/index.html', 'utf8');
 const link = (href: string, label: string) => `<a href="${escape(href)}">${escape(label)}</a>`;
-function publish(route: string, title: string, description: string, content: string) {
-  const html = template
-    .replace(/<title>[^<]*<\/title>/, `<title>${escape(title)}</title>`)
-    .replace(
-      /(<meta\s+name="description"\s+content=")[^"]*("\s*\/?\s*>)/,
-      `$1${escape(description)}$2`,
-    )
+
+const brandAlt = 'Three contrasting webpage layouts beside the Website Design Library title.';
+function cardImage(design: any, route = design?.entryRoute) {
+  const desktop =
+    design?.referenceImages.find(
+      (record: any) => record.route === route && record.viewport.width === 1440 && !record.fullPage,
+    ) ??
+    design?.referenceImages.find(
+      (record: any) =>
+        record.route === design.entryRoute && record.viewport.width === 1440 && !record.fullPage,
+    );
+  if (desktop) {
+    if (new URL(desktop.url).origin !== 'https://drew-site-design-library.t3.tigrisfiles.io')
+      throw new Error('Design previews must use Tigris');
+    return {
+      image: desktop.url,
+      imageAlt: design.name + ' desktop reference',
+      imageWidth: 1440,
+      imageHeight: 1000,
+      imageType: 'image/jpeg',
+    };
+  }
+  return {
+    image: site + '/social-card.jpg',
+    imageAlt: brandAlt,
+    imageWidth: 1200,
+    imageHeight: 630,
+    imageType: 'image/jpeg',
+  };
+}
+function publish(route: string, title: string, description: string, content: string, design?: any) {
+  const html = renderShareHead(template, {
+    title,
+    description,
+    url: site + route,
+    ...cardImage(design),
+  })
     .replace(
       '</head>',
-      `<link rel="canonical" href="${site}${route}" /><link rel="alternate" type="text/plain" href="/llms.txt" title="Agent reference index" /></head>`,
+      '<link rel="alternate" type="text/plain" href="/llms.txt" title="Agent reference index" /></head>',
     )
     .replace(
       '<div id="app"></div>',
@@ -30,7 +61,7 @@ function publish(route: string, title: string, description: string, content: str
   fs.writeFileSync(destination, html);
 }
 const card = (d: any) =>
-  `<article><h2>${link(`/designs/${d.id}-${d.slug}`, `${d.id} ${d.name}`)}</h2><p>${escape(d.thesis)}</p><p>${escape(d.discovery.industries.join(' · '))}</p><p>${link(`/downloads/${d.id}-${d.slug}.zip`, 'Download design ZIP')} · ${link(`/references/${d.id}-${d.slug}/DESIGN.md`, 'Read specification')}</p></article>`;
+  `<article><h2>${link(`/designs/${d.id}-${d.slug}`, `${d.id} ${d.name}`)}</h2><p>${escape(d.thesis)}</p><p>${escape(d.discovery.industries.join(' · '))}</p><p>${link(d.downloadUrl, 'Download design ZIP')} · ${link(`/references/${d.id}-${d.slug}/DESIGN.md`, 'Read specification')}</p></article>`;
 publish(
   '/',
   'Design Library — ' + designs.length + ' ways to make a website',
@@ -47,7 +78,8 @@ for (const d of designs) {
     `/designs/${d.id}-${d.slug}`,
     `${d.id} ${d.name} — Design Library`,
     d.thesis,
-    `<p>Design reference ${d.id} · ${escape(d.family)}</p><h1>${escape(d.name)}</h1><p>${escape(d.thesis)}</p><p>${link(`/downloads/${d.id}-${d.slug}.zip`, 'Download design ZIP')} · ${link(d.entryRoute, 'Open interactive specimen')}</p>${d.referenceImages[0] ? `<figure><img src="${escape(d.referenceImages[0].url)}" width="1440" height="1000" alt="${escape(d.name)} desktop reference" /></figure>` : ''}<h2>Design specification</h2>${paragraphs}<h2>Files for a coding model</h2><ul>${['DESIGN.md', 'design.json', 'tokens.css', 'Demo.vue'].map((file) => `<li>${link(`${reference}/${file}`, file)}</li>`).join('')}<li>${link(`/previews/${d.id}/capture.json`, 'Screenshot provenance')}</li></ul><h2>Reference images</h2><ul>${d.referenceImages.map((r: any) => `<li>${link(r.url, `${r.fullPage ? 'Full page' : r.viewport.width === 390 ? 'Phone' : r.state === 'start' ? 'Desktop' : 'Supporting state'} — ${r.viewport.width} × ${r.viewport.height} viewport`)}</li>`).join('')}</ul><h2>Supporting routes</h2><ul>${d.states.map((s: any) => `<li>${link(s.route, s.label)}</li>`).join('')}</ul><h2>Reuse</h2><p>Use and adapt the original code and specifications for personal or commercial work under MIT. Keep applicable font and photo notices. The ZIP includes the complete runnable reference and its local assets.</p><p>${link('/THIRD_PARTY.md', 'Asset notices')} · ${link('/AGENT_WORKFLOW.md', 'Agent instructions')}</p>`,
+    `<p>Design reference ${d.id} · ${escape(d.family)}</p><h1>${escape(d.name)}</h1><p>${escape(d.thesis)}</p><p>${link(d.downloadUrl, 'Download design ZIP')} · ${link(d.entryRoute, 'Open interactive specimen')}</p>${d.referenceImages[0] ? `<figure><img src="${escape(d.referenceImages[0].url)}" width="1440" height="1000" alt="${escape(d.name)} desktop reference" /></figure>` : ''}<h2>Design specification</h2>${paragraphs}<h2>Files for a coding model</h2><ul>${['DESIGN.md', 'design.json', 'tokens.css', 'Demo.vue'].map((file) => `<li>${link(`${reference}/${file}`, file)}</li>`).join('')}<li>${link(`/previews/${d.id}/capture.json`, 'Screenshot provenance')}</li></ul><h2>Reference images</h2><ul>${d.referenceImages.map((r: any) => `<li>${link(r.url, `${r.fullPage ? 'Full page' : r.viewport.width === 390 ? 'Phone' : r.state === 'start' ? 'Desktop' : 'Supporting state'} — ${r.viewport.width} × ${r.viewport.height} viewport`)}</li>`).join('')}</ul><h2>Supporting routes</h2><ul>${d.states.map((s: any) => `<li>${link(s.route, s.label)}</li>`).join('')}</ul><h2>Reuse</h2><p>Use and adapt the original code and specifications for personal or commercial work under MIT. Keep applicable font and photo notices. The ZIP includes the complete runnable reference and its local assets.</p><p>${link('/THIRD_PARTY.md', 'Asset notices')} · ${link('/AGENT_WORKFLOW.md', 'Agent instructions')}</p>`,
+    d,
   );
 }
 publish(
@@ -63,7 +95,7 @@ fs.writeFileSync(
     designs
       .map(
         (d: any) =>
-          `- [${d.id} ${d.name}](${site}/designs/${d.id}-${d.slug}): ${d.thesis}\n  Specification: ${site}/references/${d.id}-${d.slug}/DESIGN.md\n  ZIP: ${site}/downloads/${d.id}-${d.slug}.zip`,
+          `- [${d.id} ${d.name}](${site}/designs/${d.id}-${d.slug}): ${d.thesis}\n  Specification: ${site}/references/${d.id}-${d.slug}/DESIGN.md\n  ZIP: ${d.downloadUrl}`,
       )
       .join('\n\n') +
     '\n',
@@ -74,7 +106,7 @@ fs.writeFileSync(
     designs
       .map(
         (d: any) =>
-          `## ${d.id} ${d.name}\n\n${d.brief}\n\nLive: ${site}${d.entryRoute}\nFiles: ${site}/references/${d.id}-${d.slug}/design.json\nDownload: ${site}/downloads/${d.id}-${d.slug}.zip`,
+          `## ${d.id} ${d.name}\n\n${d.brief}\n\nLive: ${site}${d.entryRoute}\nFiles: ${site}/references/${d.id}-${d.slug}/design.json\nDownload: ${d.downloadUrl}`,
       )
       .join('\n\n') +
     '\n',
@@ -87,4 +119,28 @@ fs.writeFileSync(
 for (const file of ['LICENSE', 'THIRD_PARTY.md']) fs.copyFileSync(file, `dist/${file}`);
 console.log(
   `Published static HTML for the gallery, guide and ${designs.length} design pages, plus crawler indexes.`,
+);
+
+const previewFile = 'dist/preview.html';
+const preview = fs
+  .readFileSync(previewFile, 'utf8')
+  .replace(
+    '</head>',
+    '<link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180"></head>',
+  );
+fs.writeFileSync(previewFile, preview);
+await emitSharePages(
+  'dist',
+  designs.flatMap((design: any) =>
+    [{ route: design.entryRoute, label: 'Live specimen' }, ...design.states].map(
+      ({ route, label }: { route: string; label: string }) => ({
+        path: route,
+        title: design.name + ' · ' + label + ' — Design Library',
+        description: design.thesis,
+        url: site + route,
+        ...cardImage(design, route),
+      }),
+    ),
+  ),
+  'preview.html',
 );

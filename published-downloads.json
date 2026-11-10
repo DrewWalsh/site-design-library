@@ -1,0 +1,1002 @@
+[
+  {
+    "id": "01",
+    "name": "Civic Service",
+    "path": "/downloads/01-civic-service.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/a1406fc621590565db4d894a389d43908cc3bc111074154d0dabe20e73122487.zip",
+    "bytes": 453426,
+    "sha256": "a1406fc621590565db4d894a389d43908cc3bc111074154d0dabe20e73122487",
+    "sourceRevision": "sha256:7343fa68f81c25e14ee4c9e863acab0cddbac7608542e624bdf123b52b909187",
+    "verifiedAt": "2026-11-01T02:13:13.809Z"
+  },
+  {
+    "id": "02",
+    "name": "Precision SaaS",
+    "path": "/downloads/02-precision-saas.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/84684261d15fb71dd29c49434442449db9fbfddb1ea75da396d712ebd7274bdb.zip",
+    "bytes": 430146,
+    "sha256": "84684261d15fb71dd29c49434442449db9fbfddb1ea75da396d712ebd7274bdb",
+    "sourceRevision": "sha256:f53ce8f81cbb556899b2e603878922fd15a402e9ca077760fbe8a8259f5d902e",
+    "verifiedAt": "2026-11-01T02:13:13.697Z"
+  },
+  {
+    "id": "03",
+    "name": "Swiss Grid",
+    "path": "/downloads/03-swiss-grid.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/200ca8587dd22b2d8ce348d20ddb46f77e9e57a9d8f3d1e57b574dcd06a316af.zip",
+    "bytes": 395564,
+    "sha256": "200ca8587dd22b2d8ce348d20ddb46f77e9e57a9d8f3d1e57b574dcd06a316af",
+    "sourceRevision": "sha256:cdcfb28119bd3bd5b2c4ae081638584ebdb3697d72f3ab43090ee2affe50b788",
+    "verifiedAt": "2026-11-01T02:13:13.714Z"
+  },
+  {
+    "id": "04",
+    "name": "Quiet Atelier",
+    "path": "/downloads/04-quiet-atelier.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/b7687142848ae9bb492d1ebcf35478bb99b8d66b4dd34a4d38d4c15d5f32e939.zip",
+    "bytes": 958991,
+    "sha256": "b7687142848ae9bb492d1ebcf35478bb99b8d66b4dd34a4d38d4c15d5f32e939",
+    "sourceRevision": "sha256:891706d1c6ac07e046f30166e083099c89361f1ddf6224d3cc40b2a657a2e85a",
+    "verifiedAt": "2026-11-01T02:13:13.742Z"
+  },
+  {
+    "id": "05",
+    "name": "Scholarly Folio",
+    "path": "/downloads/05-scholarly-folio.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/92e441fd4c6cfae95a6d8b92fa3126f2546c5d46e3fc33def7b5713f68ecc7a3.zip",
+    "bytes": 531119,
+    "sha256": "92e441fd4c6cfae95a6d8b92fa3126f2546c5d46e3fc33def7b5713f68ecc7a3",
+    "sourceRevision": "sha256:449166e65bd21ca64e9b3a27407cc958240882a15e799a0e023ebecec9861d36",
+    "verifiedAt": "2026-11-01T02:13:15.603Z"
+  },
+  {
+    "id": "06",
+    "name": "Editorial Newspaper",
+    "path": "/downloads/06-editorial-newspaper.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/58d5ed9c369c14f0f717bb1362726274402146295f708323092df3f7ca9cd627.zip",
+    "bytes": 1169887,
+    "sha256": "58d5ed9c369c14f0f717bb1362726274402146295f708323092df3f7ca9cd627",
+    "sourceRevision": "sha256:7b2b1ef90083ac4c8a96ed46a39d2cc6751fcde6d1570284d2538d552de6b6d6",
+    "verifiedAt": "2026-11-01T02:13:15.707Z"
+  },
+  {
+    "id": "07",
+    "name": "Literary Review",
+    "path": "/downloads/07-literary-review.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/4b144c146e958cb22e8295233e2f7d00568f0836feb6400135ba8610c02b2396.zip",
+    "bytes": 454263,
+    "sha256": "4b144c146e958cb22e8295233e2f7d00568f0836feb6400135ba8610c02b2396",
+    "sourceRevision": "sha256:ad62dafd5cc790c4c4600c7f3a531da3d7d64829252f82aaa6f82f8ad879983a",
+    "verifiedAt": "2026-11-01T02:13:15.781Z"
+  },
+  {
+    "id": "08",
+    "name": "Documentary Story",
+    "path": "/downloads/08-documentary-story.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/82c35b52c68d32baf7b7ed60229e2400b705f501c4a5714663562d9a77ad4bf7.zip",
+    "bytes": 1088825,
+    "sha256": "82c35b52c68d32baf7b7ed60229e2400b705f501c4a5714663562d9a77ad4bf7",
+    "sourceRevision": "sha256:98670b5af8d9d465398c4e592b1265bfa24c6735054fe47fe19f236c5f7bfc0f",
+    "verifiedAt": "2026-11-01T02:13:15.899Z"
+  },
+  {
+    "id": "09",
+    "name": "Glossy Fashion",
+    "path": "/downloads/09-glossy-fashion.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/fb3cab98193997925f663fa42cc4b4ed07315d6aef405cdd9213cd0fe4fb6fba.zip",
+    "bytes": 800216,
+    "sha256": "fb3cab98193997925f663fa42cc4b4ed07315d6aef405cdd9213cd0fe4fb6fba",
+    "sourceRevision": "sha256:7e15b05c0647dd2e45515adbc54d5fd058d645908ad89506432d74ccc93a4c8b",
+    "verifiedAt": "2026-11-01T02:13:17.529Z"
+  },
+  {
+    "id": "10",
+    "name": "Evidence Ledger",
+    "path": "/downloads/10-evidence-ledger.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/83d883e9c43ad364437a9f19afa91017ea71c6e5166c62ed1b2b5fb70a6b777c.zip",
+    "bytes": 407682,
+    "sha256": "83d883e9c43ad364437a9f19afa91017ea71c6e5166c62ed1b2b5fb70a6b777c",
+    "sourceRevision": "sha256:b16aa94ba36e3366ce1778dfe22dc2c2b491f0b863895ce9a79d415efd268db9",
+    "verifiedAt": "2026-11-01T02:13:17.646Z"
+  },
+  {
+    "id": "11",
+    "name": "Operations Console",
+    "path": "/downloads/11-operations-console.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/ab5ce1c769039b52430ccf9e7493110737c50290bb0891969b466481fe967a4a.zip",
+    "bytes": 400863,
+    "sha256": "ab5ce1c769039b52430ccf9e7493110737c50290bb0891969b466481fe967a4a",
+    "sourceRevision": "sha256:fd8b78eae2c6cb25d82b500efc73532077d3c5d00b352abcd47059ec923b8934",
+    "verifiedAt": "2026-11-01T02:13:17.754Z"
+  },
+  {
+    "id": "12",
+    "name": "Canvas Workspace",
+    "path": "/downloads/12-canvas-workspace.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/45b1a630f42e325bbca4dfe7b3579513a445e6037e4d31b250ab457b470f577d.zip",
+    "bytes": 462916,
+    "sha256": "45b1a630f42e325bbca4dfe7b3579513a445e6037e4d31b250ab457b470f577d",
+    "sourceRevision": "sha256:6a2d588f87081cfbccf09abc507da09a2b9787bc50218fca78fb5b85c8ea6d4a",
+    "verifiedAt": "2026-11-01T02:13:19.419Z"
+  },
+  {
+    "id": "13",
+    "name": "Project Workbench",
+    "path": "/downloads/13-project-workbench.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/fa438ed7e04ee634aaa4d263581bd5ff4db8a8eae71599913734fa33a8cdb774.zip",
+    "bytes": 361471,
+    "sha256": "fa438ed7e04ee634aaa4d263581bd5ff4db8a8eae71599913734fa33a8cdb774",
+    "sourceRevision": "sha256:7e3386bbeea7670f06e2d4e46b323c52733a39ecb084c50099ebc77c5c65c3b0",
+    "verifiedAt": "2026-11-01T02:13:19.797Z"
+  },
+  {
+    "id": "14",
+    "name": "Guided Journey",
+    "path": "/downloads/14-guided-journey.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/7b44c2d9cb105d1387939591cb06aa2bcd58b6e1c0987aeb62bab44b42db7595.zip",
+    "bytes": 330792,
+    "sha256": "7b44c2d9cb105d1387939591cb06aa2bcd58b6e1c0987aeb62bab44b42db7595",
+    "sourceRevision": "sha256:7edf71f67c0d24257a6551422a36edfecfbd180156bc9e064e45d07b75d65b72",
+    "verifiedAt": "2026-11-01T02:13:19.857Z"
+  },
+  {
+    "id": "15",
+    "name": "Temporal Planner",
+    "path": "/downloads/15-temporal-planner.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/6a46b3466dd5e9f2ee6f1af85574c8feb68ac39b5cb58c70957d56d266bbe54a.zip",
+    "bytes": 314491,
+    "sha256": "6a46b3466dd5e9f2ee6f1af85574c8feb68ac39b5cb58c70957d56d266bbe54a",
+    "sourceRevision": "sha256:4d68aadc30dd4e7c06776ce9b6ac567090cde45c2e897e54110a2e32e03b5dde",
+    "verifiedAt": "2026-11-01T02:13:19.532Z"
+  },
+  {
+    "id": "16",
+    "name": "Field Atlas",
+    "path": "/downloads/16-field-atlas.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/72b94d5a86a2ea143892681edd82b2d93daaa827673a2f10021f140f841c13d4.zip",
+    "bytes": 390325,
+    "sha256": "72b94d5a86a2ea143892681edd82b2d93daaa827673a2f10021f140f841c13d4",
+    "sourceRevision": "sha256:fef93aa72e64ca1312a009ab11408880a10c8fe8a9a78150813c1b78aa54d63b",
+    "verifiedAt": "2026-11-01T02:13:21.152Z"
+  },
+  {
+    "id": "17",
+    "name": "Observatory",
+    "path": "/downloads/17-observatory.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/a8a455823d2766361c4c2f1bfe8122ead3385128863fcfcaaaf12d498d535375.zip",
+    "bytes": 368634,
+    "sha256": "a8a455823d2766361c4c2f1bfe8122ead3385128863fcfcaaaf12d498d535375",
+    "sourceRevision": "sha256:63903dc04dc32e4691c77a289f8f4de6a1f32bf89866fb5a5a52da2c0e3bf373",
+    "verifiedAt": "2026-11-01T02:13:21.334Z"
+  },
+  {
+    "id": "18",
+    "name": "Knowledge Garden",
+    "path": "/downloads/18-knowledge-garden.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/987439e6b9bd1d9bff102af85c30327f14e4b9f779c98f241f389dfa5dc08ddf.zip",
+    "bytes": 530024,
+    "sha256": "987439e6b9bd1d9bff102af85c30327f14e4b9f779c98f241f389dfa5dc08ddf",
+    "sourceRevision": "sha256:8555d6b41768024802d96a04e1903d4b0f3474dae435127eda6fb8c44c705c53",
+    "verifiedAt": "2026-11-01T02:13:21.600Z"
+  },
+  {
+    "id": "19",
+    "name": "Conversation Desk",
+    "path": "/downloads/19-conversation-desk.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/bcfbf634b135e0f25a5dd715fb99146a316e1101768adf8792db75580ff13943.zip",
+    "bytes": 317622,
+    "sha256": "bcfbf634b135e0f25a5dd715fb99146a316e1101768adf8792db75580ff13943",
+    "sourceRevision": "sha256:ec86a8d324f036458d7c748397ff0e9ef26cc7bd55da4e749e29ee525bbe2a21",
+    "verifiedAt": "2026-11-01T02:13:21.562Z"
+  },
+  {
+    "id": "20",
+    "name": "The Directory",
+    "path": "/downloads/20-the-directory.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/d65ea0c2eaefc523936223e38a91748395edf1cc05b6e117b2d89c8b596a03fb.zip",
+    "bytes": 378084,
+    "sha256": "d65ea0c2eaefc523936223e38a91748395edf1cc05b6e117b2d89c8b596a03fb",
+    "sourceRevision": "sha256:e289065259a5a5cc4e2b6d59551067c4c339b209ac68915db5ac063def03a3c1",
+    "verifiedAt": "2026-11-01T02:13:22.866Z"
+  },
+  {
+    "id": "21",
+    "name": "Utility Storefront",
+    "path": "/downloads/21-utility-storefront.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/dd36887061fa92b12d30c02fc4e38159bb4f02e5bcf4346faff34c4c2d530cc8.zip",
+    "bytes": 386904,
+    "sha256": "dd36887061fa92b12d30c02fc4e38159bb4f02e5bcf4346faff34c4c2d530cc8",
+    "sourceRevision": "sha256:c04ab76d202f63aac8d8ce0ac8f5e7dc14a66ddcdf3ab9afa2f460682da825a5",
+    "verifiedAt": "2026-11-01T02:13:23.221Z"
+  },
+  {
+    "id": "22",
+    "name": "Specimen Shop",
+    "path": "/downloads/22-specimen-shop.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/bf2d52003af0d8ff1f4457df9a7e7a9ad92089afa1a4fe9b1cf6c551030771a3.zip",
+    "bytes": 492551,
+    "sha256": "bf2d52003af0d8ff1f4457df9a7e7a9ad92089afa1a4fe9b1cf6c551030771a3",
+    "sourceRevision": "sha256:f0dd8b25bc3e5a1d38294e0e134e07a7284939e64f506899ddd6bed59520f9da",
+    "verifiedAt": "2026-11-01T02:13:23.423Z"
+  },
+  {
+    "id": "23",
+    "name": "Market Bazaar",
+    "path": "/downloads/23-market-bazaar.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/48f65c1133089e0cd11f8a586555643f07c079469ae583670fd83e90f681e7d4.zip",
+    "bytes": 454233,
+    "sha256": "48f65c1133089e0cd11f8a586555643f07c079469ae583670fd83e90f681e7d4",
+    "sourceRevision": "sha256:6cb94184e337bec54e4e2dd148c958c641ba4a6120d663fa607d10e0ff13dc71",
+    "verifiedAt": "2026-11-01T02:13:23.639Z"
+  },
+  {
+    "id": "24",
+    "name": "Fine Dining",
+    "path": "/downloads/24-fine-dining.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/2554e5bb21c7e8f226698743ccdc36d14ebd504efe98c2c86fa633595aa8be6a.zip",
+    "bytes": 578497,
+    "sha256": "2554e5bb21c7e8f226698743ccdc36d14ebd504efe98c2c86fa633595aa8be6a",
+    "sourceRevision": "sha256:9f854a5bb610346f78c39322e20c07b6e24d779dd347642330961b73d6f7d0cd",
+    "verifiedAt": "2026-11-01T02:13:24.798Z"
+  },
+  {
+    "id": "25",
+    "name": "Local Trades",
+    "path": "/downloads/25-local-trades.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/2960df31d9f8d213ac341c1006bc7fc13a9f1018ade7a646e1aad9c77cef014f.zip",
+    "bytes": 448979,
+    "sha256": "2960df31d9f8d213ac341c1006bc7fc13a9f1018ade7a646e1aad9c77cef014f",
+    "sourceRevision": "sha256:fc28f482dd38e92e11355fa225fa8336c1c23a6b8c1e52803bd5c35de53c3ff0",
+    "verifiedAt": "2026-11-01T02:13:25.469Z"
+  },
+  {
+    "id": "26",
+    "name": "Field Notes",
+    "path": "/downloads/26-field-notes.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/cbacc721ea81e563298473ecbf66bcb3db5329277cf0f35fd9305b892002decf.zip",
+    "bytes": 954852,
+    "sha256": "cbacc721ea81e563298473ecbf66bcb3db5329277cf0f35fd9305b892002decf",
+    "sourceRevision": "sha256:96faf9539641a4e98323315d5db2385ea39a28a3940f34a2ae7094f1b9379183",
+    "verifiedAt": "2026-11-01T02:13:25.624Z"
+  },
+  {
+    "id": "27",
+    "name": "Blueprint Studio",
+    "path": "/downloads/27-blueprint-studio.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/bbd1fd96e9159ea101a9b06419a856a0f93782ff0855734e67e6f3f2479b7dce.zip",
+    "bytes": 552003,
+    "sha256": "bbd1fd96e9159ea101a9b06419a856a0f93782ff0855734e67e6f3f2479b7dce",
+    "sourceRevision": "sha256:90e7452ae77218c985bf36c9950b33ae22a04d35d34216c9438fd51b78301ada",
+    "verifiedAt": "2026-11-01T02:13:25.689Z"
+  },
+  {
+    "id": "28",
+    "name": "Grand Hotel",
+    "path": "/downloads/28-grand-hotel.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/d2590b26026d35ec322e80387079e9f2e3b5bc8255dde3352a50b0898745efdc.zip",
+    "bytes": 1550050,
+    "sha256": "d2590b26026d35ec322e80387079e9f2e3b5bc8255dde3352a50b0898745efdc",
+    "sourceRevision": "sha256:d3409d44fbfd2896dd9a3213ae7b89d0b0c059770409efb8e24084f6eba7f3f6",
+    "verifiedAt": "2026-11-01T02:13:26.646Z"
+  },
+  {
+    "id": "29",
+    "name": "Calm Sanctuary",
+    "path": "/downloads/29-calm-sanctuary.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/e43a240df48f2aa89f2eda62e4a4fb6d0910723eb3807feac81c5a4289c057b3.zip",
+    "bytes": 232416,
+    "sha256": "e43a240df48f2aa89f2eda62e4a4fb6d0910723eb3807feac81c5a4289c057b3",
+    "sourceRevision": "sha256:dc3a6233d3c42ab34c8d40d67d601596af9bd8c2dd7376251b43b15c44d7420b",
+    "verifiedAt": "2026-11-01T02:13:27.161Z"
+  },
+  {
+    "id": "30",
+    "name": "Festival Poster",
+    "path": "/downloads/30-festival-poster.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/d8ab58c07e267e9dfb3a40258cc08a30c4d372012609f9ff10641b3782ab0f5d.zip",
+    "bytes": 431731,
+    "sha256": "d8ab58c07e267e9dfb3a40258cc08a30c4d372012609f9ff10641b3782ab0f5d",
+    "sourceRevision": "sha256:0d65249b0db6d37e5f351d0693cb662b758c9963cecc29ea46008dc690addcd2",
+    "verifiedAt": "2026-11-01T02:13:27.433Z"
+  },
+  {
+    "id": "31",
+    "name": "Bauhaus Workshop",
+    "path": "/downloads/31-bauhaus-workshop.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/e4e5dec8474f2276ed11f90e320e2ac476f1dfc833bd62a71dc116e995baa36f.zip",
+    "bytes": 373051,
+    "sha256": "e4e5dec8474f2276ed11f90e320e2ac476f1dfc833bd62a71dc116e995baa36f",
+    "sourceRevision": "sha256:9827dcf326ad656aeb3cfcd58f515ce08a67aca3128576cb9b95e13afae222eb",
+    "verifiedAt": "2026-11-01T02:13:27.549Z"
+  },
+  {
+    "id": "32",
+    "name": "Pop Memphis",
+    "path": "/downloads/32-pop-memphis.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/4ab2c03690b0a27d620fe5cd751a4d33c70d10c92036eda9d9caa7c77fe8334b.zip",
+    "bytes": 856423,
+    "sha256": "4ab2c03690b0a27d620fe5cd751a4d33c70d10c92036eda9d9caa7c77fe8334b",
+    "sourceRevision": "sha256:fdfc88b1a606a5e00abde25fc2d49c154472d7410dd3fcd779953b9c161a2af5",
+    "verifiedAt": "2026-11-01T02:13:28.401Z"
+  },
+  {
+    "id": "33",
+    "name": "Playroom",
+    "path": "/downloads/33-playroom.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/98082f1388c204015bbfaf6b027bee75cc80ad933182a2ad9921e90c37fa56e8.zip",
+    "bytes": 409876,
+    "sha256": "98082f1388c204015bbfaf6b027bee75cc80ad933182a2ad9921e90c37fa56e8",
+    "sourceRevision": "sha256:9ac7ca8c87542c41d0511ad79ea60bad9773b11291866094d5bd54f2c5c40eb5",
+    "verifiedAt": "2026-11-01T02:13:28.945Z"
+  },
+  {
+    "id": "34",
+    "name": "Hand Drawn Desk",
+    "path": "/downloads/34-hand-drawn-desk.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/cd27c1d10c86e859e2ed4380cd784c2353768f47c07a495088716829a9eabf62.zip",
+    "bytes": 540015,
+    "sha256": "cd27c1d10c86e859e2ed4380cd784c2353768f47c07a495088716829a9eabf62",
+    "sourceRevision": "sha256:44a44469847cf92a5fba8d2762c8dc70db7484916121fe63d7fd594c45959bda",
+    "verifiedAt": "2026-11-01T02:13:29.382Z"
+  },
+  {
+    "id": "35",
+    "name": "Paper Cabinet",
+    "path": "/downloads/35-paper-cabinet.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/3edde6163fdfaa0231102b6dcf96456fc10b678ac9a21be51d97998ead78483e.zip",
+    "bytes": 402498,
+    "sha256": "3edde6163fdfaa0231102b6dcf96456fc10b678ac9a21be51d97998ead78483e",
+    "sourceRevision": "sha256:638055e14c5f5b6bb0845611ea713f959b60a2baad073b858385bf530bdcf823",
+    "verifiedAt": "2026-11-01T02:13:29.278Z"
+  },
+  {
+    "id": "36",
+    "name": "Punk Zine",
+    "path": "/downloads/36-punk-zine.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/d22a4b8622be29de6973221a3dcffee3b2f4682799b1cc229113502ec2fdb882.zip",
+    "bytes": 679450,
+    "sha256": "d22a4b8622be29de6973221a3dcffee3b2f4682799b1cc229113502ec2fdb882",
+    "sourceRevision": "sha256:f2bb439bec0182b391db8dcbdf23eba3c1bfab8b2d7c7767a132bef1d17063da",
+    "verifiedAt": "2026-11-01T02:13:30.246Z"
+  },
+  {
+    "id": "37",
+    "name": "Comic Serial",
+    "path": "/downloads/37-comic-serial.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/ad1211c24f6582682525c5ddd3e7532eaa4f34bdccccf8f79f5804e8abfd24fd.zip",
+    "bytes": 508369,
+    "sha256": "ad1211c24f6582682525c5ddd3e7532eaa4f34bdccccf8f79f5804e8abfd24fd",
+    "sourceRevision": "sha256:a409184b35afa0bd36b7fc6eb731e6fa10983b8a28ea5bb31c244894e0892d85",
+    "verifiedAt": "2026-11-01T02:13:30.767Z"
+  },
+  {
+    "id": "38",
+    "name": "Pixel Arcade",
+    "path": "/downloads/38-pixel-arcade.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/9f6340df1be9abc4b28ec98b6b6db88d5d6014718bdb6548817ed540f7198f6c.zip",
+    "bytes": 378038,
+    "sha256": "9f6340df1be9abc4b28ec98b6b6db88d5d6014718bdb6548817ed540f7198f6c",
+    "sourceRevision": "sha256:2370261da22f84e3a34402a9b84cbecc29d74b0f514a7f78b6ec89f7fbc10ba6",
+    "verifiedAt": "2026-11-01T02:13:31.033Z"
+  },
+  {
+    "id": "39",
+    "name": "Personal Web 1999",
+    "path": "/downloads/39-personal-web-1999.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/3abc43adf2067fbe3568d8f5d893eef3ac60dc28742af93c0ccad89343ae6778.zip",
+    "bytes": 693976,
+    "sha256": "3abc43adf2067fbe3568d8f5d893eef3ac60dc28742af93c0ccad89343ae6778",
+    "sourceRevision": "sha256:fe9b0d7e9eb4139f9aed41712576dd4c86860a983e0644abb3deb9b49bdc647a",
+    "verifiedAt": "2026-11-01T02:13:31.139Z"
+  },
+  {
+    "id": "40",
+    "name": "Desktop 1995",
+    "path": "/downloads/40-desktop-1995.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/e57eff2a80fff24be43cdb82527da085c6407101f88d6e7e1b6efd4c6e57446b.zip",
+    "bytes": 384828,
+    "sha256": "e57eff2a80fff24be43cdb82527da085c6407101f88d6e7e1b6efd4c6e57446b",
+    "sourceRevision": "sha256:8e6c514b1599d688478e9b29443f3b786b6c4eb28ddf7cf56d3567cb46ef624a",
+    "verifiedAt": "2026-11-01T02:13:31.971Z"
+  },
+  {
+    "id": "41",
+    "name": "Terminal Manual",
+    "path": "/downloads/41-terminal-manual.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/78d0d5381823aaf9e33a2b970ad2e575e6bcc3fdd67ce149b47e7d041961893d.zip",
+    "bytes": 343275,
+    "sha256": "78d0d5381823aaf9e33a2b970ad2e575e6bcc3fdd67ce149b47e7d041961893d",
+    "sourceRevision": "sha256:26ddbeddf376ca3d7a82ac5f1bbed19279dae30c8dd1c86a489ab74363224861",
+    "verifiedAt": "2026-11-01T02:13:32.591Z"
+  },
+  {
+    "id": "42",
+    "name": "Teletext Bulletin",
+    "path": "/downloads/42-teletext-bulletin.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/5bf087e9a75a63df0b3042ef14383b963715822924cba57f85ec46ac38618955.zip",
+    "bytes": 433821,
+    "sha256": "5bf087e9a75a63df0b3042ef14383b963715822924cba57f85ec46ac38618955",
+    "sourceRevision": "sha256:69160e929170e90a7d15b69ffa1d6b9e23b2942e5f221cd9edf1a6da93387dc7",
+    "verifiedAt": "2026-11-01T02:13:33.337Z"
+  },
+  {
+    "id": "43",
+    "name": "Y2K Chrome",
+    "path": "/downloads/43-y2k-chrome.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/f94d4da21b361efc6ec65790f961cf0013595126a1189c9f3b590ed48e0011c2.zip",
+    "bytes": 407519,
+    "sha256": "f94d4da21b361efc6ec65790f961cf0013595126a1189c9f3b590ed48e0011c2",
+    "sourceRevision": "sha256:c478c0cc65d40719e7b820f7b311f1448d2226eb4860b154cf0517de5b38b198",
+    "verifiedAt": "2026-11-01T02:13:32.899Z"
+  },
+  {
+    "id": "44",
+    "name": "Neo Brutalist Board",
+    "path": "/downloads/44-neo-brutalist-board.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/74063fb2e363ef6bbde6d9498c1ebd81b617ef6be47ecb16766db20dea905b99.zip",
+    "bytes": 456191,
+    "sha256": "74063fb2e363ef6bbde6d9498c1ebd81b617ef6be47ecb16766db20dea905b99",
+    "sourceRevision": "sha256:713c3a3849004886510cd0bbb386c1c1183d7980a959370d193c3e87e4a3d095",
+    "verifiedAt": "2026-11-01T02:13:33.936Z"
+  },
+  {
+    "id": "45",
+    "name": "Raw Manifesto",
+    "path": "/downloads/45-raw-manifesto.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/21f3d39663b4e3fc5bb6b222f1d0c5d5d1fc2f46476a369249fc559e6c0718bb.zip",
+    "bytes": 450103,
+    "sha256": "21f3d39663b4e3fc5bb6b222f1d0c5d5d1fc2f46476a369249fc559e6c0718bb",
+    "sourceRevision": "sha256:e4f3623c9bb50dd4d167886a60556ea9d94c88444e50404637b8e08c325ebb4f",
+    "verifiedAt": "2026-11-01T02:13:34.306Z"
+  },
+  {
+    "id": "46",
+    "name": "Kinetic Type",
+    "path": "/downloads/46-kinetic-type.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/64ba7fcf2f354c6746c18b43b0d05947d369ea3397fcce887855b6f6c6b295f3.zip",
+    "bytes": 370616,
+    "sha256": "64ba7fcf2f354c6746c18b43b0d05947d369ea3397fcce887855b6f6c6b295f3",
+    "sourceRevision": "sha256:8e2181b9d71e6ed2da15225cd4a39c5c525bda8e0f7143b7bcc686f0e07444e5",
+    "verifiedAt": "2026-11-01T02:13:34.609Z"
+  },
+  {
+    "id": "47",
+    "name": "Colour Field",
+    "path": "/downloads/47-colour-field.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/7c77562667adfd12089846f7b2ee621be16af804474027c70694dd1abcffa1ae.zip",
+    "bytes": 367487,
+    "sha256": "7c77562667adfd12089846f7b2ee621be16af804474027c70694dd1abcffa1ae",
+    "sourceRevision": "sha256:61e816a0a2992147816e7ade6ee004014656bf19173f9fa37c15f3af69a73546",
+    "verifiedAt": "2026-11-01T02:13:35.027Z"
+  },
+  {
+    "id": "48",
+    "name": "Spatial Gallery",
+    "path": "/downloads/48-spatial-gallery.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/cea27c6c824bb482ddec3016845f3653d2714618619e633800148f0178538537.zip",
+    "bytes": 327178,
+    "sha256": "cea27c6c824bb482ddec3016845f3653d2714618619e633800148f0178538537",
+    "sourceRevision": "sha256:2bde77578485f8c1763a015a8f26297964b45bd5bb2c889c6bedc7fa9d1c83cc",
+    "verifiedAt": "2026-11-01T02:13:35.636Z"
+  },
+  {
+    "id": "49",
+    "name": "Parametric Studio",
+    "path": "/downloads/49-parametric-studio.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/46919172548f7157253e9ef75486253292cf6df269caff11ed412ea15f2deaf2.zip",
+    "bytes": 561673,
+    "sha256": "46919172548f7157253e9ef75486253292cf6df269caff11ed412ea15f2deaf2",
+    "sourceRevision": "sha256:6fcde2adeec45ecdc339fe51c41d1257c14c1badb52844af9c15d4e8afd8afc1",
+    "verifiedAt": "2026-11-01T02:13:36.019Z"
+  },
+  {
+    "id": "50",
+    "name": "Infinite Index",
+    "path": "/downloads/50-infinite-index.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/ac4a21037509f490ae17c99cb5f8cbccc6d8b20a90bc83cc996713a0519f7f8e.zip",
+    "bytes": 561914,
+    "sha256": "ac4a21037509f490ae17c99cb5f8cbccc6d8b20a90bc83cc996713a0519f7f8e",
+    "sourceRevision": "sha256:8508ef691d68953d429188f4f0c59bec60cdc4b5975455990ee5b9ebaa2c73d9",
+    "verifiedAt": "2026-11-01T02:13:36.358Z"
+  },
+  {
+    "id": "51",
+    "name": "One-Page Business Card",
+    "path": "/downloads/51-one-page-business-card.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/3a973de8cd08ffda278acd4fabd66450167a97a596ba25edbdb5ad949405935e.zip",
+    "bytes": 510370,
+    "sha256": "3a973de8cd08ffda278acd4fabd66450167a97a596ba25edbdb5ad949405935e",
+    "sourceRevision": "sha256:9d651511e2fe93009005c6bde1a70c22c94fcf1cfd03a1f6d055ae3fc8989151",
+    "verifiedAt": "2026-11-01T02:13:36.872Z"
+  },
+  {
+    "id": "52",
+    "name": "Corner Shop",
+    "path": "/downloads/52-corner-shop.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/647e5af1a75c9029f8bef2f6b6cbe79ff3d7ac12601f2a9ce8ca1a7b3074b9d0.zip",
+    "bytes": 1257007,
+    "sha256": "647e5af1a75c9029f8bef2f6b6cbe79ff3d7ac12601f2a9ce8ca1a7b3074b9d0",
+    "sourceRevision": "sha256:485202317f3d76e600c21e37f451366bf127301dbadacd09abf5e4e639d22943",
+    "verifiedAt": "2026-11-01T02:13:37.507Z"
+  },
+  {
+    "id": "53",
+    "name": "Appointment Studio",
+    "path": "/downloads/53-appointment-studio.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/0a1535f806c20d32eab3abefadb39a3174ec4785e3fe6d3f562d7cb2d49efab3.zip",
+    "bytes": 1156849,
+    "sha256": "0a1535f806c20d32eab3abefadb39a3174ec4785e3fe6d3f562d7cb2d49efab3",
+    "sourceRevision": "sha256:ddf9492e252c32c41b24a38f9322e57604017b7b463f29b91b77ad0fc8a66dec",
+    "verifiedAt": "2026-11-01T02:13:37.860Z"
+  },
+  {
+    "id": "54",
+    "name": "Clinical Practice",
+    "path": "/downloads/54-clinical-practice.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/56d1ff784c8c24f01658b1388e8c63b7a83b6f3ac5c38da62333a10a9d0bcdef.zip",
+    "bytes": 849424,
+    "sha256": "56d1ff784c8c24f01658b1388e8c63b7a83b6f3ac5c38da62333a10a9d0bcdef",
+    "sourceRevision": "sha256:a125c428ff931f068d56f8df551aecff7b037e6a9376480a37848ce75fc80274",
+    "verifiedAt": "2026-11-01T02:13:38.148Z"
+  },
+  {
+    "id": "55",
+    "name": "Casebook Authority",
+    "path": "/downloads/55-casebook-authority.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/5bb9cf8e9e9bd5b53efd11a3baf91c28b5fef264056c057bfafeb5aba02afdca.zip",
+    "bytes": 609105,
+    "sha256": "5bb9cf8e9e9bd5b53efd11a3baf91c28b5fef264056c057bfafeb5aba02afdca",
+    "sourceRevision": "sha256:912380ff1d01c8a28fa4d25cf30f56df39922b151497e87e59f20eb70cca20fb",
+    "verifiedAt": "2026-11-01T02:13:38.622Z"
+  },
+  {
+    "id": "56",
+    "name": "Renovation Proof",
+    "path": "/downloads/56-renovation-proof.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/781675b602b7e08ceea50aa51102a8cd31f8220448f27ea24b1b10a4cb5d454e.zip",
+    "bytes": 970524,
+    "sha256": "781675b602b7e08ceea50aa51102a8cd31f8220448f27ea24b1b10a4cb5d454e",
+    "sourceRevision": "sha256:e1551745f7ff093e3739e327af44e90ed53fdee75c31557093c7910a3ea14cd8",
+    "verifiedAt": "2026-11-01T02:13:39.528Z"
+  },
+  {
+    "id": "57",
+    "name": "Property Listing",
+    "path": "/downloads/57-property-listing.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/b2a957f4dc309c7cf6f2b72ef5d32dd58e5974667fcb4817543f526fc4f7eada.zip",
+    "bytes": 2180690,
+    "sha256": "b2a957f4dc309c7cf6f2b72ef5d32dd58e5974667fcb4817543f526fc4f7eada",
+    "sourceRevision": "sha256:6bec85e54d2c9db870f27926f9bc581864911e67052fbce0638bc9dd9946e000",
+    "verifiedAt": "2026-11-01T02:13:39.859Z"
+  },
+  {
+    "id": "58",
+    "name": "Service Bay",
+    "path": "/downloads/58-service-bay.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/a9fa9595aa64715979bd0e42f82dd4e9d2014cd5896f0aa14a7243bc83a3c7df.zip",
+    "bytes": 874678,
+    "sha256": "a9fa9595aa64715979bd0e42f82dd4e9d2014cd5896f0aa14a7243bc83a3c7df",
+    "sourceRevision": "sha256:b5cc04f84f0f21661b144ba009730227f12fed8331143315f5f5fc35b2f6e82a",
+    "verifiedAt": "2026-11-01T02:13:39.955Z"
+  },
+  {
+    "id": "59",
+    "name": "Unit Finder",
+    "path": "/downloads/59-unit-finder.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/03fc8b7125d9445eff1ed1000f200e90108faf05e1f135ec26e9f563f7a5cde7.zip",
+    "bytes": 554895,
+    "sha256": "03fc8b7125d9445eff1ed1000f200e90108faf05e1f135ec26e9f563f7a5cde7",
+    "sourceRevision": "sha256:8d904a94ceaf1ac36f9e3fbf9a95f715f132763976e68ae3aef952faee1939c1",
+    "verifiedAt": "2026-11-01T02:13:40.520Z"
+  },
+  {
+    "id": "60",
+    "name": "Industrial Capability",
+    "path": "/downloads/60-industrial-capability.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/fc6b40a2f1630fa92b622edafd38cbbf1eb64c84f7361b8ab4c78e1fa1f1166a.zip",
+    "bytes": 528712,
+    "sha256": "fc6b40a2f1630fa92b622edafd38cbbf1eb64c84f7361b8ab4c78e1fa1f1166a",
+    "sourceRevision": "sha256:08af5d78bc4228f8f07663fa73a7d82006d54be8d766ca565454dd58086c7f50",
+    "verifiedAt": "2026-11-01T02:13:41.395Z"
+  },
+  {
+    "id": "61",
+    "name": "Early Years",
+    "path": "/downloads/61-early-years.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/36b48832c69c5653e76a50886094a0d5a8ef569e6fa0399cf720b192670354d8.zip",
+    "bytes": 1050837,
+    "sha256": "36b48832c69c5653e76a50886094a0d5a8ef569e6fa0399cf720b192670354d8",
+    "sourceRevision": "sha256:8d5db3e839c62c4fe2d29bd02abaca614778fa9b303a2912a8a20d4c9dc474f3",
+    "verifiedAt": "2026-11-01T02:13:41.653Z"
+  },
+  {
+    "id": "62",
+    "name": "Training Floor",
+    "path": "/downloads/62-training-floor.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/92656840f6844c3e1a550507771f42c7b0231e24259a3c2a8cd0595b9d2faf9b.zip",
+    "bytes": 817497,
+    "sha256": "92656840f6844c3e1a550507771f42c7b0231e24259a3c2a8cd0595b9d2faf9b",
+    "sourceRevision": "sha256:ed0e577bd323a14174871bdb88585ff8d7ac4260b9bc26a8c559f40b63b6bb92",
+    "verifiedAt": "2026-11-01T02:13:41.738Z"
+  },
+  {
+    "id": "63",
+    "name": "Venue Floorplan",
+    "path": "/downloads/63-venue-floorplan.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/966795aa5fb837e6fabba6492aab5aa96467b70e2e8a120fd1c724ca56e7235f.zip",
+    "bytes": 945224,
+    "sha256": "966795aa5fb837e6fabba6492aab5aa96467b70e2e8a120fd1c724ca56e7235f",
+    "sourceRevision": "sha256:299c4c8231c180b1b5cee9ff1b7eeb42a41f1382ed4a2536888c44db06f63c33",
+    "verifiedAt": "2026-11-01T02:13:42.301Z"
+  },
+  {
+    "id": "64",
+    "name": "Service Plans",
+    "path": "/downloads/64-service-plans.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/8ad14213765d7ea5abe9386eabdacae51c11979ec8d2b1a6a11dfd88c7111e76.zip",
+    "bytes": 484435,
+    "sha256": "8ad14213765d7ea5abe9386eabdacae51c11979ec8d2b1a6a11dfd88c7111e76",
+    "sourceRevision": "sha256:f5e99bde393846d9a35506e66f151525b15a978b73b290228ba336422e335525",
+    "verifiedAt": "2026-11-01T02:13:43.343Z"
+  },
+  {
+    "id": "65",
+    "name": "Branch Network",
+    "path": "/downloads/65-branch-network.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/f8d4c86651007ecd8a3015a41a6879211ea317947c08d0d33b2a379e436d026a.zip",
+    "bytes": 481282,
+    "sha256": "f8d4c86651007ecd8a3015a41a6879211ea317947c08d0d33b2a379e436d026a",
+    "sourceRevision": "sha256:33fee568623018d162b50bec36978ddd126727baad968e57770cefb4f8c7ab10",
+    "verifiedAt": "2026-11-01T02:13:43.610Z"
+  },
+  {
+    "id": "66",
+    "name": "Commission Studio",
+    "path": "/downloads/66-commission-studio.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/f654a8edc2410ae44ccc0e0f55e6673515db77aac851cd44fbb477b8ae12643e.zip",
+    "bytes": 834091,
+    "sha256": "f654a8edc2410ae44ccc0e0f55e6673515db77aac851cd44fbb477b8ae12643e",
+    "sourceRevision": "sha256:694c6dd128d08f9d9832d7ef8b5411dcb1528188ea0058295ee884f34319b352",
+    "verifiedAt": "2026-11-01T02:13:43.495Z"
+  },
+  {
+    "id": "67",
+    "name": "Everyday Eatery",
+    "path": "/downloads/67-everyday-eatery.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/5d4862f33294a63bd8303fb7dc4524bc28ae36b0a664dd42f06ea7fba8d8615a.zip",
+    "bytes": 1291630,
+    "sha256": "5d4862f33294a63bd8303fb7dc4524bc28ae36b0a664dd42f06ea7fba8d8615a",
+    "sourceRevision": "sha256:a88465c13c00663c48436d5fb4b88a7c90f69f8087337f642cff2a50b3f42d70",
+    "verifiedAt": "2026-11-01T02:13:44.076Z"
+  },
+  {
+    "id": "68",
+    "name": "Rapid Response",
+    "path": "/downloads/68-rapid-response.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/7fdab34695ac3e83722610744a4e4a5029a892c89e4920fbcdedcd9fff1d56ed.zip",
+    "bytes": 440644,
+    "sha256": "7fdab34695ac3e83722610744a4e4a5029a892c89e4920fbcdedcd9fff1d56ed",
+    "sourceRevision": "sha256:c9e2f55c03cee847ef81786754139576ac8743c7b8fdc89a56731f8606da55e0",
+    "verifiedAt": "2026-11-01T02:13:45.145Z"
+  },
+  {
+    "id": "69",
+    "name": "Impact Nonprofit",
+    "path": "/downloads/69-impact-nonprofit.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/b5239547f4ab9fd6444a3ce01fcde372a0b52677ae5b6899d12297c1303be9a4.zip",
+    "bytes": 582592,
+    "sha256": "b5239547f4ab9fd6444a3ce01fcde372a0b52677ae5b6899d12297c1303be9a4",
+    "sourceRevision": "sha256:24a25fee704394d66565ccfe166c44e884ce8d54403703a2edac0de29c5b3a86",
+    "verifiedAt": "2026-11-01T02:13:45.330Z"
+  },
+  {
+    "id": "70",
+    "name": "Community Commons",
+    "path": "/downloads/70-community-commons.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/c91324cdaa89e9f8df883209ba5547ec96f398bdee6a0f89ace66e990111101e.zip",
+    "bytes": 470143,
+    "sha256": "c91324cdaa89e9f8df883209ba5547ec96f398bdee6a0f89ace66e990111101e",
+    "sourceRevision": "sha256:db6dfbef2855ee3e09d3698b4b77114de868aaff7590500e219ce02ce8493389",
+    "verifiedAt": "2026-11-01T02:13:45.416Z"
+  },
+  {
+    "id": "71",
+    "name": "Learning Prospectus",
+    "path": "/downloads/71-learning-prospectus.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/61c72ec1c43b908fb294fd595948113bf4f70f26f88d39b92da8bba6e8897029.zip",
+    "bytes": 530095,
+    "sha256": "61c72ec1c43b908fb294fd595948113bf4f70f26f88d39b92da8bba6e8897029",
+    "sourceRevision": "sha256:d026dc92f4e68f7aeaa0cf813bf44c7b729be8f52ba3b3b67d755b5596cd7f93",
+    "verifiedAt": "2026-11-01T02:13:45.822Z"
+  },
+  {
+    "id": "72",
+    "name": "Careers & Recruitment",
+    "path": "/downloads/72-careers-recruitment.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/1e74e08a859209a6069469c5ccbe0e4b35d04e18337bd8d9abcd1c17552c951b.zip",
+    "bytes": 525266,
+    "sha256": "1e74e08a859209a6069469c5ccbe0e4b35d04e18337bd8d9abcd1c17552c951b",
+    "sourceRevision": "sha256:08266b15667ee5ac1ed4cc2c7a2fe8c745b5ef1c005a0418f1da457ee58eebc6",
+    "verifiedAt": "2026-11-01T02:13:46.880Z"
+  },
+  {
+    "id": "73",
+    "name": "Community Forum",
+    "path": "/downloads/73-community-forum.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/5184e9ad089a013411e96254ae26145f493e99149f952a52855742bb531739ad.zip",
+    "bytes": 460846,
+    "sha256": "5184e9ad089a013411e96254ae26145f493e99149f952a52855742bb531739ad",
+    "sourceRevision": "sha256:3b218f31dcb7f0dc86f2321a9b64a2a58897b5bd237460042b22c8c417ee004f",
+    "verifiedAt": "2026-11-01T02:13:47.114Z"
+  },
+  {
+    "id": "74",
+    "name": "Modern Docs Portal",
+    "path": "/downloads/74-modern-docs-portal.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/2c6cc2fe5c8f3e39f325d0a2c8422f7457378923fd87d45ae51f5b91abe63bcb.zip",
+    "bytes": 465809,
+    "sha256": "2c6cc2fe5c8f3e39f325d0a2c8422f7457378923fd87d45ae51f5b91abe63bcb",
+    "sourceRevision": "sha256:ceb6ff326fef3de4e6b61b39d57b480d239941ded721007d62de2834e8dd9c10",
+    "verifiedAt": "2026-11-01T02:13:47.212Z"
+  },
+  {
+    "id": "75",
+    "name": "Annual Report",
+    "path": "/downloads/75-annual-report.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/7e4fd65669e1b357d1cdb2ef5e96d2a929e49acea3804fb888023f6ae979cf36.zip",
+    "bytes": 567939,
+    "sha256": "7e4fd65669e1b357d1cdb2ef5e96d2a929e49acea3804fb888023f6ae979cf36",
+    "sourceRevision": "sha256:e6949e8fe4e9c110604dded8a0b982d8905f18fb8fd4fc11c0080afa47067e88",
+    "verifiedAt": "2026-11-01T02:13:47.604Z"
+  },
+  {
+    "id": "76",
+    "name": "Folded Matter",
+    "path": "/downloads/76-folded-matter.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/2b222230f961f3761c2276b53283eb2f6201ea7f63ad166fafb1d386c648b8f1.zip",
+    "bytes": 605817,
+    "sha256": "2b222230f961f3761c2276b53283eb2f6201ea7f63ad166fafb1d386c648b8f1",
+    "sourceRevision": "sha256:5cbbf163ab618245c0ba7178dd780b772db50ac9055f561a1ffaf21ecf78fbcf",
+    "verifiedAt": "2026-11-01T02:13:48.679Z"
+  },
+  {
+    "id": "77",
+    "name": "Palimpsest City",
+    "path": "/downloads/77-palimpsest-city.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/d7d033a06646119d2f7a9dedb931662cf7c36e67243d93a07d4b083b91eed48b.zip",
+    "bytes": 637386,
+    "sha256": "d7d033a06646119d2f7a9dedb931662cf7c36e67243d93a07d4b083b91eed48b",
+    "sourceRevision": "sha256:089e004f2d675211454246ad6d9afc495f7062dec1c56bdd1f1eb5279f9639da",
+    "verifiedAt": "2026-11-01T02:13:49.236Z"
+  },
+  {
+    "id": "78",
+    "name": "Aperture Archive",
+    "path": "/downloads/78-aperture-archive.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/68e8c1e819627e4c1564ebaacdba7ca9352b1c4e4181ce1fcd8a1ac8ec57c42d.zip",
+    "bytes": 350592,
+    "sha256": "68e8c1e819627e4c1564ebaacdba7ca9352b1c4e4181ce1fcd8a1ac8ec57c42d",
+    "sourceRevision": "sha256:ed245cc88c43bcdfcdfbd9c3b57223ad2df5af2a2cec086f481bdfa29c9a99e3",
+    "verifiedAt": "2026-11-01T02:13:49.305Z"
+  },
+  {
+    "id": "79",
+    "name": "Frequency House",
+    "path": "/downloads/79-frequency-house.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/5820a3a6925cb19439a435d5a400db3c56dfdd419128894039a5ed50a5e251b0.zip",
+    "bytes": 377145,
+    "sha256": "5820a3a6925cb19439a435d5a400db3c56dfdd419128894039a5ed50a5e251b0",
+    "sourceRevision": "sha256:1dd8c3ce6f7c69caec454c4f4c4a7f79f862d53a9f2518b03020bc483f5b3c13",
+    "verifiedAt": "2026-11-01T02:13:49.393Z"
+  },
+  {
+    "id": "80",
+    "name": "Braided Voices",
+    "path": "/downloads/80-braided-voices.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/100e1863d92e603b14c3b2b8e6c5174df1135f595f9c4edcd481f63ce4d5a4d7.zip",
+    "bytes": 746166,
+    "sha256": "100e1863d92e603b14c3b2b8e6c5174df1135f595f9c4edcd481f63ce4d5a4d7",
+    "sourceRevision": "sha256:2822d1d51fc7871503ee3c7566d6f93b864803591c5b887e5c2749fd95b50a68",
+    "verifiedAt": "2026-11-01T02:13:50.410Z"
+  },
+  {
+    "id": "81",
+    "name": "Counterpoint",
+    "path": "/downloads/81-counterpoint.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/1874b708b66d63ce4ef97bab6ce42a85f70c5794dfe27c49825c66a7e9fa2316.zip",
+    "bytes": 737152,
+    "sha256": "1874b708b66d63ce4ef97bab6ce42a85f70c5794dfe27c49825c66a7e9fa2316",
+    "sourceRevision": "sha256:85ec91fa47f6e901f1c96ccd44d7275cc570c34fb513f2a27e2e979cc9ec6665",
+    "verifiedAt": "2026-11-01T02:13:51.062Z"
+  },
+  {
+    "id": "82",
+    "name": "Strata Descent",
+    "path": "/downloads/82-strata-descent.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/cc6d26e9d108899053e84818f539968b8553c233cee6ebb12c3a8c2e6237c622.zip",
+    "bytes": 673340,
+    "sha256": "cc6d26e9d108899053e84818f539968b8553c233cee6ebb12c3a8c2e6237c622",
+    "sourceRevision": "sha256:8fef657c6d2a10a9bf9317356e9755d2f9c50bf4bebd425bc5b4bcca645d70fa",
+    "verifiedAt": "2026-11-01T02:13:51.225Z"
+  },
+  {
+    "id": "83",
+    "name": "Forking Edition",
+    "path": "/downloads/83-forking-edition.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/be09d47871f335806ab16418f605c0b3809043bcdda8e2d5cb406fd317679f1a.zip",
+    "bytes": 445981,
+    "sha256": "be09d47871f335806ab16418f605c0b3809043bcdda8e2d5cb406fd317679f1a",
+    "sourceRevision": "sha256:458da1a665ffc1ec53c630e9728330d26efd17e422cd5d80db372b8fbe51c9b0",
+    "verifiedAt": "2026-11-01T02:13:51.508Z"
+  },
+  {
+    "id": "84",
+    "name": "Causal Theatre",
+    "path": "/downloads/84-causal-theatre.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/3972616c3fee2a22ccc6bdf16a20c074208ec57c8fb5fd574105162beb059fe1.zip",
+    "bytes": 436747,
+    "sha256": "3972616c3fee2a22ccc6bdf16a20c074208ec57c8fb5fd574105162beb059fe1",
+    "sourceRevision": "sha256:105278b80ffe21ed44682ec05766b3ddeec30befb40e47e64ba033702db5f01d",
+    "verifiedAt": "2026-11-01T02:13:52.120Z"
+  },
+  {
+    "id": "85",
+    "name": "Redaction Office",
+    "path": "/downloads/85-redaction-office.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/bae07ae561606f66197234c983f4f616810332f2fd3500151708f29024dc0fd0.zip",
+    "bytes": 409085,
+    "sha256": "bae07ae561606f66197234c983f4f616810332f2fd3500151708f29024dc0fd0",
+    "sourceRevision": "sha256:2febf0da29c26cce571253c7e6349cc23d7606fe2ad9d1f6357c0d347463e9e1",
+    "verifiedAt": "2026-11-01T02:13:52.887Z"
+  },
+  {
+    "id": "86",
+    "name": "Registration Press",
+    "path": "/downloads/86-registration-press.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/bb1ea6d3b2e5369846c405df46960fd9523f0acdb1e67a7a54f6babc18650344.zip",
+    "bytes": 501814,
+    "sha256": "bb1ea6d3b2e5369846c405df46960fd9523f0acdb1e67a7a54f6babc18650344",
+    "sourceRevision": "sha256:a8447beb2017c99440fd5fecd167fbc198f7f818c277a0c69774a1d9d707ac03",
+    "verifiedAt": "2026-11-01T02:13:53.080Z"
+  },
+  {
+    "id": "87",
+    "name": "Inside the Object",
+    "path": "/downloads/87-inside-the-object.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/40ffe0f339e4be0292a93a6d5f51ac8f1ec55d045ffdc1fff60d2d200761bbc5.zip",
+    "bytes": 444488,
+    "sha256": "40ffe0f339e4be0292a93a6d5f51ac8f1ec55d045ffdc1fff60d2d200761bbc5",
+    "sourceRevision": "sha256:375a2ae1714ae41226e1cdcf015c1abe49640bdf9e328dd30889418afb3b9f9a",
+    "verifiedAt": "2026-11-01T02:13:53.262Z"
+  },
+  {
+    "id": "88",
+    "name": "Recursive Commons",
+    "path": "/downloads/88-recursive-commons.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/0233e31a6c34636672eed26a05948b74f77def13d6f4cfcfe6903d2db431a573.zip",
+    "bytes": 421772,
+    "sha256": "0233e31a6c34636672eed26a05948b74f77def13d6f4cfcfe6903d2db431a573",
+    "sourceRevision": "sha256:7f840997619fd42fa7947f99482b5f61d23f4fd53773d5f377233f0079c458d0",
+    "verifiedAt": "2026-11-01T02:13:53.900Z"
+  },
+  {
+    "id": "89",
+    "name": "Hollow Gallery",
+    "path": "/downloads/89-hollow-gallery.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/faed2b5ad43bbc9c2645b058230e00cdd72ce3ba8fb964eb95ebff1452a940c8.zip",
+    "bytes": 381442,
+    "sha256": "faed2b5ad43bbc9c2645b058230e00cdd72ce3ba8fb964eb95ebff1452a940c8",
+    "sourceRevision": "sha256:4ab63673b6318e3efef3a876b9528748a29a5dfbfccc3987b5f6ad239cbdf1f8",
+    "verifiedAt": "2026-11-01T02:13:54.618Z"
+  },
+  {
+    "id": "90",
+    "name": "Mobius Journal",
+    "path": "/downloads/90-mobius-journal.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/e891fdb39030c6ec807679c4a5b830288f0443fbac312c0d64dad9b624d5f7f0.zip",
+    "bytes": 486286,
+    "sha256": "e891fdb39030c6ec807679c4a5b830288f0443fbac312c0d64dad9b624d5f7f0",
+    "sourceRevision": "sha256:a1d9fd35b219efe35a43217c2b20a25ce519efdfb8ac6061fa4c207d523add0e",
+    "verifiedAt": "2026-11-01T02:13:54.845Z"
+  },
+  {
+    "id": "91",
+    "name": "Patchbay Editions",
+    "path": "/downloads/91-patchbay-editions.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/e23fbc8b61c14a4f3b324b86f29e8207e5f21f12ebcdd000ab5f804bc2b3fe62.zip",
+    "bytes": 412960,
+    "sha256": "e23fbc8b61c14a4f3b324b86f29e8207e5f21f12ebcdd000ab5f804bc2b3fe62",
+    "sourceRevision": "sha256:4439db453e4c3b061ba7ac985120d78bc9166813d92a88b9eb92d2c6e25c93ee",
+    "verifiedAt": "2026-11-01T02:13:55.034Z"
+  },
+  {
+    "id": "92",
+    "name": "Interface Witness",
+    "path": "/downloads/92-interface-witness.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/f440a3234c8b5b5bccacb8bbc99d920dbd17cee3b4ffc098a86b12117646a6d0.zip",
+    "bytes": 302668,
+    "sha256": "f440a3234c8b5b5bccacb8bbc99d920dbd17cee3b4ffc098a86b12117646a6d0",
+    "sourceRevision": "sha256:171c40f20492b3b4e5d578147ff3ebb29a8d7cf995acf3c62b5431eab75b8bd2",
+    "verifiedAt": "2026-11-01T02:13:56.301Z"
+  },
+  {
+    "id": "93",
+    "name": "Gesture Index",
+    "path": "/downloads/93-gesture-index.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/cdfa5588f7f06ee6f2d94b6da0430c57690281754e9488cdf06b18c8fb1f6819.zip",
+    "bytes": 399953,
+    "sha256": "cdfa5588f7f06ee6f2d94b6da0430c57690281754e9488cdf06b18c8fb1f6819",
+    "sourceRevision": "sha256:0358e575ddc6a874813090a363967814ffc0bc52eb783f9ae1f178f919ea9ed7",
+    "verifiedAt": "2026-11-01T02:13:56.430Z"
+  },
+  {
+    "id": "94",
+    "name": "Score Reader",
+    "path": "/downloads/94-score-reader.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/8116b43b3e708a8187604ac2bf60125b8d4fdb703e8e2c27b970f9e3493e3b5b.zip",
+    "bytes": 560918,
+    "sha256": "8116b43b3e708a8187604ac2bf60125b8d4fdb703e8e2c27b970f9e3493e3b5b",
+    "sourceRevision": "sha256:6208e940f8ff5a1a0209ccd3cb4d4df3aa5bd9c96d323f30de032a83b499040a",
+    "verifiedAt": "2026-11-01T02:13:56.586Z"
+  },
+  {
+    "id": "95",
+    "name": "Frame by Frame",
+    "path": "/downloads/95-frame-by-frame.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/812eb36cb387ce04ea433ff870492675cc46976b41f352ab28d674ce1e8fdd9d.zip",
+    "bytes": 386883,
+    "sha256": "812eb36cb387ce04ea433ff870492675cc46976b41f352ab28d674ce1e8fdd9d",
+    "sourceRevision": "sha256:67092ae2f146c713867138ae607d491ecb04d174b298674fd02a637500e1ffeb",
+    "verifiedAt": "2026-11-01T02:13:56.784Z"
+  },
+  {
+    "id": "96",
+    "name": "Rulewalk",
+    "path": "/downloads/96-rulewalk.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/976d023f521e5dc7b2b75cb50da2e3bed1c1aed305882e4bd5c694763617147f.zip",
+    "bytes": 489812,
+    "sha256": "976d023f521e5dc7b2b75cb50da2e3bed1c1aed305882e4bd5c694763617147f",
+    "sourceRevision": "sha256:006e464db68837b7065997b2b272cca5aa835d5a805a5c892ecf4f8494785183",
+    "verifiedAt": "2026-11-01T02:13:58.123Z"
+  },
+  {
+    "id": "97",
+    "name": "Curtain Bureau",
+    "path": "/downloads/97-curtain-bureau.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/69d9ae16b59222efec990c076863889fb0ea873f0151a1e0c00b7cc2b108e360.zip",
+    "bytes": 479536,
+    "sha256": "69d9ae16b59222efec990c076863889fb0ea873f0151a1e0c00b7cc2b108e360",
+    "sourceRevision": "sha256:1069b9045913a4c9b4d2e24b9f4e76e2cd1a430d3e40b1595e0eaa0f6a59e79f",
+    "verifiedAt": "2026-11-01T02:13:58.218Z"
+  },
+  {
+    "id": "98",
+    "name": "Shadow Archive",
+    "path": "/downloads/98-shadow-archive.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/8a782d3bfd30efbbc910e7974f1c2cc055d11290e81f88c0bb1d7c630c7bdd89.zip",
+    "bytes": 333689,
+    "sha256": "8a782d3bfd30efbbc910e7974f1c2cc055d11290e81f88c0bb1d7c630c7bdd89",
+    "sourceRevision": "sha256:0b5dfc1d787b0d6e6d0ddca485a7f3325e7886e36ea87773c16ba9d45e18060e",
+    "verifiedAt": "2026-11-01T02:13:58.477Z"
+  },
+  {
+    "id": "99",
+    "name": "Exquisite Assembly",
+    "path": "/downloads/99-exquisite-assembly.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/a63682c27fd1eaf30e6a7db4f981594590d6392e0879d64ddb499f6230179d75.zip",
+    "bytes": 346884,
+    "sha256": "a63682c27fd1eaf30e6a7db4f981594590d6392e0879d64ddb499f6230179d75",
+    "sourceRevision": "sha256:31a54b4f1d06cb52c1175cae0e8b809876eb848503f10ae110d4fe470b572cab",
+    "verifiedAt": "2026-11-01T02:13:58.505Z"
+  },
+  {
+    "id": "100",
+    "name": "Powers of Scale",
+    "path": "/downloads/100-powers-of-scale.zip",
+    "url": "https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/ceb8cf47ca70f62246edc011e6f2d0d4cab44827834c51f502fe446f03030c7c.zip",
+    "bytes": 565368,
+    "sha256": "ceb8cf47ca70f62246edc011e6f2d0d4cab44827834c51f502fe446f03030c7c",
+    "sourceRevision": "sha256:1f38b52c974cf86a6a906e01a035b394efcb9a2dd8a8055e74c782ca757efc08",
+    "verifiedAt": "2026-11-01T02:13:17.712Z"
+  }
+]

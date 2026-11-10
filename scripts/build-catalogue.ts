@@ -1,13 +1,29 @@
 import fs from 'node:fs';
 import { sourceRevision, localReference, sha256 } from './reference-utils';
 
+const prepareDownloads = process.argv.includes('--prepare-downloads');
+const published = new Map(
+  JSON.parse(fs.readFileSync('published-downloads.json', 'utf8')).map((item: { id: string }) => [
+    item.id,
+    item,
+  ]),
+);
 const directories = fs.readdirSync('src/designs').sort((a, b) => parseInt(a) - parseInt(b));
 const ids = new Set<string>(),
   slugs = new Set<string>();
 const catalogue = directories.map((dir) => {
   const base = `src/designs/${dir}`;
   const record = JSON.parse(fs.readFileSync(`${base}/design.json`, 'utf8'));
-  record.downloadUrl = `/downloads/${dir}.zip`;
+  const download = published.get(record.id) as
+    | {
+        path: string;
+        url: string;
+        bytes: number;
+        sha256: string;
+        sourceRevision: string;
+        verifiedAt: string;
+      }
+    | undefined;
   for (const key of [
     'id',
     'name',
@@ -114,6 +130,21 @@ const catalogue = directories.map((dir) => {
       JSON.stringify(manifest.captures) !== JSON.stringify(record.referenceImages)
     )
       throw new Error(`${dir}: capture manifest disagrees with design.json`);
+  }
+  if (record.status === 'ready' && !prepareDownloads) {
+    if (
+      !download ||
+      download.path !== '/downloads/' + dir + '.zip' ||
+      download.sourceRevision !== revision ||
+      !/^[a-f0-9]{64}$/.test(download.sha256) ||
+      !Number.isSafeInteger(download.bytes) ||
+      download.bytes <= 0 ||
+      !Number.isFinite(Date.parse(download.verifiedAt)) ||
+      download.url !==
+        'https://drewwalsh-frontend-media.t3.tigrisfiles.io/objects/' + download.sha256 + '.zip'
+    )
+      throw new Error(dir + ': missing or stale verified Tigris download');
+    record.downloadUrl = download.url;
   }
   return record;
 });

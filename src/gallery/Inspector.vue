@@ -29,6 +29,36 @@ const sections = computed(
         return { title: match?.[1] || '', text: (match?.[2] || p).replaceAll('*', '') };
       }) || [],
 );
+
+async function download(event: MouseEvent) {
+  const design = d.value;
+  const link = event.currentTarget as HTMLAnchorElement;
+  if (
+    !design ||
+    !link.href ||
+    event.button ||
+    event.metaKey ||
+    event.ctrlKey ||
+    event.shiftKey ||
+    event.altKey
+  )
+    return;
+  event.preventDefault();
+  try {
+    const response = await fetch(link.href, { signal: AbortSignal.timeout(15000) });
+    if (!response.ok) throw new Error('Download unavailable');
+    const objectUrl = URL.createObjectURL(await response.blob());
+    const file = document.createElement('a');
+    file.href = objectUrl;
+    file.download = design.id + '-' + design.slug + '.zip';
+    document.body.append(file);
+    file.click();
+    file.remove();
+    setTimeout(() => URL.revokeObjectURL(objectUrl), 1000);
+  } catch {
+    window.location.assign(link.href);
+  }
+}
 async function copy() {
   try {
     await navigator.clipboard.writeText(prompt.value);
@@ -49,7 +79,9 @@ async function copy() {
         <p>{{ d.thesis }}</p>
       </div>
       <div class="g-download-actions">
-        <a class="g-button dark" :href="downloadUrl(d)" download>Download design ZIP ↓</a>
+        <a class="g-button dark" :href="downloadUrl(d)" download @click="download"
+          >Download design ZIP ↓</a
+        >
         <a class="g-button" :href="d.entryRoute" target="_blank" rel="noopener"
           >Open live specimen ↗</a
         >
@@ -158,7 +190,7 @@ async function copy() {
           </div>
           <hr />
           <p class="g-label">SOURCE PACKAGE</p>
-          <a :href="downloadUrl(d)" download>Download the complete ZIP ↓</a>
+          <a :href="downloadUrl(d)" download @click="download">Download the complete ZIP ↓</a>
           <a
             :href="'/references/' + d.id + '-' + d.slug + '/DESIGN.md'"
             target="_blank"
@@ -213,9 +245,11 @@ async function copy() {
           principles to your project’s content and framework.
         </p>
         <p>
-          <a :href="downloadUrl(d)" download>Download this reference as a ZIP ↓</a> and give the
-          extracted folder to Codex with your project request. The included starter runs with local
-          assets after package installation.
+          <a :href="downloadUrl(d)" download @click="download"
+            >Download this reference as a ZIP ↓</a
+          >
+          and give the extracted folder to Codex with your project request. The included starter
+          runs with local assets after package installation.
         </p>
         <label
           >What should use this design?<input
